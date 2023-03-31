@@ -1,0 +1,8 @@
+# These owners will be the default owners for everything in
+# the repo. Unless a later match takes precedence,
+* @minvws/brba-designers
+#* @minvws/brba-php-codeowners
+#* @minvws/brba-python-codeowners
+#* @minvws/coronacheck-developers
+#* @minvws/kat-developers
+#* @minvws/uzipoc-developers
