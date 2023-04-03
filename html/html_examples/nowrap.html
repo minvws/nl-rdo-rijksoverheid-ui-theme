@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <title>Nowrap - Rijksoverheid CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../static/css/main.css" rel="stylesheet">
+    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <script defer src="../../static/js/sidemenu.js"></script>
+  </head>
+  <body class="test-cases">
+    <header class="breadcrumbs">
+      <a href="#main-content" class="button focus-only">Ga direct naar inhoud</a>
+      <a href="" class="ro-logo">
+        <img src="../../static/img/ro-logo.svg" alt="Logo Rijksoverheid">
+        Rijksoverheid
+      </a>
+      
+      <nav aria-label="Kruimelpad" id="main-nav">
+        <div>
+          <ul>
+              <li><a href="../index.html">Rijksoverheid CSS</a></li>
+              <li><a href="index.html">Online Componenten Bibliotheek</a></li>
+              <li><a href="#" aria-current="page">Nowrap</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+        <ul>
+          <li><a href="./nowrap.html">Introductie</a></li>
+          <li><a href="#examples">Voorbeelden</a>
+              <ul>
+                <li><a href="#nowrap-p">Paragraaf</a></li>
+                <li><a href="#nowrap-table">Tabel</a></li>
+                <li><a href="#nowrap-div">Omliggende div</a></li>
+                <li><a href="#nowrap-thead"><code>thead</code></a></li>
+                <li><a href="#nowrap-tbody"><code>tbody</code></a></li>
+                <li><a href="#nowrap-tr"><code>tr</code></a></li>
+                <li><a href="#nowrap-td"><code>td</code></a></li>
+              </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <div>
+          <article id="introduction">
+            <div>
+              <h1>nowrap</h1>
+              <p>
+                Zorgt ervoor dat woorden en teksten niet afgebroken worden maar op dezelfde regel blijven doorlopen.
+              </p>
+
+              <h2>Benodigde stappen:</h2>
+              <ol>
+                <li>Voeg de class <code>nowrap</code> toe aan het gewenste element.</li>
+              </ol>
+
+              <p class="attention" aria-label="attentie"><strong>Tip:</strong> Door de class op een specifiek element te plaatsen, bijvoorbeeld een <code>td</code> zal het effect beperkt blijven tot het specifieke element. Door de class op een hoger gelegen element te plaatsen, bijvoorbeeld de <code>table</code> of de omliggende <code>div</code> zullen alle onderliggende tekst-elementen niet afbreken.</p>
+            </div>
+          </article>
+          
+          <article id="examples">
+            <div>
+              <h1>Voorbeelden</h1>
+              <h2 id="nowrap-p">Nowrap op een paragraaf</h2>
+              <p class="explanation"><span>Toelichting:</span> In dit voorbeeld wordt er ook gebruik gemaakt van de <dfn>helper-class</dfn> <a href="./horizontal-scroll.html">horizontal-scroll</a> om te voorkomen dat het voorbeeld-element de layout van de pagina breekt. Zonder deze toevoeging zou de tekst het scherm uitlopen. De class <code>horizontal-scroll</code> voegt op de maximale beschikbare breedte de scrollbalk toe.</p>
+              <h3>Visueel voorbeeld:</h3>
+              <p class="nowrap horizontal-scroll">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+              <h3>Html-voorbeeld</h3>
+              <pre>
+                <code>
+&lt;p class="nowrap horizontal-scroll">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.&lt;/p>
+                </code>
+              </pre>
+
+              <h2 id="nowrap-table">Tabel met <dfn>nowrap</dfn></h2>
+              <h3>Visueel voorbeeld:</h3>
+
+              <div class="horizontal-scroll">
+                <table class="nowrap">
+                  <caption>Basisvoorbeeld tabel met "nowrap":</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Table header heading 1</th>
+                      <th scope="col">Table header heading 2</th>
+                      <th scope="col">Table header heading 3</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                      <td>Ipsum</td>
+                      <td>Dolor set</td>
+                    </tr>
+                    <tr>
+                      <td>Lorem</td>
+                      <td>Ipsum</td>
+                      <td>Dolor set</td>
+                    </tr>
+                    <tr>
+                      <td>Lorem</td>
+                      <td>Ipsum</td>
+                      <td>Dolor set</td>
+                    </tr>
+                    <tr>
+                      <td>Lorem</td>
+                      <td>Ipsum</td>
+                      <td>Dolor set</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h3>Html-voorbeeld</h3>
+              <pre>
+                <code>
+&lt;div class="horizontal-scroll">
+  &lt;table class="nowrap">
+    &lt;caption>Basisvoorbeeld tabel met "nowrap":&lt;/caption>
+    &lt;thead>
+      &lt;tr>
+        &lt;th scope="col">Table header heading 1&lt;/th>
+        &lt;th scope="col">Table header heading 2&lt;/th>
+        &lt;th scope="col">Table header heading 3&lt;/th>
+      &lt;/tr>
+    &lt;/thead>
+    &lt;tbody>
+      &lt;tr>
+        &lt;td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/td>
+        &lt;td>Ipsum&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+        &lt;td>Lorem&lt;/td>
+        &lt;td>Ipsum&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+        &lt;td>Lorem&lt;/td>
+        &lt;td>Ipsum&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+        &lt;td>Lorem&lt;/td>
+        &lt;td>Ipsum&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+      &lt;/tr>
+    &lt;/tbody>
+  &lt;/table>
+&lt;/div>
+                </code>
+              </pre>
+
+              <h2 id="nowrap-div">nowrap op omliggende <code>div</code> van een <code>table</code></h2>
+              <h3>Visueel voorbeeld:</h3>
+              <div class="horizontal-scroll nowrap">
+                <table>
+                  <caption>
+                    Basisvoorbeeld tabel:
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Table header heading 1</th>
+                      <th scope="col">Table header heading 2</th>
+                      <th scope="col">Table header heading 3</th>
+                      <th scope="col">Table header heading 4</th>
+                      <th scope="col">Table header heading 5</th>
+                      <th scope="col">Table header heading 6</th>
+                      <th scope="col">Table header heading 7</th>
+                      <th scope="col">Table header heading 8</th>
+                      <th scope="col">Table header heading 9</th>
+                      <th scope="col">Table header heading 10</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                    </tr>
+                    <tr>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                    </tr>
+                    <tr>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                    </tr>
+                    <tr>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h3>Html-voorbeeld:</h3>
+              <pre>
+                <code>
+&lt;div class="horizontal-scroll nowrap">
+  &lt;table>
+    &lt;caption>Basisvoorbeeld tabel:&lt;/caption>
+    &lt;thead>
+      &lt;tr>
+        &lt;th scope="col">Table header heading 1&lt;/th>
+        &lt;th scope="col">Table header heading 2&lt;/th>
+        &lt;th scope="col">Table header heading 3&lt;/th>
+        &lt;th scope="col">Table header heading 4&lt;/th>
+        &lt;th scope="col">Table header heading 5&lt;/th>
+        &lt;th scope="col">Table header heading 6&lt;/th>
+        &lt;th scope="col">Table header heading 7&lt;/th>
+      &lt;/tr>
+    &lt;/thead>
+    &lt;tbody>
+      &lt;tr>
+        &lt;td>Lorem&lt;/td>
+        &lt;td>Ipsum&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+        &lt;td>Lorem&lt;/td>
+        &lt;td>Ipsum&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+        &lt;td>Lorem&lt;/td>
+        &lt;td>Ipsum&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+        &lt;td>Lorem&lt;/td>
+        &lt;td>Ipsum&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+      &lt;/tr>
+    &lt;/tbody>
+  &lt;/table>
+&lt;/div>
+                </code>
+              </pre>
+
+              <h2 id="nowrap-thead">nowrap op <code>thead</code></h2>
+              <h3>Visueel voorbeeld:</h3>
+              <div class="horizontal-scroll">
+                <table>
+                  <caption>
+                    Basisvoorbeeld tabel:
+                  </caption>
+                  <thead class="nowrap">
+                    <tr>
+                      <th scope="col">Table header heading 1</th>
+                      <th scope="col">Table header heading 2</th>
+                      <th scope="col">Table header heading 3</th>
+                      <th scope="col">Table header heading 4</th>
+                      <th scope="col">Table header heading 5</th>
+                      <th scope="col">Table header heading 6</th>
+                      <th scope="col">Table header heading 7</th>
+                      <th scope="col">Table header heading 8</th>
+                      <th scope="col">Table header heading 9</th>
+                      <th scope="col">Table header heading 10</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at mattis
+                        nunc. Sed metus massa, tristique quis purus et, pulvinar ornare est. Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit.
+                      </td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                    </tr>
+                    <tr>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                    </tr>
+                    <tr>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                    </tr>
+                    <tr>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h3>Html-voorbeeld:</h3>
+              <pre>
+                <code>
+&lt;div class="horizontal-scroll">
+  &lt;table class="nowrap">
+    &lt;caption>Basisvoorbeeld tabel:&lt;/caption>
+    &lt;thead class="nowrap">
+      &lt;tr>
+        &lt;th scope="col">Table header heading 1&lt;/th>
+        &lt;th scope="col">Table header heading 2&lt;/th>
+        &lt;th scope="col">Table header heading 3&lt;/th>
+        &lt;th scope="col">Table header heading 4&lt;/th>
+        &lt;th scope="col">Table header heading 5&lt;/th>
+        &lt;th scope="col">Table header heading 6&lt;/th>
+        &lt;th scope="col">Table header heading 7&lt;/th>
+      &lt;/tr>
+    &lt;/thead>
+    &lt;tbody>
+      &lt;tr>
+        &lt;td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at mattis nunc. Sed metus massa, tristique quis purus et, pulvinar ornare est. Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/td>
+        &lt;td>Ipsum&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+        &lt;td>Lorem&lt;/td>
+        &lt;td>Ipsum&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+        &lt;td>Lorem&lt;/td>
+        &lt;td>Ipsum&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+        &lt;td>Lorem&lt;/td>
+        &lt;td>Ipsum&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+      &lt;/tr>
+    &lt;/tbody>
+  &lt;/table>
+&lt;/div>
+                </code>
+              </pre>
+
+              <h2 id="nowrap-tbody">nowrap op <code>tbody</code></h2>
+              <h3>Visueel voorbeeld:</h3>
+              <div class="horizontal-scroll">
+                <table>
+                  <caption>
+                    Basisvoorbeeld tabel:
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Table header heading 1</th>
+                      <th scope="col">Table header heading 2</th>
+                      <th scope="col">Table header heading 3</th>
+                      <th scope="col">Table header heading 4</th>
+                      <th scope="col">Table header heading 5</th>
+                      <th scope="col">Table header heading 6</th>
+                      <th scope="col">Table header heading 7</th>
+                      <th scope="col">Table header heading 8</th>
+                      <th scope="col">Table header heading 9</th>
+                      <th scope="col">Table header heading 10</th>
+                    </tr>
+                  </thead>
+                  <tbody class="nowrap">
+                    <tr>
+                      <td>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at mattis
+                        nunc. Sed metus massa, tristique quis purus et, pulvinar ornare est. Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit.
+                      </td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                    </tr>
+                    <tr>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                    </tr>
+                    <tr>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                    </tr>
+                    <tr>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h3>Html-voorbeeld:</h3>
+              <pre>
+                <code>
+&lt;div class="horizontal-scroll">
+  &lt;table class="nowrap">
+    &lt;caption>Basisvoorbeeld tabel:&lt;/caption>
+    &lt;thead>
+      &lt;tr>
+        &lt;th scope="col">Table header heading 1&lt;/th>
+        &lt;th scope="col">Table header heading 2&lt;/th>
+        &lt;th scope="col">Table header heading 3&lt;/th>
+        &lt;th scope="col">Table header heading 4&lt;/th>
+        &lt;th scope="col">Table header heading 5&lt;/th>
+        &lt;th scope="col">Table header heading 6&lt;/th>
+        &lt;th scope="col">Table header heading 7&lt;/th>
+      &lt;/tr>
+    &lt;/thead>
+    &lt;tbody class="nowrap">
+      &lt;tr>
+        &lt;td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at mattis nunc. Sed metus massa, tristique quis purus et, pulvinar ornare est. Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/td>
+        &lt;td>Ipsum&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+        &lt;td>Lorem&lt;/td>
+        &lt;td>Ipsum&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+        &lt;td>Lorem&lt;/td>
+        &lt;td>Ipsum&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+        &lt;td>Lorem&lt;/td>
+        &lt;td>Ipsum&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+      &lt;/tr>
+    &lt;/tbody>
+  &lt;/table>
+&lt;/div>
+                </code>
+              </pre>
+
+              <h2 id="nowrap-tr">nowrap op een <code>tr</code></h2>
+              <h3>Visueel voorbeeld:</h3>
+              <div class="horizontal-scroll">
+                <table>
+                  <caption>
+                    Basisvoorbeeld tabel:
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Table header heading 1</th>
+                      <th scope="col">Table header heading 2</th>
+                      <th scope="col">Table header heading 3</th>
+                      <th scope="col">Table header heading 4</th>
+                      <th scope="col">Table header heading 5</th>
+                      <th scope="col">Table header heading 6</th>
+                      <th scope="col">Table header heading 7</th>
+                      <th scope="col">Table header heading 8</th>
+                      <th scope="col">Table header heading 9</th>
+                      <th scope="col">Table header heading 10</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="nowrap">
+                      <td>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at mattis
+                        nunc. Sed metus massa, tristique quis purus et, pulvinar ornare est. Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit.
+                      </td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                    </tr>
+                    <tr>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                    </tr>
+                    <tr>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                    </tr>
+                    <tr>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h3>Html-voorbeeld:</h3>
+              <pre>
+                <code>
+&lt;div class="horizontal-scroll">
+  &lt;table class="nowrap">
+    &lt;caption>Basisvoorbeeld tabel:&lt;/caption>
+    &lt;thead>
+      &lt;tr>
+        &lt;th scope="col">Table header heading 1&lt;/th>
+        &lt;th scope="col">Table header heading 2&lt;/th>
+        &lt;th scope="col">Table header heading 3&lt;/th>
+        &lt;th scope="col">Table header heading 4&lt;/th>
+        &lt;th scope="col">Table header heading 5&lt;/th>
+        &lt;th scope="col">Table header heading 6&lt;/th>
+        &lt;th scope="col">Table header heading 7&lt;/th>
+      &lt;/tr>
+    &lt;/thead>
+    &lt;tbody>
+      &lt;tr  class="nowrap">
+        &lt;td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at mattis nunc. Sed metus massa, tristique quis purus et, pulvinar ornare est. Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/td>
+        &lt;td>Ipsum&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+        &lt;td>Lorem&lt;/td>
+        &lt;td>Ipsum&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+        &lt;td>Lorem&lt;/td>
+        &lt;td>Ipsum&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+        &lt;td>Lorem&lt;/td>
+        &lt;td>Ipsum&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+      &lt;/tr>
+    &lt;/tbody>
+  &lt;/table>
+&lt;/div>
+                </code>
+              </pre>
+
+              <h2 id="nowrap-td">nowrap op een <code>td</code></h2>
+              <h3>Visueel voorbeeld:</h3>
+              <div class="horizontal-scroll">
+                <table>
+                  <caption>
+                    Basisvoorbeeld tabel:
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Table header heading 1</th>
+                      <th scope="col">Table header heading 2</th>
+                      <th scope="col">Table header heading 3</th>
+                      <th scope="col">Table header heading 4</th>
+                      <th scope="col">Table header heading 5</th>
+                      <th scope="col">Table header heading 6</th>
+                      <th scope="col">Table header heading 7</th>
+                      <th scope="col">Table header heading 8</th>
+                      <th scope="col">Table header heading 9</th>
+                      <th scope="col">Table header heading 10</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="nowrap">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at mattis.
+                      </td>
+                      <td class="nowrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at mattis</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                    </tr>
+                    <tr>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                    </tr>
+                    <tr>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                    </tr>
+                    <tr>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                      <td>Dolor set</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h3>Html-voorbeeld:</h3>
+              <pre>
+                <code>
+&lt;div class="horizontal-scroll">
+  &lt;table>
+    &lt;caption>
+      Basisvoorbeeld tabel:
+    &lt;/caption>
+    &lt;thead>
+      &lt;tr>
+        &lt;th scope="col">Table header heading 1&lt;/th>
+        &lt;th scope="col">Table header heading 2&lt;/th>
+        &lt;th scope="col">Table header heading 3&lt;/th>
+        &lt;th scope="col">Table header heading 4&lt;/th>
+        &lt;th scope="col">Table header heading 5&lt;/th>
+        &lt;th scope="col">Table header heading 6&lt;/th>
+        &lt;th scope="col">Table header heading 7&lt;/th>
+        &lt;th scope="col">Table header heading 8&lt;/th>
+        &lt;th scope="col">Table header heading 9&lt;/th>
+        &lt;th scope="col">Table header heading 10&lt;/th>
+      &lt;/tr>
+    &lt;/thead>
+    &lt;tbody>
+      &lt;tr>
+        &lt;td class="nowrap">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at mattis.
+        &lt;/td>
+        &lt;td class="nowrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at mattis&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+      &lt;/tr>
+    &lt;/tbody>
+  &lt;/table>
+&lt;/div>
+                </code>
+              </pre>
+            </div>
+          </article>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+          <span>Manon - Rijksoverheid css framework</span>
+          <nav aria-labelledby="footer-nav-1-heading">
+            <h1 id="footer-nav-1-heading">Service</h1>
+            <ul>
+              <li><a href="../index.html">Over</a></li>
+              <li><a href="../test/index.html">Styling tests</a></li>
+              <li><a href="index.html">Online componenten bibliotheek</a></li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+  </body>
+</html>

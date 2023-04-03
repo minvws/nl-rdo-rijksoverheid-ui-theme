@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <title>Links - Rijksoverheid CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../static/css/main.css" rel="stylesheet">
+    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <script defer src="../../static/js/sidemenu.js"></script>
+  </head>
+  <body class="test-cases">
+    <header class="breadcrumbs">
+      <a href="#main-content" class="button focus-only">Ga direct naar inhoud</a>
+      <a href="" class="ro-logo">
+        <img src="../../static/img/ro-logo.svg" alt="Logo Rijksoverheid">
+        Rijksoverheid
+      </a>
+      
+      <nav aria-label="Kruimelpad" id="main-nav">
+        <div>
+          <ul>
+              <li><a href="../index.html">Rijksoverheid CSS</a></li>
+              <li><a href="index.html">Online Componenten Bibliotheek</a></li>
+              <li><a href="#" aria-current="page">Links</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+        <ul>
+          <li><a href="#links">Links</a></li>
+          <li><a href="#link">Link</a></li>
+          <li><a href="#external-references">Externe link</a></li>
+          <li><a href="#link-title">Link met titel</a></li>
+          <li><a href="#new-tab">Link naar een nieuw tabblad</a>
+        </ul>
+      </nav>
+
+      <div>
+        <article id="links">
+          <div>
+            <h1>Links</h1>
+            <p>Gebruik links om naar andere pagina's te verwijzen. Zowel intern als extern.</p>
+
+            <p>Aandachtspunten:</p>
+            <ul>
+              <li><strong>Links, interne, externe en links naar documenten, dienen in de huidige pagina geopend te worden.</strong> Dit omwille van gebruikerservaring en toegankelijkheid. Verwijzen naar een nieuw tabblad kan namelijk verwarrend zijn voor gebruikers die gebruik maken van:
+                <ul>
+                  <li>Mobiele apparaten</li>
+                  <li>Hulptechnologiën</li>
+                  <li>Gebruikers die slecht of minder goed kunnen zien</li>
+                </ul>
+              Ook kan het verwarrend zijn voor gebruikers als de terug-knop niet terug wijst naar de oorspronkelijke pagina, wat een bijkomend effect is van een nieuw tabblad.</li>
+              <li>Situaties waarbij de gebruiker gestoord wordt in zijn/haar process kunnen wel vragen om een pagina in een nieuw tablad. Bijvoorbeeld:
+                <ul>
+                  <li>Tijdens het invullen van een formulier, waarbij de gebruiker reeds ingevulde data verliest door het klikken op de link</li>
+                  <li>Situaties waarin de gebruiker zelf interactie met de content is aangegaan. Bijvoorbeeld bij het bekijken van een video</li>
+                </ul>
+                Bekijk voor meer informatie over het toevoegen van een link in een nieuw tabblad voor deze situaties: <a href="#new-tab">Link naar een nieuw tabblad</a>
+              </li>
+              <li>Als de link naar een externe website verwijst dient dit vooraf kenbaar gemaakt te worden naar de gebruiker toe. Voor meer informatie zie: <a href="#external-references">Externe link</a>.</li>
+              <li>Als een link een actie uit gaat voeren, zoals bijvoorbeeld het downloaden van een pdf, dient dit duidelijk aangegeven te worden aan de gebruiker. Bijvoorbeeld door in de link de volgende tekst mee te geven: "Download pdf document titel"</li>
+            </ul>
+
+            <p>Beschikbare voorbeelden:</p>
+            <nav aria-label="Document-navigatie">
+              <ul>
+                <li><a href="#link">Link</a></li>
+                <li><a href="#external-references">Externe link</a></li>
+                <li><a href="#link-title">Link met titel</a></li>
+                <li><a href="#new-tab">Link naar een nieuw tabblad</a>
+              </ul>
+            </nav>
+          </div>
+        </article>
+
+        <article>
+          <div>
+            <h1>Link</h1>
+             <p>Visueel voorbeeld:</p>
+            <a href="">Lorem ipsum</a>
+            <p>Html-voorbeeld:</p>
+            <pre>
+              <code>
+&lt;a href="">Lorem ipsum&lt;/a>
+              </code>
+            </pre>
+          </div>
+        </article>
+
+        <article id="external-references">
+          <div>
+            <h1>Externe link</h1>
+            <p>Links naar pagina's buiten de huidige website.</p>
+            <p>Aandachtspunten:</p>
+            <ul>
+              <li>Als er een link naar een externe site geplaatst wordt dient dit ook visueel kenbaar gemaakt te worden naar de gebruiker toe. Zodat de gebruiker weet dat een externe website geopend wordt.</li>
+              <li>Geef de link de <code>rel="external"</code> mee. Dit verteld zowel de gebruiker als de computer dat de gerefereerde pagina geen onderdeel uitmaakt van de huidige website. Zie voor meer informatie <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel" rel="external" title="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel">De MDN-documentatie over het rel-attribuut</a>.</li>
+              <li>Indien de pagina waar naar gelink wordt niet ondersteund wordt, kan een <code>nofollow</code> attribuut toegevoegd worden aan de link. Zie <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel#attr-nofollow" rel="external" title="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel#attr-nofollow">De MDN-documentatie over het nofollow attribuut</a> voor meer informatie.</li>
+              <li><strong>Externe links dienen in de huidige pagina geopend te worden.</strong> Dit omwille van gebruikerservaring en toegankelijkheid. Verwijzen naar een nieuw tabblad kan namelijk verwarrend zijn voor gebruikers die gebruik maken van:
+                <ul>
+                  <li>Mobiele apparaten</li>
+                  <li>Hulptechnologiën</li>
+                  <li>Gebruikers die slecht of minder goed kunnen zien</li>
+                </ul>
+              Ook kan het verwarrend zijn voor gebruikers als de terug-knop niet terug wijst naar de oorspronkelijke pagina, wat een bijkomend effect is van een nieuw tabblad.</li>
+              <li>Situaties waarbij de gebruiker gestoord wordt in zijn/haar process kunnen wel vragen om een pagina in een nieuw tablad. Bijvoorbeeld:
+                <ul>
+                  <li>Tijdens het invullen van een formulier, waarbij de gebruiker reeds ingevulde data verliest door het klikken op de link</li>
+                  <li>Situaties waarin de gebruiker zelf interactie met de content is aangegaan. Bijvoorbeeld bij het bekijken van een video</li>
+                </ul>
+                Bekijk voor meer informatie over het toevoegen van een link in een nieuw tabblad voor deze situaties: <a href="">Link naar een nieuw tabblad</a>
+              </li>
+            </ul>
+
+            <p>Visueel voorbeeld:</p>
+            <a href="" rel="external">Lorem ipsum</a>
+
+            <p>Html-voorbeeld:</p>
+            <pre>
+              <code>
+&lt;a href="" rel="external">Lorem ipsum&lt;/a>
+              </code>
+            </pre>
+          </div>
+        </article>
+
+        <article id="link-title">
+          <div>
+            <h1>Link met title</h1>
+            <p>Een <code>title</code> kan toegevoegd worden aan de link om gebruikers te voorzien van extra toelichting.</p>
+            <p>De titeltekst wordt zichtbaar wanneer de gebruiker met zijn muis op de link zweeft voor een paar tellen. Informatie die in de <code>title</code> toegevoegd kan worden is bijvoorbeeld de url van de link.</p>
+
+            <p>Aandachtspunten:</p>
+            <ul>
+              <li>Houdt er rekening mee dat mobiele gebruikers en gebruikers die gebruik maken van hulpsoftware niet altijd de mogelijkheid hebben om gebruik te maken van deze informatie. Daarom is het belangrijk om de title-functie als extra ondersteunende functie te gebruiken en geen cruciale nieuwe informatie enkel via de <code>title</code> toe te voegen.</li>
+            </ul>
+
+            <p>Visueel voorbeeld:</p>
+            <a href="https://www.example.com" title="https://www.example.com" rel="external">Lorem ipsum</a>
+
+            <p>Html-voorbeeld:</p>
+            <pre>
+              <code>
+&lt;a href="https://www.example.com" title="https://www.example.com" rel="external">Lorem ipsum&lt;/a>
+              </code>
+            </pre>
+          </div>
+        </article>
+
+        <article id="new-tab">
+          <div>
+            <h1>Link naar een nieuw tabblad</h1>
+            <p>Soms is het voor de gebruikerservaring wenselijk om een link automatisch in een nieuw tabblad te openen.</p>
+
+            <p class="warning"><span>Waarschuwing:</span>In de basis dienen alle links in de huidige pagina te openen. Alleen in uitzonderinssituaties kan het nodig zijn om een nieuw tabblad te openen. Bekijk in die gevallen altijd eerst of de link op die plaats echt nodig is.</p>
+
+            <p>Aandachtspunten:</p>
+            <ul>
+              <li>Enkel situaties waarbij de gebruiker gestoord wordt in zijn/haar proces vragen om een pagina in een nieuw tablad. Bijvoorbeeld:
+                <ul>
+                  <li>Tijdens het invullen van een formulier, waarbij de gebruiker reeds ingevulde data verliest door het klikken op de link</li>
+                  <li>Situaties waarin de gebruiker zelf interactie met de content is aangegaan. Bijvoorbeeld bij het bekijken van een video</li>
+                </ul>
+                Bekijk voor meer informatie over het toevoegen van een link in een nieuw tabblad voor deze situaties: <a href="">Link naar een nieuw tabblad</a>
+              </li>
+              <li>Indien het om een externe link gaat voeg aan het <code>rel</code>-attribuut de waarde <code>external</code> toe om aan te geven dat de gebruiker naar een externe pagina geleid wordt. Voor meer informatie zie <a href="#external-references">Externe link</a></li>
+              <li>Voeg aan het <code>rel</code>-attribuut de waarde <code>noopener</code> toe. Omwille van veiligheid. Dit voorkomt <dfn>tabnabbing</dfn> ook wel <dfn>reverse tabnabbing</dfn> genoemd, een aanval waarbij de gelinkte pagina bijvoorbeeld doorgestuurd wordt naar een phishing pagina. Waarbij er bijvoorbeeld om login gegevens gevraagd kan worden. Voor meer informatie zie <a href="https://owasp.org/www-community/attacks/Reverse_Tabnabbing" rel="external">Owasp documentatie over tabnabbing</a>.</li>
+              <li>Vertel de gebruiker dat de pagina in een nieuw tabblad opent. Bijvoorbeeld door dit tussen haakjes achter de link te plaatsen.</li>
+            </ul>
+
+            <h3>Voorbeeld</h3>
+            <p>Visueel voorbeeld:</p>
+            <a href="http://example.com" target="_blank" rel="noopener">Lorem ipsum (pagina opent in een nieuw tabblad)</a>
+
+            <p>Html-voorbeeld:</p>
+            <pre>
+              <code>
+&lt;a href="http://example.com" target="_blank" rel="noopener">Lorem ipsum (pagina opent in een nieuw tabblad)&lt;/a>
+              </code>
+            </pre>
+
+            <p>Visueel voorbeeld naar externe pagina:</p>
+            <a href="http://example.com" target="_blank" rel="external noopener">Lorem ipsum (pagina opent in een nieuw tabblad)</a>
+
+            <p>Html-voorbeeld:</p>
+            <pre>
+              <code>
+&lt;a href="http://example.com" target="_blank" rel="external noopener">Lorem ipsum (pagina opent in een nieuw tabblad)&lt;/a>
+              </code>
+            </pre>
+          </div>
+        </article>
+      </div>
+
+      <a href="#main-nav" class="button to-top ro-icon ro-icon-to-top" title="Terug naar het hoofdmenu">Terug naar het hoofdmenu</a>
+    </main>
+    <footer>
+        <div>
+          <span>Manon - Rijksoverheid css framework</span>
+          <nav aria-labelledby="footer-nav-1-heading">
+            <h1 id="footer-nav-1-heading">Service</h1>
+            <ul>
+              <li><a href="../index.html">Over</a></li>
+              <li><a href="../test/index.html">Styling tests</a></li>
+              <li><a href="index.html">Online componenten bibliotheek</a></li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+  </body>
+</html>

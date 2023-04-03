@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <title>Hero-sectie - Rijksoverheid CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../static/css/main.css" rel="stylesheet">
+    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <script defer src="../../static/js/sidemenu.js"></script>
+  </head>
+  <body class="test-cases">
+    <header class="breadcrumbs">
+      <a href="#main-content" class="button focus-only">Ga direct naar inhoud</a>
+      <a href="" class="ro-logo">
+        <img src="../../static/img/ro-logo.svg" alt="Logo Rijksoverheid">
+        Rijksoverheid
+      </a>
+
+      <nav aria-label="Kruimelpad" id="main-nav">
+        <div>
+          <ul>
+              <li><a href="../index.html">Rijksoverheid CSS</a></li>
+              <li><a href="index.html">Online Componenten Bibliotheek</a></li>
+              <li><a href="#" aria-current="page">Hero-sectie</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+   <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+        <ul>
+          <li><a href="#">Hero-sectie</a></li>
+          <li><a href="#hero-photo">Hero coverfoto</a></li>
+          <li><a href="#hero-photo-content">Hero coverfoto met titel</a></li>
+          <li><a href="#hero-photo-content-grouped">Hero coverfoto met content</a></li>
+          <li><a href="#hero-photo-content-grouped-search">Hero coverfoto met content en zoekveld</a></li>
+          <li><a href="#hero-no-photo">Hero zonder coverfoto</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <article>
+          <div>
+            <h1>Hero-sectie</h1>
+            <p>De eye-catcher op de meeste pagina's. De hero-sectie kan gebruikt worden om de pagina in te leiden of om extra aandacht te vragen voor een sectie.</p>
+
+            <p>Aandachtspunten:</p>
+            <ul>
+              <li>De voorkeur gaat binnen de huisstijl uit naar het gebruik van foto's of visuele beelden binnen de hero-sectie. Een enkele foto, of een carrousel van foto's zijn beide geschikte opties.</li>
+              <li>De foto kan op zichzelf staan, of als coverfoto met titel, of als decoratieve achtergrond bij een toptakenblok.</li>
+              <li>Een headerfoto dient vaak als blikvanger op een webpagina en vormt een geheel met de menubalk en het Rijkslogo.</li>
+              <li>De hero kan ook gebruikt worden zonder beeldmateriaal. Dan heeft de hero-sectie een achtergrondkleur passend bij de gekozen applicatiekleur.</li>
+              <li>Coverfoto's kunnen in de hmtl gezet worden, dit is met name gebruikelijk als er gebruik gemaakt word van een cms-systeem. De coverfoto kan ook via de css toegevoegd worden, zie: <code>static/scss/hero.scss</code> voor meer informatie. De coverfoto via de css toevoegen is een goede optie wanneer er gebruik gemaakt wordt van een coverfoto die niet uit een cms-systeem komt.</li>
+              <li><strong>Toegankelijkheid:</strong>
+                <ul>
+                   <li>De hero-foto is meestal een decoratieve foto. Als de foto alleen visueel toegevoegde waarde heeft is deze voor gebruikers die gebruik maken van screenreaders niet relevant. Gebruik daarom bij een decoratieve foto een lege <code>alt=""</code>. Voeg de <code>alt=""</code> wel toe zodat screenreaders weten dat ze deze over kunnen slaan zonder een alternatief op te lezen. Voor meer informatie zie: <a href="https://www.w3.org/WAI/tutorials/images/decorative/" rel="external">W3.org decoratieve afbeeldingen</a>.</li>
+                </ul>
+              </li>
+            </ul>
+
+            <p>De hero-sectie kan verschillende combinaties aan content bevatten. Op basis van de content is er met het oog op gebruiksvriendelijkheid en bruikbaarheid een andere styling gewenst. Om de content goed weer te geven zijn de volgende opties mogelijk.</p>
+
+            <p>Beschikbare voorbeelden:</p>
+            <nav aria-label="Document-navigatie">
+              <ul>
+                <li><a href="#hero-photo">Hero coverfoto</a></li>
+                <li><a href="#hero-photo-content">Hero coverfoto met titel</a></li>
+                <li><a href="#hero-photo-content-grouped">Hero coverfoto met een contentblok</a></li>
+                <li><a href="#hero-photo-content-grouped-search">Hero coverfoto met een contentblok en zoekveld</a></li>
+                <li><a href="#hero-no-photo">Hero zonder coverfoto</a></li>
+              </ul>
+            </nav>
+          </div>
+        </article>
+
+        <!-- Hero section with an img but without content -->
+        <article id="hero-photo">
+          <div>
+            <h1>Hero coverfoto</h1>
+            <p>Een hero is te gebruiken als blikvanger met enkel een coverfoto, zonder overige content.</p>
+            <p>Visueel voorbeeld:</p>
+          </div>
+
+          <header>
+            <a href="" class="ro-logo">
+              <img src="../../static/img/ro-logo.svg" alt="Logo Rijksoverheid">
+              Rijksoverheid
+            </a>
+
+            <nav aria-label="Navigatie van header-voorbeeld">
+              <div>
+                <ul>
+                    <li><a href="" aria-current="page">Hoofdpagina</a></li>
+                    <li><a href="">Ipsum</a></li>
+                    <li><a href="">Dolor</a></li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+
+          <section class="hero">
+            <img src="../../static/img/cat.jpg" alt="">
+          </section>
+
+          <div>
+            <p>Html voorbeeld:</p>
+            <pre>
+              <code>
+&lt;section class="hero">
+  &lt;img src="" alt="">
+&lt;/section>
+              </code>
+            </pre>
+          </div>
+        </article>
+
+        <!-- Hero section with an img and title -->
+        <article id="hero-photo-content">
+          <div>
+            <h1>Hero coverfoto met titel</h1>
+            <p>Als de gewenste content alleen een titel bevat kan deze direct op de afbeelding weergegeven worden.</p>
+            <p>Aandachtspunten:</p>
+            <ul>
+              <li>Plaats de content binnen een <code>&lt;div></code> om gebruik te maken van de standaard pagina layout.</li>
+              <li>Toegankelijkheid:
+                <ul>
+                  <li>Om de leesbaarheid te vergroten wordt er een donkere overlay geplaatst onder de tekst als deze direct op de coverfoto staat. De overlay vergroot het contrast en komt zo de leesbaarheid ten goede.</li>
+                  <li>De tekst wordt links onderin uitgelijnt volgens het huisstijldocument. Op mobiel wordt de content onder de afbeelding geplaatst.</li>
+                  <li>Om de leesbaarheid van de tekst te vergroten heeft de tekst een maximale breedte.</li>
+                </ul>
+              </li>
+            </ul>
+            <p>Visueel voorbeeld:</p>
+          </div>
+
+          <header>
+            <a href="" class="ro-logo">
+              <img src="../../static/img/ro-logo.svg" alt="Logo Rijksoverheid">
+              Rijksoverheid
+            </a>
+
+            <nav aria-label="Navigatie van header-voorbeeld">
+              <div>
+                <ul>
+                    <li><a href="" aria-current="page">Hoofdpagina</a></li>
+                    <li><a href="">Ipsum</a></li>
+                    <li><a href="">Dolor</a></li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+
+          <section class="hero">
+            <img src="../../static/img/cat.jpg" alt="">
+            <div>
+              <h1>Lorem ipsum dolor set</h1>
+            </div>
+          </section>
+
+          <div>
+            <p>Html voorbeeld:</p>
+            <pre>
+              <code>
+&lt;section class="hero">
+  &lt;img src="" alt="">
+  &lt;div>
+    &lt;h1>Lorem ipsum dolor set&lt;/h1>
+  &lt;/div>
+&lt;/section>
+              </code>
+            </pre>
+          </div>
+        </article>
+
+        <!-- Hero section with an img and content -->
+        <article id="hero-photo-content-grouped">
+          <div>
+            <h1>Hero coverfoto met content</h1>
+            <p>Het tonen van content, anders dan alleen een titel, op een coverfoto</p>
+
+            <p>Aandachtspunten:</p>
+            
+            <ul>
+              <li>Plaats alle content direct binnen de hero in een <code>&lt;div></code> om gebruik te maken van de standaard pagina layout. Dit zorgt ervoor dat de content uitlijnt met de rest van de pagina-content.</li>
+              <li><strong>Let op:</strong> Content anders dan een titel kan het beste met een tegelweergave getoont worden. De witte achtergrond van de tegelweergave vergroot de leesbaarheid. Voor meer informatie zie: <a href="tiles.html">tegelweergave</a>. Groepeer alle content die op de coverfoto komt te staan binnen een <code>&lt;div></code> met een class <code>tile</code> voor de tegelweergave met een witte achtergrond.</li>
+            </ul>
+            <p>Visueel voorbeeld:</p>
+          </div>
+
+          <header>
+            <a href="" class="ro-logo">
+              <img src="../../static/img/ro-logo.svg" alt="Logo Rijksoverheid">
+              Rijksoverheid
+            </a>
+
+            <nav aria-label="Navigatie van header-voorbeeld">
+              <div>
+                <ul>
+                    <li><a href="" aria-current="page">Hoofdpagina</a></li>
+                    <li><a href="">Ipsum</a></li>
+                    <li><a href="">Dolor</a></li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+
+          <section class="hero">
+            <img src="../../static/img/cat.jpg" alt="">
+            <div class="one-third-two-thirds">
+              <div class="tile">
+                <h1>Lorem ipsum dolor set</h1>
+                <nav aria-label="Navigatie binnen hero voorbeeld">
+                  <ul>
+                    <li><a href="">Lorem ipsum</a></li>
+                    <li><a href="">Dolor sit amet</a></li>
+                    <li><a href="">Consectetur</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </section>
+
+          <div>
+            <p>Html voorbeeld:</p>
+            <pre>
+              <code>
+&lt;section class="hero">
+  &lt;img src="static/img/cat.jpg" alt="">
+  &lt;div class="one-third-two-thirds">
+
+    &lt;div class="tile">
+      &lt;h1>Lorem ipsum dolor set&lt;/h1>
+      &lt;nav>
+        &lt;ul>
+          &lt;li>&lt;a href="">Lorem ipsum&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="">Dolor sit amet&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="">Consectetur&lt;/a>&lt;/li>
+        &lt;/ul>
+      &lt;/nav>
+    &lt;/div>
+    
+  &lt;/div>
+&lt;/section>
+              </code>
+            </pre>
+          </div>
+        </article>
+
+        <!-- Hero section with an img and content including a search -->
+        <article id="hero-photo-content-grouped-search">
+          <div>
+            <h1>Hero coverfoto met content en zoekveld</h1>
+
+            <p>Aandachtspunten:</p>
+
+            <ul>
+              <li>Plaats alle content direct binnen de hero in een <code>&lt;div></code> om gebruik te maken van de standaard pagina layout. Dit zorgt ervoor dat de content uitlijnt met de rest van de pagina-content.</li>
+              <li><strong>Let op:</strong> Content anders dan een titel kan het beste met een tegelweergave getoont worden. De witte achtergrond van de tegelweergave vergroot de leesbaarheid. Voor meer informatie zie: <a href="tiles.html">tegelweergave</a>. Groepeer alle content die op de coverfoto komt te staan binnen een <code>&lt;div></code> met een class <code>tile</code> voor de tegelweergave met een witte achtergrond.</li>
+            </ul>
+            <p>Visueel voorbeeld:</p>
+          </div>
+
+          <header>
+            <a href="" class="ro-logo">
+              <img src="../../static/img/ro-logo.svg" alt="Logo Rijksoverheid">
+              Rijksoverheid
+            </a>
+
+            <nav aria-label="Navigatie van header-voorbeeld">
+              <div>
+                <ul>
+                    <li><a href="" aria-current="page">Hoofdpagina</a></li>
+                    <li><a href="">Ipsum</a></li>
+                    <li><a href="">Dolor</a></li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+
+          <section class="hero">
+            <img src="../../static/img/cat.jpg" alt="">
+            <div class="one-third-two-thirds">
+
+              <div class="tile">
+                <h1>Lorem ipsum dolor set</h1>
+                <nav aria-label="Navigatie binnen voorbeeld">
+                  <ul>
+                    <li><a href="">Lorem ipsum</a></li>
+                    <li><a href="">Dolor sit amet</a></li>
+                    <li><a href="">Consectetur</a></li>
+                  </ul>
+                </nav>
+              </div>
+
+              <!-- placeholder search element, should be replaced when possible -->
+              <form class="search">
+                <input type="text" placeholder="Zoeken">
+                <button type="submit">Zoeken</button>
+              </form>
+
+            </div>
+          </section>
+
+          <div>
+            <p>Html voorbeeld:</p>
+            <pre>
+              <code>
+&lt;section class="hero">
+  &lt;img src="static/img/cat.jpg" alt="">
+  &lt;div class="one-third-two-thirds">
+
+    &lt;div class="tile">
+      &lt;h1>Lorem ipsum dolor set&lt;/h1>
+      &lt;nav>
+        &lt;ul>
+          &lt;li>&lt;a href="">Lorem ipsum&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="">Dolor sit amet&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="">Consectetur&lt;/a>&lt;/li>
+        &lt;/ul>
+      &lt;/nav>
+    &lt;/div>
+
+    &lt;!-- placeholder search element, should be replaced when possible -->
+    &lt;form class="search">
+      &lt;input type="text" placeholder="Zoeken">
+      &lt;button type="submit">Zoeken&lt;/button>
+    &lt;/form>
+
+  &lt;/div>
+&lt;/section>
+              </code>
+            </pre>
+          </div>
+        </article>
+
+
+        <!-- Hero section without an img -->
+        <article id="hero-no-photo">
+          <div>
+            <h1>Hero zonder coverfoto</h1>
+            <p>Indien er geen foto beschikbaar is.</p>
+
+            <ul>
+              <li>Als een hero-sectie geen afbeelding heeft vult deze zich automatisch met een achtergrondkleur passend bij de gekozen applicatiekleur die aansluit bij de huisstijl.</li>
+              <li>De uitlijning van de content verplaatst zich naar links bovenin omdat er geen rekening gehouden dient te worden met een achterliggende afbeelding.</li>
+              <li>Gebruik voor de overige contentweergave de weergave zoals beschreven in de voorbeelden met hero-afbeelding.</li>
+            </ul>
+            <p>Visueel voorbeeld:</p>
+          </div>
+
+          <header>
+            <a href="" class="ro-logo">
+              <img src="../../static/img/ro-logo.svg" alt="Logo Rijksoverheid">
+              Rijksoverheid
+            </a>
+
+            <nav aria-label="Navigatie van header-voorbeeld">
+              <div class="one-third-two-thirds">
+                <ul>
+                    <li><a href="" aria-current="page">Hoofdpagina</a></li>
+                    <li><a href="">Ipsum</a></li>
+                    <li><a href="">Dolor</a></li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+
+          <section class="hero">
+            <div>
+              <h1>Lorem ipsum dolor set</h1>
+            </div>
+          </section>
+
+          <div>
+            <p>Html voorbeeld:</p>
+            <pre>
+              <code>
+&lt;section class="hero">
+  &lt;div class="one-third-two-thirds">
+    &lt;h1>Lorem ipsum dolor set&lt;/h1>
+  &lt;/div>
+&lt;/section>
+              </code>
+            </pre>
+          </div>
+        </article>
+
+      </div>
+      
+      <a href="#main-nav" class="button to-top ro-icon ro-icon-to-top" title="Terug naar het hoofdmenu">Terug naar het hoofdmenu</a>
+    </main>
+
+    <footer>
+      <div>
+        <span>Manon - Rijksoverheid css framework</span>
+        <nav aria-labelledby="footer-nav-1-heading">
+          <h1 id="fotoer-nav-1-heading">Service</h1>
+          <ul>
+            <li><a href="../index.html">Over</a></li>
+            <li><a href="../test/index.html">Styling tests</a></li>
+            <li><a href="index.html">Online componenten bibliotheek</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

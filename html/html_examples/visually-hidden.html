@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <title>visually-hidden - Rijksoverheid CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../static/css/main.css" rel="stylesheet">
+    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <script defer src="../../static/js/sidemenu.js"></script>
+  </head>
+  <body class="test-cases">
+    <header class="breadcrumbs">
+      <a href="#main-content" class="button focus-only">Ga direct naar inhoud</a>
+      <a href="" class="ro-logo">
+        <img src="../../static/img/ro-logo.svg" alt="Logo Rijksoverheid">
+        Rijksoverheid
+      </a>
+      
+      <nav aria-label="Kruimelpad" id="main-nav">
+        <div>
+          <ul>
+              <li><a href="../index.html">Rijksoverheid CSS</a></li>
+              <li><a href="index.html">Online Componenten Bibliotheek</a></li>
+              <li><a href="#" aria-current="page">visually-hidden</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+        <ul>
+          <li><a href="nowrap.html">Introductie</a></li>
+          <li><a href="#examples">Voorbeelden</a>
+              <ul>
+                <li><a href="#nowrap-p">Paragraaf</a></li>
+              </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <div>
+          <article id="introduction">
+            <div>
+              <h1>Object visueel verbergen - <dfn>visually-hidden</dfn></h1>
+              <p>Object enkel visueel verbergen.</p>
+              <p><strong>Let op:</strong> De content wordt nu alleen visueel verborgen. Screenreaders zullen in veel gevallen de content nog wel voorlezen. Is het de bedoeling om de content ook voor screenreader gebruikers te verbergen gebruik dan de helper-class <a href="hidden.html">hidden</a>.</p>
+
+              <h2>Benodigde stappen:</h2>
+              <ol>
+                <li>Voeg de class <code>visually-hidden</code> toe aan het gewenste element.</li>
+              </ol>
+            </div>
+          </article>
+          
+          <article id="examples">
+            <div>
+              <h1>Voorbeelden</h1>
+              <p>Onderstaand voorbeeld bevat twee paragrafen waarvan er een visueel verborgen wordt.</p>
+
+              <div>
+                <p class="visually-hidden">Voorbeeld paragraaf 1.</p>
+                <p>Voorbeeld paragraaf 2.</p>
+              </div>
+
+              <h2>Html-voorbeeld:</h2>
+              <pre>
+                <code>
+&lt;div>
+  &lt;p class="visually-hidden">Voorbeeld paragraaf 1.&lt;/p>
+  &lt;p>Voorbeeld paragraaf 2.&lt;/p>
+&lt;/div>
+                </code>
+              </pre>
+            </div>
+          </article>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+          <span>Manon - Rijksoverheid css framework</span>
+          <nav aria-labelledby="footer-nav-1-heading">
+            <h1 id="footer-nav-1-heading">Service</h1>
+            <ul>
+              <li><a href="../index.html">Over</a></li>
+              <li><a href="../test/index.html">Styling tests</a></li>
+              <li><a href="index.html">Online componenten bibliotheek</a></li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+  </body>
+</html>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <title>Iconen basisset - Rijksoverheid CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../static/css/manon-dev.css" rel="stylesheet">
+    <link href="../../../static/img/favicon.ico" rel="shortcut icon">
+    <script defer src="../../static/js/sidemenu.js"></script>
+  </head>
+  <body class="test-cases">
+    <header class="breadcrumbs">
+      <a href="#main-content" class="button focus-only">Ga direct naar inhoud</a>
+      <a href="" class="ro-logo">
+        <img src="../../../static/img/ro-logo.svg" alt="Logo Rijksoverheid" />
+        Rijksoverheid
+      </a>
+      
+      <nav aria-label="Kruimelpad" id="main-nav">
+        <div>
+          <ul>
+              <li><a href="../../index.html">Rijksoverheid CSS</a></li>
+              <li><a href="../index.html">Online Componenten Bibliotheek</a></li>
+              <li><a href="../icons.html">Iconen</a></li>
+              <li><a href="#" aria-current="page">Iconen basisset</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    </header>
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+        <ul>
+            <li><a href="#">Iconen basisset</a></li>
+            <li><a href="#icon-implementation">Iconen gebruiken</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <article>
+            <div>
+              <h1>Iconen basisset</h1>
+              <p>Voor het toevoegen van de Rijksoverheid-iconen binnen de website kan gebruikt gemaakt worden van de unicode-codes.</p>
+
+              <h2 id="icon-implementation">Iconen gebruiken</h2>
+              <p>Voeg de class <code>ro-icon</code> om gebruik te maken van de standaard icon-styling, en de class van het benodigde icoon, bijvoorbeeld: <code>ro-icon-home</code>.</p>
+
+              <p>Html-voorbeeld:</p>
+
+              <pre>
+                <code>
+&lt;p class="ro-icon ro-icon-home">Lorem ipsum&lt;/p>
+                </code>
+              </pre>
+
+              <p>Overzicht van de beschikbare iconen:</p>
+              
+              <div class="horizontal-scroll">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Voorbeeld</th>
+                      <th>Code</th>
+                      <th>css class</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                      <td><span class="ro-icon ro-icon-ascending"></span></td>
+                      <td>"\E801"</td>
+                      <td>ro-icon-ascending</td>
+                    </tr>
+
+                     <tr>
+                      <td><span class="ro-icon ro-icon-descending"></span></td>
+                      <td>"\E802"</td>
+                      <td>ro-icon-descending</td>
+                    </tr>
+
+                     <tr>
+                      <td><span class="ro-icon ro-icon-sort"></span></td>
+                      <td>"\E803"</td>
+                      <td>ro-icon-sort</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-check"></span></td>
+                      <td>"\E804"</td>
+                      <td>ro-icon-check</td>
+                    </tr>
+                    
+                    <tr>
+                      <td><span class="ro-icon ro-icon-home"></span></td>
+                      <td>"\E805"</td>
+                      <td>ro-icon-home</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-pinterest"></span></td>
+                      <td>"\E806"</td>
+                      <td>ro-icon-pinterest</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-twitter-inverse"></span></td>
+                      <td>"\E807"</td>
+                      <td>ro-icon-twitter-inverse</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-twitter"></span></td>
+                      <td>"\E808"</td>
+                      <td>ro-icon-twitter</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-flickr"></span></td>
+                      <td>"\E809"</td>
+                      <td>ro-icon-flickr</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-youtube"></span></td>
+                      <td>"\E80A"</td>
+                      <td>ro-icon-youtube</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-instagram"></span></td>
+                      <td>"\E80B"</td>
+                      <td>ro-icon-instagram</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-facebook"></span></td>
+                      <td>"\E80C"</td>
+                      <td>ro-icon-facebook</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-chevron-light-right"></span></td>
+                      <td>"\E80D"</td>
+                      <td>ro-icon-chevron-light-right</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-chevron-light-left"></span></td>
+                      <td>"\E80E"</td>
+                      <td>ro-icon-chevron-light-left</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-chevron-light-top"></span></td>
+                      <td>"\E80F"</td>
+                      <td>ro-icon-chevron-light-top</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-chevron-light-bottom"></span></td>
+                      <td>"\E810"</td>
+                      <td>ro-icon-chevron-light-bottom</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-chevron-left"></span></td>
+                      <td>"\E811"</td>
+                      <td>ro-icon-chevron-left</td>
+                    </tr>
+
+                     <tr>
+                      <td><span class="ro-icon ro-icon-hamburger"></span></td>
+                      <td>"\E812"</td>
+                      <td>ro-icon-hamburger</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-chevron-right"></span></td>
+                      <td>"\E813"</td>
+                      <td>ro-icon-chevron-right</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-questionmark"></span></td>
+                      <td>"\E814"</td>
+                      <td>ro-icon-questionmark</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-speech"></span></td>
+                      <td>"\E815"</td>
+                      <td>ro-icon-speech</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-arrow-down"></span></td>
+                      <td>"\E816"</td>
+                      <td>ro-icon-arrow-down</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-arrow-up"></span></td>
+                      <td>"\E817"</td>
+                      <td>ro-icon-arrow-up</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-arrow-right"></span></td>
+                      <td>"\E818"</td>
+                      <td>ro-icon-arrow-right</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-arrow-left"></span></td>
+                      <td>"\E819"</td>
+                      <td>ro-icon-arrow-left</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-map"></span></td>
+                      <td>"\E81A"</td>
+                      <td>ro-icon-map</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-outgoing"></span></td>
+                      <td>"\E81B"</td>
+                      <td>ro-icon-outgoing</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-pause"></span></td>
+                      <td>"\E81C"</td>
+                      <td>ro-icon-pause</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-trash"></span></td>
+                      <td>"\E81D"</td>
+                      <td>ro-icon-trash</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-user"></span></td>
+                      <td>"\E81E"</td>
+                      <td>ro-icon-user</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-chevron-up"></span></td>
+                      <td>"\E81F"</td>
+                      <td>ro-icon-chevron-up</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-chevron-down"></span></td>
+                      <td>"\E820"</td>
+                      <td>ro-icon-chevron-down</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-plus"></span></td>
+                      <td>"\E821"</td>
+                      <td>ro-icon-plus</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-calendar"></span></td>
+                      <td>"\E822"</td>
+                      <td>ro-icon-calendar</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-download"></span></td>
+                      <td>"\E823"</td>
+                      <td>ro-icon-download</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-heart"></span></td>
+                      <td>"\E824"</td>
+                      <td>ro-icon-heart</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-letter"></span></td>
+                      <td>"\E825"</td>
+                      <td>ro-icon-letter</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-reset"></span></td>
+                      <td>"\E826"</td>
+                      <td>ro-icon-reset</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-play"></span></td>
+                      <td>"\E827"</td>
+                      <td>ro-icon-play</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-search"></span></td>
+                      <td>"\E828"</td>
+                      <td>ro-icon-search</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-clock"></span></td>
+                      <td>"\E829"</td>
+                      <td>ro-icon-clock</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-close"></span></td>
+                      <td>"\E82B"</td>
+                      <td>ro-icon-close</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-line"></span></td>
+                      <td>"\E82C"</td>
+                      <td>ro-icon-line</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-smartphone"></span></td>
+                      <td>"\E900"</td>
+                      <td>ro-icon-smartphone</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-lock-closed"></span></td>
+                      <td>"\E901"</td>
+                      <td>ro-icon-lock-closed</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-on-off"></span></td>
+                      <td>"\E902"</td>
+                      <td>ro-icon-on-off</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-to-top"></span></td>
+                      <td>"\E903"</td>
+                      <td>ro-icon-to-top</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-grid"></span></td>
+                      <td>"\EAC2"</td>
+                      <td>ro-icon-grid</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-list"></span></td>
+                      <td>"\EAC3"</td>
+                      <td>ro-icon-list</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-csv-file"></span></td>
+                      <td>"\EAC4"</td>
+                      <td>ro-icon-csv-file</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-html-file"></span></td>
+                      <td>"\EAC5"</td>
+                      <td>ro-icon-html-file</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-pdf-file"></span></td>
+                      <td>"\EAC6"</td>
+                      <td>ro-icon-pdf-file</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-document"></span></td>
+                      <td>"\EAC7"</td>
+                      <td>ro-icon-document</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-bar-graph"></span></td>
+                      <td>"\EAC8"</td>
+                      <td>ro-icon-bar-graph</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-tree-graph"></span></td>
+                      <td>"\EAC9"</td>
+                      <td>ro-icon-tree-graph</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-grid-view"></span></td>
+                      <td>"\EACA"</td>
+                      <td>ro-icon-grid-view</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="ro-icon ro-icon-list-view"></span></td>
+                      <td>"\EACB"</td>
+                      <td>ro-icon-list-view</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+        </article>
+      </div>
+
+      <a href="#main-nav" class="button to-top ro-icon ro-icon-to-top" title="Terug naar het hoofdmenu">Terug naar het hoofdmenu</a>
+    </main>
+
+    <footer>
+        <div>
+          <span>Manon - Rijksoverheid css framework</span>
+          <nav aria-labelledby="footer-nav-1-heading">
+            <h1 id="footer-nav-1-heading">Service</h1>
+            <ul>
+              <li><a href="../index.html">Over</a></li>
+              <li><a href="../test/index.html">Styling tests</a></li>
+              <li><a href="index.html">Online componenten bibliotheek</a></li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+  </body>
+</html>
