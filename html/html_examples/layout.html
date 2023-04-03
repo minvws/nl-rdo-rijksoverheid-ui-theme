@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <title>Contentweergave - Rijksoverheid CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../static/css/main.css" rel="stylesheet">
+    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <script defer src="../../static/js/sidemenu.js"></script>
+  </head>
+  <body class="test-cases">
+    <header class="breadcrumbs">
+      <a href="#main-content" class="button focus-only">Ga direct naar inhoud</a>
+      <a href="" class="ro-logo">
+        <img src="../../static/img/ro-logo.svg" alt="Logo Rijksoverheid">
+        Rijksoverheid
+      </a>
+      
+      <nav aria-label="Kruimelpad" id="main-nav">
+        <div>
+          <ul>
+              <li><a href="../index.html">Rijksoverheid CSS</a></li>
+              <li><a href="index.html">Online Componenten Bibliotheek</a></li>
+              <li><a href="#" aria-current="page">Contentweergave</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+        <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+            <ul>
+                <li><a href="#">Contentweergave</a></li>
+                <li><a href="#default-layout">Standaard weergave</a></li>
+                <li><a href="#additional-layouts">Extra weergaven</a>
+                    <ul>
+                        <li><a href="#article">article</a></li>
+                        <li><a href="#auth">auth</a></li>
+                        <li><a href="#form-view">form-view</a></li>
+                        <li><a href="#column-2">column-2</a></li>
+                        <li><a href="#column-3">column-3</a></li>
+                        <li><a href="#column-4">column-4</a></li>
+                        <li><a href="#one-third-two-thirds">Eenderde, tweederde verdeling</a></li>
+                        <li><a href="#two-thirds-one-third">Tweederde, eenderde verdeling</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div>
+            <article>
+                <div>
+                    <h1>Contentweergave</h1>
+                    <p>Om informatie op een prettige manier weer te geven is het belangrijk om een goed passende pagina-indeling te hanteren. Binnen de huisstijl van de Rijksoverheid zijn verschillende layouts beschikbaar.</p>
+
+                    <nav aria-label="Document-navigatie">
+                        <ul>
+                            <li><a href="#default-layout">Standaard weergave</a></li>
+                            <li><a href="#additional-layouts">Extra weergaven</a>
+                                <ul>
+                                    <li><a href="#article">article</a></li>
+                                    <li><a href="#auth">auth</a></li>
+                                    <li><a href="#form-view">form-view</a></li>
+                                    <li><a href="#column-2">column-2</a></li>
+                                    <li><a href="#column-3">column-3</a></li>
+                                    <li><a href="#column-4">column-4</a></li>
+                                    <li><a href="#one-third-two-thirds">Eenderde, tweederde verdeling</a></li>
+                                    <li><a href="#two-thirds-one-third">Tweederde, eenderde verdeling</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </article>
+
+            <article id="default-layout">
+                <div>
+                    <h1>Standaard weergave</h1>
+                    <p>Alle online weergegeven content voor de Overheid heeft een maximale breedte. Deze is belangrijk voor leesbaarheid van teksten. Als tekst te breed weergegeven wordt is het lastiger voor mensen om de teksten goed te kunnen lezen. voeg de onderstaande html structuur toe om gebruik te maken van deze standaard weergave.</p>
+
+                    <h2>Standaard weergave gebruiken:</h2>
+                    <ul>
+                        <li>Maak gebruik van secties <code>&lt;section></code> om onderscheid aan te brengen tussen de verschillende secties op de pagina.</li>
+                        <li>Gebruik <code>&lt;article></code> op artikelen. Denk hierbij aan nieuwsberichten, informatiepagina's en tekstpagina's. Voor meer informatie over wanneer een article-tag gewenst is zie: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article" rel="external">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article</a></li>
+                        <li>Om de content qua breedte te limiteren maar de achtergrondkleur door te laten lopen over de volledig breedte is het nodig om een content container toe te voegen. Gebruik hiervoor: <code>&lt;div></code> direct binnen een sectie of een article.</li>
+                    </ul>
+
+                    <h3>Html-voorbeeld:</h3>
+                    <p>section:</p>
+                    <pre>
+                        <code>
+    &lt;section>
+        &lt;div>
+            &lt;!-- Voeg hier de content toe. -->
+        &lt;/div>
+    &lt;/section>
+                        </code>
+                    </pre>
+                    <p>Article:</p>
+                    <pre>
+                        <code>
+    &lt;article>
+        &lt;div>
+            &lt;!-- Voeg hier de content toe. -->
+        &lt;/div>
+    &lt;/article>
+                        </code>
+                    </pre>
+                </div>
+            </article>
+
+            <article id="additional-layouts">
+                <div>
+                    <h1>overige weergaven</h1>
+                    <p>Sommige content is makkelijker te consumeren voor gebruikers in een aangepastte layout. Voor deze uitzonderingen zijn verschillende layout-opties beschikbaar.</p>
+
+                    <p>Beschikbare layout varianten:</p>
+                    <nav aria-label="Overige weergaven subnavigatie">
+                        <ul>
+                            <li><a href="#article">article</a></li>
+                            <li><a href="#auth">auth</a></li>
+                            <li><a href="#form-view">form-view</a></li>
+                            <li><a href="#column-2">column-2</a></li>
+                            <li><a href="#column-3">column-3</a></li>
+                            <li><a href="#column-4">column-4</a></li>
+                            <li><a href="#one-third-two-thirds">Eenderde, tweederde verdeling</a></li>
+                            <li><a href="two-thirds-one-third">Tweederde, eenderde verdeling</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </article>
+
+            <article id="article">
+                <div>
+                    <h1>Tekstpagina's & artikelen</h1>
+                    <p>Tekstpagina's, informatiepagina's, nieuwsartikelen etc zijn pagina's met veel tekst. Voor leesbaarheid van deze tekst is het belangrijk dat de regels niet te breed weergeven worden. Daarom wordt de content op tekstpagina's smaller weergegeven dan de standaard pagina breedte.</p>
+
+                    <p>Om tekstpagina's en artikelen gebruiksvriendelijk weer te geven, gebruik <code>&lt;article></code>.</p>
+
+                    <p>Visueel voorbeeld:</p>
+                </div>
+            </article>
+
+            <article class="background-color-offset">
+                <div>
+                    <div>
+                        <h1>Artikel weergave voorbeeld</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div>
+                        <h1>Lorem ipsum</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div>
+                    <p>Html-voorbeeld:</p>
+
+                    <pre>
+                        <code>
+    &lt;article>
+        &lt;div>
+            &lt;!-- Voeg hier de content toe. -->
+        &lt;/div>
+    &lt;/article>
+                        </code>
+                    </pre>
+                </div>
+            </article>
+
+            <article id="auth">
+                <div>
+                    <h1>Authenticatie-pagina's</h1>
+                    <p>Pagina's in het authenticatieproces voelen het prettigst op een smalle breedte. Denk bijvoorbeeld aan, inloggen, nieuw wachtwoord aanvragen of het invoeren van en two-factor-code.</p>
+
+                    <p>Om tekstpagina's en artikelen gebruiksvriendelijk weer te geven, gebruik de class <code>auth</code> op de bijbehorende sectie.</p>
+
+                    <p>Visueel voorbeeld:</p>
+                </div>
+                <section class="auth background-color-offset">
+                    <div>
+                      <h1>Authentication view</h1>
+
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <p>Nam eleifend luctus nunc eu vulputate. Mauris congue laoreet diam vitae molestie. Integer varius at tortor at cursus.</p>
+
+                      <form>
+                        <div>
+                          <label for="form1-name-1">User name</label>
+                          <input type="text" id="form1-name-1">
+                        </div>
+                        <div>
+                          <label for="form1-password-1">Password</label>
+                          <input type="password" id="form1-password-1">
+                        </div>
+                        <button type="submit">Lorem ipsum</button>
+                      </form>
+                    </div>
+                </section>
+
+                <div>
+                      <p>Html voorbeeld:</p>
+
+                    <pre>
+                        <code>
+    &lt;section class="auth">
+        &lt;div>
+            &lt;!-- Voeg hier de content toe. -->
+        &lt;/div>
+    &lt;/section>
+                        </code>
+                    </pre>
+                </div>
+            </article>
+
+            <article id="form-view">
+                <div>
+                    <h1>Formulier-pagina's</h1>
+                    <p>Pagina's die als hoofdfunctie een formulier hebben worden het beste smaller weergegeven dan een standaard-pagina of tekstpagina.</p>
+
+                    <p>Om tekstpagina's en artikelen gebruiksvriendelijk weer te geven, gebruik de class <code>form-view</code> op de bijbehorende sectie.</p>
+
+                    <p>Visueel voorbeeld:</p>
+                </div>
+                <section class="form-view background-color-offset">
+                    <div>
+                      <h1>Form view</h1>
+                      <form>
+                        <div>
+                          <label for="form1_name">User name</label>
+                          <input type="text" id="form1_name">
+                        </div>
+                        <div>
+                            <label for="form1_password">Password</label>
+                            <div>
+                                <p class="warning"><span>Waarschuwing:</span> Don't share your password with anybody!</p>
+                                <input type="password" id="form1_password">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="form1_email">Email</label>
+                            <input type="email" id="form1_email" placeholder="example@email.com">
+                        </div>
+                        <div>
+                            <label for="form1_options">Options</label>
+                            <select id="form1_options">
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="form1_message">Message</label>
+                            <textarea id="form1_message"></textarea>
+                        </div>
+                        <button type="submit">Lorem ipsum</button>
+                      </form>
+                    </div>
+                </section>
+
+                <div>
+                    <p>Html voorbeeld:</p>
+
+                    <pre>
+                        <code>
+    &lt;section class="form-view">
+    &lt;div>
+        &lt;!-- Voeg hier de content toe. -->
+    &lt;/div>
+    &lt;/section>
+                        </code>
+                    </pre>
+                </div>
+            </article>
+
+            <article id="column-2">
+                <div>
+                    <h1>Elementen-lijst twee kolommen</h1>
+                    <p>Opsommingen van elementen zoals: Nieuwsberichten, artikelen, onderwerpen of overige opsommingen kunnen in kolommen weergegeven worden. Op basis van de content kan gekozen worden voor een layout met twee, drie of vier kolommen.</p>
+
+                    <p>Om opsommingen gebruiksvriendelijk weer te geven in twee kolommen gebruik de class <code>column-2</code> op het element wat kolommen dient weer te geven.</p>
+
+                    <p>Visueel voorbeeld:</p>
+                </div>
+                <section class="background-color-offset">
+                    <div class="column-2">
+
+                      <div>
+                        <h1>Lorem ipsum</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      </div>
+
+                      <div>
+                        <h1>Lorem ipsum</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      </div>
+
+                    </div>
+                </section>
+
+                <div>
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+    &lt;section>
+        &lt;div class="column-2">
+            &lt;!-- Voeg hier de content toe. -->
+        &lt;/div>
+    &lt;/section>
+                        </code>
+                    </pre>
+
+                    <p>Visueel voorbeeld losse elementen:</p>
+                    <p>Content direct binnen het element met de class <code>column-2</code> wordt in twee kolommen geplaatst.</p>
+                </div>
+
+                <section class="background-color-offset">
+                    <div class="column-2">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </section>
+                <div>
+                    <p>Html voorbeeld losse elementen:</p>
+                    
+                    <pre>
+                        <code>
+    &lt;section>
+        &lt;div class="column-2">
+            &lt;p>Lorem ipsum&lt;/p>
+            &lt;p>Lorem ipsum&lt;/p>
+        &lt;/div>
+    &lt;/section>
+                        </code>
+                    </pre>
+
+                    <p>Visueel voorbeeld gegroepeerde elementen:</p>
+                </div>
+
+                <section class="background-color-offset">
+                    <div class="column-2">
+
+                      <div>
+                        <h1>Lorem ipsum</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      </div>
+
+                      <div>
+                        <h1>Lorem ipsum</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      </div>
+
+                    </div>
+                </section>
+                <div>
+                    <p>Html voorbeeld gegroepeerde elementen:</p>
+                    <p>Content kan gegroepeerd worden binnen de kolommen. Groepeer hiervoor de content in een <code>&lt;div></code>.</p>
+                    <pre>
+                        <code>
+    &lt;section>
+        &lt;div class="column-2">
+
+            &lt;div>
+                &lt;h1>Lorem&lt;/h1>
+                &lt;p>Lorem ipsum&lt;/p>
+            &lt;/div>
+
+            &lt;div>
+                &lt;h1>Lorem&lt;/h1>
+                &lt;p>Lorem ipsum&lt;/p>
+            &lt;/div>
+
+        &lt;/div>
+    &lt;/section>
+                        </code>
+                    </pre>
+                </div>
+            </article>
+
+            <article id="column-3">
+                <div>
+                    <h1>Elementen-lijst drie kolommen</h1>
+                    <p>Om opsommingen gebruiksvriendelijk weer te geven in drie kolommen gebruik de class <code>column-3</code> op de bijbehorende sectie.</p>
+
+                    <p>Visueel voorbeeld:</p>
+                </div>
+                <section class="background-color-offset">
+                    <div class="column-3">
+                      <div>
+                        <h1>Lorem ipsum</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                      <div>
+                        <h1>Lorem ipsum</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                      <div>
+                        <h1>Lorem ipsum</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                      <div>
+                        <h1>Lorem ipsum</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                      <div>
+                        <h1>Lorem ipsum</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                      <div>
+                        <h1>Lorem ipsum</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                    </div>
+                </section>
+                <div>       
+                    <p>Html voorbeeld:</p>
+
+                    <pre>
+                        <code>
+    &lt;section>
+        &lt;div class="column-3">
+            &lt;!-- Voeg hier de content toe. -->
+        &lt;/div>
+    &lt;/section>
+                        </code>
+                    </pre>
+                </div>
+            </article>
+
+            <article id="column-4">
+                <div>
+                    <h1>Elementen-lijst 4 kolommen</h1>
+                    <p>Opsommingen van elementen zoals: Nieuwsberichten, artikelen, onderwerpen of overige opsommingen kunnen in kolommen weergegeven worden. Op basis van de content kan gekozen worden voor een layout met twee, drie of vier kolommen.</p>
+
+                    <p>Om opsommingen gebruiksvriendelijk weer te geven gebruik de class <code>column-4</code> op de bijbehorende sectie.</p>
+
+                    <p>Visueel voorbeeld:</p>
+                </div>
+
+                <section class="background-color-offset">
+                    <div class="column-4">
+                      <div>
+                        <h1>Lorem ipsum</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                      <div>
+                        <h1>Lorem ipsum</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                      <div>
+                        <h1>Lorem ipsum</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                      <div>
+                        <h1>Lorem ipsum</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                    </div>
+                </section>
+
+                <div>
+                    <p>Html voorbeeld:</p>
+
+                    <pre>
+                        <code>
+    &lt;section>
+        &lt;div class="column-4">
+            &lt;!-- Voeg hier de content toe. -->
+        &lt;/div>
+    &lt;/section>
+                        </code>
+                    </pre>
+                </div>
+            </article>
+
+            <article id="one-third-two-thirds">
+                <div>
+                    <h1>Eenderde-, tweederde-verdeling</h1>
+                    <p>Soms is een deel van de content belangrijker dan de rest. In dat geval kan er gebruik gemaakt worden van een een-derde - twee-derde-verdeling.</p>
+
+                    <p>Aandachtspunten:</p>
+                    <ul>
+                        <li>Om gebruik te maken van deze layout, gebruik de class <code>showcase</code> op de bijbehorende sectie.</li>
+                        <li>Deze contentweergave verwacht twee elementen om de ruimte over te verdelen.</li>
+                    </ul>
+
+                    <p>Visueel voorbeeld:</p>
+                </div>
+                <section class="one-third-two-thirds background-color-offset">
+                    <div>
+                      <div>
+                        <h1>Lorem ipsum</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <ul>
+                          <li>Lorem ipsum dolor set amet</li>
+                          <li>Lorem ipsum dolor set amet</li>
+                          <li>Lorem ipsum dolor set amet</li>
+                          <li>Lorem ipsum dolor set amet</li>
+                        </ul>
+                        <button type="button">Lorem ipsum</button>
+                      </div>
+                      <div>
+                        <h1>Lorem ipsum</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                    </div>
+                </section>
+                <div>
+                    <p>Html voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;section class="one-third-two-thirds background-color-offset">
+    &lt;div>
+      &lt;div>
+        &lt;h1>Lorem ipsum&lt;/h1>
+        &lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p>
+        &lt;ul>
+          &lt;li>Lorem ipsum dolor set amet&lt;/li>
+          &lt;li>Lorem ipsum dolor set amet&lt;/li>
+          &lt;li>Lorem ipsum dolor set amet&lt;/li>
+          &lt;li>Lorem ipsum dolor set amet&lt;/li>
+        &lt;/ul>
+        &lt;button type="button">Lorem ipsum&lt;/button>
+      &lt;/div>
+      &lt;div>
+        &lt;h1>Lorem ipsum&lt;/h1>
+        &lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p>
+      &lt;/div>
+    &lt;/div>
+&lt;/section>
+                        </code>
+                    </pre>
+                </div>
+            </article>
+
+            <article id="two-thirds-one-third">
+                <div>
+                    <h1>Tweederde-, eenderde-verdeling</h1>
+                    <p>Soms is een deel van de content belangrijker dan de rest. In dat geval kan er gebruik gemaakt worden van een tweederde- eenderde-verdeling.</p>
+
+                    <p>Aandachtspunten:</p>
+                    <ul>
+                        <li>Om gebruik te maken van deze layout, gebruik de class <code>two-thirds-one-third</code> op de bijbehorende sectie of div.</li>
+                        <li>Deze contentweergave verwacht twee elementen om de ruimte over te verdelen.</li>
+                    </ul>
+
+                    <p>Visueel voorbeeld:</p>
+                </div>
+                <section class="two-thirds-one-third background-color-offset">
+                    <div>
+                      <div>
+                        <h1>Lorem ipsum</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <ul>
+                          <li>Lorem ipsum dolor set amet</li>
+                          <li>Lorem ipsum dolor set amet</li>
+                          <li>Lorem ipsum dolor set amet</li>
+                          <li>Lorem ipsum dolor set amet</li>
+                        </ul>
+                        <button type="button">Lorem ipsum</button>
+                      </div>
+                      <div>
+                        <h1>Lorem ipsum</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                    </div>
+                </section>
+                <div>
+                    <p>Html voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;section class="two-thirds-one-third background-color-offset">
+    &lt;div>
+      &lt;div>
+        &lt;h1>Lorem ipsum&lt;/h1>
+        &lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p>
+        &lt;ul>
+          &lt;li>Lorem ipsum dolor set amet&lt;/li>
+          &lt;li>Lorem ipsum dolor set amet&lt;/li>
+          &lt;li>Lorem ipsum dolor set amet&lt;/li>
+          &lt;li>Lorem ipsum dolor set amet&lt;/li>
+        &lt;/ul>
+        &lt;button type="button">Lorem ipsum&lt;/button>
+      &lt;/div>
+      &lt;div>
+        &lt;h1>Lorem ipsum&lt;/h1>
+        &lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p>
+      &lt;/div>
+    &lt;/div>
+&lt;/section>
+                        </code>
+                    </pre>
+                </div>
+            </article>
+        </div>
+
+        <a href="#main-nav" class="button to-top ro-icon ro-icon-to-top" title="Terug naar het hoofdmenu">Terug naar het hoofdmenu</a>
+    </main>
+    <footer>
+        <div>
+          <span>Manon - Rijksoverheid css framework</span>
+          <nav aria-labelledby="footer-nav-1-heading">
+            <h1 id="footer-nav-1-heading">Service</h1>
+            <ul>
+              <li><a href="../index.html">Over</a></li>
+              <li><a href="../test/index.html">Styling tests</a></li>
+              <li><a href="index.html">Online componenten bibliotheek</a></li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+  </body>
+</html>

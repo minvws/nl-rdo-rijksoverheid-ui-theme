@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <title>Definitielijst - Rijksoverheid CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../static/css/main.css" rel="stylesheet">
+    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+  </head>
+  <body>
+    <header class="breadcrumbs">
+      <a href="#main-content" class="button focus-only">Ga direct naar inhoud</a>
+    <a href="" class="ro-logo">
+        <img src="../../static/img/ro-logo.svg" alt="Logo Rijksoverheid">
+        Rijksoverheid
+    </a>
+
+      <nav aria-label="Kruimelpad" id="main-nav">
+        <div>
+          <ul>
+              <li><a href="../index.html">Rijksoverheid CSS</a></li>
+              <li><a href="index.html">Styling tests</a></li>
+              <li><a href="#" aria-current="page">Definitielijst</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+        <article>
+            <div>
+                <h1>Definitielijst tests.</h1>
+                <p>een overzicht van de definitielijst binnen verschillende structuren en elementen.</p>
+
+                <nav aria-label="Document-navigatie">
+                    <ul>
+                        <li><a href="#dl-default">Definitielijst standaard</a></li>
+                        <li><a href="#dl-forms">Definitielijst binnen formulieren</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </article>
+
+        <article id="dl-default">
+            <div>
+                <h1>Definitielijst</h1>
+                <dl>
+                    <div>
+                        <dt>Naam</dt>
+                        <dd>Jane Doe</dd>
+                    </div>
+                    <div>
+                        <dt>Geboortedatum</dt>
+                        <dd>01-01-1984</dd>
+                    </div>
+                    <div>
+                        <dt>Geslacht</dt>
+                        <dd>Vrouw</dd>
+                    </div>
+                    <div>
+                        <dt>Woonplaats</dt>
+                        <dd>Loremstad</dd>
+                    </div>
+                </dl>
+            </div>
+        </article>
+
+        <article id="dl-forms">
+            <div>
+                <h1>Description list binnen formulieren</h1>
+                <h2>Formulier zonder kolommen</h2>
+                <form action="" method="post">
+                    <label>Lorem ipsum</label>
+                    <input id="voorbeeld-text-input-1" name="voorbeeld-text-input-1" placeholder="voorbeeld text input" type="text">
+
+                    <fieldset>
+                        <legend>Persoonsgegevens</legend>
+                        <dl>
+                            <div>
+                                <dt>Naam</dt>
+                                <dd>Jane Doe</dd>
+                            </div>
+                            <div>
+                                <dt>Geboortedatum</dt>
+                                <dd>01-01-1984</dd>
+                            </div>
+                            <div>
+                                <dt>Geslacht</dt>
+                                <dd>Vrouw</dd>
+                            </div>
+                            <div>
+                                <dt>Woonplaats</dt>
+                                <dd>Loremstad</dd>
+                            </div>
+                        </dl>
+                    </fieldset>
+                    <button>Lorem ipsum</button>
+                </form>
+
+                <h2>Formulier met kolommen</h2>
+                <form action="" method="post" class="horizontal-view">
+                    <div>
+                        <label>Lorem ipsum</label>
+                        <input id="voorbeeld-text-input-2" name="voorbeeld-text-input-2" placeholder="voorbeeld text input" type="text">
+                    </div>
+
+                    <fieldset>
+                        <legend>Persoonsgegevens</legend>
+                        <dl>
+                            <div>
+                                <dt>Naam</dt>
+                                <dd>Jane Doe</dd>
+                            </div>
+                            <div>
+                                <dt>Geboortedatum</dt>
+                                <dd>01-01-1984</dd>
+                            </div>
+                            <div>
+                                <dt>Geslacht</dt>
+                                <dd>Vrouw</dd>
+                            </div>
+                            <div>
+                                <dt>Woonplaats</dt>
+                                <dd>Loremstad</dd>
+                            </div>
+                        </dl>
+                    </fieldset>
+                    <div>
+                        <label>Lorem ipsum</label>
+                        <input id="voorbeeld-text-input-3" name="voorbeeld-text-input-3" placeholder="voorbeeld text input" type="text">
+                    </div>
+                    <button>Lorem ipsum</button>
+                </form>
+            </div>
+        </article>
+        
+        <a href="#main-nav" class="button to-top ro-icon ro-icon-to-top" title="Terug naar het hoofdmenu">Terug naar het hoofdmenu</a>
+    </main>
+    
+    <footer>
+      <div>
+        <span>Manon - Rijksoverheid css framework</span>
+        <nav aria-labelledby="footer-nav-1-heading">
+          <h1 id="footer-nav-1-heading">Service</h1>
+          <ul>
+            <li><a href="../index.html">Over</a></li>
+            <li><a href="index.html">Styling tests</a></li>
+            <li><a href="../html_examples/index.html">Online componenten bibliotheek</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

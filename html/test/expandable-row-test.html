@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8">
+    <title>Uitklapbare tabelrij - Rijksoverheid CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../static/css/main.css" rel="stylesheet">
+    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <script defer src="../../static/js/expando-rows.js"></script>
+  </head>
+  <body>
+    <header class="breadcrumbs">
+      <a href="#main-content" class="button focus-only">Ga direct naar inhoud</a>
+    <a href="" class="ro-logo">
+        <img src="../../static/img/ro-logo.svg" alt="Logo Rijksoverheid">
+        Rijksoverheid
+    </a>
+
+      <nav aria-label="Kruimelpad" id="main-nav">
+        <div>
+          <ul>
+              <li><a href="../index.html">Rijksoverheid CSS</a></li>
+              <li><a href="index.html">Styling tests</a></li>
+              <li><a href="#" aria-current="page">Uitklapbare tabelrij</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+        <section>
+            <div>
+                <h1>Uitklapbare tabelrij tests.</h1>
+                <p>Lorem Ipsum</p>
+
+                <div class="horizontal-scroll">
+                  <table class="condensed">
+                    <caption>Findings for website https://example-com on 4th of March 2021:</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Risk level</th>
+                        <th scope="col">Finding type</th>
+                        <th scope="col">Occurences</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Details</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><span class="critical">Critical</span></td>
+                        <td>Cat has access to passwords</td>
+                        <td class="number">4</td>
+                        <td>New</td>
+                        <td><button class="expando-button" data-close-label="Sluit details">Open details</button></td>
+                      </tr>
+                      <tr class="expando-row">
+                        <td colspan="5">
+                            <span class="visually-hidden">Details of Cat has access to passwords</span>
+                            <h1>Finding details</h1>
+                            <dl>
+                                <div class="meta">
+                                  <dt>id</dt>
+                                  <dd>1</dd>
+                                </div>
+                                <div>
+                                    <dt>Finding:</dt>
+                                    <dd>Cat has access to passwords</dd>
+                                </div>
+                                <div>
+                                    <dt>Description:</dt>
+                                    <dd>Cat has free access to passwords Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis enim ac sapien lobortis, vitae congue odio scelerisque. Morbi orci purus, tristique sed ullamcorper sed, efficitur quis enim.</dd>
+                                </div>
+                                <div>
+                                    <dt>Risk level:</dt>
+                                    <dd>10/10</dd>
+                                </div>
+                                <div>
+                                    <dt>Impact:</dt>
+                                    <dd>Giving a cat free access to passwords is a high security risk due to the unpredictable and often destructive nature of cats. Research has shown that giving cats free access to passwords often results in data leaks [source:       https://examplesite.com].</dd>
+                                </div>
+                            </dl>
+
+                            <div>
+                                <h2>Occurences</h2>
+                                <dl>
+                                    <div>
+                                        <dt>Total occurences:</dt>
+                                        <dd>4</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Occurence:</dt>
+                                        <dd>
+                                          <ul>
+                                            <li>
+                                              <div>
+                                                <a href="https://example.nl/account/secret/catstas">https://example.nl/account/secret/catstas</a>
+                                                <button class="ro-icon ro-icon-chevron-light-bottom action-button">Open details</button>
+                                              </div>
+                                              <div>
+                                                <dl>
+                                                  <div>
+                                                    <dt>Time of testing:</dt>
+                                                    <dd>04-03-2021 12:15</dd>
+                                                  </div>
+
+                                                  <div>
+                                                    <dt>Proof:</dt>
+                                                    <dd>[..] Set-Cookie: csrftoken=httiJeEYjYZoBU6Ibom4N0MfgRX46RnU rCdsjqOgg6Kxr0RbMNRoqUG6s2wwuVGN; expires=Tue, 22 Feb 2022 20:50:53 GMT; Max-Age=31449600; Path=/; SameSite=Strict; Secure [..]</dd>
+                                                  </div>
+
+                                                  <div>
+                                                    <dt>Reproduction:</dt>
+                                                    <dd>GET /account/login/ HTTP/1.1 Host: keiko.braniebananie.nl</dd>
+                                                  </div>
+
+                                                </dl>
+                                              </div>
+                                              
+                                            </li>
+                                            
+                                          </ul>
+                                        </dd>
+                                    </div>
+                                </dl>
+                                <div class="button-container">
+                                    <button class="secondary">Show all (9001)</button>
+                                    <button>Show more (+10)</button>
+                                </div>
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="critical">Critical</span></td>
+                        <td>Cat tweeted  the passwords</td>
+                        <td class="number">9001</td>
+                        <td>New</td>
+                        <td><button class="expando-button" data-close-label="Sluit details">Open details</button></td>
+                      </tr>
+                      <tr class="expando-row">
+                        <td colspan="5"></td>
+                      </tr>
+                      <tr>
+                        <td><span class="high">High</span></td>
+                        <td>Kittens inside the database</td>
+                        <td class="number">12</td>
+                        <td>New</td>
+                        <td><button class="expando-button" data-close-label="Sluit details">Open details</button></td>
+                      </tr>
+                      <tr class="expando-row">
+                        <td colspan="5"></td>
+                      </tr>
+                      <tr>
+                        <td><span class="high">High</span></td>
+                        <td>Outdated third party software used</td>
+                        <td class="number">2</td>
+                        <td>New</td>
+                        <td><button class="expando-button" data-close-label="Sluit details">Open details</button></td>
+                      </tr>
+                      <tr class="expando-row">
+                        <td colspan="5"></td>
+                      </tr>
+                      <tr>
+                        <td><span class="high">High</span></td>
+                        <td>Inline javascript</td>
+                        <td class="number">15</td>
+                        <td>New</td>
+                        <td><button class="expando-button" aria-expanded="true" data-open-label="Open details">Sluit details</button></td>
+                      </tr>
+                      <tr class="expando-row">
+                        <td colspan="5"></td>
+                      </tr>
+                      <tr>
+                        <td><span class="medium">Medium</span></td>
+                        <td>Session cookie is valid for too long</td>
+                        <td class="number">1</td>
+                        <td>New</td>
+                        <td><button class="expando-button" data-close-label="Sluit details">Open details</button></td>
+                      </tr>
+                      <tr class="expando-row">
+                        <td colspan="5"></td>
+                      </tr>
+                      <tr>
+                        <td><span class="medium">Medium</span></td>
+                        <td>Initial administrator password decryptable available in the  database </td>
+                        <td class="number">1</td>
+                        <td>Known</td>
+                        <td><button class="expando-button" data-close-label="Sluit details">Open details</button></td>
+                      </tr>
+                      <tr class="expando-row">
+                        <td colspan="5"></td>
+                      </tr>
+                      <tr>
+                        <td><span class="medium">Medium</span></td>
+                        <td>Missing anti-hijacking security measures </td>
+                        <td class="number">1</td>
+                        <td>Known</td>
+                        <td><button class="expando-button" data-close-label="Sluit details">Open details</button></td>
+                      </tr>
+                      <tr class="expando-row">
+                        <td colspan="5"></td>
+                      </tr>
+                      <tr>
+                        <td><span class="low">Low</span></td>
+                        <td>Incomplete auditlog</td>
+                        <td class="number">1</td>
+                        <td>New</td>
+                        <td><button class="expando-button" data-close-label="Sluit details">Open details</button></td>
+                      </tr>
+                      <tr class="expando-row">
+                        <td colspan="5"></td>
+                      </tr>
+                      <tr>
+                        <td><span class="very-low">Very low</span></td>
+                        <td>No automatic referral to https</td>
+                        <td class="number">1</td>
+                        <td>New</td>
+                        <td><button class="expando-button" data-close-label="Sluit details">Open details</button></td>
+                      </tr>
+                      <tr class="expando-row">
+                        <td colspan="5"></td>
+                      </tr>
+                      <tr>
+                        <td><span class="recommendation">Recommendation</span></td>
+                        <td>2-factor authentication currently not required</td>
+                        <td class="number">1</td>
+                        <td>New</td>
+                        <td><button class="expando-button" data-close-label="Sluit details">Open details</button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+            </div>
+        </section>
+        
+        <a href="#main-nav" class="button to-top ro-icon ro-icon-to-top" title="Terug naar het hoofdmenu">Terug naar het hoofdmenu</a>
+    </main>
+    
+    <footer>
+      <div>
+        <span>Manon - Rijksoverheid css framework</span>
+        <nav aria-labelledby="footer-nav-1-heading">
+          <h1 id="footer-nav-1-heading">Service</h1>
+          <ul>
+            <li><a href="../index.html">Over</a></li>
+            <li><a href="index.html">Styling tests</a></li>
+            <li><a href="../html_examples/index.html">Online componenten bibliotheek</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

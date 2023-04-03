@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <title>Datumveld - Rijksoverheid CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../static/css/main.css" rel="stylesheet">
+    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <script defer src="../../static/js/sidemenu.js"></script>
+    <script defer src="../../static/js/form-help.js"></script>
+  </head>
+  <body class="test-cases">
+    <header class="breadcrumbs">
+      <a href="#main-content" class="button focus-only">Ga direct naar inhoud</a>
+      <a href="" class="ro-logo">
+        <img src="../../static/img/ro-logo.svg" alt="Logo Rijksoverheid">
+        Rijksoverheid
+      </a>
+      
+      <nav aria-label="Kruimelpad" id="main-nav">
+        <div>
+          <ul>
+              <li><a href="../index.html">Rijksoverheid CSS</a></li>
+              <li><a href="index.html">Styling tests</a></li>
+              <li><a href="forms.html">Formulieren</a></li>
+              <li><a href="#" aria-current="page">Datumveld</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+        <ul>
+          <li><a href="#date">Datumveld</a></li>
+        </ul>
+      </nav>
+
+      <div>
+          <article>
+            <div>
+              <h1 id="date">Datumveld</h1>
+
+              <h3>Datumveld</h3>
+              <form action="" method="post">
+                  <label for="voorbeeld-date-1">Datum</label>
+                  <input id="voorbeeld-date-1" name="voorbeeld-date-1" type="date">
+
+                  <label for="voorbeeld-date-1">Datum</label>
+                  <span class="nota-bene">Dit veld is verplicht</span>
+                  <input id="voorbeeld-date-1" name="voorbeeld-date-1" type="date">
+
+                  <button type="submit">Verzend</button>
+              </form>
+
+              <h3>Voorbeeld weergave in kolommen</h3>
+              <form action="" method="post" class="horizontal-view">
+                  <div>
+                      <label for="voorbeeld-date-2">Datum</label>
+                      <input id="voorbeeld-date-2" name="voorbeeld-date-2" type="date">
+                  </div>
+
+                  <div class="required">
+                      <label for="voorbeeld-required-date-2">Datum</label>
+                      <div>
+                        <span class="nota-bene">Dit veld is verplicht</span>
+                        <input id="voorbeeld-required-date-2" name="voorbeeld-required-date-2" type="date">
+                      </div>
+                  </div>
+
+                  <button type="submit">Verzend</button>
+              </form>
+
+              <h3>Voorbeeld gecombineerde horizontale weergave</h3>
+              <form action="" method="post" class="help">
+                  <fieldset class="column-2">
+                      <legend>Periode</legend>
+
+                      <div>
+                        <div>
+                          <label for="voorbeeld-date-3-start">van</label>
+                          <input id="voorbeeld-date-3-start" name="voorbeeld-date-3-start" type="date">
+                        </div>
+
+                        <div>
+                          <label for="voorbeeld-date-3-end">tot</label>
+                          <input id="voorbeeld-date-3-end" name="voorbeeld-date-3-end" type="date">
+                        </div>
+                      </div>
+                  </fieldset>
+
+                  <fieldset class="grouped-choice-list column-2">
+                    <legend>Lorem ipsum</legend>
+                    <div>
+                      <div>
+                        <input type="checkbox" id="checkbox-list-item-1" name="option-1">
+                        <label for="checkbox-list-item-1">Optie 1</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" id="checkbox-list-item-2" name="option-2">
+                        <label for="checkbox-list-item-2">Optie 2</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" id="checkbox-list-item-3" name="option-3">
+                        <label for="checkbox-list-item-3">Optie 3</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" id="checkbox-list-item-4" name="option-1">
+                        <label for="checkbox-list-item-4">Optie 4</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" id="checkbox-list-item-5" name="option-2">
+                        <label for="checkbox-list-item-5">Optie 5</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" id="checkbox-list-item-6" name="option-3">
+                        <label for="checkbox-list-item-6">Optie 6</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" id="checkbox-list-item-7" name="option-1">
+                        <label for="checkbox-list-item-7">Optie 7</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" id="checkbox-list-item-8" name="option-2">
+                        <label for="checkbox-list-item-8">Optie 8</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" id="checkbox-list-item-9" name="option-3">
+                        <label for="checkbox-list-item-9">Optie 9</label>
+                      </div>
+                    </div>
+                  </fieldset>
+
+                  <fieldset class="grouped-choice-list column-3">
+                    <legend>Lorem ipsum</legend>
+                    <div>
+                      <div>
+                        <input type="checkbox" id="checkbox-list-2-item-1" name="option-1">
+                        <label for="checkbox-list-2-item-1">Optie 1</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" id="checkbox-list-2-item-2" name="option-2">
+                        <label for="checkbox-list-2-item-2">Optie 2</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" id="checkbox-list-2-item-3" name="option-3">
+                        <label for="checkbox-list-2-item-3">Optie 3</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" id="checkbox-list-2-item-4" name="option-1">
+                        <label for="checkbox-list-2-item-4">Optie 4</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" id="checkbox-list-2-item-5" name="option-2">
+                        <label for="checkbox-list-2-item-5">Optie 5</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" id="checkbox-list-2-item-6" name="option-3">
+                        <label for="checkbox-list-2-item-6">Optie 6</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" id="checkbox-list-2-item-7" name="option-1">
+                        <label for="checkbox-list-2-item-7">Optie 7</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" id="checkbox-list-2-item-8" name="option-2">
+                        <label for="checkbox-list-2-item-8">Optie 8</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" id="checkbox-list-2-item-9" name="option-3">
+                        <label for="checkbox-list-2-item-9">Optie 9</label>
+                      </div>
+                    </div>
+                  </fieldset>
+
+                  <button type="submit">Verzend</button>
+              </form>
+
+              <h3>Voorbeeld gecombineerde horizontale weergave in kolommen</h3>
+              <form action="" method="post" class="horizontal-view help">
+                <fieldset>
+                  <legend>Voorbeelden</legend>
+                  
+                    <fieldset class="column-2">
+                        <legend>Periode</legend>
+
+                        <div>
+                          <div>
+                            <label for="voorbeeld-date-4-start">van</label>
+                            <input id="voorbeeld-date-4-start" name="voorbeeld-date-4-start" type="date">
+                          </div>
+
+                          <div>
+                            <label for="voorbeeld-date-4-end">tot</label>
+                            <input id="voorbeeld-date-4-end" name="voorbeeld-date-4-end" type="date">
+                          </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="column-2">
+                        <legend>Periode</legend>
+
+                        <div>
+                          <div>
+                            <label for="voorbeeld-date-5-start">van</label>
+                            <input id="voorbeeld-date-5-start" name="voorbeeld-date-5-start" type="date">
+                          </div>
+
+                          <div>
+                            <label for="voorbeeld-date-5-end">tot</label>
+                            <input id="voorbeeld-date-5-end" name="voorbeeld-date-5-end" type="date">
+                          </div>
+                        </div>
+                        <p
+                          class="explanation"
+                          data-open-label="Toelichting bij het veld: Trefwoord"
+                          data-close-label="Sluit toelichting bij het veld: Trefwoord">
+                          <span>toelichting:</span>Vul hier een trefwoord in waarop u wilt filteren.
+                        </p>
+                    </fieldset>
+
+                    <fieldset class="column-2 required">
+                        <legend>Periode</legend>
+
+                        <div>
+                          <span class="nota-bene">Dit veld is verplicht</span>
+                          <div>
+                            <label for="voorbeeld-date-6-start">van</label>
+                            <input id="voorbeeld-date-6-start" name="voorbeeld-date-6-start" type="date">
+                          </div>
+
+                          <div>
+                            <label for="voorbeeld-date-6-end">tot</label>
+                            <input id="voorbeeld-date-6-end" name="voorbeeld-date-6-end" type="date">
+                          </div>
+                        </div>
+                        <p
+                          class="explanation"
+                          data-open-label="Toelichting bij het veld: Trefwoord"
+                          data-close-label="Sluit toelichting bij het veld: Trefwoord">
+                          <span>toelichting:</span>Vul hier een trefwoord in waarop u wilt filteren.
+                        </p>
+                    </fieldset>
+                  </fieldset>
+
+                  <button type="submit">Verzend</button>
+              </form>
+
+            </div>
+          </article>      
+        </div>
+
+        <a href="#main-nav" class="button to-top ro-icon ro-icon-to-top" title="Terug naar het hoofdmenu">Terug naar het hoofdmenu</a>
+    </main>
+
+    <footer>
+        <div>
+          <span>Manon - Rijksoverheid css framework</span>
+          <nav aria-labelledby="footer-nav-1-heading">
+            <h1 id="footer-nav-1-heading">Service</h1>
+            <ul>
+              <li><a href="../index.html">Over</a></li>
+              <li><a href="tml">Styling tests</a></li>
+              <li><a href="index.html">Online componenten bibliotheek</a></li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+  </body>
+</html>

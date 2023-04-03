@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <title>visually-hidden - Rijksoverheid CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../static/css/main.css" rel="stylesheet">
+    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+  </head>
+  <body>
+    <header class="breadcrumbs">
+      <a href="#main-content" class="button focus-only">Ga direct naar inhoud</a>
+    <a href="" class="ro-logo">
+        <img src="../../static/img/ro-logo.svg" alt="Logo Rijksoverheid">
+        Rijksoverheid
+    </a>
+
+      <nav aria-label="Kruimelpad" id="main-nav">
+        <div>
+          <ul>
+              <li><a href="../index.html">Rijksoverheid CSS</a></li>
+              <li><a href="index.html">Styling tests</a></li>
+              <li><a href="#" aria-current="page">visually-hidden</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+        <article id="introduction">
+            <div>
+                <h1>visually-hidden tests.</h1>
+            </div>
+        </article>
+
+        <article id="visually-hidden">
+            <div>
+                <h1>Voorbeeld</h1>
+                <h2 id="visually-hidden-p">Paragraaf</h2>
+                <h3>Visueel voorbeeld</h3>
+                <p class="visually-hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                <h3>HTML-voorbeeld</h3>
+                <pre>
+                    <code>
+&lt;p class="visually-hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p>
+                    </code>
+                </pre>
+
+                <h2 id="visually-hidden-div"><code>div</code></h2>
+                <h3>Visueel voorbeeld</h3>
+                <div class="visually-hidden">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <h3>HTML-voorbeeld</h3>
+                <pre>
+                    <code>
+&lt;div class="visually-hidden">
+    &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p>
+&lt;/div>
+                    </code>
+                </pre>
+
+                <h2 id="visually-hidden-button"><code>buttons</code></h2>
+                <h3>Visueel voorbeeld</h3>
+                <h4>Button states:</h4>
+                <div class="button-container">
+                    <button class="visually-hidden">Button primary</button>
+                    <button class="visually-hidden" disabled>Button disabled</button>
+                    <button class="hover visually-hidden">Button hover</button>
+                    <button class="focus visually-hidden">Button focus</button>
+                    <button class="active visually-hidden">Button active/on mouse down</button>
+                    <button class="primary selected visually-hidden">Button selected</button>
+                    <button class="ro-icon ro-icon-close visually-hidden">Icon button</button>
+                    <button class="visually-hidden"><span class="ro-icon ro-icon-close visually-hidden"></span>Icon with text button</button>
+                </div>
+
+                <h4>Input type = button states:</h4>
+                <div class="button-container">
+                    <input type="button" value="Button primary" class="visually-hidden">
+                    <input type="button" value="Button disabled" disabled class="visually-hidden">
+                    <input type="button" value="Button hover" class="hover visually-hidden">
+                    <input type="button" value="Button focus" class="focus visually-hidden">
+                    <input type="button" value="Button active/on mouse down" class="active visually-hidden">
+                    <input type="button" value="Button selected" class="selected visually-hidden">
+                </div>
+
+                <h4>Link &lt;a&gt; as a button states:</h4>
+                <div class="button-container">
+                    <a href="" class="button visually-hidden">Button primary</a>
+                    <a href="" class="button disabled visually-hidden">Button disabled</a>
+                    <a href="" class="button hover visually-hidden">Button hover</a>
+                    <a href="" class="button focus visually-hidden">Button focus</a>
+                    <a href="" class="button active visually-hidden">Button active/on mouse down</a>
+                    <a href="" class="button selected visually-hidden">Button selected</a>
+                    <a href="" class="button ro-icon ro-icon-close visually-hidden">Icon button</a>
+                    <a href="" class="button visually-hidden"><span class="ro-icon ro-icon-close"></span>Icon with text button</a>
+                </div>
+
+                <h4>Submit-button &lt;button type="submit"&gt; states:</h4>
+                <div class="button-container">
+                    <button type="submit" class="visually-hidden">Button primary</button>
+                    <button type="submit" disabled class="visually-hidden">Button disabled</button>
+                    <button type="submit" class="hover visually-hidden">Button hover</button>
+                    <button type="submit" class="focus visually-hidden">Button focus</button>
+                    <button type="submit" class="active visually-hidden">Button active/on mouse down</button>
+                    <button type="submit" class="selected visually-hidden">Button selected</button>
+                    <button type="submit" class="ro-icon ro-icon-close visually-hidden">Icon button</button>
+                    <button type="submit" class="visually-hidden"><span class="ro-icon ro-icon-close"></span>Icon with text button</button>
+                </div>
+
+                <h4>Input type = submit &lt;input type="submit"&gt;:</h4>
+                <div class="button-container">
+                    <input type="submit" value="Input" class="visually-hidden">
+                    <input type="submit" value="Input disabled" disabled class="visually-hidden">
+                </div>
+
+                <h4>Input type = submit &lt;input type="submit"&gt;:</h4>
+                <div class="button-container">
+                    <input type="submit" value="Input" class="visually-hidden">
+                    <input type="submit" value="Input disabled" class="visually-hidden" disabled>
+                    <input type="submit" class="hover visually-hidden" value="Input hover">
+                    <input type="submit" class="focus visually-hidden" value="Input focus">
+                    <input type="submit" class="active visually-hidden" value="Input active">
+                    <input type="submit" class="selected visually-hidden" value="Input selected">
+                </div>
+
+                <h4>Button reset &lt;button type="reset"&gt;:</h4>
+                <div class="button-container">
+                    <button type="reset" class="visually-hidden">Button primary</button>
+                    <button type="reset" class="visually-hidden" disabled>Button disabled</button>
+                    <button type="reset" class="hover visually-hidden">Button hover</button>
+                    <button type="reset" class="focus visually-hidden">Button focus</button>
+                    <button type="reset" class="active visually-hidden">Button active/on mouse down</button>
+                    <button type="reset" class="selected visually-hidden">Button selected</button>
+                    <button type="reset" class="ro-icon ro-icon-close visually-hidden">Icon button</button>
+                    <button type="reset" class="visually-hidden"><span class="ro-icon ro-icon-close"></span>Icon with text button</button>
+                </div>
+
+                <h4>Input type = reset &lt;input type="reset"&gt;:</h4>
+                <div class="button-container">
+                    <input type="reset" value="Input" class="visually-hidden">
+                    <input type="reset" value="Input disabled" class="visually-hidden" disabled>
+                    <input type="reset" class="hover visually-hidden" value="Input hover">
+                    <input type="reset" class="focus visually-hidden" value="Input focus">
+                    <input type="reset" class="active visually-hidden" value="Input active">
+                    <input type="reset" class="selected visually-hidden" value="Input selected">
+                </div>
+                    
+                <h3>Secundaire button-variant</h3>
+                <button  class="secondary visually-hidden">Lorem ipsum</button>
+                <h4>Button states:</h4>
+                <div class="button-container">
+                    <button class="secondary visually-hidden">Button secondary</button>
+                    <button class="secondary visually-hidden" disabled>Button disabled</button>
+                    <button class="secondary hover visually-hidden">Button hover</button>
+                    <button class="secondary focus visually-hidden">Button focus</button>
+                    <button class="secondary active visually-hidden">Button active/on mouse down</button>
+                    <button class="secondary selected visually-hidden">Button selected</button>
+                    <button class="secondary ro-icon ro-icon-close visually-hidden">Icon button</button>
+                    <button class="secondary visually-hidden"><span class="ro-icon ro-icon-close"></span>Icon with text button</button>
+                </div>
+
+                <h4>Input type = button states:</h4>
+                <div class="button-container">
+                    <input type="button" value="Button primary" class="button secondary visually-hidden">
+                    <input type="button" value="Button disabled" class="button secondary visually-hidden" disabled>
+                    <input type="button" value="Button hover" class="button secondary hover visually-hidden">
+                    <input type="button" value="Button focus" class="button secondary focus visually-hidden">
+                    <input type="button" value="Button active/on mouse down" class="button secondary active visually-hidden">
+                    <input type="button" value="Button selected" class="button secondary selected visually-hidden">
+                </div>
+
+                <h4>Link &lt;a&gt; as a button:</h4>
+                <div class="button-container">
+                    <a href="#" class="button secondary visually-hidden">Button primary</a>
+                    <a href="#" class="button secondary disabled visually-hidden">Button disabled</a>
+                    <a href="#" class="button secondary hover visually-hidden">Button hover</a>
+                    <a href="#" class="button secondary focus visually-hidden">Button focus</a>
+                    <a href="#" class="button secondary active visually-hidden">Button active/on mouse down</a>
+                    <a href="#" class="button secondary selected visually-hidden">Button selected</a>
+                    <a href="#" class="button secondary ro-icon ro-icon-close visually-hidden">Icon button</a>
+                    <a href="#" class="button secondary visually-hidden"><span class="ro-icon ro-icon-close"></span>Icon with text button</a>
+                </div>
+
+                <h4>Submit-button &lt;button type="submit"&gt;:</h4>
+                <div class="button-container">
+                    <button type="submit" class="secondary visually-hidden">Button primary</button>
+                    <button type="submit" class="secondary visually-hidden" disabled>Button disabled</button>
+                    <button type="submit" class="secondary hover visually-hidden">Button hover</button>
+                    <button type="submit" class="secondary focus visually-hidden">Button focus</button>
+                    <button type="submit" class="secondary active visually-hidden">Button active/on mouse down</button>
+                    <button type="submit" class="secondary selected visually-hidden">Button selected</button>
+                    <button type="submit" class="secondary ro-icon ro-icon-close visually-hidden">Icon button</button>
+                    <button type="submit" class="secondary visually-hidden"><span class="ro-icon ro-icon-close"></span>Icon with text button</button>
+                </div>
+
+                <h4>Input type = submit &lt;input type="submit"&gt;:</h4>
+                <div class="button-container">
+                    <input type="submit" class="secondary visually-hidden" value="Input">
+                    <input type="submit" class="secondary visually-hidden" value="Input disabled" disabled>
+                    <input type="submit" class="secondary hover visually-hidden" value="Input hover">
+                    <input type="submit" class="secondary focus visually-hidden" value="Input focus">
+                    <input type="submit" class="secondary active visually-hidden" value="Input active">
+                    <input type="submit" class="secondary selected visually-hidden" value="Input selected">
+                </div>
+
+                <h4>Button reset &lt;button type="reset"&gt;:</h4>
+                <div class="button-container">
+                    <button type="reset" class="secondary visually-hidden">Button secondary</button>
+                    <button type="reset" class="secondary visually-hidden" disabled>Button disabled</button>
+                    <button type="reset" class="secondary hover visually-hidden">Button hover</button>
+                    <button type="reset" class="secondary focus visually-hidden">Button focus</button>
+                    <button type="reset" class="secondary active visually-hidden">Button active/on mouse down</button>
+                    <button type="reset" class="secondary selected visually-hidden">Button selected</button>
+                    <button type="reset" class="secondary ro-icon ro-icon-close visually-hidden">Icon button</button>
+                    <button type="reset" class="secondary visually-hidden"><span class="ro-icon ro-icon-close"></span>Icon with text button</button>
+                </div>
+
+                <h4>Input type = reset &lt;input type="reset"&gt;:</h4>
+                <div class="button-container">
+                    <input type="reset" class="secondary visually-hidden" value="Input">
+                    <input type="reset" class="secondary visually-hidden" value="Input disabled" disabled>
+                    <input type="reset" class="secondary hover visually-hidden" value="Input hover">
+                    <input type="reset" class="secondary focus visually-hidden" value="Input focus">
+                    <input type="reset" class="secondary active visually-hidden" value="Input active">
+                    <input type="reset" class="secondary selected visually-hidden" value="Input selected">
+                </div>
+
+                <h4>Different types of buttons</h4>
+                <div class="button-container">
+                    <button class="visually-hidden">Lorem ipsum</button>
+                    <input type="button" value="Lorem ipsum" class="visually-hidden">
+                    <a href="#" class="button visually-hidden">Lorem ipsum</a>
+                    <button type="submit" class="visually-hidden">Lorem ipsum</button>
+                    <input type="submit" value="Input" class="visually-hidden">
+                    <button type="reset" class="visually-hidden">Button primary</button>
+                    <input type="reset" value="Input" class="visually-hidden">
+                </div>
+
+                <h3>Call to action button-variant</h3>
+                <button  class="cta visually-hidden">Lorem ipsum</button>
+                <h4>Button states:</h4>
+                <div class="button-container">
+                    <button class="cta visually-hidden">Button cta</button>
+                    <button class="cta visually-hidden" disabled>Button disabled</button>
+                    <button class="cta hover visually-hidden">Button hover</button>
+                    <button class="cta focus visually-hidden">Button focus</button>
+                    <button class="cta active visually-hidden">Button active/on mouse down</button>
+                    <button class="cta selected visually-hidden">Button selected</button>
+                    <button class="cta ro-icon ro-icon-close visually-hidden">Icon button</button>
+                    <button class="cta visually-hidden"><span class="ro-icon ro-icon-close"></span>Icon with text button</button>
+                </div>
+
+                <h4>Input type = button states:</h4>
+                <div class="button-container">
+                    <input type="button" value="Button primary" class="button cta visually-hidden">
+                    <input type="button" value="Button disabled" class="button cta visually-hidden" disabled>
+                    <input type="button" value="Button hover" class="button cta hover visually-hidden">
+                    <input type="button" value="Button focus" class="button cta focus visually-hidden">
+                    <input type="button" value="Button active/on mouse down" class="button cta active visually-hidden">
+                    <input type="button" value="Button selected" class="button cta selected visually-hidden">
+                </div>
+
+                <h4>Link &lt;a&gt; as a button:</h4>
+                <div class="button-container">
+                    <a href="#" class="button cta visually-hidden">Button primary</a>
+                    <a href="#" class="button cta disabled visually-hidden">Button disabled</a>
+                    <a href="#" class="button cta hover visually-hidden">Button hover</a>
+                    <a href="#" class="button cta focus visually-hidden">Button focus</a>
+                    <a href="#" class="button cta active visually-hidden">Button active/on mouse down</a>
+                    <a href="#" class="button cta selected visually-hidden">Button selected</a>
+                    <a href="#" class="button cta ro-icon ro-icon-close visually-hidden">Icon button</a>
+                    <a href="#" class="button cta visually-hidden"><span class="ro-icon ro-icon-close"></span>Icon with text button</a>
+                </div>
+
+                <h4>Submit-button &lt;button type="submit"&gt;:</h4>
+                <div class="button-container">
+                    <button type="submit" class="cta visually-hidden">Button primary</button>
+                    <button type="submit" class="cta visually-hidden" disabled>Button disabled</button>
+                    <button type="submit" class="cta hover visually-hidden">Button hover</button>
+                    <button type="submit" class="cta focus visually-hidden">Button focus</button>
+                    <button type="submit" class="cta active visually-hidden">Button active/on mouse down</button>
+                    <button type="submit" class="cta selected visually-hidden">Button selected</button>
+                    <button type="submit" class="cta ro-icon ro-icon-close visually-hidden">Icon button</button>
+                    <button type="submit" class="cta visually-hidden"><span class="ro-icon ro-icon-close"></span>Icon with text button</button>
+                </div>
+
+                <h4>Input type = submit &lt;input type="submit"&gt;:</h4>
+                <div class="button-container">
+                    <input type="submit" class="cta visually-hidden" value="Input">
+                    <input type="submit" class="cta visually-hidden" value="Input disabled" disabled>
+                    <input type="submit" class="cta hover visually-hidden" value="Input hover">
+                    <input type="submit" class="cta focus visually-hidden" value="Input focus">
+                    <input type="submit" class="cta active visually-hidden" value="Input active">
+                    <input type="submit" class="cta selected visually-hidden" value="Input selected">
+                </div>
+
+                <h4>Button reset &lt;button type="reset"&gt;:</h4>
+                <div class="button-container">
+                    <button type="reset" class="cta visually-hidden">Button cta</button>
+                    <button type="reset" class="cta visually-hidden" disabled>Button disabled</button>
+                    <button type="reset" class="cta hover visually-hidden">Button hover</button>
+                    <button type="reset" class="cta focus visually-hidden">Button focus</button>
+                    <button type="reset" class="cta active visually-hidden">Button active/on mouse down</button>
+                    <button type="reset" class="cta selected visually-hidden">Button selected</button>
+                    <button type="reset" class="cta ro-icon ro-icon-close visually-hidden">Icon button</button>
+                    <button type="reset" class="cta visually-hidden"><span class="ro-icon ro-icon-close"></span>Icon with text button</button>
+                </div>
+
+                <h4>Input type = reset &lt;input type="reset"&gt;:</h4>
+                <div class="button-container">
+                    <input type="reset" class="cta visually-hidden" value="Input">
+                    <input type="reset" class="cta visually-hidden" value="Input disabled" disabled>
+                    <input type="reset" class="cta hover visually-hidden" value="Input hover">
+                    <input type="reset" class="cta focus visually-hidden" value="Input focus">
+                    <input type="reset" class="cta active visually-hidden" value="Input active">
+                    <input type="reset" class="cta selected visually-hidden" value="Input selected">
+                </div>
+                <h3>HTML-voorbeeld</h3>
+                <pre>
+                    <code>
+&lt;div class="button-container">
+    &lt;button class="visually-hidden">Button primary&lt;/button>
+    &lt;button class="visually-hidden" disabled>Button disabled&lt;/button>
+    &lt;button class="hover visually-hidden">Button hover&lt;/button>
+    &lt;button class="focus visually-hidden">Button focus&lt;/button>
+    &lt;button class="active visually-hidden">Button active/on mouse down&lt;/button>
+    &lt;button class="primary selected visually-hidden">Button selected&lt;/button>
+    &lt;button class="ro-icon ro-icon-close visually-hidden">Icon button&lt;/button>
+    &lt;button class="visually-hidden">&lt;span class="ro-icon ro-icon-close visually-hidden">&lt;/span>Icon with text button&lt;/button>
+&lt;/div>
+
+&lt;h4>Input type = button states:&lt;/h4>
+&lt;div class="button-container">
+    &lt;input type="button" value="Button primary" class="visually-hidden">
+    &lt;input type="button" value="Button disabled" disabled class="visually-hidden">
+    &lt;input type="button" value="Button hover" class="hover visually-hidden">
+    &lt;input type="button" value="Button focus" class="focus visually-hidden">
+    &lt;input type="button" value="Button active/on mouse down" class="active visually-hidden">
+    &lt;input type="button" value="Button selected" class="selected visually-hidden">
+&lt;/div>
+
+&lt;h4>Link &lt;a&gt; as a button states:&lt;/h4>
+&lt;div class="button-container">
+    &lt;a href="" class="button visually-hidden">Button primary&lt;/a>
+    &lt;a href="" class="button disabled visually-hidden">Button disabled&lt;/a>
+    &lt;a href="" class="button hover visually-hidden">Button hover&lt;/a>
+    &lt;a href="" class="button focus visually-hidden">Button focus&lt;/a>
+    &lt;a href="" class="button active visually-hidden">Button active/on mouse down&lt;/a>
+    &lt;a href="" class="button selected visually-hidden">Button selected&lt;/a>
+    &lt;a href="" class="button ro-icon ro-icon-close visually-hidden">Icon button&lt;/a>
+    &lt;a href="" class="button visually-hidden">&lt;span class="ro-icon ro-icon-close">&lt;/span>Icon with text button&lt;/a>
+&lt;/div>
+
+&lt;h4>Submit-button &lt;button type="submit"&gt; states:&lt;/h4>
+&lt;div class="button-container">
+    &lt;button type="submit" class="visually-hidden">Button primary&lt;/button>
+    &lt;button type="submit" disabled class="visually-hidden">Button disabled&lt;/button>
+    &lt;button type="submit" class="hover visually-hidden">Button hover&lt;/button>
+    &lt;button type="submit" class="focus visually-hidden">Button focus&lt;/button>
+    &lt;button type="submit" class="active visually-hidden">Button active/on mouse down&lt;/button>
+    &lt;button type="submit" class="selected visually-hidden">Button selected&lt;/button>
+    &lt;button type="submit" class="ro-icon ro-icon-close visually-hidden">Icon button&lt;/button>
+    &lt;button type="submit" class="visually-hidden">&lt;span class="ro-icon ro-icon-close">&lt;/span>Icon with text button&lt;/button>
+&lt;/div>
+
+&lt;h4>Input type = submit &lt;input type="submit"&gt;:&lt;/h4>
+&lt;div class="button-container">
+    &lt;input type="submit" value="Input" class="visually-hidden">
+    &lt;input type="submit" value="Input disabled" disabled class="visually-hidden">
+&lt;/div>
+
+&lt;h4>Input type = submit &lt;input type="submit"&gt;:&lt;/h4>
+&lt;div class="button-container">
+    &lt;input type="submit" value="Input" class="visually-hidden">
+    &lt;input type="submit" value="Input disabled" class="visually-hidden" disabled>
+    &lt;input type="submit" class="hover visually-hidden" value="Input hover">
+    &lt;input type="submit" class="focus visually-hidden" value="Input focus">
+    &lt;input type="submit" class="active visually-hidden" value="Input active">
+    &lt;input type="submit" class="selected visually-hidden" value="Input selected">
+&lt;/div>
+
+&lt;h4>Button reset &lt;button type="reset"&gt;:&lt;/h4>
+&lt;div class="button-container">
+    &lt;button type="reset" class="visually-hidden">Button primary&lt;/button>
+    &lt;button type="reset" class="visually-hidden" disabled>Button disabled&lt;/button>
+    &lt;button type="reset" class="hover visually-hidden">Button hover&lt;/button>
+    &lt;button type="reset" class="focus visually-hidden">Button focus&lt;/button>
+    &lt;button type="reset" class="active visually-hidden">Button active/on mouse down&lt;/button>
+    &lt;button type="reset" class="selected visually-hidden">Button selected&lt;/button>
+    &lt;button type="reset" class="ro-icon ro-icon-close visually-hidden">Icon button&lt;/button>
+    &lt;button type="reset" class="visually-hidden">&lt;span class="ro-icon ro-icon-close">&lt;/span>Icon with text button&lt;/button>
+&lt;/div>
+
+&lt;h4>Input type = reset &lt;input type="reset"&gt;:&lt;/h4>
+&lt;div class="button-container">
+    &lt;input type="reset" value="Input" class="visually-hidden">
+    &lt;input type="reset" value="Input disabled" class="visually-hidden" disabled>
+    &lt;input type="reset" class="hover visually-hidden" value="Input hover">
+    &lt;input type="reset" class="focus visually-hidden" value="Input focus">
+    &lt;input type="reset" class="active visually-hidden" value="Input active">
+    &lt;input type="reset" class="selected visually-hidden" value="Input selected">
+&lt;/div>
+    
+&lt;h3>Secundaire button-variant&lt;/h3>
+&lt;button  class="secondary visually-hidden">Lorem ipsum&lt;/button>
+&lt;h4>Button states:&lt;/h4>
+&lt;div class="button-container">
+    &lt;button class="secondary visually-hidden">Button secondary&lt;/button>
+    &lt;button class="secondary visually-hidden" disabled>Button disabled&lt;/button>
+    &lt;button class="secondary hover visually-hidden">Button hover&lt;/button>
+    &lt;button class="secondary focus visually-hidden">Button focus&lt;/button>
+    &lt;button class="secondary active visually-hidden">Button active/on mouse down&lt;/button>
+    &lt;button class="secondary selected visually-hidden">Button selected&lt;/button>
+    &lt;button class="secondary ro-icon ro-icon-close visually-hidden">Icon button&lt;/button>
+    &lt;button class="secondary visually-hidden">&lt;span class="ro-icon ro-icon-close">&lt;/span>Icon with text button&lt;/button>
+&lt;/div>
+
+&lt;h4>Input type = button states:&lt;/h4>
+&lt;div class="button-container">
+    &lt;input type="button" value="Button primary" class="button secondary visually-hidden">
+    &lt;input type="button" value="Button disabled" class="button secondary visually-hidden" disabled>
+    &lt;input type="button" value="Button hover" class="button secondary hover visually-hidden">
+    &lt;input type="button" value="Button focus" class="button secondary focus visually-hidden">
+    &lt;input type="button" value="Button active/on mouse down" class="button secondary active visually-hidden">
+    &lt;input type="button" value="Button selected" class="button secondary selected visually-hidden">
+&lt;/div>
+
+&lt;h4>Link &lt;a&gt; as a button:&lt;/h4>
+&lt;div class="button-container">
+    &lt;a href="#" class="button secondary visually-hidden">Button primary&lt;/a>
+    &lt;a href="#" class="button secondary disabled visually-hidden">Button disabled&lt;/a>
+    &lt;a href="#" class="button secondary hover visually-hidden">Button hover&lt;/a>
+    &lt;a href="#" class="button secondary focus visually-hidden">Button focus&lt;/a>
+    &lt;a href="#" class="button secondary active visually-hidden">Button active/on mouse down&lt;/a>
+    &lt;a href="#" class="button secondary selected visually-hidden">Button selected&lt;/a>
+    &lt;a href="#" class="button secondary ro-icon ro-icon-close visually-hidden">Icon button&lt;/a>
+    &lt;a href="#" class="button secondary visually-hidden">&lt;span class="ro-icon ro-icon-close">&lt;/span>Icon with text button&lt;/a>
+&lt;/div>
+
+&lt;h4>Submit-button &lt;button type="submit"&gt;:&lt;/h4>
+&lt;div class="button-container">
+    &lt;button type="submit" class="secondary visually-hidden">Button primary&lt;/button>
+    &lt;button type="submit" class="secondary visually-hidden" disabled>Button disabled&lt;/button>
+    &lt;button type="submit" class="secondary hover visually-hidden">Button hover&lt;/button>
+    &lt;button type="submit" class="secondary focus visually-hidden">Button focus&lt;/button>
+    &lt;button type="submit" class="secondary active visually-hidden">Button active/on mouse down&lt;/button>
+    &lt;button type="submit" class="secondary selected visually-hidden">Button selected&lt;/button>
+    &lt;button type="submit" class="secondary ro-icon ro-icon-close visually-hidden">Icon button&lt;/button>
+    &lt;button type="submit" class="secondary visually-hidden">&lt;span class="ro-icon ro-icon-close">&lt;/span>Icon with text button&lt;/button>
+&lt;/div>
+
+&lt;h4>Input type = submit &lt;input type="submit"&gt;:&lt;/h4>
+&lt;div class="button-container">
+    &lt;input type="submit" class="secondary visually-hidden" value="Input">
+    &lt;input type="submit" class="secondary visually-hidden" value="Input disabled" disabled>
+    &lt;input type="submit" class="secondary hover visually-hidden" value="Input hover">
+    &lt;input type="submit" class="secondary focus visually-hidden" value="Input focus">
+    &lt;input type="submit" class="secondary active visually-hidden" value="Input active">
+    &lt;input type="submit" class="secondary selected visually-hidden" value="Input selected">
+&lt;/div>
+
+&lt;h4>Button reset &lt;button type="reset"&gt;:&lt;/h4>
+&lt;div class="button-container">
+    &lt;button type="reset" class="secondary visually-hidden">Button secondary&lt;/button>
+    &lt;button type="reset" class="secondary visually-hidden" disabled>Button disabled&lt;/button>
+    &lt;button type="reset" class="secondary hover visually-hidden">Button hover&lt;/button>
+    &lt;button type="reset" class="secondary focus visually-hidden">Button focus&lt;/button>
+    &lt;button type="reset" class="secondary active visually-hidden">Button active/on mouse down&lt;/button>
+    &lt;button type="reset" class="secondary selected visually-hidden">Button selected&lt;/button>
+    &lt;button type="reset" class="secondary ro-icon ro-icon-close visually-hidden">Icon button&lt;/button>
+    &lt;button type="reset" class="secondary visually-hidden">&lt;span class="ro-icon ro-icon-close">&lt;/span>Icon with text button&lt;/button>
+&lt;/div>
+
+&lt;h4>Input type = reset &lt;input type="reset"&gt;:&lt;/h4>
+&lt;div class="button-container">
+    &lt;input type="reset" class="secondary visually-hidden" value="Input">
+    &lt;input type="reset" class="secondary visually-hidden" value="Input disabled" disabled>
+    &lt;input type="reset" class="secondary hover visually-hidden" value="Input hover">
+    &lt;input type="reset" class="secondary focus visually-hidden" value="Input focus">
+    &lt;input type="reset" class="secondary active visually-hidden" value="Input active">
+    &lt;input type="reset" class="secondary selected visually-hidden" value="Input selected">
+&lt;/div>
+
+&lt;h4>Different types of buttons&lt;/h4>
+&lt;div class="button-container">
+    &lt;button class="visually-hidden">Lorem ipsum&lt;/button>
+    &lt;input type="button" value="Lorem ipsum" class="visually-hidden">
+    &lt;a href="#" class="button visually-hidden">Lorem ipsum&lt;/a>
+    &lt;button type="submit" class="visually-hidden">Lorem ipsum&lt;/button>
+    &lt;input type="submit" value="Input" class="visually-hidden">
+    &lt;button type="reset" class="visually-hidden">Button primary&lt;/button>
+    &lt;input type="reset" value="Input" class="visually-hidden">
+&lt;/div>
+
+&lt;h3>Call to action button-variant&lt;/h3>
+&lt;button  class="cta visually-hidden">Lorem ipsum&lt;/button>
+&lt;h4>Button states:&lt;/h4>
+&lt;div class="button-container">
+    &lt;button class="cta visually-hidden">Button cta&lt;/button>
+    &lt;button class="cta visually-hidden" disabled>Button disabled&lt;/button>
+    &lt;button class="cta hover visually-hidden">Button hover&lt;/button>
+    &lt;button class="cta focus visually-hidden">Button focus&lt;/button>
+    &lt;button class="cta active visually-hidden">Button active/on mouse down&lt;/button>
+    &lt;button class="cta selected visually-hidden">Button selected&lt;/button>
+    &lt;button class="cta ro-icon ro-icon-close visually-hidden">Icon button&lt;/button>
+    &lt;button class="cta visually-hidden">&lt;span class="ro-icon ro-icon-close">&lt;/span>Icon with text button&lt;/button>
+&lt;/div>
+
+&lt;h4>Input type = button states:&lt;/h4>
+&lt;div class="button-container">
+    &lt;input type="button" value="Button primary" class="button cta visually-hidden">
+    &lt;input type="button" value="Button disabled" class="button cta visually-hidden" disabled>
+    &lt;input type="button" value="Button hover" class="button cta hover visually-hidden">
+    &lt;input type="button" value="Button focus" class="button cta focus visually-hidden">
+    &lt;input type="button" value="Button active/on mouse down" class="button cta active visually-hidden">
+    &lt;input type="button" value="Button selected" class="button cta selected visually-hidden">
+&lt;/div>
+
+&lt;h4>Link &lt;a&gt; as a button:&lt;/h4>
+&lt;div class="button-container">
+    &lt;a href="#" class="button cta visually-hidden">Button primary&lt;/a>
+    &lt;a href="#" class="button cta disabled visually-hidden">Button disabled&lt;/a>
+    &lt;a href="#" class="button cta hover visually-hidden">Button hover&lt;/a>
+    &lt;a href="#" class="button cta focus visually-hidden">Button focus&lt;/a>
+    &lt;a href="#" class="button cta active visually-hidden">Button active/on mouse down&lt;/a>
+    &lt;a href="#" class="button cta selected visually-hidden">Button selected&lt;/a>
+    &lt;a href="#" class="button cta ro-icon ro-icon-close visually-hidden">Icon button&lt;/a>
+    &lt;a href="#" class="button cta visually-hidden">&lt;span class="ro-icon ro-icon-close">&lt;/span>Icon with text button&lt;/a>
+&lt;/div>
+
+&lt;h4>Submit-button &lt;button type="submit"&gt;:&lt;/h4>
+&lt;div class="button-container">
+    &lt;button type="submit" class="cta visually-hidden">Button primary&lt;/button>
+    &lt;button type="submit" class="cta visually-hidden" disabled>Button disabled&lt;/button>
+    &lt;button type="submit" class="cta hover visually-hidden">Button hover&lt;/button>
+    &lt;button type="submit" class="cta focus visually-hidden">Button focus&lt;/button>
+    &lt;button type="submit" class="cta active visually-hidden">Button active/on mouse down&lt;/button>
+    &lt;button type="submit" class="cta selected visually-hidden">Button selected&lt;/button>
+    &lt;button type="submit" class="cta ro-icon ro-icon-close visually-hidden">Icon button&lt;/button>
+    &lt;button type="submit" class="cta visually-hidden">&lt;span class="ro-icon ro-icon-close">&lt;/span>Icon with text button&lt;/button>
+&lt;/div>
+
+&lt;h4>Input type = submit &lt;input type="submit"&gt;:&lt;/h4>
+&lt;div class="button-container">
+    &lt;input type="submit" class="cta visually-hidden" value="Input">
+    &lt;input type="submit" class="cta visually-hidden" value="Input disabled" disabled>
+    &lt;input type="submit" class="cta hover visually-hidden" value="Input hover">
+    &lt;input type="submit" class="cta focus visually-hidden" value="Input focus">
+    &lt;input type="submit" class="cta active visually-hidden" value="Input active">
+    &lt;input type="submit" class="cta selected visually-hidden" value="Input selected">
+&lt;/div>
+
+&lt;h4>Button reset &lt;button type="reset"&gt;:&lt;/h4>
+&lt;div class="button-container">
+    &lt;button type="reset" class="cta visually-hidden">Button cta&lt;/button>
+    &lt;button type="reset" class="cta visually-hidden" disabled>Button disabled&lt;/button>
+    &lt;button type="reset" class="cta hover visually-hidden">Button hover&lt;/button>
+    &lt;button type="reset" class="cta focus visually-hidden">Button focus&lt;/button>
+    &lt;button type="reset" class="cta active visually-hidden">Button active/on mouse down&lt;/button>
+    &lt;button type="reset" class="cta selected visually-hidden">Button selected&lt;/button>
+    &lt;button type="reset" class="cta ro-icon ro-icon-close visually-hidden">Icon button&lt;/button>
+    &lt;button type="reset" class="cta visually-hidden">&lt;span class="ro-icon ro-icon-close">&lt;/span>Icon with text button&lt;/button>
+&lt;/div>
+
+&lt;h4>Input type = reset &lt;input type="reset"&gt;:&lt;/h4>
+&lt;div class="button-container">
+    &lt;input type="reset" class="cta visually-hidden" value="Input">
+    &lt;input type="reset" class="cta visually-hidden" value="Input disabled" disabled>
+    &lt;input type="reset" class="cta hover visually-hidden" value="Input hover">
+    &lt;input type="reset" class="cta focus visually-hidden" value="Input focus">
+    &lt;input type="reset" class="cta active visually-hidden" value="Input active">
+    &lt;input type="reset" class="cta selected visually-hidden" value="Input selected">
+&lt;/div>
+                    </code>
+                </pre>
+            </div>
+        </article>
+        
+        <a href="#main-nav" class="button to-top ro-icon ro-icon-to-top" title="Terug naar het hoofdmenu">Terug naar het hoofdmenu</a>
+    </main>
+    
+    <footer>
+      <div>
+        <span>Manon - Rijksoverheid css framework</span>
+        <nav aria-labelledby="footer-nav-1-heading">
+          <h1 id="footer-nav-1-heading">Service</h1>
+          <ul>
+            <li><a href="../index.html">Over</a></li>
+            <li><a href="index.html">Styling tests</a></li>
+            <li><a href="../html_examples/index.html">Online componenten bibliotheek</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

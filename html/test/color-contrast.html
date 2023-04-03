@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <title>Kleurcontrast - Rijksoverheid CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../static/css/main.css" rel="stylesheet">
+    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <script defer="" src="../../static/js/sidemenu.js"></script>
+  </head>
+  <body>
+    <header class="breadcrumbs">
+        <a href="#main-content" class="button focus-only">Ga direct naar inhoud</a>
+        <a href="" class="ro-logo">
+            <img src="../../static/img/ro-logo.svg" alt="Logo Rijksoverheid" />
+            Rijksoverheid
+        </a>
+
+        <nav aria-label="Kruimelpad" id="main-nav">
+            <div>
+              <ul>
+                  <li><a href="../index.html">Rijksoverheid CSS</a></li>
+                  <li><a href="index.html">Styling tests</a></li>
+                  <li><a href="#" aria-current="page">Kleurcontrast</a></li>
+              </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1" class="sidemenu">
+        <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie">
+            <ul>
+                <li><a href="#introduction">Kleurcontrast testpagina</a></li>
+                <li><a href="#color-set">Rijkshuisstijl kleurenset</a></li>
+                <li><a href="#color-set-alternative-bg">Kleurcontrast op alternatieve achtergrondkleur</a></li>
+                <li><a href="#color-set-text">Rijkshuisstijl kleurenset met tekst</a></li>
+                <li><a href="#color-set-colored-text">Rijkshuisstijl kleurenset met gekleurde tekst</a></li>
+                <li><a href="#color-set-messages">Berichten</a></li>
+                <li><a href="#color-set-input">Invoervelden</a></li>
+                <li><a href="#color-set-button">Knoppen</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <article id="introduction">
+                <div>
+                    <h1>Kleurcontrast testpagina</h1>
+                    <p>Op deze pagina staan alle verschillende kleurcombinaties om contrast te kunnen controleren.</p>
+
+                    <ul>
+                        <li>"WCAG AA"-standaard vraagt om een kleurcontrast van 4.5:1 op normale tekst en 3:1 op grote op grote tekst. Voor meer informatie zie: <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" rel="external">WCAG AA eisen</a></li>
+
+                        <li>"WCAG AA"-standaard vraagt om een kleurcontrast van 7:1 op normale tekst en 4.5:1 op grote op grote tekst. Voor meer informatie zie: <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast7.html" rel="external">"WCAG AAA"-eisen</a></li>
+                        <li>De standaard aangeboden kleurenset binnen dit framework voldoent aan de "WCAG AA"-eisen. Een "WCAG AAA" kleurenset kan optioneel aangezet worden in het ro-branding.scss binnen de ontwikkelaarversie.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article id="color-set">
+                <div>
+                    <h1>Rijkshuisstijl kleurenset</h1>
+                    <div>
+                        <ul class="color-overview color-block">
+                            <li>
+                                <div>
+                                    <div class="purple"></div>
+                                    <p>Paars</p>
+                                </div>
+                                <div>
+                                    <div class="purple-tint-1"></div>
+                                    <p>Paars tint 1</p>
+                                </div>
+                                <div>
+                                    <div class="purple-tint-2"></div>
+                                    <p>Paars tint 2</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="violet"></div>
+                                    <p>Violet</p>
+                                </div>
+                                <div>
+                                    <div class="violet-tint-1"></div>
+                                    <p>Violet tint 1</p>
+                                </div>
+                                <div>
+                                    <div class="violet-tint-2"></div>
+                                    <p>Violet tint 2</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="ruby-red"></div>
+                                    <p>Robijnrood</p>
+                                </div>
+                                <div>
+                                    <div class="ruby-red-tint-1"></div>
+                                    <p>Robijnrood tint 1</p>
+                                </div>
+                                <div>
+                                    <div class="ruby-red-tint-2"></div>
+                                    <p>Robijnrood tint 2</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="pink"></div>
+                                    <p>Roze</p>
+                                </div>
+                                <div>
+                                    <div class="pink-tint-1"></div>
+                                    <p>Roze tint 1</p>
+                                </div>
+                                <div>
+                                    <div class="pink-tint-2"></div>
+                                    <p>Roze tint 2</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="red"></div>
+                                    <p>Rood</p>
+                                </div>
+                                <div>
+                                    <div class="red-tint-1"></div>
+                                    <p>Rood tint 1</p>
+                                </div>
+                                <div>
+                                    <div class="red-tint-2"></div>
+                                    <p>Rood tint 2</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="orange"></div>
+                                    <p>Oranje</p>
+                                </div>
+                                <div>
+                                    <div class="orange-tint-1"></div>
+                                    <p>Oranje tint 1</p>
+                                </div>
+                                <div>
+                                    <div class="orange-tint-2"></div>
+                                    <p>Oranje tint 2</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="dark-yellow"></div>
+                                    <p>Donkergeel</p>
+                                </div>
+                                <div>
+                                    <div class="dark-yellow-tint-1"></div>
+                                    <p>Donkergeel tint 1</p>
+                                </div>
+                                <div>
+                                    <div class="dark-yellow-tint-2"></div>
+                                    <p>Donkergeel tint 2</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="yellow"></div>
+                                    <p>Geel</p>
+                                </div>
+                                <div>
+                                    <div class="yellow-tint-1"></div>
+                                    <p>Geel tint 1</p>
+                                </div>
+                                <div>
+                                    <div class="yellow-tint-2"></div>
+                                    <p>Geel tint 2</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="dark-brown"></div>
+                                    <p>Donkerbruin</p>
+                                </div>
+                                <div>
+                                    <div class="dark-brown-tint-1"></div>
+                                    <p>Donkerbruin tint 1</p>
+                                </div>
+                                <div>
+                                    <div class="dark-brown-tint-2"></div>
+                                    <p>Donkerbruin tint 2</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="brown"></div>
+                                    <p>Bruin</p>
+                                </div>
+                                <div>
+                                    <div class="brown-tint-1"></div>
+                                    <p>Bruin tint 1</p>
+                                </div>
+                                <div>
+                                    <div class="brown-tint-2"></div>
+                                    <p>Bruin tint 2</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="dark-green"></div>
+                                    <p>Donkergroen</p>
+                                </div>
+                                <div>
+                                    <div class="dark-green-tint-1"></div>
+                                    <p>Donkergroen tint 1</p>
+                                </div>
+                                <div>
+                                    <div class="dark-green-tint-2"></div>
+                                    <p>Donkergroen tint 2</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="green"></div>
+                                    <p>Groen</p>
+                                </div>
+                                <div>
+                                    <div class="green-tint-1"></div>
+                                    <p>Groen tint 1</p>
+                                </div>
+                                <div>
+                                    <div class="green-tint-2"></div>
+                                    <p>Groen tint 2</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="moss-green"></div>
+                                    <p>Mosgroen</p>
+                                </div>
+                                <div>
+                                    <div class="moss-green-tint-1"></div>
+                                    <p>Mosgroen tint 1</p>
+                                </div>
+                                <div>
+                                    <div class="moss-green-tint-2"></div>
+                                    <p>Mosgroen tint 2</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="mint-green"></div>
+                                    <p>Mintgroen</p>
+                                </div>
+                                <div>
+                                    <div class="mint-green-tint-1"></div>
+                                    <p>Mintgroen tint 1</p>
+                                </div>
+                                <div>
+                                    <div class="mint-green-tint-2"></div>
+                                    <p>Mintgroen tint 2</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="dark-blue"></div>
+                                    <p>Donkerblauw</p>
+                                </div>
+                                <div>
+                                    <div class="dark-blue-tint-1"></div>
+                                    <p>Donkerblauw tint 1</p>
+                                </div>
+                                <div>
+                                    <div class="dark-blue-tint-2"></div>
+                                    <p>Donkerblauw tint 2</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="sky-blue"></div>
+                                    <p>Hemelblauw</p>
+                                </div>
+                                <div>
+                                    <div class="sky-blue-tint-1"></div>
+                                    <p>Hemelblauw tint 1</p>
+                                </div>
+                                <div>
+                                    <div class="sky-blue-tint-2"></div>
+                                    <p>Hemelblauw tint 2</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="light-blue"></div>
+                                    <p>Lichtblauw</p>
+                                </div>
+                                <div>
+                                    <div class="light-blue-tint-1"></div>
+                                    <p>Lichtblauw tint 1</p>
+                                </div>
+                                <div>
+                                    <div class="light-blue-tint-2"></div>
+                                    <p>Lichtblauw tint 2</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="background-color-offset" id="color-set-alternative-bg">
+                <div>
+                    <h1>Kleurcontrast op alternatieve achtergrondkleur</h1>
+                    <ul class="color-overview color-block">
+                        <li>
+                            <div>
+                                <div class="purple"></div>
+                                <p>Paars</p>
+                            </div>
+                            <div>
+                                <div class="purple-tint-1"></div>
+                                <p>Paars tint 1</p>
+                            </div>
+                            <div>
+                                <div class="purple-tint-2"></div>
+                                <p>Paars tint 2</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="violet"></div>
+                                <p>Violet</p>
+                            </div>
+                            <div>
+                                <div class="violet-tint-1"></div>
+                                <p>Violet tint 1</p>
+                            </div>
+                            <div>
+                                <div class="violet-tint-2"></div>
+                                <p>Violet tint 2</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="ruby-red"></div>
+                                <p>Robijnrood</p>
+                            </div>
+                            <div>
+                                <div class="ruby-red-tint-1"></div>
+                                <p>Robijnrood tint 1</p>
+                            </div>
+                            <div>
+                                <div class="ruby-red-tint-2"></div>
+                                <p>Robijnrood tint 2</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="pink"></div>
+                                <p>Roze</p>
+                            </div>
+                            <div>
+                                <div class="pink-tint-1"></div>
+                                <p>Roze tint 1</p>
+                            </div>
+                            <div>
+                                <div class="pink-tint-2"></div>
+                                <p>Roze tint 2</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="red"></div>
+                                <p>Rood</p>
+                            </div>
+                            <div>
+                                <div class="red-tint-1"></div>
+                                <p>Rood tint 1</p>
+                            </div>
+                            <div>
+                                <div class="red-tint-2"></div>
+                                <p>Rood tint 2</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="orange"></div>
+                                <p>Oranje</p>
+                            </div>
+                            <div>
+                                <div class="orange-tint-1"></div>
+                                <p>Oranje tint 1</p>
+                            </div>
+                            <div>
+                                <div class="orange-tint-2"></div>
+                                <p>Oranje tint 2</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="dark-yellow"></div>
+                                <p>Donkergeel</p>
+                            </div>
+                            <div>
+                                <div class="dark-yellow-tint-1"></div>
+                                <p>Donkergeel tint 1</p>
+                            </div>
+                            <div>
+                                <div class="dark-yellow-tint-2"></div>
+                                <p>Donkergeel tint 2</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="yellow"></div>
+                                <p>Geel</p>
+                            </div>
+                            <div>
+                                <div class="yellow-tint-1"></div>
+                                <p>Geel tint 1</p>
+                            </div>
+                            <div>
+                                <div class="yellow-tint-2"></div>
+                                <p>Geel tint 2</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="dark-brown"></div>
+                                <p>Donkerbruin</p>
+                            </div>
+                            <div>
+                                <div class="dark-brown-tint-1"></div>
+                                <p>Donkerbruin tint 1</p>
+                            </div>
+                            <div>
+                                <div class="dark-brown-tint-2"></div>
+                                <p>Donkerbruin tint 2</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="brown"></div>
+                                <p>Bruin</p>
+                            </div>
+                            <div>
+                                <div class="brown-tint-1"></div>
+                                <p>Bruin tint 1</p>
+                            </div>
+                            <div>
+                                <div class="brown-tint-2"></div>
+                                <p>Bruin tint 2</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="dark-green"></div>
+                                <p>Donkergroen</p>
+                            </div>
+                            <div>
+                                <div class="dark-green-tint-1"></div>
+                                <p>Donkergroen tint 1</p>
+                            </div>
+                            <div>
+                                <div class="dark-green-tint-2"></div>
+                                <p>Donkergroen tint 2</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="green"></div>
+                                <p>Groen</p>
+                            </div>
+                            <div>
+                                <div class="green-tint-1"></div>
+                                <p>Groen tint 1</p>
+                            </div>
+                            <div>
+                                <div class="green-tint-2"></div>
+                                <p>Groen tint 2</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="moss-green"></div>
+                                <p>Mosgroen</p>
+                            </div>
+                            <div>
+                                <div class="moss-green-tint-1"></div>
+                                <p>Mosgroen tint 1</p>
+                            </div>
+                            <div>
+                                <div class="moss-green-tint-2"></div>
+                                <p>Mosgroen tint 2</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="mint-green"></div>
+                                <p>Mintgroen</p>
+                            </div>
+                            <div>
+                                <div class="mint-green-tint-1"></div>
+                                <p>Mintgroen tint 1</p>
+                            </div>
+                            <div>
+                                <div class="mint-green-tint-2"></div>
+                                <p>Mintgroen tint 2</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="dark-blue"></div>
+                                <p>Donkerblauw</p>
+                            </div>
+                            <div>
+                                <div class="dark-blue-tint-1"></div>
+                                <p>Donkerblauw tint 1</p>
+                            </div>
+                            <div>
+                                <div class="dark-blue-tint-2"></div>
+                                <p>Donkerblauw tint 2</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="sky-blue"></div>
+                                <p>Hemelblauw</p>
+                            </div>
+                            <div>
+                                <div class="sky-blue-tint-1"></div>
+                                <p>Hemelblauw tint 1</p>
+                            </div>
+                            <div>
+                                <div class="sky-blue-tint-2"></div>
+                                <p>Hemelblauw tint 2</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="light-blue"></div>
+                                <p>Lichtblauw</p>
+                            </div>
+                            <div>
+                                <div class="light-blue-tint-1"></div>
+                                <p>Lichtblauw tint 1</p>
+                            </div>
+                            <div>
+                                <div class="light-blue-tint-2"></div>
+                                <p>Lichtblauw tint 2</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <article id="color-set-text">
+                <div>
+                    <h1>Rijkshuisstijl kleurenset met tekst</h1>
+                    <div>
+                        <ul class="color-overview">
+                            <li>
+                                <div class="purple">Paars</div>
+                                <div class="purple-tint-1">Paars tint 1</div>
+                                <div class="purple-tint-2">Paars tint 2</div>
+                            </li>
+                            <li>
+                                <div class="violet">Violet</div>
+                                <div class="violet-tint-1">Violet tint 1</div>
+                                <div class="violet-tint-2">Violet tint 2</div>
+                            </li>
+                            <li>
+                                <div class="ruby-red">Robijnrood</div>
+                                <div class="ruby-red-tint-1">Robijnrood tint 1</div>
+                                <div class="ruby-red-tint-2">Robijnrood tint 2</div>
+                            </li>
+                            <li>
+                                <div class="pink">Roze</div>
+                                <div class="pink-tint-1">Roze tint 1</div>
+                                <div class="pink-tint-2">Roze tint 2</div>
+                            </li>
+                            <li>
+                                <div class="red">Rood</div>
+                                <div class="red-tint-1">Rood tint 1</div>
+                                <div class="red-tint-2">Rood tint 2</div>
+                            </li>
+                            <li>
+                                <div class="orange">Oranje</div>
+                                <div class="orange-tint-1">Oranje tint 1</div>
+                                <div class="orange-tint-2">Oranje tint 2</div>
+                            </li>
+                            <li>
+                                <div class="dark-yellow">Donkergeel</div>
+                                <div class="dark-yellow-tint-1">Donkergeel tint 1</div>
+                                <div class="dark-yellow-tint-2">Donkergeel tint 2</div>
+                            </li>
+                            <li>
+                                <div class="yellow">Geel</div>
+                                <div class="yellow-tint-1">Geel tint 1</div>
+                                <div class="yellow-tint-2">Geel tint 2</div>
+                            </li>
+                            <li>
+                                <div class="dark-brown">Donkerbruin</div>
+                                <div class="dark-brown-tint-1">Donkerbruin tint 1</div>
+                                <div class="dark-brown-tint-2">Donkerbruin tint 2</div>
+                            </li>
+                            <li>
+                                <div class="brown">Bruin</div>
+                                <div class="brown-tint-1">Bruin tint 1</div>
+                                <div class="brown-tint-2">Bruin tint 2</div>
+                            </li>
+                            <li>
+                                <div class="dark-green">Donkergroen</div>
+                                <div class="dark-green-tint-1">Donkergroen tint 1</div>
+                                <div class="dark-green-tint-2">Donkergroen tint 2</div>
+                            </li>
+                            <li>
+                                <div class="green">Groen</div>
+                                <div class="green-tint-1">Groen tint 1</div>
+                                <div class="green-tint-2">Groen tint 2</div>
+                            </li>
+                            <li>
+                                <div class="moss-green">Mosgroen</div>
+                                <div class="moss-green-tint-1">Mosgroen tint 1</div>
+                                <div class="moss-green-tint-2">Mosgroen tint 2</div>
+                            </li>
+                            <li>
+                                <div class="mint-green">Mintgroen</div>
+                                <div class="mint-green-tint-1">Mintgroen tint 1</div>
+                                <div class="mint-green-tint-2">Mintgroen tint 2</div>
+                            </li>
+                            <li>
+                                <div class="dark-blue">Donkerblauw</div>
+                                <div class="dark-blue-tint-1">Donkerblauw tint 1</div>
+                                <div class="dark-blue-tint-2">Donkerblauw tint 2</div>
+                            </li>
+                            <li>
+                                <div class="sky-blue">Hemelblauw</div>
+                                <div class="sky-blue-tint-1">Hemelblauw tint 1</div>
+                                <div class="sky-blue-tint-2">Hemelblauw tint 2</div>
+                            </li>
+                            <li>
+                                <div class="light-blue">Lichtblauw</div>
+                                <div class="light-blue-tint-1">Lichtblauw tint 1</div>
+                                <div class="light-blue-tint-2">Lichtblauw tint 2</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article id="color-set-colored-text">
+                <div>
+                    <h1>Rijkshuisstijl kleurenset met gekleurde tekst</h1>
+                    <div>
+                        <ul class="color-overview colored-text">
+                            <li>
+                                <div class="purple">Paars</div>
+                                <div class="purple-tint-1 purple-tint-colored-text">Paars tint 1</div>
+                                <div class="purple-tint-2 purple-tint-colored-text">Paars tint 2</div>
+                            </li>
+                            <li>
+                                <div class="violet">Violet</div>
+                                <div class="violet-tint-1 violet-tint-colored-text">Violet tint 1</div>
+                                <div class="violet-tint-2 violet-tint-colored-text">Violet tint 2</div>
+                            </li>
+                            <li>
+                                <div class="ruby-red">Robijnrood</div>
+                                <div class="ruby-red-tint-1 ruby-red-tint-colored-text">Robijnrood tint 1</div>
+                                <div class="ruby-red-tint-2 ruby-red-tint-colored-text">Robijnrood tint 2</div>
+                            </li>
+                            <li>
+                                <div class="pink">Roze</div>
+                                <div class="pink-tint-1 pink-tint-colored-text">Roze tint 1</div>
+                                <div class="pink-tint-2 pink-tint-colored-text">Roze tint 2</div>
+                            </li>
+                            <li>
+                                <div class="red">Rood</div>
+                                <div class="red-tint-1 red-tint-colored-text">Rood tint 1</div>
+                                <div class="red-tint-2 red-tint-colored-text">Rood tint 2</div>
+                            </li>
+                            <li>
+                                <div class="orange">Oranje</div>
+                                <div class="orange-tint-1 orange-tint-colored-text">Oranje tint 1</div>
+                                <div class="orange-tint-2 orange-tint-colored-text">Oranje tint 2</div>
+                            </li>
+                            <li>
+                                <div class="dark-yellow">Donkergeel</div>
+                                <div class="dark-yellow-tint-1 dark-yellow-tint-colored-text">Donkergeel tint 1</div>
+                                <div class="dark-yellow-tint-2 dark-yellow-tint-colored-text">Donkergeel tint 2</div>
+                            </li>
+                            <li>
+                                <div class="yellow">Geel</div>
+                                <div class="yellow-tint-1 yellow-tint-colored-text">Geel tint 1</div>
+                                <div class="yellow-tint-2 yellow-tint-colored-text">Geel tint 2</div>
+                            </li>
+                            <li>
+                                <div class="dark-brown">Donkerbruin</div>
+                                <div class="dark-brown-tint-1 dark-brown-tint-colored-text">Donkerbruin tint 1</div>
+                                <div class="dark-brown-tint-2 dark-brown-tint-colored-text">Donkerbruin tint 2</div>
+                            </li>
+                            <li>
+                                <div class="brown">Bruin</div>
+                                <div class="brown-tint-1 brown-tint-colored-text">Bruin tint 1</div>
+                                <div class="brown-tint-2 brown-tint-colored-text">Bruin tint 2</div>
+                            </li>
+                            <li>
+                                <div class="dark-green">Donkergroen</div>
+                                <div class="dark-green-tint-1 dark-green-tint-colored-text">Donkergroen tint 1</div>
+                                <div class="dark-green-tint-2 dark-green-tint-colored-text">Donkergroen tint 2</div>
+                            </li>
+                            <li>
+                                <div class="green">Groen</div>
+                                <div class="green-tint-1 green-tint-colored-text">Groen tint 1</div>
+                                <div class="green-tint-2 green-tint-colored-text">Groen tint 2</div>
+                            </li>
+                            <li>
+                                <div class="moss-green">Mosgroen</div>
+                                <div class="moss-green-tint-1 moss-green-tint-colored-text">Mosgroen tint 1</div>
+                                <div class="moss-green-tint-2 moss-green-tint-colored-text">Mosgroen tint 2</div>
+                            </li>
+                            <li>
+                                <div class="mint-green">Mintgroen</div>
+                                <div class="mint-green-tint-1 mint-green-tint-colored-text">Mintgroen tint 1</div>
+                                <div class="mint-green-tint-2 mint-green-tint-colored-text">Mintgroen tint 2</div>
+                            </li>
+                            <li>
+                                <div class="dark-blue">Donkerblauw</div>
+                                <div class="dark-blue-tint-1 dark-blue-tint-colored-text">Donkerblauw tint 1</div>
+                                <div class="dark-blue-tint-2 dark-blue-tint-colored-text">Donkerblauw tint 2</div>
+                            </li>
+                            <li>
+                                <div class="sky-blue">Hemelblauw</div>
+                                <div class="sky-blue-tint-1 sky-blue-tint-colored-text">Hemelblauw tint 1</div>
+                                <div class="sky-blue-tint-2 sky-blue-tint-colored-text">Hemelblauw tint 2</div>
+                            </li>
+                            <li>
+                                <div class="light-blue">Lichtblauw</div>
+                                <div class="light-blue-tint-1 light-blue-tint-colored-text">Lichtblauw tint 1</div>
+                                <div class="light-blue-tint-2 light-blue-tint-colored-text">Lichtblauw tint 2</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article id="color-set-messages">
+                <div>
+                    <h1>Berichten</h1>
+                    <p>Berichten hebben een achtergrondkleur op basis van het type bericht.</p>
+                    <p class="error">Lorem ipsum dolor sit <a href="">amet</a>.</p>
+                    <p class="warning">Lorem ipsum dolor sit <a href="">amet</a>.</p>
+                    <p class="confirmation">Lorem ipsum dolor sit <a href="">amet</a>.</p>
+                    <p class="explanation">Lorem ipsum dolor sit <a href="">amet</a>.</p>
+                    <p class="primary">Lorem ipsum dolor sit <a href="">amet</a>.</p>
+                </div>
+            </article>
+            
+            <article id="color-set-input">
+                <div>
+                    <h1>Invoervelden</h1>
+                    <form method="post">
+                        <div>
+                            <label for="input-error">Error:</label>
+                            <div>
+                                <input id="input-error" class="error" value="Lorem ipsum">
+                                <p class="error">Lorem ipsum dolor sit <a href="">amet</a>.</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="input-warning">Waarschuwing:</label>
+                            <div>
+                                <input id="input-warning" class="warning" value="Lorem ipsum">
+                                <p class="warning">Lorem ipsum dolor sit <a href="">amet</a>.</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="input-explanation">Toelichting:</label>
+                            <div>
+                                <input id="input-explanation" class="explanation" value="Lorem ipsum">
+                                <p class="explanation">Lorem ipsum dolor sit <a href="">amet</a>.</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="input-confirmation">Bevestiging:</label>
+                            <div>
+                                <input id="input-confirmation" class="confirmation" value="Lorem ipsum">
+                                <p class="confirmation">Lorem ipsum dolor sit <a href="">amet</a>.</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="input-primary">Primair:</label>
+                            <div>
+                                <input id="input-primary" class="primary" value="Lorem ipsum">
+                                <p class="primary">Lorem ipsum dolor sit <a href="">amet</a>.</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </article>
+
+            <article id="color-set-button">
+                <div>
+                    <h1>Knoppen</h1>
+                    <button type="button" class="error">Lorem ipsum</button>
+                    <button type="button" class="warning">Lorem ipsum</button>
+                    <button type="button" class="confirmation">Lorem ipsum</button>
+                    <button type="button" class="explanation">Lorem ipsum</button>
+                    <button type="button" class="primary">Lorem ipsum</button>
+                </div>
+            </article>
+
+        </div>
+
+        <a href="#main-nav" class="button to-top ro-icon ro-icon-to-top" title="Terug naar het hoofdmenu">Terug naar het hoofdmenu</a>
+    </main>
+    
+    <footer>
+      <div>
+        <span>Manon - Rijksoverheid css framework</span>
+        <nav aria-labelledby="footer-nav-1-heading">
+          <h1 id="footer-nav-1-heading">Service</h1>
+          <ul>
+            <li><a href="../index.html">Over</a></li>
+            <li><a href="index.html">Styling tests</a></li>
+            <li><a href="../html_examples/index.html">Online componenten bibliotheek</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

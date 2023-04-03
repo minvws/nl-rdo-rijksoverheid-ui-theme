@@ -1,0 +1,33 @@
+/* Button */
+
+:root {
+	/* Base */
+	--button-base-background-color: var(--ruby-red-background-color);
+	--button-base-text-color: var(--ruby-red-text-color);
+
+	/* Hover */
+	--button-base-hover-background-color: var(--ruby-red-hover-background-color);
+	--button-base-hover-text-color: var(--ruby-red-hover-text-color);
+
+	/* Active */
+	--button-base-active-background-color: var(
+		--ruby-red-active-background-color
+	);
+	--button-base-active-text-color: var(--ruby-red-active-text-color);
+
+	/* Focus */
+	--button-base-focus-background-color: var(--ruby-red-focus-background-color);
+	--button-base-focus-text-color: var(--ruby-red-focus-text-color);
+
+	/* Selected */
+	--button-base-selected-background-color: var(
+		--ruby-red-selected-background-color
+	);
+	--button-base-selected-text-color: var(--ruby-red-selected-text-color);
+
+	/* Disabled */
+	--button-base-disabled-background-color: var(
+		--ruby-red-disabled-background-color
+	);
+	--button-base-disabled-text-color: var(--ruby-red-disabled-text-color);
+}

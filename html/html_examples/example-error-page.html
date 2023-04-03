@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <title>Voorbeeld notificatiepagina - Rijksoverheid CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../static/css/main.css" rel="stylesheet">
+    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <script defer src="../../static/js/sidemenu.js"></script>
+  </head>
+  <body class="test-cases">
+    <header class="breadcrumbs">
+      <a href="#main-content" class="button focus-only">Ga direct naar inhoud</a>
+      <a href="" class="ro-logo">
+        <img src="../../static/img/ro-logo.svg" alt="Logo Rijksoverheid">
+        Rijksoverheid
+      </a>
+      
+      <nav aria-label="Kruimelpad" id="main-nav">
+        <div>
+          <ul>
+              <li><a href="../index.html">Rijksoverheid CSS</a></li>
+              <li><a href="index.html">Online Componenenten Bibliotheek</a></li>
+              <li><a href="#" aria-current="page">Voorbeeld notificatiepagina</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+        <ul>
+            <li><a href="#">Voorbeeld notificatiepagina</a>
+              <ul>
+                <li><a href="#visual-example">Viseel voorbeeld</a></li>
+                <li><a href="#html-example">Html-voorbeeld</a></li>
+              </ul>
+            </li>
+        </ul>
+      </nav>
+
+      <div>
+        <article>
+        <div>
+          <h1>Voorbeeldpagina, notificatie</h1>
+          <p>Voorbeeld van een notificatiepagina, ookwel error-pagina genoemd.</p>
+          <h2>Aandachtspunten:</h2>
+          <ul>
+            <li>Dit voorbeeld maakt gebruik van de onderstaande elementen. Zie de detail-pagina's voor meer informatie:
+              <ul>
+                <li><a href="header-main-nav.html">Header-element met hoofdnavigatie</a></li>
+                <li><a href="skip-to-content.html">"Ga direct naar inhoud"-knop</a></li>
+                <li><a href="headings.html">Titels</a></li>
+                <li><a href="list.html">Lijsten</a></li>
+                <li><a href="notification.html">Notificaties</a></li>
+                <li><a href="footer.html">Footer</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <h2>Voorbeelden:</h2>
+          <h3 id="visual-example">Visueel voorbeeld:</h3>
+        </div>
+        <header>
+          <a href="#main-content" class="button focus-only">Ga direct naar inhoud</a>
+          <a href="" class="ro-logo">
+            <img src="../../static/img/ro-logo.svg" alt="Logo Rijksoverheid">
+            Rijksoverheid
+          </a>
+
+          <nav aria-label="Hoofdnavigatie">
+            <div>
+              <ul>
+                  <li ><a href="" aria-current="page">Hoofdpagina</a></li>
+                  <li><a href="">Ipsum</a></li>
+                  <li><a href="">Dolor</a></li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+        <main>
+          <section>
+            <div>
+              <h1>Error code 404: Pagina niet gevonden</h1>
+              <p>De pagina die u wilde zien of het bestand dat u wilde bekijken is niet gevonden.</p>
+              <p>U kunt de informatie die u zoekt mogelijk vinden via de volgende pagina's:</p>
+              <ul>
+                <li><a href="../index.html">Rijksoverheid CSS</a></li>
+                <li><a href="index.html">Online Componenenten Bibliotheek</a></li>
+                <li><a href="#" aria-current="page">Voorbeeld notificatiepagina</a></li>
+              </ul>
+
+              <p>Of ga terug naar de hoofdpagina</p>
+              <a href="../index.html" class="button"><span class=" ro-icon ro-icon-home"></span>Hoofdpagina</a>
+            </div>
+          </section>
+        </main>
+
+        <footer>
+          <div>
+            <span>De Rijksoverheid. Voor Nederland</span>
+          </div>
+        </footer>
+
+        <div>
+        <h3 id="html-example">html-voorbeeld:</h3>
+
+        <pre>
+          <code>
+&lt;!DOCTYPE html>
+&lt;html lang="nl">
+  &lt;head>
+    &lt;meta charset="UTF-8">
+    &lt;title>Lorem ipsum&lt;/title>
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1">
+    &lt;link href="static/css/style.css" rel="stylesheet">
+    &lt;link href="static/img/favicon.ico" rel="shortcut icon">
+    &lt;script defer src="static/js/sidemenu.js">&lt;/script>
+  &lt;/head>
+
+  &lt;header>
+    &lt;a href="#main-content" class="button focus-only">Ga direct naar inhoud&lt;/a>
+    &lt;a href="" class="ro-logo">
+      &lt;img src="static/img/ro-logo.svg" alt="Logo Rijksoverheid">
+      Rijksoverheid
+    &lt;/a>
+
+    &lt;nav aria-label="Hoofdnavigatie">
+      &lt;div>
+        &lt;ul>
+            &lt;li >&lt;a href="" aria-current="page">Hoofdpagina&lt;/a>&lt;/li>
+            &lt;li>&lt;a href="">Ipsum&lt;/a>&lt;/li>
+            &lt;li>&lt;a href="">Dolor&lt;/a>&lt;/li>
+        &lt;/ul>
+      &lt;/div>
+    &lt;/nav>
+  &lt;/header>
+
+  &lt;main id="main-content" tabindex="-1">
+    &lt;section>
+      &lt;div>
+        &lt;h1>Pagina niet gevonden&lt;/h1>
+        &lt;p>De pagina die u wilde zien of het bestand dat u wilde bekijken is niet gevonden.&lt;/p>
+
+        &lt;h2>U kunt de informatie die u zoekt mogelijk vinden via de volgende pagina's:&lt;/h2>
+
+        &lt;ul>
+          &lt;li>&lt;a href="../index.html">Rijksoverheid CSS&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="index.html">Online Componenenten Bibliotheek&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="/" aria-current="page">Voorbeeld notificatiepagina&lt;/a>&lt;/li>
+        &lt;/ul>
+
+        
+      &lt;/div>
+    &lt;/section>
+  &lt;/main>
+
+  &lt;footer>
+    &lt;div>
+      &lt;span>De Rijksoverheid. Voor Nederland&lt;/span>
+    &lt;/div>
+  &lt;/footer>
+&lt;/html>
+            </code>
+          </pre>
+
+          </div>
+        </article>
+      </div>
+    </main>
+    
+    <footer>
+      <div>
+        <span>Manon - Rijksoverheid css framework</span>
+        <nav aria-labelledby="footer-nav-1-heading">
+          <h1 id="footer-nav-1-heading">Service</h1>
+          <ul>
+            <li><a href="../index.html">Over</a></li>
+            <li><a href="../test/index.html">Styling tests</a></li>
+            <li><a href="index.html">Online componenten bibliotheek</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,2735 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <title>Notifications - Rijksoverheid CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../static/css/main.css" rel="stylesheet">
+    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <script defer src="../../static/js/sidemenu.js"></script>
+  </head>
+  <body class="test-cases">
+    <header class="breadcrumbs">
+      <a href="#main-content" class="button focus-only">Ga direct naar inhoud</a>
+      <a href="" class="ro-logo">
+        <img src="../../static/img/ro-logo.svg" alt="Logo Rijksoverheid">
+        Rijksoverheid
+      </a>
+      
+      <nav aria-label="Kruimelpad" id="main-nav">
+        <div>
+            <ul>
+                <li><a href="../index.html">Rijksoverheid CSS</a></li>
+                <li><a href="index.html">Online Componenten Bibliotheek</a></li>
+                <li><a href="#" aria-current="page">Notificaties</a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+        <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+            <ul>
+                <li><a href="#">Notificaties</a></li>
+                <li><a href="#page-notifications">Pagina-notificaties</a></li>
+                <li><a href="#error">error</a>
+                    <ul>
+                        <li><a href="#error-div">Blokelement</a></li>
+                        <li><a href="#error-p">Paragraaf</a></li>
+                        <li><a href="#error-button">Knop</a></li>
+                        <li><a href="#error-table">Tabel-elementen</a></li>
+                        <li><a href="#error-form">Formulier-elementen</a></li>
+                    </ul>
+                </li>
+                <li><a href="#warning">warning</a>
+                    <ul>
+                        <li><a href="#warning-div">Blokelement</a></li>
+                        <li><a href="#warning-p">Paragraaf</a></li>
+                        <li><a href="#warning-button">Knop</a></li>
+                        <li><a href="#warning-table">Tabel-elementen</a></li>
+                        <li><a href="#warning-form">Formulier-elementen</a></li>
+                    </ul>
+                </li>
+                <li><a href="#confirmation">confirmation</a>
+                    <ul>
+                        <li><a href="#confirmation-div">Blokelement</a></li>
+                        <li><a href="#confirmation-p">Paragraaf</a></li>
+                        <li><a href="#confirmation-button">Knop</a></li>
+                        <li><a href="#confirmation-table">Tabel-elementen</a></li>
+                        <li><a href="#confirmation-form">Formulier-elementen</a></li>
+                    </ul>
+                </li>
+                <li><a href="#explanation">explanation</a>
+                    <ul>
+                        <li><a href="#explanation-div">Blokelement</a></li>
+                        <li><a href="#explanation-p">Paragraaf</a></li>
+                        <li><a href="#explanation-button">Knop</a></li>
+                        <li><a href="#explanation-table">Tabel-elementen</a></li>
+                        <li><a href="#explanation-form">Formulier-elementen</a></li>
+                    </ul>
+                </li>
+                <li><a href="#primary">primary</a>
+                    <ul>
+                        <li><a href="#primary-div">Blokelement</a></li>
+                        <li><a href="#primary-p">Paragraaf</a></li>
+                        <li><a href="#primary-button">Knop</a></li>
+                        <li><a href="#primary-table">Tabel-elementen</a></li>
+                        <li><a href="#primary-form">Formulier-elementen</a></li>
+                    </ul>
+                </li>
+                <li><a href="#system-notification">Systeembrichten</a>
+                    <ul>
+                        <li><a href="#system-notification-div">Blokelement</a></li>
+                        <li><a href="#system-notification-p">Paragraaf</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#attention">Attentie</a>
+                    <ul>
+                        <li><a href="#attention-div">Blokelement</a></li>
+                        <li><a href="#attention-p">Paragraaf</a></li>
+                        <li><a href="#attention-span"><code>span</code></a></li>
+                        <li><a href="#attention-table">Tabel-elementen</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div>
+            <article>
+                <div>
+                    <h1>Notificaties</h1>
+                    <p>Waarschuwingen, extra informatie en foutmeldingen.</p>
+                    <p>Aandachtspunten:</p>
+                    <ul>
+                        <li>De verschillende notificatie-types worden visueel onderscheidend weergegeven. Hierdoor zijn ze in een oogopslag herkenbaar en neemt de gebruiker ook zonder te lezen al informatie tot zich.</li>
+                        <li>Notificaties kunnen verborgen worden door de class <code>hidden</code> toe te voegen aan de notification</li>
+                        <li>Voeg de volledige code toe die in de voorbeelden staat om alle gebruikers een goede gebruikerservaring the bieden. Denk hierbij aan gebruikers die kleurenblind zijn of gebruikers die gebruik maken van hulptechnologiën. Zie voor meer informatie de beschikbare voorbeelden.</li>
+                    </ul>
+                    <nav aria-label="Document-navigatie">
+                        <ul>
+                            <li><a href="#page-notifications">Pagina-notificaties</a></li>
+                            <li><a href="#error">error</a></li>
+                            <li><a href="#warning">warning</a></li>
+                            <li><a href="#confirmation">confirmation</a></li>
+                            <li><a href="#explanation">explanation</a></li>
+                            <li><a href="#primary">primary</a></li>
+                            <li><a href="#system-notification">Systeemberichten</a></li>
+                            <li><a href="#attention">Attentie</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </article>
+
+            <article id="page-notifications">
+                <div>
+                    <h1>Notificatievoorbeeld op pagina-niveau</h1>
+                    <p>Voor het plaatsen van algemene meldingen bovenaan de pagina.</p>
+                    <p>Aandachtspunten:</p>
+                    <ul>
+                        <li>Plaats de notificatie direct binnen de <code>main</code>.</li>
+                        <li>Gebruik een <code>&lt;section></code> met de <code>class</code> van het gewenste type voor het plaatsen van een pagina-notificatie.</li>
+                    </ul>
+
+                    <h2>Visueel voorbeeld section:</h2>
+                </div>
+                <header>
+                  <a href="" class="ro-logo">
+                    <img src="../../static/img/ro-logo.svg" alt="Logo Rijksoverheid">
+                    Rijksoverheid
+                  </a>
+
+                  <nav aria-label="Hoofdnavigatie">
+                    <div>
+                      <ul>
+                          <li ><a href="" aria-current="page">Hoofdpagina</a></li>
+                          <li><a href="">Ipsum</a></li>
+                          <li><a href="">Dolor</a></li>
+                      </ul>
+                    </div>
+                  </nav>
+                </header>
+                <main>
+                    <section class="confirmation" role="group" aria-label="bevestiging">
+                        <div>
+                            <span>Bevestiging:</span>
+                            <p>Uw account is succesvol aangemaakt.</p>
+                        </div>
+                    </section>
+                </main>
+                <div>
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;main>
+    &lt;section class="confirmation" role="group" aria-label="bevestiging">
+        &lt;div>
+            &lt;span>Bevestiging:&lt;/span>
+            &lt;p>Uw account is succesvol aangemaakt.&lt;/p>
+        &lt;/div>
+    &lt;/section>
+&lt;/main>
+                        </code>
+                    </pre>
+                    <h2>Visueel voorbeeld paragraaf:</h2>
+                </div>
+
+                <header>
+                  <a href="" class="ro-logo">
+                    <img src="../../static/img/ro-logo.svg" alt="Logo Rijksoverheid">
+                    Rijksoverheid
+                  </a>
+
+                  <nav aria-label="Hoofdnavigatie">
+                    <div>
+                      <ul>
+                          <li ><a href="" aria-current="page">Hoofdpagina</a></li>
+                          <li><a href="">Ipsum</a></li>
+                          <li><a href="">Dolor</a></li>
+                      </ul>
+                    </div>
+                  </nav>
+                </header>
+                <main>
+                    <p class="confirmation" role="group" aria-label="bevestiging">
+                        <span>Bevestiging:</span>
+                        Uw account is succesvol aangemaakt.
+                    </p>
+                </main>
+
+                <div>
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;main>
+    &lt;p class="confirmation" role="group" aria-label="bevestiging">
+        &lt;span>Bevestiging: &lt;/span>
+        Uw account is succesvol aangemaakt.
+    &lt;/p>
+&lt;/main>
+                        </code>
+                    </pre>
+
+                    <h2>Visueel voorbeeld span:</h2>
+                </div>
+
+                <header>
+                  <a href="" class="ro-logo">
+                    <img src="../../static/img/ro-logo.svg" alt="Logo Rijksoverheid">
+                    Rijksoverheid
+                  </a>
+
+                  <nav aria-label="Hoofdnavigatie">
+                    <div>
+                      <ul>
+                          <li ><a href="" aria-current="page">Hoofdpagina</a></li>
+                          <li><a href="">Ipsum</a></li>
+                          <li><a href="">Dolor</a></li>
+                      </ul>
+                    </div>
+                  </nav>
+                </header>
+                <main>
+                    <span class="confirmation" role="group" aria-label="bevestiging">
+                       <span>Bevestiging:</span>
+                       Uw account is succesvol aangemaakt.
+                    </span>
+                </main>
+
+                <div>
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;main>
+    &lt;span class="confirmation" role="group" aria-label="bevestiging">
+       &lt;span>Bevestiging:&lt;/span>
+       Uw account is succesvol aangemaakt.
+    &lt;/span>
+&lt;/main>
+                        </code>
+                    </pre>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <h1 id="error">Foutmelding</h1>
+                    <p>Te gebruiken om de gebruiker te attenderen op een fout. Bijvoorbeeld bij het incorrect invoeren van data of een systeemfout.</p>
+                    
+                    <p>Beschikbare voorbeelden:</p>
+                    <nav aria-label="Foutmelding subnavigatie">
+                        <ul>
+                            <li><a href="#error-div">Blokelement</a></li>
+                            <li><a href="#error-p">Paragraaf</a></li>
+                            <li><a href="#error-button">Knop</a></li>
+                            <li><a href="#error-table">Tabel-elementen</a></li>
+                            <li><a href="#error-form">Formulier-elementen</a></li>
+                        </ul>
+                    </nav>
+
+                    <h2 id="error-div">Foutmelding binnen een blok</h2>
+                    <h3>Voorbeeld</h3>
+                    <p>Visueel voorbeeld:</p>
+
+                    <div class="error" role="group" aria-label="foutmelding">
+                        <span>Foutmelding:</span>
+                        <h1>Lorem ipsum dolor set</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.</p>
+                        <ul>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. <a href="">Lorem ipsum</a> consectetur adipiscing elit.</li>
+                        </ul>
+                        <button type="button">Lorem</button>
+                    </div>
+
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;div class="error" role="group" aria-label="foutmelding">
+    &lt;span>Foutmelding:&lt;/span>
+    &lt;!-- Voeg hier de content toe. -->
+&lt;/div>
+                        </code>
+                    </pre>
+
+                    <h2 id="error-p">Foutmelding op paragraaf:</h2>
+                    <h3>Voorbeeld</h3>
+                    <p>Visueel voorbeeld:</p>
+                    <p class="error" role="group" aria-label="foutmelding"><span>Foutmelding:</span> Lorem ipsum dolor sit.</p>
+
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;p class="error" role="group" aria-label="foutmelding">&lt;span>Foutmelding:&lt;/span> Lorem ipsum dolor sit amet &lt;/p>
+                        </code>
+                    </pre>
+
+                    <h2 id="error-button">Foutmelding op <code>button</code></h2>
+                    <h3>Voorbeeld</h3>
+
+                    <p>Visueel voorbeeld:</p>
+                    <button type="button" class="error">
+                        <span>Foutmelding:</span> Lorem ipsum
+                    </button>
+
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;button type="button" class="error">
+    &lt;span>Foutmelding:&lt;/span> Lorem ipsum
+&lt;/button>
+                        </code>
+                    </pre>
+
+                    <h2 id="error-table">Foutmelding op tabel-elementen</h2>
+                    <nav aria-label="Foutmelding tabelelementen subnavigatie">
+                        <ul>
+                            <li><a href="#error-th">Tabeltitel</a></li>
+                            <li><a href="#error-td">Tabelcel</a></li>
+                            <li><a href="#error-tr">Tabelrij</a></li>
+                        </ul>
+                    </nav>
+
+                    <h2 id="error-th">Foutmelding op tabeltitel</h2>
+
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="error" aria-label="foutmelding"><span>Foutmelding:</span> Lorem</th>
+                                <th class="error" aria-label="foutmelding"><span>Foutmelding:</span> Ipsum</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>12</td>
+                                <td>42</td>
+                            </tr>
+
+                            <tr>
+                                <td>15</td>
+                                <td>168</td>
+                            </tr>
+
+                            <tr>
+                                <td>123</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Lorem ipsum</td>
+                                <td>Dolor set amet</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;th class="error" aria-label="foutmelding">&lt;span>Foutmelding:&lt;/span> Lorem&lt;/th>
+                        </code>
+                    </pre>
+
+                    <h2 id="error-td">Foutmelding op Tabelcel</h2>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Lorem</th>
+                                <th>Ipsum</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>12</td>
+                                <td>42</td>
+                            </tr>
+
+                            <tr>
+                                <td class="error" aria-label="foutmelding"><span>Foutmelding:</span> 15</td>
+                                <td class="error" aria-label="foutmelding"><span>Foutmelding:</span> 168</td>
+                            </tr>
+
+                            <tr>
+                                <td class="error" aria-label="foutmelding"><span>Foutmelding:</span> 15</td>
+                                <td class="error" aria-label="foutmelding"><span>Foutmelding:</span> 168</td>
+                            </tr>
+
+                            <tr>
+                                <td class="error" aria-label="foutmelding"><span>Foutmelding:</span> 15</td>
+                                <td class="error" aria-label="foutmelding"><span>Foutmelding:</span> 168</td>
+                            </tr>
+
+                            <tr>
+                                <td>123</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Lorem ipsum</td>
+                                <td>Dolor set amet</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;td class="error" aria-label="foutmelding">&lt;span>Foutmelding:&lt;/span> 15&lt;/td>
+                        </code>
+                    </pre>
+
+                    <h2 id="error-tr">Foutmelding op tabelrij</h2>
+                    <p>Aandachtspunten:</p>
+                    <ul>
+                        <li>Niet alle screenreaders lezen <code>aria-label</code> op een <code>tr</code> op. Voeg daarom de labels toe aan de <code>th</code> of de <code>td</code>.</li>
+                    </ul>
+
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <table>
+                        <thead>
+                            <tr class="error">
+                                <th aria-label="foutmelding"><span>Foutmelding:</span> Lorem</th>
+                                <th aria-label="foutmelding"><span>Foutmelding:</span> Ipsum</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="error">
+                                <td aria-label="foutmelding"><span>Foutmelding:</span> 12</td>
+                                <td aria-label="foutmelding"><span>Foutmelding:</span> 42</td>
+                            </tr>
+
+                            <tr>
+                                <td>15</td>
+                                <td>168</td>
+                            </tr>
+
+                            <tr>
+                                <td>123</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Lorem ipsum</td>
+                                <td>Dolor set amet</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;table>
+    &lt;thead>
+        &lt;tr class="error">
+            &lt;th aria-label="foutmelding">&lt;span>Foutmelding:&lt;/span> Lorem&lt;/th>
+            &lt;th aria-label="foutmelding">&lt;span>Foutmelding:&lt;/span> Ipsum&lt;/th>
+        &lt;/tr>
+    &lt;/thead>
+    &lt;tbody>
+        &lt;tr class="error">
+            &lt;td aria-label="foutmelding">&lt;span>Foutmelding:&lt;/span> 12&lt;/td>
+            &lt;td aria-label="foutmelding">&lt;span>Foutmelding:&lt;/span> 42&lt;/td>
+        &lt;/tr>
+    &lt;/tbody>
+&lt;/table>
+                        </code>
+                    </pre>
+
+                    <h2 id="error-form">Foutmelding op formulier-elementen</h2>
+                    <nav aria-label="Foutmelding formulierelementen subnavigatie">
+                        <ul>
+                            <li><a href="#error-form-input"><code>input</code></a></li>
+                            <li><a href="#error-form-textarea"><code>Tekstveld</code></a></li>
+                            <li><a href="#error-form-select"><code>selectielijst</code></a></li>
+                            <li><a href="#error-form-datalist"><code>Datalijst</code></a></li>
+                            <li><a href="#error-form-checkbox"><code>checkbox</code></a></li>
+                            <li><a href="#error-form-radio"><code>Radio-selecteerknop</code></a></li>
+                        </ul>
+                    </nav>
+
+                    <h3 id="error-form-input">Input</h3>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <form action="" method="post">
+                        <label for="input-error">Input</label>
+                        <div>
+                            <input id="input-error" class="error" value="Lorem ipsum" aria-describedby="input-error-message" aria-invalid="true">
+                            <p class="error" id="input-error-message">
+                                <span>foutmelding:</span> Lorem ipsum dolor set amet
+                            </p>
+                        </div>
+                    </form>
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;form action="" method="post">
+    &lt;label for="input-error">Input&lt;/label>
+    &lt;div>
+        &lt;input id="input-error" class="error" value="Lorem ipsum" aria-describedby="input-error-message" aria-invalid="true">
+        &lt;p class="error" id="input-error-message">
+            &lt;span>foutmelding:&lt;/span> Lorem ipsum dolor set amet
+        &lt;/p>
+    &lt;/div>
+&lt;/form>
+                        </code>
+                    </pre>
+
+                    <h3 id="error-form-textarea">Voorbeeld tekstveld</h3>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <form action="" method="post">
+                        <label for="voorbeeld-tekstveld-error">Voorbeeld tekstveld</label>
+                        <div>
+                            <textarea id="voorbeeld-tekstveld-error" name="voorbeeld-tekstveld-error" placeholder="Jouw vraag of opmerking" class="error" aria-describedby="voorbeeld-tekstveld-error-message" aria-invalid="true"></textarea>
+                            <p class="error" id="voorbeeld-tekstveld-error-message">
+                                <span>foutmelding:</span> Lorem ipsum dolor set amet
+                            </p>
+                        </div>
+
+                        <button type="submit">Verzend</button>
+                    </form>
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;form action="" method="post">
+    &lt;label for="voorbeeld-tekstveld-error">Voorbeeld tekstveld&lt;/label>
+    &lt;div>
+        &lt;textarea id="voorbeeld-tekstveld-error" name="voorbeeld-tekstveld-error" placeholder="Jouw vraag of opmerking" class="error" aria-describedby="voorbeeld-tekstveld-error-message" aria-invalid="true">&lt;/textarea>
+        &lt;p class="error" id="voorbeeld-tekstveld-error-message">
+            &lt;span>foutmelding:&lt;/span> Lorem ipsum dolor set amet
+        &lt;/p>
+    &lt;/div>
+    &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+                        </code>
+                    </pre>
+
+                    <h3 id="error-form-select">Selectielijst</h3>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <form action="" method="post">
+                        <label for="select-error">Selectielijst</label>
+                        <div>
+                            <select id="select-error" name="select" class="error" aria-describedby="select-error-message" aria-invalid="true">
+                                <option value="1">Optie 1</option>
+                                <option value="2">Optie 2</option>
+                                <option value="3">Optie 3</option>
+                            </select>
+                            <p class="error" id="select-error-message">
+                                <span>foutmelding:</span> Lorem ipsum dolor set amet
+                            </p>
+                        </div>
+                    </form>
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;form action="" method="post">
+    &lt;label for="select-error">Selectielijst&lt;/label>
+    &lt;div>
+        &lt;select id="select-error" name="select" class="error" aria-describedby="select-error-message" aria-invalid="true">
+            &lt;option value="1">Optie 1&lt;/option>
+            &lt;option value="2">Optie 2&lt;/option>
+            &lt;option value="3">Optie 3&lt;/option>
+        &lt;/select>
+        &lt;p class="error" id="select-error-message">
+            &lt;span>foutmelding:&lt;/span> Lorem ipsum dolor set amet
+        &lt;/p>
+    &lt;/div>
+&lt;/form>
+                        </code>
+                    </pre>
+
+                    <h3 id="error-form-datalist">Datalijst</h3>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <form action="" method="post">
+                        <label for="datalist-error">Input</label>
+                        <div>
+                            <input id="datalist-error" class="error" placeholder="Begin met typen of klik om een optie uit te kiezen" list="example-list-error" aria-describedby="datalist-error-message" aria-invalid="true">
+                            <p class="error" id="datalist-error-message">
+                                <span>foutmelding:</span> Lorem ipsum dolor set amet
+                            </p>
+                        </div>
+
+                        <datalist id="example-list-error">
+                            <option value="Optie 1">
+                            <option value="Optie 2">
+                            <option value="Optie 3">
+                        </datalist>
+                    </form>
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;form action="" method="post">
+    &lt;label for="datalist-error">Input&lt;/label>
+    &lt;div>
+        &lt;input id="datalist-error" class="error" placeholder="Begin met typen of klik om een optie uit te kiezen" list="example-list-error" aria-describedby="datalist-error-message" aria-invalid="true">
+        &lt;p class="error" id="datalist-error-message">
+            &lt;span>foutmelding:&lt;/span> Lorem ipsum dolor set amet
+        &lt;/p>
+    &lt;/div>
+
+    &lt;datalist id="example-list-error">
+        &lt;option value="Optie 1">
+        &lt;option value="Optie 2">
+        &lt;option value="Optie 3">
+    &lt;/datalist>
+&lt;/form>
+                        </code>
+                    </pre>
+
+                    <h3 id="error-form-checkbox">Selectievak</h3>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <form action="" method="post">
+                        <div aria-describedby="checkbox-error-message">
+                            <input type="checkbox" id="checkbox-error" name="standaard-checkbox" class="error" aria-invalid="true">
+                            <label for="checkbox-error">Lorem ipsum dolor set amet</label>
+                            <p class="error" id="checkbox-error-message">
+                                <span>foutmelding:</span> Lorem ipsum dolor set amet
+                            </p>
+                        </div>
+                    </form>
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;form action="" method="post">
+    &lt;div aria-describedby="checkbox-error-message">
+        &lt;input type="checkbox" id="checkbox-error" name="standaard-checkbox" class="error" aria-invalid="true">
+        &lt;label for="checkbox-error">Lorem ipsum dolor set amet&lt;/label>
+        &lt;p class="error" id="checkbox-error-message">
+            &lt;span>foutmelding:&lt;/span> Lorem ipsum dolor set amet
+        &lt;/p>
+    &lt;/div>
+&lt;/form>
+                        </code>
+                    </pre>
+
+                    <h3 id="error-form-radio">Radio-selecteerknop</h3>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <form action="" method="post">
+                        <div>
+                            <input type="radio" id="radio-example-error" name="standaard-radiobutton" value="value" class="error" aria-invalid="true">
+                            <label for="radio-example-error">Lorem ipsum dolor set amet</label>
+                            <p class="error" id="radio-example-error-message">
+                                <span>foutmelding:</span> Lorem ipsum dolor set amet
+                            </p>
+                        </div>
+                    </form>
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;form action="" method="post">
+    &lt;div>
+        &lt;input type="radio" id="radio-example-error" name="standaard-radiobutton" value="value" class="error" aria-invalid="true">
+        &lt;label for="radio-example-error">Lorem ipsum dolor set amet&lt;/label>
+        &lt;p class="error" id="radio-example-error-message">
+            &lt;span>foutmelding:&lt;/span> Lorem ipsum dolor set amet
+        &lt;/p>
+    &lt;/div>
+&lt;/form>
+                        </code>
+                    </pre>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <h1 id="warning">Waarschuwing</h1>
+                    <p>Te gebruiken om de gebruiker te waarschuwen.</p>
+                    
+                    <p>Beschikbare voorbeelden:</p>
+                    <nav aria-label="Waarschuwing subnavigatie">
+                        <ul>
+                            <li><a href="#warning-div">Blokelement</a></li>
+                            <li><a href="#warning-p">Paragraaf</a></li>
+                            <li><a href="#warning-button">Knop</a></li>
+                            <li><a href="#warning-table">Tabel-elementen</a></li>
+                            <li><a href="#warning-form">Formulier-elementen</a></li>
+                        </ul>
+                    </nav>
+
+                    <h2 id="warning-div">Waarschuwing binnen een blok</h2>
+                    <h3>Voorbeeld</h3>
+                    <p>Visueel voorbeeld:</p>
+
+                    <div class="warning" role="group" aria-label="waarschuwing">
+                        <span>Waarschuwing:</span>
+                        <h1>Lorem ipsum dolor set</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.</p>
+                        <ul>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. <a href="">Lorem ipsum</a> consectetur adipiscing elit.</li>
+                        </ul>
+                        <button type="button">Lorem</button>
+                    </div>
+
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;div class="warning" role="group" aria-label="waarschuwing">
+    &lt;span>Waarschuwing:&lt;/span>
+    &lt;!-- Voeg hier de content toe. -->
+&lt;/div>
+                        </code>
+                    </pre>
+
+                    <h2 id="warning-p">Waarschuwing op paragraaf:</h2>
+                    <h3>Voorbeeld</h3>
+                    <p>Visueel voorbeeld:</p>
+                    <p class="warning" role="group" aria-label="waarschuwing">
+                        <span>Waarschuwing:</span> Lorem ipsum dolor sit.
+                    </p>
+
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;p class="warning" role="group" aria-label="waarschuwing">&lt;span>Waarschuwing:&lt;/span> Lorem ipsum dolor sit&lt;/p>
+                        </code>
+                    </pre>
+
+                    <h2 id="warning-button">Waarschuwing op <code>button</code></h2>
+                    <h3>Voorbeeld</h3>
+
+                    <p>Visueel voorbeeld:</p>
+                    <button type="button" class="warning">
+                        <span>Waarschuwing:</span> Lorem ipsum
+                    </button>
+
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;button type="button" class="warning">
+    &lt;span>Waarschuwing:&lt;/span> Lorem ipsum
+&lt;/button>
+                        </code>
+                    </pre>
+
+                    <h2 id="warning-table">Waarschuwing op tabel-elementen</h2>
+                    <nav aria-label="Waarschuwing tabelelementen subnavigatie">
+                        <ul>
+                            <li><a href="#warning-th">Tabeltitel</a></li>
+                            <li><a href="#warning-td">Tabelcel</a></li>
+                            <li><a href="#warning-tr">Tabelrij</a></li>
+                        </ul>
+                    </nav>
+
+                    <h2 id="warning-th">Waarschuwing op tabeltitel</h2>
+
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="warning" aria-label="waarschuwing"><span>Waarschuwing:</span> Lorem</th>
+                                <th class="warning" aria-label="waarschuwing"><span>Waarschuwing:</span> Ipsum</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>12</td>
+                                <td>42</td>
+                            </tr>
+
+                            <tr>
+                                <td>15</td>
+                                <td>168</td>
+                            </tr>
+
+                            <tr>
+                                <td>123</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Lorem ipsum</td>
+                                <td>Dolor set amet</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;th class="warning" aria-label="waarschuwing">&lt;span>Waarschuwing:&lt;/span> Lorem&lt;/th>
+                        </code>
+                    </pre>
+
+                    <h2 id="warning-td">Waarschuwing op Tabelcel</h2>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Lorem</th>
+                                <th>Ipsum</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>12</td>
+                                <td>42</td>
+                            </tr>
+
+                            <tr>
+                                <td class="warning" aria-label="waarschuwing"><span>Waarschuwing:</span> 15</td>
+                                <td class="warning" aria-label="waarschuwing"><span>Waarschuwing:</span> 168</td>
+                            </tr>
+
+                            <tr>
+                                <td class="warning" aria-label="waarschuwing"><span>Waarschuwing:</span> 15</td>
+                                <td class="warning" aria-label="waarschuwing"><span>Waarschuwing:</span> 168</td>
+                            </tr>
+
+                            <tr>
+                                <td class="warning" aria-label="waarschuwing"><span>Waarschuwing:</span> 15</td>
+                                <td class="warning" aria-label="waarschuwing"><span>Waarschuwing:</span> 168</td>
+                            </tr>
+
+                            <tr>
+                                <td>123</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Lorem ipsum</td>
+                                <td>Dolor set amet</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;td class="warning" aria-label="waarschuwing">&lt;span>Waarschuwing:&lt;/span> 15&lt;/td>
+                       </code>
+                    </pre>
+
+                    <h2 id="warning-tr">waarschuwing op tabelrij</h2>
+                    <p>Aandachtspunten:</p>
+                    <ul>
+                        <li>Niet alle screenreaders lezen <code>aria-label</code> op een <code>tr</code> op. Voeg daarom de labels toe aan de <code>th</code> of de <code>td</code>.</li>
+                    </ul>
+
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <table>
+                        <thead>
+                            <tr class="warning">
+                                <th aria-label="waarschuwing"><span>Waarschuwing:</span> Lorem</th>
+                                <th aria-label="waarschuwing"><span>Waarschuwing:</span> Ipsum</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="warning">
+                                <td aria-label="waarschuwing"><span>Waarschuwing:</span> 12</td>
+                                <td aria-label="waarschuwing"><span>Waarschuwing:</span> 42</td>
+                            </tr>
+
+                            <tr>
+                                <td>15</td>
+                                <td>168</td>
+                            </tr>
+
+                            <tr>
+                                <td>123</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Lorem ipsum</td>
+                                <td>Dolor set amet</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;table>
+    &lt;thead>
+        &lt;tr class="warning">
+            &lt;th aria-label="waarschuwing">&lt;span>Waarschuwing:&lt;/span> Lorem&lt;/th>
+            &lt;th aria-label="waarschuwing">&lt;span>Waarschuwing:&lt;/span> Ipsum&lt;/th>
+        &lt;/tr>
+    &lt;/thead>
+    &lt;tbody>
+        &lt;tr class="warning">
+            &lt;td aria-label="waarschuwing">&lt;span>Waarschuwing:&lt;/span> 12&lt;/td>
+            &lt;td aria-label="waarschuwing">&lt;span>Waarschuwing:&lt;/span> 42&lt;/td>
+        &lt;/tr>
+    &lt;/tbody>
+&lt;/table>
+                        </code>
+                    </pre>
+
+                    <h2 id="warning-form">Waarschuwing op formulier-elementen</h2>
+                    <nav aria-label="Waarschuwing formulierelementen subnavigatie">
+                        <ul>
+                            <li><a href="#warning-form-input"><code>input</code></a></li>
+                            <li><a href="#warning-form-textarea"><code>Tekstveld</code></a></li>
+                            <li><a href="#warning-form-select"><code>selectielijst</code></a></li>
+                            <li><a href="#warning-form-datalist"><code>Datalijst</code></a></li>
+                            <li><a href="#warning-form-checkbox"><code>checkbox</code></a></li>
+                            <li><a href="#warning-form-radio"><code>Radio-selecteerknop</code></a></li>
+                        </ul>
+                    </nav>
+
+                    <h3 id="warning-form-input">Input</h3>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <form action="" method="post">
+                        <label for="input-warning">Input</label>
+                        <div>
+                            <p class="warning" id="input-warning-message">
+                                <span>waarschuwing:</span> Lorem ipsum dolor sit.
+                            </p>
+                            <input id="input-warning" class="warning" value="Lorem ipsum" aria-describedby="input-warning-message">
+                        </div>
+                    </form>
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;form action="" method="post">
+    &lt;label for="input-warning">Input&lt;/label>
+    &lt;div>
+        &lt;p class="warning" id="input-warning-message">
+            &lt;span>waarschuwing:&lt;/span> Lorem ipsum dolor sit.
+        &lt;/p>
+        &lt;input id="input-warning" class="warning" value="Lorem ipsum" aria-describedby="input-warning-message">
+    &lt;/div>
+&lt;/form>
+                        </code>
+                    </pre>
+
+                    <h3 id="warning-form-textarea">Voorbeeld tekstveld</h3>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <form action="" method="post">
+                        <label for="voorbeeld-tekstveld-warning">Voorbeeld tekstveld</label>
+                        <div>
+                            <p class="warning" id="voorbeeld-tekstveld-warning-message">
+                                <span>waarschuwing:</span> Lorem ipsum dolor sit.
+                            </p>
+                            <textarea id="voorbeeld-tekstveld-warning" name="voorbeeld-tekstveld-warning" placeholder="Jouw vraag of opmerking" class="warning" aria-describedby="voorbeeld-tekstveld-warning-message"></textarea>
+                        </div>
+
+                        <button type="submit">Verzend</button>
+                    </form>
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;form action="" method="post">
+    &lt;label for="voorbeeld-tekstveld-warning">Voorbeeld tekstveld&lt;/label>
+    &lt;div>
+        &lt;p class="warning" id="voorbeeld-tekstveld-warning-message">
+            &lt;span>waarschuwing:&lt;/span> Lorem ipsum dolor sit.
+        &lt;/p>
+        &lt;textarea id="voorbeeld-tekstveld-warning" name="voorbeeld-tekstveld-warning" placeholder="Jouw vraag of opmerking" class="warning" aria-describedby="voorbeeld-tekstveld-warning-message">&lt;/textarea>
+    &lt;/div>
+    &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+                        </code>
+                    </pre>
+
+                    <h3 id="warning-form-select">Selectielijst</h3>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <form action="" method="post">
+                        <label for="select-warning">Selectielijst</label>
+                        <div>
+                            <p class="warning" id="select-warning-message">
+                                <span>waarschuwing:</span> Lorem ipsum dolor sit.
+                            </p>
+                            <select id="select-warning" name="select" class="warning" aria-describedby="select-warning-message">
+                                <option value="1">Optie 1</option>
+                                <option value="2">Optie 2</option>
+                                <option value="3">Optie 3</option>
+                            </select>
+                        </div>
+                    </form>
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;form action="" method="post">
+    &lt;label for="select-warning">Selectielijst&lt;/label>
+    &lt;div>
+        &lt;p class="warning" id="select-warning-message">
+            &lt;span>waarschuwing:&lt;/span> Lorem ipsum dolor sit.
+        &lt;/p>
+        &lt;select id="select-warning" name="select" class="warning" aria-describedby="select-warning-message">
+            &lt;option value="1">Optie 1&lt;/option>
+            &lt;option value="2">Optie 2&lt;/option>
+            &lt;option value="3">Optie 3&lt;/option>
+        &lt;/select>
+    &lt;/div>
+&lt;/form>
+                        </code>
+                    </pre>
+
+                    <h3 id="warning-form-datalist">Datalijst</h3>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <form action="" method="post">
+                        <label for="datalist-warning">Input</label>
+                        <div>
+                            <p class="warning" id="datalist-warning-message">
+                                <span>waarschuwing:</span> Lorem ipsum dolor sit.
+                            </p>
+                            <input id="datalist-warning" class="warning" placeholder="Begin met typen of klik om een optie uit te kiezen" list="example-list-warning" aria-describedby="datalist-warning-message">
+                        </div>
+
+                        <datalist id="example-list-warning">
+                            <option value="Optie 1">
+                            <option value="Optie 2">
+                            <option value="Optie 3">
+                        </datalist>
+                    </form>
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;form action="" method="post">
+    &lt;label for="datalist-warning">Input&lt;/label>
+    &lt;div>
+        &lt;p class="warning" id="datalist-warning-message">
+            &lt;span>waarschuwing:&lt;/span> Lorem ipsum dolor sit.
+        &lt;/p>
+        &lt;input id="datalist-warning" class="warning" placeholder="Begin met typen of klik om een optie uit te kiezen" list="example-list-warning" aria-describedby="datalist-warning-message">
+    &lt;/div>
+
+    &lt;datalist id="example-list-warning">
+        &lt;option value="Optie 1">
+        &lt;option value="Optie 2">
+        &lt;option value="Optie 3">
+    &lt;/datalist>
+&lt;/form>
+                        </code>
+                    </pre>
+
+                    <h3 id="warning-form-checkbox">Selectievak</h3>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <form action="" method="post">
+                        <div>
+                            <p class="warning" id="checkbox-warning-message">
+                                <span>waarschuwing:</span> Lorem ipsum dolor sit.
+                            </p>
+                            <input type="checkbox" id="checkbox-warning" name="standaard-checkbox" class="warning" aria-describedby="checkbox-warning-message">
+                            <label for="checkbox-warning">Lorem ipsum dolor set amet</label>
+                        </div>
+                    </form>
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;form action="" method="post">
+    &lt;div>
+        &lt;p class="warning" id="checkbox-warning-message">
+            &lt;span>waarschuwing:&lt;/span> Lorem ipsum dolor sit.
+        &lt;/p>
+        &lt;input type="checkbox" id="checkbox-warning" name="standaard-checkbox" class="warning" aria-describedby="checkbox-warning-message">
+        &lt;label for="checkbox-warning">Lorem ipsum dolor set amet&lt;/label>
+    &lt;/div>
+&lt;/form>
+                        </code>
+                    </pre>
+
+                    <h3 id="warning-form-radio">Radio-selecteerknop</h3>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <form action="" method="post">
+                        <div>
+                            <p class="warning" id="radio-example-warning-message">
+                                <span>waarschuwing:</span> Lorem ipsum dolor sit.
+                            </p>
+                            <input type="radio" id="radio-example-warning" name="standaard-radiobutton" value="value" class="warning" aria-describedby="radio-example-warning-message">
+                            <label for="radio-example-warning">Lorem ipsum dolor set amet</label>
+                        </div>
+                    </form>
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;form action="" method="post">
+    &lt;div>
+        &lt;p class="warning" id="radio-example-warning-message">
+            &lt;span>waarschuwing:&lt;/span> Lorem ipsum dolor sit.
+        &lt;/p>
+        &lt;input type="radio" id="radio-example-warning" name="standaard-radiobutton" value="value" class="warning" aria-describedby="radio-example-warning-message">
+        &lt;label for="radio-example-warning">Lorem ipsum dolor set amet&lt;/label>
+    &lt;/div>
+&lt;/form>
+                        </code>
+                    </pre>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <h1 id="confirmation">Bevestiging</h1>
+                    <p>Te gebruiken om de gebruiker een bevestiging te sturen. Denk bijvoorbeeld aan succesberichten bij het sturen van een formulier.</p>
+                    
+                    <p>Beschikbare voorbeelden:</p>
+                    <nav aria-label="Bevestiging subnavigatie">
+                        <ul>
+                            <li><a href="#confirmation-div">Blokelement</a></li>
+                            <li><a href="#confirmation-p">Paragraaf</a></li>
+                            <li><a href="#confirmation-button">Knop</a></li>
+                            <li><a href="#confirmation-table">Tabel-elementen</a></li>
+                            <li><a href="#confirmation-form">Formulier-elementen</a></li>
+                        </ul>
+                    </nav>
+
+                    <h2 id="confirmation-div">Bevestiging binnen een blok</h2>
+                    <h3>Voorbeeld</h3>
+                    <p>Visueel voorbeeld:</p>
+
+                    <div class="confirmation" role="group" aria-label="bevestiging">
+                        <span>Bevestiging:</span>
+                        <h1>Lorem ipsum dolor set</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.</p>
+                        <ul>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. <a href="">Lorem ipsum</a> consectetur adipiscing elit.</li>
+                        </ul>
+                        <button type="button">Lorem</button>
+                    </div>
+
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;div class="confirmation" role="group" aria-label="bevestiging">
+    &lt;span>Bevestiging:&lt;/span>
+    &lt;!-- Voeg hier de content toe. -->
+&lt;/div>
+                        </code>
+                    </pre>
+
+                    <h2 id="confirmation-p">Bevestiging op paragraaf:</h2>
+                    <h3>Voorbeeld</h3>
+                    <p>Visueel voorbeeld:</p>
+                    <p class="confirmation" role="group" aria-label="bevestiging">
+                        <span>Bevestiging:</span> Lorem ipsum dolor sit.
+                    </p>
+
+                    <p>Html-voorbeeld:</p>
+                        
+                    <pre>
+                        <code>
+&lt;p class="confirmation" role="group" aria-label="bevestiging">
+    &lt;span>Bevestiging:&lt;/span>
+    Lorem ipsum dolor sit.
+&lt;/p>
+                        </code>
+                    </pre>
+
+                    <h2 id="confirmation-button">Bevestiging op <code>button</code></h2>
+                    <h3>Voorbeeld</h3>
+
+                    <p>Visueel voorbeeld:</p>
+                    <button type="button" class="confirmation">
+                        <span>Bevestiging:</span> Lorem ipsum
+                    </button>
+
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;button type="button" class="confirmation">
+    &lt;span>Bevestiging:&lt;/span> Lorem ipsum
+&lt;/button>
+                        </code>
+                    </pre>
+
+                    <h2 id="confirmation-table">Bevestiging op tabel-elementen</h2>
+                    <nav aria-label="Bevestiging tabelelementen subnavigatie">
+                        <ul>
+                            <li><a href="#confirmation-th">Tabeltitel</a></li>
+                            <li><a href="#confirmation-td">Tabelcel</a></li>
+                            <li><a href="#confirmation-tr">Tabelrij</a></li>
+                        </ul>
+                    </nav>
+
+                    <h2 id="confirmation-th">Bevestiging op tabeltitel</h2>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="confirmation" aria-label="bevestiging"><span>Bevestiging:</span> Lorem</th>
+                                <th class="confirmation" aria-label="bevestiging"><span>Bevestiging:</span>Ipsum</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>12</td>
+                                <td>42</td>
+                            </tr>
+
+                            <tr>
+                                <td>15</td>
+                                <td>168</td>
+                            </tr>
+
+                            <tr>
+                                <td>123</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Lorem ipsum</td>
+                                <td>Dolor set amet</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;th class="confirmation" aria-label="bevestiging">
+    &lt;span>Bevestiging:&lt;/span> Lorem
+&lt;/th>
+                        </code>
+                    </pre>
+
+                    <h2 id="confirmation-td">Bevestiging op Tabelcel</h2>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Lorem</th>
+                                <th>Ipsum</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>12</td>
+                                <td>42</td>
+                            </tr>
+
+                            <tr>
+                                <td class="confirmation" aria-label="bevestiging"><span>Bevestiging:</span> 15</td>
+                                <td>
+                                    168
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>123</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Lorem ipsum</td>
+                                <td>Dolor set amet</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;td class="confirmation" aria-label="bevestiging">
+    &lt;span>Bevestiging:&lt;/span> 15
+&lt;/td>
+                        </code>
+                    </pre>
+
+                    <h2 id="confirmation-tr">Bevestiging op tabelrij</h2>
+                    <p>Aandachtspunten:</p>
+                    <ul>
+                        <li>Niet alle screenreaders lezen <code>aria-label</code> op een <code>tr</code> op. Voeg daarom de labels toe aan de <code>th</code> of de <code>td</code>.</li>
+                    </ul>
+
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <table>
+                        <thead>
+                            <tr class="confirmation">
+                                <th aria-label="bevestiging"><span>Bevestiging:</span> Lorem</th>
+                                <th aria-label="bevestiging"><span>Bevestiging:</span> Ipsum</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>12</td>
+                                <td>42</td>
+                            </tr>
+
+                            <tr class="confirmation">
+                                <td aria-label="bevestiging"><span>Bevestiging:</span> 15</td>
+                                <td aria-label="bevestiging"><span>Bevestiging:</span> 168</td>
+                            </tr>
+
+                            <tr>
+                                <td>123</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Lorem ipsum</td>
+                                <td>Dolor set amet</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;table>
+    &lt;thead>
+        &lt;tr class="confirmation">
+            &lt;th aria-label="bevestiging">&lt;span>Bevestiging:&lt;/span>Lorem&lt;/th>
+            &lt;th aria-label="bevestiging">&lt;span>Bevestiging:&lt;/span>Ipsum&lt;/th>
+        &lt;/tr>
+    &lt;/thead>
+    &lt;tbody>
+
+        &lt;tr class="confirmation">
+            &lt;td aria-label="bevestiging">&lt;span>Bevestiging:&lt;/span>15&lt;/td>
+            &lt;td aria-label="bevestiging">&lt;span>Bevestiging:&lt;/span>168&lt;/td>
+        &lt;/tr>
+    &lt;/tbody>
+&lt;/table>
+                        </code>
+                    </pre>
+
+                    <h2 id="confirmation-form">Bevestiging op formulier-elementen</h2>
+                    <nav aria-label="Bevestiging formulierelementen subnavigatie">
+                        <ul>
+                            <li><a href="#confirmation-form-input"><code>input</code></a></li>
+                            <li><a href="#confirmation-form-textarea"><code>Tekstveld</code></a></li>
+                            <li><a href="#confirmation-form-select"><code>selectielijst</code></a></li>
+                            <li><a href="#confirmation-form-datalist"><code>Datalijst</code></a></li>
+                            <li><a href="#confirmation-form-checkbox"><code>checkbox</code></a></li>
+                            <li><a href="#confirmation-form-radio"><code>Radio-selecteerknop</code></a></li>
+                        </ul>
+                    </nav>
+
+                    <h3 id="confirmation-form-input">Input</h3>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <form action="" method="post">
+                        <label for="input-confirmation">Input</label>
+                        <div>
+                            <input id="input-confirmation" class="confirmation" value="Lorem ipsum" aria-describedby="input-confirmation-message">
+                            <p class="confirmation" id="input-confirmation-message">
+                                <span>bevestiging:</span> Lorem ipsum dolor set amet
+                            </p>
+                        </div>
+                    </form>
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;form action="" method="post">
+    &lt;label for="input-confirmation">Input&lt;/label>
+    &lt;div>
+        &lt;input id="input-confirmation" class="confirmation" value="Lorem ipsum" aria-describedby="input-confirmation-message">
+        &lt;p class="confirmation" id="input-confirmation-message">
+            &lt;span>bevestiging:&lt;/span> Lorem ipsum dolor set amet
+        &lt;/p>
+    &lt;/div>
+&lt;/form>
+                        </code>
+                    </pre>
+
+                    <h3 id="confirmation-form-textarea">Voorbeeld tekstveld</h3>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <form action="" method="post">
+                        <label for="voorbeeld-tekstveld-confirmation">Voorbeeld tekstveld</label>
+                        <div>
+                            <textarea id="voorbeeld-tekstveld-confirmation" name="voorbeeld-tekstveld-confirmation" placeholder="Jouw vraag of opmerking" class="confirmation" aria-describedby="voorbeeld-tekstveld-confirmation-message"></textarea>
+                            <p class="confirmation" id="voorbeeld-tekstveld-confirmation-message">
+                                <span>bevestiging:</span> Lorem ipsum dolor set amet
+                            </p>
+                        </div>
+
+                        <button type="submit">Verzend</button>
+                    </form>
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;form action="" method="post">
+    &lt;label for="voorbeeld-tekstveld-confirmation">Voorbeeld tekstveld&lt;/label>
+    &lt;div>
+        &lt;textarea id="voorbeeld-tekstveld-confirmation" name="voorbeeld-tekstveld-confirmation" placeholder="Jouw vraag of opmerking" class="confirmation" aria-describedby="voorbeeld-tekstveld-confirmation-message">&lt;/textarea>
+        &lt;p class="confirmation" id="voorbeeld-tekstveld-confirmation-message">
+            &lt;span>bevestiging:&lt;/span> Lorem ipsum dolor set amet
+        &lt;/p>
+    &lt;/div>
+
+    &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+                        </code>
+                    </pre>
+
+                    <h3 id="confirmation-form-select">Selectielijst</h3>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <form action="" method="post">
+                        <label for="select-confirmation">Selectielijst</label>
+                        <div>
+                            <select id="select-confirmation" name="select" class="confirmation" aria-describedby="select-confirmation-message">
+                                <option value="1">Optie 1</option>
+                                <option value="2">Optie 2</option>
+                                <option value="3">Optie 3</option>
+                            </select>
+                            <p class="confirmation" id="select-confirmation-message">
+                                <span>bevestiging:</span> Lorem ipsum dolor set amet
+                            </p>
+                        </div>
+                    </form>
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;form action="" method="post">
+    &lt;label for="select-confirmation">Selectielijst&lt;/label>
+    &lt;div>
+        &lt;select id="select-confirmation" name="select" class="confirmation" aria-describedby="select-confirmation-message">
+            &lt;option value="1">Optie 1&lt;/option>
+            &lt;option value="2">Optie 2&lt;/option>
+            &lt;option value="3">Optie 3&lt;/option>
+        &lt;/select>
+        &lt;p class="confirmation" id="select-confirmation-message">
+            &lt;span>bevestiging:&lt;/span> Lorem ipsum dolor set amet
+        &lt;/p>
+    &lt;/div>
+&lt;/form>
+                        </code>
+                    </pre>
+
+                    <h3 id="confirmation-form-datalist">Datalijst</h3>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <form action="" method="post">
+                        <label for="datalist-confirmation">Input</label>
+                        <div>
+                            <input id="datalist-confirmation" class="confirmation" placeholder="Begin met typen of klik om een optie uit te kiezen" list="example-list-confirmation" aria-describedby="datalist-confirmation-message">
+                            <p class="confirmation" id="datalist-confirmation-message">
+                                <span>bevestiging:</span> Lorem ipsum dolor set amet
+                            </p>
+                        </div>
+
+                        <datalist id="example-list-confirmation">
+                            <option value="Optie 1">
+                            <option value="Optie 2">
+                            <option value="Optie 3">
+                        </datalist>
+                    </form>
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;form action="" method="post">
+    &lt;label for="datalist-confirmation">Input&lt;/label>
+    &lt;div>
+        &lt;input id="datalist-confirmation" class="confirmation" placeholder="Begin met typen of klik om een optie uit te kiezen" list="example-list-confirmation" aria-describedby="datalist-confirmation-message">
+        &lt;p class="confirmation" id="datalist-confirmation-message">
+            &lt;span>bevestiging:&lt;/span> Lorem ipsum dolor set amet
+        &lt;/p>
+    &lt;/div>
+
+    &lt;datalist id="example-list-confirmation">
+        &lt;option value="Optie 1">
+        &lt;option value="Optie 2">
+        &lt;option value="Optie 3">
+    &lt;/datalist>
+&lt;/form>
+                        </code>
+                    </pre>
+
+                    <h3 id="confirmation-form-checkbox">Selectievak</h3>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <form action="" method="post">
+                        <div>
+                            <input type="checkbox" id="checkbox-confirmation" name="standaard-checkbox" class="confirmation">
+                            <label for="checkbox-confirmation">Lorem ipsum dolor set amet</label>
+                            <p class="confirmation" id="checkbox-confirmation-message">
+                                <span>bevestiging:</span> Lorem ipsum dolor set amet
+                            </p>
+                        </div>
+                    </form>
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;form action="" method="post">
+    &lt;div>
+        &lt;input type="checkbox" id="checkbox-confirmation" name="standaard-checkbox" class="confirmation">
+        &lt;label for="checkbox-confirmation">Lorem ipsum dolor set amet&lt;/label>
+        &lt;p class="confirmation" id="checkbox-confirmation-message">
+            &lt;span>bevestiging:&lt;/span> Lorem ipsum dolor set amet
+        &lt;/p>
+    &lt;/div>
+&lt;/form>
+                        </code>
+                    </pre>
+
+                    <h3 id="confirmation-form-radio">Radio-selecteerknop</h3>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <form action="" method="post">
+                        <div>
+                            <input type="radio" id="radio-example-confirmation" name="standaard-radiobutton" value="value" class="confirmation">
+                            <label for="radio-example-confirmation">Lorem ipsum dolor set amet</label>
+                            <p class="confirmation" id="radio-example-confirmation-message">
+                                <span>bevestiging:</span> Lorem ipsum dolor set amet
+                            </p>
+                        </div>
+                    </form>
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;form action="" method="post">
+    &lt;div>
+        &lt;input type="radio" id="radio-example-confirmation" name="standaard-radiobutton" value="value" class="confirmation">
+        &lt;label for="radio-example-confirmation">Lorem ipsum dolor set amet&lt;/label>
+        &lt;p class="confirmation" id="radio-example-confirmation-message">
+            &lt;span>bevestiging:&lt;/span> Lorem ipsum dolor set amet
+        &lt;/p>
+    &lt;/div>
+&lt;/form>
+                        </code>
+                    </pre>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <h1 id="explanation">Toelichting</h1>
+                    <p>Te gebruiken om de gebruiker van extra toelichting te voorzien.</p>
+                    
+                    <p>Beschikbare voorbeelden:</p>
+                    <nav aria-label="Toelichting subnavigatie">
+                        <ul>
+                            <li><a href="#explanation-div">Blokelement</a></li>
+                            <li><a href="#explanation-p">Paragraaf</a></li>
+                            <li><a href="#explanation-button">Knop</a></li>
+                            <li><a href="#explanation-table">Tabel-elementen</a></li>
+                            <li><a href="#explanation-form">Formulier-elementen</a></li>
+                        </ul>
+                    </nav>
+
+                    <h2 id="explanation-div">Toelichting binnen een blok</h2>
+                    <h3>Voorbeeld</h3>
+                    <p>Visueel voorbeeld:</p>
+
+                    <div class="explanation" role="group" aria-label="toelichting">
+                        <span>Toelichting:</span>
+                        <h1>Lorem ipsum dolor set</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.</p>
+                        <ul>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. <a href="">Lorem ipsum</a> consectetur adipiscing elit.</li>
+                        </ul>
+                        <button type="button">Lorem</button>
+                    </div>
+
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;div class="explanation" role="group" aria-label="toelichting">
+    &lt;span>Toelichting:&lt;/span>
+    &lt;!-- Voeg hier de content toe. -->
+&lt;/div>
+                        </code>
+                    </pre>
+
+                    <h2 id="explanation-p">Toelichting op paragraaf:</h2>
+                    <h3>Voorbeeld</h3>
+                    <p>Visueel voorbeeld:</p>
+                    <p class="explanation" role="group" aria-label="toelichting">
+                        <span>Toelichting:</span>
+                        Lorem ipsum dolor sit.
+                    </p>
+
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;p class="explanation" role="group" aria-label="toelichting">
+    &lt;span>Toelichting:&lt;/span>
+    Lorem ipsum dolor sit.
+&lt;/p>
+                        </code>
+                    </pre>
+
+                    <h2 id="explanation-button">Toelichting op <code>button</code></h2>
+                    <h3>Voorbeeld</h3>
+
+                    <p>Visueel voorbeeld:</p>
+                    <button type="button" class="explanation">
+                        <span>Toelichting:</span> Lorem ipsum
+                    </button>
+
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;button type="button" class="explanation">
+    &lt;span>Toelichting:&lt;/span> Lorem ipsum
+&lt;/button>
+                        </code>
+                    </pre>
+
+                    <h2 id="explanation-table">Toelichting op tabel-elementen</h2>
+                    <nav aria-label="Toelichting tabelelementen subnavigatie">
+                        <ul>
+                            <li><a href="#explanation-th">Tabeltitel</a></li>
+                            <li><a href="#explanation-td">Tabelcel</a></li>
+                            <li><a href="#explanation-tr">Tabelrij</a></li>
+                        </ul>
+                    </nav>
+
+                    <h2 id="explanation-th">Toelichting op tabeltitel</h2>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="explanation" aria-label="toelichting"><span>Toelichting:</span> Lorem</th>
+                                <th class="explanation" aria-label="toelichting"><span>Toelichting:</span> Ipsum</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>12</td>
+                                <td>42</td>
+                            </tr>
+
+                            <tr>
+                                <td>15</td>
+                                <td>168</td>
+                            </tr>
+
+                            <tr>
+                                <td>123</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Lorem ipsum</td>
+                                <td>Dolor set amet</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;th class="explanation" aria-label="toelichting">
+    &lt;span>Toelichting:&lt;/span> Lorem
+&lt;/th>
+                        </code>
+                    </pre>
+
+                    <h2 id="explanation-td">Toelichting op Tabelcel</h2>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Lorem</th>
+                                <th>Ipsum</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>12</td>
+                                <td>42</td>
+                            </tr>
+
+                            <tr>
+                                <td>123</td>
+                                <td>2</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    15
+                                </td>
+                                <td class="explanation" aria-label="toelichting"><span>Toelichting:</span>  168</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Lorem ipsum</td>
+                                <td>Dolor set amet</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;td class="explanation" aria-label="toelichting">
+    &lt;span>Toelichting:&lt;/span> 15
+&lt;/td>
+                        </code>
+                    </pre>
+
+                    <h2 id="explanation-tr">Toelichting op tabelrij</h2>
+                    <p>Aandachtspunten:</p>
+                    <ul>
+                        <li>Niet alle screenreaders lezen <code>aria-label</code> op een <code>tr</code> op. Voeg daarom de labels toe aan de <code>th</code> of de <code>td</code>.</li>
+                    </ul>
+
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <table>
+                        <thead>
+                            <tr class="explanation">
+                                <th aria-label="toelichting"><span>Toelichting:</span> Lorem</th>
+                                <th aria-label="toelichting"><span>Toelichting:</span> Ipsum</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="explanation">
+                                <td aria-label="toelichting"><span>Toelichting:</span> 12</td>
+                                <td aria-label="toelichting"><span>Toelichting:</span> 42</td>
+                            </tr>
+
+                            <tr>
+                                <td>15</td>
+                                <td>168</td>
+                            </tr>
+
+                            <tr>
+                                <td>123</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Lorem ipsum</td>
+                                <td>Dolor set amet</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;table>
+    &lt;thead>
+        &lt;tr class="explanation">
+            &lt;th aria-label="toelichting">&lt;span>Toelichting:&lt;/span> Lorem&lt;/th>
+            &lt;th aria-label="toelichting">&lt;span>Toelichting:&lt;/span> Ipsum&lt;/th>
+        &lt;/tr>
+    &lt;/thead>
+    &lt;tbody>
+        &lt;tr class="explanation">
+            &lt;td aria-label="toelichting">&lt;span>Toelichting:&lt;/span> 12&lt;/td>
+            &lt;td aria-label="toelichting">&lt;span>Toelichting:&lt;/span> 42&lt;/td>
+        &lt;/tr>
+    &lt;/tbody>
+&lt;/table>
+                        </code>
+                    </pre>
+
+                    <h2 id="explanation-form">Toelichting op formulier-elementen</h2>
+                    <nav aria-label="Toelichting formulierelementen subnavigatie">
+                        <ul>
+                            <li><a href="#explanation-form-input"><code>input</code></a></li>
+                            <li><a href="#explanation-form-textarea"><code>Tekstveld</code></a></li>
+                            <li><a href="#explanation-form-select"><code>selectielijst</code></a></li>
+                            <li><a href="#explanation-form-datalist"><code>Datalijst</code></a></li>
+                            <li><a href="#explanation-form-checkbox"><code>checkbox</code></a></li>
+                            <li><a href="#explanation-form-radio"><code>Radio-selecteerknop</code></a></li>
+                        </ul>
+                    </nav>
+
+                    <h3 id="explanation-form-input">Input</h3>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <form action="" method="post">
+                        <label for="input-explanation">Input</label>
+                        <div>
+                            <p class="explanation" id="input-explanation-message">
+                                <span>toelichting:</span> Lorem ipsum dolor set amet
+                            </p>
+                            <input id="input-explanation" class="explanation" value="Lorem ipsum" aria-describedby="input-explanation-message">
+                        </div>
+                    </form>
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;form action="" method="post">
+    &lt;label for="input-explanation">Input&lt;/label>
+    &lt;div>
+        &lt;p class="explanation" id="input-explanation-message">
+            &lt;span>toelichting:&lt;/span> Lorem ipsum dolor set amet
+        &lt;/p>
+        &lt;input id="input-explanation" class="explanation" value="Lorem ipsum" aria-describedby="input-explanation-message">
+    &lt;/div>
+&lt;/form>
+                        </code>
+                    </pre>
+
+                    <h3 id="explanation-form-textarea">Voorbeeld tekstveld</h3>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <form action="" method="post">
+                        <label for="voorbeeld-tekstveld-explanation">Voorbeeld tekstveld</label>
+                        <div>
+                            <p class="explanation" id="voorbeeld-tekstveld-explanation-message">
+                                <span>toelichting:</span> Lorem ipsum dolor set amet
+                            </p>
+                            <textarea id="voorbeeld-tekstveld-explanation" name="voorbeeld-tekstveld-explanation" placeholder="Jouw vraag of opmerking" class="explanation" aria-describedby="voorbeeld-tekstveld-explanation-message"></textarea>
+                        </div>
+
+                        <button type="submit">Verzend</button>
+                    </form>
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;form action="" method="post">
+    &lt;label for="voorbeeld-tekstveld-explanation">Voorbeeld tekstveld&lt;/label>
+    &lt;div>
+        &lt;p class="explanation" id="voorbeeld-tekstveld-explanation-message">
+            &lt;span>toelichting:&lt;/span> Lorem ipsum dolor set amet
+        &lt;/p>
+        &lt;textarea id="voorbeeld-tekstveld-explanation" name="voorbeeld-tekstveld-explanation" placeholder="Jouw vraag of opmerking" class="explanation" aria-describedby="voorbeeld-tekstveld-explanation-message">&lt;/textarea>
+    &lt;/div>
+
+    &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+                        </code>
+                    </pre>
+
+                    <h3 id="explanation-form-select">Selectielijst</h3>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <form action="" method="post">
+                        <label for="select-explanation">Selectielijst</label>
+                        <div>
+                            <p class="explanation" id="select-explanation-message">
+                                <span>toelichting:</span> Lorem ipsum dolor set amet
+                            </p>
+                            <select id="select-explanation" name="select" class="explanation" aria-describedby="select-explanation-message">
+                                <option value="1">Optie 1</option>
+                                <option value="2">Optie 2</option>
+                                <option value="3">Optie 3</option>
+                            </select>
+                        </div>
+                    </form>
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;form action="" method="post">
+    &lt;label for="select-explanation">Selectielijst&lt;/label>
+    &lt;div>
+        &lt;p class="explanation" id="select-explanation-message">
+            &lt;span>toelichting:&lt;/span> Lorem ipsum dolor set amet
+        &lt;/p>
+        &lt;select id="select-explanation" name="select" class="explanation" aria-describedby="select-explanation-message">
+            &lt;option value="1">Optie 1&lt;/option>
+            &lt;option value="2">Optie 2&lt;/option>
+            &lt;option value="3">Optie 3&lt;/option>
+        &lt;/select>
+    &lt;/div>
+&lt;/form>
+                        </code>
+                    </pre>
+
+                    <h3 id="explanation-form-datalist">Datalijst</h3>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <form action="" method="post">
+                        <label for="datalist-explanation">Input</label>
+                        <div>
+                            <p class="explanation" id="datalist-explanation-message">
+                                <span>toelichting:</span> Lorem ipsum dolor set amet
+                            </p>
+                            <input id="datalist-explanation" class="explanation" placeholder="Begin met typen of klik om een optie uit te kiezen" list="example-list-explanation" aria-describedby="datalist-explanation-message">
+                        </div>
+
+                        <datalist id="example-list-explanation">
+                            <option value="Optie 1">
+                            <option value="Optie 2">
+                            <option value="Optie 3">
+                        </datalist>
+                    </form>
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;form action="" method="post">
+    &lt;label for="datalist-explanation">Input&lt;/label>
+     &lt;div>
+        &lt;p class="explanation" id="datalist-explanation-message">
+            &lt;span>toelichting:&lt;/span> Lorem ipsum dolor set amet
+        &lt;/p>
+        &lt;input id="datalist-explanation" class="explanation" placeholder="Begin met typen of klik om een optie uit te kiezen" list="example-list-explanation" aria-describedby="datalist-explanation-message">
+    &lt;/div>
+
+    &lt;datalist id="example-list-explanation">
+        &lt;option value="Optie 1">
+        &lt;option value="Optie 2">
+        &lt;option value="Optie 3">
+    &lt;/datalist>
+&lt;/form>
+                        </code>
+                    </pre>
+
+                    <h3 id="explanation-form-checkbox">Selectievak</h3>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <form action="" method="post">
+                        <div>
+                            <p class="explanation" id="checkbox-explanation-message">
+                                <span>toelichting:</span> Lorem ipsum dolor set amet
+                            </p>
+                            <input type="checkbox" id="checkbox-explanation" name="standaard-checkbox" class="explanation" aria-describedby="checkbox-explanation-message">
+                            <label for="checkbox-explanation">Lorem ipsum dolor set amet</label>
+                        </div>
+                    </form>
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;form action="" method="post">
+    &lt;div>
+        &lt;p class="explanation" id="checkbox-explanation-message">
+            &lt;span>toelichting:&lt;/span> Lorem ipsum dolor set amet
+        &lt;/p>
+        &lt;input type="checkbox" id="checkbox-explanation" name="standaard-checkbox" class="explanation" aria-describedby="checkbox-explanation-message">
+        &lt;label for="checkbox-explanation">Lorem ipsum dolor set amet&lt;/label>
+    &lt;/div>
+&lt;/form>
+                        </code>
+                    </pre>
+
+                    <h3 id="explanation-form-radio">Radio-selecteerknop</h3>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <form action="" method="post">
+                        <div>
+                            <p class="explanation" id="radio-example-explanation-message">
+                                <span>toelichting:</span> Lorem ipsum dolor set amet
+                            </p>
+                            <input type="radio" id="radio-example-explanation" name="standaard-radiobutton" value="value" class="explanation" aria-describedby="radio-example-explanation-message">
+                            <label for="radio-example-explanation">Lorem ipsum dolor set amet</label>
+                        </div>
+                    </form>
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;form action="" method="post">
+    &lt;div>
+        &lt;p class="explanation" id="radio-example-explanation-message">
+            &lt;span>toelichting:&lt;/span> Lorem ipsum dolor set amet
+        &lt;/p>
+        &lt;input type="radio" id="radio-example-explanation" name="standaard-radiobutton" value="value" class="explanation" aria-describedby="radio-example-explanation-message">
+        &lt;label for="radio-example-explanation">Lorem ipsum dolor set amet&lt;/label>
+    &lt;/div>
+&lt;/form>
+                        </code>
+                    </pre>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <h1 id="primary">Primair</h1>
+                    <p>Te gebruiken om de gebruiker te attenderen op een element.</p>
+                    
+                    <p>Beschikbare voorbeelden:</p>
+                    <nav aria-label="Primair subnavigatie">
+                        <ul>
+                            <li><a href="#primary-div">Blokelement</a></li>
+                            <li><a href="#primary-p">Paragraaf</a></li>
+                            <li><a href="#primary-button">Knop</a></li>
+                            <li><a href="#primary-table">Tabel-elementen</a></li>
+                            <li><a href="#primary-form">Formulier-elementen</a></li>
+                        </ul>
+                    </nav>
+
+                    <h2 id="primary-div">Primair binnen een blok</h2>
+                    <h3>Voorbeeld</h3>
+                    <p>Visueel voorbeeld:</p>
+
+                    <div class="primary" role="group" aria-label="primair">
+                        <span>Toelichting:</span>
+                        <h1>Lorem ipsum dolor set</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.</p>
+                        <ul>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. <a href="">Lorem ipsum</a> consectetur adipiscing elit.</li>
+                        </ul>
+                        <button type="button">Lorem</button>
+                    </div>
+
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;div class="primary" role="group" aria-label="primair">
+    &lt;span>Toelichting:&lt;/span>
+    &lt;!-- Voeg hier de content toe. -->
+&lt;/div>
+                        </code>
+                    </pre>
+
+                    <h2 id="primary-p">Primair op paragraaf:</h2>
+                    <h3>Voorbeeld</h3>
+                    <p>Visueel voorbeeld:</p>
+                    <p class="primary" role="group" aria-label="primair">
+                        <span>Toelichting:</span>
+                        Lorem ipsum dolor sit.
+                    </p>
+
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;p class="primary" role="group" aria-label="primair">
+    &lt;span>Toelichting:&lt;/span>
+    Lorem ipsum dolor sit.
+&lt;/p>
+                        </code>
+                    </pre>
+
+                    <h2 id="primary-button">Primair op <code>button</code></h2>
+                    <h3>Voorbeeld</h3>
+
+                    <p>Visueel voorbeeld:</p>
+                    <button type="button" class="primary">
+                        <span>Toelichting:</span>
+                        Lorem ipsum
+                    </button>
+
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;button type="button" class="primary">
+    &lt;span>Toelichting:&lt;/span> Lorem ipsum
+&lt;/button>
+                        </code>
+                    </pre>
+
+                    <h2 id="primary-table">Primair op tabel-elementen</h2>
+                    <nav aria-label="Primair tabelelementen subnavigatie">
+                        <ul>
+                            <li><a href="#primary-th">Tabeltitel</a></li>
+                            <li><a href="#primary-td">Tabelcel</a></li>
+                            <li><a href="#primary-tr">Tabelrij</a></li>
+                        </ul>
+                    </nav>
+
+                    <h2 id="primary-th">Primair op tabeltitel</h2>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="primary" aria-label="primary"><span>Toelichting:</span> Lorem</th>
+                                <th class="primary" aria-label="primary"><span>Toelichting:</span> Ipsum</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>12</td>
+                                <td>42</td>
+                            </tr>
+
+                            <tr>
+                                <td>15</td>
+                                <td>168</td>
+                            </tr>
+
+                            <tr>
+                                <td>123</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Lorem ipsum</td>
+                                <td>Dolor set amet</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;th class="primary" aria-label="primary">&lt;span>Toelichting:&lt;/span> Lorem&lt;/th>
+                        </code>
+                    </pre>
+
+                    <h2 id="primary-td">Primair op tabeltitel</h2>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Lorem</th>
+                                <th>Ipsum</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>12</td>
+                                <td>42</td>
+                            </tr>
+
+                            <tr>
+                                <td class="primary" aria-label="primary"><span>Toelichting:</span> 15</td>
+                                <td class="primary" aria-label="primary"><span>Toelichting:</span> 168</td>
+                            </tr>
+
+                            <tr>
+                                <td>123</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Lorem ipsum</td>
+                                <td>Dolor set amet</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;td class="primary" aria-label="primary">&lt;span>Toelichting:&lt;/span> 15&lt;/td>
+                        </code>
+                    </pre>
+
+                    <h2 id="primary-tr">Primair op tabelrij</h2>
+                    <p>Aandachtspunten:</p>
+                    <ul>
+                        <li>Niet alle screenreaders lezen <code>aria-label</code> op een <code>tr</code> op. Voeg daarom de labels toe aan de <code>th</code> of de <code>td</code>.</li>
+                    </ul>
+
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <table>
+                        <thead>
+                            <tr class="primary">
+                                <th aria-label="primair"><span>Toelichting:</span> Lorem</th>
+                                <th aria-label="primair"><span>Toelichting:</span> Ipsum</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="primary">
+                                <td aria-label="primair"><span>Toelichting:</span> 12</td>
+                                <td aria-label="primair"><span>Toelichting:</span> 42</td>
+                            </tr>
+
+                            <tr>
+                                <td>15</td>
+                                <td>168</td>
+                            </tr>
+
+                            <tr>
+                                <td>123</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Lorem ipsum</td>
+                                <td>Dolor set amet</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;table>
+    &lt;thead>
+        &lt;tr class="primary">
+            &lt;th aria-label="primair">&lt;span>Toelichting:&lt;/span> Lorem&lt;/th>
+            &lt;th aria-label="primair">&lt;span>Toelichting:&lt;/span> Ipsum&lt;/th>
+        &lt;/tr>
+    &lt;/thead>
+    &lt;tbody>
+        &lt;tr class="primary">
+            &lt;td aria-label="primair">&lt;span>Toelichting:&lt;/span> 12&lt;/td>
+            &lt;td aria-label="primair">&lt;span>Toelichting:&lt;/span> 42&lt;/td>
+        &lt;/tr>
+    &lt;/tbody>
+&lt;/table>
+                        </code>
+                    </pre>
+
+                    <h2 id="primary-form">Primair op formulier-elementen</h2>
+                    <nav aria-label="Primair formulierelementen subnavigatie">
+                        <ul>
+                            <li><a href="#primary-form-input"><code>input</code></a></li>
+                            <li><a href="#primary-form-textarea"><code>Tekstveld</code></a></li>
+                            <li><a href="#primary-form-select"><code>selectielijst</code></a></li>
+                            <li><a href="#primary-form-datalist"><code>Datalijst</code></a></li>
+                            <li><a href="#primary-form-checkbox"><code>checkbox</code></a></li>
+                            <li><a href="#primary-form-radio"><code>Radio-selecteerknop</code></a></li>
+                        </ul>
+                    </nav>
+
+                    <h3 id="primary-form-input">Input</h3>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <form action="" method="post">
+                        <label for="input-primary">Input</label>
+                        <div>
+                            <p class="primary" id="input-primary-message">
+                                <span>primair:</span> Lorem ipsum dolor set amet
+                            </p>
+                            <input id="input-primary" class="primary" value="Lorem ipsum" aria-describedby="input-primary-message">
+                        </div>
+                    </form>
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;form action="" method="post">
+    &lt;label for="input-primary">Input&lt;/label>
+    &lt;div>
+        &lt;p class="primary" id="input-primary-message">
+            &lt;span>primair:&lt;/span> Lorem ipsum dolor set amet
+        &lt;/p>
+        &lt;input id="input-primary" class="primary" value="Lorem ipsum" aria-describedby="input-primary-message">
+    &lt;/div>
+&lt;/form>
+                        </code>
+                    </pre>
+
+                    <h3 id="primary-form-textarea">Voorbeeld tekstveld</h3>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <form action="" method="post">
+                        <label for="voorbeeld-tekstveld-primary">Voorbeeld tekstveld</label>
+                        <div>
+                            <p class="primary" id="voorbeeld-tekstveld-primary-message">
+                                <span>primair:</span> Lorem ipsum dolor set amet
+                            </p>
+                            <textarea id="voorbeeld-tekstveld-primary" name="voorbeeld-tekstveld-primary" placeholder="Jouw vraag of opmerking" class="primary" aria-describedby="voorbeeld-tekstveld-primary-message"></textarea>
+                        </div>
+
+                        <button type="submit">Verzend</button>
+                    </form>
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;form action="" method="post">
+    &lt;label for="voorbeeld-tekstveld-primary">Voorbeeld tekstveld&lt;/label>
+    &lt;div>
+        &lt;p class="primary" id="voorbeeld-tekstveld-primary-message">
+            &lt;span>primair:&lt;/span> Lorem ipsum dolor set amet
+        &lt;/p>
+        &lt;textarea id="voorbeeld-tekstveld-primary" name="voorbeeld-tekstveld-primary" placeholder="Jouw vraag of opmerking" class="primary" aria-describedby="voorbeeld-tekstveld-primary-message">&lt;/textarea>
+    &lt;/div>
+
+    &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+                        </code>
+                    </pre>
+
+                    <h3 id="primary-form-select">Selectielijst</h3>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <form action="" method="post">
+                        <label for="select-primary">Selectielijst</label>
+                        <div>
+                            <p class="primary" id="select-primary-message">
+                                <span>primair:</span> Lorem ipsum dolor set amet
+                            </p>
+                            <select id="select-primary" name="select" class="primary" aria-describedby="select-primary-message">
+                                <option value="1">Optie 1</option>
+                                <option value="2">Optie 2</option>
+                                <option value="3">Optie 3</option>
+                            </select>
+                        </div>
+                    </form>
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;form action="" method="post">
+    &lt;label for="select-primary">Selectielijst&lt;/label>
+    &lt;div>
+        &lt;p class="primary" id="select-primary-message">
+            &lt;span>primair:&lt;/span> Lorem ipsum dolor set amet
+        &lt;/p>
+        &lt;select id="select-primary" name="select" class="primary" aria-describedby="select-primary-message">
+            &lt;option value="1">Optie 1&lt;/option>
+            &lt;option value="2">Optie 2&lt;/option>
+            &lt;option value="3">Optie 3&lt;/option>
+        &lt;/select>
+    &lt;/div>
+&lt;/form>
+                        </code>
+                    </pre>
+
+                    <h3 id="primary-form-datalist">Datalijst</h3>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <form action="" method="post">
+                        <label for="datalist-primary">Input</label>
+                        <div>
+                            <p class="primary" id="example-list-primary-message">
+                                <span>primair:</span> Lorem ipsum dolor set amet
+                            </p>
+                            <input id="datalist-primary" class="primary" placeholder="Begin met typen of klik om een optie uit te kiezen" list="example-list-primary" aria-describedby="example-list-primary-message">
+                        </div>
+
+                        <datalist id="example-list-primary">
+                            <option value="Optie 1">
+                            <option value="Optie 2">
+                            <option value="Optie 3">
+                        </datalist>
+                    </form>
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;form action="" method="post">
+    &lt;label for="datalist-primary">Input&lt;/label>
+    &lt;div>
+        &lt;p class="primary" id="example-list-primary-message">
+            &lt;span>primair:&lt;/span> Lorem ipsum dolor set amet
+        &lt;/p>
+        &lt;input id="datalist-primary" class="primary" placeholder="Begin met typen of klik om een optie uit te kiezen" list="example-list-primary" aria-describedby="example-list-primary-message">
+    &lt;/div>
+
+    &lt;datalist id="example-list-primary">
+        &lt;option value="Optie 1">
+        &lt;option value="Optie 2">
+        &lt;option value="Optie 3">
+    &lt;/datalist>
+&lt;/form>
+                        </code>
+                    </pre>
+
+                    <h3 id="primary-form-checkbox">Selectievak</h3>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <form action="" method="post">
+                        <div>
+                            <p class="primary" id="checkbox-primary-message">
+                                <span>primair:</span> Lorem ipsum dolor set amet
+                            </p>
+                            <input type="checkbox" id="checkbox-primary" name="standaard-checkbox" class="primary" aria-describedby="checkbox-primary-message">
+                            <label for="checkbox-primary">Lorem ipsum dolor set amet</label>
+                        </div>
+                    </form>
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;form action="" method="post">
+    &lt;div>
+        &lt;p class="primary" id="checkbox-primary-message">
+            &lt;span>primair:&lt;/span> Lorem ipsum dolor set amet
+        &lt;/p>
+        &lt;input type="checkbox" id="checkbox-primary" name="standaard-checkbox" class="primary" aria-describedby="checkbox-primary-message">
+        &lt;label for="checkbox-primary">Lorem ipsum dolor set amet&lt;/label>
+    &lt;/div>
+&lt;/form>
+                        </code>
+                    </pre>
+
+                    <h3 id="primary-form-radio">Radio-selecteerknop</h3>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <form action="" method="post">
+                        <div>
+                            <p class="primary" id="radio-example-primary-message">
+                                <span>primair:</span> Lorem ipsum dolor set amet
+                            </p>
+                            <input type="radio" id="radio-example-primary" name="standaard-radiobutton" value="value" class="primary" aria-describedby="radio-example-primary-message">
+                            <label for="radio-example-primary">Lorem ipsum dolor set amet</label>
+                        </div>
+                    </form>
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;form action="" method="post">
+    &lt;div>
+        &lt;p class="primary" id="radio-example-primary-message">
+            &lt;span>primair:&lt;/span> Lorem ipsum dolor set amet
+        &lt;/p>
+        &lt;input type="radio" id="radio-example-primary" name="standaard-radiobutton" value="value" class="primary" aria-describedby="radio-example-primary-message">
+        &lt;label for="radio-example-primary">Lorem ipsum dolor set amet&lt;/label>
+    &lt;/div>
+&lt;/form>
+                        </code>
+                    </pre>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <h1 id="system-notification">Systeemberichten</h1>
+                    <p>Te gebruiken om de gebruiker extra systeeminformatie te geven. Bijvoorbeeld bij het tonen van een leeg element.</p>
+                    
+                    <p>Beschikbare voorbeelden:</p>
+                    <nav aria-label="Systeemberichten subnavigatie">
+                        <ul>
+                            <li><a href="#system-notification-div">Blokelement</a></li>
+                            <li><a href="#system-notification-p">Paragraaf</a></li>
+                        </ul>
+                    </nav>
+
+                    <h2 id="system-notification-div">Systeemberichten binnen een blok</h2>
+                    <h3>Voorbeeld</h3>
+                    <p>Visueel voorbeeld:</p>
+
+                    <div class="system-notification" role="group" aria-label="systeembericht">
+                        <h1>Lorem ipsum dolor set</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.</p>
+                        <ul>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. <a href="">Lorem ipsum</a> consectetur adipiscing elit.</li>
+                        </ul>
+                        <button type="button">Lorem</button>
+                    </div>
+
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;div class="system-notification" role="group" aria-label="systeembericht">
+    &lt;span>Systeembericht:&lt;/span>
+    &lt;!-- Voeg hier de content toe. -->
+&lt;/div>
+                        </code>
+                    </pre>
+
+                    <h2 id="system-notification-p">Systeemberichten op paragraaf:</h2>
+                    <h3>Voorbeeld</h3>
+                    <p>Visueel voorbeeld:</p>
+                    <p class="system-notification" role="group" aria-label="systeembericht">Er is momenteel geen data beschikbaar.</p>
+
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;p class="system-notification" role="group" aria-label="systeembericht">Er is momenteel geen data beschikbaar.&lt;/p>
+                        </code>
+                    </pre>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <h1 id="attention">Attentie</h1>
+                    <p>Te gebruiken extra aandacht te vestigen op bepaalde teksten.</p>
+
+                    <p>Aandachtspunten:</p>
+                    <ul>
+                        <li>Voeg de class <code>attention</code> toe om extra aandacht te geven.</li>
+                    </ul>
+                    
+                    <p>Beschikbare voorbeelden:</p>
+                    <nav aria-label="Attentie subnavigatie">
+                        <ul>
+                            <li><a href="#attention-div">Blokelement</a></li>
+                            <li><a href="#attention-p">Paragraaf</a></li>
+                            <li><a href="#attention-span"><code>span</code></a></li>
+                            <li><a href="#attention-table">Tabel-elementen</a></li>
+                        </ul>
+                    </nav>
+
+                    <h2 id="attention-div">"Attentie" op een blokelement</h2>
+                    <h3>Voorbeeld</h3>
+                    <p>Visueel voorbeeld:</p>
+                    <div class="attention" aria-label="attentie">
+                        <h1>Lorem ipsum dolor set</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.</p>
+                        <ul>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. <a href="">Lorem ipsum</a> consectetur adipiscing elit.</li>
+                        </ul>
+                        <button type="button">Lorem</button>
+                    </div>
+
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;div class="attention" aria-label="attentie">
+    &lt;!-- Voeg hier de content toe. -->
+&lt;/div>
+                        </code>
+                    </pre>
+
+                    <h2 id="attention-p">"Attentie" op paragraaf:</h2>
+                    <h3>Voorbeeld</h3>
+                    <p>Visueel voorbeeld:</p>
+                    <p class="attention" aria-label="attentie">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et porta ante. Sed vehicula dictum augue, et egestas arcu malesuada vitae.</p>
+
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;p class="attention" aria-label="attentie">Lorem ipsum dolor sit amet.&lt;/p>
+                        </code>
+                    </pre>
+
+                    <h2 id="attention-span">"Attentie" op <code>&lt;span></code>:</h2>
+                    <h3>Voorbeeld</h3>
+                    <p>Visueel voorbeeld:</p>
+                    <span class="attention" aria-label="attentie">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et porta ante. Sed vehicula dictum augue, et egestas arcu malesuada vitae.</span>
+
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;span class="attention" aria-label="attentie">Lorem ipsum dolor sit amet.&lt;/span>
+                        </code>
+                    </pre>
+
+                    <h2 id="attention-table">"Attentie" op tabel-elementen:</h2>
+                    <nav aria-label="attentie tabelelementen subnavigatie">
+                        <ul>
+                            <li><a href="#attention-th">Tabeltitel</a></li>
+                            <li><a href="#attention-td">Tabelcel</a></li>
+                            <li><a href="#attention-tr">Tabelrij</a></li>
+                        </ul>
+                    </nav>
+
+                    <h2 id="attention-th">Attentie op tabeltitel</h2>
+
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="attention" aria-label="attentie">
+                                    Lorem
+                                </th>
+                                <th class="attention" aria-label="attentie">
+                                    Ipsum
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>12</td>
+                                <td>42</td>
+                            </tr>
+
+                            <tr>
+                                <td>15</td>
+                                <td>168</td>
+                            </tr>
+
+                            <tr>
+                                <td>123</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Lorem ipsum</td>
+                                <td>Dolor set amet</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;th class="attention" aria-label="attentie">
+    Lorem
+&lt;/th>
+                        </code>
+                    </pre>
+
+                    <h2 id="attention-td">Attentie op tabelcel</h2>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Lorem</th>
+                                <th>Ipsum</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>12</td>
+                                <td>42</td>
+                            </tr>
+
+                            <tr>
+                                <td class="attention" aria-label="attentie">
+                                    15
+                                </td>
+                                <td class="attention" aria-label="attentie">
+                                    168
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="attention" aria-label="attentie">
+                                    15
+                                </td>
+                                <td class="attention" aria-label="attentie">
+                                    168
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="attention" aria-label="attentie">
+                                    15
+                                </td>
+                                <td class="attention" aria-label="attentie">
+                                    168
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>123</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Lorem ipsum</td>
+                                <td>Dolor set amet</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;td class="attention" aria-label="attentie">
+    15
+&lt;/td>
+                       </code>
+                    </pre>
+
+                    <h2 id="attention-tr">Attentie op tabelrij</h2>
+                    <h4>Voorbeeld</h4>
+                    <p>Visueel voorbeeld:</p>
+                    <table>
+                        <thead>
+                            <tr class="attention" aria-label="attentie">
+                                <th>Lorem</th>
+                                <th>Ipsum</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>12</td>
+                                <td>42</td>
+                            </tr>
+
+                            <tr class="attention" aria-label="attentie">
+                                <td>15</td>
+                                <td>168</td>
+                            </tr>
+
+                            <tr>
+                                <td>15</td>
+                                <td>168</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr class="attention" aria-label="attentie">
+                                <td>Lorem ipsum</td>
+                                <td>Dolor set amet</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <p>Html-voorbeeld:</p>
+                    <pre>
+                        <code>
+&lt;!-- Attentie op een tabelrij binnen een tabeltitel -->
+&lt;tr class="attention" aria-label="attentie">
+    &lt;th>Lorem&lt;/th>
+    &lt;th>Ipsum&lt;/th>
+&lt;/tr>
+
+&lt;!-- Attentie op een tabelrij binnen een tabel body of footer -->
+&lt;tr class="attention" aria-label="attentie">
+    &lt;td>15&lt;/td>
+    &lt;td>168&lt;/td>
+&lt;/tr>
+
+                       </code>
+                    </pre>
+
+                    
+                </div>
+            </article>
+        </div>
+
+        <a href="#main-nav" class="button to-top ro-icon ro-icon-to-top" title="Terug naar het hoofdmenu">Terug naar het hoofdmenu</a>
+    </main>
+
+    <footer>
+        <div>
+          <span>Manon - Rijksoverheid css framework</span>
+          <nav aria-labelledby="footer-nav-1-heading">
+            <h1 id="footer-nav-1-heading">Service</h1>
+            <ul>
+              <li><a href="../index.html">Over</a></li>
+              <li><a href="../test/index.html">Styling tests</a></li>
+              <li><a href="index.html">Online componenten bibliotheek</a></li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+  </body>
+</html>

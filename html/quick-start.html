@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <title>Snelstart - Rijksoverheid CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../static/css/main.css" rel="stylesheet">
+    <link href="../static/img/favicon.ico" rel="shortcut icon">
+    <script defer src="../static/js/sidemenu.js"></script>
+  </head>
+  <body class="test-cases">
+    <header class="breadcrumbs">
+      <a href="#main-content" class="button focus-only">Ga direct naar inhoud</a>
+      <a href="" class="ro-logo">
+        <img src="../static/img/ro-logo.svg" alt="Logo Rijksoverheid">
+        Rijksoverheid
+      </a>
+      
+      <nav aria-label="Kruimelpad" id="main-nav">
+        <div>
+          <ul>
+              <li><a href="index.html">Rijksoverheid CSS</a></li>
+              <li><a href="html_examples/index.html">Online Componenten Bibliotheek</a></li>
+              <li><a href="#" aria-current="page">Snelstart</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    </header>
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+        <ul>
+            <li><a href="#">Snelstart</a></li>
+            <li><a href="#colors">Beschikbare kleuren</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <article>
+            <div>
+              <h1>Snelstart</h1>
+              <p>Stappenplan voor het implementeren van Manon.</p>
+              <ol>
+                <li>Download het zipbestand (Bijvoorbeeld: "manon-v2.7.0.zip") met de laatste versie van Manon:<a rel="external" href="https://github.com/minvws/nl-rdo-rijksoverheid-ui/releases">Releases</a>.</li>
+                <li>Maak een map genaamd <code>static</code>, en plaats daar de inhoud van de zip. Deze map bevat dan de benodigde lettertypes, afbeeldingen css- en javascript-bestanden.</li>
+                <li>Koppel de css:
+                  <ol>
+                    <li>Kies het css-bestand op basis van de gewenste applicatiekleur. Voor meer informatie over de kleuren zie:<a href="#colors">Beschikbare kleuren</a>.</li>
+                    <li>Laad het css-bestand in binnen het project.
+                      <ul>
+                        <li>Tip: Gebruik @import om het bestand in te laden binnen het algemene css-bestand van de applicatie. Voeg daarbij een opmerking toe met het versie-nummer. Dat geeft inzicht in de geimplementeerde versie, wat handig is bij het updaten naar een nieuwe versie. Voorbeeld: <code>@import "manon-ruby-red.css"; /* Manon version 2.7.0 */</code>.
+                        </li>
+                      </ul>
+                    </li>
+                  </ol>
+                </li>
+                <li>Voeg de html toe.
+                  <ul>
+                    <li>Gebruik een van de voorbeeldpagina's voor het opzetten van de html.
+                      <ul>
+                        <li><a href="html_examples/page-template.html">Lege voorbeeldpagina (pagina-sjabloon)</a></li>
+                        <li><a href="html_examples/index.html#document-nav-heading-1">Overzicht overige Voorbeeldpagina's</a></li>
+                        <li><a href="html_examples/index.html">Bekijk de componenten bibliotheek voor alle beschikbare componenten</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ol>
+            </div>
+        </article>
+
+        <article class="background-color-offset" id="colors">
+          <div>
+            <h1>Beschikbare kleuren</h1>
+            <ul class="color-overview color-block column-3">
+              <li>
+                  <div>
+                      <div class="purple"></div>
+                      <p>manon-purple.css</p>
+                  </div>
+              </li>
+              <li>
+                  <div>
+                      <div class="violet"></div>
+                      <p>manon-violet.css</p>
+                  </div>
+              </li>
+              <li>
+                  <div>
+                      <div class="ruby-red"></div>
+                      <p>manon-ruby-red.css</p>
+                  </div>
+              </li>
+              <li>
+                  <div>
+                      <div class="pink"></div>
+                      <p>manon-pink.css</p>
+                  </div>
+              </li>
+              <li>
+                  <div>
+                      <div class="red"></div>
+                      <p>manon-red.css</p>
+                  </div>
+              </li>
+              <li>
+                  <div>
+                      <div class="orange"></div>
+                      <p>manon-orange.css</p>
+                  </div>
+              </li>
+              <li>
+                  <div>
+                      <div class="dark-yellow"></div>
+                      <p>manon-dark-yellow.css</p>
+                  </div>
+              </li>
+              <li>
+                  <div>
+                      <div class="yellow"></div>
+                      <p>manon-yellow.css</p>
+                  </div>
+              </li>
+              <li>
+                  <div>
+                      <div class="dark-brown"></div>
+                      <p>manon-dark-brown.css</p>
+                  </div>
+              </li>
+              <li>
+                  <div>
+                      <div class="brown"></div>
+                      <p>manon-brown.css</p>
+                  </div>
+              </li>
+              <li>
+                  <div>
+                      <div class="dark-green"></div>
+                      <p>manon-dark-green.css</p>
+                  </div>
+              </li>
+              <li>
+                  <div>
+                      <div class="green"></div>
+                      <p>manon-green.css</p>
+                  </div>
+              </li>
+              <li>
+                  <div>
+                      <div class="moss-green"></div>
+                      <p>manon-moss-green.css</p>
+                  </div>
+              </li>
+              <li>
+                  <div>
+                      <div class="mint-green"></div>
+                      <p>manon-mint-green.css</p>
+                  </div>
+              </li>
+              <li>
+                  <div>
+                      <div class="dark-blue"></div>
+                      <p>manon-dark-blue</p>
+                  </div>
+              </li>
+              <li>
+                  <div>
+                      <div class="sky-blue"></div>
+                      <p>manon-sky-blue.css</p>
+                  </div>
+              </li>
+              <li>
+                  <div>
+                      <div class="light-blue"></div>
+                      <p>manon-light-blue.css</p>
+                  </div>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <a href="#main-nav" class="button to-top ro-icon ro-icon-to-top" title="Terug naar het hoofdmenu">Terug naar het hoofdmenu</a>
+    </main>
+
+    <footer>
+        <div>
+          <span>Manon - Rijksoverheid css framework</span>
+          <nav aria-labelledby="footer-nav-1-heading">
+            <h1 id="footer-nav-1-heading">Service</h1>
+            <ul>
+              <li><a href="index.html">Over</a></li>
+              <li><a href="test/index.html">Styling tests</a></li>
+              <li><a href="html_examples/index.html">Online componenten bibliotheek</a></li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+  </body>
+</html>
