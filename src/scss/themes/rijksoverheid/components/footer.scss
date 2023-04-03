@@ -1,0 +1,19 @@
+/* footer.scss */
+
+body > footer {
+	> * {
+		width: 100%;
+	}
+
+	span {
+		font-family: var(--text-set-magazine-font-family);
+		font-size: 1.80203rem;
+		font-weight: 400;
+		font-style: italic;
+		-webkit-font-smoothing: antialiased;
+
+		@media (min-width: 24rem) {
+			min-width: 20rem;
+		}
+	}
+}

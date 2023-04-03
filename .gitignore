@@ -1,0 +1,7 @@
+/node_modules
+/static/css
+/static/js
+manon-*.md
+manon-*.zip
+.idea
+.DS_Store

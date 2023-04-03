@@ -1,0 +1,46 @@
+/* Color set ruby red */
+
+:root {
+	--ruby-red: #ca005d;
+
+	--ruby-red-background-color: #ca005d;
+	--ruby-red-text-color: #fff;
+
+	/* Text colors */
+	--ruby-red-text-color-dark: #000;
+	--ruby-red-text-color-light: var(--ruby-red-text-color);
+
+	/* Hover */
+	--ruby-red-hover-background-color: #8d0041;
+	--ruby-red-hover-text-color: var(--ruby-red-text-color);
+
+	/* Disabled */
+	--ruby-red-disabled-background-color: #efb2ce;
+	--ruby-red-disabled-text-color: var(--ruby-red-text-color-dark);
+
+	/* Active */
+	--ruby-red-active-background-color: #8d0041;
+	--ruby-red-active-text-color: var(--ruby-red-text-color);
+
+	/* Focus */
+	--ruby-red-focus-background-color: #8d0041;
+	--ruby-red-focus-text-color: var(--ruby-red-text-color);
+
+	/* Selected */
+	--ruby-red-selected-background-color: #8d0041;
+	--ruby-red-selected-text-color: var(--ruby-red-text-color);
+
+	/* Tint 1 */
+	--ruby-red-tint-1: #efb2ce;
+	--ruby-red-tint-1-background-color: var(--ruby-red-tint-1);
+	--ruby-red-tint-1-text-color: var(--ruby-red-text-color-dark);
+
+	/* Tint 2 */
+	--ruby-red-tint-2: #f7d9e7;
+	--ruby-red-tint-2-background-color: var(--ruby-red-tint-2);
+	--ruby-red-tint-2-text-color: var(--ruby-red-text-color-dark);
+
+	/* Branding color */
+	--branding-color-1-background-color: var(--ruby-red-background-color);
+	--branding-color-1-text-color: var(--ruby-red-text-color);
+}
