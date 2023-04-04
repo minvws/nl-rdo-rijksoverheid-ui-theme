@@ -1,0 +1,16 @@
+/* navigation-message-counter.scss */
+
+/* Add these fixes to manon */
+
+body > header nav {
+	.message-counter {
+		margin-left: 0.5rem;
+	} 
+	
+	li:hover {
+		.message-counter {
+			background-color: var(--ruby-red-background-color);
+			color: var(--ruby-red-text-color);
+		}
+	}
+}

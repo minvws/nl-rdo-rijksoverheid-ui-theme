@@ -2,9 +2,9 @@
 
 :root {
 	--section-gap: 1rem;
-	--section-padding-top: 3rem;
-	--section-padding-right: 3.5rem;
-	--section-padding-bottom: 3rem;
-	--section-padding-left: 3.5rem;
+	--section-padding-top: var(--content-padding-top);
+	--section-padding-right: var(--content-padding-right);
+	--section-padding-bottom: var(--content-padding-bottom);
+	--section-padding-left: var(--content-padding-left);
 	--section-max-width: 100%;
 }

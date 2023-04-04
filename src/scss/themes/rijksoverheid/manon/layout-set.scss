@@ -2,19 +2,19 @@
 
 :root {
 	/* Page */
-	--page-whitespace-top: 4rem;
-	--page-whitespace-right: 2%;
-	--page-whitespace-bottom: 4rem;
-	--page-whitespace-left: 2%;
+	--page-whitespace-top: 6rem;
+	--page-whitespace-right: 0;
+	--page-whitespace-bottom: 6rem;
+	--page-whitespace-left: 0;
 
 	/* Content */
 	--content-flex-direction: column;
 	--content-justify-content: flex-start;
 	--content-align-items: flex-start;
-	--content-gap: 3rem;
-	--content-padding-top: 2rem;
+	--content-gap: 2rem;
+	--content-padding-top: 6rem;
 	--content-padding-right: 3%;
-	--content-padding-bottom: 2rem;
+	--content-padding-bottom: 6rem;
 	--content-padding-left: 3%;
 	--content-max-width: 80rem;
 }

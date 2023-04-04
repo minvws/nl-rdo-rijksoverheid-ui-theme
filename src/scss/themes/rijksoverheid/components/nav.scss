@@ -1,7 +1,60 @@
 /* Rijksoverheid nav */
 
-main nav > h1 {
-	font-size: $font-heading-size-small;
-	font-weight: normal;
-	color: $ro-blue;
+nav {
+	h1 {
+		font-size: var(--heading-normal-font-size);
+		font-weight: normal;
+		color: red;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	ol li {
+		list-style: decimal;
+		display: list-item;
+		margin-left: 0.5rem; /* Reserving extra space for the numbering of the items */
+
+		> a {
+			margin-left: 1.5rem;
+		}
+
+		&::before {
+			left: -2.5rem; /* Reserving extra space for the numbering of the items */
+		}
+	}
+
+	ul,
+	nav ol {
+		padding-left: 1rem;
+
+		li {
+			display: flex;
+			align-items: flex-start;
+			flex-direction: column;
+
+			> a {
+				margin: 0;
+				text-decoration: none; /* No underline needed when the link has a ">" */
+				position: relative;
+				line-height: 1.5rem;
+				text-align: left;
+
+				&::before {
+					content: $ro-icon-chevron-right;
+					font-family: "RO Icons";
+					font-size: 0.7rem;
+					margin-right: 0.5rem;
+					color: inherit;
+				}
+
+				&:visited {
+					&::before {
+						color: var(--link-visited-text-color);
+					}
+				}
+			}
+		}
+	}
 }

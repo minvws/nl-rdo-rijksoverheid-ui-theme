@@ -1,0 +1,47 @@
+/* Button ghost */
+
+:root {
+	/* Base */
+	--button-ghost-background-color: var(--ruby-red-ghost-background-color);
+	--button-ghost-text-color: var(--ruby-red-ghost-text-color);
+	--button-ghost-border-color: var(--ruby-red);
+	--button-ghost-border-width: 2px;
+  	--button-ghost-border-style: solid;
+  	--button-ghost-border-color: var(--ruby-red-background-color);
+
+	/* Hover */
+	--button-ghost-hover-background-color: var(--ruby-red-background-color);
+	--button-ghost-hover-text-color: var(--ruby-red-text-color);
+
+	/* Active */
+	--button-ghost-active-background-color: var(--ruby-red-active-background-color);
+	--button-ghost-active-text-color: var(--ruby-red-active-text-color);
+	--button-ghost-active-border-width: var(--button-base-border-width);
+  	--button-ghost-active-border-style: var(--button-base-border-style);
+  	--button-ghost-active-border-color: var(--ruby-red-active-background-color);
+
+	/* Focus */
+	--button-ghost-focus-background-color: var(--ruby-red-focus-background-color);
+	--button-ghost-focus-text-color: var(--ruby-red-focus-text-color);
+	--button-ghost-focus-border-width: var(--button-base-border-width);
+  	--button-ghost-focus-border-style: var(--button-base-border-style);
+  	--button-ghost-focus-border-color: var(--ruby-red-focus-background-color);
+
+	/* Selected */
+	--button-ghost-selected-background-color: var(
+		--ruby-red-selected-background-color
+	);
+	--button-ghost-selected-text-color: var(--ruby-red-selected-text-color);
+	--button-ghost-selected-border-width: var(--button-base-border-width);
+  	--button-ghost-selected-border-style: var(--button-base-border-style);
+  	--button-ghost-selected-border-color: var(--ruby-red-selected-background-color);
+
+	/* Disabled */
+	--button-ghost-disabled-background-color: var(
+		--ruby-red-disabled-background-color
+	);
+	--button-ghost-disabled-text-color: var(--ruby-red-disabled-text-color);
+	--button-ghost-disabled-border-width: var(--button-base-border-width);
+  	--button-ghost-disabled-border-style: var(--button-base-border-style);
+  	--button-ghost-disabled-border-color: var(--ruby-red-disabled-background-color);
+}

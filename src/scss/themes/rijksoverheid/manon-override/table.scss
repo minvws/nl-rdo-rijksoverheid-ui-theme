@@ -1,0 +1,20 @@
+/* table.scss */
+
+/* Add this exception to manon */
+
+table {
+	th {
+		a,
+		a:visited {
+			color: var(--ruby-red-text-color);
+			
+			&:hover {
+				color: var(--ruby-red-text-color);
+			}
+
+			&:focus {
+				outline-color: white;
+			}
+		}
+	}
+}
