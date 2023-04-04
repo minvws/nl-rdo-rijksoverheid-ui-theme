@@ -1,7 +1,7 @@
 /* Article content wrapper */
 
 :root {
-	--article-content-wrapper-gap: 1rem;
+	--article-content-wrapper-gap: var(--content-gap);
 	--article-content-wrapper-padding-top: 0;
 	--article-content-wrapper-padding-right: 0;
 	--article-content-wrapper-padding-bottom: 0;
