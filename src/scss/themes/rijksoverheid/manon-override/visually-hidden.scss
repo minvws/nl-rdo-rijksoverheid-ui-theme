@@ -2,7 +2,7 @@
 
 .visually-hidden,
 .sr-only {
-    clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
+    clip-path: polygon(0 0, 0 0, 0 0, 0 0);
     white-space: nowrap;
     overflow: hidden;
     width: 0;
@@ -11,6 +11,7 @@
     max-height: 0;
 
     /* Overwriting any specifics that might have been set.    */
+
     /* !important is used here to solve any specificity issues */
     min-width: 0 !important; 
     min-height: 0 !important;

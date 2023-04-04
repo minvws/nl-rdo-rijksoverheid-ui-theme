@@ -3,6 +3,14 @@
   "rules": {
     "number-max-precision": 5,
     "color-hex-length": "long",
-    "declaration-block-no-redundant-longhand-properties": null
+    "declaration-block-no-redundant-longhand-properties": null,
+    "font-family-no-missing-generic-family-keyword": [
+      true,
+      {
+        "ignoreFontFamilies": [
+          "RO Icons"
+        ]
+      }
+    ]
   }
 }

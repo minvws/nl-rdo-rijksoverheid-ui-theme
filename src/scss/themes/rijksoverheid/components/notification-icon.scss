@@ -7,13 +7,13 @@
 .confirmation,
 .explanation,
 .system {
-
   span:first-of-type {
-		&:before {
+		&::before {
 			@extend %icon-text-styling;
+
 			content: "";
 			font-weight: var(--notification-block-element-span-font-weight);
-			background-image: url(../img/notification_icons.svg);
+			background-image: url("../img/notification_icons.svg");
 			background-size: 100%;
 			width: 1.5rem;
 			min-width: 1.5rem;
@@ -29,35 +29,35 @@
 
 .error {
 	 span:first-of-type {
-			&:before {
+			&::before {
 				background-position: 0 3rem;
-				background-image: url(../img/notification_icons.svg);
+				background-image: url("../img/notification_icons.svg");
 			}
 		}
 }
 
 .warning {
 	 span:first-of-type {
-			&:before {
-				background-image: url(../img/notification_icons.svg);
+			&::before {
+				background-image: url("../img/notification_icons.svg");
 			}
 		}
 }
 
 .confirmation {
 	 span:first-of-type {
-			&:before {
+			&::before {
 				background-position: 0 1.5rem;
-				background-image: url(../img/notification_icons.svg);
+				background-image: url("../img/notification_icons.svg");
 			}
 		}
 }
 
 .explanation {
 	 span:first-of-type {
-			&:before {
+			&::before {
 				background-position: 0 4.5rem;
-				background-image: url(../img/notification_icons.svg);
+				background-image: url("../img/notification_icons.svg");
 			}
 		}
 }

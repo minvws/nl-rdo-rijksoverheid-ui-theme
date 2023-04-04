@@ -1,4 +1,5 @@
 /* navigation-tabs.scss */
+
 /* Add these fixes to manon */
 
 body > header nav {
@@ -10,7 +11,7 @@ body > header nav {
 		align-self: center;
 	}
 
-	li > a:before {
+	li > a::before {
 		content: none;
 	}
 }

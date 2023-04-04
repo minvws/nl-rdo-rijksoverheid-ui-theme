@@ -35,8 +35,9 @@
 @import "manon/article-content-wrapper";
 
 /* Navigation */
-/*@import "manon/navigation";
-@import "manon/navigation-content-wrapper";*/
+
+/* @import "manon/navigation";
+@import "manon/navigation-content-wrapper"; */
 @import "manon/header-navigation";
 
 /* Headings */
@@ -62,7 +63,7 @@
 @import "manon/notification-explanation";
 @import "manon/notification-system";
 
-/* Components - Rijksoverheid specific components*/
+/* Components - Rijksoverheid specific components */
 @import "components/logo";
 @import "components/footer";
 @import "components/ro-icons";

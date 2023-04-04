@@ -2,7 +2,7 @@
 .menu_toggle {
 	order: 1;
 
-	&:before {
+	&::before {
 	  content: "\E812";
 	  font-family: "RO Icons";
 	  display: inline-flex;
@@ -19,7 +19,7 @@
 	}
 
 	&[aria-expanded="false"]{
-	  &:before {
+	  &::before {
 	    content: "\E812";
 	  }
 	}
@@ -27,7 +27,7 @@
 	&[aria-expanded="true"]{
 		min-width: 0;
 
-	   &:before {
+	   &::before {
 	    content: "\E82B";
 	  }
 	}

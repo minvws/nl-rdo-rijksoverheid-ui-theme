@@ -1,4 +1,5 @@
 /* form.scss */
+
 /* Add to manon as footer variant */
 
 form {
@@ -6,14 +7,14 @@ form {
 
 	> button,
 	> a.button,
-	> input[type=button],
-	> input[type=submit],
-	> input[type=reset] {
+	> input[type="button"],
+	> input[type="submit"],
+	> input[type="reset"] {
 		margin-top: 1rem;
 	}
 }
 
-form *:focus, form *:focus + label:before {
+form *:focus, form *:focus + label::before {
 	outline-offset: 0;
 }
 

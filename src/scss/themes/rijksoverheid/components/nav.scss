@@ -7,6 +7,24 @@ nav {
 		color: red;
 	}
 
+	ul li {
+		list-style: none;
+	}
+
+	ol li {
+		list-style: decimal;
+		display: list-item;
+		margin-left: 0.5rem; /* Reserving extra space for the numbering of the items */
+
+		> a {
+			margin-left: 1.5rem;
+		}
+
+		&::before {
+			left: -2.5rem; /* Reserving extra space for the numbering of the items */
+		}
+	}
+
 	ul,
 	nav ol {
 		padding-left: 1rem;
@@ -23,7 +41,7 @@ nav {
 				line-height: 1.5rem;
 				text-align: left;
 
-				&:before {
+				&::before {
 					content: $ro-icon-chevron-right;
 					font-family: "RO Icons";
 					font-size: 0.7rem;
@@ -32,29 +50,11 @@ nav {
 				}
 
 				&:visited {
-					&:before {
+					&::before {
 						color: var(--link-visited-text-color);
 					}
 				}
 			}
-		}
-	}
-
-	ul li {
-		list-style: none;
-	}
-
-	ol li {
-		list-style: decimal;
-		display: list-item;
-		margin-left: 0.5rem; /* Reserving extra space for the numbering of the items */
-
-		> a {
-			margin-left: 1.5rem;
-		}
-
-		&:before {
-			left: -2.5rem; /* Reserving extra space for the numbering of the items */
 		}
 	}
 }

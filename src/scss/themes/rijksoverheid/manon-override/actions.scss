@@ -1,11 +1,16 @@
 /* actions.scss */
+
 /* Add these fixes to manon */
 
 .actions {
 	display: flex;
+
     /* In the html the most important button will come first. */
-    /* Action buttons are aligned to the right,*/
+
+    /* Action buttons are aligned to the right, */
+
     /* the most important one visually needs to be aligned to the end. */
+
     /* Therefor row-reverse is used to flip the order so it is correct in hmtl and visually */
     flex-direction: column; 
     justify-content: flex-start;

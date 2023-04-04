@@ -1,6 +1,8 @@
-/*---------------------------------------------------------------------------*/
-/*----------------- header-navigation-collapsable.scss ----------------------*/
-/*---------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------- */
+
+/* ----------------- header-navigation-collapsable.scss ---------------------- */
+
+/* --------------------------------------------------------------------------- */
 %collapsed-menu {
   + ul,
   + ol {
@@ -14,7 +16,6 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin: 1rem 0;
     position: absolute;
     top: var(--header-navigation-min-height);
     left: 0;
@@ -82,24 +83,19 @@ body > header,
     > input[type="button"],
     > input[type="submit"],
     > input[type="reset"]  {
-
       justify-content: var(--header-navigation-button-justify-content);
       align-self: var(--header-navigation-button-align-self);
       min-width: var(--header-navigation-button-min-width);
       min-height: var(--header-navigation-button-min-height);
-
       background-color: var(--header-navigation-button-background-color);
       color: var(--header-navigation-button-text-color);
-
       font-size: var(--header-navigation-button-font-size);
       font-weight: var(--header-navigation-button-font-weight);
       line-height: var(--header-navigation-button-line-height);
-
       border-width: var(--header-navigation-button-border-width);
       border-style: var(--header-navigation-button-border-style);
       border-color: var(--header-navigation-button-border-color);
       border-radius: var(--header-navigation-button-border-radius);
-
       padding-top: var(--header-navigation-button-padding-top);
       padding-right: var(--header-navigation-button-padding-right);
       padding-bottom: var(--header-navigation-button-padding-bottom);
@@ -170,16 +166,17 @@ body > header,
     }
   }
 
-  .menu_toggle[aria-expanded=false] {
+  .menu_toggle[aria-expanded="false"] {
     @extend %collapsed-menu;
   }
-  .menu_toggle[aria-expanded=true] {
+
+  .menu_toggle[aria-expanded="true"] {
     @extend %expanded-menu;
   }
 
   @media screen and (min-width: 77rem) {
-    .menu_toggle[aria-expanded=false],
-    .menu_toggle[aria-expanded=true] {
+    .menu_toggle[aria-expanded="false"],
+    .menu_toggle[aria-expanded="true"] {
       display: none;
 
       + ul,
@@ -189,8 +186,8 @@ body > header,
       }
     }
 
-    .menu_toggle[aria-expanded=true] + ul,
-    .menu_toggle[aria-expanded=true] + ol,
+    .menu_toggle[aria-expanded="true"] + ul,
+    .menu_toggle[aria-expanded="true"] + ol,
     nav ul, 
     nav ol {
       flex-direction: row;
