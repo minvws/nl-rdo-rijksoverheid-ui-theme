@@ -22,7 +22,7 @@
 	--ruby-red-active-text-color: var(--ruby-red-text-color);
 
 	/* Focus */
-	--ruby-red-focus-background-color: #8d0041;
+	--ruby-red-focus-background-color: var(--ruby-red-background-color);
 	--ruby-red-focus-text-color: var(--ruby-red-text-color);
 
 	/* Selected */
@@ -38,6 +38,10 @@
 	--ruby-red-tint-2: #f7d9e7;
 	--ruby-red-tint-2-background-color: var(--ruby-red-tint-2);
 	--ruby-red-tint-2-text-color: var(--ruby-red-text-color-dark);
+
+	/* Ghost */
+	--ruby-red-ghost-background-color: #fff;
+	--ruby-red-ghost-text-color: #ca005d;
 
 	/* Branding color */
 	--branding-color-1-background-color: var(--ruby-red-background-color);
