@@ -1,0 +1,11 @@
+/* Filters */
+
+:root {
+	--filter-button-icon-font-family: "RO Icons";
+
+	/* content on the button when the menu is collapsed */
+  	--filter-button-icon-before-open-content: "\E820";
+
+  	/* content on the button when the menu is expanded */
+  	--filter-button-icon-before-close-content: "\E81F";
+}
