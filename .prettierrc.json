@@ -1,11 +1,5 @@
 {
-  "useTabs": true,
-  "overrides": [
-    {
-      "files": "*.json",
-      "options": {
-        "useTabs": false
-      }
-    }
-  ]
+  "useTabs": false,
+  "tabWidth": 2,
+  "printWidth": 100
 }
