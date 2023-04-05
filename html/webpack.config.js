@@ -5,6 +5,7 @@ const path = require("path");
 
 module.exports = {
 	mode: 'development',
+	context: __dirname,
 	entry: {
 		accordion: "@minvws/manon/accordion.js",
 		expandoRows: "@minvws/manon/expando-rows.js",
@@ -21,12 +22,6 @@ module.exports = {
 	optimization: {
 		removeEmptyChunks: true,
 	},
-	// resolve: {
-	// 	modules: [
-	// 		// This is needed when we want to load @minvws/manon from the current node_modules and not the parent directory
-	// 		path.resolve(__dirname, 'node_modules')
-	// 	],
-	// },
 	module: {
 		rules: [
 			{
