@@ -28,8 +28,8 @@
     "css:build": "node scripts/build-css.js",
     "format": "prettier --write .",
     "lint-staged": "lint-staged",
-    "lint:css": "stylelint \"src/**/*.scss\"",
-    "prepare": "husky install",
+    "lint:css": "stylelint \"scss/**/*.scss\"",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@minvws/manon": "^4.0.0",
