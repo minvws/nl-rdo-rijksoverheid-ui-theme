@@ -13,7 +13,7 @@ module.exports = {
 		formHelp: "@minvws/manon/form-help.js",
 		navigation: "@minvws/manon/navigation.js",
 		sidemenu: "@minvws/manon/sidemenu.js",
-		main: "../src/scss/main.scss"
+		main: "../scss/main.scss"
 	},
 	output: {
 		path: __dirname + "/dist",
@@ -80,7 +80,7 @@ module.exports = {
 		new CopyPlugin({
 			patterns: [
 				{
-					from: "../static/img/**/*",
+					from: "../img/**/*",
 					to: "img/[name][ext]",
 				},
 			],
