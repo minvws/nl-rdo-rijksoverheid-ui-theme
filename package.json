@@ -16,6 +16,7 @@
     "watch": "npm-run-all clean -p css:watch",
     "build": "npm-run-all clean css:dev css:build",
     "build:docs": "webpack --config html/webpack.config.js",
+    "build:docs:watch": "webpack --config html/webpack.config.js --watch",
     "build:docs:production": "webpack --config html/webpack.config.js --mode=production",
     "clean": "rimraf css",
     "css:dev": "sass scss/main.scss:css/main.css --load-path=node_modules --no-source-map --style=compressed",
