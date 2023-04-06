@@ -4,17 +4,17 @@
 		<meta charset="UTF-8">
 		<title>Forms - Rijksoverheid CSS</title>
 		<meta content="width=device-width, initial-scale=1" name="viewport">
-		<link href="../../static/css/main.css" rel="stylesheet">
-		<link href="../../static/img/favicon.ico" rel="shortcut icon">
-		<script defer src="../../static/js/form-help.js"></script>
-		<script defer src="../../static/js/sidemenu.js"></script>
+		<link href="../dist/css/main.css" rel="stylesheet">
+		<link href="../dist/img/favicon.ico" rel="shortcut icon">
+		<script defer src="../dist/js/formHelp.js"></script>
+		<script defer src="../dist/js/sidemenu.js"></script>
 	</head>
 
 	<body id="page_forms">
 		<header class="breadcrumbs">
 		<a href="#main-content" class="button focus-only">Ga direct naar inhoud</a>
 			<a href="" class="ro-logo">
-			<img src="../../static/img/ro-logo.svg" alt="Logo Rijksoverheid">
+			<img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
 			Rijksoverheid
 			</a>
 		
@@ -35,7 +35,7 @@
 					<li><a href="#">Forms</a></li>
 					<li><a href="#basic-form">Basisvoorbeeld formulier</a></li>
 					<li><a href="#basic-form-column">Basisvoorbeeld formulier met kolommen</a></li>
-					<li><a href="#line-form">Formulier zonder achtergrond</a></li>
+					<li><a href="#inline">Formulier zonder achtergrond</a></li>
 					<li><a href="#fieldset">Invoervelden groeperen</a></li>
 					<li><a href="#form-elements">Formulier-elementen</a>
 						<ul>
@@ -104,7 +104,7 @@
 							<ul>
 								<li><a href="#basic-form">Basisvoorbeeld formulier</a></li>
 								<li><a href="#basic-form-column">Basisvoorbeeld formulier met kolommen</a></li>
-								<li><a href="#line-form">Formulier zonder achtergrond</a></li>
+								<li><a href="#inline">Formulier zonder achtergrond</a></li>
 								<li><a href="#fieldset">Invoervelden groeperen</a></li>
 								<li><a href="#form-elements">Formulier-elementen</a>
 									<ul>
@@ -210,17 +210,17 @@
 					</div>
 				</article>
 
-				<article id="line-form">
+				<article id="inline">
 					<div>
 						<h1>Formulier zonder achtergrond</h1>
 						<p>In sommige gevallen is er om technische redenen een formulier nodig rondom een knop maar is het niet nodig om deze visueel binnen een formulier te plaatsen. Voor die situaties is dit voorbeeld geschikt.</p>
 
 						<ul>
-							<li>Voeg <code>class="line-form"</code> toe aan de <code>&lt;form></code>.</li>
+							<li>Voeg <code>class="inline"</code> toe aan de <code>&lt;form></code>.</li>
 						</ul>
 						<h3>Voorbeeld</h3>
 						<p>Visueel voorbeeld:</p>
-						<form action="" method="post" class="line-form">
+						<form action="" method="post" class="inline">
 							<div class="button-container">
 								<button type="submit">Haal gegevens op</button>
 							</div>
@@ -229,7 +229,7 @@
 						<p>Html-voorbeeld:</p>
 						<pre>
 							<code>
-&lt;form action="" method="post" class="line-form">
+&lt;form action="" method="post" class="inline">
 	&lt;div class="button-container">
 		&lt;button type="submit">Haal gegevens op&lt;/button>
 	&lt;/div>
