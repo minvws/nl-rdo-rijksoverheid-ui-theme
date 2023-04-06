@@ -5,8 +5,9 @@
 	font-family: "RO Icons";
 	font-weight: normal;
 	font-style: normal;
-	src: url("../../../fonts/ro-icons/ro-icons-3.6.eot");
-	src: url("../../../fonts/ro-icons/ro-icons-3.6.woff") format("woff"),
-		url("../../../fonts/ro-icons/ro-icons-3.6.ttf") format("truetype"),
-		url("../../../fonts/ro-icons/ro-icons-3.6.svg#ro-icons-31") format("svg");
+	src: url("#{$ro-font-path}/ro-icons/ro-icons-3.6.eot"),
+	  url("#{$ro-font-path}/ro-icons/ro-icons-3.6.woff") format("woff"),
+		url("#{$ro-font-path}/ro-icons/ro-icons-3.6.ttf") format("truetype");
+    // TODO: Fix SVG
+		//url("#{$ro-font-path}/ro-icons/ro-icons-3.6.svg#ro-icons-31") format("svg");
 }
