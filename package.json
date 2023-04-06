@@ -11,6 +11,12 @@
   "engines": {
     "node": ">=16"
   },
+  "files": [
+    "css",
+    "fonts",
+    "img",
+    "scss"
+  ],
   "scripts": {
     "dev": "npm-run-all clean css:dev",
     "watch": "npm-run-all clean -p css:watch",
