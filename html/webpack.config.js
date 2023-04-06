@@ -63,8 +63,22 @@ module.exports = {
 					},
 				],
 			},
+      {
+        test: /\.(ico|svg|jpg|png)(\?v=\d+\.\d+\.\d+)?$/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'img/[name][ext]'
+        }
+      },
+      {
+        test: /(ro-icons-3\.6)\.(svg)(\?v=\d+\.\d+\.\d+)?$/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'fonts/[name][ext]'
+        }
+      },
 			{
-				test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+				test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
 				type: 'asset/resource',
 				generator: {
 					filename: 'fonts/[name][ext]'
