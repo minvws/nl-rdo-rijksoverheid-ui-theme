@@ -26,7 +26,7 @@
     "release": "npm run build && node scripts/release.js"
   },
   "devDependencies": {
-    "@minvws/manon": "^3.0.1",
+    "@minvws/manon": "^4.0.0",
     "conventional-changelog": "^3.1.24",
     "husky": "^7.0.1",
     "lint-staged": "^11.1.2",
