@@ -25,6 +25,7 @@ const result = sass.compileString(
   }
 );
 
+promises.push(fs.mkdir(outDir, { recursive: true }));
 promises.push(fs.writeFile(path.resolve(outDir, outFile), result.css.toString()));
 
 Promise.all(promises).catch((error) => {
