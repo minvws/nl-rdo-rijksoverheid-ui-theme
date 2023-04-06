@@ -28,7 +28,7 @@
     "release": "npm run build && node scripts/release.js"
   },
   "devDependencies": {
-    "@minvws/manon": "^3.0.1",
+    "@minvws/manon": "^4.0.0",
     "conventional-changelog": "^3.1.24",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.3",
