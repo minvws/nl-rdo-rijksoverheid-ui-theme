@@ -61,7 +61,7 @@
 @use "@minvws/manon/code-base";
 @use "@minvws/manon/code-block";
 @use "@minvws/manon/list-base";
-@use "@minvws/manon/skip-to-content-base";
+@use "@minvws/manon/skip-to-content";
 @use "@minvws/manon/description-list";
 @use "@minvws/manon/message-counter-base";
 @use "@minvws/manon/accordion";
@@ -74,6 +74,7 @@
 @use "@minvws/manon/button-ghost";
 @use "@minvws/manon/button-cta";
 @use "@minvws/manon/button-icon";
+@use "@minvws/manon/button-to-top";
 
 /* Form */
 @use "@minvws/manon/form-base";
