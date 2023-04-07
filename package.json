@@ -31,8 +31,10 @@
     "lint:css": "stylelint \"scss/**/*.scss\"",
     "prepare": "husky install"
   },
+  "dependencies": {
+    "@minvws/manon": "^5.0.0"
+  },
   "devDependencies": {
-    "@minvws/manon": "^5.0.0",
     "conventional-changelog": "^3.1.24",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.3",
