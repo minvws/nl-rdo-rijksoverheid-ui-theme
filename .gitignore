@@ -1,6 +1,5 @@
 /node_modules
-/static/css
-/static/js
+/css
 manon-*.md
 manon-*.zip
 .idea

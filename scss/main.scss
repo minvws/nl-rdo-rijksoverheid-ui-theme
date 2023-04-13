@@ -1,5 +1,11 @@
 /* Theme: Rijksoverheid. */
 
+/* Manon Components */
+@import "manon/manon-components";
+
+/* Path Variables */
+@import "_path-variables";
+
 /* Fonts */
 @import "fonts/fonts";
 
@@ -79,7 +85,6 @@
 @import "manon-override/footer-meta";
 @import "manon-override/footer";
 @import "manon-override/form-help";
-@import "manon-override/form-inline";
 @import "manon-override/form";
 @import "manon-override/grouped-choice-list";
 @import "manon-override/header-navigation-collapsable";
@@ -99,5 +104,3 @@
 @import "manon-override/section-fieldset";
 @import "manon-override/table";
 @import "manon-override/tabs";
-@import "manon-override/visually-hidden";
-

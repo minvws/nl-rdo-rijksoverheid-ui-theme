@@ -1,0 +1,13 @@
+/* Font: Ro icons - Rijksoverheid font */
+
+/* RO icons */
+@font-face {
+	font-family: "RO Icons";
+	font-weight: normal;
+	font-style: normal;
+	src: url("#{$ro-font-path}/ro-icons/ro-icons-3.6.eot"),
+	  url("#{$ro-font-path}/ro-icons/ro-icons-3.6.woff") format("woff"),
+		url("#{$ro-font-path}/ro-icons/ro-icons-3.6.ttf") format("truetype");
+    // TODO: Fix SVG
+		//url("#{$ro-font-path}/ro-icons/ro-icons-3.6.svg#ro-icons-31") format("svg");
+}
