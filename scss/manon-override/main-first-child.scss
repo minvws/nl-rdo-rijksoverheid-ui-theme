@@ -1,8 +1,10 @@
 main > *:first-child {
-	padding-top: 0;
+  padding-top: 0;
 
-	&.background-color-offset {
-		padding-top: var(--page-whitespace-top);
-		margin-top: calc(0rem - var(--page-whitespace-top)); /* visually countering the default padding on main. */
-	}
+  &.background-color-offset {
+    padding-top: var(--page-whitespace-top);
+    margin-top: calc(
+      0rem - var(--page-whitespace-top)
+    ); /* visually countering the default padding on main. */
+  }
 }

@@ -3,38 +3,38 @@
 /* Add these fixes to manon */
 
 .actions {
-	display: flex;
+  display: flex;
 
-    /* In the html the most important button will come first. */
+  /* In the html the most important button will come first. */
 
-    /* Action buttons are aligned to the right, */
+  /* Action buttons are aligned to the right, */
 
-    /* the most important one visually needs to be aligned to the end. */
+  /* the most important one visually needs to be aligned to the end. */
 
-    /* Therefor row-reverse is used to flip the order so it is correct in hmtl and visually */
-    flex-direction: column; 
-    justify-content: flex-start;
-    gap: 1rem;
+  /* Therefor row-reverse is used to flip the order so it is correct in hmtl and visually */
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  width: 100%;
+
+  button,
+  a.button,
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"] {
     width: 100%;
+  }
+
+  @media screen and (min-width: 24rem) {
+    flex-direction: row-reverse;
+    gap: var(--content-gap);
 
     button,
     a.button,
     input[type="button"],
     input[type="submit"],
     input[type="reset"] {
-        width: 100%;
+      width: auto;
     }
-
-    @media screen and (min-width: 24rem) {
-        flex-direction: row-reverse;
-        gap: var(--content-gap);
-
-        button,
-        a.button,
-        input[type="button"],
-        input[type="submit"],
-        input[type="reset"] {
-            width: auto;
-        }
-    }
+  }
 }

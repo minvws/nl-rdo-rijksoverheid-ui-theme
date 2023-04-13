@@ -1,22 +1,22 @@
 /* Form help */
 
 :root {
-	/* Form */
-	--form-help-padding-right: 4rem;
+  /* Form */
+  --form-help-padding-right: 4rem;
 
-	/* Position */
-	--form-help-button-right: -4rem;
-	--form-help-button-top: 0.2rem;
+  /* Position */
+  --form-help-button-right: -4rem;
+  --form-help-button-top: 0.2rem;
 
-	/* Visual look */
-	--form-help-button-background-color: var(--ruby-red-background-color);
-	--form-help-button-text-color: var(--ruby-red-text-color);
-	--form-help-button-border-radius: 0;
-	--form-help-button-border-color: var(--form-help-button-background-color);
-	--form-help-button-width: 2.75rem;
-	--form-help-button-height: 2.75rem;
+  /* Visual look */
+  --form-help-button-background-color: var(--ruby-red-background-color);
+  --form-help-button-text-color: var(--ruby-red-text-color);
+  --form-help-button-border-radius: 0;
+  --form-help-button-border-color: var(--form-help-button-background-color);
+  --form-help-button-width: 2.75rem;
+  --form-help-button-height: 2.75rem;
 
-	/* Icon */
-	--form-help-button-icon-font-family: "RO Icons";
-	--form-help-button-icon-content: "\E814";
+  /* Icon */
+  --form-help-button-icon-font-family: "RO Icons";
+  --form-help-button-icon-content: "\E814";
 }

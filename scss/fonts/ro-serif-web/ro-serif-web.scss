@@ -4,29 +4,29 @@
 
 /* Regular */
 @font-face {
-	font-family: "RO Serif Web";
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
-	src: url("#{$ro-font-path}/ro-serif-web/RO-SerifWeb-Regular.woff") format("woff"),
-		url("#{$ro-font-path}/ro-serif-web/RO-SerifWeb-Regular.woff2") format("woff2");
+  font-family: "RO Serif Web";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("#{$ro-font-path}/ro-serif-web/RO-SerifWeb-Regular.woff") format("woff"),
+    url("#{$ro-font-path}/ro-serif-web/RO-SerifWeb-Regular.woff2") format("woff2");
 }
 
 @font-face {
-	font-family: "RO Serif Web";
-	font-weight: normal;
-	font-style: italic;
-	font-display: swap;
-	src: url("#{$ro-font-path}/ro-serif-web/RO-SerifWeb-Italic.woff") format("woff"),
-		url("#{$ro-font-path}/ro-serif-web/RO-SerifWeb-Italic.woff2") format("woff2");
+  font-family: "RO Serif Web";
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+  src: url("#{$ro-font-path}/ro-serif-web/RO-SerifWeb-Italic.woff") format("woff"),
+    url("#{$ro-font-path}/ro-serif-web/RO-SerifWeb-Italic.woff2") format("woff2");
 }
 
 /* Bold */
 @font-face {
-	font-family: "RO Serif Web";
-	font-weight: bold;
-	font-style: normal;
-	font-display: swap;
-	src: url("#{$ro-font-path}/ro-serif-web/RO-SerifWeb-Bold.woff") format("woff"),
-		url("#{$ro-font-path}/ro-serif-web/RO-SerifWeb-Bold.woff2") format("woff2");
+  font-family: "RO Serif Web";
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  src: url("#{$ro-font-path}/ro-serif-web/RO-SerifWeb-Bold.woff") format("woff"),
+    url("#{$ro-font-path}/ro-serif-web/RO-SerifWeb-Bold.woff2") format("woff2");
 }

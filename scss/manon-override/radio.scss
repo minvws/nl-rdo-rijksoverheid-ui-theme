@@ -1,9 +1,9 @@
 /* radio.scss */
 form.horizontal-view > fieldset > div input[type="radio"] {
-	margin: 0;
-	margin-right: var(--form-radio-margin-right);
+  margin: 0;
+  margin-right: var(--form-radio-margin-right);
 
-	&+ label {
-		margin-top: 0;
-	}
+  & + label {
+    margin-top: 0;
+  }
 }

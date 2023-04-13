@@ -3,8 +3,8 @@ button,
 a.button,
 input[type="button"],
 input[type="submit"],
-input[type="reset"]{
-	&:focus {
-		outline: initial;
-	}
+input[type="reset"] {
+  &:focus {
+    outline: initial;
+  }
 }
