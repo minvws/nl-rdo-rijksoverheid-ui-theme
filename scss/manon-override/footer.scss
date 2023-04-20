@@ -1,6 +1,7 @@
 /* footer.scss */
 
 /* Add to manon as footer variant */
+@use "@minvws/manon/layout-two-thirds-one-third";
 
 body > footer > div {
 	display: flex;
@@ -11,6 +12,7 @@ body > footer > div {
 
 	> * {
 		width: 100%;
+		box-sizing: border-box;
 	}
 
 	@media (min-width: 42rem) {
@@ -20,6 +22,7 @@ body > footer > div {
 			width: 33.33%;
 
 			&:nth-child(odd) {
+				max-width: calc(66.66% - var(--layout-two-thirds-one-third-gap)); /* Overriding max-line-length */
 				width: calc(66.66% - var(--layout-two-thirds-one-third-gap));
 			}
 		}
