@@ -2,7 +2,7 @@
 @use "slogan.scss";
 
 body > footer {
-	span {
-		@extend %slogan;
-	}
+  span {
+    @extend %slogan;
+  }
 }

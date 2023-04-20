@@ -1,35 +1,35 @@
 /* pagination.scss */
 
 :root {
-	--pagination-border-width: 4px 0 0 0;
-  	--pagination-border-color: var(--ro-blue);
-  	--pagination-padding-top: 0;
-	--pagination-gap: 0.5rem;
-	--pagination-item-text-color: var(--ro-blue);
+  --pagination-border-width: 4px 0 0 0;
+  --pagination-border-color: var(--ro-blue);
+  --pagination-padding-top: 0;
+  --pagination-gap: 0.5rem;
+  --pagination-item-text-color: var(--ro-blue);
 
-	/* Item */
-	--pagination-item-height: 3rem;
-  	--pagination-item-width: 3rem;
+  /* Item */
+  --pagination-item-height: 3rem;
+  --pagination-item-width: 3rem;
 
-	/* Selected - active item */
-  	--pagination-item-active-background-color: var(--ro-blue);
-  	--pagination-item-active-text-color: white;
+  /* Selected - active item */
+  --pagination-item-active-background-color: var(--ro-blue);
+  --pagination-item-active-text-color: white;
 }
 
 .pagination {
-	width: 100%;
+  width: 100%;
 
-	ul {
-		display: flex;
-		width: 100%;
-		overflow: auto;
+  ul {
+    display: flex;
+    width: 100%;
+    overflow: auto;
 
-		li {
-			min-width: var(--pagination-item-width);
+    li {
+      min-width: var(--pagination-item-width);
 
-			a {
-				outline: 0;
-			}
-		}
-	}
+      a {
+        outline: 0;
+      }
+    }
+  }
 }

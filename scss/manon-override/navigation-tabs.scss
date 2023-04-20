@@ -3,15 +3,15 @@
 /* Add these fixes to manon */
 
 body > header nav {
-	button,
-	a.button,
-	input[type="button"],
-	input[type="submit"],
-	input[type="reset"] {
-		align-self: center;
-	}
+  button,
+  a.button,
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"] {
+    align-self: center;
+  }
 
-	li > a::before {
-		content: none;
-	}
+  li > a::before {
+    content: none;
+  }
 }

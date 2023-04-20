@@ -4,56 +4,50 @@
 https://www.rijkshuisstijl.nl/basiselementen/basiselementen-online/logo */
 
 .ro-logo {
-	display: flex;
-	align-items: center;
-	font-size: 0;
-	margin-bottom: 0.625rem;
-	text-decoration: none;
-	font-family: var(--text-set-magazine-font-family);
-	color: #000000;
-	width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 0;
+  margin-bottom: 0.625rem;
+  text-decoration: none;
+  font-family: var(--text-set-magazine-font-family);
+  color: #000000;
+  width: 100%;
 
-	&:visited,
-	&:hover,
-	&:visited:hover {
-		color: #000000;
-	}
+  &:visited,
+  &:hover,
+  &:visited:hover {
+    color: #000000;
+  }
 
-	@media (min-width: 30rem) {
-		margin-bottom: 1.44rem;
-		font-size: inherit;
-	}
+  @media (min-width: 30rem) {
+    margin-bottom: 1.44rem;
+    font-size: inherit;
+  }
 
-	@media (min-width: 48rem) {
-		margin-bottom: 1.56rem;
-	}
+  @media (min-width: 48rem) {
+    margin-bottom: 1.56rem;
+  }
 
-	img {
-		min-width: 2.5rem;
-		height: 3.75rem;
-		align-self: flex-end;
-		overflow: hidden;
-		object-fit: cover;
-		object-position: bottom;
-		margin-left: calc(
-			50% - 1.25rem
-		); /* Half the screen minus half the size of the logo */
+  img {
+    min-width: 2.5rem;
+    height: 3.75rem;
+    align-self: flex-end;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: bottom;
+    margin-left: calc(50% - 1.25rem); /* Half the screen minus half the size of the logo */
 
-		@media (min-width: 30rem) {
-			min-width: 2.8125rem;
-			height: 5.625rem;
-			margin-right: 1rem;
-			margin-left: calc(
-				50% - 1.40625rem
-			); /* Half the screen minus half the size of the logo */
-		}
+    @media (min-width: 30rem) {
+      min-width: 2.8125rem;
+      height: 5.625rem;
+      margin-right: 1rem;
+      margin-left: calc(50% - 1.40625rem); /* Half the screen minus half the size of the logo */
+    }
 
-		@media (min-width: 48rem) {
-			min-width: 3.125rem;
-			height: 6.25rem;
-			margin-left: calc(
-				50% - 1.5625rem
-			); /* Half the screen minus half the size of the logo */
-		}
-	}
+    @media (min-width: 48rem) {
+      min-width: 3.125rem;
+      height: 6.25rem;
+      margin-left: calc(50% - 1.5625rem); /* Half the screen minus half the size of the logo */
+    }
+  }
 }

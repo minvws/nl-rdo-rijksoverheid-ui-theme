@@ -1,17 +1,16 @@
 /* Tabs */
 
 .tabs {
-	width: 100%;
+  width: 100%;
 
-	li {
-		margin-bottom: -1px; /* Temporary, this should be the negative value of the border width */
-		
-		a[aria-current="page"] {
-			border-width: var(--tabs-item-active-border-width);
-			border-style: var(--tabs-item-active-border-style);
-			border-color: var(--tabs-item-active-border-color);
-			color: var(--tabs-item-active-text-color);
-		}
-	}
+  li {
+    margin-bottom: -1px; /* Temporary, this should be the negative value of the border width */
+
+    a[aria-current="page"] {
+      border-width: var(--tabs-item-active-border-width);
+      border-style: var(--tabs-item-active-border-style);
+      border-color: var(--tabs-item-active-border-color);
+      color: var(--tabs-item-active-text-color);
+    }
+  }
 }
-

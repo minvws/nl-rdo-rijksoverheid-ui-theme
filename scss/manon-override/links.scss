@@ -3,7 +3,7 @@
 /* Add to manon */
 
 a {
-	&:active,
+  &:active,
 	&.active /* Testing purposes */ {
     outline: 1px dotted #ffffff;
     outline-offset: 0; /* Adding some spacing between the content and the outline */

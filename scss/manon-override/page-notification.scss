@@ -3,20 +3,20 @@
 /* Add these fixes to manon */
 
 body > main section:first-child {
-	&.error,
-	&.warning,
-	&.explanation,
-	&.confirmation,
-	&.system {
-		margin-top: calc(var(--page-whitespace-top) * -1);
-		padding-top: 3rem;
+  &.error,
+  &.warning,
+  &.explanation,
+  &.confirmation,
+  &.system {
+    margin-top: calc(var(--page-whitespace-top) * -1);
+    padding-top: 3rem;
 
-		div {
-			gap: 1rem;
+    div {
+      gap: 1rem;
 
-			&.required {
-				gap: 0;
-			}
-		}
-	}
+      &.required {
+        gap: 0;
+      }
+    }
+  }
 }

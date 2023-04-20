@@ -1,41 +1,41 @@
 /* Menu toggle */
 .menu_toggle {
-	order: 1;
+  order: 1;
 
-	&::before {
-	  content: "\E812";
-	  font-family: "RO Icons";
-	  display: inline-flex;
-	  justify-content: center;
-	  align-items: center;
-	  font-size: var(--application-base-font-size);
-	  position: static;
-	  -webkit-font-smoothing: antialiased;
-	  -moz-osx-font-smoothing: grayscale; /* Firefox */
-	  font-smoothing: antialiased;
-	  margin-right: 0.25rem;
-	  color: inherit;
-	  font-style: normal;
-	}
+  &::before {
+    content: "\E812";
+    font-family: "RO Icons";
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--application-base-font-size);
+    position: static;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; /* Firefox */
+    font-smoothing: antialiased;
+    margin-right: 0.25rem;
+    color: inherit;
+    font-style: normal;
+  }
 
-	&[aria-expanded="false"]{
-	  &::before {
-	    content: "\E812";
-	  }
-	}
+  &[aria-expanded="false"] {
+    &::before {
+      content: "\E812";
+    }
+  }
 
-	&[aria-expanded="true"]{
-		min-width: 0;
+  &[aria-expanded="true"] {
+    min-width: 0;
 
-	   &::before {
-	    content: "\E82B";
-	  }
-	}
+    &::before {
+      content: "\E82B";
+    }
+  }
 
-	&:hover,
-	&:focus,
-	&:active {
-	  background-color: transparent;
-	  border-color: transparent;
-	}
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: transparent;
+    border-color: transparent;
+  }
 }

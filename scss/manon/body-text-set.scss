@@ -1,23 +1,23 @@
 /* Body text set */
 
 :root {
-	/* Available variables to use within all text types */
-	--text-set-font-family: "RO Sans Web", calibri, sans-serif;
-	--text-set-magazine-font-family: "RO Serif Web", serif;
-	--text-set-font-weight: normal;
-	--text-set-line-height: 1.75;
-	--text-set-text-color: black;
+  /* Available variables to use within all text types */
+  --text-set-font-family: "RO Sans Web", calibri, sans-serif;
+  --text-set-magazine-font-family: "RO Serif Web", serif;
+  --text-set-font-weight: normal;
+  --text-set-line-height: 1.75;
+  --text-set-text-color: black;
 
-	/* Body text small */
-	--body-text-small-font-size: 0.88889rem;
-	--body-text-small-font-weight: 400;
-	--body-text-small-line-height: 1.5;
-	--body-text-small-color: var(--grey-6);
+  /* Body text small */
+  --body-text-small-font-size: 0.88889rem;
+  --body-text-small-font-weight: 400;
+  --body-text-small-line-height: 1.5;
+  --body-text-small-color: var(--grey-6);
 
-	/* Body text medium */
-	--body-text-medium-font-size: 1.125rem;
-	--body-text-medium-line-height: var(--text-set-line-height);
+  /* Body text medium */
+  --body-text-medium-font-size: 1.125rem;
+  --body-text-medium-line-height: var(--text-set-line-height);
 
-	/* Body text large */
-	--body-text-large-font-size: 1.60181rem;
+  /* Body text large */
+  --body-text-large-font-size: 1.60181rem;
 }
