@@ -26,8 +26,6 @@ nav {
 
   ul,
   nav ol {
-    padding-left: 1rem;
-
     li {
       display: flex;
       align-items: flex-start;
@@ -46,12 +44,6 @@ nav {
           font-size: 0.7rem;
           margin-right: 0.5rem;
           color: inherit;
-        }
-
-        &:visited {
-          &::before {
-            color: var(--link-visited-text-color);
-          }
         }
       }
     }
