@@ -5,4 +5,8 @@ body > footer {
   span {
     @extend %slogan;
   }
+
+  ul {
+    padding-left: 0;
+  }
 }

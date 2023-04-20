@@ -1,13 +1,21 @@
 /* Navigation content wrapper */
 
 :root {
-  --navigation-justify-content: flex-start;
-  --navigation-background-color: var(--ruby-red-background-color);
-  --navigation-text-color: var(--ruby-red-text-color);
-  --navigation-min-height: 3.5rem;
-  --navigation-padding-top: 0;
-  --navigation-padding-bottom: 0;
+  --navigation-title-font-size: ;
 
-  /* Navigation list */
-  --navigation-list-gap: 1.5rem;
+  /* List */
+  --navigation-list-padding: 0;
+  --navigation-list-background-color: transparent;
+
+  /* Link */
+  --navigation-link-text-color: var(--link-text-color);
+
+  /* Hover */
+  --navigation-link-hover-text-color: var(--link-text-hover-color);
+
+   /* Links visited */
+   --navigation-link-visited-text-color: var(--link-visited-text-color);
+
+   /* Links visited hover */
+   --navigation-link-visited-hover-text-color: var(--link-visited-hover-text-color);
 }
