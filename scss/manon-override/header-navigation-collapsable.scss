@@ -165,17 +165,17 @@ body > header,
     }
   }
 
-  .menu_toggle[aria-expanded="false"] {
+  .menu-toggle[aria-expanded="false"] {
     @extend %collapsed-menu;
   }
 
-  .menu_toggle[aria-expanded="true"] {
+  .menu-toggle[aria-expanded="true"] {
     @extend %expanded-menu;
   }
 
   @media screen and (min-width: 77rem) {
-    .menu_toggle[aria-expanded="false"],
-    .menu_toggle[aria-expanded="true"] {
+    .menu-toggle[aria-expanded="false"],
+    .menu-toggle[aria-expanded="true"] {
       display: none;
 
       + ul,
@@ -185,8 +185,8 @@ body > header,
       }
     }
 
-    .menu_toggle[aria-expanded="true"] + ul,
-    .menu_toggle[aria-expanded="true"] + ol,
+    .menu-toggle[aria-expanded="true"] + ul,
+    .menu-toggle[aria-expanded="true"] + ol,
     nav ul,
     nav ol {
       flex-direction: row;
