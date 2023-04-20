@@ -29,6 +29,7 @@
     "format": "prettier --write .",
     "lint-staged": "lint-staged",
     "lint:css": "stylelint \"scss/**/*.scss\"",
+    "lint:css:fix": "npm run lint:css -- --fix",
     "prepare": "husky install"
   },
   "dependencies": {
