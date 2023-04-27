@@ -16,6 +16,8 @@ jobs:
           registry-url: "https://npm.pkg.github.com"
 
       - run: npm ci --ignore-scripts
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.REPO_READ_ONLY_TOKEN }}
       - run: npm run build:css
       - run: npm publish
         env:
