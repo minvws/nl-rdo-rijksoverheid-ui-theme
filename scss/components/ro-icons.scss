@@ -1,19 +1,4 @@
 /* Ro icons */
-
-%icon-text-styling {
-  font-family: "RO Icons";
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  font-size: var(--application-base-font-size);
-  position: static;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; /* Firefox */
-  font-smoothing: antialiased;
-  color: inherit;
-  font-style: normal;
-}
-
 $ro-icon-ascending: "\E801";
 $ro-icon-descending: "\E802";
 $ro-icon-sort: "\E803";
@@ -131,11 +116,7 @@ $ro-icon-list-view: "\EACB";
   --ro-icon-list-view: "#{$ro-icon-list-view}";
 }
 
-.ro-icon {
-  &::before {
-    @extend %icon-text-styling;
-  }
-
+.icon {
   &.ro-icon-ascending::before {
     content: $ro-icon-ascending;
   }
