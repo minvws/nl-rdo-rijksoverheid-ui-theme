@@ -11,6 +11,9 @@
 /* Application style settings */
 @use "@minvws/manon/application-base";
 
+/* Icon base and icon-sets */
+@use "@minvws/manon/icon";
+
 /* Layout */
 @use "@minvws/manon/layout-authentication";
 @use "@minvws/manon/layout-one-third-two-thirds";
