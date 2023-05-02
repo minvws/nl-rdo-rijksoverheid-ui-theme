@@ -9,4 +9,26 @@
   --footer-justify-content: center;
   --footer-align-items: space-between;
   --footer-text-color: var(--ruby-red-text-color);
+
+  /* Link*/
+  /* Hover */
+  --footer-link-hover-text-color: var(--footer-text-color);
+
+  /* Active */
+  --footer-link-active-text-color: var(--footer-text-color);
+  --footer-link-active-visited-text-color: var(--footer-link-active-text-color);
+
+  /* Active on hover */
+  --footer-link-active-hover-text-color: var(--footer-link-active-text-color);
+
+  /* Visited */
+  --footer-link-visited-text-color: var(--footer-text-color);
+  --footer-link-icon-visited-text-color: var(--footer-link-visited-text-color);
+
+  /* Visited hover */
+  --footer-link-visited-hover-text-color: var(--footer-link-visited-text-color);
+  --footer-link-icon-visited-hover-text-color: var(--footer-link-visited-text-color);
+
+  /* Visited */
+  --link-visited-active-text-color: var(--footer-link-active-text-color);
 }
