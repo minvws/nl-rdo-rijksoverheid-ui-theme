@@ -15,7 +15,7 @@
         <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
         Rijksoverheid
       </a>
-      
+
       <nav aria-label="Kruimelpad" id="main-nav">
         <div>
           <ul>
@@ -66,7 +66,7 @@
                             <li>Kopiëer de voorbeeldcode.</li>
                         </ol>
                     </div>
-                    
+
                     <nav aria-label="Document-navigatie">
                         <ul>
                             <li><a href="#button-types">Beschikbare types</a>
@@ -465,29 +465,29 @@
                     <p>Aandachtspunten:</p>
                     <ul>
                         <li>Zorg er bij het toevoegen van een icoonknop voor dat het html-element semantisch correct is. Vaak zal dit voor een icoonknop een <code>&lt;button></code> zijn.</li>
-                        <li>Voeg de class <code>ro-icon</code> toe om een button als icoonbutton weer te geven.</li>
+                        <li>Voeg de class <code>icon</code> toe om een button als icoonbutton weer te geven.</li>
                         <li>Voeg de class van het gewenste icoon toe. Zie de <a href="icons.html">lijst met iconen</a> ter referentie van alle beschikbare iconen.</li>
                         <li><code>&lt;input></code>-element kan niet gebruikt worden als icoonknop aangezien deze geen pseudo-elementen kan bevatten.</li>
                         <li><strong>Let op: Icoonknoppen tonen standaard geen tekst. Voeg de knoptekst wel altijd toe voor onder anderen screenreader gebruikers.</strong> Icoon en tekst tonen? Zie: <a href="#button-icon-text">Icoonknoppen met zowel icoon en tekst zichtbaar</a></li>
                     </ul>
 
                     <p>Visueel voorbeeld:</p>
-                    <button class="ro-icon ro-icon-questionmark">Help</button>
+                    <button class="icon icon-questionmark">Help</button>
 
                     <p>Html-voorbeeld:</p>
                     <pre>
                         <code>
-&lt;button class="ro-icon ro-icon-questionmark">Help&lt;/button>
+&lt;button class="icon icon-questionmark">Help&lt;/button>
                         </code>
                     </pre>
 
                     <p>Visueel voorbeeld secundaire knop:</p>
-                    <button class="ro-icon ro-icon-questionmark secondary">Help</button>
+                    <button class="icon icon-questionmark secondary">Help</button>
 
                     <p>Html-voorbeeld:</p>
                     <pre>
                         <code>
-&lt;button class="ro-icon ro-icon-questionmark secondary">Help&lt;/button>
+&lt;button class="icon icon-questionmark secondary">Help&lt;/button>
                         </code>
                     </pre>
 
@@ -500,7 +500,7 @@
                         <li>Voeg een span met het gewenste icoon toe binnen de button.
                             <ol>
                                 <li>Voeg de <code>&lt;span></code> toe.
-                                <li>Voeg op de span de class <code>ro-icon</code> toe.</li>
+                                <li>Voeg op de span de class <code>icon</code> toe.</li>
                                 <li>Voeg de class van het gewenste icoon toe. Zie de <a href="icons.html">lijst met iconen</a> ter referentie van alle beschikbare iconen.</li>
                             </ol>
                         </li>
@@ -508,22 +508,22 @@
                     </ul>
 
                     <p>Visueel voorbeeld:</p>
-                    <button><span aria-hidden="true" class="ro-icon ro-icon-questionmark"></span>Help</button>
+                    <button><span aria-hidden="true" class="icon icon-questionmark"></span>Help</button>
 
                     <p>Html-voorbeeld:</p>
                     <pre>
                         <code>
-&lt;button>&lt;span aria-hidden="true" class="ro-icon ro-icon-questionmark">&lt;/span>Help&lt;/button>
+&lt;button>&lt;span aria-hidden="true" class="icon icon-questionmark">&lt;/span>Help&lt;/button>
                         </code>
                     </pre>
 
                     <p>Visueel voorbeeld secundaire knop:</p>
-                    <button class="secondary"><span aria-hidden="true" class="ro-icon ro-icon-questionmark"></span>Help</button>
+                    <button class="secondary"><span aria-hidden="true" class="icon icon-questionmark"></span>Help</button>
 
                     <p>Html-voorbeeld:</p>
                     <pre>
                         <code>
-&lt;button class="secondary">&lt;span aria-hidden="true" class="ro-icon ro-icon-questionmark">&lt;/span>Help&lt;/button>
+&lt;button class="secondary">&lt;span aria-hidden="true" class="icon icon-questionmark">&lt;/span>Help&lt;/button>
                         </code>
                     </pre>
                 </div>
@@ -560,22 +560,22 @@
                                 <td>Jane doe</td>
                                 <td>
                                     <form>
-                                        <button type="submit" class="ro-icon ro-icon-user action-button">Bekijk profiel</button>
+                                        <button type="submit" class="icon icon-user action-button">Bekijk profiel</button>
                                     </form>
                                 </td>
                                 <td>
                                     <form>
-                                        <button type="submit" class="ro-icon ro-icon-lock-closed action-button">Wijzig wachtwoord</button>
+                                        <button type="submit" class="icon icon-lock-closed action-button">Wijzig wachtwoord</button>
                                     </form>
                                 </td>
                                 <td>
                                     <form>
-                                        <button type="submit" class="ro-icon ro-icon-on-off action-button">Deactiveer</button>
+                                        <button type="submit" class="icon icon-on-off action-button">Deactiveer</button>
                                     </form>
                                 </td>
                                 <td>
                                     <form>
-                                        <button type="submit" class="ro-icon ro-icon-trash action-button">Verwijder</button>
+                                        <button type="submit" class="icon icon-trash action-button">Verwijder</button>
                                     </form>
                                 </td>
                             </tr>
@@ -604,22 +604,22 @@
         &lt;td>Jane doe&lt;/td>
         &lt;td>
             &lt;form>
-                &lt;button type="submit" class="ro-icon ro-icon-user action-button">Bekijk profiel&lt;/button>
+                &lt;button type="submit" class="icon icon-user action-button">Bekijk profiel&lt;/button>
             &lt;/form>
         &lt;/td>
         &lt;td>
             &lt;form>
-                &lt;button type="submit" class="ro-icon ro-icon-lock-closed action-button">Wijzig wachtwoord&lt;/button>
+                &lt;button type="submit" class="icon icon-lock-closed action-button">Wijzig wachtwoord&lt;/button>
             &lt;/form>
         &lt;/td>
         &lt;td>
             &lt;form>
-                &lt;button type="submit" class="ro-icon ro-icon-on-off action-button">Deactiveer&lt;/button>
+                &lt;button type="submit" class="icon icon-on-off action-button">Deactiveer&lt;/button>
             &lt;/form>
         &lt;/td>
         &lt;td>
             &lt;form>
-                &lt;button type="submit" class="ro-icon ro-icon-trash action-button">Verwijder&lt;/button>
+                &lt;button type="submit" class="icon icon-trash action-button">Verwijder&lt;/button>
             &lt;/form>
         &lt;/td>
     &lt;/tr>
@@ -647,22 +647,22 @@
                                     <td>Jane doe</td>
                                     <td>
                                         <form>
-                                            <button type="submit" class="ro-icon ro-icon-user">Bekijk profiel</button>
+                                            <button type="submit" class="icon icon-user">Bekijk profiel</button>
                                         </form>
                                     </td>
                                     <td>
                                         <form>
-                                            <button type="submit" class="ro-icon ro-icon-lock-closed">Wijzig wachtwoord</button>
+                                            <button type="submit" class="icon icon-lock-closed">Wijzig wachtwoord</button>
                                         </form>
                                     </td>
                                     <td>
                                         <form>
-                                            <button type="submit" class="ro-icon ro-icon-on-off">Deactiveer</button>
+                                            <button type="submit" class="icon icon-on-off">Deactiveer</button>
                                         </form>
                                     </td>
                                     <td>
                                         <form>
-                                            <button type="submit" class="ro-icon ro-icon-trash">Verwijder</button>
+                                            <button type="submit" class="icon icon-trash">Verwijder</button>
                                         </form>
                                     </td>
                                 </tr>
@@ -691,22 +691,22 @@
             &lt;td>Jane doe&lt;/td>
             &lt;td>
                 &lt;form>
-                    &lt;button type="submit" class="ro-icon ro-icon-user">Bekijk profiel&lt;/button>
+                    &lt;button type="submit" class="icon icon-user">Bekijk profiel&lt;/button>
                 &lt;/form>
             &lt;/td>
             &lt;td>
                 &lt;form>
-                    &lt;button type="submit" class="ro-icon ro-icon-lock-closed">Wijzig wachtwoord&lt;/button>
+                    &lt;button type="submit" class="icon icon-lock-closed">Wijzig wachtwoord&lt;/button>
                 &lt;/form>
             &lt;/td>
             &lt;td>
                 &lt;form>
-                    &lt;button type="submit" class="ro-icon ro-icon-on-off">Deactiveer&lt;/button>
+                    &lt;button type="submit" class="icon icon-on-off">Deactiveer&lt;/button>
                 &lt;/form>
             &lt;/td>
             &lt;td>
                 &lt;form>
-                    &lt;button type="submit" class="ro-icon ro-icon-trash">Verwijder&lt;/button>
+                    &lt;button type="submit" class="icon icon-trash">Verwijder&lt;/button>
                 &lt;/form>
             &lt;/td>
         &lt;/tr>
@@ -747,7 +747,7 @@
             </article>
         </div>
 
-        <a href="#main-nav" class="button to-top ro-icon ro-icon-to-top" title="Terug naar het hoofdmenu">Terug naar het hoofdmenu</a>
+        <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het hoofdmenu</a>
     </main>
     <footer>
     <div>

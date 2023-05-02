@@ -4,8 +4,8 @@
   --filter-button-icon-font-family: "RO Icons";
 
   /* content on the button when the menu is collapsed */
-  --filter-button-icon-before-open-content: "\E820";
+  --filter-button-icon-before-open-content: $icon-chevron-down;
 
   /* content on the button when the menu is expanded */
-  --filter-button-icon-before-close-content: "\E81F";
+  --filter-button-icon-before-close-content: $icon-chevron-up;
 }

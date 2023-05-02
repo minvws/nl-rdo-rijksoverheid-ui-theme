@@ -1,5 +1,4 @@
 /* Notification icon */
-
 .notification,
 .error,
 .warning,
@@ -8,8 +7,10 @@
 .system {
   span:first-of-type {
     &::before {
-      @extend %icon-text-styling;
-
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
       content: "";
       font-weight: var(--notification-block-element-span-font-weight);
       background-image: url("#{$ro-img-path}/notification_icons.svg");

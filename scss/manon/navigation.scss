@@ -1,8 +1,6 @@
 /* Navigation content wrapper */
 
 :root {
-  --navigation-title-font-size: ;
-
   /* List */
   --navigation-list-padding: 0;
   --navigation-list-background-color: transparent;
@@ -11,11 +9,22 @@
   --navigation-link-text-color: var(--link-text-color);
 
   /* Hover */
-  --navigation-link-hover-text-color: var(--link-text-hover-color);
+  --navigation-link-hover-text-color: var(--link-hover-text-color);
 
-   /* Links visited */
-   --navigation-link-visited-text-color: var(--link-visited-text-color);
+  /* Links visited */
+  --navigation-link-visited-text-color: var(--link-text-color-visited);
 
-   /* Links visited hover */
-   --navigation-link-visited-hover-text-color: var(--link-visited-hover-text-color);
+  /* Links visited hover */
+  --navigation-link-visited-hover-text-color: var(--link-text-color-visited-hover);
+
+  /* Active */
+  --navigation-link-active-outline: 2px dotted #ccccc;
+  --navigation-link-active-outline-offset: 0.25rem;
+}
+
+/* This override can be removed once manon v9.1.0 has been included */
+nav a:active {
+  outline: 2px dotted #cccccc;
+  outline-offset: 0.25rem;
+  z-index: 1;
 }
