@@ -4,8 +4,8 @@
   --filter-button-icon-font-family: "RO Icons";
 
   /* content on the button when the menu is collapsed */
-  --filter-button-icon-before-open-content: $icon-chevron-down;
+  --filter-button-icon-before-open-content: var(--icon-chevron-down);
 
   /* content on the button when the menu is expanded */
-  --filter-button-icon-before-close-content: $icon-chevron-up;
+  --filter-button-icon-before-close-content: var(--icon-chevron-up);
 }
