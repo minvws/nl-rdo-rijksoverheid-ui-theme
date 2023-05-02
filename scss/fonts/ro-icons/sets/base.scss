@@ -115,7 +115,8 @@ $icon-list-view: "\EACB";
   --icon-list-view: "#{$icon-list-view}";
 }
 
-.icon {
+.icon,
+.icon-only {
   &.icon-ascending::before {
     content: $icon-ascending;
   }

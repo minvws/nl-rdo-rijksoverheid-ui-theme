@@ -88,7 +88,8 @@ $icon-verbod-rolstoel: "\E945";
 	--icon-verbod-rolstoel: "#{$icon-verbod-rolstoel}";
 }
 
-.icon {
+.icon,
+.icon-only {
 	&.icon-voor-elkaar-zorgen:before {
 		content: $icon-voor-elkaar-zorgen;
 	}

@@ -176,7 +176,8 @@ $icon-gemeentehuissvg: "\E9cb";
 	--icon-gemeentehuissvg: "#{$icon-gemeentehuissvg}";
 }
 
-.icon {
+.icon,
+.icon-only {
 	&.icon-2-hoge-gebouwen-met-pijl-naar-rechts:before {
 		content: $icon-2-hoge-gebouwen-met-pijl-naar-rechts;
 	}

@@ -88,7 +88,8 @@ $icon-zendmast: "\E974";
 	--icon-zendmast: "#{$icon-zendmast}";
 }
 
-.icon {
+.icon,
+.icon-only {
 	&.icon-chip:before {
 		content: $icon-chip;
 	}
