@@ -18,5 +18,6 @@
 
   /* Icon */
   --form-help-button-icon-font-family: "RO Icons";
-  --form-help-button-icon-content: $icon-questionmark;
+  --form-help-button-icon: var(--icon-questionmark);
+  --form-help-button-icon-expanded: var(--icon-close);
 }
