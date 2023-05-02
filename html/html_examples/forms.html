@@ -1018,21 +1018,26 @@
 						<h2 id="form-checkbox-default">Standaard weergave</h2>
 						<h3>Voorbeeld</h3>
 						<p>Visueel voorbeeld:</p>
+
 						<form action="" method="post">
-							<div>
-								<input type="checkbox" id="checkbox-example-default-1" name="standaard-checkbox">
-								<label for="checkbox-example-default-1">Lorem ipsum dolor set amet</label>
+							<div class="checkbox">
+							  <input type="checkbox" id="checkbox-example-base" name="standaard-checkbox">
+							  <label for="checkbox-example-base">Lorem ipsum dolor set amet</label>
 							</div>
+
+							<button type="submit">Verzend</button>
 						</form>
 
 						<p>Html-voorbeeld:</p>
 						<pre>
 							<code>
 &lt;form action="" method="post">
-	&lt;div>
-		&lt;input type="checkbox" id="checkbox-example-default-1" name="standaard-checkbox">
-		&lt;label for="checkbox-example-default-1">Lorem ipsum dolor set amet&lt;/label>
+	&lt;div class="checkbox">
+		&lt;input type="checkbox" id="checkbox-example-base" name="standaard-checkbox">
+		&lt;label for="checkbox-example-base">Lorem ipsum dolor set amet&lt;/label>
 	&lt;/div>
+
+	&lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
 							</code>
 						</pre>
@@ -1042,21 +1047,26 @@
 						<ul>
 							<li>Voeg de class <code>horizontal-view</code> toe aan de <code>&lt;form></code> voor de weergave in kolommen. Selectievakken worden hiermee uitgelijnd met de overige invoervelden.</li>
 						</ul>
+
 						<form action="" method="post" class="horizontal-view">
-							<div>
-								<input type="checkbox" id="checkbox-example-default-2" name="standaard-checkbox">
-								<label for="checkbox-example-default-2">Lorem ipsum dolor set amet</label>
+							<div class="checkbox">
+							  <input type="checkbox" id="checkbox-example-base-horizontal-view" name="standaard-checkbox">
+							  <label for="checkbox-example-base-horizontal-view">Lorem ipsum dolor set amet</label>
 							</div>
+
+							<button type="submit">Verzend</button>
 						</form>
 
 						<p>Html-voorbeeld:</p>
 						<pre>
 							<code>
 &lt;form action="" method="post" class="horizontal-view">
-	&lt;div>
-		&lt;input type="checkbox" id="checkbox-example-default-2" name="standaard-checkbox">
-		&lt;label for="checkbox-example-default-2">Lorem ipsum dolor set amet&lt;/label>
+	&lt;div class="checkbox">
+		&lt;input type="checkbox" id="checkbox-example-base-horizontal-view" name="standaard-checkbox">
+		&lt;label for="checkbox-example-base-horizontal-view">Lorem ipsum dolor set amet&lt;/label>
 	&lt;/div>
+
+	&lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
 							</code>
 						</pre>
@@ -1064,21 +1074,26 @@
 						<h2 id="form-checkbox-checked">Geselecteerd selectievak</h2>
 						<h3>Voorbeeld</h3>
 						<p>Visueel voorbeeld:</p>
+
 						<form action="" method="post">
-							<div>
-								<input type="checkbox" id="checkbox-example-checked-1" name="checked-checkbox" checked>
-								<label for="checkbox-example-checked-1">Lorem ipsum dolor set amet</label>
+							<div class="checkbox">
+							  <input type="checkbox" id="checkbox-example-checked-base" name="checked-checkbox" checked>
+							  <label for="checkbox-example-checked-base">Lorem ipsum dolor set amet</label>
 							</div>
+
+							<button type="submit">Verzend</button>
 						</form>
 
 						<p>Html-voorbeeld:</p>
 						<pre>
 							<code>
 &lt;form action="" method="post">
-	&lt;div>
-		&lt;input type="checkbox" id="checkbox-example-checked-1" name="checked-checkbox" checked>
-		&lt;label for="checkbox-example-checked-1">Lorem ipsum dolor set amet&lt;/label>
+	&lt;div class="checkbox">
+		&lt;input type="checkbox" id="checkbox-example-checked-base" name="checked-checkbox" checked>
+		&lt;label for="checkbox-example-checked-base">Lorem ipsum dolor set amet&lt;/label>
 	&lt;/div>
+
+	&lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
 							</code>
 						</pre>
@@ -1086,20 +1101,24 @@
 						<h3>Voorbeeld weergave in kolommen</h3>
 						<p>Visueel voorbeeld:</p>
 						<form action="" method="post" class="horizontal-view">
-							<div>
-								<input type="checkbox" id="checkbox-example-checked-2" name="checked-checkbox" checked>
-								<label for="checkbox-example-checked-2">Lorem ipsum dolor set amet</label>
+							<div class="checkbox">
+							  <input type="checkbox" id="checkbox-example-checked-horizontal-view" name="checked-checkbox" checked>
+							  <label for="checkbox-example-checked-horizontal-view">Lorem ipsum dolor set amet</label>
 							</div>
+
+							<button type="submit">Verzend</button>
 						</form>
 
 						<p>Html-voorbeeld:</p>
 						<pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
-	&lt;div>
-		&lt;input type="checkbox" id="checkbox-example-checked-2" name="checked-checkbox" checked>
-		&lt;label for="checkbox-example-checked-2">Lorem ipsum dolor set amet&lt;/label>
+&lt;form action="" method="post" class="horizontal-view">>
+	&lt;div class="checkbox">
+		&lt;input type="checkbox" id="checkbox-example-checked-horizontal-view" name="checked-checkbox" checked>
+		&lt;label for="checkbox-example-checked-horizontal-view">Lorem ipsum dolor set amet&lt;/label>
 	&lt;/div>
+
+	&lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
 							</code>
 						</pre>
@@ -1107,23 +1126,30 @@
 						<h2 id="form-checkbox-required">Verplicht selectievak</h2>
 						<h3>Voorbeeld</h3>
 						<p>Visueel voorbeeld:</p>
+
 						<form action="" method="post">
-							<div class="required">
+							<div class="checkbox required">
 								<span class="nota-bene">Dit veld is verplicht</span>
-								<input type="checkbox" id="checkbox-example-required-1" name="voorwaarden" required>
-								<label for="checkbox-example-required-1">verplicht selectievak</label>
+								<div>
+									<input type="checkbox" id="checkbox-example-required" name="verplicht" required>
+									<label for="checkbox-example-required">verplicht selectievak</label>
+								</div>
 							</div>
+							<button type="submit">Verzend</button>
 						</form>
 
 						<p>Html-voorbeeld:</p>
 						<pre>
 							<code>
 &lt;form action="" method="post">
-	&lt;div class="required">
+	&lt;div class="checkbox required">
 		&lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
-		&lt;input type="checkbox" id="checkbox-example-required-1" name="voorwaarden" required>
-		&lt;label for="checkbox-example-required-1">verplicht selectievak&lt;/label>
+		&lt;div>
+			&lt;input type="checkbox" id="checkbox-example-required" name="verplicht" required>
+			&lt;label for="checkbox-example-required">verplicht selectievak&lt;/label>
+		&lt;/div>
 	&lt;/div>
+	&lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
 							</code>
 						</pre>
@@ -1132,22 +1158,28 @@
 						<p>Visueel voorbeeld:</p>
 
 						<form action="" method="post" class="horizontal-view">
-							<div class="required">
+							<div class="checkbox required">
 								<span class="nota-bene">Dit veld is verplicht</span>
-								<input type="checkbox" id="checkbox-example-required-2" name="voorwaarden" required>
-								<label for="checkbox-example-required-2">verplicht selectievak</label>
+								<div>
+									<input type="checkbox" id="checkbox-example-required-horizontal-view" name="verplicht" required>
+									<label for="checkbox-example-required-horizontal-view">verplicht selectievak</label>
+								</div>
 							</div>
+							<button type="submit">Verzend</button>
 						</form>
 
 						<p>Html-voorbeeld:</p>
 						<pre>
 							<code>
- &lt;form action="" method="post" class="horizontal-view">
-	&lt;div class="required">
+&lt;form action="" method="post" class="horizontal-view">
+	&lt;div class="checkbox required">
 		&lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
-		&lt;input type="checkbox" id="checkbox-example-required-2" name="voorwaarden" required>
-		&lt;label for="checkbox-example-required-2">verplicht selectievak&lt;/label>
+		&lt;div>
+			&lt;input type="checkbox" id="checkbox-example-required-horizontal-view" name="verplicht" required>
+			&lt;label for="checkbox-example-required-horizontal-view">verplicht selectievak&lt;/label>
+		&lt;/div>
 	&lt;/div>
+	&lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
 							</code>
 						</pre>
@@ -1156,20 +1188,22 @@
 						<h3>Voorbeeld</h3>
 						<p>Visueel voorbeeld:</p>
 						<form action="" method="post">
-							<div>
-								<input type="checkbox" id="checkbox-example-disabled-1" name="voorwaarden" value="disabled checkbox input" disabled>
-								<label for="checkbox-example-disabled-1">Uitgeschakeld selectievak</label>
+							<div class="checkbox">
+							  <input type="checkbox" id="checkbox-example-disabled" name="disabled-checkbox" disabled>
+							  <label for="checkbox-example-disabled">Lorem ipsum dolor set amet</label>
 							</div>
+							<button type="submit">Verzend</button>
 						</form>
 
 						<p>Html-voorbeeld:</p>
 						<pre>
 							<code>
 &lt;form action="" method="post">
-	&lt;div>
-		&lt;input type="checkbox" id="checkbox-example-disabled-1" name="voorwaarden" value="disabled checkbox input" disabled>
-		&lt;label for="checkbox-example-disabled-1">Uitgeschakeld selectievak&lt;/label>
+	&lt;div class="checkbox">
+		&lt;input type="checkbox" id="checkbox-example-disabled" name="disabled-checkbox" disabled>
+		&lt;label for="checkbox-example-disabled">Lorem ipsum dolor set amet&lt;/label>
 	&lt;/div>
+	&lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
 							</code>
 						</pre>
@@ -1177,20 +1211,22 @@
 						<h3>Voorbeeld weergave in kolommen</h3>
 						<p>Visueel voorbeeld:</p>
 						<form action="" method="post" class="horizontal-view">
-							<div>
-								<input type="checkbox" id="checkbox-example-disabled-2" name="voorwaarden" value="disabled checkbox input" disabled>
-								<label for="checkbox-example-disabled-2">Uitgeschakeld selectievak</label>
+							<div class="checkbox">
+							  <input type="checkbox" id="checkbox-example-disabled-horizontal-view" name="disabled-checkbox" disabled>
+							  <label for="checkbox-example-disabled-horizontal-view">Lorem ipsum dolor set amet</label>
 							</div>
+							<button type="submit">Verzend</button>
 						</form>
 
 						<p>Html-voorbeeld:</p>
 						<pre>
 							<code>
 &lt;form action="" method="post" class="horizontal-view">
-	&lt;div>
-		&lt;input type="checkbox" id="checkbox-example-disabled-2" name="voorwaarden" value="disabled checkbox input" disabled>
-		&lt;label for="checkbox-example-disabled-2">Uitgeschakeld selectievak&lt;/label>
+	&lt;div class="checkbox">
+		&lt;input type="checkbox" id="checkbox-example-disabled-horizontal-view" name="disabled-checkbox" disabled>
+		&lt;label for="checkbox-example-disabled-horizontal-view">Lorem ipsum dolor set amet&lt;/label>
 	&lt;/div>
+	&lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
 							</code>
 						</pre>
@@ -1207,46 +1243,58 @@
 						<p>Visueel voorbeeld:</p>
 
 						<form action="" method="post">
-							<fieldset class="grouped-choice-list">
-								<legend>Lorem ipsum</legend>
-								<div>
-									<input type="checkbox" id="checkbox-list-item-1" name="option-1">
-									<label for="checkbox-list-item-1">Optie 1</label>
+							<fieldset>
+								<legend>Examples</legend>
+								<div class="checkbox">
+									<input type="checkbox" id="checkbox-example-list-1" name="standaard-checkbox">
+									<label for="checkbox-example-list-1">Lorem ipsum dolor set amet</label>
 								</div>
-
-								<div>
-									<input type="checkbox" id="checkbox-list-item-2" name="option-2">
-									<label for="checkbox-list-item-2">Optie 2</label>
+								
+								<div class="checkbox">
+									<input type="checkbox" id="checkbox-example-list-2" name="standaard-checkbox">
+									<label for="checkbox-example-list-2">Lorem ipsum dolor set amet</label>
 								</div>
-
-								<div>
-									<input type="checkbox" id="checkbox-list-item-3" name="option-3">
-									<label for="checkbox-list-item-3">Optie 3</label>
+								
+								<div class="checkbox">
+									<input type="checkbox" id="checkbox-example-list-3" name="standaard-checkbox">
+									<label for="checkbox-example-list-3">Lorem ipsum dolor set amet</label>
+								</div>
+								
+								<div class="checkbox">
+									<input type="checkbox" id="checkbox-example-list-4" name="standaard-checkbox">
+									<label for="checkbox-example-list-4">Lorem ipsum dolor set amet</label>
 								</div>
 							</fieldset>
+							<button type="submit">Verzend</button>
 						</form>
 
 						<p>Html-voorbeeld:</p>
 						<pre>
 							<code>
 &lt;form action="" method="post">
-	&lt;fieldset class="grouped-choice-list">
-		&lt;legend>Lorem ipsum&lt;/legend>
-		&lt;div>
-			&lt;input type="checkbox" id="checkbox-list-item-1" name="option-1">
-			&lt;label for="checkbox-list-item-1">Optie 1&lt;/label>
+	&lt;fieldset>
+		&lt;legend>Examples&lt;/legend>
+		&lt;div class="checkbox">
+			&lt;input type="checkbox" id="checkbox-example-list-1" name="standaard-checkbox">
+			&lt;label for="checkbox-example-list-1">Lorem ipsum dolor set amet&lt;/label>
 		&lt;/div>
-
-		&lt;div>
-			&lt;input type="checkbox" id="checkbox-list-item-2" name="option-2">
-			&lt;label for="checkbox-list-item-2">Optie 2&lt;/label>
+		
+		&lt;div class="checkbox">
+			&lt;input type="checkbox" id="checkbox-example-list-2" name="standaard-checkbox">
+			&lt;label for="checkbox-example-list-2">Lorem ipsum dolor set amet&lt;/label>
 		&lt;/div>
-
-		&lt;div>
-			&lt;input type="checkbox" id="checkbox-list-item-3" name="option-3">
-			&lt;label for="checkbox-list-item-3">Optie 3&lt;/label>
+		
+		&lt;div class="checkbox">
+			&lt;input type="checkbox" id="checkbox-example-list-3" name="standaard-checkbox">
+			&lt;label for="checkbox-example-list-3">Lorem ipsum dolor set amet&lt;/label>
+		&lt;/div>
+		
+		&lt;div class="checkbox">
+			&lt;input type="checkbox" id="checkbox-example-list-4" name="standaard-checkbox">
+			&lt;label for="checkbox-example-list-4">Lorem ipsum dolor set amet&lt;/label>
 		&lt;/div>
 	&lt;/fieldset>
+	&lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
 							</code>
 						</pre>
@@ -1254,25 +1302,29 @@
 						<h3>Voorbeeld weergave in kolommen</h3>
 						<p>Visueel voorbeeld:</p>
 						<form action="" method="post" class="horizontal-view">
-							<fieldset class="grouped-choice-list">
-								<legend>Lorem ipsum</legend>
-								<div>
-									<div>
-										<input type="checkbox" id="checkbox-2-list-item-4" name="option-1">
-										<label for="checkbox-2-list-item-4">Optie 1</label>
-									</div>
-
-									<div>
-										<input type="checkbox" id="checkbox-2-list-item-5" name="option-2">
-										<label for="checkbox-2-list-item-5">Optie 2</label>
-									</div>
-
-									<div>
-										<input type="checkbox" id="checkbox-2-list-item-6" name="option-3">
-										<label for="checkbox-2-list-item-6">Optie 3</label>
-									</div>
+							<fieldset>
+								<legend>Examples</legend>
+								<div class="checkbox">
+									<input type="checkbox" id="checkbox-example-list-horizontal-view-1" name="standaard-checkbox">
+									<label for="checkbox-example-list-horizontal-view-1">Lorem ipsum dolor set amet</label>
+								</div>
+								
+								<div class="checkbox">
+									<input type="checkbox" id="checkbox-example-list-horizontal-view-2" name="standaard-checkbox">
+									<label for="checkbox-example-list-horizontal-view-2">Lorem ipsum dolor set amet</label>
+								</div>
+								
+								<div class="checkbox">
+									<input type="checkbox" id="checkbox-example-list-horizontal-view-3" name="standaard-checkbox">
+									<label for="checkbox-example-list-horizontal-view-3">Lorem ipsum dolor set amet</label>
+								</div>
+								
+								<div class="checkbox">
+									<input type="checkbox" id="checkbox-example-list-horizontal-view-4" name="standaard-checkbox">
+									<label for="checkbox-example-list-horizontal-view-4">Lorem ipsum dolor set amet</label>
 								</div>
 							</fieldset>
+							<button type="submit">Verzend</button>
 						</form>
 
 						<p>Html-voorbeeld:</p>
@@ -1280,119 +1332,139 @@
 						<pre>
 							<code>
 &lt;form action="" method="post" class="horizontal-view">
-	&lt;fieldset class="grouped-choice-list">
-		&lt;legend>Lorem ipsum&lt;/legend>
-		&lt;div>
-			&lt;div>
-				&lt;input type="checkbox" id="checkbox-list-item-1" name="option-1">
-				&lt;label for="checkbox-list-item-1">Optie 1&lt;/label>
-			&lt;/div>
-
-			&lt;div>
-				&lt;input type="checkbox" id="checkbox-list-item-2" name="option-2">
-				&lt;label for="checkbox-list-item-2">Optie 2&lt;/label>
-			&lt;/div>
-
-			&lt;div>
-				&lt;input type="checkbox" id="checkbox-list-item-3" name="option-3">
-				&lt;label for="checkbox-list-item-3">Optie 3&lt;/label>
-			&lt;/div>
+	&lt;fieldset>
+		&lt;legend>Examples&lt;/legend>
+		&lt;div class="checkbox">
+			&lt;input type="checkbox" id="checkbox-example-list-horizontal-view-1" name="standaard-checkbox">
+			&lt;label for="checkbox-example-list-horizontal-view-1">Lorem ipsum dolor set amet&lt;/label>
+		&lt;/div>
+		
+		&lt;div class="checkbox">
+			&lt;input type="checkbox" id="checkbox-example-list-horizontal-view-2" name="standaard-checkbox">
+			&lt;label for="checkbox-example-list-horizontal-view-2">Lorem ipsum dolor set amet&lt;/label>
+		&lt;/div>
+		
+		&lt;div class="checkbox">
+			&lt;input type="checkbox" id="checkbox-example-list-horizontal-view-3" name="standaard-checkbox">
+			&lt;label for="checkbox-example-list-horizontal-view-3">Lorem ipsum dolor set amet&lt;/label>
+		&lt;/div>
+		
+		&lt;div class="checkbox">
+			&lt;input type="checkbox" id="checkbox-example-list-horizontal-view-4" name="standaard-checkbox">
+			&lt;label for="checkbox-example-list-horizontal-view-4">Lorem ipsum dolor set amet&lt;/label>
 		&lt;/div>
 	&lt;/fieldset>
+	&lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
 							</code>
 						</pre>
 
 						<h3>Voorbeeld in twee kolommen</h3>
 						<p>Visueel voorbeeld:</p>
-						<form action="" method="post">
-							<fieldset class="grouped-choice-list column-2">
-			                    <legend>Lorem ipsum</legend>
-			                    <div>
-			                      <div>
-			                        <input type="checkbox" id="checkbox-3-list-item-1" name="option-1">
-			                        <label for="checkbox-3-list-item-1">Optie 1</label>
-			                      </div>
 
-			                      <div>
-			                        <input type="checkbox" id="checkbox-3-list-item-2" name="option-2">
-			                        <label for="checkbox-3-list-item-2">Optie 2</label>
-			                      </div>
-			                    </div>
-			                </fieldset>
-			            </form>
+						<form action="" method="post" class="horizontal-view ">
+							<fieldset class="column-2">
+								<legend>Examples</legend>
+								<div class="checkbox">
+									<input type="checkbox" id="checkbox-example-list-columns-1" name="standaard-checkbox">
+									<label for="checkbox-example-list-columns-1">Lorem ipsum dolor set amet</label>
+								</div>
+								
+								<div class="checkbox">
+									<input type="checkbox" id="checkbox-example-list-columns-2" name="standaard-checkbox">
+									<label for="checkbox-example-list-columns-2">Lorem ipsum dolor set amet</label>
+								</div>
+								
+								<div class="checkbox">
+									<input type="checkbox" id="checkbox-example-list-columns-3" name="standaard-checkbox">
+									<label for="checkbox-example-list-columns-3">Lorem ipsum dolor set amet</label>
+								</div>
+								
+								<div class="checkbox">
+									<input type="checkbox" id="checkbox-example-list-columns-4" name="standaard-checkbox">
+									<label for="checkbox-example-list-columns-4">Lorem ipsum dolor set amet</label>
+								</div>
+							</fieldset>
+							<button type="submit">Verzend</button>
+						</form>
+
 
 			            <p>Html-voorbeeld:</p>
 			         	<pre>
 			         		<code>
-&lt;form action="" method="post">
-	&lt;fieldset class="grouped-choice-list column-2">
-        &lt;legend>Lorem ipsum&lt;/legend>
-        &lt;div>
-          &lt;div>
-            &lt;input type="checkbox" id="checkbox-list-item-1" name="option-1">
-            &lt;label for="checkbox-list-item-1">Optie 1&lt;/label>
-          &lt;/div>
-
-          &lt;div>
-            &lt;input type="checkbox" id="checkbox-list-item-2" name="option-2">
-            &lt;label for="checkbox-list-item-2">Optie 2&lt;/label>
-          &lt;/div>
-
-        &lt;/div>
-    &lt;/fieldset>
+&lt;form action="" method="post" class="horizontal-view ">
+	&lt;fieldset class="column-2">
+		&lt;legend>Examples&lt;/legend>
+		&lt;div class="checkbox">
+			&lt;input type="checkbox" id="checkbox-example-list-columns-1" name="standaard-checkbox">
+			&lt;label for="checkbox-example-list-columns-1">Lorem ipsum dolor set amet&lt;/label>
+		&lt;/div>
+		
+		&lt;div class="checkbox">
+			&lt;input type="checkbox" id="checkbox-example-list-columns-2" name="standaard-checkbox">
+			&lt;label for="checkbox-example-list-columns-2">Lorem ipsum dolor set amet&lt;/label>
+		&lt;/div>
+		
+		&lt;div class="checkbox">
+			&lt;input type="checkbox" id="checkbox-example-list-columns-3" name="standaard-checkbox">
+			&lt;label for="checkbox-example-list-columns-3">Lorem ipsum dolor set amet&lt;/label>
+		&lt;/div>
+		
+		&lt;div class="checkbox">
+			&lt;input type="checkbox" id="checkbox-example-list-columns-4" name="standaard-checkbox">
+			&lt;label for="checkbox-example-list-columns-4">Lorem ipsum dolor set amet&lt;/label>
+		&lt;/div>
+	&lt;/fieldset>
+	&lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
 			         		</code>
 			         	</pre>
 
 			         	<h3>Voorbeeld in drie kolommen</h3>
 						<p>Visueel voorbeeld:</p>
-						<form action="" method="post">
-							<fieldset class="grouped-choice-list column-3">
-			                    <legend>Lorem ipsum</legend>
-			                    <div>
-			                      <div>
-			                        <input type="checkbox" id="checkbox-4-list-item-1" name="option-1">
-			                        <label for="checkbox-4-list-item-1">Optie 1</label>
-			                      </div>
-
-			                      <div>
-			                        <input type="checkbox" id="checkbox-4-list-item-2" name="option-2">
-			                        <label for="checkbox-4-list-item-2">Optie 2</label>
-			                      </div>
-
-			                      <div>
-			                        <input type="checkbox" id="checkbox-4-list-item-3" name="option-3">
-			                        <label for="checkbox-4-list-item-3">Optie 3</label>
-			                      </div>
-			                    </div>
-			                  </fieldset>
+						<form action="" method="post" class="horizontal-view ">
+							<fieldset class="column-3">
+								<legend>Examples</legend>
+								<div class="checkbox">
+									<input type="checkbox" id="checkbox-example-list-column-3-1" name="standaard-checkbox">
+									<label for="checkbox-example-list-column-3-1">Lorem ipsum dolor set amet</label>
+								</div>
+								
+								<div class="checkbox">
+									<input type="checkbox" id="checkbox-example-list-column-3-2" name="standaard-checkbox">
+									<label for="checkbox-example-list-column-3-2">Lorem ipsum dolor set amet</label>
+								</div>
+								
+								<div class="checkbox">
+									<input type="checkbox" id="checkbox-example-list-column-3-3" name="standaard-checkbox">
+									<label for="checkbox-example-list-column-3-3">Lorem ipsum dolor set amet</label>
+								</div>
+							</fieldset>
+							<button type="submit">Verzend</button>
 						</form>
 
 						<p>Html-voorbeeld:</p>
 						<pre>
 							<code>
-&lt;form action="" method="post">
-	&lt;fieldset class="grouped-choice-list column-3">
-        &lt;legend>Lorem ipsum&lt;/legend>
-        &lt;div>
-          &lt;div>
-            &lt;input type="checkbox" id="checkbox-list-item-1" name="option-1">
-            &lt;label for="checkbox-list-item-1">Optie 1&lt;/label>
-          &lt;/div>
-
-          &lt;div>
-            &lt;input type="checkbox" id="checkbox-list-item-2" name="option-2">
-            &lt;label for="checkbox-list-item-2">Optie 2&lt;/label>
-          &lt;/div>
-
-          &lt;div>
-            &lt;input type="checkbox" id="checkbox-list-item-3" name="option-3">
-            &lt;label for="checkbox-list-item-3">Optie 3&lt;/label>
-          &lt;/div>
-
-        &lt;/div>
-      &lt;/fieldset>
+&lt;form action="" method="post" class="horizontal-view ">
+	&lt;fieldset class="column-3">
+		&lt;legend>Examples&lt;/legend>
+		&lt;div class="checkbox">
+			&lt;input type="checkbox" id="checkbox-example-list-column-3-1" name="standaard-checkbox">
+			&lt;label for="checkbox-example-list-column-3-1">Lorem ipsum dolor set amet&lt;/label>
+		&lt;/div>
+		
+		&lt;div class="checkbox">
+			&lt;input type="checkbox" id="checkbox-example-list-column-3-2" name="standaard-checkbox">
+			&lt;label for="checkbox-example-list-column-3-2">Lorem ipsum dolor set amet&lt;/label>
+		&lt;/div>
+		
+		&lt;div class="checkbox">
+			&lt;input type="checkbox" id="checkbox-example-list-column-3-3" name="standaard-checkbox">
+			&lt;label for="checkbox-example-list-column-3-3">Lorem ipsum dolor set amet&lt;/label>
+		&lt;/div>
+	&lt;/fieldset>
+	&lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
 							</code>
 						</pre>

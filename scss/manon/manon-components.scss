@@ -14,6 +14,10 @@
 /* Icon base and icon-sets */
 @use "@minvws/manon/icon";
 
+/* Fundamentals */
+@use "@minvws/manon/checkbox";
+@use "@minvws/manon/fieldset-checkbox";
+
 /* Layout */
 @use "@minvws/manon/layout-authentication";
 @use "@minvws/manon/layout-one-third-two-thirds";
