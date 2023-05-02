@@ -1,9 +1,13 @@
-/* Navigation content wrapper */
+/* Navigation */
 
 :root {
+  /* Title */
+  --navigation-title-text-color: var(--ro-blue);
+
   /* List */
   --navigation-list-padding: 0;
   --navigation-list-background-color: transparent;
+  --navigation-list-margin: 1rem 0 0 0;
 
   /* Link */
   --navigation-link-text-color: var(--link-text-color);
