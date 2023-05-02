@@ -70,6 +70,9 @@
 
 /* Footer */
 @use "@minvws/manon/footer";
+@use "@minvws/manon/footer-link-hover";
+@use "@minvws/manon/footer-link-active";
+@use "@minvws/manon/footer-link-visited";
 
 /* Components */
 @use "@minvws/manon/sidemenu-base";
