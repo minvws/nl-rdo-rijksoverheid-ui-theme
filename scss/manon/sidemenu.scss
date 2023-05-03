@@ -1,0 +1,9 @@
+/* Sidemenu */
+
+:root {
+   /* content on the button when the menu is collapsed */
+  --sidemenu-base-open-button-icon-content: "\003D";
+
+  /* content on the button when the menu is expanded */
+  --sidemenu-base-close-button-icon-content: "\0078";
+}

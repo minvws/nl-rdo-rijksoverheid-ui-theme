@@ -59,7 +59,6 @@
 @import "manon/layout-authentication";
 @import "manon/pagination";
 @import "manon/filters";
-@import "manon/tabs";
 @import "manon/navigation";
 @import "manon/notification-base";
 @import "manon/notification-block-element";
@@ -69,6 +68,8 @@
 @import "manon/notification-explanation";
 @import "manon/notification-system";
 @import "manon/icon";
+@import "manon/sidemenu";
+@import "manon/tabs";
 
 /* Components - Rijksoverheid specific components */
 @import "components/logo";
