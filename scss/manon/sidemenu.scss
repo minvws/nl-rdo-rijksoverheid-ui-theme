@@ -2,7 +2,7 @@
 
 :root {
    /* content on the button when the menu is collapsed */
-  --sidemenu-base-open-button-icon-content: var(--icon-hamburger);
+  --sidemenu-base-collapsed-button-icon: var(--icon-hamburger);
 
   /* content on the button when the menu is expanded */
   --sidemenu-base-close-button-icon-content: var(--icon-close);
