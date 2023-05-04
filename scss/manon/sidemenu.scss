@@ -2,8 +2,8 @@
 
 :root {
    /* content on the button when the menu is collapsed */
-  --sidemenu-base-open-button-icon-content: "\003D";
+  --sidemenu-base-open-button-icon-content: var(--icon-hamburger);
 
   /* content on the button when the menu is expanded */
-  --sidemenu-base-close-button-icon-content: "\0078";
+  --sidemenu-base-close-button-icon-content: var(--icon-close);
 }
