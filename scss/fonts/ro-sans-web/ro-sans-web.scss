@@ -9,7 +9,8 @@
   font-style: normal;
   font-display: swap;
   src: url("#{$ro-font-path}/ro-sans-web/RO-SansWebText-Regular.woff2") format("woff2"),
-    url("#{$ro-font-path}/ro-sans-web/RO-SansWebText-Regular.woff") format("woff");
+    url("#{$ro-font-path}/ro-sans-web/RO-SansWebText-Regular.woff") format("woff"),
+    url("#{$ro-font-path}/ro-sans-web/RO-SansWebText-Regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -18,7 +19,8 @@
   font-style: italic;
   font-display: swap;
   src: url("#{$ro-font-path}/ro-sans-web/RO-SansWebText-Italic.woff2") format("woff2"),
-    url("#{$ro-font-path}/ro-sans-web/RO-SansWebText-Italic.woff") format("woff");
+    url("#{$ro-font-path}/ro-sans-web/RO-SansWebText-Italic.woff") format("woff"),
+    url("#{$ro-font-path}/ro-sans-web/RO-SansWebText-Italic.ttf") format("truetype");
 }
 
 /* Bold */
@@ -28,5 +30,6 @@
   font-style: normal;
   font-display: swap;
   src: url("#{$ro-font-path}/ro-sans-web/RO-SansWebText-Bold.woff2") format("woff2"),
-    url("#{$ro-font-path}/ro-sans-web/RO-SansWebText-Bold.woff") format("woff");
+    url("#{$ro-font-path}/ro-sans-web/RO-SansWebText-Bold.woff") format("woff"),
+    url("#{$ro-font-path}/ro-sans-web/RO-SansWebText-Bold.ttf") format("truetype");
 }
