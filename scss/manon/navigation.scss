@@ -9,6 +9,12 @@
   --navigation-list-background-color: transparent;
   --navigation-list-margin: 1rem 0 0 0;
 
+  /* List Item */
+  --navigation-list-item-list-style: none;
+  --navigation-list-item-icon-content: var(--icon-chevron-right);
+  --navigation-list-item-icon-font-size: 0.7rem;
+  --navigation-list-item-text-color: var(--link-text-color);
+
   /* Link */
   --navigation-link-text-color: var(--link-text-color);
 
