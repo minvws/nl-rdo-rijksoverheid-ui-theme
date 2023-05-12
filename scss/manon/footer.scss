@@ -12,10 +12,11 @@
 
   /* Link*/
   --footer-link-text-color: var(--footer-text-color);
-  --footer-link-text-decoration: underline;
+  --footer-link-text-decoration: none;
 
   /* Hover */
   --footer-link-hover-text-color: var(--footer-text-color);
+  --footer-link-hover-text-decoration: underline;
 
   /* Active */
   --footer-link-active-text-color: var(--footer-text-color);
@@ -32,6 +33,6 @@
   --footer-link-visited-hover-text-color: var(--footer-link-visited-text-color);
   --footer-link-icon-visited-hover-text-color: var(--footer-link-visited-text-color);
 
-  /* Visited */
-  --link-visited-active-text-color: var(--footer-link-active-text-color);
+  /* Nav */
+  --footer-navigation-list-item-list-style: none;
 }

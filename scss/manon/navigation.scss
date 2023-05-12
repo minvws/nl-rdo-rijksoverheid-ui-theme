@@ -9,6 +9,11 @@
   --navigation-list-background-color: transparent;
   --navigation-list-margin: 1rem 0 0 0;
 
+  /* List Item */
+  --navigation-list-item-list-style: none;
+  --navigation-list-item-icon-content: none;
+  --navigation-list-item-text-color: var(--link-text-color);
+
   /* Link */
   --navigation-link-text-color: var(--link-text-color);
 
@@ -24,6 +29,9 @@
   /* Active */
   --navigation-link-active-outline: 2px dotted #ccccc;
   --navigation-link-active-outline-offset: 0.25rem;
+
+  --navigation-link-icon: var(--icon-chevron-right);
+  --navigation-link-icon-font-size: 0.7rem;
 }
 
 /* This override can be removed once manon v9.1.0 has been included */
