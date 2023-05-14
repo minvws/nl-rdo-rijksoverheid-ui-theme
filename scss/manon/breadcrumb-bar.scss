@@ -1,0 +1,57 @@
+/* Breadcrumb bar */
+
+:root {
+  --breadcrumb-bar-flex-direction: row;
+  --breadcrumb-bar-justify-content: stretch;
+  --breadcrumb-bar-align-items: stretch;
+  --breadcrumb-bar-gap: 2rem;
+  --breadcrumb-bar-padding-top: 0;
+  --breadcrumb-bar-padding-right: var(--page-whitespace-right);
+  --breadcrumb-bar-padding-bottom: 0;
+  --breadcrumb-bar-padding-left: var(--page-whitespace-left);
+  --breadcrumb-bar-max-width: 100%;
+  --breadcrumb-bar-background-color: var(--header-navigation-background-color);
+  --breadcrumb-bar-text-color: var(--application-base-text-color);
+  --breadcrumb-bar-border-width: 0;
+  --breadcrumb-bar-border-style: solid;
+  --breadcrumb-bar-border-color: transparent;
+  --breadcrumb-bar-border-radius: 0;
+  --breadcrumb-bar-min-height: 2.75rem;
+
+  /* Hover */
+  --breadcrumb-bar-hover-text-color: var(--application-base-text-color);
+
+  /* List */
+  --breadcrumb-bar-list-padding: 0;
+  --breadcrumb-bar-list-gap: 1rem;
+  --breadcrumb-bar-list-vertical-align: stretch;
+
+  /* List item */
+  --breadcrumb-bar-list-item-gap: 1rem;
+
+  /* Icon */
+  --breadcrumb-bar-icon: var(--icon-chevron-right);
+  --breadcrumb-bar-icon-margin-left: 0;
+  --breadcrumb-bar-icon-margin-right: 0;
+
+  /* Last item / current page */
+  --breadcrumb-bar-list-item-last-child-font-weight: bold;
+
+  /* Link */
+  --breadcrumb-bar-link-text-decoration: none;
+  --breadcrumb-bar-link-white-space: nowrap;
+
+  /* Link hover */
+  --breadcrumb-bar-link-hover-text-decoration: underline;
+
+  /* Content Wrapper */
+  --breadcrumb-bar-content-wrapper-flex-direction: row;
+  --breadcrumb-bar-content-wrapper-justify-content: space-between;
+  --breadcrumb-bar-content-wrapper-align-items: stretch;
+  --breadcrumb-bar-content-wrapper-gap: var(--content-gap);
+  --breadcrumb-bar-content-wrapper-padding-top: 0;
+  --breadcrumb-bar-content-wrapper-padding-right: var(--content-padding-right, 1rem);
+  --breadcrumb-bar-content-wrapper-padding-bottom: 0;
+  --breadcrumb-bar-content-wrapper-padding-left:  var(--content-padding-left, 1rem);
+  --breadcrumb-bar-content-wrapper-max-width: var(--content-max-width, 100%);
+}
