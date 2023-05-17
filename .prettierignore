@@ -1,5 +1,5 @@
 package-lock.json
 node_modules/
 *.html
-/static/css
-/static/js
+/html/dist
+/css
