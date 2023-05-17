@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <title>Voorbeeld Navigatiebalk enkel element - Rijksoverheid CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../dist/css/main.css" rel="stylesheet">
+    <link href="../dist/img/favicon.ico" rel="shortcut icon">
+    <script defer src="../dist/js/collapsibleMenu.js"></script>
+    <script defer src="../dist/js/sidemenu.js"></script>
+  </head>
+  <body class="test-cases">
+    <header>
+        <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
+        <a href="../index.html" class="ro-logo" aria-label="Logo Rijksoverheid, ga naar de homepage van Manon">
+            <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
+            Rijksoverheid
+        </a>
+    
+        <div>
+            <nav aria-label="Hoofdnavigatie" class="collapsible-menu">
+                <div class="collapsing-menu">
+                    <ul>
+                        <li><a href="../index.html">Over</a></li>
+                        <li><a href="../test/index.html">Styling tests</a></li>
+                        <li><a href="index.html">Online componenten bibliotheek</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <nav class="breadcrumb-bar">
+            <div>
+                <ul>
+                    <li><a href="../index.html">Rijksoverheid CSS</a></li>
+                    <li><a href="index.html">Online Componenten Bibliotheek</a></li>
+                    <li><a href="header-main-nav.html">Header-element met hoofdnavigatie</a></li>
+                    <li><a href="#" aria-current="page">Navigatiebalk enkel element</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+        <ul>
+          <li><a href="#nav-alignment">Uitlijning</a>
+            <ul>
+              <li><a href="#nav-alignment-default">Navigatiebalk enkel element</a></li>
+              <li><a href="#nav-alignment-multiple">Navigatiebalk meerdere elementen</a></li>
+            </ul>
+
+          </li>
+          <li><a href="#nav-tabs">Navigatiebalk met tabbladnavigatie</a>
+            <ul>
+              <li><a href="#nav-tabs-responsive">Navigatiebalk met responsive kruimelpadnavigatie</a></li>
+            </ul>
+          </li>
+          <li><a href="#nav-breadcrumbs">Kruimelpadnavigatie</a>
+            <ul>
+              <li><a href="#nav-breadcrumbs">Navigatiebalk met kruimelpadnavigatie</a></li>
+              <li><a href="#nav-breadcrumbs-search">Navigatiebalk met kruimelpadnavigatie en zoekfunctie</a></li>
+              <li><a href="#nav-breadcrumbs-search-login">Navigatiebalk met kruimelpadnavigatie, zoekfunctie en loginfunctie</a></li>
+            </ul>
+          </li>
+      </ul>
+      </nav>
+
+      <div>
+        <article>
+          <div>
+            <h2>Navigatiebalk enkel element</h2>
+          </div>
+        </article>
+
+        <article id="nav-alignment">
+          <div>
+            <h1>Uitlijning content binnen de navigatiebalk</h1>
+            <p>Het is gewenst om de content binnen het menu dezelfde uitlijning te geven als de content van de pagina.</p>
+            <p>Om de content binnen het menu uit te lijnen met de standaard Rijksoverheidsuitlijning en opmaak, kan er gebruik gemaakt worden van de onderstaande html</p>
+
+            <h2 id="nav-alignment-default">Navigatiebalk enkel element</h2>
+            <ul>
+              <li>Om gebruik te maken van de standaard Rijksoverheid uitlijning binnen een menu met enkel een  navigatie-element, voeg een <code>&lt;div></code> toe direct binnen de <code>&lt;nav></code>.</li>
+              <li>Voeg <code>aria-current="page"</code> toe aan het de actieve <code>&lt;a></code> om visuele feedback te geven aan de gebruiker over op welke pagina momenteel actief is. Deze informatie wordt ook door screenreaders gebruikt om aan te geven welke link er visueel als actief vormgegeven is.</li>
+              <li>Voeg een omschrijvende naam toe aan de <code>&lt;nav></code> zodat gebruikers die gebruik maken van hulptechnologiën kunnen zien wat het onderwerp van de navigatie is. Bij het hoofdmenu zal dit meestal <i>"Hoofdnavigatie"</i> zijn. Voorbeeld: <code>&lt;nav aria-label="Hoofdnavigatie"></code>. Houdt voor het label de taal van het document aan.</li>
+            </ul>
+          </div>
+
+          <header>
+            <a href="#" class="ro-logo" aria-label="Logo Rijksoverheid, ga naar de homepage van Manon">
+              <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
+              Rijksoverheid
+            </a>
+
+            <nav aria-label="Navigatie van header-voorbeeld">
+              <div>
+                <ul>
+                    <li><a href="#" aria-current="page">Hoofdpagina</a></li>
+                    <li><a href="">Ipsum</a></li>
+                    <li><a href="">Dolor</a></li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+
+          <div>
+            <p>Html-voorbeeld:</p>
+            <pre>
+              <code>
+&lt;header>
+  &lt;a href="/" class="ro-logo" aria-label="Logo Rijksoverheid, ga naar de homepage van Manon">
+    &lt;img src="static/img/ro-logo.svg" alt="Logo Rijksoverheid">
+    Rijksoverheid
+  &lt;/a>
+
+  &lt;nav aria-label="Hoofdnavigatie">
+    &lt;div>
+      &lt;ul>
+          &lt;li >&lt;a href="/" aria-current="page">Hoofdpagina&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="">Ipsum&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="">Dolor&lt;/a>&lt;/li>
+      &lt;/ul>
+    &lt;/div>
+  &lt;/nav>
+&lt;/header>
+              </code>
+            </pre>
+            <h2 id="nav-alignment-multiple">Navigatiebalk meerdere elementen</h2>
+            <ul>
+              <li>Om gebruik te maken van de standaard Rijksoverheid uitlijning binnen een menu met verschillende elementen, zoals bijvoorbeeld navigatie-elementen gecombineerd met een loginfunctionaliteit of een zoekfunctie.</li>
+              <li>Groepeer de content binnen een <code>&lt;section></code>, met direct daarbinnen een <code>&lt;div></code>.</li>
+              <li>Voeg <code>aria-current="page"</code> toe aan het de actieve <code>&lt;a></code> om visuele feedback te geven aan de gebruiker over op welke pagina momenteel actief is. Deze informatie wordt ook door screenreaders gebruikt om aan te geven welke link er visueel als actief vormgegeven is.</li>
+            </ul>
+
+            <p>Visueel-voorbeeld:</p>
+          </div>
+
+          <header>
+            <a href="#" class="ro-logo" aria-label="Logo Rijksoverheid, ga naar de homepage van Manon">
+              <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
+              Rijksoverheid
+            </a>
+
+            <section>
+              <div>
+                <nav aria-label="Navigatie van header-voorbeeld">
+                  <ul>
+                      <li><a href="#" aria-current="page">Hoofdpagina</a></li>
+                      <li><a href="">Ipsum</a></li>
+                      <li><a href="">Dolor</a></li>
+                  </ul>
+                </nav>
+
+                <form class="search">
+                  <input type="text" placeholder="Zoeken">
+                  <button type="submit">Zoeken</button>
+                </form>
+
+              </div>
+            </section>
+          </header>
+
+          <div>
+            <p>Html-voorbeeld:</p>
+            <pre>
+              <code>
+&lt;header>
+  &lt;a href="/" class="ro-logo" aria-label="Logo Rijksoverheid, ga naar de homepage van Manon">
+    &lt;img src="static/img/ro-logo.svg" alt="Logo Rijksoverheid">
+    Rijksoverheid
+  &lt;/a>
+
+  &lt;section>
+    &lt;div>
+
+      &lt;nav aria-label="Hoofdnavigatie">
+        &lt;ul>
+            &lt;li >&lt;a href="/" aria-current="page">Hoofdpagina&lt;/a>&lt;/li>
+            &lt;li>&lt;a href="">Ipsum&lt;/a>&lt;/li>
+            &lt;li>&lt;a href="">Dolor&lt;/a>&lt;/li>
+        &lt;/ul>
+      &lt;/nav>
+
+      &lt;form class="search">
+        &lt;input type="text" placeholder="Zoeken">
+        &lt;button type="submit">Zoeken&lt;/button>
+      &lt;/form>
+
+    &lt;/div>
+  &lt;/section>
+&lt;/header>
+              </code>
+            </pre>
+          </div>
+        </article>
+
+        <article id="nav-tabs">
+          <div>
+            <h1>Navigatiebalk met tabbladnavigatie</h1>
+            <p>Standaard navigatie weergave voor pagina's als de gebruiker nog geen keuze gemaakt heeft.</p>
+            <ul>
+              <li>De navigatiebalk met tabbladnavigatie dient toegepast te worden op pagina's die zich op de hoogste navigatielaag bevinden. Denk bijvoorbeeld aan de hoofdpagina van de site.</li>
+              <li>De tabbladnavigatie maakt gebruik van een aangepast menu voor smallere schermen. Denk bijvoorbeeld aan mobiele apparaten.
+                <ul>
+                  <li>Het mobiele menu wordt enkel op smalle schermresoluties getoont en is op brede schermresoluties niet zichtbaar.</li>
+                  <li>In dit aangepaste menu worden de elementen onder elkaar getoond in plaats van naast elkaar.</li>
+                  <li><i>Het mobiele menu is optioneel te verrijken met JavaScript, zodat het standaard ingeklapt is en alleen het menu-icoon (hamburgericoon) zichtbaar is. Zie hiervoor het voorbeeld <a href="#nav-tabs-responsive">Navigatiebalk met responsive kruimelpadnavigatie</a>.</i></li>
+                </ul>
+              </li>
+              <li>Voeg <code>aria-current="page"</code> toe aan het de actieve <code>&lt;a></code> om visuele feedback te geven aan de gebruiker over op welke pagina momenteel actief is. Deze informatie wordt ook door screenreaders gebruikt om aan te geven welke link er visueel als actief vormgegeven is.</li>
+            </ul>
+
+            <p>Visueel voorbeeld:</p>
+          </div>
+          <header>
+            <a href="#" class="ro-logo" aria-label="Logo Rijksoverheid, ga naar de homepage van Manon">
+              <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
+              Rijksoverheid
+            </a>
+
+            <nav aria-label="Navigatie van header-voorbeeld">
+              <div>
+                <ul>
+                    <li><a href="#" aria-current="page">Hoofdpagina</a></li>
+                    <li><a href="">Ipsum</a></li>
+                    <li><a href="">Dolor</a></li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+
+          <div>
+            <p>Html-voorbeeld:</p>
+            <pre>
+              <code>
+&lt;header>
+  &lt;a href="/" class="ro-logo" aria-label="Logo Rijksoverheid, ga naar de homepage van Manon">
+    &lt;img src="static/img/ro-logo.svg" alt="Logo Rijksoverheid">
+    Rijksoverheid
+  &lt;/a>
+
+  &lt;nav aria-label="Hoofdnavigatie">
+    &lt;div>
+      &lt;ul>
+          &lt;li >&lt;a href="/" aria-current="page">Hoofdpagina&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="">Ipsum&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="">Dolor&lt;/a>&lt;/li>
+      &lt;/ul>
+    &lt;div>
+  &lt;/nav>
+&lt;/header>
+              </code>
+            </pre>
+          </div>
+        </article>
+
+        <article id="nav-tabs-responsive">
+          <div>
+            <h1>Navigatiebalk met responsive tabbladnavigatie</h1>
+            <p>Een verrijkte versie van de tabbladnavigatie, die op smallere schermen standaard ingeklapt wordt.</p>
+            <ul>
+              <li>Op smalle schermen is dit menu standaard ingeklapt en is alleen het menu-icoon (hamburgericoon) zichtbaar.</li>
+              <li><strong>Schaalbaar menu toevoegen:</strong>
+                <ul>
+                  <li>Plaats <code>&lt;script defer src="pad/naar/navigation.min.js">&lt;/script></code> in de <code>&lt;head></code> van het document om het menu te verrijken.</li>
+                  <li>Het <code>defer</code> attribuut zorgt ervoor dat het script in de achtergrond geladen wordt, zodat het tonen van de pagina niet geblokkeerd wordt.</li>
+                  <li>Wanneer JavaScript niet beschikbaar is, wordt het menu niet verrijkt maar werkt het zoals gebruikelijk.</li>
+                </ul>
+              </li>
+              <li><strong>Breekpunt instellen:</strong>
+                <ul>
+                  <li>Het standaard ingestelde breekpunt is <code>42rem</code>. Bij een schermbreedte van 42rem of meer wordt het ingeklapte menu getoond door middel van een icoon.</li>
+                  <li>Zodra de elementen niet meer op een regel passen en onder elkaar getoond worden is het voor de juiste weergave belangrijk om het breekpunt aan te passen.</li>
+                  <li>Gebruik <code>data-</code>attributen op de <code>&lt;nav></code> ter configuratie.
+                    <ul>
+                      <li>Voeg een <code>data-media</code> toe aan de <code>&lt;nav></code>. Bijvoorbeeld: <code>data-media="(min-width: 100rem)"</code>. Het getal geeft aan op welke schermbreedte het breekpunt ligt. Bijvoorbeeld voor het enkel op mobiel tonen van het menu kan het breekpunt op 24rem liggen. Voor meer informatie zie het onderstaande voorbeeld en <a href="https://drafts.csswg.org/mediaqueries-3/" rel="external">media query</a>.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><strong>Toegankelijkheid:</strong>
+                <ul>
+                  <li>Gebruik <code>data-</code>attributen op de <code>&lt;nav></code> ter configuratie.
+                    <ul>
+                      <li>Stel toegankelijke namen in de voor de "open"- en "sluit"-knop middels <code>data-open-label</code> en <code>data-close-label</code>. <strong>Let op: gebruik voor deze namen dezelfde taal als het document.</strong></li>
+                    </ul>
+                  </li>
+                  <li>Voeg <code>aria-current="page"</code> toe aan het de actieve <code>&lt;a></code> om visuele feedback te geven aan de gebruiker over op welke pagina momenteel actief is. Deze informatie wordt ook door screenreaders gebruikt om aan te geven welke link er visueel als actief vormgegeven is.</li>
+                </ul>
+              </li>
+            </ul>
+
+            <p>Visueel voorbeeld:</p>
+          </div>
+          <header>
+            <a href="#" class="ro-logo" aria-label="Logo Rijksoverheid, ga naar de homepage van Manon">
+              <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid" >
+              Rijksoverheid
+            </a>
+
+            <nav data-open-label="Menu" data-close-label="Sluit menu" data-media="(min-width: 24rem)" aria-label="Navigatie van header-voorbeeld">
+              <div>
+                <ul>
+                    <li><a href="#" aria-current="page">Hoofdpagina</a></li>
+                    <li><a href="">Ipsum</a></li>
+                    <li><a href="">Dolor</a></li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+
+          <div>
+            <p>Html-voorbeeld:</p>
+            <pre>
+              <code>
+&lt;header>
+  &lt;a href="/" class="ro-logo" aria-label="Logo Rijksoverheid, ga naar de homepage van Manon">
+    &lt;img src="static/img/ro-logo.svg" alt="Logo Rijksoverheid">
+    Rijksoverheid
+  &lt;/a>
+
+  &lt;nav data-open-label="Menu" data-close-label="Sluit menu" data-media="(min-width: 24rem)" aria-label="Hoofdnavigatie">
+    &lt;div>
+      &lt;ul>
+          &lt;li >&lt;a href="/" aria-current="page">Hoofdpagina&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="">Ipsum&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="">Dolor&lt;/a>&lt;/li>
+      &lt;/ul>
+    &lt;div>
+  &lt;/nav>
+&lt;/header>
+              </code>
+            </pre>
+          </div>
+        </article>
+
+        <article id="nav-breadcrumbs">
+          <div>
+            <h1>Navigatiebalk met kruimelpadnavigatie</h1>
+            <p>Standaard navigatie weergave voor pagina's als de gebruiker al een keuze gemaakt heeft, en een pad begonnen is.</p>
+            <ul>
+              <li>Subpagina's dienen gebruik te maken van de kruimelpadnavigatie zodat de gebruiker een duidelijk overzicht heeft van de afgelegde route.</li>
+              <li>Door de <code>&lt;header></code> een class <code>breadcrumbs</code> te geven past deze zich aan tot een kruimelpadnavigatie.</li>
+              <li><i>Let op: De kruimelpadnavigatie is ook op mobiel volledig zichtbaar en wordt niet ingeklapt.</i></li>
+              <li>Voeg voor gebruikers die gebruik maken van hulptechnologiën een label toe aan de kruimelpadnavigatie <code>aria-label="kruimelpad"</code> om context mee te geven. Zie onderstaand voorbeeld voor meer informatie.</li>
+              <li>Voeg aan de huidige pagina <code>aria-current="page"</code> toe om aan gebruikers die gebruik maken van hulptechnologiën aan te geven dat deze pagina de huidige pagina is.</li>
+            </ul>
+
+            <p>Visueel voorbeeld:</p>
+          </div>
+
+          <header class="breadcrumbs">
+            <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
+            <a href="#" class="ro-logo" aria-label="Logo Rijksoverheid, ga naar de homepage van Manon">
+              <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
+              Rijksoverheid
+            </a>
+
+            <nav aria-label="Kruimelpad">
+              <div>
+                <ol>
+                  <li><a href="#">Hoofdpagina</a></li>
+                  <li><a href="">Ipsum</a></li>
+                  <li><a href="" aria-current="page">Dolor</a></li>
+                </ol>
+              </div>
+            </nav>
+          </header>
+
+          <div>
+            <p>Html-voorbeeld:</p>
+            <pre>
+              <code>
+&lt;header class="breadcrumbs">
+  &lt;a href="/" class="ro-logo" aria-label="Logo Rijksoverheid, ga naar de homepage van Manon">
+    &lt;img src="static/img/ro-logo.svg" alt="Logo Rijksoverheid">
+    Rijksoverheid
+  &lt;/a>
+
+  &lt;nav aria-label="Kruimelpad">
+    &lt;div>
+      &lt;ol>
+        &lt;li>&lt;a href="/">Hoofdpagina&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="">Ipsum&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="" aria-current="page">Dolor&lt;/a>&lt;/li>
+      &lt;/ol>
+    &lt;/div>
+  &lt;/nav>
+&lt;/header>
+              </code>
+            </pre>
+          </div>
+        </article>
+
+        <article id="nav-breadcrumbs-search">
+          <div>
+            <h1>Navigatiebalk met kruimelpadnavigatie en zoekfunctie</h1>
+            <p>De zoekfunctie binnen de hoofdnavigatie, om de gebruiker te helpen navigeren ook als de link niet beschikbaar is binnen het standaard menu.</p>
+            <ul>
+              <li>Het is mogelijk de zoekfunctie toe te voegen aan de hoofdnavigatie. Gebruik voor de uitlijning de uitlijning voor de structuur van de navigatiebalk met meerdere elementen. Zie bijgevoegd html voorbeeld.</li>
+            </ul>
+            <p>Visueel voorbeeld:</p>
+          </div>
+
+          <header class="breadcrumbs">
+      <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
+            <a href="#" class="ro-logo" aria-label="Logo Rijksoverheid, ga naar de homepage van Manon">
+              <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
+              Rijksoverheid
+            </a>
+
+            <section>
+              <div>
+                <nav aria-label="Kruimelpad">
+                  <ol>
+                    <li><a href="../index.html">Hoofdpagina</a></li>
+                    <li><a href="index.html">Ipsum</a></li>
+                    <li><a href="index.html" aria-current="page">Dolor</a></li>
+                  </ol>
+                </nav>
+
+                <form class="search">
+                  <input type="text" placeholder="Zoeken">
+                  <button type="submit">Zoeken</button>
+                </form>
+
+              </div>
+            </section>
+          </header>
+
+          <div>
+            <p>Html-voorbeeld:</p>
+            <pre>
+              <code>
+&lt;header class="breadcrumbs">
+  &lt;a href="/" class="ro-logo" aria-label="Logo Rijksoverheid, ga naar de homepage van Manon">
+    &lt;img src="static/img/ro-logo.svg" alt="Logo Rijksoverheid">
+    Rijksoverheid
+  &lt;/a>
+
+  &lt;section>
+    &lt;div>
+
+      &lt;nav aria-label="Kruimelpad">
+        &lt;ol>
+          &lt;li>&lt;a href="../index.html">Hoofdpagina&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="index.html">Ipsum&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="../html_examples/index.html" aria-current="page">Dolor&lt;/a>&lt;/li>
+        &lt;/ol>
+      &lt;/nav>
+
+      &lt;form class="search">
+        &lt;input type="text" placeholder="Zoeken">
+        &lt;button type="submit">Zoeken&lt;/button>
+      &lt;/form>
+
+    &lt;/div>
+  &lt;/section>
+
+&lt;/header>
+              </code>
+            </pre>
+          </div>
+        </article>
+
+        <article id="nav-breadcrumbs-search-login">
+          <div>
+            <h1>Navigatiebalk met kruimelpadnavigatie, zoekfunctie en loginfunctie</h1>
+            <p>Naast de zoekfunctie kan ook de loginfunctie toegevoegd worden aan de hoofdnavigatie.</p>
+            <ul>
+              <li>Het is mogelijk om de loginfunctionaliteit toe toe voegen aan de navigatiebalk. Deze kan gecombineerd worden met de navigatie-elementen en de zoekfunctie. Gebruik voor de uitlijning ook hier de uitlijning voor de navigatiebalk met meerdere elementen. Zie het bijgevoegde html-voorbeeld.</li>
+              <li>Om de login-functionaliteit en de zoekfunctie samen weer te geven kunnen ze gegroepeerd worden binnen een <code>&lt;div></code>. Dit is niet nodig wanneer er gebruik gemaakt wordt van een loginfunctie of een zoekveld in plaats van beide.</li>
+            </ul>
+            <p>Visueel voorbeeld:</p>
+          </div>
+
+          <header class="breadcrumbs">
+      <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
+            <a href="#" class="ro-logo" aria-label="Logo Rijksoverheid, ga naar de homepage van Manon">
+              <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
+              Rijksoverheid
+            </a>
+
+            <section>
+              <div>
+
+                <nav aria-label="Kruimelpad">
+                  <ol>
+                    <li><a href="../index.html">Hoofdpagina</a></li>
+                    <li><a href="index.html">Ipsum</a></li>
+                    <li><a href="index.html" aria-current="page">Dolor</a></li>
+                  </ol>
+                </nav>
+
+                <div>
+                  <a href="#" class="button icon icon-user">Inloggen</a>
+                  <form class="search">
+                    <input type="text" placeholder="Zoeken">
+                    <button type="submit">Zoeken</button>
+                  </form>
+                </div>
+
+              </div>
+            </section>
+          </header>
+
+          <div>
+            <p>Html-voorbeeld:</p>
+            <pre>
+              <code>
+&lt;header class="breadcrumbs">
+  &lt;a href="/" class="ro-logo" aria-label="Logo Rijksoverheid, ga naar de homepage van Manon">
+    &lt;img src="static/img/ro-logo.svg" alt="Logo Rijksoverheid">
+    Rijksoverheid
+  &lt;/a>
+
+  &lt;section>
+    &lt;div>
+
+      &lt;nav aria-label="Kruimelpad">
+        &lt;ol>
+          &lt;li>&lt;a href="../index.html">Hoofdpagina&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="index.html">Ipsum&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="../html_examples/index.html" aria-current="page">Dolor&lt;/a>&lt;/li>
+        &lt;/ol>
+      &lt;/nav>
+
+      &lt;div>
+        &lt;a href="/" class="button icon icon-user">Inloggen&lt;/a>
+        &lt;form class="search">
+          &lt;input type="text" placeholder="Zoeken">
+          &lt;button type="submit">Zoeken&lt;/button>
+        &lt;/form>
+      &lt;/div>
+
+    &lt;/div>
+  &lt;/section>
+&lt;/header>
+              </code>
+            </pre>
+          </div>
+        </article>
+      </div>
+
+      <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het hoofdmenu</a>
+    </main>
+
+    <footer>
+      <div>
+        <span>Manon - Rijksoverheid css framework</span>
+        <nav aria-labelledby="footer-nav-1-heading">
+          <h1 id="footer-nav-1-heading">Service</h1>
+          <ul>
+            <li><a href="../index.html">Over</a></li>
+            <li><a href="../test/index.html">Styling tests</a></li>
+            <li><a href="index.html">Online componenten bibliotheek</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
