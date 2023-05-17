@@ -34,7 +34,7 @@
           <li><a href="#tiles">Tegelweergave</a></li>
           <li><a href="#base-tile">Basis tegelweergave</a></li>
           <li><a href="#tile-columns">Breedte tegelweergave</a></li>
-          <li><a href="#tiles">Groep met tegels</a></li>
+          <li><a href="#tile-group">Groep met tegels</a></li>
           <li><a href="#tile-img">Tegel met afbeelding</a></li>
           <li><a href="#tiles-grouped-content">Tegel met gegroepeerde content</a>
             <ul>
@@ -75,7 +75,7 @@
 
           <article id="base-tile">
             <div>
-              <h1 id="base-tile">Tegelweergave op enkel element</h1>
+              <h1>Tegelweergave op enkel element</h1>
               <p>Geschikt voor het weergeven van een element dat visueel gegroepeerd dient te zijn of visueel meer aandacht mag krijgen om de gebruiker te attenderen.</p>
 
               <p>Aandachtspunten:</p>
@@ -136,7 +136,7 @@
             </div>
           </article>
 
-          <article id="tiles">
+          <article id="tile-group">
             <div>
               <h1>Groep met tegels</h1>
               <p>Voor het efficiënt weergeven van een groep elementen met een tegelweergave.</p>
@@ -145,7 +145,7 @@
 
               <ul>
                 <li>Groepeer de elementen die met de tegelweergave weergegeven dienen te worden binnen een <code>div</code> of <code>ul</code> en geef deze <code>div</code> of <code>ul</code> de benodigde <code>class</code> mee. Bijvoorbeeld: <code>&lt;div class="tiles"></code></li>
-                <li><strong>Tip</strong> Om de breedte van de tegel(s) aan te passen kan gebruik worden gemaakt van de kolommen. Voor meer informatie en de beschikbare weergaven zie: <a href="layout">Contentweergave</a>. Het onderstaande voorbeeld maakt gebruik van de contentweergave <code>column-3</code></li>
+                <li><strong>Tip</strong> Om de breedte van de tegel(s) aan te passen kan gebruik worden gemaakt van de kolommen. Voor meer informatie en de beschikbare weergaven zie: <a href="layout.html">Contentweergave</a>. Het onderstaande voorbeeld maakt gebruik van de contentweergave <code>column-3</code></li>
               </ul>
 
               <p>Visueel voorbeeld:</p>
@@ -209,7 +209,7 @@
               <div class="column-3 tiles">
                 <div role="group">
                   <h1>Lorem ipsum</h1>
-                  <img src="../dist/img/cat.jpg" alt="">
+                  <img src="../images/beach.jpg" alt="">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
                 </div>
               </div>
@@ -220,7 +220,7 @@
 &lt;div class="column-3 tiles">
   &lt;div role="group">
     &lt;h1>Lorem ipsum&lt;/h1>
-    &lt;img src="static/img/cat.jpg" alt="">
+    &lt;img src="images/beach.jpg" alt="">
     &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.&lt;/p>
   &lt;/div>
 &lt;/div>
@@ -230,7 +230,7 @@
               <p>Visueel voorbeeld afbeelding als kop:</p>
               <div class="column-3 tiles">
                 <div role="group">
-                  <img src="../dist/img/cat.jpg" alt="">
+                  <img src="../images/beach.jpg" alt="">
                   <h1>Lorem ipsum</h1>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
                 </div>
@@ -242,7 +242,7 @@
                 <code>
 &lt;div class="column-3 tiles">
   &lt;div role="group">
-    &lt;img src="static/img/cat.jpg" alt="">
+    &lt;img src="images/beach.jpg" alt="">
     &lt;h1>Lorem ipsum&lt;/h1>
     &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.&lt;/p>
   &lt;/div>
@@ -375,7 +375,7 @@
 
               <div class="tiles column-3">
                 <div role="group">
-                  <img src="../dist/img/cat.jpg" alt="">
+                  <img src="../images/beach.jpg" alt="">
                   <h1>Lorem ipsum</h1>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
                   <div class="tile-actions horizontal-view">
@@ -385,7 +385,7 @@
                 </div>
 
                 <div role="group">
-                  <img src="../dist/img/cat.jpg" alt="">
+                  <img src="../images/beach.jpg" alt="">
                   <h1>Lorem ipsum</h1>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                   <div class="tile-actions horizontal-view">
@@ -395,7 +395,7 @@
                 </div>
 
                 <div role="group">
-                  <img src="../dist/img/cat.jpg" alt="">
+                  <img src="../images/beach.jpg" alt="">
                   <h1>Lorem ipsum</h1>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
                   <p>Ut et dui sapien.</p>
@@ -411,7 +411,7 @@
                 <code>
 &lt;div class="tiles column-3">
   &lt;div role="group">
-    &lt;img src="static/img/cat.jpg" alt="">
+    &lt;img src="images/beach.jpg" alt="">
     &lt;h1>Lorem ipsum&lt;/h1>
     &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.&lt;/p>
     &lt;div class="tile-actions horizontal-view">
@@ -421,7 +421,7 @@
   &lt;/div>
 
   &lt;div role="group">
-    &lt;img src="static/img/cat.jpg" alt="">
+    &lt;img src="images/beach.jpg" alt="">
     &lt;h1>Lorem ipsum&lt;/h1>
     &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p>
     &lt;div class="tile-actions horizontal-view">
@@ -431,7 +431,7 @@
   &lt;/div>
 
   &lt;div role="group">
-    &lt;img src="static/img/cat.jpg" alt="">
+    &lt;img src="images/beach.jpg" alt="">
     &lt;h1>Lorem ipsum&lt;/h1>
     &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.&lt;/p>
     &lt;p>Ut et dui sapien.&lt;/p>

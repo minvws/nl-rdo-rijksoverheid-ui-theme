@@ -173,7 +173,7 @@ body > header,
     @extend %expanded-menu;
   }
 
-  @media screen and (min-width: 77rem) {
+  @media screen and (width >= 77rem) {
     .menu-toggle[aria-expanded="false"],
     .menu-toggle[aria-expanded="true"] {
       display: none;

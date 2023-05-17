@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: 16
           registry-url: "https://npm.pkg.github.com"
-          cache: 'npm'
+          cache: "npm"
       - run: npm ci --ignore-scripts
         env:
           NODE_AUTH_TOKEN: ${{ secrets.REPO_READ_ONLY_TOKEN }}

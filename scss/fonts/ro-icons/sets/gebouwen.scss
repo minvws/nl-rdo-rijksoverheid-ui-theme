@@ -5,7 +5,7 @@ $icon-koopwoning: "\E978";
 $icon-cateringbedrijven: "\E979";
 $icon-circulaire-bouw: "\E97a";
 $icon-dorp: "\E97b";
-$icon-gemeente---en-provinciefonds: "\E97c";
+$icon-gemeente-en-provinciefonds: "\E97c";
 $icon-leefbaarheid: "\E97d";
 $icon-evenemententent: "\E97e";
 $icon-festival-ehbo: "\E97f";
@@ -17,7 +17,7 @@ $icon-gebouw-cjib: "\E984";
 $icon-gebouw-cvz: "\E985";
 $icon-gebouw-igz: "\E986";
 $icon-villa: "\E987";
-$icon-ambassade---consulaat: "\E988";
+$icon-ambassade-consulaat: "\E988";
 $icon-school: "\E989";
 $icon-sector-speciaal-onderwijs: "\E98a";
 $icon-rechtbank: "\E98b";
@@ -87,441 +87,442 @@ $icon-gebouw-met-busje: "\E9ca";
 $icon-gemeentehuissvg: "\E9cb";
 
 :root {
-	--icon-2-hoge-gebouwen-met-pijl-naar-rechts: "#{$icon-2-hoge-gebouwen-met-pijl-naar-rechts}";
-	--icon-huurwoning: "#{$icon-huurwoning}";
-	--icon-bakkerijketens: "#{$icon-bakkerijketens}";
-	--icon-koopwoning: "#{$icon-koopwoning}";
-	--icon-cateringbedrijven: "#{$icon-cateringbedrijven}";
-	--icon-circulaire-bouw: "#{$icon-circulaire-bouw}";
-	--icon-dorp: "#{$icon-dorp}";
-	--icon-gemeente---en-provinciefonds: "#{$icon-gemeente---en-provinciefonds}";
-	--icon-leefbaarheid: "#{$icon-leefbaarheid}";
-	--icon-evenemententent: "#{$icon-evenemententent}";
-	--icon-festival-ehbo: "#{$icon-festival-ehbo}";
-	--icon-schone-industrie: "#{$icon-schone-industrie}";
-	--icon-fabriek-aan-water: "#{$icon-fabriek-aan-water}";
-	--icon-fabriek-met-stapel-munten: "#{$icon-fabriek-met-stapel-munten}";
-	--icon-uw-cak: "#{$icon-uw-cak}";
-	--icon-gebouw-cjib: "#{$icon-gebouw-cjib}";
-	--icon-gebouw-cvz: "#{$icon-gebouw-cvz}";
-	--icon-gebouw-igz: "#{$icon-gebouw-igz}";
-	--icon-villa: "#{$icon-villa}";
-	--icon-ambassade---consulaat: "#{$icon-ambassade---consulaat}";
-	--icon-school: "#{$icon-school}";
-	--icon-sector-speciaal-onderwijs: "#{$icon-sector-speciaal-onderwijs}";
-	--icon-rechtbank: "#{$icon-rechtbank}";
-	--icon-home: "#{$icon-home}";
-	--icon-overstroming-dreiging-1: "#{$icon-overstroming-dreiging-1}";
-	--icon-overstroming-dreiging-2: "#{$icon-overstroming-dreiging-2}";
-	--icon-overstroming-dreiging-3: "#{$icon-overstroming-dreiging-3}";
-	--icon-leegstand: "#{$icon-leegstand}";
-	--icon-kleinschalig-wonen: "#{$icon-kleinschalig-wonen}";
-	--icon-instortingsgevaar: "#{$icon-instortingsgevaar}";
-	--icon-woninginbraak: "#{$icon-woninginbraak}";
-	--icon-huis-visueel-gehandicapten: "#{$icon-huis-visueel-gehandicapten}";
-	--icon-huis-auditief-gehandicapten: "#{$icon-huis-auditief-gehandicapten}";
-	--icon-lokaal-welzijnswerk: "#{$icon-lokaal-welzijnswerk}";
-	--icon-huis-psychiatrische-patienten: "#{$icon-huis-psychiatrische-patienten}";
-	--icon-verpleeghuis: "#{$icon-verpleeghuis}";
-	--icon-huis-verstandelijk-gehandicapten: "#{$icon-huis-verstandelijk-gehandicapten}";
-	--icon-huis-lichamelijk-gehandicapten: "#{$icon-huis-lichamelijk-gehandicapten}";
-	--icon-woning-gelijkvloers-wel-rollator: "#{$icon-woning-gelijkvloers-wel-rollator}";
-	--icon-rolstoel-toegankelijke-woning: "#{$icon-rolstoel-toegankelijke-woning}";
-	--icon-huurtoeslag: "#{$icon-huurtoeslag}";
-	--icon-adl-woning: "#{$icon-adl-woning}";
-	--icon-huisvesting: "#{$icon-huisvesting}";
-	--icon-woning-met-verdieping: "#{$icon-woning-met-verdieping}";
-	--icon-woning-met-traplift: "#{$icon-woning-met-traplift}";
-	--icon-coffeeshop: "#{$icon-coffeeshop}";
-	--icon-coffeeshop-in-wijk: "#{$icon-coffeeshop-in-wijk}";
-	--icon-huiselijk-geweld: "#{$icon-huiselijk-geweld}";
-	--icon-beschermde-woonomgeving: "#{$icon-beschermde-woonomgeving}";
-	--icon-laag-huis: "#{$icon-laag-huis}";
-	--icon-grootstedelijk: "#{$icon-grootstedelijk}";
-	--icon-excellente-scholen: "#{$icon-excellente-scholen}";
-	--icon-gebouw-nvwa: "#{$icon-gebouw-nvwa}";
-	--icon-gebouw-vws: "#{$icon-gebouw-vws}";
-	--icon-gebouw-zini: "#{$icon-gebouw-zini}";
-	--icon-uitvoering: "#{$icon-uitvoering}";
-	--icon-hoog-huis: "#{$icon-hoog-huis}";
-	--icon-basis-kantoorgebouw: "#{$icon-basis-kantoorgebouw}";
-	--icon-schade: "#{$icon-schade}";
-	--icon-flat: "#{$icon-flat}";
-	--icon-leegstand-en-tijdelijk-gebruik: "#{$icon-leegstand-en-tijdelijk-gebruik}";
-	--icon-ziekenhuis: "#{$icon-ziekenhuis}";
-	--icon-gebouwenbeheer: "#{$icon-gebouwenbeheer}";
-	--icon-hoogbouw-met-pijl-naar-2-hoge-gebouwen: "#{$icon-hoogbouw-met-pijl-naar-2-hoge-gebouwen}";
-	--icon-man-torso-voor-hoogbouw: "#{$icon-man-torso-voor-hoogbouw}";
-	--icon-gebouw-ggz: "#{$icon-gebouw-ggz}";
-	--icon-zorgkantoor: "#{$icon-zorgkantoor}";
-	--icon-grote-brand: "#{$icon-grote-brand}";
-	--icon-actieve-gevel: "#{$icon-actieve-gevel}";
-	--icon-kantoor-vol-energie: "#{$icon-kantoor-vol-energie}";
-	--icon-ondernemingen: "#{$icon-ondernemingen}";
-	--icon-horecaketens: "#{$icon-horecaketens}";
-	--icon-toren: "#{$icon-toren}";
-	--icon-moskee: "#{$icon-moskee}";
-	--icon-ontwerp: "#{$icon-ontwerp}";
-	--icon-rijtjeshuis: "#{$icon-rijtjeshuis}";
-	--icon-industrie: "#{$icon-industrie}";
-	--icon-industrie-met-druppel-water: "#{$icon-industrie-met-druppel-water}";
-	--icon-schuur-met-silo-erachter: "#{$icon-schuur-met-silo-erachter}";
-	--icon-stacaravan: "#{$icon-stacaravan}";
-	--icon-supermarktketens: "#{$icon-supermarktketens}";
-	--icon-megastallen: "#{$icon-megastallen}";
-	--icon-smartphone: "#{$icon-smartphone}";
-	--icon-dreiging-van-buitenaf: "#{$icon-dreiging-van-buitenaf}";
-	--icon-drie-personen-in-huis: "#{$icon-drie-personen-in-huis}";
-	--icon-gebouw-met-busje: "#{$icon-gebouw-met-busje}";
-	--icon-gemeentehuissvg: "#{$icon-gemeentehuissvg}";
+  --icon-2-hoge-gebouwen-met-pijl-naar-rechts: "#{$icon-2-hoge-gebouwen-met-pijl-naar-rechts}";
+  --icon-huurwoning: "#{$icon-huurwoning}";
+  --icon-bakkerijketens: "#{$icon-bakkerijketens}";
+  --icon-koopwoning: "#{$icon-koopwoning}";
+  --icon-cateringbedrijven: "#{$icon-cateringbedrijven}";
+  --icon-circulaire-bouw: "#{$icon-circulaire-bouw}";
+  --icon-dorp: "#{$icon-dorp}";
+  --icon-gemeente-en-provinciefonds: "#{$icon-gemeente-en-provinciefonds}";
+  --icon-leefbaarheid: "#{$icon-leefbaarheid}";
+  --icon-evenemententent: "#{$icon-evenemententent}";
+  --icon-festival-ehbo: "#{$icon-festival-ehbo}";
+  --icon-schone-industrie: "#{$icon-schone-industrie}";
+  --icon-fabriek-aan-water: "#{$icon-fabriek-aan-water}";
+  --icon-fabriek-met-stapel-munten: "#{$icon-fabriek-met-stapel-munten}";
+  --icon-uw-cak: "#{$icon-uw-cak}";
+  --icon-gebouw-cjib: "#{$icon-gebouw-cjib}";
+  --icon-gebouw-cvz: "#{$icon-gebouw-cvz}";
+  --icon-gebouw-igz: "#{$icon-gebouw-igz}";
+  --icon-villa: "#{$icon-villa}";
+  --icon-ambassade-consulaat: "#{$icon-ambassade-consulaat}";
+  --icon-school: "#{$icon-school}";
+  --icon-sector-speciaal-onderwijs: "#{$icon-sector-speciaal-onderwijs}";
+  --icon-rechtbank: "#{$icon-rechtbank}";
+  --icon-home: "#{$icon-home}";
+  --icon-overstroming-dreiging-1: "#{$icon-overstroming-dreiging-1}";
+  --icon-overstroming-dreiging-2: "#{$icon-overstroming-dreiging-2}";
+  --icon-overstroming-dreiging-3: "#{$icon-overstroming-dreiging-3}";
+  --icon-leegstand: "#{$icon-leegstand}";
+  --icon-kleinschalig-wonen: "#{$icon-kleinschalig-wonen}";
+  --icon-instortingsgevaar: "#{$icon-instortingsgevaar}";
+  --icon-woninginbraak: "#{$icon-woninginbraak}";
+  --icon-huis-visueel-gehandicapten: "#{$icon-huis-visueel-gehandicapten}";
+  --icon-huis-auditief-gehandicapten: "#{$icon-huis-auditief-gehandicapten}";
+  --icon-lokaal-welzijnswerk: "#{$icon-lokaal-welzijnswerk}";
+  --icon-huis-psychiatrische-patienten: "#{$icon-huis-psychiatrische-patienten}";
+  --icon-verpleeghuis: "#{$icon-verpleeghuis}";
+  --icon-huis-verstandelijk-gehandicapten: "#{$icon-huis-verstandelijk-gehandicapten}";
+  --icon-huis-lichamelijk-gehandicapten: "#{$icon-huis-lichamelijk-gehandicapten}";
+  --icon-woning-gelijkvloers-wel-rollator: "#{$icon-woning-gelijkvloers-wel-rollator}";
+  --icon-rolstoel-toegankelijke-woning: "#{$icon-rolstoel-toegankelijke-woning}";
+  --icon-huurtoeslag: "#{$icon-huurtoeslag}";
+  --icon-adl-woning: "#{$icon-adl-woning}";
+  --icon-huisvesting: "#{$icon-huisvesting}";
+  --icon-woning-met-verdieping: "#{$icon-woning-met-verdieping}";
+  --icon-woning-met-traplift: "#{$icon-woning-met-traplift}";
+  --icon-coffeeshop: "#{$icon-coffeeshop}";
+  --icon-coffeeshop-in-wijk: "#{$icon-coffeeshop-in-wijk}";
+  --icon-huiselijk-geweld: "#{$icon-huiselijk-geweld}";
+  --icon-beschermde-woonomgeving: "#{$icon-beschermde-woonomgeving}";
+  --icon-laag-huis: "#{$icon-laag-huis}";
+  --icon-grootstedelijk: "#{$icon-grootstedelijk}";
+  --icon-excellente-scholen: "#{$icon-excellente-scholen}";
+  --icon-gebouw-nvwa: "#{$icon-gebouw-nvwa}";
+  --icon-gebouw-vws: "#{$icon-gebouw-vws}";
+  --icon-gebouw-zini: "#{$icon-gebouw-zini}";
+  --icon-uitvoering: "#{$icon-uitvoering}";
+  --icon-hoog-huis: "#{$icon-hoog-huis}";
+  --icon-basis-kantoorgebouw: "#{$icon-basis-kantoorgebouw}";
+  --icon-schade: "#{$icon-schade}";
+  --icon-flat: "#{$icon-flat}";
+  --icon-leegstand-en-tijdelijk-gebruik: "#{$icon-leegstand-en-tijdelijk-gebruik}";
+  --icon-ziekenhuis: "#{$icon-ziekenhuis}";
+  --icon-gebouwenbeheer: "#{$icon-gebouwenbeheer}";
+  --icon-hoogbouw-met-pijl-naar-2-hoge-gebouwen: "#{$icon-hoogbouw-met-pijl-naar-2-hoge-gebouwen}";
+  --icon-man-torso-voor-hoogbouw: "#{$icon-man-torso-voor-hoogbouw}";
+  --icon-gebouw-ggz: "#{$icon-gebouw-ggz}";
+  --icon-zorgkantoor: "#{$icon-zorgkantoor}";
+  --icon-grote-brand: "#{$icon-grote-brand}";
+  --icon-actieve-gevel: "#{$icon-actieve-gevel}";
+  --icon-kantoor-vol-energie: "#{$icon-kantoor-vol-energie}";
+  --icon-ondernemingen: "#{$icon-ondernemingen}";
+  --icon-horecaketens: "#{$icon-horecaketens}";
+  --icon-toren: "#{$icon-toren}";
+  --icon-moskee: "#{$icon-moskee}";
+  --icon-ontwerp: "#{$icon-ontwerp}";
+  --icon-rijtjeshuis: "#{$icon-rijtjeshuis}";
+  --icon-industrie: "#{$icon-industrie}";
+  --icon-industrie-met-druppel-water: "#{$icon-industrie-met-druppel-water}";
+  --icon-schuur-met-silo-erachter: "#{$icon-schuur-met-silo-erachter}";
+  --icon-stacaravan: "#{$icon-stacaravan}";
+  --icon-supermarktketens: "#{$icon-supermarktketens}";
+  --icon-megastallen: "#{$icon-megastallen}";
+  --icon-smartphone: "#{$icon-smartphone}";
+  --icon-dreiging-van-buitenaf: "#{$icon-dreiging-van-buitenaf}";
+  --icon-drie-personen-in-huis: "#{$icon-drie-personen-in-huis}";
+  --icon-gebouw-met-busje: "#{$icon-gebouw-met-busje}";
+  --icon-gemeentehuissvg: "#{$icon-gemeentehuissvg}";
 }
 
 .icon,
 .icon-only {
-	&.icon-2-hoge-gebouwen-met-pijl-naar-rechts:before {
-		content: $icon-2-hoge-gebouwen-met-pijl-naar-rechts;
-	}
-
-	&.icon-huurwoning:before {
-		content: $icon-huurwoning;
-	}
-
-	&.icon-bakkerijketens:before {
-		content: $icon-bakkerijketens;
-	}
-
-	&.icon-koopwoning:before {
-		content: $icon-koopwoning;
-	}
-
-	&.icon-cateringbedrijven:before {
-		content: $icon-cateringbedrijven;
-	}
-
-	&.icon-circulaire-bouw:before {
-		content: $icon-circulaire-bouw;
-	}
-
-	&.icon-dorp:before {
-		content: $icon-dorp;
-	}
-
-	&.icon-gemeente---en-provinciefonds:before {
-		content: $icon-gemeente---en-provinciefonds;
-	}
-
-	&.icon-leefbaarheid:before {
-		content: $icon-leefbaarheid;
-	}
-
-	&.icon-evenemententent:before {
-		content: $icon-evenemententent;
-	}
-
-	&.icon-festival-ehbo:before {
-		content: $icon-festival-ehbo;
-	}
-
-	&.icon-schone-industrie:before {
-		content: $icon-schone-industrie;
-	}
-
-	&.icon-fabriek-aan-water:before {
-		content: $icon-fabriek-aan-water;
-	}
-
-	&.icon-fabriek-met-stapel-munten:before {
-		content: $icon-fabriek-met-stapel-munten;
-	}
-
-	&.icon-uw-cak:before {
-		content: $icon-uw-cak;
-	}
-
-	&.icon-gebouw-cjib:before {
-		content: $icon-gebouw-cjib;
-	}
-
-	&.icon-gebouw-cvz:before {
-		content: $icon-gebouw-cvz;
-	}
-
-	&.icon-gebouw-igz:before {
-		content: $icon-gebouw-igz;
-	}
-
-	&.icon-villa:before {
-		content: $icon-villa;
-	}
-
-	&.icon-ambassade---consulaat:before {
-		content: $icon-ambassade---consulaat;
-	}
-
-	&.icon-school:before {
-		content: $icon-school;
-	}
-
-	&.icon-sector-speciaal-onderwijs:before {
-		content: $icon-sector-speciaal-onderwijs;
-	}
-
-	&.icon-rechtbank:before {
-		content: $icon-rechtbank;
-	}
-
-	&.icon-home:before {
-		content: $icon-home;
-	}
-
-	&.icon-overstroming-dreiging-1:before {
-		content: $icon-overstroming-dreiging-1;
-	}
-
-	&.icon-overstroming-dreiging-2:before {
-		content: $icon-overstroming-dreiging-2;
-	}
-
-	&.icon-overstroming-dreiging-3:before {
-		content: $icon-overstroming-dreiging-3;
-	}
-
-	&.icon-leegstand:before {
-		content: $icon-leegstand;
-	}
-
-	&.icon-kleinschalig-wonen:before {
-		content: $icon-kleinschalig-wonen;
-	}
-
-	&.icon-instortingsgevaar:before {
-		content: $icon-instortingsgevaar;
-	}
-
-	&.icon-woninginbraak:before {
-		content: $icon-woninginbraak;
-	}
-
-	&.icon-huis-visueel-gehandicapten:before {
-		content: $icon-huis-visueel-gehandicapten;
-	}
-
-	&.icon-huis-auditief-gehandicapten:before {
-		content: $icon-huis-auditief-gehandicapten;
-	}
-
-	&.icon-lokaal-welzijnswerk:before {
-		content: $icon-lokaal-welzijnswerk;
-	}
-
-	&.icon-huis-psychiatrische-patienten:before {
-		content: $icon-huis-psychiatrische-patienten;
-	}
-
-	&.icon-verpleeghuis:before {
-		content: $icon-verpleeghuis;
-	}
-
-	&.icon-huis-verstandelijk-gehandicapten:before {
-		content: $icon-huis-verstandelijk-gehandicapten;
-	}
-
-	&.icon-huis-lichamelijk-gehandicapten:before {
-		content: $icon-huis-lichamelijk-gehandicapten;
-	}
-
-	&.icon-woning-gelijkvloers-wel-rollator:before {
-		content: $icon-woning-gelijkvloers-wel-rollator;
-	}
-
-	&.icon-rolstoel-toegankelijke-woning:before {
-		content: $icon-rolstoel-toegankelijke-woning;
-	}
-	&.icon-huurtoeslag:before {
-		content: $icon-huurtoeslag;
-	}
-
-	&.icon-adl-woning:before {
-		content: $icon-adl-woning;
-	}
-
-	&.icon-huisvesting:before {
-		content: $icon-huisvesting;
-	}
-
-	&.icon-woning-met-verdieping:before {
-		content: $icon-woning-met-verdieping;
-	}
-
-	&.icon-woning-met-traplift:before {
-		content: $icon-woning-met-traplift;
-	}
-
-	&.icon-coffeeshop:before {
-		content: $icon-coffeeshop;
-	}
-
-	&.icon-coffeeshop-in-wijk:before {
-		content: $icon-coffeeshop-in-wijk;
-	}
-
-	&.icon-huiselijk-geweld:before {
-		content: $icon-huiselijk-geweld;
-	}
-
-	&.icon-beschermde-woonomgeving:before {
-		content: $icon-beschermde-woonomgeving;
-	}
-
-	&.icon-laag-huis:before {
-		content: $icon-laag-huis;
-	}
-
-	&.icon-grootstedelijk:before {
-		content: $icon-grootstedelijk;
-	}
-
-	&.icon-excellente-scholen:before {
-		content: $icon-excellente-scholen;
-	}
-
-	&.icon-gebouw-nvwa:before {
-		content: $icon-gebouw-nvwa;
-	}
-
-	&.icon-gebouw-vws:before {
-		content: $icon-gebouw-vws;
-	}
-
-	&.icon-gebouw-zini:before {
-		content: $icon-gebouw-zini;
-	}
-
-	&.icon-uitvoering:before {
-		content: $icon-uitvoering;
-	}
-
-	&.icon-hoog-huis:before {
-		content: $icon-hoog-huis;
-	}
-
-	&.icon-basis-kantoorgebouw:before {
-		content: $icon-basis-kantoorgebouw;
-	}
-
-	&.icon-schade:before {
-		content: $icon-schade;
-	}
-
-	&.icon-flat:before {
-		content: $icon-flat;
-	}
-
-	&.icon-leegstand-en-tijdelijk-gebruik:before {
-		content: $icon-leegstand-en-tijdelijk-gebruik;
-	}
-
-	&.icon-ziekenhuis:before {
-		content: $icon-ziekenhuis;
-	}
-
-	&.icon-gebouwenbeheer:before {
-		content: $icon-gebouwenbeheer;
-	}
-
-	&.icon-hoogbouw-met-pijl-naar-2-hoge-gebouwen:before {
-		content: $icon-hoogbouw-met-pijl-naar-2-hoge-gebouwen;
-	}
-
-	&.icon-man-torso-voor-hoogbouw:before {
-		content: $icon-man-torso-voor-hoogbouw;
-	}
-
-	&.icon-gebouw-ggz:before {
-		content: $icon-gebouw-ggz;
-	}
-
-	&.icon-zorgkantoor:before {
-		content: $icon-zorgkantoor;
-	}
-
-	&.icon-grote-brand:before {
-		content: $icon-grote-brand;
-	}
-
-	&.icon-actieve-gevel:before {
-		content: $icon-actieve-gevel;
-	}
-
-	&.icon-kantoor-vol-energie:before {
-		content: $icon-kantoor-vol-energie;
-	}
-
-	&.icon-ondernemingen:before {
-		content: $icon-ondernemingen;
-	}
-
-	&.icon-horecaketens:before {
-		content: $icon-horecaketens;
-	}
-
-	&.icon-toren:before {
-		content: $icon-toren;
-	}
-
-	&.icon-moskee:before {
-		content: $icon-moskee;
-	}
-
-	&.icon-ontwerp:before {
-		content: $icon-ontwerp;
-	}
-
-	&.icon-rijtjeshuis:before {
-		content: $icon-rijtjeshuis;
-	}
-
-	&.icon-industrie:before {
-		content: $icon-industrie;
-	}
-
-	&.icon-industrie-met-druppel-water:before {
-		content: $icon-industrie-met-druppel-water;
-	}
-
-	&.icon-schuur-met-silo-erachter:before {
-		content: $icon-schuur-met-silo-erachter;
-	}
-
-	&.icon-stacaravan:before {
-		content: $icon-stacaravan;
-	}
-
-	&.icon-supermarktketens:before {
-		content: $icon-supermarktketens;
-	}
-
-	&.icon-megastallen:before {
-		content: $icon-megastallen;
-	}
-
-	&.icon-smartphone:before {
-		content: $icon-smartphone;
-	}
-
-	&.icon-dreiging-van-buitenaf:before {
-		content: $icon-dreiging-van-buitenaf;
-	}
-
-	&.icon-drie-personen-in-huis:before {
-		content: $icon-drie-personen-in-huis;
-	}
-
-	&.icon-gebouw-met-busje:before {
-		content: $icon-gebouw-met-busje;
-	}
-
-	&.icon-gemeentehuissvg:before {
-		content: $icon-gemeentehuissvg;
-	}
+  &.icon-2-hoge-gebouwen-met-pijl-naar-rechts::before {
+    content: $icon-2-hoge-gebouwen-met-pijl-naar-rechts;
+  }
+
+  &.icon-huurwoning::before {
+    content: $icon-huurwoning;
+  }
+
+  &.icon-bakkerijketens::before {
+    content: $icon-bakkerijketens;
+  }
+
+  &.icon-koopwoning::before {
+    content: $icon-koopwoning;
+  }
+
+  &.icon-cateringbedrijven::before {
+    content: $icon-cateringbedrijven;
+  }
+
+  &.icon-circulaire-bouw::before {
+    content: $icon-circulaire-bouw;
+  }
+
+  &.icon-dorp::before {
+    content: $icon-dorp;
+  }
+
+  &.icon-gemeente-en-provinciefonds::before {
+    content: $icon-gemeente-en-provinciefonds;
+  }
+
+  &.icon-leefbaarheid::before {
+    content: $icon-leefbaarheid;
+  }
+
+  &.icon-evenemententent::before {
+    content: $icon-evenemententent;
+  }
+
+  &.icon-festival-ehbo::before {
+    content: $icon-festival-ehbo;
+  }
+
+  &.icon-schone-industrie::before {
+    content: $icon-schone-industrie;
+  }
+
+  &.icon-fabriek-aan-water::before {
+    content: $icon-fabriek-aan-water;
+  }
+
+  &.icon-fabriek-met-stapel-munten::before {
+    content: $icon-fabriek-met-stapel-munten;
+  }
+
+  &.icon-uw-cak::before {
+    content: $icon-uw-cak;
+  }
+
+  &.icon-gebouw-cjib::before {
+    content: $icon-gebouw-cjib;
+  }
+
+  &.icon-gebouw-cvz::before {
+    content: $icon-gebouw-cvz;
+  }
+
+  &.icon-gebouw-igz::before {
+    content: $icon-gebouw-igz;
+  }
+
+  &.icon-villa::before {
+    content: $icon-villa;
+  }
+
+  &.icon-ambassade-consulaat::before {
+    content: $icon-ambassade-consulaat;
+  }
+
+  &.icon-school::before {
+    content: $icon-school;
+  }
+
+  &.icon-sector-speciaal-onderwijs::before {
+    content: $icon-sector-speciaal-onderwijs;
+  }
+
+  &.icon-rechtbank::before {
+    content: $icon-rechtbank;
+  }
+
+  &.icon-home::before {
+    content: $icon-home;
+  }
+
+  &.icon-overstroming-dreiging-1::before {
+    content: $icon-overstroming-dreiging-1;
+  }
+
+  &.icon-overstroming-dreiging-2::before {
+    content: $icon-overstroming-dreiging-2;
+  }
+
+  &.icon-overstroming-dreiging-3::before {
+    content: $icon-overstroming-dreiging-3;
+  }
+
+  &.icon-leegstand::before {
+    content: $icon-leegstand;
+  }
+
+  &.icon-kleinschalig-wonen::before {
+    content: $icon-kleinschalig-wonen;
+  }
+
+  &.icon-instortingsgevaar::before {
+    content: $icon-instortingsgevaar;
+  }
+
+  &.icon-woninginbraak::before {
+    content: $icon-woninginbraak;
+  }
+
+  &.icon-huis-visueel-gehandicapten::before {
+    content: $icon-huis-visueel-gehandicapten;
+  }
+
+  &.icon-huis-auditief-gehandicapten::before {
+    content: $icon-huis-auditief-gehandicapten;
+  }
+
+  &.icon-lokaal-welzijnswerk::before {
+    content: $icon-lokaal-welzijnswerk;
+  }
+
+  &.icon-huis-psychiatrische-patienten::before {
+    content: $icon-huis-psychiatrische-patienten;
+  }
+
+  &.icon-verpleeghuis::before {
+    content: $icon-verpleeghuis;
+  }
+
+  &.icon-huis-verstandelijk-gehandicapten::before {
+    content: $icon-huis-verstandelijk-gehandicapten;
+  }
+
+  &.icon-huis-lichamelijk-gehandicapten::before {
+    content: $icon-huis-lichamelijk-gehandicapten;
+  }
+
+  &.icon-woning-gelijkvloers-wel-rollator::before {
+    content: $icon-woning-gelijkvloers-wel-rollator;
+  }
+
+  &.icon-rolstoel-toegankelijke-woning::before {
+    content: $icon-rolstoel-toegankelijke-woning;
+  }
+
+  &.icon-huurtoeslag::before {
+    content: $icon-huurtoeslag;
+  }
+
+  &.icon-adl-woning::before {
+    content: $icon-adl-woning;
+  }
+
+  &.icon-huisvesting::before {
+    content: $icon-huisvesting;
+  }
+
+  &.icon-woning-met-verdieping::before {
+    content: $icon-woning-met-verdieping;
+  }
+
+  &.icon-woning-met-traplift::before {
+    content: $icon-woning-met-traplift;
+  }
+
+  &.icon-coffeeshop::before {
+    content: $icon-coffeeshop;
+  }
+
+  &.icon-coffeeshop-in-wijk::before {
+    content: $icon-coffeeshop-in-wijk;
+  }
+
+  &.icon-huiselijk-geweld::before {
+    content: $icon-huiselijk-geweld;
+  }
+
+  &.icon-beschermde-woonomgeving::before {
+    content: $icon-beschermde-woonomgeving;
+  }
+
+  &.icon-laag-huis::before {
+    content: $icon-laag-huis;
+  }
+
+  &.icon-grootstedelijk::before {
+    content: $icon-grootstedelijk;
+  }
+
+  &.icon-excellente-scholen::before {
+    content: $icon-excellente-scholen;
+  }
+
+  &.icon-gebouw-nvwa::before {
+    content: $icon-gebouw-nvwa;
+  }
+
+  &.icon-gebouw-vws::before {
+    content: $icon-gebouw-vws;
+  }
+
+  &.icon-gebouw-zini::before {
+    content: $icon-gebouw-zini;
+  }
+
+  &.icon-uitvoering::before {
+    content: $icon-uitvoering;
+  }
+
+  &.icon-hoog-huis::before {
+    content: $icon-hoog-huis;
+  }
+
+  &.icon-basis-kantoorgebouw::before {
+    content: $icon-basis-kantoorgebouw;
+  }
+
+  &.icon-schade::before {
+    content: $icon-schade;
+  }
+
+  &.icon-flat::before {
+    content: $icon-flat;
+  }
+
+  &.icon-leegstand-en-tijdelijk-gebruik::before {
+    content: $icon-leegstand-en-tijdelijk-gebruik;
+  }
+
+  &.icon-ziekenhuis::before {
+    content: $icon-ziekenhuis;
+  }
+
+  &.icon-gebouwenbeheer::before {
+    content: $icon-gebouwenbeheer;
+  }
+
+  &.icon-hoogbouw-met-pijl-naar-2-hoge-gebouwen::before {
+    content: $icon-hoogbouw-met-pijl-naar-2-hoge-gebouwen;
+  }
+
+  &.icon-man-torso-voor-hoogbouw::before {
+    content: $icon-man-torso-voor-hoogbouw;
+  }
+
+  &.icon-gebouw-ggz::before {
+    content: $icon-gebouw-ggz;
+  }
+
+  &.icon-zorgkantoor::before {
+    content: $icon-zorgkantoor;
+  }
+
+  &.icon-grote-brand::before {
+    content: $icon-grote-brand;
+  }
+
+  &.icon-actieve-gevel::before {
+    content: $icon-actieve-gevel;
+  }
+
+  &.icon-kantoor-vol-energie::before {
+    content: $icon-kantoor-vol-energie;
+  }
+
+  &.icon-ondernemingen::before {
+    content: $icon-ondernemingen;
+  }
+
+  &.icon-horecaketens::before {
+    content: $icon-horecaketens;
+  }
+
+  &.icon-toren::before {
+    content: $icon-toren;
+  }
+
+  &.icon-moskee::before {
+    content: $icon-moskee;
+  }
+
+  &.icon-ontwerp::before {
+    content: $icon-ontwerp;
+  }
+
+  &.icon-rijtjeshuis::before {
+    content: $icon-rijtjeshuis;
+  }
+
+  &.icon-industrie::before {
+    content: $icon-industrie;
+  }
+
+  &.icon-industrie-met-druppel-water::before {
+    content: $icon-industrie-met-druppel-water;
+  }
+
+  &.icon-schuur-met-silo-erachter::before {
+    content: $icon-schuur-met-silo-erachter;
+  }
+
+  &.icon-stacaravan::before {
+    content: $icon-stacaravan;
+  }
+
+  &.icon-supermarktketens::before {
+    content: $icon-supermarktketens;
+  }
+
+  &.icon-megastallen::before {
+    content: $icon-megastallen;
+  }
+
+  &.icon-smartphone::before {
+    content: $icon-smartphone;
+  }
+
+  &.icon-dreiging-van-buitenaf::before {
+    content: $icon-dreiging-van-buitenaf;
+  }
+
+  &.icon-drie-personen-in-huis::before {
+    content: $icon-drie-personen-in-huis;
+  }
+
+  &.icon-gebouw-met-busje::before {
+    content: $icon-gebouw-met-busje;
+  }
+
+  &.icon-gemeentehuissvg::before {
+    content: $icon-gemeentehuissvg;
+  }
 }

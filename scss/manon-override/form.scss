@@ -42,7 +42,7 @@ form.horizontal-view > {
     }
   }
 
-  @media screen and (min-width: 32rem) {
+  @media screen and (width >= 32rem) {
     div.horizontal-view:last-child {
       margin: 0;
       margin-left: calc((33.33%) + var(--form-horizontal-view-gap));
@@ -76,7 +76,7 @@ form.horizontal-view > {
     }
   }
 
-  @media screen and (min-width: 50rem) {
+  @media screen and (width >= 50rem) {
     div.horizontal-view:last-child {
       button,
       a.button,
@@ -125,7 +125,7 @@ form.horizontal-view {
     > div {
       gap: 0; /* resetting gap as it can not be used within fieldsets */
 
-      @media (min-width: 24rem) {
+      @media (width >= 24rem) {
         > * {
           gap: 0; /* resetting gap as it can not be used within fieldsets */
           width: calc(
@@ -145,7 +145,7 @@ form.horizontal-view {
       }
     }
 
-    @media screen and (min-width: 32rem) {
+    @media screen and (width >= 32rem) {
       .checkbox {
         margin-left: calc((33.33%) + var(--form-horizontal-view-gap));
         width: calc(var(--form-horizontal-view-input-max-width) - var(--form-horizontal-view-gap));

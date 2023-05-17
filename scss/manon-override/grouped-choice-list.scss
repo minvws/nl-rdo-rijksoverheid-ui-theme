@@ -3,7 +3,7 @@
 /* Add these fixes to manon */
 
 form.horizontal-view > fieldset.grouped-choice-list {
-  @media screen and (min-width: 32rem) {
+  @media screen and (width >= 32rem) {
     legend {
       margin-bottom: -2rem;
       top: 0;
