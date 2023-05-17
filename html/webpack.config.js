@@ -11,7 +11,7 @@ module.exports = {
     expandoRows: "@minvws/manon/expando-rows.js",
     filters: "@minvws/manon/filters.js",
     formHelp: "@minvws/manon/form-help.js",
-    navigation: "@minvws/manon/navigation.js",
+    collapsible: "@minvws/manon/collapsible.js",
     sidemenu: "@minvws/manon/sidemenu.js",
     main: "../scss/main.scss",
   },

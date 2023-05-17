@@ -2,31 +2,43 @@
 <html lang="nl">
   <head>
     <meta charset="UTF-8">
-    <title>header - Rijksoverheid CSS</title>
+    <title>Voorbeeld Navigatiebalk enkel element - Rijksoverheid CSS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../dist/css/main.css" rel="stylesheet">
     <link href="../dist/img/favicon.ico" rel="shortcut icon">
-    <script defer src="../dist/js/collapsible.js"></script>
+    <script defer src="../dist/js/collapsibleMenu.js"></script>
     <script defer src="../dist/js/sidemenu.js"></script>
   </head>
   <body class="test-cases">
     <header>
-      <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
-      <a href="../index.html" class="ro-logo" aria-label="Logo Rijksoverheid, ga naar de homepage van Manon">
-        <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
-        Rijksoverheid
-      </a>
-
-      <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
+        <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
+        <a href="../index.html" class="ro-logo" aria-label="Logo Rijksoverheid, ga naar de homepage van Manon">
+            <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
+            Rijksoverheid
+        </a>
+    
         <div>
-          <ul>
-              <li><a href="../index.html">Rijksoverheid CSS</a></li>
-              <li><a href="index.html">Online Componenten Bibliotheek</a></li>
-              <li><a href="#" aria-current="page">Header-element met hoofdnavigatie</a></li>
-          </ul>
+            <nav aria-label="Hoofdnavigatie" class="collapsible-menu">
+                <div class="collapsing-menu">
+                    <ul>
+                        <li><a href="../index.html">Over</a></li>
+                        <li><a href="../test/index.html">Styling tests</a></li>
+                        <li><a href="index.html">Online componenten bibliotheek</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-      </nav>
 
+        <nav class="breadcrumb-bar">
+            <div>
+                <ul>
+                    <li><a href="../index.html">Rijksoverheid CSS</a></li>
+                    <li><a href="index.html">Online Componenten Bibliotheek</a></li>
+                    <li><a href="header-main-nav.html">Header-element met hoofdnavigatie</a></li>
+                    <li><a href="#" aria-current="page">Navigatiebalk enkel element</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <main class="sidemenu" id="main-content" tabindex="-1">
@@ -57,44 +69,7 @@
       <div>
         <article>
           <div>
-            <h1>Header-element met hoofdnavigatie</h1>
-            <p>De navigatiebalk vormt samen met het logo een herkenbaar onderdeel in Rijkshuisstijl websites. En wordt gebruikt bovenaan iedere pagina.</p>
-
-            <ul>
-              <li>In de navigatiebalk kunnen verschillende elementen toegevoegd worden afhankelijk van de benodigdheden per website en applicatie. Zo kunnen er bijvoorbeeld de navigatielinks, een zoekfunctie of de inlogfunctie komen te staan.</li>
-              <li>Het type navigatiebalk hangt af van de pagina waar de gebruiker zich op bevind:
-                <ul>
-                  <li>De navigatiebalk met <a href="#nav-tabs">tabbladnavigatie</a> dient toegepast te worden op pagina's die zich op de hoogste navigatielaag bevinden. Denk bijvoorbeeld aan de hoofdpagina van de site.</li>
-                  <li>Subpagina's dienen gebruik te maken van de <a href="#nav-breadcrumbs">kruimelpadnavigatie</a> zodat de gebruiker een duidelijk overzicht heeft van de afgelegde route.</li>
-                </ul>
-              </li>
-              <li>Het eerste element binnen de navigatie dient altijd de hoofdpagina te zijn. Zowel binnen de tabbladnavigatie als binnen de kruimelpadnavigatie. Hierbij kan gebruik gemaakt worden van de het woord <dfn>Hoofdpagina</dfn> of de titel van de instantie of applicatie. Aan deze link wordt automatisch het "home"-icoon toegevoegd.</li>
-            </ul>
-
-            <p>Beschikbare voorbeelden:</p>
-            <nav aria-label="Document-navigatie">
-                <ul>
-                    <li><a href="#nav-alignment">Uitlijning</a>
-                      <ul>
-                        <li><a href="#nav-alignment-default">Navigatiebalk enkel element</a></li>
-                        <li><a href="#nav-alignment-multiple">Navigatiebalk meerdere elementen</a></li>
-                      </ul>
-
-                    </li>
-                    <li><a href="#nav-tabs">Navigatiebalk met tabbladnavigatie</a>
-                      <ul>
-                        <li><a href="#nav-tabs-responsive">Navigatiebalk met responsive kruimelpadnavigatie</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#nav-breadcrumbs">Kruimelpadnavigatie</a>
-                      <ul>
-                        <li><a href="#nav-breadcrumbs">Navigatiebalk met kruimelpadnavigatie</a></li>
-                        <li><a href="#nav-breadcrumbs-search">Navigatiebalk met kruimelpadnavigatie en zoekfunctie</a></li>
-                        <li><a href="#nav-breadcrumbs-search-login">Navigatiebalk met kruimelpadnavigatie, zoekfunctie en loginfunctie</a></li>
-                      </ul>
-                    </li>
-                </ul>
-            </nav>
+            <h2>Navigatiebalk enkel element</h2>
           </div>
         </article>
 
@@ -375,14 +350,14 @@
             <p>Visueel voorbeeld:</p>
           </div>
 
-          <header>
+          <header class="breadcrumbs">
             <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
             <a href="#" class="ro-logo" aria-label="Logo Rijksoverheid, ga naar de homepage van Manon">
               <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
               Rijksoverheid
             </a>
 
-            <nav aria-label="Kruimelpad" class="breadcrumb-bar">
+            <nav aria-label="Kruimelpad">
               <div>
                 <ol>
                   <li><a href="#">Hoofdpagina</a></li>
@@ -397,13 +372,13 @@
             <p>Html-voorbeeld:</p>
             <pre>
               <code>
-&lt;header>
+&lt;header class="breadcrumbs">
   &lt;a href="/" class="ro-logo" aria-label="Logo Rijksoverheid, ga naar de homepage van Manon">
     &lt;img src="static/img/ro-logo.svg" alt="Logo Rijksoverheid">
     Rijksoverheid
   &lt;/a>
 
-  &lt;nav aria-label="Kruimelpad" class="breadcrumb-bar">
+  &lt;nav aria-label="Kruimelpad">
     &lt;div>
       &lt;ol>
         &lt;li>&lt;a href="/">Hoofdpagina&lt;/a>&lt;/li>
@@ -428,7 +403,7 @@
             <p>Visueel voorbeeld:</p>
           </div>
 
-          <header>
+          <header class="breadcrumbs">
       <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
             <a href="#" class="ro-logo" aria-label="Logo Rijksoverheid, ga naar de homepage van Manon">
               <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
@@ -437,7 +412,7 @@
 
             <section>
               <div>
-                <nav aria-label="Kruimelpad" class="breadcrumb-bar">
+                <nav aria-label="Kruimelpad">
                   <ol>
                     <li><a href="../index.html">Hoofdpagina</a></li>
                     <li><a href="index.html">Ipsum</a></li>
@@ -458,7 +433,7 @@
             <p>Html-voorbeeld:</p>
             <pre>
               <code>
-&lt;header>
+&lt;header class="breadcrumbs">
   &lt;a href="/" class="ro-logo" aria-label="Logo Rijksoverheid, ga naar de homepage van Manon">
     &lt;img src="static/img/ro-logo.svg" alt="Logo Rijksoverheid">
     Rijksoverheid
@@ -467,7 +442,7 @@
   &lt;section>
     &lt;div>
 
-      &lt;nav aria-label="Kruimelpad" class="breadcrumb-bar">
+      &lt;nav aria-label="Kruimelpad">
         &lt;ol>
           &lt;li>&lt;a href="../index.html">Hoofdpagina&lt;/a>&lt;/li>
           &lt;li>&lt;a href="index.html">Ipsum&lt;/a>&lt;/li>
@@ -500,7 +475,7 @@
             <p>Visueel voorbeeld:</p>
           </div>
 
-          <header>
+          <header class="breadcrumbs">
       <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
             <a href="#" class="ro-logo" aria-label="Logo Rijksoverheid, ga naar de homepage van Manon">
               <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
@@ -510,7 +485,7 @@
             <section>
               <div>
 
-                <nav aria-label="Kruimelpad" class="breadcrumb-bar">
+                <nav aria-label="Kruimelpad">
                   <ol>
                     <li><a href="../index.html">Hoofdpagina</a></li>
                     <li><a href="index.html">Ipsum</a></li>
@@ -534,7 +509,7 @@
             <p>Html-voorbeeld:</p>
             <pre>
               <code>
-&lt;header>
+&lt;header class="breadcrumbs">
   &lt;a href="/" class="ro-logo" aria-label="Logo Rijksoverheid, ga naar de homepage van Manon">
     &lt;img src="static/img/ro-logo.svg" alt="Logo Rijksoverheid">
     Rijksoverheid
@@ -543,7 +518,7 @@
   &lt;section>
     &lt;div>
 
-      &lt;nav aria-label="Kruimelpad" class="breadcrumb-bar">
+      &lt;nav aria-label="Kruimelpad">
         &lt;ol>
           &lt;li>&lt;a href="../index.html">Hoofdpagina&lt;/a>&lt;/li>
           &lt;li>&lt;a href="index.html">Ipsum&lt;/a>&lt;/li>
@@ -572,8 +547,8 @@
     </main>
 
     <footer>
-      <div class="two-thirds-one-third">
-        <span class="slogan">Manon - Rijksoverheid css framework</span>
+      <div>
+        <span>Manon - Rijksoverheid css framework</span>
         <nav aria-labelledby="footer-nav-1-heading">
           <h1 id="footer-nav-1-heading">Service</h1>
           <ul>
