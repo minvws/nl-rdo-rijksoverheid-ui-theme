@@ -3433,7 +3433,7 @@
         <h4>Voorbeeld</h4>
         <p>Visueel voorbeeld:</p>
         <form action="" method="post">
-          <div>
+          <div class="radio">
             <input
               type="radio"
               id="radio-example-default-1"
@@ -3452,7 +3452,7 @@
         <pre>
 							<code>
 &lt;form action="" method="post">
-	&lt;div>
+	&lt;div class="radio">
 		&lt;input
 			type="radio"
 			id="radio-example-default-1"
@@ -3472,7 +3472,7 @@
         <h4>Voorbeeld weergave in kolommen</h4>
         <p>Visueel voorbeeld:</p>
         <form action="" method="post" class="horizontal-view">
-          <div>
+          <div class="radio">
             <input
               type="radio"
               id="radio-example-default-2"
@@ -3492,7 +3492,7 @@
         <pre>
 							<code>
 &lt;form action="" method="post" class="horizontal-view">
-	&lt;div>
+	&lt;div class="radio">
 		&lt;input
 			type="radio"
 			id="radio-example-default-2"
@@ -3513,17 +3513,19 @@
         <h4>Voorbeeld</h4>
         <p>Visueel voorbeeld:</p>
         <form action="" method="post">
-          <div class="required">
+          <div class="radio required">
             <span class="nota-bene">Dit veld is verplicht</span>
-            <input
-              type="radio"
-              id="radio-example-default-3"
-              name="standaard-radiobutton"
-              value="value"
-              required
-              aria-describedby="radio-example-default-3-message"
-              aria-invalid="true">
-            <label for="radio-example-default-3">Lorem ipsum dolor set amet</label>
+            <div>
+              <input
+                type="radio"
+                id="radio-example-default-3"
+                name="standaard-radiobutton"
+                value="value"
+                required
+                aria-describedby="radio-example-default-3-message"
+                aria-invalid="true">
+              <label for="radio-example-default-3">Lorem ipsum dolor set amet</label>
+            </div>
 
             <p class="error" id="radio-example-default-3-message">
               <span>foutmelding:</span>
@@ -3536,22 +3538,24 @@
         <pre>
 							<code>
 &lt;form action="" method="post">
-	&lt;div class="required">
+	&lt;div class="radio required">
 		&lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
-		&lt;input
-			type="radio"
-			id="radio-example-default-3"
-			name="standaard-radiobutton"
-			value="value"
-			required
-			 aria-describedby="radio-example-default-3-message"
-			 aria-invalid="true">
-		&lt;label for="radio-example-default-3">Lorem ipsum dolor set amet&lt;/label>
+		&lt;div>
+			&lt;input
+				type="radio"
+				id="radio-example-default-3"
+				name="standaard-radiobutton"
+				value="value"
+				required
+			 	aria-describedby="radio-example-default-3-message"
+			 	aria-invalid="true">
+			&lt;label for="radio-example-default-3">Lorem ipsum dolor set amet&lt;/label>
+		&lt;/div>
 
-		&lt;p class="error" id="radio-example-default-3-message">
-			&lt;span>foutmelding:&lt;/span>
-			Lorem ipsum dolor set amet
-		&lt;/p>
+          &lt;p class="error" id="radio-example-default-3-message">
+              &lt;span>foutmelding:&lt;/span>
+              Lorem ipsum dolor set amet
+          &lt;/p>
 	&lt;/div>
 &lt;/form>
 							</code>
@@ -3559,17 +3563,19 @@
 
         <h4>Voorbeeld weergave in kolommen</h4>
         <form action="" method="post" class="horizontal-view">
-          <div class="required">
+          <div class="radio required">
             <span class="nota-bene">Dit veld is verplicht</span>
-            <input
-              type="radio"
-              id="radio-example-default-4"
-              name="standaard-radiobutton"
-              value="value"
-              required
-              aria-describedby="radio-example-default-4-message"
-              aria-invalid="true">
-            <label for="radio-example-default-4">Lorem ipsum dolor set amet</label>
+            <div>
+              <input
+                type="radio"
+                id="radio-example-default-4"
+                name="standaard-radiobutton"
+                value="value"
+                required
+                aria-describedby="radio-example-default-4-message"
+                aria-invalid="true">
+              <label for="radio-example-default-4">Lorem ipsum dolor set amet</label>
+            </div>
             <p class="error" id="radio-example-default-4-message">
               <span>foutmelding:</span>
               Lorem ipsum dolor set amet
@@ -3581,17 +3587,19 @@
         <pre>
 							<code>
 &lt;form action="" method="post" class="horizontal-view">
-	&lt;div class="required">
+	&lt;div class="radio required">
 		&lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
-		&lt;input
-			type="radio"
-			id="radio-example-default-4"
-			name="standaard-radiobutton"
-			value="value"
-			required
-			aria-describedby="radio-example-default-4-message"
-			aria-invalid="true">
-		&lt;label for="radio-example-default-4">Lorem ipsum dolor set amet&lt;/label>
+		&lt;div
+            &lt;input
+                type="radio"
+                id="radio-example-default-4"
+                name="standaard-radiobutton"
+                value="value"
+                required
+                aria-describedby="radio-example-default-4-message"
+                aria-invalid="true">
+		    &lt;label for="radio-example-default-4">Lorem ipsum dolor set amet&lt;/label>
+        &lt;div/>
 		&lt;p class="error" id="radio-example-default-4-message">
 			&lt;span>foutmelding:&lt;/span>
 			Lorem ipsum dolor set amet
@@ -3614,17 +3622,17 @@
               <span>foutmelding:</span>
               Lorem ipsum dolor set amet
             </p>
-            <div>
+            <div class="radio">
               <input type="radio" id="radio-list-item-10" name="radio-option" value="value 1">
               <label for="radio-list-item-10">Optie 1</label>
             </div>
 
-            <div>
+            <div class="radio">
               <input type="radio" id="radio-list-item-11" name="radio-option" value="value 2">
               <label for="radio-list-item-11">Optie 2</label>
             </div>
 
-            <div>
+            <div class="radio">
               <input type="radio" id="radio-list-item-12" name="radio-option" value="value 3">
               <label for="radio-list-item-12">Optie 3</label>
             </div>
@@ -3644,17 +3652,17 @@
 			&lt;span>foutmelding:&lt;/span>
 			Lorem ipsum dolor set amet
 		&lt;/p>
-		&lt;div>
+		&lt;div class="radio">
 			&lt;input type="radio" id="radio-list-item-10" name="radio-option" value="value 1">
 			&lt;label for="radio-list-item-10">Optie 1&lt;/label>
 		&lt;/div>
 
-		&lt;div>
+		&lt;div class="radio">
 			&lt;input type="radio" id="radio-list-item-11" name="radio-option" value="value 2">
 			&lt;label for="radio-list-item-11">Optie 2&lt;/label>
 		&lt;/div>
 
-		&lt;div>
+		&lt;div class="radio">
 			&lt;input type="radio" id="radio-list-item-12" name="radio-option" value="value 3">
 			&lt;label for="radio-list-item-12">Optie 3&lt;/label>
 		&lt;/div>
@@ -3676,15 +3684,15 @@
                 <span>Foutmelding:</span>
                 Lorem ipsum dolor set amet
               </p>
-              <div>
+              <div class="radio">
                 <input type="radio" id="radio-1-list-item-1" name="radio-option-2" value="value 1">
                 <label for="radio-1-list-item-1">Optie 1</label>
               </div>
-              <div>
+              <div class="radio">
                 <input type="radio" id="radio-1-list-item-2" name="radio-option-2" value="value 2">
                 <label for="radio-1-list-item-2">Optie 2</label>
               </div>
-              <div>
+              <div class="radio">
                 <input type="radio" id="radio-1-list-item-3" name="radio-option-2" value="value 3">
                 <label for="radio-1-list-item-3">Optie 3</label>
               </div>
@@ -3706,15 +3714,15 @@
 				&lt;span>Foutmelding:&lt;/span>
 				Lorem ipsum dolor set amet
 			&lt;/p>
-			&lt;div>
+			&lt;div class="radio">
 				&lt;input type="radio" id="radio-1-list-item-1" name="radio-option-2" value="value 1">
 				&lt;label for="radio-1-list-item-1">Optie 1&lt;/label>
 			&lt;/div>
-			&lt;div>
+			&lt;div class="radio">
 				&lt;input type="radio" id="radio-1-list-item-2" name="radio-option-2" value="value 2">
 				&lt;label for="radio-1-list-item-2">Optie 2&lt;/label>
 			&lt;/div>
-			&lt;div>
+			&lt;div class="radio">
 				&lt;input type="radio" id="radio-1-list-item-3" name="radio-option-2" value="value 3">
 				&lt;label for="radio-1-list-item-3">Optie 3&lt;/label>
 			&lt;/div>
@@ -3730,7 +3738,7 @@
         <form action="" method="post">
           <fieldset class="grouped-choice-list">
             <legend>Lorem ipsum</legend>
-            <div>
+            <div class="radio">
               <input
                 type="radio"
                 id="radio-list-item-4"
@@ -3745,7 +3753,7 @@
               </p>
             </div>
 
-            <div>
+            <div class="radio">
               <input
                 type="radio"
                 id="radio-list-item-5"
@@ -3760,7 +3768,7 @@
               </p>
             </div>
 
-            <div>
+            <div class="radio">
               <input
                 type="radio"
                 id="radio-list-item-6"
@@ -3783,7 +3791,7 @@
 &lt;form action="" method="post">
 	&lt;fieldset class="grouped-choice-list">
 		&lt;legend>Lorem ipsum&lt;/legend>
-		&lt;div>
+		&lt;div class="radio">
 			&lt;input
 				type="radio"
 				id="radio-list-item-4"
@@ -3797,7 +3805,7 @@
 			&lt;/p>
 		&lt;/div>
 
-		&lt;div>
+		&lt;div class="radio">
 			&lt;input
 				type="radio"
 				id="radio-list-item-5"
@@ -3811,7 +3819,7 @@
 			&lt;/p>
 		&lt;/div>
 
-		&lt;div>
+		&lt;div class="radio">
 			&lt;input
 				type="radio"
 				id="radio-list-item-6"
@@ -3835,7 +3843,7 @@
           <fieldset class="grouped-choice-list">
             <legend>Lorem ipsum</legend>
             <div>
-              <div>
+              <div class="radio">
                 <input
                   type="radio"
                   id="radio-2-list-item-1"
@@ -3849,7 +3857,7 @@
                   Lorem ipsum dolor set amet
                 </p>
               </div>
-              <div>
+              <div class="radio">
                 <input
                   type="radio"
                   id="radio-2-list-item-2"
@@ -3863,7 +3871,7 @@
                   Lorem ipsum dolor set amet
                 </p>
               </div>
-              <div>
+              <div class="radio">
                 <input
                   type="radio"
                   id="radio-2-list-item-3"
@@ -3888,7 +3896,7 @@
 	&lt;fieldset class="grouped-choice-list">
 		&lt;legend>Lorem ipsum&lt;/legend>
 		&lt;div>
-			&lt;div>
+			&lt;div class="radio">
 				&lt;input
 					type="radio"
 					id="radio-2-list-item-1"
@@ -3902,7 +3910,7 @@
 					Lorem ipsum dolor set amet
 				&lt;/p>
 			&lt;/div>
-			&lt;div>
+			&lt;div class="radio">
 				&lt;input
 					type="radio"
 					id="radio-2-list-item-2"
@@ -3916,7 +3924,7 @@
 					Lorem ipsum dolor set amet
 				&lt;/p>
 			&lt;/div>
-			&lt;div>
+			&lt;div class="radio">
 				&lt;input
 					type="radio"
 					id="radio-2-list-item-3"
@@ -4403,7 +4411,7 @@
         <pre>
 							<code>
 &lt;form action="" method="post">
-	&lt;div>
+	&lt;div class="radio">
 		&lt;input
 			type="radio"
 			id="radio-example-default-5"
@@ -4418,7 +4426,7 @@
         <h3>Voorbeeld weergave in kolommen:</h3>
         <p>Visueel voorbeeld:</p>
         <form action="" method="post" class="horizontal-view">
-          <div>
+          <div class="radio">
             <input
               type="radio"
               id="radio-example-default-6"
@@ -4432,7 +4440,7 @@
         <pre>
 							<code>
 &lt;form action="" method="post" class="horizontal-view">
-	&lt;div>
+	&lt;div class="radio">
 		&lt;input
 			type="radio"
 			id="radio-example-default-6"
@@ -4448,7 +4456,7 @@
         <h3>Voorbeeld</h3>
         <p>Visueel voorbeeld:</p>
         <form action="" method="post">
-          <div>
+          <div class="radio">
             <input
               type="radio"
               id="radio-example-checked"
@@ -4463,7 +4471,7 @@
         <pre>
 							<code>
 &lt;form action="" method="post">
-	&lt;div>
+	&lt;div class="radio">
 		&lt;input
 			type="radio"
 			id="radio-example-checked"
@@ -4479,7 +4487,7 @@
         <h3>Voorbeeld weergave in kolommen</h3>
         <p>Visueel voorbeeld:</p>
         <form action="" method="post" class="horizontal-view">
-          <div>
+          <div class="radio">
             <input
               type="radio"
               id="radio-example-default-7"
@@ -4494,7 +4502,7 @@
         <pre>
 							<code>
 &lt;form action="" method="post" class="horizontal-view">
-	&lt;div>
+	&lt;div class="radio">
 		&lt;input
 			type="radio"
 			id="radio-example-default-7"
@@ -4515,15 +4523,17 @@
         <h3>Voorbeeld</h3>
         <p>Visueel voorbeeld:</p>
         <form action="" method="post">
-          <div class="required">
+          <div class="radio required">
             <span class="nota-bene">Dit veld is verplicht</span>
-            <input
-              type="radio"
-              id="radio-example-required"
-              name="standaard-radiobutton"
-              value="value"
-              required>
-            <label for="radio-example-required">Verplicht keuzeveld</label>
+            <div>
+              <input
+                type="radio"
+                id="radio-example-required"
+                name="standaard-radiobutton"
+                value="value"
+                required>
+              <label for="radio-example-required">Verplicht keuzeveld</label>
+            </div>
           </div>
         </form>
 
@@ -4531,13 +4541,15 @@
         <pre>
 							<code>
 &lt;form action="" method="post">
-	&lt;div class="required">
+	&lt;div class="radio required">
 		&lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
-		&lt;input
-			type="radio"
-			id="radio-example-required"
-			name="voorwaarden" required>
-		&lt;label for="radio-example-required">Dit veld is verplicht&lt;/label>
+		&lt;div
+		    &lt;input
+			    type="radio"
+			    id="radio-example-required"
+			    name="voorwaarden" required>
+		    &lt;label for="radio-example-required">Dit veld is verplicht&lt;/label>
+	    &lt;/div>
 	&lt;/div>
 &lt;/form>
 							</code>
@@ -4547,15 +4559,17 @@
         <p>Visueel voorbeeld:</p>
 
         <form action="" method="post" class="horizontal-view">
-          <div class="required">
+          <div class="radio required">
             <span class="nota-bene">Dit veld is verplicht</span>
-            <input
-              type="radio"
-              id="radio-example-required-2"
-              name="verplichte-radiobutton"
-              value="value"
-              required>
-            <label for="radio-example-required-2">Verplicht keuzeveld</label>
+            <div>
+              <input
+                type="radio"
+                id="radio-example-required-2"
+                name="verplichte-radiobutton"
+                value="value"
+                required>
+              <label for="radio-example-required-2">Verplicht keuzeveld</label>
+            </div>
           </div>
         </form>
 
@@ -4563,14 +4577,16 @@
         <pre>
 							<code>
 &lt;form action="" method="post" class="horizontal-view">
-	&lt;div class="required">
+	&lt;div class="radio required">
 		&lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
-		&lt;input
-			type="radio"
-			id="radio-example-required"
-			name="verplichte-radiobutton"
-			required>
-		&lt;label for="radio-example-required">verplicht keuzeveld&lt;/label>
+		&lt;div
+		    &lt;input
+    			type="radio"
+	    		id="radio-example-required"
+    		  	name="verplichte-radiobutton"
+    			required>
+    		&lt;label for="radio-example-required">verplicht keuzeveld&lt;/label>
+    	&lt;/div>
 	&lt;/div>
 &lt;/form>
 							</code>
@@ -4580,7 +4596,7 @@
         <h3>Voorbeeld</h3>
         <p>Visueel voorbeeld:</p>
         <form action="" method="post">
-          <div>
+          <div class="radio">
             <input
               type="radio"
               id="radio-example-disabled"
@@ -4595,7 +4611,7 @@
         <pre>
 							<code>
 &lt;form action="" method="post">
-	&lt;div>
+	&lt;div class="radio">
 		&lt;input
 			type="radio"
 			id="radio-example-disabled"
@@ -4611,7 +4627,7 @@
         <h3>Voorbeeld weergave in kolommen</h3>
         <p>Visueel voorbeeld:</p>
         <form action="" method="post" class="horizontal-view">
-          <div>
+          <div class="radio">
             <input
               type="radio"
               id="radio-example-disabled-2"
@@ -4627,7 +4643,7 @@
         <pre>
 							<code>
 &lt;form action="" method="post" class="horizontal-view">
-	&lt;div>
+	&lt;div class="radio">
 		&lt;input
 			type="radio"
 			id="radio-example-disabled-2"
@@ -4657,7 +4673,7 @@
         <form action="" method="post">
           <fieldset class="grouped-choice-list">
             <legend>Lorem ipsum</legend>
-            <div>
+            <div class="radio">
               <input
                 type="radio"
                 id="radio-list-item-7"
@@ -4666,7 +4682,7 @@
               <label for="radio-list-item-7">Optie 1</label>
             </div>
 
-            <div>
+            <div class="radio">
               <input
                 type="radio"
                 id="radio-list-item-8"
@@ -4675,7 +4691,7 @@
               <label for="radio-list-item-8">Optie 2</label>
             </div>
 
-            <div>
+            <div class="radio">
               <input
                 type="radio"
                 id="radio-list-item-9"
@@ -4692,7 +4708,7 @@
 &lt;form action="" method="post">
 	&lt;fieldset class="grouped-choice-list">
 		&lt;legend>Lorem ipsum&lt;/legend>
-		&lt;div>
+		&lt;div class="radio">
 			&lt;input
 				type="radio"
 				id="radio-list-item-1"
@@ -4700,7 +4716,7 @@
 			&lt;label for="radio-list-item-1">Optie 1&lt;/label>
 		&lt;/div>
 
-		&lt;div>
+		&lt;div class="radio">
 			&lt;input
 				type="radio"
 				id="radio-list-item-2"
@@ -4708,7 +4724,7 @@
 			&lt;label for="radio-list-item-2">Optie 2&lt;/label>
 		&lt;/div>
 
-		&lt;div>
+		&lt;div class="radio">
 			&lt;input
 				type="radio"
 				id="radio-list-item-3"
@@ -4726,7 +4742,7 @@
           <fieldset class="grouped-choice-list">
             <legend>Lorem ipsum</legend>
             <div>
-              <div>
+              <div class="radio">
                 <input
                   type="radio"
                   id="radio-3-list-item-1"
@@ -4734,7 +4750,7 @@
                   value="value 1">
                 <label for="radio-3-list-item-1">Optie 1</label>
               </div>
-              <div>
+              <div class="radio">
                 <input
                   type="radio"
                   id="radio-3-list-item-2"
@@ -4742,7 +4758,7 @@
                   value="value 2">
                 <label for="radio-3-list-item-2">Optie 2</label>
               </div>
-              <div>
+              <div class="radio">
                 <input
                   type="radio"
                   id="radio-3-list-item-3"
@@ -4761,7 +4777,7 @@
 	&lt;fieldset class="grouped-choice-list">
 		&lt;legend>Lorem ipsum&lt;/legend>
 		&lt;div>
-			&lt;div>
+			&lt;div class="radio">
 				&lt;input
 					type="radio"
 					id="radio-3-list-item-1"
@@ -4769,7 +4785,7 @@
 					value="value 1">
 				&lt;label for="radio-3-list-item-1">Optie 1&lt;/label>
 			&lt;/div>
-			&lt;div>
+			&lt;div class="radio">
 				&lt;input
 					type="radio"
 					id="radio-3-list-item-2"
@@ -4777,7 +4793,7 @@
 					value="value 2">
 				&lt;label for="radio-3-list-item-2">Optie 2&lt;/label>
 			&lt;/div>
-			&lt;div>
+			&lt;div class="radio">
 				&lt;input
 					type="radio"
 					id="radio-3-list-item-3"
