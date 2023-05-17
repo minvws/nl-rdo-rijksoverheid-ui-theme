@@ -5,7 +5,7 @@ $icon-koopwoning: "\E978";
 $icon-cateringbedrijven: "\E979";
 $icon-circulaire-bouw: "\E97a";
 $icon-dorp: "\E97b";
-$icon-gemeente---en-provinciefonds: "\E97c";
+$icon-gemeente-en-provinciefonds: "\E97c";
 $icon-leefbaarheid: "\E97d";
 $icon-evenemententent: "\E97e";
 $icon-festival-ehbo: "\E97f";
@@ -17,7 +17,7 @@ $icon-gebouw-cjib: "\E984";
 $icon-gebouw-cvz: "\E985";
 $icon-gebouw-igz: "\E986";
 $icon-villa: "\E987";
-$icon-ambassade---consulaat: "\E988";
+$icon-ambassade-consulaat: "\E988";
 $icon-school: "\E989";
 $icon-sector-speciaal-onderwijs: "\E98a";
 $icon-rechtbank: "\E98b";
@@ -94,7 +94,7 @@ $icon-gemeentehuissvg: "\E9cb";
   --icon-cateringbedrijven: "#{$icon-cateringbedrijven}";
   --icon-circulaire-bouw: "#{$icon-circulaire-bouw}";
   --icon-dorp: "#{$icon-dorp}";
-  --icon-gemeente---en-provinciefonds: "#{$icon-gemeente---en-provinciefonds}";
+  --icon-gemeente-en-provinciefonds: "#{$icon-gemeente-en-provinciefonds}";
   --icon-leefbaarheid: "#{$icon-leefbaarheid}";
   --icon-evenemententent: "#{$icon-evenemententent}";
   --icon-festival-ehbo: "#{$icon-festival-ehbo}";
@@ -106,7 +106,7 @@ $icon-gemeentehuissvg: "\E9cb";
   --icon-gebouw-cvz: "#{$icon-gebouw-cvz}";
   --icon-gebouw-igz: "#{$icon-gebouw-igz}";
   --icon-villa: "#{$icon-villa}";
-  --icon-ambassade---consulaat: "#{$icon-ambassade---consulaat}";
+  --icon-ambassade-consulaat: "#{$icon-ambassade-consulaat}";
   --icon-school: "#{$icon-school}";
   --icon-sector-speciaal-onderwijs: "#{$icon-sector-speciaal-onderwijs}";
   --icon-rechtbank: "#{$icon-rechtbank}";
@@ -206,8 +206,8 @@ $icon-gemeentehuissvg: "\E9cb";
     content: $icon-dorp;
   }
 
-  &.icon-gemeente---en-provinciefonds::before {
-    content: $icon-gemeente---en-provinciefonds;
+  &.icon-gemeente-en-provinciefonds::before {
+    content: $icon-gemeente-en-provinciefonds;
   }
 
   &.icon-leefbaarheid::before {
@@ -254,8 +254,8 @@ $icon-gemeentehuissvg: "\E9cb";
     content: $icon-villa;
   }
 
-  &.icon-ambassade---consulaat::before {
-    content: $icon-ambassade---consulaat;
+  &.icon-ambassade-consulaat::before {
+    content: $icon-ambassade-consulaat;
   }
 
   &.icon-school::before {
