@@ -43,222 +43,222 @@ $icon-beeldbellen: "\E973";
 $icon-zendmast: "\E974";
 
 :root {
-	--icon-chip: "#{$icon-chip}";
-	--icon-computer: "#{$icon-computer}";
-	--icon-oude-computer: "#{$icon-oude-computer}";
-	--icon-dataverkeer: "#{$icon-dataverkeer}";
-	--icon-digitaal-onderzoek: "#{$icon-digitaal-onderzoek}";
-	--icon-digitale-uitwisseling: "#{$icon-digitale-uitwisseling}";
-	--icon-nieuwe-computer: "#{$icon-nieuwe-computer}";
-	--icon-gamecontroller: "#{$icon-gamecontroller}";
-	--icon-grafieken-op-beeldscherm: "#{$icon-grafieken-op-beeldscherm}";
-	--icon-beeldscherm-met-hartpng: "#{$icon-beeldscherm-met-hartpng}";
-	--icon-hybride-laptop: "#{$icon-hybride-laptop}";
-	--icon-informatie-op-internet: "#{$icon-informatie-op-internet}";
-	--icon-internet: "#{$icon-internet}";
-	--icon-ga-naar-www: "#{$icon-ga-naar-www}";
-	--icon-internet-archief: "#{$icon-internet-archief}";
-	--icon-laptop: "#{$icon-laptop}";
-	--icon-laptop-met-huis: "#{$icon-laptop-met-huis}";
-	--icon-cybersecurity: "#{$icon-cybersecurity}";
-	--icon-printer: "#{$icon-printer}";
-	--icon-server: "#{$icon-server}";
-	--icon-smartphone: "#{$icon-smartphone}";
-	--icon-smartphone-bedienen-met-vinger: "#{$icon-smartphone-bedienen-met-vinger}";
-	--icon-usb-lader: "#{$icon-usb-lader}";
-	--icon-tablet: "#{$icon-tablet}";
-	--icon-televisie: "#{$icon-televisie}";
-	--icon-website: "#{$icon-website}";
-	--icon-webwinkel: "#{$icon-webwinkel}";
-	--icon-ict: "#{$icon-ict}";
-	--icon-computercode: "#{$icon-computercode}";
-	--icon-digitalisering: "#{$icon-digitalisering}";
-	--icon-ux-design: "#{$icon-ux-design}";
-	--icon-database: "#{$icon-database}";
-	--icon-application: "#{$icon-application}";
-	--icon-basisregistratie: "#{$icon-basisregistratie}";
-	--icon-gegevensuitwisseling: "#{$icon-gegevensuitwisseling}";
-	--icon-smartphone-met-streep-erdoor: "#{$icon-smartphone-met-streep-erdoor}";
-	--icon-beeldscherm-met-streep-erdoor: "#{$icon-beeldscherm-met-streep-erdoor}";
-	--icon-inloggen: "#{$icon-inloggen}";
-	--icon-online-leren: "#{$icon-online-leren}";
-	--icon-online-groepstraining: "#{$icon-online-groepstraining}";
-	--icon-wifi: "#{$icon-wifi}";
-	--icon-beeldbellen: "#{$icon-beeldbellen}";
-	--icon-zendmast: "#{$icon-zendmast}";
+  --icon-chip: "#{$icon-chip}";
+  --icon-computer: "#{$icon-computer}";
+  --icon-oude-computer: "#{$icon-oude-computer}";
+  --icon-dataverkeer: "#{$icon-dataverkeer}";
+  --icon-digitaal-onderzoek: "#{$icon-digitaal-onderzoek}";
+  --icon-digitale-uitwisseling: "#{$icon-digitale-uitwisseling}";
+  --icon-nieuwe-computer: "#{$icon-nieuwe-computer}";
+  --icon-gamecontroller: "#{$icon-gamecontroller}";
+  --icon-grafieken-op-beeldscherm: "#{$icon-grafieken-op-beeldscherm}";
+  --icon-beeldscherm-met-hartpng: "#{$icon-beeldscherm-met-hartpng}";
+  --icon-hybride-laptop: "#{$icon-hybride-laptop}";
+  --icon-informatie-op-internet: "#{$icon-informatie-op-internet}";
+  --icon-internet: "#{$icon-internet}";
+  --icon-ga-naar-www: "#{$icon-ga-naar-www}";
+  --icon-internet-archief: "#{$icon-internet-archief}";
+  --icon-laptop: "#{$icon-laptop}";
+  --icon-laptop-met-huis: "#{$icon-laptop-met-huis}";
+  --icon-cybersecurity: "#{$icon-cybersecurity}";
+  --icon-printer: "#{$icon-printer}";
+  --icon-server: "#{$icon-server}";
+  --icon-smartphone: "#{$icon-smartphone}";
+  --icon-smartphone-bedienen-met-vinger: "#{$icon-smartphone-bedienen-met-vinger}";
+  --icon-usb-lader: "#{$icon-usb-lader}";
+  --icon-tablet: "#{$icon-tablet}";
+  --icon-televisie: "#{$icon-televisie}";
+  --icon-website: "#{$icon-website}";
+  --icon-webwinkel: "#{$icon-webwinkel}";
+  --icon-ict: "#{$icon-ict}";
+  --icon-computercode: "#{$icon-computercode}";
+  --icon-digitalisering: "#{$icon-digitalisering}";
+  --icon-ux-design: "#{$icon-ux-design}";
+  --icon-database: "#{$icon-database}";
+  --icon-application: "#{$icon-application}";
+  --icon-basisregistratie: "#{$icon-basisregistratie}";
+  --icon-gegevensuitwisseling: "#{$icon-gegevensuitwisseling}";
+  --icon-smartphone-met-streep-erdoor: "#{$icon-smartphone-met-streep-erdoor}";
+  --icon-beeldscherm-met-streep-erdoor: "#{$icon-beeldscherm-met-streep-erdoor}";
+  --icon-inloggen: "#{$icon-inloggen}";
+  --icon-online-leren: "#{$icon-online-leren}";
+  --icon-online-groepstraining: "#{$icon-online-groepstraining}";
+  --icon-wifi: "#{$icon-wifi}";
+  --icon-beeldbellen: "#{$icon-beeldbellen}";
+  --icon-zendmast: "#{$icon-zendmast}";
 }
 
 .icon,
 .icon-only {
-	&.icon-chip:before {
-		content: $icon-chip;
-	}
+  &.icon-chip::before {
+    content: $icon-chip;
+  }
 
-	&.icon-computer:before {
-		content: $icon-computer;
-	}
+  &.icon-computer::before {
+    content: $icon-computer;
+  }
 
-	&.icon-oude-computer:before {
-		content: $icon-oude-computer;
-	}
+  &.icon-oude-computer::before {
+    content: $icon-oude-computer;
+  }
 
-	&.icon-dataverkeer:before {
-		content: $icon-dataverkeer;
-	}
+  &.icon-dataverkeer::before {
+    content: $icon-dataverkeer;
+  }
 
-	&.icon-digitaal-onderzoek:before {
-		content: $icon-digitaal-onderzoek;
-	}
+  &.icon-digitaal-onderzoek::before {
+    content: $icon-digitaal-onderzoek;
+  }
 
-	&.icon-digitale-uitwisseling:before {
-		content: $icon-digitale-uitwisseling;
-	}
+  &.icon-digitale-uitwisseling::before {
+    content: $icon-digitale-uitwisseling;
+  }
 
-	&.icon-nieuwe-computer:before {
-		content: $icon-nieuwe-computer;
-	}
+  &.icon-nieuwe-computer::before {
+    content: $icon-nieuwe-computer;
+  }
 
-	&.icon-gamecontroller:before {
-		content: $icon-gamecontroller;
-	}
+  &.icon-gamecontroller::before {
+    content: $icon-gamecontroller;
+  }
 
-	&.icon-grafieken-op-beeldscherm:before {
-		content: $icon-grafieken-op-beeldscherm;
-	}
+  &.icon-grafieken-op-beeldscherm::before {
+    content: $icon-grafieken-op-beeldscherm;
+  }
 
-	&.icon-beeldscherm-met-hartpng:before {
-		content: $icon-beeldscherm-met-hartpng;
-	}
+  &.icon-beeldscherm-met-hartpng::before {
+    content: $icon-beeldscherm-met-hartpng;
+  }
 
-	&.icon-hybride-laptop:before {
-		content: $icon-hybride-laptop;
-	}
+  &.icon-hybride-laptop::before {
+    content: $icon-hybride-laptop;
+  }
 
-	&.icon-informatie-op-internet:before {
-		content: $icon-informatie-op-internet;
-	}
+  &.icon-informatie-op-internet::before {
+    content: $icon-informatie-op-internet;
+  }
 
-	&.icon-internet:before {
-		content: $icon-internet;
-	}
+  &.icon-internet::before {
+    content: $icon-internet;
+  }
 
-	&.icon-ga-naar-www:before {
-		content: $icon-ga-naar-www;
-	}
+  &.icon-ga-naar-www::before {
+    content: $icon-ga-naar-www;
+  }
 
-	&.icon-internet-archief:before {
-		content: $icon-internet-archief;
-	}
+  &.icon-internet-archief::before {
+    content: $icon-internet-archief;
+  }
 
-	&.icon-laptop:before {
-		content: $icon-laptop;
-	}
+  &.icon-laptop::before {
+    content: $icon-laptop;
+  }
 
-	&.icon-laptop-met-huis:before {
-		content: $icon-laptop-met-huis;
-	}
+  &.icon-laptop-met-huis::before {
+    content: $icon-laptop-met-huis;
+  }
 
-	&.icon-cybersecurity:before {
-		content: $icon-cybersecurity;
-	}
+  &.icon-cybersecurity::before {
+    content: $icon-cybersecurity;
+  }
 
-	&.icon-printer:before {
-		content: $icon-printer;
-	}
+  &.icon-printer::before {
+    content: $icon-printer;
+  }
 
-	&.icon-server:before {
-		content: $icon-server;
-	}
+  &.icon-server::before {
+    content: $icon-server;
+  }
 
-	&.icon-smartphone:before {
-		content: $icon-smartphone;
-	}
+  &.icon-smartphone::before {
+    content: $icon-smartphone;
+  }
 
-	&.icon-smartphone-bedienen-met-vinger:before {
-		content: $icon-smartphone-bedienen-met-vinger;
-	}
+  &.icon-smartphone-bedienen-met-vinger::before {
+    content: $icon-smartphone-bedienen-met-vinger;
+  }
 
-	&.icon-usb-lader:before {
-		content: $icon-usb-lader;
-	}
+  &.icon-usb-lader::before {
+    content: $icon-usb-lader;
+  }
 
-	&.icon-tablet:before {
-		content: $icon-tablet;
-	}
+  &.icon-tablet::before {
+    content: $icon-tablet;
+  }
 
-	&.icon-televisie:before {
-		content: $icon-televisie;
-	}
+  &.icon-televisie::before {
+    content: $icon-televisie;
+  }
 
-	&.icon-website:before {
-		content: $icon-website;
-	}
+  &.icon-website::before {
+    content: $icon-website;
+  }
 
-	&.icon-webwinkel:before {
-		content: $icon-webwinkel;
-	}
+  &.icon-webwinkel::before {
+    content: $icon-webwinkel;
+  }
 
-	&.icon-ict:before {
-		content: $icon-ict;
-	}
+  &.icon-ict::before {
+    content: $icon-ict;
+  }
 
-	&.icon-computercode:before {
-		content: $icon-computercode;
-	}
+  &.icon-computercode::before {
+    content: $icon-computercode;
+  }
 
-	&.icon-digitalisering:before {
-		content: $icon-digitalisering;
-	}
+  &.icon-digitalisering::before {
+    content: $icon-digitalisering;
+  }
 
-	&.icon-ux-design:before {
-		content: $icon-ux-design;
-	}
+  &.icon-ux-design::before {
+    content: $icon-ux-design;
+  }
 
-	&.icon-database:before {
-		content: $icon-database;
-	}
+  &.icon-database::before {
+    content: $icon-database;
+  }
 
-	&.icon-application:before {
-		content: $icon-application;
-	}
+  &.icon-application::before {
+    content: $icon-application;
+  }
 
-	&.icon-basisregistratie:before {
-		content: $icon-basisregistratie;
-	}
+  &.icon-basisregistratie::before {
+    content: $icon-basisregistratie;
+  }
 
-	&.icon-gegevensuitwisseling:before {
-		content: $icon-gegevensuitwisseling;
-	}
+  &.icon-gegevensuitwisseling::before {
+    content: $icon-gegevensuitwisseling;
+  }
 
-	&.icon-smartphone-met-streep-erdoor:before {
-		content: $icon-smartphone-met-streep-erdoor;
-	}
+  &.icon-smartphone-met-streep-erdoor::before {
+    content: $icon-smartphone-met-streep-erdoor;
+  }
 
-	&.icon-beeldscherm-met-streep-erdoor:before {
-		content: $icon-beeldscherm-met-streep-erdoor;
-	}
+  &.icon-beeldscherm-met-streep-erdoor::before {
+    content: $icon-beeldscherm-met-streep-erdoor;
+  }
 
-	&.icon-inloggen:before {
-		content: $icon-inloggen;
-	}
+  &.icon-inloggen::before {
+    content: $icon-inloggen;
+  }
 
-	&.icon-online-leren:before {
-		content: $icon-online-leren;
-	}
+  &.icon-online-leren::before {
+    content: $icon-online-leren;
+  }
 
-	&.icon-online-groepstraining:before {
-		content: $icon-online-groepstraining;
-	}
+  &.icon-online-groepstraining::before {
+    content: $icon-online-groepstraining;
+  }
 
-	&.icon-wifi:before {
-		content: $icon-wifi;
-	}
+  &.icon-wifi::before {
+    content: $icon-wifi;
+  }
 
-	&.icon-beeldbellen:before {
-		content: $icon-beeldbellen;
-	}
+  &.icon-beeldbellen::before {
+    content: $icon-beeldbellen;
+  }
 
-	&.icon-zendmast:before {
-		content: $icon-zendmast;
-	}
+  &.icon-zendmast::before {
+    content: $icon-zendmast;
+  }
 }

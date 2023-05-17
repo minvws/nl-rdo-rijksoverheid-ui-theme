@@ -25,7 +25,7 @@
     width: 100%;
   }
 
-  @media screen and (min-width: 24rem) {
+  @media screen and (width >= 24rem) {
     flex-direction: row-reverse;
     gap: var(--content-gap);
 
