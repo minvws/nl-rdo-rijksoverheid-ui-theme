@@ -6,5 +6,5 @@
   --article-content-wrapper-padding-right: 0;
   --article-content-wrapper-padding-bottom: 0;
   --article-content-wrapper-padding-left: 0;
-  --article-content-wrapper-max-width: 82rem;
+  --article-content-wrapper-max-width: var(--content-max-width);
 }
