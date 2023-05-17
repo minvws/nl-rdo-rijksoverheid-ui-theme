@@ -87,6 +87,10 @@
 /* Header */
 @use "@minvws/manon/header";
 
+/* Breadcrumb bar */
+@use "@minvws/manon/breadcrumb-bar";
+@use "@minvws/manon/breadcrumb-bar-content-wrapper";
+
 /* Footer */
 @use "@minvws/manon/footer";
 @use "@minvws/manon/footer-link";
