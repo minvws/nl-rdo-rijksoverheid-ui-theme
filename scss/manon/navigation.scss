@@ -5,9 +5,9 @@
   --navigation-title-text-color: var(--ro-blue);
 
   /* List */
-  --navigation-list-padding: 0;
+  --navigation-list-padding: 0.5rem 0 0.5rem 1rem;
   --navigation-list-background-color: transparent;
-  --navigation-list-margin: 1rem 0 0 0;
+  --navigation-list-margin: 0;
 
   /* List Item */
   --navigation-list-item-list-style: none;
@@ -17,26 +17,30 @@
   /* Link */
   --navigation-link-text-color: var(--link-text-color);
 
+  /* Link active */
+  --navigation-link-active-outline: 2px dotted #cccccc;
+  --navigation-link-active-outline-offset: 0.25rem;
+  --navigation-link-active-z-index: 1;
+
+  /* Link focus */
+  --navigation-link-focus-outline: 2px dotted #000000;
+  --navigation-link-focus-outline-offset: 0.25rem;
+  --navigation-link-focus-z-index: 1;
+  --navigation-link-focus-icon-font-size: var(--navigation-link-icon-font-size);
+
   /* Hover */
   --navigation-link-hover-text-color: var(--link-hover-text-color);
+  --navigation-link-hover-icon-font-size: var(--navigation-link-icon-font-size);
+
 
   /* Links visited */
   --navigation-link-visited-text-color: var(--link-text-color-visited);
+  --navigation-link-visited-icon-font-size: var(--navigation-link-icon-font-size);
+  --navigation-link-visited-outline: var(--navigation-link-active-outline);
+  --navigation-link-visited-outline-offset: var(--navigation-link-focus-outline-offset);
+  --navigation-link-visited-z-index: var(--navigation-link-focus-z-index);
 
-  /* Links visited hover */
-  --navigation-link-visited-hover-text-color: var(--link-text-color-visited-hover);
-
-  /* Active */
-  --navigation-link-active-outline: 2px dotted #ccccc;
-  --navigation-link-active-outline-offset: 0.25rem;
-
+  /* Link Icon */
   --navigation-link-icon: var(--icon-chevron-right);
   --navigation-link-icon-font-size: 0.7rem;
-}
-
-/* This override can be removed once manon v9.1.0 has been included */
-nav a:active {
-  outline: 2px dotted #cccccc;
-  outline-offset: 0.25rem;
-  z-index: 1;
 }
