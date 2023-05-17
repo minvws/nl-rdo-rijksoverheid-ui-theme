@@ -179,32 +179,30 @@
 								<label for="checkbox-example-base">Lorem ipsum dolor set amet</label>
 								<p class="error" id="checkbox-example-error-1-message"><span>Foutmelding</span> Lorem ipsum</p>
 							</div>
+							
+							<fieldset>
+								<legend>Examples</legend>
+								<div class="checkbox">
+									<input type="checkbox" id="checkbox-example-list-1" name="standaard-checkbox">
+									<label for="checkbox-example-list-1">Lorem ipsum dolor set amet</label>
+								</div>
 
-							<form action="" method="post">
-								<fieldset>
-									<legend>Examples</legend>
-									<div class="checkbox">
-										<input type="checkbox" id="checkbox-example-list-1" name="standaard-checkbox">
-										<label for="checkbox-example-list-1">Lorem ipsum dolor set amet</label>
-									</div>
+								<div class="checkbox">
+									<input type="checkbox" id="checkbox-example-list-2" name="standaard-checkbox">
+									<label for="checkbox-example-list-2">Lorem ipsum dolor set amet</label>
+								</div>
 
-									<div class="checkbox">
-										<input type="checkbox" id="checkbox-example-list-2" name="standaard-checkbox">
-										<label for="checkbox-example-list-2">Lorem ipsum dolor set amet</label>
-									</div>
+								<div class="checkbox">
+									<input type="checkbox" id="checkbox-example-list-3" name="standaard-checkbox">
+									<label for="checkbox-example-list-3">Lorem ipsum dolor set amet</label>
+								</div>
 
-									<div class="checkbox">
-										<input type="checkbox" id="checkbox-example-list-3" name="standaard-checkbox">
-										<label for="checkbox-example-list-3">Lorem ipsum dolor set amet</label>
-									</div>
-
-									<div class="checkbox">
-										<input type="checkbox" id="checkbox-example-list-4" name="standaard-checkbox">
-										<label for="checkbox-example-list-4">Lorem ipsum dolor set amet</label>
-									</div>
-								</fieldset>
-								<button type="submit">Verzend</button>
-							</form>
+								<div class="checkbox">
+									<input type="checkbox" id="checkbox-example-list-4" name="standaard-checkbox">
+									<label for="checkbox-example-list-4">Lorem ipsum dolor set amet</label>
+								</div>
+							</fieldset>
+							<button type="submit">Verzend</button>
 
 							<div class="radio">
 								<input
@@ -245,56 +243,56 @@
 								<label for="radio-example-disabled-1">Uitgeschakeld keuzevak</label>
 							</div>
 
-							<label for="radio-list-item-1">Lorem ipsum</label>
-							<div class="radio">
-								<input
-									type="radio"
-									id="radio-list-item-1"
-									name="radio-option"
-									value="value 1">
-								<label for="radio-list-item-1">Optie 1</label>
-							</div>
+							<fieldset>
+								<legend for="radio-list-item-1">Lorem ipsum</legend>
+								<div class="radio">
+									<input
+										type="radio"
+										id="radio-list-item-1"
+										name="radio-option"
+										value="value 1">
+									<label for="radio-list-item-1">Optie 1</label>
+								</div>
 
-							<div class="radio">
-								<input
-									type="radio"
-									id="radio-list-item-2"
-									name="radio-option"
-									value="value 2">
-								<label for="radio-list-item-2">Optie 2</label>
-							</div>
+								<div class="radio">
+									<input
+										type="radio"
+										id="radio-list-item-2"
+										name="radio-option"
+										value="value 2">
+									<label for="radio-list-item-2">Optie 2</label>
+								</div>
 
-							<div class="radio">
-								<input
-									type="radio"
-									id="radio-list-item-3"
-									name="radio-option"
-									value="value 3">
-								<label for="radio-list-item-3">Optie 3</label>
-							</div>
+								<div class="radio">
+									<input
+										type="radio"
+										id="radio-list-item-3"
+										name="radio-option"
+										value="value 3">
+									<label for="radio-list-item-3">Optie 3</label>
+								</div>
 
-							<div class="radio">
-								<input
-									type="radio"
-									id="radio-list-long-name-1"
-									name="radio-option"
-									value="value long name">
-								<label for="radio-list-long-name-1">Radio label test met een lange naam. Lorem ipsum dolor set amet</label>
-							</div>
+								<div class="radio">
+									<input
+										type="radio"
+										id="radio-list-long-name-1"
+										name="radio-option"
+										value="value long name">
+									<label for="radio-list-long-name-1">Radio label test met een lange naam. Lorem ipsum dolor set amet</label>
+								</div>
 
-							<div class="radio">
-								<input
-									type="radio"
-									id="radio-list-long-name-2"
-									name="radio-option"
-									value="value long name"
-									class="error"
-									aria-label="foutmelding">
-								<label for="radio-list-long-name-2">Radio label met error</label>
-								<p
-									class="error"
-									id=""><span>Foutmelding:</span> Lorem ipsum</p>
-							</div>
+								<div class="radio">
+									<input
+										type="radio"
+										id="radio-list-long-name-2"
+										name="radio-option"
+										value="value long name"
+										class="error"
+										aria-label="foutmelding">
+									<label for="radio-list-long-name-2">Radio label met error</label>
+									<p class="error" id=""><span>Foutmelding:</span> Lorem ipsum</p>
+								</div>
+							</fieldset>
 
 							<div>
 								<label for="color-input-1">Selecteer de gewenste kleur</label>
@@ -704,7 +702,7 @@
 								</div>
 							</div>
 
-							<div>
+							<div class="checkbox">
 								<input
 									type="checkbox"
 									id="checkbox-example-default-2"
@@ -712,7 +710,7 @@
 								<label for="checkbox-example-default-2">Lorem ipsum dolor set amet</label>
 							</div>
 
-							<div>
+							<div class="checkbox">
 								<input
 									type="checkbox"
 									id="checkbox-example-default-long-3"
@@ -720,7 +718,7 @@
 								<label for="checkbox-example-default-long-3">Checkbox label test met een lange naam. Lorem ipsum dolor set amet</label>
 							</div>
 
-							<div>
+							<div class="checkbox">
 								<input
 									type="checkbox"
 									id="checkbox-example-checked-2"
@@ -729,7 +727,7 @@
 								<label for="checkbox-example-checked-2">Lorem ipsum dolor set amet</label>
 							</div>
 
-							<div class="required">
+							<div class="checkbox required">
 								<span class="nota-bene">Dit veld is verplicht</span>
 								<input
 									type="checkbox"
@@ -739,7 +737,7 @@
 								<label for="checkbox-example-required-2">verplicht selectievak</label>
 							</div>
 
-							<div>
+							<div class="checkbox">
 								<input
 									type="checkbox"
 									id="checkbox-example-disabled-2"
@@ -753,7 +751,7 @@
 								<legend>Lorem ipsum</legend>
 
 								<div>
-									<div>
+									<div class="checkbox">
 										<input
 											type="checkbox"
 											id="checkbox-list-item-4"
@@ -761,7 +759,7 @@
 										<label for="checkbox-list-item-4">Optie 1</label>
 									</div>
 
-									<div>
+									<div class="checkbox">
 										<input
 											type="checkbox"
 											id="checkbox-list-item-5"
@@ -769,7 +767,7 @@
 										<label for="checkbox-list-item-5">Optie 2</label>
 									</div>
 
-									<div>
+									<div class="checkbox">
 										<input
 											type="checkbox"
 											id="checkbox-list-item-6"
@@ -777,7 +775,7 @@
 										<label for="checkbox-list-item-6">Optie 3</label>
 									</div>
 
-									<div>
+									<div class="checkbox">
 										<input
 											type="checkbox"
 											id="checkbox-example-default-long-4"
