@@ -6,5 +6,5 @@
   --section-content-wrapper-padding-right: 0;
   --section-content-wrapper-padding-bottom: 0;
   --section-content-wrapper-padding-left: 0;
-  --section-content-wrapper-max-width: 82rem;
+  --section-content-wrapper-max-width: var(--content-max-width);
 }
