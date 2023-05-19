@@ -16,7 +16,7 @@
   --breadcrumb-bar-border-style: solid;
   --breadcrumb-bar-border-color: transparent;
   --breadcrumb-bar-border-radius: 0;
-  --breadcrumb-bar-min-height: 2.75rem;
+  --breadcrumb-bar-min-height: var(--header-navigation-min-height);
 
   /* Hover */
   --breadcrumb-bar-hover-text-color: var(--application-base-text-color);
