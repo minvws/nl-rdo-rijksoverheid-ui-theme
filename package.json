@@ -57,6 +57,6 @@
     "zip-dir": "^2.0.0"
   },
   "lint-staged": {
-    "*.{js,json,scss,html}": "prettier --write"
+    "*.{js,json,scss}": "npm run format"
   }
 }
