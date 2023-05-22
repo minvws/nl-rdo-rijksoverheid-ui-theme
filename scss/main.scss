@@ -12,7 +12,8 @@
 /* Color sets */
 @import "colors/color-set-grey";
 @import "colors/ruby-red";
-@import "colors/colors"; /* Rijksoverheid base set */
+@import "colors/colors";
+/* Rijksoverheid base set */
 @import "colors/notifications";
 
 /* Styling for Manon components */
@@ -54,6 +55,7 @@
 @import "manon/button";
 @import "manon/button-ghost";
 @import "manon/collapsing-element";
+@import "manon/checkbox";
 @import "manon/button-to-top";
 @import "manon/form";
 @import "manon/form-input";
@@ -74,6 +76,7 @@
 @import "manon/notification-explanation";
 @import "manon/notification-system";
 @import "manon/icon";
+@import "manon/radio";
 @import "manon/sidemenu";
 @import "manon/tabs";
 @import "manon/link";
@@ -84,6 +87,10 @@
 @import "components/ro-icons";
 @import "components/notification-icon";
 @import "components/slogan";
+@import "components/radio";
+@import "components/checkbox";
+@import "components/input";
+
 
 /* Temporary manon overrides (Until they have been added to manon) */
 // @import "manon-override/actions";
@@ -95,7 +102,6 @@
 // @import "manon-override/grouped-choice-list";
 // @import "manon-override/header-navigation-collapsable";
 // @import "manon-override/header-navigation";
-// @import "manon-override/input";
 // @import "manon-override/layout-authentication";
 // @import "manon-override/main-first-child";
 // @import "manon-override/main-last-child";
@@ -105,7 +111,7 @@
 // @import "manon-override/navigation-tabs";
 // @import "manon-override/page-meta";
 // @import "manon-override/page-notification";
-// @import "manon-override/radio";
+
 // @import "manon-override/section-fieldset";
 // @import "manon-override/table";
 // @import "manon-override/form-help";
