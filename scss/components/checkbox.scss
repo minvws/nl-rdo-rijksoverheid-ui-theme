@@ -1,0 +1,23 @@
+/* checkbox.scss */
+@use "mixins/radio-checkbox";
+
+form {
+    /* svg icon urls */
+    $icon-url-check: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAyNCIgaGVpZ2h0PSIxMDI0IiB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8Zz4KICA8cGF0aAogICAgIGQ9Ik0gOTEyLjM1MTQ1LDI5Mi43MzA2IDM4OS4yMjU1NCw4MTkuMTQxNDIgMTExLjY0ODU1LDU0MC43NDMxOSAxOTkuNTIwNTUsNDUyLjg3MTE4IDM4Ny41ODMwOCw2NDAuOTMzNyA4MjIuODM2OTYsMjA0Ljg1ODU5IFoiCiAgICAgZmlsbD0iI2ZmZiIvPgo8L2c+Cjwvc3ZnPgo=");
+
+    .checkbox {
+        @include radio-checkbox.radio-checkbox-styling("checkbox");
+
+        input[type="checkbox"] {
+            min-width: var(--checkbox-width);
+            width: var(--checkbox-width);
+            height: var(--checkbox-height);
+
+            &:checked {
+                border-color: var(--ro-blue);
+                background: $icon-url-check, linear-gradient(var(--ro-blue), var(--ro-blue));
+                background-size: contain;
+            }
+        }
+    }
+}

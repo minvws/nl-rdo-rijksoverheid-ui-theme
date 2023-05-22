@@ -1,0 +1,24 @@
+/* radio.scss */
+@use "mixins/radio-checkbox";
+
+form {
+  /* svg icon urls */
+  $icon-url-circle: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIj4KPGNpcmNsZSByPSI1NSIgY3k9IjEwMCIgY3g9IjEwMCIgZmlsbD0iIzAxNjg5YiIgLz4KPC9zdmc+");
+
+  .radio {
+    @include radio-checkbox.radio-checkbox-styling("radio");
+
+    input[type="radio"] {
+      border-radius: 100%;
+      /* Specified to prevent radio buttons to become ovals on long labels */
+      min-width: var(--radio-input-width);
+      width: var(--radio-input-width);
+      /* 23px by rem size 16px*/
+      height: var(--radio-input-height);
+
+      &:checked {
+        background: $icon-url-circle, linear-gradient(#fff, #fff);
+      }
+    }
+  }
+}
