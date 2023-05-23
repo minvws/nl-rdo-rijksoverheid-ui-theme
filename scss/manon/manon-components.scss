@@ -91,6 +91,8 @@
 
 /* Breadcrumb bar */
 @use "@minvws/manon/breadcrumb-bar";
+@use "@minvws/manon/breadcrumb-bar-link";
+@use "@minvws/manon/breadcrumb-bar-link-states";
 @use "@minvws/manon/breadcrumb-bar-content-wrapper";
 
 /* Footer */
