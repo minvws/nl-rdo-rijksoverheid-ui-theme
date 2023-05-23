@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>Knoppen - Rijksoverheid CSS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../dist/css/main.css" rel="stylesheet">
     <link href="../dist/img/favicon.ico" rel="shortcut icon">
     <script defer src="../dist/js/sidemenu.js"></script>
-  </head>
-  <body class="test-cases">
-   <header>
-      <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
-      <a href="" class="ro-logo">
-        <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
-        Rijksoverheid
-      </a>
+</head>
 
-      <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
-        <div>
-          <ul>
-              <li><a href="../index.html">Rijksoverheid CSS</a></li>
-              <li><a href="index.html">Online Componenten Bibliotheek</a></li>
-              <li><a href="#" aria-current="page">Knoppen</a></li>
-          </ul>
-        </div>
-      </nav>
+<body class="test-cases">
+    <header>
+        <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
+        <a href="" class="ro-logo">
+            <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
+            Rijksoverheid
+        </a>
+
+        <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
+            <div>
+                <ul>
+                    <li><a href="../index.html"><span class="icon icon-home">Hoofdpagina icoon</span> Rijksoverheid
+                            CSS</a></li>
+                    <li><a href="index.html">Online Componenten Bibliotheek</a></li>
+                    <li><a href="#" aria-current="page">Knoppen</a></li>
+                </ul>
+            </div>
+        </nav>
 
     </header>
 
     <main class="sidemenu" id="main-content" tabindex="-1">
-        <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+        <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie"
+            aria-label="Document-navigatie">
             <ul>
                 <li><a href="#">Knoppen</a></li>
                 <li><a href="#button-types">Beschikbare types</a>
@@ -55,14 +59,17 @@
             <article>
                 <div>
                     <h1>Knoppen</h1>
-                    <p>Buttons zijn er in verschijningsvormen en kunnen verschillende functies hebben. Op deze pagina staat het overzicht van alle verschillende button-varianten.</p>
+                    <p>Buttons zijn er in verschijningsvormen en kunnen verschillende functies hebben. Op deze pagina
+                        staat het overzicht van alle verschillende button-varianten.</p>
 
                     <div class="explanation">
                         <span>Toelichting:</span>
                         <h1>Snelstart</h1>
                         <ol>
-                            <li>Bepaal welk type html-element geschikt is. Zie <a href="#button-types">Beschikbare types</a> voor meer informatie.</li>
-                            <li>Bepaal aan de hand van de toelichting en de situatie welke variant en welke visuele weergave past.</li>
+                            <li>Bepaal welk type html-element geschikt is. Zie <a href="#button-types">Beschikbare
+                                    types</a> voor meer informatie.</li>
+                            <li>Bepaal aan de hand van de toelichting en de situatie welke variant en welke visuele
+                                weergave past.</li>
                             <li>Kopiëer de voorbeeldcode.</li>
                         </ol>
                     </div>
@@ -94,10 +101,16 @@
             <article id="button-types">
                 <div>
                     <h1>Beschikbare types</h1>
-                    <p>Knoppen kunnen op verschillende manieren opgebouwd worden. Iets wat er visueel als een knop uit ziet kan in de html prima een link zijn. Welk html-element geschikt is hangt af van de situatie. In deze documentatie zetten we de verschillen met situatieschetsen uiteen.</p>
+                    <p>Knoppen kunnen op verschillende manieren opgebouwd worden. Iets wat er visueel als een knop uit
+                        ziet kan in de html prima een link zijn. Welk html-element geschikt is hangt af van de situatie.
+                        In deze documentatie zetten we de verschillen met situatieschetsen uiteen.</p>
                     <p>Aandachtspunten:</p>
                     <ul>
-                        <li>Kies altijd voor het semantisch correcte html-element. Bijvoorbeeld een <code>&lt;a></code> voor een link en een <code>&lt;button></code> voor een knop. Het gebruik maken van semantisch correcte html-elementen zorgt ervoor dat gebruikers die door middel van hulptechnologiën navigeren ook de correcte informatie krijgen. In de onderstaande tabel staan enkele veelvoorkomende voorbeelden.</li>
+                        <li>Kies altijd voor het semantisch correcte html-element. Bijvoorbeeld een <code>&lt;a></code>
+                            voor een link en een <code>&lt;button></code> voor een knop. Het gebruik maken van
+                            semantisch correcte html-elementen zorgt ervoor dat gebruikers die door middel van
+                            hulptechnologiën navigeren ook de correcte informatie krijgen. In de onderstaande tabel
+                            staan enkele veelvoorkomende voorbeelden.</li>
                     </ul>
 
                     <div class="horizontal-scroll">
@@ -151,22 +164,29 @@
                             <caption>Legenda</caption>
                             <tbody>
                                 <tr>
-                                    <td class="confirmation">Semantisch correct en het gewenste html-element voor hulptechnologiën.</td>
-                                    <td class="warning">Semantisch correct maar geeft problemen voor bepaalde gebruikersgroepen.</td>
+                                    <td class="confirmation">Semantisch correct en het gewenste html-element voor
+                                        hulptechnologiën.</td>
+                                    <td class="warning">Semantisch correct maar geeft problemen voor bepaalde
+                                        gebruikersgroepen.</td>
                                     <td class="error">Semantisch incorrect.</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
 
-                    <p class="warning"><span>Waarschuwing:</span>Hoewel bijvoorbeeld een <code>&lt;span></code> en een <code>&lt;div></code> visueel vormgegeven kunnen worden als een knop, en met behulp van bijvoorbeeld Javascript zich ook kunnen gedragen als een knop. Is het semantisch incorrect om deze html-elementen hiervoor te gebruiken. Gebruik in plaats hiervan een: <code>&lt;button></code>, <code>&lt;a></code> of <code>&lt;input></code>.</p>
+                    <p class="warning"><span>Waarschuwing:</span>Hoewel bijvoorbeeld een <code>&lt;span></code> en een
+                        <code>&lt;div></code> visueel vormgegeven kunnen worden als een knop, en met behulp van
+                        bijvoorbeeld Javascript zich ook kunnen gedragen als een knop. Is het semantisch incorrect om
+                        deze html-elementen hiervoor te gebruiken. Gebruik in plaats hiervan een:
+                        <code>&lt;button></code>, <code>&lt;a></code> of <code>&lt;input></code>.</p>
                 </div>
             </article>
 
             <article id="button">
                 <div>
                     <h1>Button</h1>
-                    <p>Knoppen die een actie uitlokken en niet naar een ander deel van de website verwijzen horen binnen de html als <code>&lt;button></code> toegevoegd te worden.</p>
+                    <p>Knoppen die een actie uitlokken en niet naar een ander deel van de website verwijzen horen binnen
+                        de html als <code>&lt;button></code> toegevoegd te worden.</p>
                     <p>Aandachtspunten:</p>
                     <ul>
                         <li><code>&lt;button></code>'s kunnen van verschillende types zijn:
@@ -175,7 +195,9 @@
                                 <li><code>reset</code>: Zet de bedieningselementen terug naar de initiële waarde.</li>
                                 <li><code>button</code>: Deze type heeft geen standaard gedrag.</li>
                             </ul>
-                            Lees meer over knoppen in de MDN-documentatie <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button" rel="external">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button</a>
+                            Lees meer over knoppen in de MDN-documentatie <a
+                                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button"
+                                rel="external">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button</a>
                         </li>
                     </ul>
 
@@ -239,14 +261,18 @@
                     <p>Een input kan van het type button zijn en als knop gebruikt worden.</p>
                     <p>Aandachtspunten:</p>
                     <ul>
-                        <li>Een input kan als html-element geen content bevatten. Voor meer vrijheid met betrekking tot content wordt het aangeraden gebruik te maken van <a href="#button"><code>&lt;button</code></a>.</li>
+                        <li>Een input kan als html-element geen content bevatten. Voor meer vrijheid met betrekking tot
+                            content wordt het aangeraden gebruik te maken van <a
+                                href="#button"><code>&lt;button</code></a>.</li>
                         <li><code>&lt;input></code>'s kunnen van verschillende types zijn.
                             <ul>
                                 <li><code>submit</code>: Verstuurd de huidige formulierdata.</li>
                                 <li><code>reset</code>: Zet de bedieningselementen terug naar de initiële waarde.</li>
                                 <li><code>button</code>: Deze type heeft geen standaard gedrag.</li>
                             </ul>
-                            Lees meer over knoppen in de MDN-documentatie <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button" rel="external">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button</a>
+                            Lees meer over knoppen in de MDN-documentatie <a
+                                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button"
+                                rel="external">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button</a>
                         </li>
                     </ul>
 
@@ -297,12 +323,20 @@
             <article id="link">
                 <div>
                     <h1>Link als knop</h1>
-                    <p>In sommige gevallen kan het nodig zijn om een link er visueel als een knop uit te laten zien. Als de "knop" de gebruiker naar een ander deel van de website begeleid blijft het semantisch gezien een link. Gebruik in dat geval binnen de html een link.</p>
+                    <p>In sommige gevallen kan het nodig zijn om een link er visueel als een knop uit te laten zien. Als
+                        de "knop" de gebruiker naar een ander deel van de website begeleid blijft het semantisch gezien
+                        een link. Gebruik in dat geval binnen de html een link.</p>
                     <p>Aandachtspunten:</p>
                     <ul>
-                        <li>Gebruik een link alleen visueel als knop als de link de gebruiker ook echt naar een ander deel van de site verwijst. Als er geen duidelijk link is, gebruik dan een <a href="#button"><code>&lt;button></code></a>.</li>
-                        <li>Geef de link de class <code>button</code> mee om een <code>&lt;a></code> visueel weer te geven als een knop.</li>
-                        <li>Een <code>&lt;a></code> kent geen uitgeschakelde staat. Om de knop visueel uit te schakelen kan gebruik gemaakt worden van de class <code>disabled</code>. <strong>Let op: Het toevoegen van de class <code>disabled</code>schakelt de link niet functioneel uit. Dat zal los afgevangen moeten worden.</strong></li>
+                        <li>Gebruik een link alleen visueel als knop als de link de gebruiker ook echt naar een ander
+                            deel van de site verwijst. Als er geen duidelijk link is, gebruik dan een <a
+                                href="#button"><code>&lt;button></code></a>.</li>
+                        <li>Geef de link de class <code>button</code> mee om een <code>&lt;a></code> visueel weer te
+                            geven als een knop.</li>
+                        <li>Een <code>&lt;a></code> kent geen uitgeschakelde staat. Om de knop visueel uit te schakelen
+                            kan gebruik gemaakt worden van de class <code>disabled</code>. <strong>Let op: Het toevoegen
+                                van de class <code>disabled</code>schakelt de link niet functioneel uit. Dat zal los
+                                afgevangen moeten worden.</strong></li>
                     </ul>
 
                     <h2>a href</h2>
@@ -318,12 +352,20 @@
             <article id="button-styles">
                 <div>
                     <h1>Visuele weergave</h1>
-                    <p>Knoppen kunnen op basis van context en ten behoeve van gebruikersgemak qua vormgeving anders weergegeven worden.</p>
+                    <p>Knoppen kunnen op basis van context en ten behoeve van gebruikersgemak qua vormgeving anders
+                        weergegeven worden.</p>
 
                     <p>Aandachtspunten:</p>
                     <ul>
-                        <li>Zorg voor consistentie, pas enkel alteratieve weergave toe als het de gebruiker helpt bij het begrijpen en gebruiken van de site.</li>
-                        <li>Breng waar mogelijk, en waar het gebruikersgemak ten goede komt onderscheid aan in de belangrijkheid van knoppen. Hiermee begeleid je de gebruiker zonder opties uit het proces weg te nemen. Denk bijvoorbeeld aan een "Wijzigen" en "Opslaan" knoppen. "Opslaan" zal voor veel gebruikers de benodigde actie zijn, terwijl sommige gebruikers nog even terug willen om wijzigingen aan te brengen. In dat geval is het verstandig om de knop "Opslaan" als primaire-knop weer te geven en de knop "Wijzigen" visueel ondergeschikt maken. Zie voor meer informatie <a href="#button-secondary">Secundaire button</a>.</li>
+                        <li>Zorg voor consistentie, pas enkel alteratieve weergave toe als het de gebruiker helpt bij
+                            het begrijpen en gebruiken van de site.</li>
+                        <li>Breng waar mogelijk, en waar het gebruikersgemak ten goede komt onderscheid aan in de
+                            belangrijkheid van knoppen. Hiermee begeleid je de gebruiker zonder opties uit het proces
+                            weg te nemen. Denk bijvoorbeeld aan een "Wijzigen" en "Opslaan" knoppen. "Opslaan" zal voor
+                            veel gebruikers de benodigde actie zijn, terwijl sommige gebruikers nog even terug willen om
+                            wijzigingen aan te brengen. In dat geval is het verstandig om de knop "Opslaan" als
+                            primaire-knop weer te geven en de knop "Wijzigen" visueel ondergeschikt maken. Zie voor meer
+                            informatie <a href="#button-secondary">Secundaire button</a>.</li>
                     </ul>
 
                     <p>Beschikbare visuele weergaven:</p>
@@ -341,7 +383,8 @@
             <article id="button-primary">
                 <div>
                     <h1>Primaire button</h1>
-                    <p>Dit is een button met een kleurvlak. Hierdoor valt de button goed op. Dit is de button die standaard gebruikt wordt.</p>
+                    <p>Dit is een button met een kleurvlak. Hierdoor valt de button goed op. Dit is de button die
+                        standaard gebruikt wordt.</p>
 
                     <p>Visueel voorbeeld:</p>
                     <div class="button-container">
@@ -376,11 +419,16 @@
             <article id="button-secondary">
                 <div>
                     <h1>Secundaire button</h1>
-                    <p>Soms is het qua gebruikerservaring prettiger om een minder opvallende knop gebruiken. Bijvoorbeeld: als er een keuze gegeven wordt met twee of meer knoppen waarbij een knop de voorkeur heeft, of vaak gekozen wordt. Denk bijvoorbeeld aan een verder of annuleren knop. Dan helpt het de gebruiker om de extra keuzemogelijkheden visueel minder zwaar te maken. De lichtere button-variant is hier geschikt voor.</p>
+                    <p>Soms is het qua gebruikerservaring prettiger om een minder opvallende knop gebruiken.
+                        Bijvoorbeeld: als er een keuze gegeven wordt met twee of meer knoppen waarbij een knop de
+                        voorkeur heeft, of vaak gekozen wordt. Denk bijvoorbeeld aan een verder of annuleren knop. Dan
+                        helpt het de gebruiker om de extra keuzemogelijkheden visueel minder zwaar te maken. De lichtere
+                        button-variant is hier geschikt voor.</p>
 
                     <p>Aandachtspunten:</p>
                     <ul>
-                        <li>Om gebruik te maken van de secondaire styling voor knoppen, voeg de class <code>secondary</code> toe.</li>
+                        <li>Om gebruik te maken van de secondaire styling voor knoppen, voeg de class
+                            <code>secondary</code> toe.</li>
                     </ul>
 
                     <p>Visueel voorbeeld:</p>
@@ -418,12 +466,15 @@
             <article id="button-cta">
                 <div>
                     <h1>CTA-knop (oproep tot actie)</h1>
-                    <p>Knoppen die oproepen tot actie kunnen in een alternatieve kleur getoond kunnen worden. De afwijkende kleur zorgt ervoor dat de knop meer opvalt en daardoor meer aandacht van gebruikers krijgt.</p>
+                    <p>Knoppen die oproepen tot actie kunnen in een alternatieve kleur getoond kunnen worden. De
+                        afwijkende kleur zorgt ervoor dat de knop meer opvalt en daardoor meer aandacht van gebruikers
+                        krijgt.</p>
 
                     <p>Aandachtspunten:</p>
                     <ul>
                         <li>Gebruik de knop spaarzaam om het effect te behouden.</li>
-                        <li>Om gebruik te maken van de "oproep tot actie"-styling voor knoppen, voeg de class <code>cta</code> toe.</li>
+                        <li>Om gebruik te maken van de "oproep tot actie"-styling voor knoppen, voeg de class
+                            <code>cta</code> toe.</li>
                     </ul>
 
                     <p>Visueel voorbeeld:</p>
@@ -464,11 +515,16 @@
                     <p>Voor ondersteunende knoppen. Denk bijvoorbeeld aan een informatie- of help-knop.</p>
                     <p>Aandachtspunten:</p>
                     <ul>
-                        <li>Zorg er bij het toevoegen van een icoonknop voor dat het html-element semantisch correct is. Vaak zal dit voor een icoonknop een <code>&lt;button></code> zijn.</li>
+                        <li>Zorg er bij het toevoegen van een icoonknop voor dat het html-element semantisch correct is.
+                            Vaak zal dit voor een icoonknop een <code>&lt;button></code> zijn.</li>
                         <li>Voeg de class <code>icon</code> toe om een button als icoonbutton weer te geven.</li>
-                        <li>Voeg de class van het gewenste icoon toe. Zie de <a href="icons.html">lijst met iconen</a> ter referentie van alle beschikbare iconen.</li>
-                        <li><code>&lt;input></code>-element kan niet gebruikt worden als icoonknop aangezien deze geen pseudo-elementen kan bevatten.</li>
-                        <li><strong>Let op: Icoonknoppen tonen standaard geen tekst. Voeg de knoptekst wel altijd toe voor onder anderen screenreader gebruikers.</strong> Icoon en tekst tonen? Zie: <a href="#button-icon-text">Icoonknoppen met zowel icoon en tekst zichtbaar</a></li>
+                        <li>Voeg de class van het gewenste icoon toe. Zie de <a href="icons.html">lijst met iconen</a>
+                            ter referentie van alle beschikbare iconen.</li>
+                        <li><code>&lt;input></code>-element kan niet gebruikt worden als icoonknop aangezien deze geen
+                            pseudo-elementen kan bevatten.</li>
+                        <li><strong>Let op: Icoonknoppen tonen standaard geen tekst. Voeg de knoptekst wel altijd toe
+                                voor onder anderen screenreader gebruikers.</strong> Icoon en tekst tonen? Zie: <a
+                                href="#button-icon-text">Icoonknoppen met zowel icoon en tekst zichtbaar</a></li>
                     </ul>
 
                     <p>Visueel voorbeeld:</p>
@@ -492,19 +548,26 @@
                     </pre>
 
                     <h2 id="button-icon-text">Icoonknoppen met zowel icoon en tekst zichtbaar</h2>
-                    <p>In sommige gevallen kan het wenselijk zijn om naast het icoon ook de tekst weer te geven. Bijvoorbeeld bij iconen die minder herkenbaar zijn voor gebruikers.</p>
+                    <p>In sommige gevallen kan het wenselijk zijn om naast het icoon ook de tekst weer te geven.
+                        Bijvoorbeeld bij iconen die minder herkenbaar zijn voor gebruikers.</p>
 
                     <p>Aandachtspunten:</p>
                     <ul>
-                        <li><code>&lt;input></code>-element kan niet gebruikt worden als icoonknop aangezien deze geen pseudo-elementen kan bevatten.</li>
+                        <li><code>&lt;input></code>-element kan niet gebruikt worden als icoonknop aangezien deze geen
+                            pseudo-elementen kan bevatten.</li>
                         <li>Voeg een span met het gewenste icoon toe binnen de button.
                             <ol>
                                 <li>Voeg de <code>&lt;span></code> toe.
                                 <li>Voeg op de span de class <code>icon</code> toe.</li>
-                                <li>Voeg de class van het gewenste icoon toe. Zie de <a href="icons.html">lijst met iconen</a> ter referentie van alle beschikbare iconen.</li>
+                                <li>Voeg de class van het gewenste icoon toe. Zie de <a href="icons.html">lijst met
+                                        iconen</a> ter referentie van alle beschikbare iconen.</li>
                             </ol>
                         </li>
-                        <li>Verberg de span voor screenreader-gebruikers als het icoon enkel decoratief is en de tekst op de knop de informatie al volledig overbrengt om dubbeling te voorkomen. Voeg hiervoor <code>aria-hidden="true"</code> toe aan de <code>&lt;span></code>. Voeg een omschrijvende tekst toe binnen de <code>&lt;span></code> als het icoon informatie toevoegt die anders verloren gaat voor hulptechnologie-gebruikers.</li>
+                        <li>Verberg de span voor screenreader-gebruikers als het icoon enkel decoratief is en de tekst
+                            op de knop de informatie al volledig overbrengt om dubbeling te voorkomen. Voeg hiervoor
+                            <code>aria-hidden="true"</code> toe aan de <code>&lt;span></code>. Voeg een omschrijvende
+                            tekst toe binnen de <code>&lt;span></code> als het icoon informatie toevoegt die anders
+                            verloren gaat voor hulptechnologie-gebruikers.</li>
                     </ul>
 
                     <p>Visueel voorbeeld:</p>
@@ -518,7 +581,8 @@
                     </pre>
 
                     <p>Visueel voorbeeld secundaire knop:</p>
-                    <button class="secondary"><span aria-hidden="true" class="icon icon-questionmark"></span>Help</button>
+                    <button class="secondary"><span aria-hidden="true"
+                            class="icon icon-questionmark"></span>Help</button>
 
                     <p>Html-voorbeeld:</p>
                     <pre>
@@ -532,54 +596,68 @@
             <article id="button-action">
                 <div>
                     <h1>Actieknoppen</h1>
-                    <p>Gebruik actieknoppen op plekken waar de knop vaak herhaalt wordt en getoont kan worden met een herkenbaar icoon. Denk bijvoorbeeld aan acties binnen een formulier.</p>
+                    <p>Gebruik actieknoppen op plekken waar de knop vaak herhaalt wordt en getoont kan worden met een
+                        herkenbaar icoon. Denk bijvoorbeeld aan acties binnen een formulier.</p>
                     <p>Aandachtspunten:</p>
                     <ul>
-                        <li>Ga er niet vanuit dat de gebruiker weet wat het icoon betekend. Plaats de omschrijvende tekst in de header.</li>
-                        <li>Voor toegankelijkheid is het belangrijk om de tekst wel toe te voegen aan de button ook al wordt deze visueel niet getoont. Screenreaders maken hier bijvoorbeeld gebruik van.</li>
-                        <li>Voor tabellen met lange lijsten kan het de gebruiker helpen om gebruik te maken van de tabel met sticky header zodat de toelichting van de iconen altijd in beeld blijft. Zie de documentatie hierover op de tabellen pagina <a href="table.html#table-sticky">tabel met sticky header</a>.</li>
-                        <li>Om gebruik te maken van de visuele actieknop weergave, voeg de class <code>action-button</code> toe aan de button.</li>
-                        <li> Als alle knoppen binnen een tabel weergegeven mogen worden als actieknop kan er ook gebruik gemaakt worden van de class <code>action-buttons</code> direct op de <code>&lt;table&gt;</code>. <strong>Let op: Alle knoppen worden in dat geval weergegeven als actieknoppen.</strong></li>
+                        <li>Ga er niet vanuit dat de gebruiker weet wat het icoon betekend. Plaats de omschrijvende
+                            tekst in de header.</li>
+                        <li>Voor toegankelijkheid is het belangrijk om de tekst wel toe te voegen aan de button ook al
+                            wordt deze visueel niet getoont. Screenreaders maken hier bijvoorbeeld gebruik van.</li>
+                        <li>Voor tabellen met lange lijsten kan het de gebruiker helpen om gebruik te maken van de tabel
+                            met sticky header zodat de toelichting van de iconen altijd in beeld blijft. Zie de
+                            documentatie hierover op de tabellen pagina <a href="table.html#table-sticky">tabel met
+                                sticky header</a>.</li>
+                        <li>Om gebruik te maken van de visuele actieknop weergave, voeg de class
+                            <code>action-button</code> toe aan de button.</li>
+                        <li> Als alle knoppen binnen een tabel weergegeven mogen worden als actieknop kan er ook gebruik
+                            gemaakt worden van de class <code>action-buttons</code> direct op de
+                            <code>&lt;table&gt;</code>. <strong>Let op: Alle knoppen worden in dat geval weergegeven als
+                                actieknoppen.</strong></li>
                     </ul>
 
                     <p>Visueel voorbeeld:</p>
                     <div class="horizontal-scroll">
                         <table>
-                          <caption>Tabelvoorbeeld met actieknoppen:</caption>
-                          <thead>
-                            <tr>
-                              <th>Gebruikersnaam</th>
-                              <th>Bekijk profiel</th>
-                              <th>Wijzig wachtwoord</th>
-                              <th>Deactiveer</th>
-                              <th>Verwijder</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                                <td>Jane doe</td>
-                                <td>
-                                    <form>
-                                        <button type="submit" class="icon icon-user action-button">Bekijk profiel</button>
-                                    </form>
-                                </td>
-                                <td>
-                                    <form>
-                                        <button type="submit" class="icon icon-lock-closed action-button">Wijzig wachtwoord</button>
-                                    </form>
-                                </td>
-                                <td>
-                                    <form>
-                                        <button type="submit" class="icon icon-on-off action-button">Deactiveer</button>
-                                    </form>
-                                </td>
-                                <td>
-                                    <form>
-                                        <button type="submit" class="icon icon-trash action-button">Verwijder</button>
-                                    </form>
-                                </td>
-                            </tr>
-                          </tbody>
+                            <caption>Tabelvoorbeeld met actieknoppen:</caption>
+                            <thead>
+                                <tr>
+                                    <th>Gebruikersnaam</th>
+                                    <th>Bekijk profiel</th>
+                                    <th>Wijzig wachtwoord</th>
+                                    <th>Deactiveer</th>
+                                    <th>Verwijder</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Jane doe</td>
+                                    <td>
+                                        <form>
+                                            <button type="submit" class="icon icon-user action-button">Bekijk
+                                                profiel</button>
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <form>
+                                            <button type="submit" class="icon icon-lock-closed action-button">Wijzig
+                                                wachtwoord</button>
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <form>
+                                            <button type="submit"
+                                                class="icon icon-on-off action-button">Deactiveer</button>
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <form>
+                                            <button type="submit"
+                                                class="icon icon-trash action-button">Verwijder</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
 
@@ -652,7 +730,8 @@
                                     </td>
                                     <td>
                                         <form>
-                                            <button type="submit" class="icon icon-lock-closed">Wijzig wachtwoord</button>
+                                            <button type="submit" class="icon icon-lock-closed">Wijzig
+                                                wachtwoord</button>
                                         </form>
                                     </td>
                                     <td>
@@ -721,11 +800,13 @@
             <article id="button-container">
                 <div>
                     <h1>Knoppen groeperen</h1>
-                    <p>Knoppen kunnen gegroepeerd worden, waar mogelijk worden de knoppen in dat geval naast elkaar gepositioneerd.</p>
+                    <p>Knoppen kunnen gegroepeerd worden, waar mogelijk worden de knoppen in dat geval naast elkaar
+                        gepositioneerd.</p>
 
                     <p>Aandachtspunten:</p>
                     <ul>
-                        <li>Groepeer de knoppen binnen een <code>&lt;div></code> met de class <code>button-container</code>.</li>
+                        <li>Groepeer de knoppen binnen een <code>&lt;div></code> met de class
+                            <code>button-container</code>.</li>
                     </ul>
 
                     <p>Visueel voorbeeld:</p>
@@ -747,20 +828,22 @@
             </article>
         </div>
 
-        <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het hoofdmenu</a>
+        <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het
+            hoofdmenu</a>
     </main>
     <footer>
-      <div class="two-thirds-one-third">
-      <span class="slogan">Manon - Rijksoverheid css framework</span>
-      <nav aria-labelledby="footer-nav-1-heading">
-        <h1 id="footer-nav-1-heading">Service</h1>
-        <ul>
-          <li><a href="../index.html">Over</a></li>
-          <li><a href="../test/index.html">Styling tests</a></li>
-          <li><a href="index.html">Online componenten bibliotheek</a></li>
-        </ul>
-      </nav>
-    </div>
-  </footer>
-  </body>
+        <div class="two-thirds-one-third">
+            <span class="slogan">Manon - Rijksoverheid css framework</span>
+            <nav aria-labelledby="footer-nav-1-heading">
+                <h1 id="footer-nav-1-heading">Service</h1>
+                <ul>
+                    <li><a href="../index.html">Over</a></li>
+                    <li><a href="../test/index.html">Styling tests</a></li>
+                    <li><a href="index.html">Online componenten bibliotheek</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+
 </html>

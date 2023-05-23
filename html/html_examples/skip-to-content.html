@@ -1,78 +1,86 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <title>Ga direct naar inhoud - Rijksoverheid CSS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../dist/css/main.css" rel="stylesheet">
-    <link href="../dist/img/favicon.ico" rel="shortcut icon">
-    <script defer src="../dist/js/sidemenu.js"></script>
-  </head>
-  <body class="test-cases">
-    <header>
-      <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
-      <a href="" class="ro-logo">
-        <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
-        Rijksoverheid
-      </a>
 
-      <nav aria-label="Kruimelpad" class="breadcrumb-bar">
-        <div>
-          <ul>
-              <li><a href="../index.html">Rijksoverheid CSS</a></li>
-              <li><a href="index.html">Online Componenten Bibliotheek</a></li>
-              <li><a href="#" aria-current="page">"Ga direct naar inhoud"-knop</a></li>
-          </ul>
-        </div>
-      </nav>
+<head>
+  <meta charset="UTF-8">
+  <title>Ga direct naar inhoud - Rijksoverheid CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../dist/css/main.css" rel="stylesheet">
+  <link href="../dist/img/favicon.ico" rel="shortcut icon">
+  <script defer src="../dist/js/sidemenu.js"></script>
+</head>
 
-    </header>
+<body class="test-cases">
+  <header>
+    <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
+    <a href="" class="ro-logo">
+      <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
+      Rijksoverheid
+    </a>
 
-    <main class="sidemenu" id="main-content" tabindex="-1">
-      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
-        <ul>
-          <li><a href="inline-code">"Ga direct naar inhoud"-knop</a></li>
-        </ul>
-      </nav>
-
+    <nav aria-label="Kruimelpad" class="breadcrumb-bar">
       <div>
-          <article>
+        <ul>
+          <li><a href="../index.html"><span class="icon icon-home">Hoofdpagina icoon</span> Rijksoverheid CSS</a></li>
+          <li><a href="index.html">Online Componenten Bibliotheek</a></li>
+          <li><a href="#" aria-current="page">"Ga direct naar inhoud"-knop</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+
+  <main class="sidemenu" id="main-content" tabindex="-1">
+    <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+      <ul>
+        <li><a href="inline-code">"Ga direct naar inhoud"-knop</a></li>
+      </ul>
+    </nav>
+
+    <div>
+      <article>
+        <div>
+          <h1>"Ga direct naar inhoud"-knop</h1>
+          <p>Voeg gebruiksvriendelijkheid toe voor gebruikers die gebruik maken van hulptechnologiën of enkel met
+            toetsenbord navigeren.</p>
+          <p>Deze knop geeft gebruikers de mogelijkheid om direct naar de inhoud van de pagina te springen. Hiermee
+            wordt voorkomen dat de gebruiker langs onnodig veel elementen moet navigeren.</p>
+
+          <p>Aandachtspunten:</p>
+          <ul>
+            <li>Voeg de knop als eerste element binnen de header toe.</li>
+            <li>Verwijs met een <code>&lt;a></code> naar het blok waar de content begint. Dit zal meestal de
+              <code>&lt;main></code> zijn.</li>
+            <li><strong>Let op: de knop is alleen zichtbaar wanneer deze focus krijgt. Gebruik <code>tab</code> om de
+                knop te zien.</strong></li>
+            <li>Voeg <code>tabindex="-1"</code> toe aan de main. De <code>main</code> is een element dat standaard geen
+              focus kan accepteren aangezien het geen control of interactieve content is. Het toevoegen van de tabindex
+              stelt het in staat om toch focus te accepteren.</li>
+          </ul>
+
+          <p>Visueel voorbeeld:</p>
+        </div>
+        <header>
+          <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
+
+          <a href="" class="ro-logo">
+            <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
+            Rijksoverheid
+          </a>
+
+          <nav aria-label="Navigatie voorbeeld header">
             <div>
-              <h1>"Ga direct naar inhoud"-knop</h1>
-              <p>Voeg gebruiksvriendelijkheid toe voor gebruikers die gebruik maken van hulptechnologiën of enkel met toetsenbord navigeren.</p>
-              <p>Deze knop geeft gebruikers de mogelijkheid om direct naar de inhoud van de pagina te springen. Hiermee wordt voorkomen dat de gebruiker langs onnodig veel elementen moet navigeren.</p>
-
-              <p>Aandachtspunten:</p>
               <ul>
-                <li>Voeg de knop als eerste element binnen de header toe.</li>
-                <li>Verwijs met een <code>&lt;a></code> naar het blok waar de content begint. Dit zal meestal de <code>&lt;main></code> zijn.</li>
-                <li><strong>Let op: de knop is alleen zichtbaar wanneer deze focus krijgt. Gebruik <code>tab</code> om de knop te zien.</strong></li>
-                <li>Voeg <code>tabindex="-1"</code> toe aan de main. De <code>main</code> is een element dat standaard geen focus kan accepteren aangezien het geen control of interactieve content is. Het toevoegen van de tabindex stelt het in staat om toch focus te accepteren.</li>
+                <li><a href="" aria-current="page">Hoofdpagina</a></li>
+                <li><a href="">Ipsum</a></li>
+                <li><a href="">Dolor</a></li>
               </ul>
-
-              <p>Visueel voorbeeld:</p>
             </div>
-            <header>
-              <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
-
-              <a href="" class="ro-logo">
-                <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
-                Rijksoverheid
-              </a>
-
-              <nav aria-label="Navigatie voorbeeld header">
-                <div>
-                  <ul>
-                      <li><a href="" aria-current="page">Hoofdpagina</a></li>
-                      <li><a href="">Ipsum</a></li>
-                      <li><a href="">Dolor</a></li>
-                  </ul>
-                </div>
-              </nav>
-          </header>
-          <div>
-              <p>Html-voorbeeld header:</p>
-              <pre>
+          </nav>
+        </header>
+        <div>
+          <p>Html-voorbeeld header:</p>
+          <pre>
                 <code>
 &lt;header>
   &lt;a href="#main-content" class="button focus-only">Ga direct naar inhoud&lt;/a>
@@ -95,31 +103,32 @@
                 </code>
               </pre>
 
-              <p>Voeg aan het naar toe te springen element de corresponderende <code>id</code> toe.</p>
+          <p>Voeg aan het naar toe te springen element de corresponderende <code>id</code> toe.</p>
 
-              <pre>
+          <pre>
                 <code>
 &lt;main id="main-content" tabindex="-1">
   &lt;!-- page content -->
 &lt;/main>
                 </code>
               </pre>
-            </div>
-          </article>
         </div>
-    </main>
-    <footer>
-      <div class="two-thirds-one-third">
-          <span class="slogan">Manon - Rijksoverheid css framework</span>
-          <nav aria-labelledby="footer-nav-1-heading">
-            <h1 id="footer-nav-1-heading">Service</h1>
-            <ul>
-              <li><a href="../index.html">Over</a></li>
-              <li><a href="../test/index.html">Styling tests</a></li>
-              <li><a href="index.html">Online componenten bibliotheek</a></li>
-            </ul>
-          </nav>
-        </div>
-      </footer>
-  </body>
+      </article>
+    </div>
+  </main>
+  <footer>
+    <div class="two-thirds-one-third">
+      <span class="slogan">Manon - Rijksoverheid css framework</span>
+      <nav aria-labelledby="footer-nav-1-heading">
+        <h1 id="footer-nav-1-heading">Service</h1>
+        <ul>
+          <li><a href="../index.html">Over</a></li>
+          <li><a href="../test/index.html">Styling tests</a></li>
+          <li><a href="index.html">Online componenten bibliotheek</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+
 </html>

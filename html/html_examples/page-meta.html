@@ -1,66 +1,73 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <title>Header - Rijksoverheid CSS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../dist/css/main.css" rel="stylesheet">
-    <link href="../dist/img/favicon.ico" rel="shortcut icon">
-    <script defer src="../dist/js/sidemenu.js"></script>
-  </head>
-  <body class="test-cases">
-    <header>
-      <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
 
-      <a href="" class="ro-logo">
-        <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
-        Rijksoverheid
-      </a>
+<head>
+  <meta charset="UTF-8">
+  <title>Header - Rijksoverheid CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../dist/css/main.css" rel="stylesheet">
+  <link href="../dist/img/favicon.ico" rel="shortcut icon">
+  <script defer src="../dist/js/sidemenu.js"></script>
+</head>
 
-      <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
-        <div>
-          <ul>
-              <li><a href="../index.html">Rijksoverheid CSS</a></li>
-              <li><a href="index.html">Online Componenten Bibliotheek</a></li>
-              <li><a href="#" aria-current="page">Pagina-metagegevens</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+<body class="test-cases">
+  <header>
+    <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
 
-    <main class="sidemenu" id="main-content" tabindex="-1">
-      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
-        <ul>
-          <li><a href="#page-meta">Pagina meta-gegevens</a></li>
-          <li><a href="#login-meta">Login-gegevens</a></li>
-          <li><a href="#language">Taalselectie</a></li>
-        </ul>
-      </nav>
+    <a href="" class="ro-logo">
+      <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
+      Rijksoverheid
+    </a>
 
+    <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
       <div>
-        <article id="page-meta">
-          <div>
-            <h1>Pagina-metagegevens</h1>
-            <p>Algemene informatie over de site kan bovenaan de pagina weergegeven worden. Denk hierbij aan informatie over beschikbare talen van de pagina, of een bepaalde weergave bijvoorbeeld op basis van een ingelogd account.</p>
+        <ul>
+          <li><a href="../index.html"><span class="icon icon-home">Hoofdpagina icoon</span> Rijksoverheid CSS</a></li>
+          <li><a href="index.html">Online Componenten Bibliotheek</a></li>
+          <li><a href="#" aria-current="page">Pagina-metagegevens</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-            <p>Beschikbare voorbeelden:</p>
-            <nav aria-label="Document-navigatie">
-              <ul>
-                <li><a href="#login-meta">Login-gegevens</a></li>
-                <li><a href="#language">Taalselectie</a></li>
-              </ul>
-            </nav>
+  <main class="sidemenu" id="main-content" tabindex="-1">
+    <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+      <ul>
+        <li><a href="#page-meta">Pagina meta-gegevens</a></li>
+        <li><a href="#login-meta">Login-gegevens</a></li>
+        <li><a href="#language">Taalselectie</a></li>
+      </ul>
+    </nav>
 
-          </div>
-        </article>
+    <div>
+      <article id="page-meta">
+        <div>
+          <h1>Pagina-metagegevens</h1>
+          <p>Algemene informatie over de site kan bovenaan de pagina weergegeven worden. Denk hierbij aan informatie
+            over beschikbare talen van de pagina, of een bepaalde weergave bijvoorbeeld op basis van een ingelogd
+            account.</p>
 
-        <article id="login-meta">
+          <p>Beschikbare voorbeelden:</p>
+          <nav aria-label="Document-navigatie">
+            <ul>
+              <li><a href="#login-meta">Login-gegevens</a></li>
+              <li><a href="#language">Taalselectie</a></li>
+            </ul>
+          </nav>
+
+        </div>
+      </article>
+
+      <article id="login-meta">
         <div>
           <h1>Login-gegevens</h1>
           <p>Aandachtspunten:</p>
           <ul>
-            <li>Voeg bovenaan de pagina, direct binnen de <code>&lt;header></code>, of indien aanwezig direct onder de "ga-direct-naar-inhoud-knop", een sectie toe met de class <code>page-meta</code> om pagina-metagegevens toe te voegen.</li>
-            <li>Voeg binnen deze sectie de login-gegevens toe door middel van een <code>&lt;div class="login-meta"></code>.</li>
+            <li>Voeg bovenaan de pagina, direct binnen de <code>&lt;header></code>, of indien aanwezig direct onder de
+              "ga-direct-naar-inhoud-knop", een sectie toe met de class <code>page-meta</code> om pagina-metagegevens
+              toe te voegen.</li>
+            <li>Voeg binnen deze sectie de login-gegevens toe door middel van een
+              <code>&lt;div class="login-meta"></code>.</li>
             <li>Het toevoegen van een link bij de gebruikersnaam is optioneel.</li>
           </ul>
 
@@ -97,16 +104,19 @@
 &lt;/header>
               </code>
             </pre>
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article id="language">
+      <article id="language">
         <div>
           <h1>Taalselectie</h1>
           <p>Aandachtspunten:</p>
           <ul>
-            <li>Voeg bovenaan de pagina, direct binnen de <code>&lt;header></code>, of indien aanwezig direct onder de "ga-direct-naar-inhoud-knop", een sectie toe met de class <code>page-meta</code> om pagina-metagegevens toe te voegen.</li>
-            <li>Voeg binnen deze sectie de taalselectie toe door middel van een <code>&lt;div class="language"></code>.</li>
+            <li>Voeg bovenaan de pagina, direct binnen de <code>&lt;header></code>, of indien aanwezig direct onder de
+              "ga-direct-naar-inhoud-knop", een sectie toe met de class <code>page-meta</code> om pagina-metagegevens
+              toe te voegen.</li>
+            <li>Voeg binnen deze sectie de taalselectie toe door middel van een <code>&lt;div class="language"></code>.
+            </li>
           </ul>
 
           <p>Visueel voorbeeld:</p>
@@ -147,23 +157,24 @@
 &lt;/header>
               </code>
             </pre>
-          </div>
-        </article>
-      </div>
-    </main>
+        </div>
+      </article>
+    </div>
+  </main>
 
-    <footer>
-      <div class="two-thirds-one-third">
-        <span class="slogan">Manon - Rijksoverheid css framework</span>
-        <nav aria-labelledby="footer-nav-1-heading">
-          <h1 id="footer-nav-1-heading">Service</h1>
-          <ul>
-            <li><a href="../index.html">Over</a></li>
-            <li><a href="index.html">Styling tests</a></li>
-            <li><a href="index.html">Online componenten bibliotheek</a></li>
-          </ul>
-        </nav>
-      </div>
-    </footer>
-  </body>
+  <footer>
+    <div class="two-thirds-one-third">
+      <span class="slogan">Manon - Rijksoverheid css framework</span>
+      <nav aria-labelledby="footer-nav-1-heading">
+        <h1 id="footer-nav-1-heading">Service</h1>
+        <ul>
+          <li><a href="../index.html">Over</a></li>
+          <li><a href="index.html">Styling tests</a></li>
+          <li><a href="index.html">Online componenten bibliotheek</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+
 </html>

@@ -1,92 +1,205 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <title>Voorbeeldpagina - Rijksoverheid CSS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../dist/css/main.css" rel="stylesheet">
-    <link href="../dist/img/favicon.ico" rel="shortcut icon">
-    <script defer src="../dist/js/sidemenu.js"></script>
-  </head>
-  <body class="test-cases">
-    <header>
-      <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
-      <a href="" class="ro-logo">
-        <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
-        Rijksoverheid
-      </a>
 
-      <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
-        <div>
-          <ul>
-              <li><a href="../index.html">Rijksoverheid CSS</a></li>
-              <li><a href="index.html">Online Componenten Bibliotheek</a></li>
-              <li><a href="#" aria-current="page">Voorbeeldpagina</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <title>Voorbeeldpagina - Rijksoverheid CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../dist/css/main.css" rel="stylesheet">
+  <link href="../dist/img/favicon.ico" rel="shortcut icon">
+  <script defer src="../dist/js/sidemenu.js"></script>
+</head>
 
-    <main class="sidemenu" id="main-content" tabindex="-1">
-      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+<body class="test-cases">
+  <header>
+    <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
+    <a href="" class="ro-logo">
+      <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
+      Rijksoverheid
+    </a>
+
+    <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
+      <div>
         <ul>
-            <li><a href="#">Voorbeeld homepage</a>
+          <li><a href="../index.html"><span class="icon icon-home">Hoofdpagina icoon</span> Rijksoverheid CSS</a></li>
+          <li><a href="index.html">Online Componenten Bibliotheek</a></li>
+          <li><a href="#" aria-current="page">Voorbeeldpagina</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="sidemenu" id="main-content" tabindex="-1">
+    <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+      <ul>
+        <li><a href="#">Voorbeeld homepage</a>
+          <ul>
+            <li><a href="#visual-example">Viseel voorbeeld</a></li>
+            <li><a href="#html-example">Html-voorbeeld</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div>
+      <article>
+        <div>
+          <h1>Voorbeeld homepage</h1>
+          <p>Kopieerbaar voorbeeld van een opzet voor een homepage.</p>
+
+          <h2>Aandachtspunten:</h2>
+          <ul>
+            <li>Dit voorbeeld maakt gebruik van de onderstaande elementen. Zie de detail-pagina's voor meer informatie:
               <ul>
-                <li><a href="#visual-example">Viseel voorbeeld</a></li>
-                <li><a href="#html-example">Html-voorbeeld</a></li>
+                <li><a href="header-main-nav.html">Header-element met hoofdnavigatie</a></li>
+                <li><a href="skip-to-content.html">"Ga direct naar inhoud"-knop</a></li>
+                <li><a href="layout.html">Contentweergave</a></li>
+                <li><a href="hero.html">Hero-sectie</a></li>
+                <li><a href="list.html">Lijsten</a></li>
+                <li><a href="footer.html">Footer</a></li>
               </ul>
             </li>
-        </ul>
-      </nav>
-      <div>
-        <article>
-          <div>
-            <h1>Voorbeeld homepage</h1>
-            <p>Kopieerbaar voorbeeld van een opzet voor een homepage.</p>
+          </ul>
 
-            <h2>Aandachtspunten:</h2>
-            <ul>
-              <li>Dit voorbeeld maakt gebruik van de onderstaande elementen. Zie de detail-pagina's voor meer informatie:
-                <ul>
-                  <li><a href="header-main-nav.html">Header-element met hoofdnavigatie</a></li>
-                  <li><a href="skip-to-content.html">"Ga direct naar inhoud"-knop</a></li>
-                  <li><a href="layout.html">Contentweergave</a></li>
-                  <li><a href="hero.html">Hero-sectie</a></li>
-                  <li><a href="list.html">Lijsten</a></li>
-                  <li><a href="footer.html">Footer</a></li>
-                </ul>
-              </li>
-            </ul>
+          <h2>Voorbeelden</h2>
+          <h3 id="visual-example">Visueel voorbeeld:</h3>
+        </div>
+        <header>
+          <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
+          <a href="" class="ro-logo">
+            <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
+            Rijksoverheid
+          </a>
 
-            <h2>Voorbeelden</h2>
-            <h3 id="visual-example">Visueel voorbeeld:</h3>
-          </div>
-          <header>
-            <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
-            <a href="" class="ro-logo">
-              <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
-              Rijksoverheid
-            </a>
-
-            <nav aria-label="Hoofdnavigatie">
-              <div>
-                <ul>
-                    <li ><a href="" aria-current="page">Hoofdpagina</a></li>
-                    <li><a href="">Ipsum</a></li>
-                    <li><a href="">Dolor</a></li>
-                </ul>
-              </div>
-            </nav>
-          </header>
-
-          <section class="hero">
-            <img src="../images/beach.jpg" alt="">
+          <nav aria-label="Hoofdnavigatie">
             <div>
-              <h1>Voorbeeldpagina</h1>
+              <ul>
+                <li><a href="" aria-current="page">Hoofdpagina</a></li>
+                <li><a href="">Ipsum</a></li>
+                <li><a href="">Dolor</a></li>
+              </ul>
             </div>
-          </section>
+          </nav>
+        </header>
 
-          <section class="background-color-offset condensed">
+        <section class="hero">
+          <img src="../images/beach.jpg" alt="">
+          <div>
+            <h1>Voorbeeldpagina</h1>
+          </div>
+        </section>
+
+        <section class="background-color-offset condensed">
+          <div class="column-3">
+            <nav aria-label="Voorbeeld navigatie-element">
+              <ul>
+                <li><a href="">Lorem ipsum</a></li>
+                <li><a href="">Dolor</a></li>
+                <li><a href="">Set amet</a></li>
+                <li><a href="">Adipiscing elit</a></li>
+              </ul>
+            </nav>
+            <nav aria-label="Voorbeeld navigatie-element">
+              <ul>
+                <li><a href="">Lorem ipsum</a></li>
+                <li><a href="">Dolor</a></li>
+                <li><a href="">Set amet</a></li>
+                <li><a href="">Adipiscing elit</a></li>
+              </ul>
+            </nav>
+            <nav aria-label="Voorbeeld navigatie-element">
+              <ul>
+                <li><a href="">Lorem ipsum</a></li>
+                <li><a href="">Dolor</a></li>
+                <li><a href="">Set amet</a></li>
+                <li><a href="">Adipiscing elit</a></li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+
+        <section>
+          <div>
+            <h1>Lorem ipsum dolor set</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at auctor tortor. Donec sodales velit ante,
+              id bibendum libero consequat vel. Maecenas diam nunc, scelerisque sit amet dui ut, posuere vehicula quam.
+              Quisque a odio vel elit fringilla hendrerit. Nullam iaculis sollicitudin tortor sed accumsan. In consequat
+              maximus malesuada. Etiam nec odio eget lorem condimentum ornare. In sit amet tincidunt lorem.</p>
+            <p>Pellentesque cursus, augue ut cursus egestas, magna nisl efficitur urna, ut molestie nisl urna in massa.
+              Ut gravida convallis enim. In eget hendrerit ante. Aenean viverra lacus malesuada lectus accumsan commodo.
+              Ut a ullamcorper lorem, id porta est. Cras venenatis turpis in ex pulvinar, at vestibulum metus bibendum.
+              Etiam in tincidunt odio, et pulvinar eros. Integer a luctus odio, quis sollicitudin dolor. Cras vel tempus
+              sapien.</p>
+          </div>
+        </section>
+
+        <section>
+          <div>
+            <h1>Uitgelicht</h1>
+            <div class="column-3">
+              <div>
+                <img src="../images/beach.jpg" alt="">
+                <h1>Lorem ipsum</h1>
+                <p>Donec fermentum dignissim dui, eu hendrerit tellus pellentesque in. Cras nec pretium nisl. Donec
+                  tempor sodales ligula. Nulla sodales vel risus eu ullamcorper. Curabitur ante nisl, dapibus quis quam
+                  ac, eleifend eleifend orci.</p>
+              </div>
+              <div>
+                <img src="../images/beach.jpg" alt="">
+                <h1>Lorem ipsum</h1>
+                <p>Donec fermentum dignissim dui, eu hendrerit tellus pellentesque in. Cras nec pretium nisl. Donec
+                  tempor sodales ligula. Nulla sodales vel risus eu ullamcorper. Curabitur ante nisl, dapibus quis quam
+                  ac, eleifend eleifend orci.</p>
+              </div>
+              <div>
+                <img src="../images/beach.jpg" alt="">
+                <h1>Dolor set</h1>
+                <p>Mauris tristique, massa sed ullamcorper congue, dui lorem vehicula libero, ac convallis urna neque et
+                  neque. Vestibulum eu dapibus lacus. Proin sit amet faucibus est, nec venenatis mi. Suspendisse nisi
+                  metus, porta a rhoncus vitae, laoreet ultrices neque.</p>
+              </div>
+              <div>
+                <img src="../images/beach.jpg" alt="">
+                <h1>Lorem ipsum</h1>
+                <p>Donec fermentum dignissim dui, eu hendrerit tellus pellentesque in. Cras nec pretium nisl. Donec
+                  tempor sodales ligula. Nulla sodales vel risus eu ullamcorper. Curabitur ante nisl, dapibus quis quam
+                  ac, eleifend eleifend orci.</p>
+              </div>
+              <div>
+                <img src="../images/beach.jpg" alt="">
+                <h1>Lorem ipsum</h1>
+                <p>Donec fermentum dignissim dui, eu hendrerit tellus pellentesque in. Cras nec pretium nisl. Donec
+                  tempor sodales ligula. Nulla sodales vel risus eu ullamcorper. Curabitur ante nisl, dapibus quis quam
+                  ac, eleifend eleifend orci.</p>
+              </div>
+              <div>
+                <img src="../images/beach.jpg" alt="">
+                <h1>Dolor set</h1>
+                <p>Mauris tristique, massa sed ullamcorper congue, dui lorem vehicula libero, ac convallis urna neque et
+                  neque. Vestibulum eu dapibus lacus. Proin sit amet faucibus est, nec venenatis mi. Suspendisse nisi
+                  metus, porta a rhoncus vitae, laoreet ultrices neque.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div>
+            <h1>Lorem ipsum dolor set</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at auctor tortor. Donec sodales velit ante,
+              id bibendum libero consequat vel. Maecenas diam nunc, scelerisque sit amet dui ut, posuere vehicula quam.
+              Quisque a odio vel elit fringilla hendrerit. Nullam iaculis sollicitudin tortor sed accumsan. In consequat
+              maximus malesuada. Etiam nec odio eget lorem condimentum ornare. In sit amet tincidunt lorem.</p>
+            <p>Pellentesque cursus, augue ut cursus egestas, magna nisl efficitur urna, ut molestie nisl urna in massa.
+              Ut gravida convallis enim. In eget hendrerit ante. Aenean viverra lacus malesuada lectus accumsan commodo.
+              Ut a ullamcorper lorem, id porta est. Cras venenatis turpis in ex pulvinar, at vestibulum metus bibendum.
+              Etiam in tincidunt odio, et pulvinar eros. Integer a luctus odio, quis sollicitudin dolor. Cras vel tempus
+              sapien.</p>
+          </div>
+        </section>
+
+        <section>
+          <div>
+            <h1>Zie ook</h1>
             <div class="column-3">
               <nav aria-label="Voorbeeld navigatie-element">
                 <ul>
@@ -106,109 +219,24 @@
               </nav>
               <nav aria-label="Voorbeeld navigatie-element">
                 <ul>
-                  <li><a href="">Lorem ipsum</a></li>
-                  <li><a href="">Dolor</a></li>
-                  <li><a href="">Set amet</a></li>
-                  <li><a href="">Adipiscing elit</a></li>
+                  <li><a href="" rel="external">Lorem ipsum</a></li>
+                  <li><a href="" rel="external">Dolor</a></li>
+                  <li><a href="" rel="external">Set amet</a></li>
                 </ul>
               </nav>
             </div>
-          </section>
+          </div>
+        </section>
 
-          <section>
-            <div>
-              <h1>Lorem ipsum dolor set</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at auctor tortor. Donec sodales velit ante, id bibendum libero consequat vel. Maecenas diam nunc, scelerisque sit amet dui ut, posuere vehicula quam. Quisque a odio vel elit fringilla hendrerit. Nullam iaculis sollicitudin tortor sed accumsan. In consequat maximus malesuada. Etiam nec odio eget lorem condimentum ornare. In sit amet tincidunt lorem.</p>
-              <p>Pellentesque cursus, augue ut cursus egestas, magna nisl efficitur urna, ut molestie nisl urna in massa. Ut gravida convallis enim. In eget hendrerit ante. Aenean viverra lacus malesuada lectus accumsan commodo. Ut a ullamcorper lorem, id porta est. Cras venenatis turpis in ex pulvinar, at vestibulum metus bibendum. Etiam in tincidunt odio, et pulvinar eros. Integer a luctus odio, quis sollicitudin dolor. Cras vel tempus sapien.</p>
-            </div>
-          </section>
-
-          <section>
-            <div>
-              <h1>Uitgelicht</h1>
-              <div class="column-3">
-                <div>
-                  <img src="../images/beach.jpg" alt="">
-                  <h1>Lorem ipsum</h1>
-                  <p>Donec fermentum dignissim dui, eu hendrerit tellus pellentesque in. Cras nec pretium nisl. Donec tempor sodales ligula. Nulla sodales vel risus eu ullamcorper. Curabitur ante nisl, dapibus quis quam ac, eleifend eleifend orci.</p>
-                </div>
-                 <div>
-                  <img src="../images/beach.jpg" alt="">
-                  <h1>Lorem ipsum</h1>
-                  <p>Donec fermentum dignissim dui, eu hendrerit tellus pellentesque in. Cras nec pretium nisl. Donec tempor sodales ligula. Nulla sodales vel risus eu ullamcorper. Curabitur ante nisl, dapibus quis quam ac, eleifend eleifend orci.</p>
-                </div>
-                <div>
-                  <img src="../images/beach.jpg" alt="">
-                  <h1>Dolor set</h1>
-                  <p>Mauris tristique, massa sed ullamcorper congue, dui lorem vehicula libero, ac convallis urna neque et neque. Vestibulum eu dapibus lacus. Proin sit amet faucibus est, nec venenatis mi. Suspendisse nisi metus, porta a rhoncus vitae, laoreet ultrices neque.</p>
-                </div>
-                <div>
-                  <img src="../images/beach.jpg" alt="">
-                  <h1>Lorem ipsum</h1>
-                  <p>Donec fermentum dignissim dui, eu hendrerit tellus pellentesque in. Cras nec pretium nisl. Donec tempor sodales ligula. Nulla sodales vel risus eu ullamcorper. Curabitur ante nisl, dapibus quis quam ac, eleifend eleifend orci.</p>
-                </div>
-                 <div>
-                  <img src="../images/beach.jpg" alt="">
-                  <h1>Lorem ipsum</h1>
-                  <p>Donec fermentum dignissim dui, eu hendrerit tellus pellentesque in. Cras nec pretium nisl. Donec tempor sodales ligula. Nulla sodales vel risus eu ullamcorper. Curabitur ante nisl, dapibus quis quam ac, eleifend eleifend orci.</p>
-                </div>
-                <div>
-                  <img src="../images/beach.jpg" alt="">
-                  <h1>Dolor set</h1>
-                  <p>Mauris tristique, massa sed ullamcorper congue, dui lorem vehicula libero, ac convallis urna neque et neque. Vestibulum eu dapibus lacus. Proin sit amet faucibus est, nec venenatis mi. Suspendisse nisi metus, porta a rhoncus vitae, laoreet ultrices neque.</p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section>
-            <div>
-              <h1>Lorem ipsum dolor set</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at auctor tortor. Donec sodales velit ante, id bibendum libero consequat vel. Maecenas diam nunc, scelerisque sit amet dui ut, posuere vehicula quam. Quisque a odio vel elit fringilla hendrerit. Nullam iaculis sollicitudin tortor sed accumsan. In consequat maximus malesuada. Etiam nec odio eget lorem condimentum ornare. In sit amet tincidunt lorem.</p>
-              <p>Pellentesque cursus, augue ut cursus egestas, magna nisl efficitur urna, ut molestie nisl urna in massa. Ut gravida convallis enim. In eget hendrerit ante. Aenean viverra lacus malesuada lectus accumsan commodo. Ut a ullamcorper lorem, id porta est. Cras venenatis turpis in ex pulvinar, at vestibulum metus bibendum. Etiam in tincidunt odio, et pulvinar eros. Integer a luctus odio, quis sollicitudin dolor. Cras vel tempus sapien.</p>
-            </div>
-          </section>
-
-          <section>
-            <div>
-              <h1>Zie ook</h1>
-              <div class="column-3">
-                <nav aria-label="Voorbeeld navigatie-element">
-                  <ul>
-                    <li><a href="">Lorem ipsum</a></li>
-                    <li><a href="">Dolor</a></li>
-                    <li><a href="">Set amet</a></li>
-                    <li><a href="">Adipiscing elit</a></li>
-                  </ul>
-                </nav>
-                <nav aria-label="Voorbeeld navigatie-element">
-                  <ul>
-                    <li><a href="">Lorem ipsum</a></li>
-                    <li><a href="">Dolor</a></li>
-                    <li><a href="">Set amet</a></li>
-                    <li><a href="">Adipiscing elit</a></li>
-                  </ul>
-                </nav>
-                <nav aria-label="Voorbeeld navigatie-element">
-                  <ul>
-                    <li><a href="" rel="external">Lorem ipsum</a></li>
-                    <li><a href="" rel="external">Dolor</a></li>
-                    <li><a href="" rel="external">Set amet</a></li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-          </section>
-
-          <footer>
-            <div>
-              <span>De Rijksoverheid. Voor Nederland</span>
-            </div>
-          </footer>
-
+        <footer>
           <div>
-            <h3 id="html-example">Html-voorbeeld:</h3>
-            <pre>
+            <span>De Rijksoverheid. Voor Nederland</span>
+          </div>
+        </footer>
+
+        <div>
+          <h3 id="html-example">Html-voorbeeld:</h3>
+          <pre>
               <code>
 &lt;!DOCTYPE html>
 &lt;html lang="nl">
@@ -375,23 +403,24 @@
 
               </code>
             </pre>
-          </div>
-        </article>
-      </div>
-    </main>
+        </div>
+      </article>
+    </div>
+  </main>
 
-    <footer>
-      <div class="two-thirds-one-third">
-        <span class="slogan">Manon - Rijksoverheid css framework</span>
-        <nav aria-labelledby="footer-nav-1-heading">
-          <h1 id="footer-nav-1-heading">Service</h1>
-          <ul>
-            <li><a href="../index.html">Over</a></li>
-            <li><a href="../test/index.html">Styling tests</a></li>
-            <li><a href="index.html">Online componenten bibliotheek</a></li>
-          </ul>
-        </nav>
-      </div>
-    </footer>
-  </body>
+  <footer>
+    <div class="two-thirds-one-third">
+      <span class="slogan">Manon - Rijksoverheid css framework</span>
+      <nav aria-labelledby="footer-nav-1-heading">
+        <h1 id="footer-nav-1-heading">Service</h1>
+        <ul>
+          <li><a href="../index.html">Over</a></li>
+          <li><a href="../test/index.html">Styling tests</a></li>
+          <li><a href="index.html">Online componenten bibliotheek</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+
 </html>

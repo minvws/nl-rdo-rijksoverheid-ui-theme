@@ -1,69 +1,74 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <title>"Terug naar hoofdmenu"-knop - Rijksoverheid CSS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../dist/css/main.css" rel="stylesheet">
-    <link href="../dist/img/favicon.ico" rel="shortcut icon">
-    <script defer src="../dist/js/sidemenu.js"></script>
-  </head>
-  <body class="test-cases">
-    <header>
-      <a href="" class="button focus-only">Ga direct naar inhoud</a>
-      <a href="" class="ro-logo">
-        <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
-        Rijksoverheid
-      </a>
 
-      <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
-        <div>
-          <ul>
-              <li><a href="../index.html">Rijksoverheid CSS</a></li>
-              <li><a href="index.html">Online Componenten Bibliotheek</a></li>
-              <li><a href="#" aria-current="page">"Terug naar hoofdmenu"-knop</a></li>
-          </ul>
-        </div>
-      </nav>
+<head>
+  <meta charset="UTF-8">
+  <title>"Terug naar hoofdmenu"-knop - Rijksoverheid CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../dist/css/main.css" rel="stylesheet">
+  <link href="../dist/img/favicon.ico" rel="shortcut icon">
+  <script defer src="../dist/js/sidemenu.js"></script>
+</head>
 
-    </header>
+<body class="test-cases">
+  <header>
+    <a href="" class="button focus-only">Ga direct naar inhoud</a>
+    <a href="" class="ro-logo">
+      <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
+      Rijksoverheid
+    </a>
 
-    <main class="sidemenu">
-      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
-        <ul>
-          <li><a href="#to-top">"Terug naar hoofdmenu"-knop</a></li>
-        </ul>
-      </nav>
-
+    <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
       <div>
-          <article>
-            <div>
-              <h1>"Terug naar hoofdmenu"-knop</h1>
-              <p>Bied een soepele gebruikerservaring aan door bij lange pagina's en documenten gebruik te maken van de "Terug naar hoofdmenu"-knop.</p>
+        <ul>
+          <li><a href="../index.html"><span class="icon icon-home">Hoofdpagina icoon</span> Rijksoverheid CSS</a></li>
+          <li><a href="index.html">Online Componenten Bibliotheek</a></li>
+          <li><a href="#" aria-current="page">"Terug naar hoofdmenu"-knop</a></li>
+        </ul>
+      </div>
+    </nav>
 
-              <p>Dit zorgt voor een extra mogelijkheid tot navigeren binnen de pagina. Hierdoor is het voor alle gebruikers mogelijk om snel terug te springen naar het hoofdmenu.</p>
+  </header>
 
+  <main class="sidemenu">
+    <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+      <ul>
+        <li><a href="#to-top">"Terug naar hoofdmenu"-knop</a></li>
+      </ul>
+    </nav>
+
+    <div>
+      <article>
+        <div>
+          <h1>"Terug naar hoofdmenu"-knop</h1>
+          <p>Bied een soepele gebruikerservaring aan door bij lange pagina's en documenten gebruik te maken van de
+            "Terug naar hoofdmenu"-knop.</p>
+
+          <p>Dit zorgt voor een extra mogelijkheid tot navigeren binnen de pagina. Hierdoor is het voor alle gebruikers
+            mogelijk om snel terug te springen naar het hoofdmenu.</p>
+
+          <ol>
+            <li>Voeg de knop aan het einde van de <code>&lt;main></code> toe.</li>
+            <li>Voeg de link naar de hoofdnavigatie toe.
               <ol>
-                <li>Voeg de knop aan het einde van de <code>&lt;main></code> toe.</li>
-                <li>Voeg de link naar de hoofdnavigatie toe.
-                  <ol>
-                    <li>Voeg aan de hoofdnavigatie een <code>id</code> toe. Bijvoorbeeld: "main-nav".</li>
-                    <li>Voeg binnen de link de corresponderende verwijzing toe. Zie het Html-voorbeeld voor meer informatie.</li>
-                  </ol>
+                <li>Voeg aan de hoofdnavigatie een <code>id</code> toe. Bijvoorbeeld: "main-nav".</li>
+                <li>Voeg binnen de link de corresponderende verwijzing toe. Zie het Html-voorbeeld voor meer informatie.
                 </li>
               </ol>
+            </li>
+          </ol>
 
-              <p>Zie de knop rechtsonder in beeld voor het visuele voorbeeld.</p>
+          <p>Zie de knop rechtsonder in beeld voor het visuele voorbeeld.</p>
 
-              <p>Html-voorbeeld knop:</p>
-              <pre>
+          <p>Html-voorbeeld knop:</p>
+          <pre>
                 <code>
 &lt;a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het hoofdmenu&lt;/a>
                 </code>
               </pre>
 
-              <p>Html-voorbeeld id:</p>
-              <pre>
+          <p>Html-voorbeeld id:</p>
+          <pre>
                 <code>
 &lt;nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
   &lt;!-- Nav content -->
@@ -71,8 +76,8 @@
                 </code>
               </pre>
 
-              <p>Html-voorbeeld plaatsing:</p>
-              <pre>
+          <p>Html-voorbeeld plaatsing:</p>
+          <pre>
                 <code>
 &lt;!DOCTYPE html>
 &lt;html lang="nl">
@@ -103,25 +108,27 @@
                 </code>
               </pre>
 
-            </div>
-          </article>
         </div>
+      </article>
+    </div>
 
-        <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het hoofdmenu</a>
-    </main>
+    <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het
+      hoofdmenu</a>
+  </main>
 
-    <footer>
-      <div class="two-thirds-one-third">
-          <span class="slogan">Manon - Rijksoverheid css framework</span>
-          <nav aria-labelledby="footer-nav-1-heading">
-            <h1 id="footer-nav-1-heading">Service</h1>
-            <ul>
-              <li><a href="../index.html">Over</a></li>
-              <li><a href="../test/index.html">Styling tests</a></li>
-              <li><a href="index.html">Online componenten bibliotheek</a></li>
-            </ul>
-          </nav>
-        </div>
-      </footer>
-  </body>
+  <footer>
+    <div class="two-thirds-one-third">
+      <span class="slogan">Manon - Rijksoverheid css framework</span>
+      <nav aria-labelledby="footer-nav-1-heading">
+        <h1 id="footer-nav-1-heading">Service</h1>
+        <ul>
+          <li><a href="../index.html">Over</a></li>
+          <li><a href="../test/index.html">Styling tests</a></li>
+          <li><a href="index.html">Online componenten bibliotheek</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+
 </html>

@@ -1,62 +1,67 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <title>Notificatie-teller - Rijksoverheid CSS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../dist/css/main.css" rel="stylesheet">
-    <link href="../dist/img/favicon.ico" rel="shortcut icon">
-    <script defer src="../dist/js/sidemenu.js"></script>
-  </head>
-  <body class="test-cases">
-    <header>
-      <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
-      <a href="" class="ro-logo">
-        <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid" />
-        Rijksoverheid
-      </a>
 
-      <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
-        <div>
-          <ul>
-              <li><a href="../index.html">Rijksoverheid CSS</a></li>
-              <li><a href="index.html">Online Componenten Bibliotheek</a></li>
-              <li><a href="#" aria-current="page">Notificatie-teller</a></li>
-          </ul>
-        </div>
-      </nav>
+<head>
+  <meta charset="UTF-8">
+  <title>Notificatie-teller - Rijksoverheid CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../dist/css/main.css" rel="stylesheet">
+  <link href="../dist/img/favicon.ico" rel="shortcut icon">
+  <script defer src="../dist/js/sidemenu.js"></script>
+</head>
 
-    </header>
+<body class="test-cases">
+  <header>
+    <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
+    <a href="" class="ro-logo">
+      <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid" />
+      Rijksoverheid
+    </a>
 
-    <main class="sidemenu" id="main-content" tabindex="-1">
-      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
-        <ul>
-          <li><a href="#link">Notificatie-teller</a></li>
-          <li><a href="#link">Link</a></li>
-          <li><a href="#external-references">Externe link</a></li>
-          <li><a href="#link-title">Link met titel</a></li>
-        </ul>
-      </nav>
-
+    <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
       <div>
-        <article>
-          <div>
-            <h1>Notificatie-teller</h1>
-            <p>Gebruik om de gebruiker te attenderen en te informeren over nieuwe berichten of notificaties.</p>
+        <ul>
+          <li><a href="../index.html"><span class="icon icon-home">Hoofdpagina icoon</span> Rijksoverheid CSS</a></li>
+          <li><a href="index.html">Online Componenten Bibliotheek</a></li>
+          <li><a href="#" aria-current="page">Notificatie-teller</a></li>
+        </ul>
+      </div>
+    </nav>
 
-            <ul>
-              <li>Voeg de <code>class</code> "message-counter" toe om het aantal berichten visueel weer te geven als een notificatie-teller.</li>
-              <li>Voeg <code>aria-label=""</code> toe met een duidelijke omschrijving toe voor gebruiker die gebruik maken van screenreaders. Bijvoorbeeld: "Nieuwe berichten", "Ongelezen berichten" of "Nieuwe berichten binnen afspraken". Houd de omschrijving kort maar zorg voor voldoende context.</li>
-            </ul>
+  </header>
 
-            <p>Visueel voorbeelden:</p>
-            <span class="message-counter" aria-label="Nieuwe berichten">1</span>
-            <span class="message-counter" aria-label="Nieuwe berichten">12</span>
-            <span class="message-counter" aria-label="Nieuwe berichten">500</span>
-            <span class="message-counter" aria-label="Nieuwe berichten">1583</span>
-            <span class="message-counter" aria-label="Nieuwe berichten">12.830</span>
-            <p>Html-voorbeelden:</p>
-            <pre>
+  <main class="sidemenu" id="main-content" tabindex="-1">
+    <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+      <ul>
+        <li><a href="#link">Notificatie-teller</a></li>
+        <li><a href="#link">Link</a></li>
+        <li><a href="#external-references">Externe link</a></li>
+        <li><a href="#link-title">Link met titel</a></li>
+      </ul>
+    </nav>
+
+    <div>
+      <article>
+        <div>
+          <h1>Notificatie-teller</h1>
+          <p>Gebruik om de gebruiker te attenderen en te informeren over nieuwe berichten of notificaties.</p>
+
+          <ul>
+            <li>Voeg de <code>class</code> "message-counter" toe om het aantal berichten visueel weer te geven als een
+              notificatie-teller.</li>
+            <li>Voeg <code>aria-label=""</code> toe met een duidelijke omschrijving toe voor gebruiker die gebruik maken
+              van screenreaders. Bijvoorbeeld: "Nieuwe berichten", "Ongelezen berichten" of "Nieuwe berichten binnen
+              afspraken". Houd de omschrijving kort maar zorg voor voldoende context.</li>
+          </ul>
+
+          <p>Visueel voorbeelden:</p>
+          <span class="message-counter" aria-label="Nieuwe berichten">1</span>
+          <span class="message-counter" aria-label="Nieuwe berichten">12</span>
+          <span class="message-counter" aria-label="Nieuwe berichten">500</span>
+          <span class="message-counter" aria-label="Nieuwe berichten">1583</span>
+          <span class="message-counter" aria-label="Nieuwe berichten">12.830</span>
+          <p>Html-voorbeelden:</p>
+          <pre>
               <code>
 &lt;span class="message-counter" aria-label="Nieuwe berichten">1&lt;/span>
 &lt;span class="message-counter" aria-label="Nieuwe berichten">12&lt;/span>
@@ -65,24 +70,26 @@
 &lt;span class="message-counter" aria-label="Nieuwe berichten">12.830&lt;/span>
               </code>
             </pre>
-          </div>
-        </article>
-      </div>
-
-      <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het hoofdmenu</a>
-    </main>
-    <footer>
-      <div class="two-thirds-one-third">
-          <span class="slogan">Manon - Rijksoverheid css framework</span>
-          <nav aria-labelledby="footer-nav-1-heading">
-            <h1 id="footer-nav-1-heading">Service</h1>
-            <ul>
-              <li><a href="../index.html">Over</a></li>
-              <li><a href="../test/index.html">Styling tests</a></li>
-              <li><a href="index.html">Online componenten bibliotheek</a></li>
-            </ul>
-          </nav>
         </div>
-      </footer>
-  </body>
+      </article>
+    </div>
+
+    <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het
+      hoofdmenu</a>
+  </main>
+  <footer>
+    <div class="two-thirds-one-third">
+      <span class="slogan">Manon - Rijksoverheid css framework</span>
+      <nav aria-labelledby="footer-nav-1-heading">
+        <h1 id="footer-nav-1-heading">Service</h1>
+        <ul>
+          <li><a href="../index.html">Over</a></li>
+          <li><a href="../test/index.html">Styling tests</a></li>
+          <li><a href="index.html">Online componenten bibliotheek</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+
 </html>
