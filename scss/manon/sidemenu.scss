@@ -1,12 +1,12 @@
 /* sidemenu.scss */
 
 :root {
-  --sidemenu-base-list-item-list-style: none;
+  --sidemenu-list-item-list-style: none;
 
   /* content on the button when the menu is collapsed */
-  --sidemenu-base-collapsed-button-icon: var(--icon-hamburger);
+  --sidemenu-collapsed-button-icon: var(--icon-hamburger);
 
   /* content on the button when the menu is expanded */
-  --sidemenu-base-expanded-button-icon: var(--icon-close);
-  --sidemenu-base-button-icon-font-size: 0.7rem;
+  --sidemenu-expanded-button-icon: var(--icon-close);
+  --sidemenu-button-icon-font-size: 0.7rem;
 }
