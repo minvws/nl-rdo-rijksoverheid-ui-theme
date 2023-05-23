@@ -102,7 +102,7 @@
 @use "@minvws/manon/footer-link-visited";
 
 /* Components */
-@use "@minvws/manon/sidemenu-base";
+@use "@minvws/manon/sidemenu";
 @use "@minvws/manon/code-base";
 @use "@minvws/manon/code-block";
 @use "@minvws/manon/list-base";
@@ -139,6 +139,7 @@
 @use "@minvws/manon/form-inline";
 @use "@minvws/manon/form-combined-field";
 @use "@minvws/manon/form-help";
+@use "@minvws/manon/form-button-container";
 
 /* Fieldset */
 @use "@minvws/manon/form-fieldset";

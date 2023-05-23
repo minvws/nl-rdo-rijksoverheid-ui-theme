@@ -717,10 +717,10 @@
           <h3>Datumvelden gecombineerde weergave</h3>
           <p>Visueel voorbeeld:</p>
           <form action="" method="post" class="help">
-            <fieldset class="column-2">
+            <fieldset>
               <legend>Periode</legend>
 
-              <div>
+              <div class="column-2">
                 <div>
                   <label for="voorbeeld-date-5-start">van</label>
                   <input id="voorbeeld-date-5-start" name="voorbeeld-date-5-start" type="date">
@@ -735,28 +735,29 @@
 
             <button type="submit">Verzend</button>
           </form>
+
           <h3>Voorbeeld</h3>
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
 &lt;form action="" method="post" class="help">
-	&lt;fieldset class="column-2">
-		&lt;legend>Periode&lt;/legend>
+  &lt;fieldset>
+    &lt;legend>Periode&lt;/legend>
 
-		&lt;div>
-			&lt;div>
-				&lt;label for="date-1-start">van&lt;/label>
-				&lt;input id="date-1-start" name="date-1-start" type="date">
-			&lt;/div>
+    &lt;div class="column-2">
+      &lt;div>
+        &lt;label for="voorbeeld-date-5-start">van&lt;/label>
+        &lt;input id="voorbeeld-date-5-start" name="voorbeeld-date-5-start" type="date">
+      &lt;/div>
 
-			&lt;div>
-				&lt;label for="date-1-end">tot&lt;/label>
-				&lt;input id="date-1-end" name="date-1-end" type="date">
-			&lt;/div>
-		&lt;/div>
-	&lt;/fieldset>
+      &lt;div>
+        &lt;label for="voorbeeld-date-5-end">tot&lt;/label>
+        &lt;input id="voorbeeld-date-5-end" name="voorbeeld-date-5-end" type="date">
+      &lt;/div>
+    &lt;/div>
+  &lt;/fieldset>
 
-	&lt;button type="submit">Verzend&lt;/button>
+  &lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
 							</code>
 						</pre>
@@ -764,11 +765,11 @@
           <h3>Verplichte datumvelden gecombineerde weergave</h3>
           <p>Visueel voorbeeld:</p>
           <form action="" method="post" class="help">
-            <fieldset class="column-2 required">
+            <fieldset class="required">
               <legend>Periode</legend>
 
-              <div class="required">
-                <span class="nota-bene">Dit veld is verplicht</span>
+              <span class="nota-bene">Dit veld is verplicht</span>
+              <div class="column-2">
                 <div>
                   <label for="voorbeeld-date-6-start">van</label>
                   <input id="voorbeeld-date-6-start" name="voorbeeld-date-6-start" type="date">
@@ -783,29 +784,30 @@
 
             <button type="submit">Verzend</button>
           </form>
+
           <h3>Voorbeeld</h3>
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
 &lt;form action="" method="post" class="help">
-	&lt;fieldset class="column-2 required">
-		&lt;legend>Periode&lt;/legend>
+  &lt;fieldset class="required">
+    &lt;legend>Periode&lt;/legend>
 
-		&lt;div class="required">
-			&lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
-			&lt;div>
-				&lt;label for="date-1-start">van&lt;/label>
-				&lt;input id="date-1-start" name="date-1-start" type="date">
-			&lt;/div>
+    &lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
+    &lt;div class="column-2">
+      &lt;div>
+        &lt;label for="voorbeeld-date-6-start">van&lt;/label>
+        &lt;input id="voorbeeld-date-6-start" name="voorbeeld-date-6-start" type="date">
+      &lt;/div>
 
-			&lt;div>
-				&lt;label for="date-1-end">tot&lt;/label>
-				&lt;input id="date-1-end" name="date-1-end" type="date">
-			&lt;/div>
-		&lt;/div>
-	&lt;/fieldset>
+      &lt;div>
+        &lt;label for="voorbeeld-date-6-end">tot&lt;/label>
+        &lt;input id="voorbeeld-date-6-end" name="voorbeeld-date-6-end" type="date">
+      &lt;/div>
+    &lt;/div>
+  &lt;/fieldset>
 
-	&lt;button type="submit">Verzend&lt;/button>
+  &lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
 							</code>
 						</pre>
@@ -813,10 +815,10 @@
           <h3>Datumvelden gecombineerde horizontale weergave in kolommen</h3>
           <p>Visueel voorbeeld:</p>
           <form action="" method="post" class="horizontal-view help">
-            <fieldset class="column-2">
+            <fieldset>
               <legend>Periode</legend>
 
-              <div>
+              <div class="column-2">
                 <div>
                   <label for="voorbeeld-date-7-start">van</label>
                   <input id="voorbeeld-date-7-start" name="voorbeeld-date-7-start" type="date">
@@ -857,11 +859,11 @@
           <h3>Verplichte datumvelden gecombineerde horizontale weergave in kolommen</h3>
           <p>Visueel voorbeeld:</p>
           <form action="" method="post" class="horizontal-view help">
-            <fieldset class="column-2 required">
+            <fieldset class="required">
               <legend>Periode</legend>
+              <span class="nota-bene">Dit veld is verplicht</span>
 
-              <div class="required">
-                <span class="nota-bene">Dit veld is verplicht</span>
+              <div class="column-2">
                 <div>
                   <label for="voorbeeld-date-8-start">van</label>
                   <input id="voorbeeld-date-8-start" name="voorbeeld-date-8-start" type="date">
@@ -872,30 +874,33 @@
                   <input id="voorbeeld-date-8-end" name="voorbeeld-date-8-end" type="date">
                 </div>
               </div>
+
             </fieldset>
             <button type="submit">Verzend</button>
           </form>
+
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
 &lt;form action="" method="post" class="horizontal-view help">
-	&lt;fieldset class="column-2 required">
-		&lt;legend>Periode&lt;/legend>
+  &lt;fieldset class="required">
+    &lt;legend>Periode&lt;/legend>
+    &lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
 
-		&lt;div class="required">
-			&lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
-			&lt;div>
-				&lt;label for="date-1-start">van&lt;/label>
-				&lt;input id="date-1-start" name="date-1-start" type="date">
-			&lt;/div>
+    &lt;div class="column-2">
+      &lt;div>
+        &lt;label for="voorbeeld-date-8-start">van&lt;/label>
+        &lt;input id="voorbeeld-date-8-start" name="voorbeeld-date-8-start" type="date">
+      &lt;/div>
 
-			&lt;div>
-				&lt;label for="date-1-end">tot&lt;/label>
-				&lt;input id="date-1-end" name="date-1-end" type="date">
-			&lt;/div>
-		&lt;/div>
-	&lt;/fieldset>
-	&lt;button type="submit">Verzend&lt;/button>
+      &lt;div>
+        &lt;label for="voorbeeld-date-8-end">tot&lt;/label>
+        &lt;input id="voorbeeld-date-8-end" name="voorbeeld-date-8-end" type="date">
+      &lt;/div>
+    &lt;/div>
+
+  &lt;/fieldset>
+  &lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
 							</code>
 						</pre>
@@ -1258,9 +1263,9 @@
           <p>Visueel voorbeeld:</p>
 
           <form action="" method="post">
-            <div class="checkbox required">
+            <div class="required">
               <span class="nota-bene">Dit veld is verplicht</span>
-              <div>
+              <div class="checkbox">
                 <input type="checkbox" id="checkbox-example-required" name="verplicht" required>
                 <label for="checkbox-example-required">verplicht selectievak</label>
               </div>
@@ -1272,14 +1277,14 @@
           <pre>
 							<code>
 &lt;form action="" method="post">
-	&lt;div class="checkbox required">
-		&lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
-		&lt;div>
-			&lt;input type="checkbox" id="checkbox-example-required" name="verplicht" required>
-			&lt;label for="checkbox-example-required">verplicht selectievak&lt;/label>
-		&lt;/div>
-	&lt;/div>
-	&lt;button type="submit">Verzend&lt;/button>
+  &lt;div class="required">
+    &lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
+    &lt;div class="checkbox">
+      &lt;input type="checkbox" id="checkbox-example-required" name="verplicht" required>
+      &lt;label for="checkbox-example-required">verplicht selectievak&lt;/label>
+    &lt;/div>
+  &lt;/div>
+  &lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
 							</code>
 						</pre>
@@ -1288,9 +1293,9 @@
           <p>Visueel voorbeeld:</p>
 
           <form action="" method="post" class="horizontal-view">
-            <div class="checkbox required">
+            <div class="option-group required">
               <span class="nota-bene">Dit veld is verplicht</span>
-              <div>
+              <div class="checkbox ">
                 <input type="checkbox" id="checkbox-example-required-horizontal-view" name="verplicht" required>
                 <label for="checkbox-example-required-horizontal-view">verplicht selectievak</label>
               </div>
@@ -1302,14 +1307,14 @@
           <pre>
 							<code>
 &lt;form action="" method="post" class="horizontal-view">
-	&lt;div class="checkbox required">
-		&lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
-		&lt;div>
-			&lt;input type="checkbox" id="checkbox-example-required-horizontal-view" name="verplicht" required>
-			&lt;label for="checkbox-example-required-horizontal-view">verplicht selectievak&lt;/label>
-		&lt;/div>
-	&lt;/div>
-	&lt;button type="submit">Verzend&lt;/button>
+  &lt;div class="option-group required">
+    &lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
+    &lt;div class="checkbox ">
+      &lt;input type="checkbox" id="checkbox-example-required-horizontal-view" name="verplicht" required>
+      &lt;label for="checkbox-example-required-horizontal-view">verplicht selectievak&lt;/label>
+    &lt;/div>
+  &lt;/div>
+  &lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
 							</code>
 						</pre>
@@ -1505,26 +1510,28 @@
           <p>Visueel voorbeeld:</p>
 
           <form action="" method="post" class="horizontal-view ">
-            <fieldset class="column-2">
+            <fieldset>
               <legend>Examples</legend>
-              <div class="checkbox">
-                <input type="checkbox" id="checkbox-example-list-columns-1" name="standaard-checkbox">
-                <label for="checkbox-example-list-columns-1">Lorem ipsum dolor set amet</label>
-              </div>
+              <div class="column-2">
+                <div class="checkbox">
+                  <input type="checkbox" id="checkbox-example-list-columns-1" name="standaard-checkbox">
+                  <label for="checkbox-example-list-columns-1">Lorem ipsum dolor set amet</label>
+                </div>
 
-              <div class="checkbox">
-                <input type="checkbox" id="checkbox-example-list-columns-2" name="standaard-checkbox">
-                <label for="checkbox-example-list-columns-2">Lorem ipsum dolor set amet</label>
-              </div>
+                <div class="checkbox">
+                  <input type="checkbox" id="checkbox-example-list-columns-2" name="standaard-checkbox">
+                  <label for="checkbox-example-list-columns-2">Lorem ipsum dolor set amet</label>
+                </div>
 
-              <div class="checkbox">
-                <input type="checkbox" id="checkbox-example-list-columns-3" name="standaard-checkbox">
-                <label for="checkbox-example-list-columns-3">Lorem ipsum dolor set amet</label>
-              </div>
+                <div class="checkbox">
+                  <input type="checkbox" id="checkbox-example-list-columns-3" name="standaard-checkbox">
+                  <label for="checkbox-example-list-columns-3">Lorem ipsum dolor set amet</label>
+                </div>
 
-              <div class="checkbox">
-                <input type="checkbox" id="checkbox-example-list-columns-4" name="standaard-checkbox">
-                <label for="checkbox-example-list-columns-4">Lorem ipsum dolor set amet</label>
+                <div class="checkbox">
+                  <input type="checkbox" id="checkbox-example-list-columns-4" name="standaard-checkbox">
+                  <label for="checkbox-example-list-columns-4">Lorem ipsum dolor set amet</label>
+                </div>
               </div>
             </fieldset>
             <button type="submit">Verzend</button>
@@ -1535,29 +1542,31 @@
           <pre>
 			         		<code>
 &lt;form action="" method="post" class="horizontal-view ">
-	&lt;fieldset class="column-2">
-		&lt;legend>Examples&lt;/legend>
-		&lt;div class="checkbox">
-			&lt;input type="checkbox" id="checkbox-example-list-columns-1" name="standaard-checkbox">
-			&lt;label for="checkbox-example-list-columns-1">Lorem ipsum dolor set amet&lt;/label>
-		&lt;/div>
+  &lt;fieldset>
+    &lt;legend>Examples&lt;/legend>
+    &lt;div class="column-2">
+      &lt;div class="checkbox">
+        &lt;input type="checkbox" id="checkbox-example-list-columns-1" name="standaard-checkbox">
+        &lt;label for="checkbox-example-list-columns-1">Lorem ipsum dolor set amet&lt;/label>
+      &lt;/div>
 
-		&lt;div class="checkbox">
-			&lt;input type="checkbox" id="checkbox-example-list-columns-2" name="standaard-checkbox">
-			&lt;label for="checkbox-example-list-columns-2">Lorem ipsum dolor set amet&lt;/label>
-		&lt;/div>
+      &lt;div class="checkbox">
+        &lt;input type="checkbox" id="checkbox-example-list-columns-2" name="standaard-checkbox">
+        &lt;label for="checkbox-example-list-columns-2">Lorem ipsum dolor set amet&lt;/label>
+      &lt;/div>
 
-		&lt;div class="checkbox">
-			&lt;input type="checkbox" id="checkbox-example-list-columns-3" name="standaard-checkbox">
-			&lt;label for="checkbox-example-list-columns-3">Lorem ipsum dolor set amet&lt;/label>
-		&lt;/div>
+      &lt;div class="checkbox">
+        &lt;input type="checkbox" id="checkbox-example-list-columns-3" name="standaard-checkbox">
+        &lt;label for="checkbox-example-list-columns-3">Lorem ipsum dolor set amet&lt;/label>
+      &lt;/div>
 
-		&lt;div class="checkbox">
-			&lt;input type="checkbox" id="checkbox-example-list-columns-4" name="standaard-checkbox">
-			&lt;label for="checkbox-example-list-columns-4">Lorem ipsum dolor set amet&lt;/label>
-		&lt;/div>
-	&lt;/fieldset>
-	&lt;button type="submit">Verzend&lt;/button>
+      &lt;div class="checkbox">
+        &lt;input type="checkbox" id="checkbox-example-list-columns-4" name="standaard-checkbox">
+        &lt;label for="checkbox-example-list-columns-4">Lorem ipsum dolor set amet&lt;/label>
+      &lt;/div>
+    &lt;/div>
+  &lt;/fieldset>
+  &lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
 			         		</code>
 			         	</pre>
@@ -1565,21 +1574,23 @@
           <h3>Voorbeeld in drie kolommen</h3>
           <p>Visueel voorbeeld:</p>
           <form action="" method="post" class="horizontal-view ">
-            <fieldset class="column-3">
+            <fieldset>
               <legend>Examples</legend>
-              <div class="checkbox">
-                <input type="checkbox" id="checkbox-example-list-column-3-1" name="standaard-checkbox">
-                <label for="checkbox-example-list-column-3-1">Lorem ipsum dolor set amet</label>
-              </div>
+              <div class="column-3">
+                <div class="checkbox">
+                  <input type="checkbox" id="checkbox-example-list-column-3-1" name="standaard-checkbox">
+                  <label for="checkbox-example-list-column-3-1">Lorem ipsum dolor set amet</label>
+                </div>
 
-              <div class="checkbox">
-                <input type="checkbox" id="checkbox-example-list-column-3-2" name="standaard-checkbox">
-                <label for="checkbox-example-list-column-3-2">Lorem ipsum dolor set amet</label>
-              </div>
+                <div class="checkbox">
+                  <input type="checkbox" id="checkbox-example-list-column-3-2" name="standaard-checkbox">
+                  <label for="checkbox-example-list-column-3-2">Lorem ipsum dolor set amet</label>
+                </div>
 
-              <div class="checkbox">
-                <input type="checkbox" id="checkbox-example-list-column-3-3" name="standaard-checkbox">
-                <label for="checkbox-example-list-column-3-3">Lorem ipsum dolor set amet</label>
+                <div class="checkbox">
+                  <input type="checkbox" id="checkbox-example-list-column-3-3" name="standaard-checkbox">
+                  <label for="checkbox-example-list-column-3-3">Lorem ipsum dolor set amet</label>
+                </div>
               </div>
             </fieldset>
             <button type="submit">Verzend</button>
@@ -1589,24 +1600,26 @@
           <pre>
 							<code>
 &lt;form action="" method="post" class="horizontal-view ">
-	&lt;fieldset class="column-3">
-		&lt;legend>Examples&lt;/legend>
-		&lt;div class="checkbox">
-			&lt;input type="checkbox" id="checkbox-example-list-column-3-1" name="standaard-checkbox">
-			&lt;label for="checkbox-example-list-column-3-1">Lorem ipsum dolor set amet&lt;/label>
-		&lt;/div>
+  &lt;fieldset>
+    &lt;legend>Examples&lt;/legend>
+    &lt;div class="column-3">
+      &lt;div class="checkbox">
+        &lt;input type="checkbox" id="checkbox-example-list-column-3-1" name="standaard-checkbox">
+        &lt;label for="checkbox-example-list-column-3-1">Lorem ipsum dolor set amet&lt;/label>
+      &lt;/div>
 
-		&lt;div class="checkbox">
-			&lt;input type="checkbox" id="checkbox-example-list-column-3-2" name="standaard-checkbox">
-			&lt;label for="checkbox-example-list-column-3-2">Lorem ipsum dolor set amet&lt;/label>
-		&lt;/div>
+      &lt;div class="checkbox">
+        &lt;input type="checkbox" id="checkbox-example-list-column-3-2" name="standaard-checkbox">
+        &lt;label for="checkbox-example-list-column-3-2">Lorem ipsum dolor set amet&lt;/label>
+      &lt;/div>
 
-		&lt;div class="checkbox">
-			&lt;input type="checkbox" id="checkbox-example-list-column-3-3" name="standaard-checkbox">
-			&lt;label for="checkbox-example-list-column-3-3">Lorem ipsum dolor set amet&lt;/label>
-		&lt;/div>
-	&lt;/fieldset>
-	&lt;button type="submit">Verzend&lt;/button>
+      &lt;div class="checkbox">
+        &lt;input type="checkbox" id="checkbox-example-list-column-3-3" name="standaard-checkbox">
+        &lt;label for="checkbox-example-list-column-3-3">Lorem ipsum dolor set amet&lt;/label>
+      &lt;/div>
+    &lt;/div>
+  &lt;/fieldset>
+  &lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
 							</code>
 						</pre>
@@ -1693,7 +1706,7 @@
           <ul>
             <li>Groepeer de velden binnen een <code>&lt;div></code>.</li>
             <li>Geef de gewenste hoeveelheid kolommen aan. Voeg de class <code>class="column-2"</code>
-              of <code>class="column-3"</code> toe aan de bijbehorende fieldset. Zie onderstaande
+              of <code>class="column-3"</code> toe aan de bijbehorende <code>div</code>. Zie onderstaande
               voorbeelden voor meer informatie.
             </li>
           </ul>
@@ -1702,10 +1715,10 @@
           <h3>Weergave in twee kolommen</h3>
           <p>Visueel voorbeeld:</p>
           <form action="" method="post">
-            <fieldset class="column-2">
+            <fieldset>
               <legend>Periode</legend>
 
-              <div>
+              <div class="column-2">
                 <div>
                   <label for="voorbeeld-1-date-1-start">van</label>
                   <input id="voorbeeld-1-date-1-start" name="voorbeeld-1-date-1-start" type="date">
@@ -1716,6 +1729,7 @@
                   <input id="voorbeeld-1-date-1-end" name="voorbeeld-1-date-3-end" type="date">
                 </div>
               </div>
+
             </fieldset>
             <button type="submit">Verzend</button>
           </form>
@@ -1724,22 +1738,22 @@
           <pre>
 							<code>
 &lt;form action="" method="post">
-	&lt;fieldset class="column-2">
-		&lt;legend>Periode&lt;/legend>
+  &lt;fieldset>
+    &lt;legend>Periode&lt;/legend>
 
-		&lt;div>
-			&lt;div>
-				&lt;label for="voorbeeld-date-3-start">van&lt;/label>
-				&lt;input id="voorbeeld-date-3-start" name="voorbeeld-date-3-start" type="date">
-			&lt;/div>
+    &lt;div class="column-2">
+      &lt;div>
+        &lt;label for="voorbeeld-1-date-1-start">van&lt;/label>
+        &lt;input id="voorbeeld-1-date-1-start" name="voorbeeld-1-date-1-start" type="date">
+      &lt;/div>
 
-			&lt;div>
-				&lt;label for="voorbeeld-date-3-end">tot&lt;/label>
-				&lt;input id="voorbeeld-date-3-end" name="voorbeeld-date-3-end" type="date">
-			&lt;/div>
-		&lt;/div>
-	&lt;/fieldset>
-	&lt;button type="submit">Verzend&lt;/button>
+      &lt;div>
+        &lt;label for="voorbeeld-1-date-1-end">tot&lt;/label>
+        &lt;input id="voorbeeld-1-date-1-end" name="voorbeeld-1-date-3-end" type="date">
+      &lt;/div>
+    &lt;/div>
+  &lt;/fieldset>
+  &lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
 							</code>
 						</pre>
@@ -1749,10 +1763,9 @@
             <fieldset>
               <legend>Voorbeelden</legend>
 
-              <fieldset class="column-2">
+              <fieldset>
                 <legend>Periode</legend>
-
-                <div>
+                <div class="column-2">
                   <div>
                     <label for="voorbeeld-2-date-1-start">van</label>
                     <input id="voorbeeld-2-date-1-start" name="voorbeeld-2-date-1-start" type="date">
@@ -1771,25 +1784,24 @@
           <pre>
 							<code>
 &lt;form action="" method="post" class="horizontal-view">
-	&lt;fieldset>
-		&lt;legend>Voorbeelden&lt;/legend>
+  &lt;fieldset>
+    &lt;legend>Voorbeelden&lt;/legend>
 
-		&lt;fieldset class="column-2">
-			&lt;legend>Periode&lt;/legend>
+    &lt;fieldset>
+      &lt;legend>Periode&lt;/legend>
+      &lt;div class="column-2">
+        &lt;div>
+          &lt;label for="voorbeeld-2-date-1-start">van&lt;/label>
+          &lt;input id="voorbeeld-2-date-1-start" name="voorbeeld-2-date-1-start" type="date">
+        &lt;/div>
 
-			&lt;div>
-				&lt;div>
-					&lt;label for="voorbeeld-date-4-start">van&lt;/label>
-					&lt;input id="voorbeeld-date-4-start" name="voorbeeld-date-4-start" type="date">
-				&lt;/div>
-
-				&lt;div>
-					&lt;label for="voorbeeld-date-4-end">tot&lt;/label>
-					&lt;input id="voorbeeld-date-4-end" name="voorbeeld-date-4-end" type="date">
-				&lt;/div>
-			&lt;/div>
-		&lt;/fieldset>
-	&lt;/fieldset>
+        &lt;div>
+          &lt;label for="voorbeeld-2-date-1-end">tot&lt;/label>
+          &lt;input id="voorbeeld-2-date-1-end" name="voorbeeld-2-date-1-end" type="date">
+        &lt;/div>
+      &lt;/div>
+    &lt;/fieldset>
+  &lt;/fieldset>
 &lt;/form>
 							</code>
 						</pre>
@@ -1797,10 +1809,10 @@
           <h3>Horizontale weergave drie kolommen</h3>
           <p>Visueel voorbeeld:</p>
           <form action="" method="post">
-            <fieldset class="column-3">
+            <fieldset>
               <legend>Naam</legend>
 
-              <div>
+              <div class="column-3">
                 <div>
                   <label for="voorbeeld-3-voornaam">Voornaam</label>
                   <input id="voorbeeld-3-voornaam" name="voorbeeld-3-voornaam">
@@ -1824,27 +1836,27 @@
           <pre>
 							<code>
 &lt;form action="" method="post">
-	&lt;fieldset class="column-3">
-		&lt;legend>Naam&lt;/legend>
+  &lt;fieldset>
+    &lt;legend>Naam&lt;/legend>
 
-		&lt;div>
-			&lt;div>
-				&lt;label for="voornaam">Voornaam&lt;/label>
-				&lt;input id="voornaam" name="voornaam">
-			&lt;/div>
+    &lt;div class="column-3">
+      &lt;div>
+        &lt;label for="voorbeeld-3-voornaam">Voornaam&lt;/label>
+        &lt;input id="voorbeeld-3-voornaam" name="voorbeeld-3-voornaam">
+      &lt;/div>
 
-			&lt;div>
-				&lt;label for="tussenvoegsel">Tussenvoegsel&lt;/label>
-				&lt;input id="tussenvoegsel" name="tussenvoegsel">
-			&lt;/div>
+      &lt;div>
+        &lt;label for="voorbeeld-3-tussenvoegsel">Tussenvoegsel&lt;/label>
+        &lt;input id="voorbeeld-3-tussenvoegsel" name="voorbeeld-3-tussenvoegsel">
+      &lt;/div>
 
-			&lt;div>
-				&lt;label for="achternaam">Achternaam&lt;/label>
-				&lt;input id="achternaam" name="achternaam">
-			&lt;/div>
-		&lt;/div>
-	&lt;/fieldset>
-	&lt;button type="submit">Verzend&lt;/button>
+      &lt;div>
+        &lt;label for="voorbeeld-3-achternaam">Achternaam&lt;/label>
+        &lt;input id="voorbeeld-3-achternaam" name="voorbeeld-3-achternaam">
+      &lt;/div>
+    &lt;/div>
+  &lt;/fieldset>
+  &lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
 							</code>
 						</pre>
@@ -1855,10 +1867,10 @@
             <fieldset>
               <legend>Voorbeelden</legend>
 
-              <fieldset class="column-3">
+              <fieldset>
                 <legend>Naam</legend>
 
-                <div>
+                <div class="column-3">
                   <div>
                     <label for="voorbeeld-4-voornaam">Voornaam</label>
                     <input id="voorbeeld-4-voornaam" name="voorbeeld-4-voornaam">
@@ -1882,30 +1894,30 @@
           <pre>
 							<code>
 &lt;form action="" method="post" class="horizontal-view">
-	&lt;fieldset>
-		&lt;legend>Voorbeelden&lt;/legend>
+  &lt;fieldset>
+    &lt;legend>Voorbeelden&lt;/legend>
 
-		&lt;fieldset class="column-3">
-			&lt;legend>Periode&lt;/legend>
+    &lt;fieldset>
+      &lt;legend>Naam&lt;/legend>
 
-			&lt;div>
-				&lt;div>
-					&lt;label for="voornaam">Voornaam&lt;/label>
-					&lt;input id="voornaam" name="voornaam"
-				&lt;/div>
+      &lt;div class="column-3">
+        &lt;div>
+          &lt;label for="voorbeeld-4-voornaam">Voornaam&lt;/label>
+          &lt;input id="voorbeeld-4-voornaam" name="voorbeeld-4-voornaam">
+        &lt;/div>
 
-				&lt;div>
-					&lt;label for="tussenvoegsel">Tussenvoegsel&lt;/label>
-					&lt;input id="tussenvoegsel" name="tussenvoegsel"
-				&lt;/div>
+        &lt;div>
+          &lt;label for="voorbeeld-4-tussenvoegsel">Tussenvoegsel&lt;/label>
+          &lt;input id="voorbeeld-4-tussenvoegsel" name="voorbeeld-4-tussenvoegsel">
+        &lt;/div>
 
-				&lt;div>
-					&lt;label for="achternaam">Achternaam&lt;/label>
-					&lt;input id="achternaam" name="achternaam"
-				&lt;/div>
-			&lt;/div>
-		&lt;/fieldset>
-	&lt;/fieldset>
+        &lt;div>
+          &lt;label for="voorbeeld-4-achternaam">Achternaam&lt;/label>
+          &lt;input id="voorbeeld-4-achternaam" name="voorbeeld-4-achternaam">
+        &lt;/div>
+      &lt;/div>
+    &lt;/fieldset>
+  &lt;/fieldset>
 &lt;/form>
 							</code>
 						</pre>
@@ -2874,14 +2886,15 @@
 
           <h4>Voorbeeld</h4>
           <p>Visueel voorbeeld:</p>
+
           <form action="" method="post">
             <div>
-              <input type="checkbox" id="checkbox-example-default-3" name="standaard-checkbox"
-                aria-describedby="input-error-message-checkbox-3" aria-invalid="true">
-              <label for="checkbox-example-default-3">Lorem ipsum dolor set amet</label>
-              <p class="error" id="input-error-message-checkbox-3">
-                <span>foutmelding:</span> Lorem ipsum dolor set amet
-              </p>
+              <div class="checkbox">
+                <input type="checkbox" id="checkbox-example-error-1" name="voorwaarden" value="checkbox input error"
+                  class="error" aria-describedby="checkbox-example-error-1-message">
+                <label for="checkbox-example-base">Lorem ipsum dolor set amet</label>
+              </div>
+              <p class="error" id="checkbox-example-error-1-message"><span>Foutmelding</span> Lorem ipsum</p>
             </div>
           </form>
 
@@ -2889,18 +2902,14 @@
           <pre>
 							<code>
 &lt;form action="" method="post">
-	&lt;div>
-		&lt;input
-			type="checkbox"
-			id="checkbox-example-default-3"
-			name="standaard-checkbox"
-			aria-describedby="input-error-message-checkbox-3"
-			aria-invalid="true">
-		&lt;label for="checkbox-example-default-3">Lorem ipsum dolor set amet&lt;/label>
-		&lt;p class="error" id="input-error-message-checkbox-3">
-			&lt;span>foutmelding:&lt;/span> Lorem ipsum dolor set amet
-		&lt;/p>
-	&lt;/div>
+  &lt;div>
+    &lt;div class="checkbox">
+      &lt;input type="checkbox" id="checkbox-example-error-1" name="voorwaarden" value="checkbox input error"
+        class="error" aria-describedby="checkbox-example-error-1-message">
+      &lt;label for="checkbox-example-base">Lorem ipsum dolor set amet&lt;/label>
+    &lt;/div>
+    &lt;p class="error" id="checkbox-example-error-1-message">&lt;span>Foutmelding&lt;/span> Lorem ipsum&lt;/p>
+  &lt;/div>
 &lt;/form>
 							</code>
 						</pre>
@@ -2908,10 +2917,12 @@
           <h4>Voorbeeld weergave in kolommen</h4>
           <p>Visueel voorbeeld:</p>
           <form action="" method="post" class="horizontal-view">
-            <div>
-              <input type="checkbox" id="checkbox-example-default-4" name="standaard-checkbox"
-                aria-describedby="input-error-message-checkbox-4" aria-invalid="true">
-              <label for="checkbox-example-default-4">Lorem ipsum dolor set amet</label>
+            <div class="option-group">
+              <div class="checkbox">
+                <input type="checkbox" id="checkbox-example-default-4" name="standaard-checkbox"
+                  aria-describedby="input-error-message-checkbox-4" aria-invalid="true">
+                <label for="checkbox-example-default-4">Lorem ipsum dolor set amet</label>
+              </div>
               <p class="error" id="input-error-message-checkbox-4">
                 <span>foutmelding:</span> Lorem ipsum dolor set amet
               </p>
@@ -2922,18 +2933,16 @@
           <pre>
 							<code>
 &lt;form action="" method="post" class="horizontal-view">
-	&lt;div>
-		&lt;input
-			type="checkbox"
-			id="checkbox-example-default-4"
-			name="standaard-checkbox"
-			aria-describedby="input-error-message-checkbox-4"
-			aria-invalid="true">
-		&lt;label for="checkbox-example-default-4">Lorem ipsum dolor set amet&lt;/label>
-		&lt;p class="error" id="input-error-message-checkbox-4">
-			&lt;span>foutmelding:&lt;/span> Lorem ipsum dolor set amet
-		&lt;/p>
-	&lt;/div>
+  &lt;div class="option-group">
+    &lt;div class="checkbox">
+      &lt;input type="checkbox" id="checkbox-example-default-4" name="standaard-checkbox"
+        aria-describedby="input-error-message-checkbox-4" aria-invalid="true">
+      &lt;label for="checkbox-example-default-4">Lorem ipsum dolor set amet&lt;/label>
+    &lt;/div>
+    &lt;p class="error" id="input-error-message-checkbox-4">
+      &lt;span>foutmelding:&lt;/span> Lorem ipsum dolor set amet
+    &lt;/p>
+  &lt;/div>
 &lt;/form>
 							</code>
 						</pre>
@@ -2945,12 +2954,14 @@
           <form action="" method="post">
             <div class="required">
               <span class="nota-bene">Dit veld is verplicht</span>
-              <input type="checkbox" id="checkbox-example-required-3" name="voorwaarden" required
-                aria-describedby="input-error-message-required-3" aria-invalid="true">
-              <label for="checkbox-example-required-3">verplicht selectievak</label>
-
-              <p class="error" id="input-error-message-required-3">
-                <span>foutmelding:</span> Lorem ipsum dolor set amet
+              <div class="checkbox">
+                <input type="checkbox" id="checkbox-example-error-required-message" name="voorwaarden"
+                  value="checkbox input error" class="error"
+                  aria-describedby="checkbox-example-error-required-message-message">
+                <label for="checkbox-example-base">Lorem ipsum dolor set amet</label>
+              </div>
+              <p class="error" id="checkbox-example-error-required-message-message"><span>Foutmelding</span> Lorem
+                ipsum
               </p>
             </div>
           </form>
@@ -2959,35 +2970,31 @@
           <pre>
 							<code>
 &lt;form action="" method="post">
-	&lt;div class="required">
-		&lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
-		&lt;input
-			type="checkbox"
-			id="checkbox-example-required-3"
-			name="voorwaarden"
-			required
-			aria-describedby="input-error-message-required-3"
-			aria-invalid="true">
-		&lt;label for="checkbox-example-required-3">verplicht selectievak&lt;/label>
-
-		&lt;p class="error" id="input-error-message-required-3">
-			&lt;span>foutmelding:&lt;/span> Lorem ipsum dolor set amet
-		&lt;/p>
-	&lt;/div>
+  &lt;div class="required">
+    &lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
+    &lt;div class="checkbox">
+      &lt;input type="checkbox" id="checkbox-example-error-required-message" name="voorwaarden" value="checkbox input error" class="error" aria-describedby="checkbox-example-error-required-message-message">
+      &lt;label for="checkbox-example-base">Lorem ipsum dolor set amet&lt;/label>
+    &lt;/div>
+    &lt;p class="error" id="checkbox-example-error-required-message-message">&lt;span>Foutmelding&lt;/span> Lorem
+      ipsum
+    &lt;/p>
+  &lt;/div>
 &lt;/form>
 							</code>
 						</pre>
 
           <h4>Voorbeeld weergave in kolommen</h4>
           <form action="" method="post" class="horizontal-view">
-            <div class="required">
+            <div class="option-group required">
               <span class="nota-bene">Dit veld is verplicht</span>
-              <input type="checkbox" id="checkbox-example-required-4" name="voorwaarden" required
-                aria-describedby="input-error-message-required-4" aria-invalid="true">
-              <label for="checkbox-example-required-4">verplicht selectievak</label>
-
-              <p class="error" id="input-error-message-required-4">
-                <span>foutmelding:</span> Lorem ipsum dolor set amet
+              <div class="checkbox">
+                <input type="checkbox" id="checkbox-example-required-6" name="voorwaarden" required=""
+                  aria-describedby="checkbox-example-required-6-message" aria-invalid="true">
+                <label for="checkbox-example-required-6">verplicht selectievak</label>
+              </div>
+              <p class="error" id="checkbox-example-required-6-message">
+                <span>Foutmelding:</span> Lorem ipsum dolor set amet
               </p>
             </div>
           </form>
@@ -2996,20 +3003,17 @@
           <pre>
 							<code>
 &lt;form action="" method="post" class="horizontal-view">
-	&lt;div class="required">
-		&lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
-		&lt;input type="checkbox"
-			id="checkbox-example-required-4"
-			name="voorwaarden"
-			required
-			aria-describedby="input-error-message-required-4"
-			aria-invalid="true">
-		&lt;label for="checkbox-example-required-4">verplicht selectievak&lt;/label>
-
-		&lt;p class="error" id="input-error-message-required-4">
-			&lt;span>foutmelding:&lt;/span> Lorem ipsum dolor set amet
-		&lt;/p>
-	&lt;/div>
+  &lt;div class="option-group required">
+    &lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
+    &lt;div class="checkbox">
+      &lt;input type="checkbox" id="checkbox-example-required-6" name="voorwaarden" required=""
+        aria-describedby="checkbox-example-required-6-message" aria-invalid="true">
+      &lt;label for="checkbox-example-required-6">verplicht selectievak&lt;/label>
+    &lt;/div>
+    &lt;p class="error" id="checkbox-example-required-6-message">
+      &lt;span>Foutmelding:&lt;/span> Lorem ipsum dolor set amet
+    &lt;/p>
+  &lt;/div>
 &lt;/form>
 							</code>
 						</pre>
@@ -3024,17 +3028,17 @@
               <p class="error" id="grouped-choice-list-1">
                 <span>foutmelding:</span> Lorem ipsum dolor set amet
               </p>
-              <div>
+              <div class="checkbox">
                 <input type="checkbox" id="checkbox-list-item-7" name="option-1">
                 <label for="checkbox-list-item-7">Optie 1</label>
               </div>
 
-              <div>
+              <div class="checkbox">
                 <input type="checkbox" id="checkbox-list-item-8" name="option-2">
                 <label for="checkbox-list-item-8">Optie 2</label>
               </div>
 
-              <div>
+              <div class="checkbox">
                 <input type="checkbox" id="checkbox-list-item-9" name="option-3">
                 <label for="checkbox-list-item-9">Optie 3</label>
               </div>
@@ -3045,31 +3049,27 @@
           <pre>
 							<code>
 &lt;form action="" method="post">
-	&lt;fieldset
-		class="grouped-choice-list"
-		aria-describedby="grouped-choice-list-1"
-		aria-invalid="true">
-		&lt;legend>Lorem ipsum legend&lt;/legend>
-		&lt;p class="error" id="grouped-choice-list-1">
-			&lt;span>foutmelding:&lt;/span> Lorem ipsum dolor set amet
-		&lt;/p>
-		&lt;div>
-			&lt;input type="checkbox" id="checkbox-list-item-7" name="option-1">
-			&lt;label for="checkbox-list-item-7">Optie 1&lt;/label>
-		&lt;/div>
+  &lt;fieldset class="grouped-choice-list" aria-describedby="grouped-choice-list-1" aria-invalid="true">
+    &lt;legend>Lorem ipsum legend&lt;/legend>
+    &lt;p class="error" id="grouped-choice-list-1">
+      &lt;span>foutmelding:&lt;/span> Lorem ipsum dolor set amet
+    &lt;/p>
+    &lt;div class="checkbox">
+      &lt;input type="checkbox" id="checkbox-list-item-7" name="option-1">
+      &lt;label for="checkbox-list-item-7">Optie 1&lt;/label>
+    &lt;/div>
 
-		&lt;div>
-			&lt;input type="checkbox" id="checkbox-list-item-8" name="option-2">
-			&lt;label for="checkbox-list-item-8">Optie 2&lt;/label>
-		&lt;/div>
+    &lt;div class="checkbox">
+      &lt;input type="checkbox" id="checkbox-list-item-8" name="option-2">
+      &lt;label for="checkbox-list-item-8">Optie 2&lt;/label>
+    &lt;/div>
 
-		&lt;div>
-			&lt;input type="checkbox" id="checkbox-list-item-9" name="option-3">
-			&lt;label for="checkbox-list-item-9">Optie 3&lt;/label>
-		&lt;/div>
-	&lt;/fieldset>
+    &lt;div class="checkbox">
+      &lt;input type="checkbox" id="checkbox-list-item-9" name="option-3">
+      &lt;label for="checkbox-list-item-9">Optie 3&lt;/label>
+    &lt;/div>
+  &lt;/fieldset>
 &lt;/form>
-
 							</code>
 						</pre>
 
@@ -3083,17 +3083,17 @@
                   <span>foutmelding:</span>Lorem ipsum dolor set amet
                 </p>
 
-                <div>
+                <div class="checkbox">
                   <input type="checkbox" id="checkbox-list-item-10" name="option-1">
                   <label for="checkbox-list-item-10">Optie 1</label>
                 </div>
 
-                <div>
+                <div class="checkbox">
                   <input type="checkbox" id="checkbox-list-item-11" name="option-2">
                   <label for="checkbox-list-item-11">Optie 2</label>
                 </div>
 
-                <div>
+                <div class="checkbox">
                   <input type="checkbox" id="checkbox-list-item-12" name="option-3">
                   <label for="checkbox-list-item-12">Optie 3</label>
                 </div>
@@ -3105,28 +3105,29 @@
           <pre>
 							<code>
 &lt;form action="" method="post" class="horizontal-view">
-	&lt;fieldset class="grouped-choice-list" aria-invalid="true">
-		&lt;legend>Lorem ipsum&lt;/legend>
-		&lt;div aria-describedby="checkbox-error-message-10">
-			&lt;p class="error" id="checkbox-error-message-10">
-				&lt;span>foutmelding:&lt;/span>Lorem ipsum dolor set amet
-			&lt;/p>
-			&lt;div>
-				&lt;input type="checkbox" id="checkbox-list-item-1" name="option-1">
-				&lt;label for="checkbox-list-item-1">Optie 1&lt;/label>
-			&lt;/div>
+  &lt;fieldset class="grouped-choice-list" aria-invalid="true">
+    &lt;legend>Lorem ipsum&lt;/legend>
+    &lt;div aria-describedby="checkbox-error-message-10">
+      &lt;p class="error" id="checkbox-error-message-10">
+        &lt;span>foutmelding:&lt;/span>Lorem ipsum dolor set amet
+      &lt;/p>
 
-			&lt;div>
-				&lt;input type="checkbox" id="checkbox-list-item-2" name="option-2">
-				&lt;label for="checkbox-list-item-2">Optie 2&lt;/label>
-			&lt;/div>
+      &lt;div class="checkbox">
+        &lt;input type="checkbox" id="checkbox-list-item-10" name="option-1">
+        &lt;label for="checkbox-list-item-10">Optie 1&lt;/label>
+      &lt;/div>
 
-			&lt;div>
-				&lt;input type="checkbox" id="checkbox-list-item-3" name="option-3">
-				&lt;label for="checkbox-list-item-3">Optie 3&lt;/label>
-			&lt;/div>
-		&lt;/div>
-	&lt;/fieldset>
+      &lt;div class="checkbox">
+        &lt;input type="checkbox" id="checkbox-list-item-11" name="option-2">
+        &lt;label for="checkbox-list-item-11">Optie 2&lt;/label>
+      &lt;/div>
+
+      &lt;div class="checkbox">
+        &lt;input type="checkbox" id="checkbox-list-item-12" name="option-3">
+        &lt;label for="checkbox-list-item-12">Optie 3&lt;/label>
+      &lt;/div>
+    &lt;/div>
+  &lt;/fieldset>
 &lt;/form>
 							</code>
 						</pre>
@@ -3137,7 +3138,7 @@
           <form action="" method="post">
             <fieldset class="grouped-choice-list">
               <legend>Lorem ipsum</legend>
-              <div>
+              <div class="checkbox">
                 <input type="checkbox" id="checkbox-list-item-13" name="option-1"
                   aria-describedby="checkbox-error-item-13-message" aria-invalid="true">
                 <label for="checkbox-list-item-13">Optie 1</label>
@@ -3145,15 +3146,15 @@
                   ipsum dolor set amet</p>
               </div>
 
-              <div>
+              <div class="checkbox">
                 <input type="checkbox" id="checkbox-list-item-14" name="option-2"
                   aria-describedby="checkbox-error-item-14-message" aria-invalid="true">
                 <label for="checkbox-list-item-14">Optie 2</label>
                 <p class="error" id="checkbox-error-item-14-message"><span>foutmelding:</span>Lorem
                   ipsum dolor set amet</p>
-              </div>
+              </div class="checkbox">
 
-              <div>
+              <div class="checkbox">
                 <input type="checkbox" id="checkbox-list-item-15" name="option-3"
                   aria-describedby="checkbox-error-item-15-message" aria-invalid="true">
                 <label for="checkbox-list-item-15">Optie 3</label>
@@ -3167,40 +3168,32 @@
           <pre>
 							<code>
 &lt;form action="" method="post">
-	&lt;fieldset class="grouped-choice-list">
-		&lt;legend>Lorem ipsum&lt;/legend>
-		&lt;div>
-			&lt;input
-				type="checkbox"
-				id="checkbox-list-item-13"
-				name="option-1"
-				aria-describedby="checkbox-error-item-13-message"
-				aria-invalid="true">
-			&lt;label for="checkbox-list-item-13">Optie 1&lt;/label>
-			&lt;p class="error" id="checkbox-error-item-13-message">&lt;span>foutmelding:&lt;/span>Lorem ipsum dolor set amet&lt;/p>
-		&lt;/div>
+  &lt;fieldset class="grouped-choice-list">
+    &lt;legend>Lorem ipsum&lt;/legend>
+    &lt;div class="checkbox">
+      &lt;input type="checkbox" id="checkbox-list-item-13" name="option-1"
+        aria-describedby="checkbox-error-item-13-message" aria-invalid="true">
+      &lt;label for="checkbox-list-item-13">Optie 1&lt;/label>
+      &lt;p class="error" id="checkbox-error-item-13-message">&lt;span>foutmelding:&lt;/span>Lorem
+        ipsum dolor set amet&lt;/p>
+    &lt;/div>
 
-		&lt;div>
-			&lt;input
-				type="checkbox"
-				id="checkbox-list-item-14" name="option-2"
-				aria-describedby="checkbox-error-item-14-message"
-				aria-invalid="true">
-			&lt;label for="checkbox-list-item-14">Optie 2&lt;/label>
-			&lt;p class="error" id="checkbox-error-item-14-message">&lt;span>foutmelding:&lt;/span>Lorem ipsum dolor set amet&lt;/p>
-		&lt;/div>
+    &lt;div class="checkbox">
+      &lt;input type="checkbox" id="checkbox-list-item-14" name="option-2"
+        aria-describedby="checkbox-error-item-14-message" aria-invalid="true">
+      &lt;label for="checkbox-list-item-14">Optie 2&lt;/label>
+      &lt;p class="error" id="checkbox-error-item-14-message">&lt;span>foutmelding:&lt;/span>Lorem
+        ipsum dolor set amet&lt;/p>
+    &lt;/div class="checkbox">
 
-		&lt;div>
-			&lt;input
-				type="checkbox"
-				id="checkbox-list-item-15"
-				name="option-3"
-				aria-describedby="checkbox-error-item-15-message"
-				aria-invalid="true">
-			&lt;label for="checkbox-list-item-15">Optie 3&lt;/label>
-			&lt;p class="error" id="checkbox-error-item-15-message">&lt;span>foutmelding:&lt;/span>Lorem ipsum dolor set amet&lt;/p>
-		&lt;/div>
-	&lt;/fieldset>
+    &lt;div class="checkbox">
+      &lt;input type="checkbox" id="checkbox-list-item-15" name="option-3"
+        aria-describedby="checkbox-error-item-15-message" aria-invalid="true">
+      &lt;label for="checkbox-list-item-15">Optie 3&lt;/label>
+      &lt;p class="error" id="checkbox-error-item-15-message">&lt;span>foutmelding:&lt;/span>Lorem
+        ipsum dolor set amet&lt;/p>
+    &lt;/div>
+  &lt;/fieldset>
 &lt;/form>
 							</code>
 						</pre>
@@ -3210,36 +3203,34 @@
           <form action="" method="post" class="horizontal-view">
             <fieldset class="grouped-choice-list">
               <legend>Lorem ipsum</legend>
-              <div>
-                <div>
-                  <input type="checkbox" id="checkbox-list-item-16" name="option-1"
-                    aria-describedby="checkbox-list-item-16-message" aria-invalid="true">
-                  <label for="checkbox-list-item-16">Optie 1</label>
-                  <p class="error" id="checkbox-list-item-16-message">
-                    <span>foutmelding:</span>
-                    Lorem ipsum dolor set amet
-                  </p>
-                </div>
+              <div class="checkbox">
+                <input type="checkbox" id="checkbox-list-item-16" name="option-1"
+                  aria-describedby="checkbox-list-item-16-message" aria-invalid="true">
+                <label for="checkbox-list-item-16">Optie 1</label>
+                <p class="error" id="checkbox-list-item-16-message">
+                  <span>foutmelding:</span>
+                  Lorem ipsum dolor set amet
+                </p>
+              </div>
 
-                <div>
-                  <input type="checkbox" id="checkbox-list-item-17" name="option-2"
-                    aria-describedby="checkbox-list-item-17-message" aria-invalid="true">
-                  <label for="checkbox-list-item-17">Optie 2</label>
-                  <p class="error" id="checkbox-list-item-17-message">
-                    <span>foutmelding:</span>
-                    Lorem ipsum dolor set amet
-                  </p>
-                </div>
+              <div class="checkbox">
+                <input type="checkbox" id="checkbox-list-item-17" name="option-2"
+                  aria-describedby="checkbox-list-item-17-message" aria-invalid="true">
+                <label for="checkbox-list-item-17">Optie 2</label>
+                <p class="error" id="checkbox-list-item-17-message">
+                  <span>foutmelding:</span>
+                  Lorem ipsum dolor set amet
+                </p>
+              </div>
 
-                <div>
-                  <input type="checkbox" id="checkbox-list-item-18" name="option-3"
-                    aria-describedby="checkbox-list-item-18-message" aria-invalid="true">
-                  <label for="checkbox-list-item-18">Optie 3</label>
-                  <p class="error" id="checkbox-list-item-18-message">
-                    <span>foutmelding:</span>
-                    Lorem ipsum dolor set amet
-                  </p>
-                </div>
+              <div class="checkbox">
+                <input type="checkbox" id="checkbox-list-item-18" name="option-3"
+                  aria-describedby="checkbox-list-item-18-message" aria-invalid="true">
+                <label for="checkbox-list-item-18">Optie 3</label>
+                <p class="error" id="checkbox-list-item-18-message">
+                  <span>foutmelding:</span>
+                  Lorem ipsum dolor set amet
+                </p>
               </div>
             </fieldset>
           </form>
@@ -3248,46 +3239,38 @@
           <pre>
 							<code>
 &lt;form action="" method="post" class="horizontal-view">
-	&lt;fieldset class="grouped-choice-list">
-		&lt;legend>Lorem ipsum&lt;/legend>
-		&lt;div>
-			&lt;div>
-				&lt;input
-					type="checkbox"
-					id="checkbox-list-item-16" name="option-1" aria-describedby="checkbox-list-item-16-message"
-					aria-invalid="true">
-				&lt;label for="checkbox-list-item-16">Optie 1&lt;/label>
-				&lt;p class="error" id="checkbox-list-item-16-message">
-					&lt;span>foutmelding:&lt;/span>
-					Lorem ipsum dolor set amet
-				&lt;/p>
-			&lt;/div>
+  &lt;fieldset class="grouped-choice-list">
+    &lt;legend>Lorem ipsum&lt;/legend>
+    &lt;div class="checkbox">
+      &lt;input type="checkbox" id="checkbox-list-item-16" name="option-1"
+        aria-describedby="checkbox-list-item-16-message" aria-invalid="true">
+      &lt;label for="checkbox-list-item-16">Optie 1&lt;/label>
+      &lt;p class="error" id="checkbox-list-item-16-message">
+        &lt;span>foutmelding:&lt;/span>
+        Lorem ipsum dolor set amet
+      &lt;/p>
+    &lt;/div>
 
-			&lt;div>
-				&lt;input
-					type="checkbox"
-					id="checkbox-list-item-17" name="option-2" aria-describedby="checkbox-list-item-17-message"
-					aria-invalid="true">
-				&lt;label for="checkbox-list-item-17">Optie 2&lt;/label>
-				&lt;p class="error" id="checkbox-list-item-17-message">
-					&lt;span>foutmelding:&lt;/span>
-					Lorem ipsum dolor set amet
-				&lt;/p>
-			&lt;/div>
+    &lt;div class="checkbox">
+      &lt;input type="checkbox" id="checkbox-list-item-17" name="option-2"
+        aria-describedby="checkbox-list-item-17-message" aria-invalid="true">
+      &lt;label for="checkbox-list-item-17">Optie 2&lt;/label>
+      &lt;p class="error" id="checkbox-list-item-17-message">
+        &lt;span>foutmelding:&lt;/span>
+        Lorem ipsum dolor set amet
+      &lt;/p>
+    &lt;/div>
 
-			&lt;div>
-				&lt;input
-					type="checkbox"
-					id="checkbox-list-item-18" name="option-3" aria-describedby="checkbox-list-item-18-message"
-					aria-invalid="true">
-				&lt;label for="checkbox-list-item-18">Optie 3&lt;/label>
-				&lt;p class="error" id="checkbox-list-item-18-message">
-					&lt;span>foutmelding:&lt;/span>
-					Lorem ipsum dolor set amet
-				&lt;/p>
-			&lt;/div>
-		&lt;/div>
-	&lt;/fieldset>
+    &lt;div class="checkbox">
+      &lt;input type="checkbox" id="checkbox-list-item-18" name="option-3"
+        aria-describedby="checkbox-list-item-18-message" aria-invalid="true">
+      &lt;label for="checkbox-list-item-18">Optie 3&lt;/label>
+      &lt;p class="error" id="checkbox-list-item-18-message">
+        &lt;span>foutmelding:&lt;/span>
+        Lorem ipsum dolor set amet
+      &lt;/p>
+    &lt;/div>
+  &lt;/fieldset>
 &lt;/form>
 							</code>
 						</pre>
@@ -3300,11 +3283,11 @@
               <input type="radio" id="radio-example-default-1" name="standaard-radiobutton" value="value"
                 aria-describedby="radio-example-default-1-message" aria-invalid="true">
               <label for="radio-example-default-1">Lorem ipsum dolor set amet</label>
-              <p class="error" id="radio-example-default-1-message">
-                <span>foutmelding:</span>
-                Lorem ipsum dolor set amet
-              </p>
             </div>
+            <p class="error" id="radio-example-default-1-message">
+              <span>foutmelding:</span>
+              Lorem ipsum dolor set amet
+            </p>
           </form>
 
           <p>Html-voorbeeld:</p>
@@ -3319,11 +3302,11 @@
 			aria-describedby="radio-example-default-1-message"
 			aria-invalid="true">
 		&lt;label for="radio-example-default-1">Lorem ipsum dolor set amet&lt;/label>
+  &lt;/div>
 		&lt;p class="error" id="radio-example-default-1-message">
 			&lt;span>foutmelding:&lt;/span>
 			Lorem ipsum dolor set amet
 		&lt;/p>
-	&lt;/div>
 &lt;/form>
 							</code>
 						</pre>
@@ -3331,10 +3314,12 @@
           <h4>Voorbeeld weergave in kolommen</h4>
           <p>Visueel voorbeeld:</p>
           <form action="" method="post" class="horizontal-view">
-            <div class="radio">
-              <input type="radio" id="radio-example-default-2" name="standaard-radiobutton" value="value"
-                aria-describedby="radio-example-default-2-message" aria-invalid="true">
-              <label for="radio-example-default-2">Lorem ipsum dolor set amet</label>
+            <div class="option-group">
+              <div class="radio">
+                <input type="radio" id="radio-example-default-2" name="standaard-radiobutton" value="value"
+                  aria-describedby="radio-example-default-2-message" aria-invalid="true">
+                <label for="radio-example-default-2">Lorem ipsum dolor set amet</label>
+              </div>
               <p class="error" id="radio-example-default-2-message">
                 <span>foutmelding:</span>
                 Lorem ipsum dolor set amet
@@ -3346,19 +3331,17 @@
           <pre>
 							<code>
 &lt;form action="" method="post" class="horizontal-view">
-	&lt;div class="radio">
-		&lt;input
-			type="radio"
-			id="radio-example-default-2"
-			name="standaard-radiobutton" value="value"
-			aria-describedby="radio-example-default-2-message"
-			aria-invalid="true">
-		&lt;label for="radio-example-default-2">Lorem ipsum dolor set amet&lt;/label>
-		&lt;p class="error" id="radio-example-default-2-message">
-			&lt;span>foutmelding:&lt;/span>
-			Lorem ipsum dolor set amet
-		&lt;/p>
-	&lt;/div>
+  &lt;div class="option-group">
+    &lt;div class="radio">
+      &lt;input type="radio" id="radio-example-default-2" name="standaard-radiobutton" value="value"
+        aria-describedby="radio-example-default-2-message" aria-invalid="true">
+      &lt;label for="radio-example-default-2">Lorem ipsum dolor set amet&lt;/label>
+    &lt;/div>
+    &lt;p class="error" id="radio-example-default-2-message">
+      &lt;span>foutmelding:&lt;/span>
+      Lorem ipsum dolor set amet
+    &lt;/p>
+  &lt;/div>
 &lt;/form>
 							</code>
 						</pre>
@@ -3411,9 +3394,9 @@
 
           <h4>Voorbeeld weergave in kolommen</h4>
           <form action="" method="post" class="horizontal-view">
-            <div class="radio required">
+            <div class="option-group required">
               <span class="nota-bene">Dit veld is verplicht</span>
-              <div>
+              <div class="radio">
                 <input type="radio" id="radio-example-default-4" name="standaard-radiobutton" value="value" required
                   aria-describedby="radio-example-default-4-message" aria-invalid="true">
                 <label for="radio-example-default-4">Lorem ipsum dolor set amet</label>
@@ -3429,24 +3412,18 @@
           <pre>
 							<code>
 &lt;form action="" method="post" class="horizontal-view">
-	&lt;div class="radio required">
-		&lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
-		&lt;div
-            &lt;input
-                type="radio"
-                id="radio-example-default-4"
-                name="standaard-radiobutton"
-                value="value"
-                required
-                aria-describedby="radio-example-default-4-message"
-                aria-invalid="true">
-		    &lt;label for="radio-example-default-4">Lorem ipsum dolor set amet&lt;/label>
-        &lt;div/>
-		&lt;p class="error" id="radio-example-default-4-message">
-			&lt;span>foutmelding:&lt;/span>
-			Lorem ipsum dolor set amet
-		&lt;/p>
-	&lt;/div>
+  &lt;div class="option-group required">
+    &lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
+    &lt;div class="radio">
+      &lt;input type="radio" id="radio-example-default-4" name="standaard-radiobutton" value="value" required
+        aria-describedby="radio-example-default-4-message" aria-invalid="true">
+      &lt;label for="radio-example-default-4">Lorem ipsum dolor set amet&lt;/label>
+    &lt;/div>
+    &lt;p class="error" id="radio-example-default-4-message">
+      &lt;span>foutmelding:&lt;/span>
+      Lorem ipsum dolor set amet
+    &lt;/p>
+  &lt;/div>
 &lt;/form>
 							</code>
 						</pre>
@@ -4132,8 +4109,13 @@
     &lt;/div>
   &lt;/div>
 
+<<<<<<< HEAD
+  <button type="submit">Verzend</button>
+</form>
+=======
   &lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
+>>>>>>> main
 							</code>
 						</pre>
         </div>
@@ -4179,6 +4161,7 @@
               <input type="radio" id="radio-example-default-5" name="standaard-radiobutton" value="value">
               <label for="radio-example-default-5">Lorem ipsum dolor set amet</label>
             </div>
+            <button type="submit">Verzend</button>
           </form>
 
           <p>Html-voorbeeld:</p>
@@ -4205,6 +4188,7 @@
               <input type="radio" id="radio-example-default-6" name="standaard-radiobutton" value="value">
               <label for="radio-example-default-6">Lorem ipsum dolor set amet</label>
             </div>
+            <button type="submit">Verzend</button>
           </form>
 
           <p>Html-voorbeeld:</p>
@@ -4232,6 +4216,7 @@
               <input type="radio" id="radio-example-checked" name="standaard-radiobutton" value="value" checked>
               <label for="radio-example-checked">Lorem ipsum dolor set amet</label>
             </div>
+            <button type="submit">Verzend</button>
           </form>
 
           <p>Html-voorbeeld:</p>
@@ -4247,6 +4232,7 @@
 			checked>
 		&lt;label for="radio-example-checked">Lorem ipsum dolor set amet&lt;/label>
 	&lt;/div>
+  &lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
 							</code>
 						</pre>
@@ -4258,6 +4244,7 @@
               <input type="radio" id="radio-example-default-7" name="standaard-radiobutton" value="value" checked>
               <label for="radio-example-default-7">Lorem ipsum dolor set amet</label>
             </div>
+            <button type="submit">Verzend</button>
           </form>
 
           <p>Html-voorbeeld:</p>
@@ -4273,6 +4260,7 @@
 			checked>
 		&lt;label for="radio-example-default-7">Lorem ipsum dolor set amet&lt;/label>
 	&lt;/div>
+  &lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
 							</code>
 						</pre>
@@ -4292,6 +4280,7 @@
                 <label for="radio-example-required">Verplicht keuzeveld</label>
               </div>
             </div>
+            <button type="submit">Verzend</button>
           </form>
 
           <p>Html-voorbeeld:</p>
@@ -4325,6 +4314,7 @@
                 <label for="radio-example-required-2">Verplicht keuzeveld</label>
               </div>
             </div>
+            <button type="submit">Verzend</button>
           </form>
 
           <p>Html-voorbeeld:</p>
@@ -4355,6 +4345,7 @@
               <input type="radio" id="radio-example-disabled" name="disabled-radiobutton" value="value" disabled>
               <label for="radio-example-disabled">Uitgeschakeld keuzevak</label>
             </div>
+            <button type="submit">Verzend</button>
           </form>
 
           <p>Html-voorbeeld:</p>
@@ -4370,6 +4361,7 @@
 			disabled>
 		&lt;label for="radio-example-disabled">Uitgeschakeld keuzevak&lt;/label>
 	&lt;/div>
+  &lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
 							</code>
 						</pre>
@@ -4382,6 +4374,7 @@
                 value="disabled checkbox input" disabled>
               <label for="radio-example-disabled-2">Uitgeschakeld selectievak</label>
             </div>
+            <button type="submit">Verzend</button>
           </form>
 
           <p>Html-voorbeeld:</p>
@@ -4398,6 +4391,7 @@
 			disabled>
 		&lt;label for="radio-example-disabled">Uitgeschakeld keuzevak&lt;/label>
 	&lt;/div>
+  &lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
 							</code>
 						</pre>
@@ -4434,6 +4428,7 @@
                 <label for="radio-list-item-9">Optie 3</label>
               </div>
             </fieldset>
+            <button type="submit">Verzend</button>
           </form>
 
           <p>Html-voorbeeld:</p>
@@ -4466,6 +4461,7 @@
 			&lt;label for="radio-list-item-3">Optie 3&lt;/label>
 		&lt;/div>
 	&lt;/fieldset>
+  &lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
 							</code>
 						</pre>
@@ -4490,6 +4486,7 @@
                 </div>
               </div>
             </fieldset>
+            <button type="submit">Verzend</button>
           </form>
 
           <p>Html-voorbeeld:</p>
@@ -4525,6 +4522,7 @@
 			&lt;/div>
 		&lt;/div>
 	&lt;/fieldset>
+  &lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
 							</code>
 						</pre>
