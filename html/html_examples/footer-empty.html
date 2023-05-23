@@ -1,75 +1,81 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <title>Lege footer - Rijksoverheid CSS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../dist/css/main.css" rel="stylesheet">
-    <link href="../dist/img/favicon.ico" rel="shortcut icon">
-    <script defer src="../dist/js/sidemenu.js"></script>
-  </head>
-  <body class="test-cases">
-    <header>
-      <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
-      <a href="" class="ro-logo">
-        <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
-        Rijksoverheid
-      </a>
 
-      <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
+<head>
+  <meta charset="UTF-8">
+  <title>Lege footer - Rijksoverheid CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../dist/css/main.css" rel="stylesheet">
+  <link href="../dist/img/favicon.ico" rel="shortcut icon">
+  <script defer src="../dist/js/sidemenu.js"></script>
+</head>
+
+<body class="test-cases">
+  <header>
+    <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
+    <a href="" class="ro-logo">
+      <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
+      Rijksoverheid
+    </a>
+
+    <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
+      <div>
+        <ul>
+          <li><a href="../index.html"><span class="icon icon-home">Hoofdpagina icoon</span> Rijksoverheid CSS</a></li>
+          <li><a href="index.html">Online Componenten Bibliotheek</a></li>
+          <li><a href="footer.html" aria-current="page">Footer</a></li>
+          <li><a href="#" aria-current="page">Lege footer</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+
+  <main class="sidemenu" id="main-content" tabindex="-1">
+    <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+      <ul>
+        <li><a href="#footer-empty">Lege footer</a></li>
+        <li><a href="#example">Voorbeeld</a></li>
+      </ul>
+    </nav>
+
+    <div>
+      <article>
         <div>
-          <ul>
-              <li><a href="../index.html">Rijksoverheid CSS</a></li>
-              <li><a href="index.html">Online Componenten Bibliotheek</a></li>
-              <li><a href="footer.html" aria-current="page">Footer</a></li>
-              <li><a href="#" aria-current="page">Lege footer</a></li>
-          </ul>
+          <h1 id="footer-empty">Lege footer</h1>
+          <p>De footer vertelt de gebruiker dat het einde van de pagina bereikt is. Daarom is het belangrijk om op
+            iedere pagina een footer toe te voegen, zelfs als deze verder geen content bevat.</p>
+          <p>Een gevulde footer met een slogan en navigatie heeft de voorkeur. Maar mocht deze niet beschikbaar zijn is
+            het mogelijk om een lege footer toe te voegen.</p>
+          <p>De footer krijgt automatisch de gekozen applicatiekleur.</p>
         </div>
-      </nav>
+      </article>
 
-    </header>
+      <article id="example">
+        <div>
 
-    <main class="sidemenu" id="main-content" tabindex="-1">
-        <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
-            <ul>
-                <li><a href="#footer-empty">Lege footer</a></li>
-                <li><a href="#example">Voorbeeld</a></li>
-            </ul>
-        </nav>
+          <h2>Voorbeeld</h2>
+          <p>Visueel voorbeeld onderaan deze pagina</p>
+        </div>
 
         <div>
-        <article>
-          <div>
-            <h1 id="footer-empty">Lege footer</h1>
-            <p>De footer vertelt de gebruiker dat het einde van de pagina bereikt is. Daarom is het belangrijk om op iedere pagina een footer toe te voegen, zelfs als deze verder geen content bevat.</p>
-            <p>Een gevulde footer met een slogan en navigatie heeft de voorkeur. Maar mocht deze niet beschikbaar zijn is het mogelijk om een lege footer toe te voegen.</p>
-            <p>De footer krijgt automatisch de gekozen applicatiekleur.</p>
-          </div>
-        </article>
-
-        <article id="example">
-          <div>
-
-            <h2>Voorbeeld</h2>
-            <p>Visueel voorbeeld onderaan deze pagina</p>
-          </div>
-
-          <div>
-            <p>Html voorbeeld:</p>
-            <pre>
+          <p>Html voorbeeld:</p>
+          <pre>
               <code>
 &lt;footer>
 &lt;/footer>
               </code>
             </pre>
-          </div>
-        </article>
-      </div>
+        </div>
+      </article>
+    </div>
 
-      <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het hoofdmenu</a>
-    </main>
+    <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het
+      hoofdmenu</a>
+  </main>
 
-    <footer>
-    </footer>
-  </body>
+  <footer>
+  </footer>
+</body>
+
 </html>

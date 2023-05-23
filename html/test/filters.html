@@ -1,393 +1,376 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <title>Filters - Rijksoverheid CSS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../dist/css/main.css" rel="stylesheet">
-    <link href="../dist/img/favicon.ico" rel="shortcut icon">
-    <script defer src="../dist/js/formHelp.js"></script>
-  </head>
-  <body>
-    <header>
-        <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
-        <a href="" class="ro-logo">
-            <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
-            Rijksoverheid
-        </a>
 
-        <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
-            <div>
-              <ul>
-                  <li><a href="../index.html">Rijksoverheid CSS</a></li>
-                  <li><a href="index.html">Styling tests</a></li>
-                  <li><a href="#" aria-current="page">Filters</a></li>
-              </ul>
-            </div>
-        </nav>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <title>Filters - Rijksoverheid CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../dist/css/main.css" rel="stylesheet">
+  <link href="../dist/img/favicon.ico" rel="shortcut icon">
+  <script defer src="../dist/js/formHelp.js"></script>
+</head>
 
-    <main id="main-content" tabindex="-1">
-        <article>
-            <div>
-                <h1>Filters tests.</h1>
-                <p>Op deze pagina staan verschillende filter testsituaties.</p>
+<body>
+  <header>
+    <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
+    <a href="" class="ro-logo">
+      <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
+      Rijksoverheid
+    </a>
 
-                <form action="" method="post" class="help">
-                  <fieldset>
-                    <legend>Filter tests</legend>
-                    <label for="form-1-keyword-1">Trefwoord</label>
-                    <div>
-                      <input id="form-1-keyword-1" name="form-1-keyword-1" placeholder="Bijvoorbeeld: Volksgezondheid'" type="text">
-                      <p
-                        class="explanation"
-                        data-open-label="Toelichting bij het veld: Trefwoord"
-                        data-close-label="Sluit toelichting bij het veld: Trefwoord"
-                      >Vul hier een trefwoord in waarop u wilt filteren.</p>
-                    </div>
-
-                    <div class="required">
-                      <label for="form-1-keyword-2">Trefwoord</label>
-                      <div>
-                        <span class="nota-bene">Dit veld is verplicht</span>
-                        <input id="form-1-keyword-2" name="form-1-keyword-2" placeholder="Bijvoorbeeld: Volksgezondheid'" type="text">
-                        <p
-                          class="explanation"
-                          data-open-label="Toelichting bij het veld: Trefwoord"
-                          data-close-label="Sluit toelichting bij het veld: Trefwoord"
-                        >Vul hier een trefwoord in waarop u wilt filteren.</p>
-                      </div>
-                    </div>
-
-                    <fieldset class="column-2">
-                      <legend for="form-1-date-range-start-1">Periode</legend>
-                      <div>
-                        <div>
-                          <label for="form-1-date-range-start-1">van</label>
-                          <input id="form-1-date-range-start-1" name="form-1-date-range-start-1" value="DD-MM-JJJJ" type="date">
-                        </div>
-
-                        <div>
-                          <label for="form-1-date-range-end-1">tot</label>
-                          <input id="form-1-date-range-end-1" name="form-1-date-range-end-1" value="DD-MM-JJJJ" type="date">
-                        </div>
-                      </div>
-                      <p
-                        class="explanation"
-                        data-open-label="Toelichting bij het veld: Periode"
-                        data-close-label="Sluit toelichting bij het veld: Periode"
-                      >Vul hier een start- en/of einddatum als volgt in: DD-MM-JJJJ.</p>
-                    </fieldset>
-
-                    <fieldset class="column-2 required">
-                      <legend for="form-1-date-range-start-2">Periode</legend>
-                      <div>
-                        <span class="nota-bene">Dit veld is verplicht</span>
-                        <div>
-                          <label for="form-1-date-range-start-2">van</label>
-                          <input id="form-1-date-range-start-2" name="form-1-date-range-start-2" value="DD-MM-JJJJ" type="date">
-                        </div>
-
-                        <div>
-                          <label for="form-1-date-range-end-2">tot</label>
-                          <input id="form-1-date-range-end-2" name="form-1-date-range-end-2" value="DD-MM-JJJJ" type="date">
-                        </div>
-                      </div>
-                      <p
-                        class="explanation"
-                        data-open-label="Toelichting bij het veld: Periode"
-                        data-close-label="Sluit toelichting bij het veld: Periode"
-                      >Vul hier een start- en/of einddatum als volgt in: DD-MM-JJJJ.</p>
-                    </fieldset>
-
-                    <div class="required">
-                      <label for="form-1-select-1">Ministerie</label>
-                      <div>
-                        <span class="nota-bene">Dit veld is verplicht</span>
-                        <select id="form-1-select-1" name="form-1-select-1">
-                          <option value="Alle ministeries">Alle ministeries</option>
-                          <option value="Ministerie van Algemene zaken">Ministerie van Algemene zaken</option>
-                          <option value="Ministerie van Binnenlandse Zaken en Koninkrijksrelaties">Ministerie van Binnenlandse Zaken en Koninkrijksrelaties</option>
-                        </select>
-                      </div>
-                    </div>
-                  </fieldset>
-
-                  <button type="submit">Filter</button>
-                </form>
-
-                <form action="" method="post" class="help">
-                  <fieldset>
-                    <legend>Filter op datum</legend>
-                    <label for="form-2-keyword">Trefwoord</label>
-                    <div>
-                      <input id="form-2-keyword" name="form-2-keyword" placeholder="Bijvoorbeeld: Volksgezondheid'" type="text">
-                      <p
-                        class="explanation"
-                        data-open-label="Toelichting bij het veld: Trefwoord"
-                        data-close-label="Sluit toelichting bij het veld: Trefwoord"
-                      >Vul hier een trefwoord in waarop u wilt filteren.</p>
-                    </div>
-
-                    <div class="required">
-                      <label for="form-2-keyword-2">Trefwoord</label>
-                      <div>
-                        <span class="nota-bene">Dit veld is verplicht</span>
-                        <input id="form-2-keyword-2" name="form-2-keyword-2" placeholder="Bijvoorbeeld: Volksgezondheid'" type="text">
-                        <p
-                          class="explanation"
-                          data-open-label="Toelichting bij het veld: Trefwoord"
-                          data-close-label="Sluit toelichting bij het veld: Trefwoord"
-                        >Vul hier een trefwoord in waarop u wilt filteren.</p>
-                      </div>
-                    </div>
-
-                    <fieldset class="column-2">
-                      <legend for="form-2-date-range-start-1">Periode</legend>
-                      <div>
-                        <div>
-                          <label for="form-2-date-range-start-1">van</label>
-                          <input id="form-2-date-range-start-1" name="form-2-date-range-start-1" value="DD-MM-JJJJ" type="date">
-                        </div>
-
-                        <div>
-                          <label for="form-2-date-range-end-1">tot</label>
-                          <input id="form-2-date-range-end-1" name="form-2-date-range-end-1" value="DD-MM-JJJJ" type="date">
-                        </div>
-                      </div>
-                      <p
-                        class="explanation"
-                        data-open-label="Toelichting bij het veld: Periode"
-                        data-close-label="Sluit toelichting bij het veld: Periode"
-                      >Vul hier een start- en/of einddatum als volgt in: DD-MM-JJJJ.</p>
-                    </fieldset>
-
-                    <fieldset class="column-2 required">
-                      <legend for="form-2-date-range-start-2">Periode</legend>
-                      <div>
-                        <span class="nota-bene">Dit veld is verplicht</span>
-                        <div>
-                          <label for="form-2-date-range-start-2">van</label>
-                          <input id="form-2-date-range-start-2" name="form-2-date-range-start-2" value="DD-MM-JJJJ" type="date">
-                        </div>
-
-                        <div>
-                          <label for="form-2-date-range-end-2">tot</label>
-                          <input id="form-2-date-range-end-2" name="form-2-date-range-end-2" value="DD-MM-JJJJ" type="date">
-                        </div>
-                      </div>
-                      <p
-                        class="explanation"
-                        data-open-label="Toelichting bij het veld: Periode"
-                        data-close-label="Sluit toelichting bij het veld: Periode"
-                      >Vul hier een start- en/of einddatum als volgt in: DD-MM-JJJJ.</p>
-                    </fieldset>
-
-                    <div class="required">
-                      <label for="form-2-select-1">Ministerie</label>
-                      <div>
-                        <span class="nota-bene">Dit veld is verplicht</span>
-                        <select id="form-2-select-1" name="form-2-select-1">
-                          <option value="Alle ministeries">Alle ministeries</option>
-                          <option value="Ministerie van Algemene zaken">Ministerie van Algemene zaken</option>
-                          <option value="Ministerie van Binnenlandse Zaken en Koninkrijksrelaties">Ministerie van Binnenlandse Zaken en Koninkrijksrelaties</option>
-                        </select>
-                      </div>
-                    </div>
-                  </fieldset>
-
-                  <button type="submit">Filter</button>
-                </form>
-
-                <h2>Horizontal view </h2>
-                <form action="" method="post" class="horizontal-view help">
-                  <fieldset>
-                    <legend>Filters</legend>
-                    <div>
-                      <label for="form-3-keyword-1">Trefwoord</label>
-                      <div>
-                        <input id="form-3-keyword-1" name="form-3-keyword-1" placeholder="Bijvoorbeeld: Volksgezondheid'" type="text">
-                        <p
-                          class="explanation"
-                          data-open-label="Toelichting bij het veld: Trefwoord"
-                          data-close-label="Sluit toelichting bij het veld: Trefwoord"
-                        >Vul hier een trefwoord in waarop u wilt filteren.</p>
-                      </div>
-                    </div>
-
-                    <div class="required">
-                      <label for="form-3-keyword-2">Trefwoord</label>
-                      <div>
-                        <span class="nota-bene">Dit veld is verplicht</span>
-                        <input id="form-3-keyword-2" name="form-3-keyword-2" placeholder="Bijvoorbeeld: Volksgezondheid'" type="text">
-                        <p
-                          class="explanation"
-                          data-open-label="Toelichting bij het veld: Trefwoord"
-                          data-close-label="Sluit toelichting bij het veld: Trefwoord"
-                        >Vul hier een trefwoord in waarop u wilt filteren.</p>
-                      </div>
-                    </div>
-
-                    <fieldset class="column-2">
-                      <legend for="date-range-start">Periode</legend>
-                      <div>
-                        <div>
-                          <label for="form-3-date-range-start-1">van</label>
-                          <input id="form-3-date-range-start-1" name="form-3-date-range-start-1" value="DD-MM-JJJJ" type="date">
-                        </div>
-
-                        <div>
-                          <label for="form-3-date-range-end-1">tot</label>
-                          <input id="form-3-date-range-end-1" name="form-3-date-range-end-1" value="DD-MM-JJJJ" type="date">
-                        </div>
-                      </div>
-                      <p
-                        class="explanation"
-                        data-open-label="Toelichting bij het veld: Periode"
-                        data-close-label="Sluit toelichting bij het veld: Periode"
-                      >Vul hier een start- en/of einddatum als volgt in: DD-MM-JJJJ.</p>
-                    </fieldset>
-
-                    <fieldset class="column-2 required">
-                      <legend for="form-3-date-range-start-2">Periode</legend>
-                      <div>
-                        <span class="nota-bene">Dit veld is verplicht</span>
-                        <div>
-                          <label for="form-3-date-range-start-2">van</label>
-                          <input id="form-3-date-range-start-2" name="form-3-date-range-start-2" value="DD-MM-JJJJ" type="date">
-                        </div>
-
-                        <div>
-                          <label for="form-3-date-range-end-2">tot</label>
-                          <input id="form-3-date-range-end-2" name="form-3-date-range-end-2" value="DD-MM-JJJJ" type="date">
-                        </div>
-                      </div>
-                      <p
-                        class="explanation"
-                        data-open-label="Toelichting bij het veld: Periode"
-                        data-close-label="Sluit toelichting bij het veld: Periode"
-                      >Vul hier een start- en/of einddatum als volgt in: DD-MM-JJJJ.</p>
-                    </fieldset>
-
-                    <div class="required">
-                      <label for="form-3-select-1">Ministerie</label>
-                      <div>
-                        <span class="nota-bene">Dit veld is verplicht</span>
-                        <select id="form-3-select-1" name="form-3-select-1">
-                          <option value="Alle ministeries">Alle ministeries</option>
-                          <option value="Ministerie van Algemene zaken">Ministerie van Algemene zaken</option>
-                          <option value="Ministerie van Binnenlandse Zaken en Koninkrijksrelaties">Ministerie van Binnenlandse Zaken en Koninkrijksrelaties</option>
-                        </select>
-                      </div>
-                    </div>
-                  </fieldset>
-
-                  <button type="submit">Filter</button>
-                </form>
-
-                <h3>Fieldset</h3>
-                <form action="" method="post" class="horizontal-view help">
-                  <fieldset>
-                    <legend>Filter op datum</legend>
-                    <div>
-                      <label for="form-4-keyword-1">Trefwoord</label>
-                      <div>
-                        <input id="form-4-keyword-1" name="form-4-keyword-1" placeholder="Bijvoorbeeld: Volksgezondheid'" type="text">
-                        <p
-                          class="explanation"
-                          data-open-label="Toelichting bij het veld: Trefwoord"
-                          data-close-label="Sluit toelichting bij het veld: Trefwoord"
-                        >Vul hier een trefwoord in waarop u wilt filteren.</p>
-                      </div>
-                    </div>
-
-                    <div>
-                      <label for="form-4-keyword-2">Trefwoord</label>
-                      <div class="required">
-                        <span class="nota-bene">Dit veld is verplicht</span>
-                        <input id="form-4-keyword-2" name="form-4-keyword-2" placeholder="Bijvoorbeeld: Volksgezondheid'" type="text">
-                        <p
-                          class="explanation"
-                          data-open-label="Toelichting bij het veld: Trefwoord"
-                          data-close-label="Sluit toelichting bij het veld: Trefwoord"
-                        >Vul hier een trefwoord in waarop u wilt filteren.</p>
-                      </div>
-                    </div>
-
-                    <fieldset class="column-2">
-                      <legend for="date-range-start">Periode</legend>
-                      <div>
-                        <div>
-                          <label for="form-4-date-range-start-1">van</label>
-                          <input id="form-4-date-range-start-1" name="form-4-date-range-start-1" value="DD-MM-JJJJ" type="date">
-                        </div>
-
-                        <div>
-                          <label for="form-4-date-range-end-1">tot</label>
-                          <input id="form-4-date-range-end-1" name="form-4-date-range-end-1" value="DD-MM-JJJJ" type="date">
-                        </div>
-                      </div>
-                      <p
-                        class="explanation"
-                        data-open-label="Toelichting bij het veld: Periode"
-                        data-close-label="Sluit toelichting bij het veld: Periode"
-                      >Vul hier een start- en/of einddatum als volgt in: DD-MM-JJJJ.</p>
-                    </fieldset>
-
-                    <fieldset class="column-2 required">
-                      <legend for="form-4-date-range-start-2">Periode</legend>
-                      <div>
-                        <span class="nota-bene">Dit veld is verplicht</span>
-                        <div>
-                          <label for="form-4-date-range-start-2">van</label>
-                          <input id="form-4-date-range-start-2" name="form-4-date-range-start-2" value="DD-MM-JJJJ" type="date">
-                        </div>
-
-                        <div>
-                          <label for="form-4-date-range-end-2">tot</label>
-                          <input id="form-4-date-range-end-2" name="form-4-date-range-end-2" value="DD-MM-JJJJ" type="date">
-                        </div>
-                      </div>
-                      <p
-                        class="explanation"
-                        data-open-label="Toelichting bij het veld: Periode"
-                        data-close-label="Sluit toelichting bij het veld: Periode"
-                      >Vul hier een start- en/of einddatum als volgt in: DD-MM-JJJJ.</p>
-                    </fieldset>
-
-                    <div>
-                      <label for="form-4-select-1">Ministerie</label>
-                      <div class="required">
-                        <span class="nota-bene">Dit veld is verplicht</span>
-                        <select id="form-4-select-1" name="form-4-select-1">
-                          <option value="Alle ministeries">Alle ministeries</option>
-                          <option value="Ministerie van Algemene zaken">Ministerie van Algemene zaken</option>
-                          <option value="Ministerie van Binnenlandse Zaken en Koninkrijksrelaties">Ministerie van Binnenlandse Zaken en Koninkrijksrelaties</option>
-                        </select>
-                      </div>
-                    </div>
-                  </fieldset>
-
-                  <button type="submit">Filter</button>
-                </form>
-            </div>
-        </article>
-
-        <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het hoofdmenu</a>
-    </main>
-
-    <footer>
-      <div class="two-thirds-one-third">
-        <span class="slogan">Manon - Rijksoverheid css framework</span>
-        <nav aria-labelledby="footer-nav-1-heading">
-          <h1 id="footer-nav-1-heading">Service</h1>
-          <ul>
-            <li><a href="../index.html">Over</a></li>
-            <li><a href="index.html">Styling tests</a></li>
-            <li><a href="../html_examples/index.html">Online componenten bibliotheek</a></li>
-          </ul>
-        </nav>
+    <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
+      <div>
+        <ul>
+          <li><a href="../index.html"><span class="icon icon-home">Hoofdpagina icoon</span> Rijksoverheid CSS</a></li>
+          <li><a href="index.html">Styling tests</a></li>
+          <li><a href="#" aria-current="page">Filters</a></li>
+        </ul>
       </div>
-    </footer>
-  </body>
+    </nav>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <article>
+      <div>
+        <h1>Filters tests.</h1>
+        <p>Op deze pagina staan verschillende filter testsituaties.</p>
+
+        <form action="" method="post" class="help">
+          <fieldset>
+            <legend>Filter tests</legend>
+            <label for="form-1-keyword-1">Trefwoord</label>
+            <div>
+              <input id="form-1-keyword-1" name="form-1-keyword-1" placeholder="Bijvoorbeeld: Volksgezondheid'"
+                type="text">
+              <p class="explanation" data-open-label="Toelichting bij het veld: Trefwoord"
+                data-close-label="Sluit toelichting bij het veld: Trefwoord">Vul hier een trefwoord in waarop u wilt
+                filteren.</p>
+            </div>
+
+            <div class="required">
+              <label for="form-1-keyword-2">Trefwoord</label>
+              <div>
+                <span class="nota-bene">Dit veld is verplicht</span>
+                <input id="form-1-keyword-2" name="form-1-keyword-2" placeholder="Bijvoorbeeld: Volksgezondheid'"
+                  type="text">
+                <p class="explanation" data-open-label="Toelichting bij het veld: Trefwoord"
+                  data-close-label="Sluit toelichting bij het veld: Trefwoord">Vul hier een trefwoord in waarop u wilt
+                  filteren.</p>
+              </div>
+            </div>
+
+            <fieldset class="column-2">
+              <legend for="form-1-date-range-start-1">Periode</legend>
+              <div>
+                <div>
+                  <label for="form-1-date-range-start-1">van</label>
+                  <input id="form-1-date-range-start-1" name="form-1-date-range-start-1" value="DD-MM-JJJJ" type="date">
+                </div>
+
+                <div>
+                  <label for="form-1-date-range-end-1">tot</label>
+                  <input id="form-1-date-range-end-1" name="form-1-date-range-end-1" value="DD-MM-JJJJ" type="date">
+                </div>
+              </div>
+              <p class="explanation" data-open-label="Toelichting bij het veld: Periode"
+                data-close-label="Sluit toelichting bij het veld: Periode">Vul hier een start- en/of einddatum als volgt
+                in: DD-MM-JJJJ.</p>
+            </fieldset>
+
+            <fieldset class="column-2 required">
+              <legend for="form-1-date-range-start-2">Periode</legend>
+              <div>
+                <span class="nota-bene">Dit veld is verplicht</span>
+                <div>
+                  <label for="form-1-date-range-start-2">van</label>
+                  <input id="form-1-date-range-start-2" name="form-1-date-range-start-2" value="DD-MM-JJJJ" type="date">
+                </div>
+
+                <div>
+                  <label for="form-1-date-range-end-2">tot</label>
+                  <input id="form-1-date-range-end-2" name="form-1-date-range-end-2" value="DD-MM-JJJJ" type="date">
+                </div>
+              </div>
+              <p class="explanation" data-open-label="Toelichting bij het veld: Periode"
+                data-close-label="Sluit toelichting bij het veld: Periode">Vul hier een start- en/of einddatum als volgt
+                in: DD-MM-JJJJ.</p>
+            </fieldset>
+
+            <div class="required">
+              <label for="form-1-select-1">Ministerie</label>
+              <div>
+                <span class="nota-bene">Dit veld is verplicht</span>
+                <select id="form-1-select-1" name="form-1-select-1">
+                  <option value="Alle ministeries">Alle ministeries</option>
+                  <option value="Ministerie van Algemene zaken">Ministerie van Algemene zaken</option>
+                  <option value="Ministerie van Binnenlandse Zaken en Koninkrijksrelaties">Ministerie van Binnenlandse
+                    Zaken en Koninkrijksrelaties</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+
+          <button type="submit">Filter</button>
+        </form>
+
+        <form action="" method="post" class="help">
+          <fieldset>
+            <legend>Filter op datum</legend>
+            <label for="form-2-keyword">Trefwoord</label>
+            <div>
+              <input id="form-2-keyword" name="form-2-keyword" placeholder="Bijvoorbeeld: Volksgezondheid'" type="text">
+              <p class="explanation" data-open-label="Toelichting bij het veld: Trefwoord"
+                data-close-label="Sluit toelichting bij het veld: Trefwoord">Vul hier een trefwoord in waarop u wilt
+                filteren.</p>
+            </div>
+
+            <div class="required">
+              <label for="form-2-keyword-2">Trefwoord</label>
+              <div>
+                <span class="nota-bene">Dit veld is verplicht</span>
+                <input id="form-2-keyword-2" name="form-2-keyword-2" placeholder="Bijvoorbeeld: Volksgezondheid'"
+                  type="text">
+                <p class="explanation" data-open-label="Toelichting bij het veld: Trefwoord"
+                  data-close-label="Sluit toelichting bij het veld: Trefwoord">Vul hier een trefwoord in waarop u wilt
+                  filteren.</p>
+              </div>
+            </div>
+
+            <fieldset class="column-2">
+              <legend for="form-2-date-range-start-1">Periode</legend>
+              <div>
+                <div>
+                  <label for="form-2-date-range-start-1">van</label>
+                  <input id="form-2-date-range-start-1" name="form-2-date-range-start-1" value="DD-MM-JJJJ" type="date">
+                </div>
+
+                <div>
+                  <label for="form-2-date-range-end-1">tot</label>
+                  <input id="form-2-date-range-end-1" name="form-2-date-range-end-1" value="DD-MM-JJJJ" type="date">
+                </div>
+              </div>
+              <p class="explanation" data-open-label="Toelichting bij het veld: Periode"
+                data-close-label="Sluit toelichting bij het veld: Periode">Vul hier een start- en/of einddatum als volgt
+                in: DD-MM-JJJJ.</p>
+            </fieldset>
+
+            <fieldset class="column-2 required">
+              <legend for="form-2-date-range-start-2">Periode</legend>
+              <div>
+                <span class="nota-bene">Dit veld is verplicht</span>
+                <div>
+                  <label for="form-2-date-range-start-2">van</label>
+                  <input id="form-2-date-range-start-2" name="form-2-date-range-start-2" value="DD-MM-JJJJ" type="date">
+                </div>
+
+                <div>
+                  <label for="form-2-date-range-end-2">tot</label>
+                  <input id="form-2-date-range-end-2" name="form-2-date-range-end-2" value="DD-MM-JJJJ" type="date">
+                </div>
+              </div>
+              <p class="explanation" data-open-label="Toelichting bij het veld: Periode"
+                data-close-label="Sluit toelichting bij het veld: Periode">Vul hier een start- en/of einddatum als volgt
+                in: DD-MM-JJJJ.</p>
+            </fieldset>
+
+            <div class="required">
+              <label for="form-2-select-1">Ministerie</label>
+              <div>
+                <span class="nota-bene">Dit veld is verplicht</span>
+                <select id="form-2-select-1" name="form-2-select-1">
+                  <option value="Alle ministeries">Alle ministeries</option>
+                  <option value="Ministerie van Algemene zaken">Ministerie van Algemene zaken</option>
+                  <option value="Ministerie van Binnenlandse Zaken en Koninkrijksrelaties">Ministerie van Binnenlandse
+                    Zaken en Koninkrijksrelaties</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+
+          <button type="submit">Filter</button>
+        </form>
+
+        <h2>Horizontal view </h2>
+        <form action="" method="post" class="horizontal-view help">
+          <fieldset>
+            <legend>Filters</legend>
+            <div>
+              <label for="form-3-keyword-1">Trefwoord</label>
+              <div>
+                <input id="form-3-keyword-1" name="form-3-keyword-1" placeholder="Bijvoorbeeld: Volksgezondheid'"
+                  type="text">
+                <p class="explanation" data-open-label="Toelichting bij het veld: Trefwoord"
+                  data-close-label="Sluit toelichting bij het veld: Trefwoord">Vul hier een trefwoord in waarop u wilt
+                  filteren.</p>
+              </div>
+            </div>
+
+            <div class="required">
+              <label for="form-3-keyword-2">Trefwoord</label>
+              <div>
+                <span class="nota-bene">Dit veld is verplicht</span>
+                <input id="form-3-keyword-2" name="form-3-keyword-2" placeholder="Bijvoorbeeld: Volksgezondheid'"
+                  type="text">
+                <p class="explanation" data-open-label="Toelichting bij het veld: Trefwoord"
+                  data-close-label="Sluit toelichting bij het veld: Trefwoord">Vul hier een trefwoord in waarop u wilt
+                  filteren.</p>
+              </div>
+            </div>
+
+            <fieldset class="column-2">
+              <legend for="date-range-start">Periode</legend>
+              <div>
+                <div>
+                  <label for="form-3-date-range-start-1">van</label>
+                  <input id="form-3-date-range-start-1" name="form-3-date-range-start-1" value="DD-MM-JJJJ" type="date">
+                </div>
+
+                <div>
+                  <label for="form-3-date-range-end-1">tot</label>
+                  <input id="form-3-date-range-end-1" name="form-3-date-range-end-1" value="DD-MM-JJJJ" type="date">
+                </div>
+              </div>
+              <p class="explanation" data-open-label="Toelichting bij het veld: Periode"
+                data-close-label="Sluit toelichting bij het veld: Periode">Vul hier een start- en/of einddatum als volgt
+                in: DD-MM-JJJJ.</p>
+            </fieldset>
+
+            <fieldset class="column-2 required">
+              <legend for="form-3-date-range-start-2">Periode</legend>
+              <div>
+                <span class="nota-bene">Dit veld is verplicht</span>
+                <div>
+                  <label for="form-3-date-range-start-2">van</label>
+                  <input id="form-3-date-range-start-2" name="form-3-date-range-start-2" value="DD-MM-JJJJ" type="date">
+                </div>
+
+                <div>
+                  <label for="form-3-date-range-end-2">tot</label>
+                  <input id="form-3-date-range-end-2" name="form-3-date-range-end-2" value="DD-MM-JJJJ" type="date">
+                </div>
+              </div>
+              <p class="explanation" data-open-label="Toelichting bij het veld: Periode"
+                data-close-label="Sluit toelichting bij het veld: Periode">Vul hier een start- en/of einddatum als volgt
+                in: DD-MM-JJJJ.</p>
+            </fieldset>
+
+            <div class="required">
+              <label for="form-3-select-1">Ministerie</label>
+              <div>
+                <span class="nota-bene">Dit veld is verplicht</span>
+                <select id="form-3-select-1" name="form-3-select-1">
+                  <option value="Alle ministeries">Alle ministeries</option>
+                  <option value="Ministerie van Algemene zaken">Ministerie van Algemene zaken</option>
+                  <option value="Ministerie van Binnenlandse Zaken en Koninkrijksrelaties">Ministerie van Binnenlandse
+                    Zaken en Koninkrijksrelaties</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+
+          <button type="submit">Filter</button>
+        </form>
+
+        <h3>Fieldset</h3>
+        <form action="" method="post" class="horizontal-view help">
+          <fieldset>
+            <legend>Filter op datum</legend>
+            <div>
+              <label for="form-4-keyword-1">Trefwoord</label>
+              <div>
+                <input id="form-4-keyword-1" name="form-4-keyword-1" placeholder="Bijvoorbeeld: Volksgezondheid'"
+                  type="text">
+                <p class="explanation" data-open-label="Toelichting bij het veld: Trefwoord"
+                  data-close-label="Sluit toelichting bij het veld: Trefwoord">Vul hier een trefwoord in waarop u wilt
+                  filteren.</p>
+              </div>
+            </div>
+
+            <div>
+              <label for="form-4-keyword-2">Trefwoord</label>
+              <div class="required">
+                <span class="nota-bene">Dit veld is verplicht</span>
+                <input id="form-4-keyword-2" name="form-4-keyword-2" placeholder="Bijvoorbeeld: Volksgezondheid'"
+                  type="text">
+                <p class="explanation" data-open-label="Toelichting bij het veld: Trefwoord"
+                  data-close-label="Sluit toelichting bij het veld: Trefwoord">Vul hier een trefwoord in waarop u wilt
+                  filteren.</p>
+              </div>
+            </div>
+
+            <fieldset class="column-2">
+              <legend for="date-range-start">Periode</legend>
+              <div>
+                <div>
+                  <label for="form-4-date-range-start-1">van</label>
+                  <input id="form-4-date-range-start-1" name="form-4-date-range-start-1" value="DD-MM-JJJJ" type="date">
+                </div>
+
+                <div>
+                  <label for="form-4-date-range-end-1">tot</label>
+                  <input id="form-4-date-range-end-1" name="form-4-date-range-end-1" value="DD-MM-JJJJ" type="date">
+                </div>
+              </div>
+              <p class="explanation" data-open-label="Toelichting bij het veld: Periode"
+                data-close-label="Sluit toelichting bij het veld: Periode">Vul hier een start- en/of einddatum als volgt
+                in: DD-MM-JJJJ.</p>
+            </fieldset>
+
+            <fieldset class="column-2 required">
+              <legend for="form-4-date-range-start-2">Periode</legend>
+              <div>
+                <span class="nota-bene">Dit veld is verplicht</span>
+                <div>
+                  <label for="form-4-date-range-start-2">van</label>
+                  <input id="form-4-date-range-start-2" name="form-4-date-range-start-2" value="DD-MM-JJJJ" type="date">
+                </div>
+
+                <div>
+                  <label for="form-4-date-range-end-2">tot</label>
+                  <input id="form-4-date-range-end-2" name="form-4-date-range-end-2" value="DD-MM-JJJJ" type="date">
+                </div>
+              </div>
+              <p class="explanation" data-open-label="Toelichting bij het veld: Periode"
+                data-close-label="Sluit toelichting bij het veld: Periode">Vul hier een start- en/of einddatum als volgt
+                in: DD-MM-JJJJ.</p>
+            </fieldset>
+
+            <div>
+              <label for="form-4-select-1">Ministerie</label>
+              <div class="required">
+                <span class="nota-bene">Dit veld is verplicht</span>
+                <select id="form-4-select-1" name="form-4-select-1">
+                  <option value="Alle ministeries">Alle ministeries</option>
+                  <option value="Ministerie van Algemene zaken">Ministerie van Algemene zaken</option>
+                  <option value="Ministerie van Binnenlandse Zaken en Koninkrijksrelaties">Ministerie van Binnenlandse
+                    Zaken en Koninkrijksrelaties</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+
+          <button type="submit">Filter</button>
+        </form>
+      </div>
+    </article>
+
+    <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het
+      hoofdmenu</a>
+  </main>
+
+  <footer>
+    <div class="two-thirds-one-third">
+      <span class="slogan">Manon - Rijksoverheid css framework</span>
+      <nav aria-labelledby="footer-nav-1-heading">
+        <h1 id="footer-nav-1-heading">Service</h1>
+        <ul>
+          <li><a href="../index.html">Over</a></li>
+          <li><a href="index.html">Styling tests</a></li>
+          <li><a href="../html_examples/index.html">Online componenten bibliotheek</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+
 </html>

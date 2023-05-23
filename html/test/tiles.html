@@ -1,735 +1,829 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <title>Tegelweergave - Rijksoverheid CSS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../dist/css/main.css" rel="stylesheet">
-    <link href="../dist/img/favicon.ico" rel="shortcut icon">
-    <script defer src="../dist/js/sidemenu.js"></script>
-  </head>
-  <body>
-    <header>
-      <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tegelweergave - Rijksoverheid CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../dist/css/main.css" rel="stylesheet">
+  <link href="../dist/img/favicon.ico" rel="shortcut icon">
+  <script defer src="../dist/js/sidemenu.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
     <a href="" class="ro-logo">
-        <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
-        Rijksoverheid
+      <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
+      Rijksoverheid
     </a>
 
-      <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
-        <div>
-          <ul>
-              <li><a href="../index.html">Rijksoverheid CSS</a></li>
-              <li><a href="index.html">Styling tests</a></li>
-              <li><a href="#" aria-current="page">Tegelweergave</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-
-    <main class="sidemenu" id="main-content" tabindex="-1">
-      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+    <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
+      <div>
         <ul>
-          <li><a href="#tile">Enkele tegel</a></li>
-          <li><a href="#tile-group">Groep met tegels</a></li>
-          <li><a href="#tiles-grouped-content">Tegel met gegroepeerde content</a></li>
-          <li><a href="#tile-hero">Tegel binnen hero</a></li>
+          <li><a href="../index.html"><span class="icon icon-home">Hoofdpagina icoon</span> Rijksoverheid CSS</a></li>
+          <li><a href="index.html">Styling tests</a></li>
+          <li><a href="#" aria-current="page">Tegelweergave</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="sidemenu" id="main-content" tabindex="-1">
+    <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+      <ul>
+        <li><a href="#tile">Enkele tegel</a></li>
+        <li><a href="#tile-group">Groep met tegels</a></li>
+        <li><a href="#tiles-grouped-content">Tegel met gegroepeerde content</a></li>
+        <li><a href="#tile-hero">Tegel binnen hero</a></li>
+      </ul>
+    </nav>
+
+    <div>
+      <article>
+        <div>
+          <h1>Tegelweergave.</h1>
+          <p>Een overzicht van tegels binnen verschillende structuren en elementen.</p>
+
+          <nav aria-label="Document-navigatie">
+            <ul>
+              <li><a href="#tile">Enkele tegel</a></li>
+              <li><a href="#tile-group">Groep met tegels</a></li>
+              <li><a href="#tiles-grouped-content">Tegel met gegroepeerde content</a></li>
+              <li><a href="#tile-hero">Tegel binnen hero</a></li>
+            </ul>
+          </nav>
+        </div>
+      </article>
+
+      <article id="tile">
+        <div>
+          <h1>Enkele tegel</h1>
+          <p>Overzicht van beschikbare tests</p>
+
+          <p><code>div</code></p>
+          <div class="tile" role="group">
+            <h1>Lorem ipsum dolor set</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+              Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+          </div>
+
+          <p><code>class="layout-authentication"</code></p>
+          <div class="layout-authentication">
+            <div class="tile" role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+          </div>
+
+          <p><code>class="layout-form"</code></p>
+          <div class="layout-form">
+            <div class="tile" role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+          </div>
+
+          <p><code>class="column-2"</code></p>
+          <div class="column-2">
+            <div class="tile" role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+            <div class="tile" role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+          </div>
+
+          <p><code>class="column-3"</code></p>
+          <div class="column-3">
+            <div class="tile" role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+
+            <div class="tile" role="group">
+              <img src="../images/beach.jpg" alt="">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+
+            <div class="tile" role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <img src="../images/beach.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+          </div>
+
+          <p><code>class="column-4"</code></p>
+          <div class="column-4">
+            <div class="tile" role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+            <div class="tile" role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+            <div class="tile" role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+            <div class="tile" role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article id="tile-group">
+        <div>
+          <h1>Groep met tegels</h1>
+          <p>Overzicht van beschikbare tests</p>
+
+          <p><code>class="layout-authentication"</code></p>
+          <div class="layout-authentication tiles">
+            <div role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+          </div>
+
+          <div class="layout-authentication">
+            <div class="tiles">
+              <div role="group">
+                <h1>Lorem ipsum dolor set</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                  Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              </div>
+            </div>
+          </div>
+
+          <p><code>class="layout-form"</code></p>
+          <div class="layout-form">
+            <div class="tiles">
+              <div role="group">
+                <h1>Lorem ipsum dolor set</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                  Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="layout-form tiles">
+            <div role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+          </div>
+
+          <p><code>class="column-2"</code></p>
+          <div class="column-2 tiles">
+            <div role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+
+            <div role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+
+            <div role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+
+            <div role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+          </div>
+
+          <p><code>class="column-3"</code></p>
+          <div class="column-3 tiles">
+            <div role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+
+            <div role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+
+            <div role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+          </div>
+
+          <div class="column-3 tiles">
+            <div role="group">
+              <img src="../images/beach.jpg" alt="">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+
+            <div role="group">
+              <img src="../images/beach.jpg" alt="">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+
+            <div role="group">
+              <img src="../images/beach.jpg" alt="">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+          </div>
+
+          <div class="column-3 tiles">
+            <div role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <img src="../images/beach.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+
+            <div role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <img src="../images/beach.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+
+            <div role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <img src="../images/beach.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+          </div>
+
+          <div class="column-3 tiles">
+            <div role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <button class="secondary">Lorem</button>
+            </div>
+
+            <div role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <button class="secondary">Lorem</button>
+            </div>
+
+            <div role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <button class="secondary">Lorem</button>
+            </div>
+          </div>
+
+          <div class="column-3 tiles">
+            <div role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <a href="">Lees meer</a>
+            </div>
+
+            <div role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <a href="">Lees meer</a>
+            </div>
+
+            <div role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <a href="">Lees meer</a>
+            </div>
+          </div>
+
+          <div class="column-3 tiles background-color-offset">
+            <div role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+
+            <div role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+
+            <div role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+
+            <div role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+
+            <div role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+
+            <div role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+          </div>
+
+          <p><code>class="column-4"</code></p>
+          <div class="column-4 tiles">
+            <div role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+
+            <div role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+
+            <div role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+
+            <div role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article id="tiles-grouped-content">
+        <div>
+          <h1>Tegel met gegroepeerde content</h1>
+
+          <p>Overzicht van beschikbare tests</p>
+
+          <p><code>class="layout-authentication"</code></p>
+          <div class="layout-authentication tiles">
+            <div role="group">
+              <h1>link <code>a</code></h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+
+              <div class="horizontal-view">
+                <a href="">Lorem</a>
+                <a href="">Ipsum</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="layout-authentication tiles">
+            <div role="group">
+              <h1>Link weergegeven als knop: <code>a class="button"</code></h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+
+              <div class="horizontal-view">
+                <a href="" class="button">Lorem</a>
+                <a href="" class="button">Ipsum</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="layout-authentication">
+            <div class="tiles">
+              <div role="group">
+                <h1>Knoppen: <code>button</code></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                  Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+
+                <div class="button-container">
+                  <button>Lorem</button>
+                  <button>Ipsum</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p><code>class="layout-form"</code></p>
+          <div class="layout-form">
+            <div class="tiles">
+              <div role="group">
+                <h1>Link <code>a</code></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                  Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+                <div class="horizontal-view">
+                  <a href="">Lorem</a>
+                  <a href="">Ipsum</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="layout-form">
+            <div class="tiles">
+              <div role="group">
+                <h1>Link weergegeven als knop: <code>a class="button"</code></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                  Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+                <div class="horizontal-view">
+                  <a href="" class="button">Lorem</a>
+                  <a href="" class="button">Ipsum</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="layout-form tiles">
+            <div role="group">
+              <h1>Knoppen <code>button</code></h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <div class="button-container">
+                <button>Lorem</button>
+                <button>Ipsum</button>
+              </div>
+            </div>
+          </div>
+
+          <p><code>class="column-2"</code></p>
+          <div class="column-2 tiles">
+            <div role="group">
+              <h1>Link <code>a</code></h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <div>
+                <a href="">Lorem</a>
+                <a href="">Ipsum</a>
+              </div>
+            </div>
+
+            <div role="group">
+              <h1>links gegoepeerd: <code>a</code> binnen button-container <code>class="button-container"</code></h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <div class="button-container">
+                <a href="">Lorem</a>
+                <a href="">Ipsum</a>
+              </div>
+            </div>
+
+            <div role="group">
+              <h1>links gegoepeerd: <code>a</code> met horizontal view <code>class="horizontal-view"</code></h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <div class="horizontal-view">
+                <a href="">Lorem</a>
+                <a href="">Ipsum</a>
+              </div>
+            </div>
+
+            <div role="group">
+              <h1>Link weergegeven als knop: <code>a class="button"</code></h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <div>
+                <a href="" class="button">Lorem</a>
+                <a href="" class="button">Ipsum</a>
+              </div>
+            </div>
+
+            <div role="group">
+              <h1>Link weergegeven als knop: <code>a class="button"</code> binnen button-container
+                <code>class="button-container"</code></h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <div class="button-container">
+                <a href="" class="button">Lorem</a>
+                <a href="" class="button">Ipsum</a>
+              </div>
+            </div>
+
+            <div role="group">
+              <h1>Link weergegeven als knop: <code>a class="button"</code> binnen horizontal-view
+                <code>class="horizontal-view"</code></h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <div class="horizontal-view">
+                <a href="" class="button">Lorem</a>
+                <a href="" class="button">Ipsum</a>
+              </div>
+            </div>
+
+            <div role="group">
+              <h1>Knoppen gegoepeerd: <code>button</code></h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <div>
+                <button>Lorem</button>
+                <button>Ipsum</button>
+              </div>
+            </div>
+
+            <div role="group">
+              <h1>Knoppen gegoepeerd: <code>button</code> binnen button-container <code>class="button-container"</code>
+              </h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <div class="button-container">
+                <button>Lorem</button>
+                <button>Ipsum</button>
+              </div>
+            </div>
+
+            <div role="group">
+              <h1>Knoppen gegroepeerd: <code>button</code> binnen horizontal-view <code>class="horizontal-view"</code>
+              </h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <div class="horizontal-view">
+                <button>Lorem</button>
+                <button>Ipsum</button>
+              </div>
+            </div>
+          </div>
+
+          <p><code>class="column-3"</code></p>
+          <div class="column-3 tiles">
+            <div role="group">
+              <h1>Link <code>a</code></h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <div>
+                <a href="">Lorem</a>
+                <a href="">Ipsum</a>
+              </div>
+            </div>
+
+            <div role="group">
+              <h1>links gegoepeerd: <code>a</code> binnen button-container <code>class="button-container"</code></h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <div class="button-container">
+                <a href="">Lorem</a>
+                <a href="">Ipsum</a>
+              </div>
+            </div>
+
+            <div role="group">
+              <h1>links gegoepeerd: <code>a</code> met horizontal view <code>class="horizontal-view"</code></h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <div class="horizontal-view">
+                <a href="">Lorem</a>
+                <a href="">Ipsum</a>
+              </div>
+            </div>
+
+            <div role="group">
+              <h1>Link weergegeven als knop: <code>a class="button"</code></h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <div>
+                <a href="" class="button">Lorem</a>
+                <a href="" class="button">Ipsum</a>
+              </div>
+            </div>
+
+            <div role="group">
+              <h1>Link weergegeven als knop: <code>a class="button"</code> binnen button-container
+                <code>class="button-container"</code></h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <div class="button-container">
+                <a href="" class="button">Lorem</a>
+                <a href="" class="button">Ipsum</a>
+              </div>
+            </div>
+
+            <div role="group">
+              <h1>Link weergegeven als knop: <code>a class="button"</code> binnen horizontal-view
+                <code>class="horizontal-view"</code></h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <div class="horizontal-view">
+                <a href="" class="button">Lorem</a>
+                <a href="" class="button">Ipsum</a>
+              </div>
+            </div>
+
+            <div role="group">
+              <h1>Knoppen gegoepeerd: <code>button</code></h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <div>
+                <button>Lorem</button>
+                <button>Ipsum</button>
+              </div>
+            </div>
+
+            <div role="group">
+              <h1>Knoppen gegoepeerd: <code>button</code> binnen button-container <code>class="button-container"</code>
+              </h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <div class="button-container">
+                <button>Lorem</button>
+                <button>Ipsum</button>
+              </div>
+            </div>
+
+            <div role="group">
+              <h1>Knoppen gegroepeerd: <code>button</code> binnen horizontal-view <code>class="horizontal-view"</code>
+              </h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <div class="horizontal-view">
+                <button>Lorem</button>
+                <button>Ipsum</button>
+              </div>
+            </div>
+          </div>
+
+          <p><code>class="column-4"</code></p>
+          <div class="column-4 tiles">
+            <div role="group">
+              <h1>Link <code>a</code></h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <div>
+                <a href="">Lorem</a>
+                <a href="">Ipsum</a>
+              </div>
+            </div>
+
+            <div role="group">
+              <h1>links gegoepeerd: <code>a</code> binnen button-container <code>class="button-container"</code></h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <div class="button-container">
+                <a href="">Lorem</a>
+                <a href="">Ipsum</a>
+              </div>
+            </div>
+
+            <div role="group">
+              <h1>links gegoepeerd: <code>a</code> met horizontal view <code>class="horizontal-view"</code></h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <div class="horizontal-view">
+                <a href="">Lorem</a>
+                <a href="">Ipsum</a>
+              </div>
+            </div>
+
+            <div role="group">
+              <h1>Link weergegeven als knop: <code>a class="button"</code></h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <div>
+                <a href="" class="button">Lorem</a>
+                <a href="" class="button">Ipsum</a>
+              </div>
+            </div>
+
+            <div role="group">
+              <h1>Link weergegeven als knop: <code>a class="button"</code> binnen button-container
+                <code>class="button-container"</code></h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <div class="button-container">
+                <a href="" class="button">Lorem</a>
+                <a href="" class="button">Ipsum</a>
+              </div>
+            </div>
+
+            <div role="group">
+              <h1>Link weergegeven als knop: <code>a class="button"</code> binnen horizontal-view
+                <code>class="horizontal-view"</code></h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <div class="horizontal-view">
+                <a href="" class="button">Lorem</a>
+                <a href="" class="button">Ipsum</a>
+              </div>
+            </div>
+
+            <div role="group">
+              <h1>Knoppen gegoepeerd: <code>button</code></h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <div>
+                <button>Lorem</button>
+                <button>Ipsum</button>
+              </div>
+            </div>
+
+            <div role="group">
+              <h1>Knoppen gegoepeerd: <code>button</code> binnen button-container <code>class="button-container"</code>
+              </h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <div class="button-container">
+                <button>Lorem</button>
+                <button>Ipsum</button>
+              </div>
+            </div>
+
+            <div role="group">
+              <h1>Knoppen gegroepeerd: <code>button</code> binnen horizontal-view <code>class="horizontal-view"</code>
+              </h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <div class="horizontal-view">
+                <button>Lorem</button>
+                <button>Ipsum</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article id="tile-hero">
+        <div>
+          <h1>Tegel binnen hero</h1>
+
+          <section class="hero">
+            <img src="../images/beach.jpg" alt="">
+            <div class="one-third-two-thirds">
+
+              <div class="tile">
+                <h1>Lorem ipsum dolor set</h1>
+                <nav>
+                  <ul>
+                    <li><a href="">Lorem ipsum</a></li>
+                    <li><a href="">Dolor sit amet</a></li>
+                    <li><a href="">Consectetur</a></li>
+                  </ul>
+                </nav>
+              </div>
+
+            </div>
+          </section>
+        </div>
+      </article>
+
+    </div>
+
+    <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het
+      hoofdmenu</a>
+  </main>
+
+  <footer>
+    <div class="two-thirds-one-third">
+      <span class="slogan">Manon - Rijksoverheid css framework</span>
+      <nav aria-labelledby="footer-nav-1-heading">
+        <h1 id="footer-nav-1-heading">Service</h1>
+        <ul>
+          <li><a href="../index.html">Over</a></li>
+          <li><a href="index.html">Styling tests</a></li>
+          <li><a href="../html_examples/index.html">Online componenten bibliotheek</a></li>
         </ul>
       </nav>
+    </div>
+  </footer>
+</body>
 
-      <div>
-        <article>
-            <div>
-                <h1>Tegelweergave.</h1>
-                <p>Een overzicht van tegels binnen verschillende structuren en elementen.</p>
-
-                <nav aria-label="Document-navigatie">
-                    <ul>
-                        <li><a href="#tile">Enkele tegel</a></li>
-                        <li><a href="#tile-group">Groep met tegels</a></li>
-                        <li><a href="#tiles-grouped-content">Tegel met gegroepeerde content</a></li>
-                        <li><a href="#tile-hero">Tegel binnen hero</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </article>
-
-        <article id="tile">
-            <div>
-                <h1>Enkele tegel</h1>
-                <p>Overzicht van beschikbare tests</p>
-
-                <p><code>div</code></p>
-                <div class="tile" role="group">
-                  <h1>Lorem ipsum dolor set</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                </div>
-
-                <p><code>class="layout-authentication"</code></p>
-                <div class="layout-authentication">
-                  <div class="tile" role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  </div>
-                </div>
-
-                <p><code>class="layout-form"</code></p>
-                <div class="layout-form">
-                  <div class="tile" role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  </div>
-                </div>
-
-                <p><code>class="column-2"</code></p>
-                <div class="column-2">
-                  <div class="tile" role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  </div>
-                  <div class="tile" role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  </div>
-                </div>
-
-                <p><code>class="column-3"</code></p>
-                <div class="column-3">
-                  <div class="tile" role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  </div>
-
-                  <div class="tile" role="group">
-                    <img src="../images/beach.jpg" alt="">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  </div>
-
-                  <div class="tile" role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <img src="../images/beach.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  </div>
-                </div>
-
-                <p><code>class="column-4"</code></p>
-                <div class="column-4">
-                  <div class="tile" role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  </div>
-                  <div class="tile" role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  </div>
-                  <div class="tile" role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  </div>
-                  <div class="tile" role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  </div>
-                </div>
-            </div>
-        </article>
-
-        <article id="tile-group">
-            <div>
-                <h1>Groep met tegels</h1>
-                <p>Overzicht van beschikbare tests</p>
-
-                <p><code>class="layout-authentication"</code></p>
-                <div class="layout-authentication tiles">
-                  <div role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  </div>
-                </div>
-
-                <div class="layout-authentication">
-                  <div class="tiles">
-                    <div role="group">
-                      <h1>Lorem ipsum dolor set</h1>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <p><code>class="layout-form"</code></p>
-                <div class="layout-form">
-                  <div class="tiles">
-                    <div role="group">
-                      <h1>Lorem ipsum dolor set</h1>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="layout-form tiles">
-                    <div role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  </div>
-                </div>
-
-                <p><code>class="column-2"</code></p>
-                <div class="column-2 tiles">
-                  <div role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  </div>
-
-                  <div role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  </div>
-
-                  <div role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  </div>
-
-                  <div role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  </div>
-                </div>
-
-                <p><code>class="column-3"</code></p>
-                <div class="column-3 tiles">
-                  <div role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  </div>
-
-                  <div role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  </div>
-
-                  <div role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  </div>
-                </div>
-
-                <div class="column-3 tiles">
-                  <div role="group">
-                    <img src="../images/beach.jpg" alt="">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  </div>
-
-                  <div role="group">
-                    <img src="../images/beach.jpg" alt="">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  </div>
-
-                  <div role="group">
-                    <img src="../images/beach.jpg" alt="">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  </div>
-                </div>
-
-                <div class="column-3 tiles">
-                  <div role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <img src="../images/beach.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  </div>
-
-                  <div role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <img src="../images/beach.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  </div>
-
-                  <div role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <img src="../images/beach.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  </div>
-                </div>
-
-                <div class="column-3 tiles">
-                  <div role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                    <button class="secondary">Lorem</button>
-                  </div>
-
-                  <div role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                    <button class="secondary">Lorem</button>
-                  </div>
-
-                  <div role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                    <button class="secondary">Lorem</button>
-                  </div>
-                </div>
-
-                <div class="column-3 tiles">
-                  <div role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                    <a href="">Lees meer</a>
-                  </div>
-
-                  <div role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                    <a href="">Lees meer</a>
-                  </div>
-
-                  <div role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                    <a href="">Lees meer</a>
-                  </div>
-                </div>
-
-                <div class="column-3 tiles background-color-offset">
-                  <div role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  </div>
-
-                  <div role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  </div>
-
-                  <div role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  </div>
-
-                  <div role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  </div>
-
-                  <div role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  </div>
-
-                  <div role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  </div>
-                </div>
-
-                <p><code>class="column-4"</code></p>
-                <div class="column-4 tiles">
-                  <div role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  </div>
-
-                  <div role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  </div>
-
-                  <div role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  </div>
-
-                  <div role="group">
-                    <h1>Lorem ipsum dolor set</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  </div>
-                </div>
-            </div>
-        </article>
-
-        <article id="tiles-grouped-content">
-            <div>
-                <h1>Tegel met gegroepeerde content</h1>
-
-                <p>Overzicht van beschikbare tests</p>
-
-                <p><code>class="layout-authentication"</code></p>
-                <div class="layout-authentication tiles">
-                  <div role="group">
-                    <h1>link <code>a</code></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-
-                    <div class="horizontal-view">
-                      <a href="">Lorem</a>
-                      <a href="">Ipsum</a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="layout-authentication tiles">
-                  <div role="group">
-                    <h1>Link weergegeven als knop: <code>a class="button"</code></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-
-                    <div class="horizontal-view">
-                      <a href="" class="button">Lorem</a>
-                      <a href="" class="button">Ipsum</a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="layout-authentication">
-                  <div class="tiles">
-                    <div role="group">
-                      <h1>Knoppen: <code>button</code></h1>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-
-                      <div class="button-container">
-                        <button>Lorem</button>
-                        <button>Ipsum</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <p><code>class="layout-form"</code></p>
-                <div class="layout-form">
-                  <div class="tiles">
-                    <div role="group">
-                      <h1>Link <code>a</code></h1>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                       <div class="horizontal-view">
-                        <a href="">Lorem</a>
-                        <a href="">Ipsum</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="layout-form">
-                  <div class="tiles">
-                    <div role="group">
-                      <h1>Link weergegeven als knop: <code>a class="button"</code></h1>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                       <div class="horizontal-view">
-                        <a href="" class="button">Lorem</a>
-                        <a href="" class="button">Ipsum</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="layout-form tiles">
-                    <div role="group">
-                    <h1>Knoppen <code>button</code></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                    <div class="button-container">
-                      <button>Lorem</button>
-                      <button>Ipsum</button>
-                    </div>
-                  </div>
-                </div>
-
-                <p><code>class="column-2"</code></p>
-                 <div class="column-2 tiles">
-                  <div role="group">
-                    <h1>Link <code>a</code></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                    <div>
-                      <a href="">Lorem</a>
-                      <a href="">Ipsum</a>
-                    </div>
-                  </div>
-
-                  <div role="group">
-                    <h1>links gegoepeerd: <code>a</code> binnen button-container <code>class="button-container"</code></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                    <div class="button-container">
-                      <a href="">Lorem</a>
-                      <a href="">Ipsum</a>
-                    </div>
-                  </div>
-
-                  <div role="group">
-                    <h1>links gegoepeerd: <code>a</code> met horizontal view <code>class="horizontal-view"</code></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                    <div class="horizontal-view">
-                      <a href="">Lorem</a>
-                      <a href="">Ipsum</a>
-                    </div>
-                  </div>
-
-                  <div role="group">
-                    <h1>Link weergegeven als knop: <code>a class="button"</code></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                    <div>
-                      <a href="" class="button">Lorem</a>
-                      <a href="" class="button">Ipsum</a>
-                    </div>
-                  </div>
-
-                  <div role="group">
-                    <h1>Link weergegeven als knop: <code>a class="button"</code> binnen button-container <code>class="button-container"</code></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                    <div class="button-container">
-                      <a href="" class="button">Lorem</a>
-                      <a href="" class="button">Ipsum</a>
-                    </div>
-                  </div>
-
-                  <div role="group">
-                    <h1>Link weergegeven als knop: <code>a class="button"</code> binnen horizontal-view <code>class="horizontal-view"</code></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                    <div class="horizontal-view">
-                      <a href="" class="button">Lorem</a>
-                      <a href="" class="button">Ipsum</a>
-                    </div>
-                  </div>
-
-                  <div role="group">
-                    <h1>Knoppen gegoepeerd: <code>button</code></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                    <div>
-                      <button>Lorem</button>
-                      <button>Ipsum</button>
-                    </div>
-                  </div>
-
-                  <div role="group">
-                    <h1>Knoppen gegoepeerd: <code>button</code> binnen button-container <code>class="button-container"</code></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                    <div class="button-container">
-                      <button>Lorem</button>
-                      <button>Ipsum</button>
-                    </div>
-                  </div>
-
-                  <div role="group">
-                    <h1>Knoppen gegroepeerd: <code>button</code> binnen horizontal-view <code>class="horizontal-view"</code></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                    <div class="horizontal-view">
-                      <button>Lorem</button>
-                      <button>Ipsum</button>
-                    </div>
-                  </div>
-                </div>
-
-                <p><code>class="column-3"</code></p>
-                <div class="column-3 tiles">
-                  <div role="group">
-                    <h1>Link <code>a</code></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                    <div>
-                      <a href="">Lorem</a>
-                      <a href="">Ipsum</a>
-                    </div>
-                  </div>
-
-                  <div role="group">
-                    <h1>links gegoepeerd: <code>a</code> binnen button-container <code>class="button-container"</code></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                    <div class="button-container">
-                      <a href="">Lorem</a>
-                      <a href="">Ipsum</a>
-                    </div>
-                  </div>
-
-                  <div role="group">
-                    <h1>links gegoepeerd: <code>a</code> met horizontal view <code>class="horizontal-view"</code></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                    <div class="horizontal-view">
-                      <a href="">Lorem</a>
-                      <a href="">Ipsum</a>
-                    </div>
-                  </div>
-
-                  <div role="group">
-                    <h1>Link weergegeven als knop: <code>a class="button"</code></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                    <div>
-                      <a href="" class="button">Lorem</a>
-                      <a href="" class="button">Ipsum</a>
-                    </div>
-                  </div>
-
-                  <div role="group">
-                    <h1>Link weergegeven als knop: <code>a class="button"</code> binnen button-container <code>class="button-container"</code></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                    <div class="button-container">
-                      <a href="" class="button">Lorem</a>
-                      <a href="" class="button">Ipsum</a>
-                    </div>
-                  </div>
-
-                  <div role="group">
-                    <h1>Link weergegeven als knop: <code>a class="button"</code> binnen horizontal-view <code>class="horizontal-view"</code></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                    <div class="horizontal-view">
-                      <a href="" class="button">Lorem</a>
-                      <a href="" class="button">Ipsum</a>
-                    </div>
-                  </div>
-
-                  <div role="group">
-                    <h1>Knoppen gegoepeerd: <code>button</code></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                    <div>
-                      <button>Lorem</button>
-                      <button>Ipsum</button>
-                    </div>
-                  </div>
-
-                  <div role="group">
-                    <h1>Knoppen gegoepeerd: <code>button</code> binnen button-container <code>class="button-container"</code></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                    <div class="button-container">
-                      <button>Lorem</button>
-                      <button>Ipsum</button>
-                    </div>
-                  </div>
-
-                  <div role="group">
-                    <h1>Knoppen gegroepeerd: <code>button</code> binnen horizontal-view <code>class="horizontal-view"</code></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                    <div class="horizontal-view">
-                      <button>Lorem</button>
-                      <button>Ipsum</button>
-                    </div>
-                  </div>
-                </div>
-
-                <p><code>class="column-4"</code></p>
-                 <div class="column-4 tiles">
-                  <div role="group">
-                    <h1>Link <code>a</code></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                    <div>
-                      <a href="">Lorem</a>
-                      <a href="">Ipsum</a>
-                    </div>
-                  </div>
-
-                  <div role="group">
-                    <h1>links gegoepeerd: <code>a</code> binnen button-container <code>class="button-container"</code></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                    <div class="button-container">
-                      <a href="">Lorem</a>
-                      <a href="">Ipsum</a>
-                    </div>
-                  </div>
-
-                  <div role="group">
-                    <h1>links gegoepeerd: <code>a</code> met horizontal view <code>class="horizontal-view"</code></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                    <div class="horizontal-view">
-                      <a href="">Lorem</a>
-                      <a href="">Ipsum</a>
-                    </div>
-                  </div>
-
-                  <div role="group">
-                    <h1>Link weergegeven als knop: <code>a class="button"</code></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                    <div>
-                      <a href="" class="button">Lorem</a>
-                      <a href="" class="button">Ipsum</a>
-                    </div>
-                  </div>
-
-                  <div role="group">
-                    <h1>Link weergegeven als knop: <code>a class="button"</code> binnen button-container <code>class="button-container"</code></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                    <div class="button-container">
-                      <a href="" class="button">Lorem</a>
-                      <a href="" class="button">Ipsum</a>
-                    </div>
-                  </div>
-
-                  <div role="group">
-                    <h1>Link weergegeven als knop: <code>a class="button"</code> binnen horizontal-view <code>class="horizontal-view"</code></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                    <div class="horizontal-view">
-                      <a href="" class="button">Lorem</a>
-                      <a href="" class="button">Ipsum</a>
-                    </div>
-                  </div>
-
-                  <div role="group">
-                    <h1>Knoppen gegoepeerd: <code>button</code></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                    <div>
-                      <button>Lorem</button>
-                      <button>Ipsum</button>
-                    </div>
-                  </div>
-
-                  <div role="group">
-                    <h1>Knoppen gegoepeerd: <code>button</code> binnen button-container <code>class="button-container"</code></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                    <div class="button-container">
-                      <button>Lorem</button>
-                      <button>Ipsum</button>
-                    </div>
-                  </div>
-
-                  <div role="group">
-                    <h1>Knoppen gegroepeerd: <code>button</code> binnen horizontal-view <code>class="horizontal-view"</code></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                    <div class="horizontal-view">
-                      <button>Lorem</button>
-                      <button>Ipsum</button>
-                    </div>
-                  </div>
-                </div>
-            </div>
-        </article>
-
-        <article id="tile-hero">
-            <div>
-                <h1>Tegel binnen hero</h1>
-
-                <section class="hero">
-                  <img src="../images/beach.jpg" alt="">
-                  <div class="one-third-two-thirds">
-
-                    <div class="tile">
-                      <h1>Lorem ipsum dolor set</h1>
-                      <nav>
-                        <ul>
-                          <li><a href="">Lorem ipsum</a></li>
-                          <li><a href="">Dolor sit amet</a></li>
-                          <li><a href="">Consectetur</a></li>
-                        </ul>
-                      </nav>
-                    </div>
-
-                  </div>
-                </section>
-            </div>
-        </article>
-
-      </div>
-
-      <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het hoofdmenu</a>
-    </main>
-
-    <footer>
-      <div class="two-thirds-one-third">
-        <span class="slogan">Manon - Rijksoverheid css framework</span>
-        <nav aria-labelledby="footer-nav-1-heading">
-          <h1 id="footer-nav-1-heading">Service</h1>
-          <ul>
-            <li><a href="../index.html">Over</a></li>
-            <li><a href="index.html">Styling tests</a></li>
-            <li><a href="../html_examples/index.html">Online componenten bibliotheek</a></li>
-          </ul>
-        </nav>
-      </div>
-    </footer>
-  </body>
 </html>

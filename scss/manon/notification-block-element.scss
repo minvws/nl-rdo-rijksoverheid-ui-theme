@@ -2,10 +2,10 @@
 
 :root {
   --notification-block-element-padding-top: 1.5rem;
-  --notification-block-element-padding-right: 3%;
+  --notification-block-element-padding-right: var(--notification-padding-right);
   --notification-block-element-padding-bottom: 1.5rem;
-  --notification-block-element-padding-left: var(--notification-base-padding-left);
-  --notification-block-element-gap: 1rem;
+  --notification-block-element-padding-left: var(--notification-padding-left);
+  --notification-block-element-gap: var(--content-gap);
   --notification-block-element-text-color: #000000;
 
   /* Span */

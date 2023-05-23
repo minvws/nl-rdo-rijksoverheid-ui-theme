@@ -1,176 +1,198 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <title>Tabellen - Rijksoverheid CSS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../dist/css/main.css" rel="stylesheet">
-    <link href="../dist/img/favicon.ico" rel="shortcut icon">
-    <script defer src="../dist/js/sidemenu.js"></script>
-    <script defer src="../dist/js/expandoRows.js"></script>
-  </head>
-  <body class="test-cases">
-    <header>
-      <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
-      <a href="" class="ro-logo">
-        <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
-        Rijksoverheid
-      </a>
 
-      <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
-        <div>
+<head>
+  <meta charset="UTF-8">
+  <title>Tabellen - Rijksoverheid CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../dist/css/main.css" rel="stylesheet">
+  <link href="../dist/img/favicon.ico" rel="shortcut icon">
+  <script defer src="../dist/js/sidemenu.js"></script>
+  <script defer src="../dist/js/expandoRows.js"></script>
+</head>
+
+<body class="test-cases">
+  <header>
+    <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
+    <a href="" class="ro-logo">
+      <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
+      Rijksoverheid
+    </a>
+
+    <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
+      <div>
+        <ul>
+          <li><a href="../index.html"><span class="icon icon-home">Hoofdpagina icoon</span> Rijksoverheid CSS</a></li>
+          <li><a href="index.html">Online Componenten Bibliotheek</a></li>
+          <li><a href="#" aria-current="page">Tabellen</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+
+  <main class="sidemenu" id="main-content" tabindex="-1">
+    <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+      <ul>
+        <li><a href="#">Tabellen</a></li>
+        <li><a href="#table">Basisvoorbeeld tabel</a></li>
+        <li><a href="#table-footer">Tabel met footer</a></li>
+        <li><a href="#table-content">Tabelcontent</a>
           <ul>
-              <li><a href="../index.html">Rijksoverheid CSS</a></li>
-              <li><a href="index.html">Online Componenten Bibliotheek</a></li>
-              <li><a href="#" aria-current="page">Tabellen</a></li>
+            <li><a href="#table-content-action-buttons">Actieknoppen</a></li>
+            <li><a href="#table-content-checkbox">Checkbox</a></li>
+            <li><a href="#table-content-grouped">Gegroepeerde data binnen een cel</a></li>
+            <li><a href="#table-messages">Meldingen</a></li>
+            <li><a href="#table-content-number">Numerieke data</a></li>
+            <li><a href="#table-caption">Titel</a></li>
           </ul>
+        </li>
+        <li><a href="#table-options">Tabelopties</a>
+          <ul>
+            <li><a href="#colspan">Data over meerdere kolommen</a></li>
+            <li><a href="#rowspan">Data over meerdere rijen</a></li>
+            <li><a href="#table-condensed">Gecomprimeerde weergave</a></li>
+            <li><a href="#table-grouped-data">Gegroepeerde data</a></li>
+            <li><a href="#table-sort">Sorteerbare data</a></li>
+            <li><a href="#table-expando-row">Uitklapbare tabel</a></li>
+            <li><a href="#table-summary">Samenvatting</a></li>
+            <li><a href="#table-sticky">Sticky header</a></li>
+            <li><a href="#table-scope">Tabelrichting</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <div>
+      <article>
+        <div>
+          <h1>Tabellen</h1>
+          <p>Om data efficient en gebruiksvriendelijk weer te geven kan gebruik gemaakt worden van tabellen.</p>
+
+          <div class="explanation">
+            <span>Toelichting:</span>
+            <h1>Snelstart</h1>
+            <p>In deze documentatie staan alle verschillende ondersteunde formulierelementen beschreven met zowel
+              visuele voorbeelden als html-voorbeelden die gekopiëerd kunnen worden.</p>
+            <ol>
+              <li>Gebruik het <a href="#table">basisvoorbeeld tabel</a> voor de algemene opzet.</li>
+              <li>Vul de tabel. Voor specifieke elementvoorbeelden zie: <a href="#table-content"> tabel content</a>.
+              </li>
+              <li>Voeg waar nodig tabelopties toe zoals bijvoorbeeld een gecomprimeerde weergave of een sticky header.
+                Voor de beschikbare opties zie: <a href="#table-options">tabelopties</a>.</li>
+            </ol>
+          </div>
+
+          <h2>Aandachtspunten:</h2>
+          <h3>Bruikbaarheid</h3>
+          <ul>
+            <li>Om tabellen correct weer te geven op smallere schermresoluties, denk hierbij aan mobiele apparaten,
+              dient er een <code>&lt;div></code> om de <code>&lt;table></code> te staan met de class
+              <code>horizontal-scroll</code>.</li>
+          </ul>
+
+          <h3>Gebruiksvriendelijkheid</h3>
+          <ul>
+            <li>Tabellen maken gebuik van om en om achtergrondkleur voor leesbaarheid.</li>
+            <li>De standaard weergave van tabellen heeft voldoende witruimte voor leesbaarheid. Voor grote complexe
+              datasets kan er met het oog op gebruiksvriendelijkheid ook gekozen worden voor een gecomprimeerde versie
+              van de tabel waarbij de content compacter wordt weergegeven. Dit kan de gebruiker helpen om meer overzicht
+              te behouden. Zie <a href="#table-condensed">Tabel - Gecomprimeerde weergave</a> voor meer informatie en
+              voorbeelden.</li>
+          </ul>
+
+          <h3>Toegankelijkheid</h3>
+          <p>Houd rekening met gebruikers met een beperking. Denk bijvoorbeeld aan mensen die blind of slechtziend of
+            kleurenblind; doof of slechthorend; motorisch beperkt of zwakbegaafd; autistisch; of laaggeletterd zijn. Het
+            kan belangrijk zijn extra elementen mee te geven aan de code zodat ook voor hen de tabellen prettig te
+            gebruiken zijn.</p>
+
+          <ul>
+            <li>Voeg een <code>&lt;caption></code> toe aan de tabel met daarbinnen de omschrijving van de content van de
+              tabel. Gebruikers die gebruik maken van screenreaders en andere technische hulpmiddelen om de content voor
+              te lezen, kunnen aan de hand van de tabelomschrijving bepalen of de inhoud van de tabelvoor hen relevant
+              is of beter overgeslagen kan worden. Voor meer informatie zie: <a href="#table-caption">Titel</a>.</li>
+            <li>Geef aan of de titel <code>&lt;th></code> bij een kolom <code>scope="col"</code> of een rij
+              <code>scope="row"</code> hoort. Screenreaders gebruiken deze informatie om de gebruiker opties tot
+              navigeren te geven. Daarnaast geven ze de gebruiker inzicht in de relatie van de data t.o.v de
+              tabeltitels. Voor meer informatie zie: <a href="#table-scope">Tabelrichting</a></li>
+          </ul>
+
+          <p class="warning"><span>Waarschuwing:</span>Let op: Overheids websites zijn verplicht om aan
+            toegankelijkkheidsstandaarden te voldoen. Voor meer informatie zie: <a
+              href="https://www.digitoegankelijk.nl/" rel="external">https://www.digitoegankelijk.nl/</a></p>
+
+          <p>Beschikbare voorbeelden:</p>
+          <nav aria-label="Document-navigatie">
+            <ul>
+              <li><a href="#table">Basisvoorbeeld tabel</a></li>
+              <li><a href="#table-footer">Tabel met footer</a></li>
+              <li><a href="#table-content">Tabelcontent</a>
+                <ul>
+                  <li><a href="#table-content-action-buttons">Actieknoppen</a></li>
+                  <li><a href="#table-content-checkbox">Checkbox</a></li>
+                  <li><a href="#table-content-grouped">Gegroepeerde data binnen een cel</a></li>
+                  <li><a href="#table-messages">Meldingen</a></li>
+                  <li><a href="#table-content-number">Numerieke data</a></li>
+                  <li><a href="#table-caption">Titel</a></li>
+                </ul>
+              </li>
+              <li><a href="#table-options">Tabelopties</a>
+                <ul>
+                  <li><a href="#colspan">Data over meerdere kolommen</a></li>
+                  <li><a href="#rowspan">Data over meerdere rijen</a></li>
+                  <li><a href="#table-condensed">Gecomprimeerde weergave</a></li>
+                  <li><a href="#table-grouped-data">Gegroepeerde data</a></li>
+                  <li><a href="#table-sort">Sorteerbare data</a></li>
+                  <li><a href="#table-expando-row">Uitklapbare tabel</a></li>
+                  <li><a href="#table-summary">Samenvatting</a></li>
+                  <li><a href="#table-sticky">Sticky header</a></li>
+                  <li><a href="#table-scope">Tabelrichting</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
         </div>
-      </nav>
+      </article>
 
-    </header>
-
-    <main class="sidemenu" id="main-content" tabindex="-1">
-        <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
-          <ul>
-            <li><a href="#">Tabellen</a></li>
-            <li><a href="#table">Basisvoorbeeld tabel</a></li>
-            <li><a href="#table-footer">Tabel met footer</a></li>
-            <li><a href="#table-content">Tabelcontent</a>
-              <ul>
-                <li><a href="#table-content-action-buttons">Actieknoppen</a></li>
-                <li><a href="#table-content-checkbox">Checkbox</a></li>
-                <li><a href="#table-content-grouped">Gegroepeerde data binnen een cel</a></li>
-                <li><a href="#table-messages">Meldingen</a></li>
-                <li><a href="#table-content-number">Numerieke data</a></li>
-                <li><a href="#table-caption">Titel</a></li>
-              </ul>
-            </li>
-            <li><a href="#table-options">Tabelopties</a>
-              <ul>
-                <li><a href="#colspan">Data over meerdere kolommen</a></li>
-                <li><a href="#rowspan">Data over meerdere rijen</a></li>
-                <li><a href="#table-condensed">Gecomprimeerde weergave</a></li>
-                <li><a href="#table-grouped-data">Gegroepeerde data</a></li>
-                <li><a href="#table-sort">Sorteerbare data</a></li>
-                <li><a href="#table-expando-row">Uitklapbare tabel</a></li>
-                <li><a href="#table-summary">Samenvatting</a></li>
-                <li><a href="#table-sticky">Sticky header</a></li>
-                <li><a href="#table-scope">Tabelrichting</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-
+      <article id="table">
         <div>
-        <article>
-          <div>
-            <h1>Tabellen</h1>
-            <p>Om data efficient en gebruiksvriendelijk weer te geven kan gebruik gemaakt worden van tabellen.</p>
-
-            <div class="explanation">
-              <span>Toelichting:</span>
-              <h1>Snelstart</h1>
-              <p>In deze documentatie staan alle verschillende ondersteunde formulierelementen beschreven met zowel visuele voorbeelden als html-voorbeelden die gekopiëerd kunnen worden.</p>
-              <ol>
-                  <li>Gebruik het <a href="#table">basisvoorbeeld tabel</a> voor de algemene opzet.</li>
-                  <li>Vul de tabel. Voor specifieke elementvoorbeelden zie: <a href="#table-content"> tabel content</a>.</li>
-                  <li>Voeg waar nodig tabelopties toe zoals bijvoorbeeld een gecomprimeerde weergave of een sticky header. Voor de beschikbare opties zie: <a href="#table-options">tabelopties</a>.</li>
-              </ol>
+          <h1>Basisvoorbeeld tabel</h1>
+          <p>Het basisvoorbeeld bevat de basiselementen voor een nette, gebruiksvriendelijke en toegankelijke tabel.</p>
+          <h3>Voorbeeld</h3>
+          <p>visueel voorbeeld:</p>
+          <div class="horizontal-scroll">
+            <table>
+              <caption>Basisvoorbeeld tabel:</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Table header heading 1</th>
+                  <th scope="col">Table header heading 2</th>
+                  <th scope="col">Table header heading 3</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Ipsum</td>
+                  <td>Dolor set</td>
+                </tr>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Ipsum</td>
+                  <td>Dolor set</td>
+                </tr>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Ipsum</td>
+                  <td>Dolor set</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
 
-            <h2>Aandachtspunten:</h2>
-            <h3>Bruikbaarheid</h3>
-              <ul>
-                <li>Om tabellen correct weer te geven op smallere schermresoluties, denk hierbij aan mobiele apparaten, dient er een <code>&lt;div></code> om de <code>&lt;table></code> te staan met de class <code>horizontal-scroll</code>.</li>
-              </ul>
-
-              <h3>Gebruiksvriendelijkheid</h3>
-              <ul>
-                <li>Tabellen maken gebuik van om en om achtergrondkleur voor leesbaarheid.</li>
-                <li>De standaard weergave van tabellen heeft voldoende witruimte voor leesbaarheid. Voor grote complexe datasets kan er met het oog op gebruiksvriendelijkheid ook gekozen worden voor een gecomprimeerde versie van de tabel waarbij de content compacter wordt weergegeven. Dit kan de gebruiker helpen om meer overzicht te behouden. Zie <a href="#table-condensed">Tabel - Gecomprimeerde weergave</a> voor meer informatie en voorbeelden.</li>
-              </ul>
-
-              <h3>Toegankelijkheid</h3>
-              <p>Houd rekening met gebruikers met een beperking. Denk bijvoorbeeld aan mensen die blind of slechtziend of kleurenblind; doof of slechthorend; motorisch beperkt of zwakbegaafd; autistisch; of laaggeletterd zijn. Het kan belangrijk zijn extra elementen mee te geven aan de code zodat ook voor hen de tabellen prettig te gebruiken zijn.</p>
-
-              <ul>
-                <li>Voeg een <code>&lt;caption></code> toe aan de tabel met daarbinnen de omschrijving van de content van de tabel. Gebruikers die gebruik maken van screenreaders en andere technische hulpmiddelen om de content voor te lezen, kunnen aan de hand van de  tabelomschrijving bepalen of de inhoud van de tabelvoor hen relevant is of beter overgeslagen kan worden. Voor meer informatie zie: <a href="#table-caption">Titel</a>.</li>
-                <li>Geef aan of de titel <code>&lt;th></code> bij een kolom <code>scope="col"</code> of een rij <code>scope="row"</code> hoort. Screenreaders gebruiken deze informatie om de gebruiker opties tot navigeren te geven. Daarnaast geven ze de gebruiker inzicht in de relatie van de data t.o.v de tabeltitels. Voor meer informatie zie: <a href="#table-scope">Tabelrichting</a></li>
-              </ul>
-
-              <p class="warning"><span>Waarschuwing:</span>Let op: Overheids websites zijn verplicht om aan toegankelijkkheidsstandaarden te voldoen. Voor meer informatie zie: <a href="https://www.digitoegankelijk.nl/" rel="external">https://www.digitoegankelijk.nl/</a></p>
-
-            <p>Beschikbare voorbeelden:</p>
-            <nav aria-label="Document-navigatie">
-              <ul>
-                <li><a href="#table">Basisvoorbeeld tabel</a></li>
-                <li><a href="#table-footer">Tabel met footer</a></li>
-                <li><a href="#table-content">Tabelcontent</a>
-                  <ul>
-                    <li><a href="#table-content-action-buttons">Actieknoppen</a></li>
-                    <li><a href="#table-content-checkbox">Checkbox</a></li>
-                    <li><a href="#table-content-grouped">Gegroepeerde data binnen een cel</a></li>
-                    <li><a href="#table-messages">Meldingen</a></li>
-                    <li><a href="#table-content-number">Numerieke data</a></li>
-                    <li><a href="#table-caption">Titel</a></li>
-                  </ul>
-                </li>
-                <li><a href="#table-options">Tabelopties</a>
-                  <ul>
-                    <li><a href="#colspan">Data over meerdere kolommen</a></li>
-                    <li><a href="#rowspan">Data over meerdere rijen</a></li>
-                    <li><a href="#table-condensed">Gecomprimeerde weergave</a></li>
-                    <li><a href="#table-grouped-data">Gegroepeerde data</a></li>
-                    <li><a href="#table-sort">Sorteerbare data</a></li>
-                    <li><a href="#table-expando-row">Uitklapbare tabel</a></li>
-                    <li><a href="#table-summary">Samenvatting</a></li>
-                    <li><a href="#table-sticky">Sticky header</a></li>
-                    <li><a href="#table-scope">Tabelrichting</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </article>
-
-        <article id="table">
-          <div>
-            <h1>Basisvoorbeeld tabel</h1>
-            <p>Het basisvoorbeeld bevat de basiselementen voor een nette, gebruiksvriendelijke en toegankelijke tabel.</p>
-            <h3>Voorbeeld</h3>
-            <p>visueel voorbeeld:</p>
-            <div class="horizontal-scroll">
-                <table>
-                  <caption>Basisvoorbeeld tabel:</caption>
-                  <thead>
-                    <tr>
-                      <th scope="col">Table header heading 1</th>
-                      <th scope="col">Table header heading 2</th>
-                      <th scope="col">Table header heading 3</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Lorem</td>
-                      <td>Ipsum</td>
-                      <td>Dolor set</td>
-                    </tr>
-                    <tr>
-                      <td>Lorem</td>
-                      <td>Ipsum</td>
-                      <td>Dolor set</td>
-                    </tr>
-                    <tr>
-                      <td>Lorem</td>
-                      <td>Ipsum</td>
-                      <td>Dolor set</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-
-              <p>Html-voorbeeld:</p>
-              <pre>
+          <p>Html-voorbeeld:</p>
+          <pre>
                 <code>
 &lt;div class="horizontal-scroll">
   &lt;table>
@@ -203,58 +225,60 @@
 &lt;/div>
                 </code>
               </pre>
+        </div>
+      </article>
+
+      <article id="table-footer">
+        <div>
+          <h1>Tabel met footer</h1>
+          <p>Om de gebruiker te informeren over de inhoud van de tabel, is het aan te raden om een titel toe te voegen
+            met daarin de omschrijving van de tabel. Voeg direct binnen de <code>table</code> een <code>caption</code>
+            toe om de titel toe te voegen.</p>
+          <p>Visueel voorbeeld:</p>
+          <div class="horizontal-scroll">
+            <table>
+              <caption>Tabelvoorbeeld met footer:</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Table header heading 1</th>
+                  <th scope="col">Table header heading 2</th>
+                  <th scope="col">Table header heading 3</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Ipsum</td>
+                  <td>Dolor set</td>
+                </tr>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Ipsum</td>
+                  <td>Dolor set</td>
+                </tr>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Ipsum</td>
+                  <td>Dolor set</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th scope="col">Table footer heading 1</th>
+                  <th scope="col">Table footer heading 2</th>
+                  <th scope="col">Table footer heading 3</th>
+                </tr>
+                <tr>
+                  <td>Table footer 1</td>
+                  <td>Table footer 2</td>
+                  <td>Table footer 3</td>
+                </tr>
+              </tfoot>
+            </table>
           </div>
-        </article>
 
-        <article id="table-footer">
-          <div>
-            <h1>Tabel met footer</h1>
-            <p>Om de gebruiker te informeren over de inhoud van de tabel, is het aan te raden om een titel toe te voegen met daarin de omschrijving van de tabel. Voeg direct binnen de <code>table</code> een <code>caption</code> toe om de titel toe te voegen.</p>
-            <p>Visueel voorbeeld:</p>
-            <div class="horizontal-scroll">
-              <table>
-                <caption>Tabelvoorbeeld met footer:</caption>
-                <thead>
-                  <tr>
-                    <th scope="col">Table header heading 1</th>
-                    <th scope="col">Table header heading 2</th>
-                    <th scope="col">Table header heading 3</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Lorem</td>
-                    <td>Ipsum</td>
-                    <td>Dolor set</td>
-                  </tr>
-                  <tr>
-                    <td>Lorem</td>
-                    <td>Ipsum</td>
-                    <td>Dolor set</td>
-                  </tr>
-                  <tr>
-                    <td>Lorem</td>
-                    <td>Ipsum</td>
-                    <td>Dolor set</td>
-                  </tr>
-                </tbody>
-                <tfoot>
-                  <tr>
-                    <th scope="col">Table footer heading 1</th>
-                    <th scope="col">Table footer heading 2</th>
-                    <th scope="col">Table footer heading 3</th>
-                  </tr>
-                  <tr>
-                    <td>Table footer 1</td>
-                    <td>Table footer 2</td>
-                    <td>Table footer 3</td>
-                  </tr>
-                </tfoot>
-              </table>
-            </div>
-
-            <p>Html-voorbeeld:</p>
-            <pre>
+          <p>Html-voorbeeld:</p>
+          <pre>
               <code>
 &lt;div class="horizontal-scroll">
   &lt;table>
@@ -299,82 +323,89 @@
 &lt;/div>
               </code>
             </pre>
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article id="table-content">
-          <div>
-            <h1>Tabelcontent</h1>
-            <p>Een overzicht met elementen die gebruikt kunnen worden binnen tabellen.</p>
-            <p>Beschikbare voorbeelden:</p>
-            <nav aria-label="Tabelcontent subnavigatie">
-              <ul>
-                <li><a href="#table-content-action-buttons">Actieknoppen</a></li>
-                <li><a href="#table-content-checkbox">Checkbox</a></li>
-                <li><a href="#table-content-grouped">Gegroepeerde data binnen een cel</a></li>
-                <li><a href="#table-messages">Meldingen</a></li>
-                <li><a href="#table-content-number">Numerieke data</a></li>
-                <li><a href="#table-caption">Titel</a></li>
-              </ul>
-            </nav>
-          </div>
-        </article>
-
-        <article id="table-content-action-buttons">
-          <div>
-            <h1>Actieknoppen</h1>
-            <p>Herhalende content zoals actieknoppen kunnen visueel als iconen weergegeven worden.</p>
-            <p>Aandachtspunten:</p>
+      <article id="table-content">
+        <div>
+          <h1>Tabelcontent</h1>
+          <p>Een overzicht met elementen die gebruikt kunnen worden binnen tabellen.</p>
+          <p>Beschikbare voorbeelden:</p>
+          <nav aria-label="Tabelcontent subnavigatie">
             <ul>
-              <li>Ga er niet vanuit dat de gebruiker weet wat het icoon betekend. Plaats de omschrijvende tekst in de header.</li>
-              <li>Voor toegankelijkheid is het belangrijk om de tekst wel toe te voegen aan de button ook al wordt deze visueel niet getoont. Screenreaders maken hier bijvoorbeeld gebruik van.</li>
-              <li>Voor tabellen met lange lijsten kan het de gebruiker helpen om gebruik te maken van de tabel met sticky header zodat de toelichting van de iconen altijd in beeld blijft. Voor meer informatie zie: <a href="#table-sticky">tabel met sticky header</a>.</li>
-              <li>Om gebruik te maken van de visuele actieknop weergave, voeg de class <code>action-button</code> toe aan de button.</li>
-              <li> Als alle knoppen binnen een tabel weergegeven mogen worden als actieknop kan er ook gebruik gemaakt worden van de class <code>action-buttons</code> direct op de <code>&lt;table&gt;</code>. <strong>Let op: Alle knoppen worden in dat geval weergegeven als actieknoppen.</strong></li>
+              <li><a href="#table-content-action-buttons">Actieknoppen</a></li>
+              <li><a href="#table-content-checkbox">Checkbox</a></li>
+              <li><a href="#table-content-grouped">Gegroepeerde data binnen een cel</a></li>
+              <li><a href="#table-messages">Meldingen</a></li>
+              <li><a href="#table-content-number">Numerieke data</a></li>
+              <li><a href="#table-caption">Titel</a></li>
             </ul>
+          </nav>
+        </div>
+      </article>
 
-            <div class="horizontal-scroll">
-              <table>
-                <caption>Tabelvoorbeeld met actieknoppen:</caption>
-                <thead>
-                  <tr>
-                    <th scope="col">Gebruikersnaam</th>
-                    <th scope="col">Bekijk profiel</th>
-                    <th scope="col">Wijzig wachtwoord</th>
-                    <th scope="col">Deactiveer</th>
-                    <th scope="col">Verwijder</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                      <td>Jane doe</td>
-                      <td>
-                          <form>
-                              <button type="submit" class="icon icon-user action-button">Bekijk profiel</button>
-                          </form>
-                      </td>
-                      <td>
-                          <form>
-                              <button type="submit" class="icon icon-lock-closed action-button">Wijzig wachtwoord</button>
-                          </form>
-                      </td>
-                      <td>
-                          <form>
-                              <button type="submit" class="icon icon-on-off action-button">Deactiveer</button>
-                          </form>
-                      </td>
-                      <td>
-                          <form>
-                              <button type="submit" class="icon icon-trash action-button">Verwijder</button>
-                          </form>
-                      </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+      <article id="table-content-action-buttons">
+        <div>
+          <h1>Actieknoppen</h1>
+          <p>Herhalende content zoals actieknoppen kunnen visueel als iconen weergegeven worden.</p>
+          <p>Aandachtspunten:</p>
+          <ul>
+            <li>Ga er niet vanuit dat de gebruiker weet wat het icoon betekend. Plaats de omschrijvende tekst in de
+              header.</li>
+            <li>Voor toegankelijkheid is het belangrijk om de tekst wel toe te voegen aan de button ook al wordt deze
+              visueel niet getoont. Screenreaders maken hier bijvoorbeeld gebruik van.</li>
+            <li>Voor tabellen met lange lijsten kan het de gebruiker helpen om gebruik te maken van de tabel met sticky
+              header zodat de toelichting van de iconen altijd in beeld blijft. Voor meer informatie zie: <a
+                href="#table-sticky">tabel met sticky header</a>.</li>
+            <li>Om gebruik te maken van de visuele actieknop weergave, voeg de class <code>action-button</code> toe aan
+              de button.</li>
+            <li> Als alle knoppen binnen een tabel weergegeven mogen worden als actieknop kan er ook gebruik gemaakt
+              worden van de class <code>action-buttons</code> direct op de <code>&lt;table&gt;</code>. <strong>Let op:
+                Alle knoppen worden in dat geval weergegeven als actieknoppen.</strong></li>
+          </ul>
 
-            <p>Html-voorbeeld:</p>
-            <pre>
+          <div class="horizontal-scroll">
+            <table>
+              <caption>Tabelvoorbeeld met actieknoppen:</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Gebruikersnaam</th>
+                  <th scope="col">Bekijk profiel</th>
+                  <th scope="col">Wijzig wachtwoord</th>
+                  <th scope="col">Deactiveer</th>
+                  <th scope="col">Verwijder</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Jane doe</td>
+                  <td>
+                    <form>
+                      <button type="submit" class="icon icon-user action-button">Bekijk profiel</button>
+                    </form>
+                  </td>
+                  <td>
+                    <form>
+                      <button type="submit" class="icon icon-lock-closed action-button">Wijzig wachtwoord</button>
+                    </form>
+                  </td>
+                  <td>
+                    <form>
+                      <button type="submit" class="icon icon-on-off action-button">Deactiveer</button>
+                    </form>
+                  </td>
+                  <td>
+                    <form>
+                      <button type="submit" class="icon icon-trash action-button">Verwijder</button>
+                    </form>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>Html-voorbeeld:</p>
+          <pre>
               <code>
 &lt;div class="horizontal-scroll">
   &lt;table>
@@ -403,35 +434,37 @@
 &lt;/div>
               </code>
             </pre>
+        </div>
+      </article>
+
+      <article id="table-content-checkbox">
+        <div>
+          <h1>Checkbox</h1>
+          <p>Visueel voorbeeld:</p>
+          <div class="horizontal-scroll">
+            <table>
+              <caption>Tabelvoorbeeld met selectievak:</caption>
+              <thead>
+                <tr>
+                  <th scope="col"><input type="checkbox"></th>
+                  <th scope="col">Table header heading</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>Ipsum</td>
+                  <td>
+                    <form><input type="submit" value="Lorem"></form>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-        </article>
 
-        <article id="table-content-checkbox">
-          <div>
-            <h1>Checkbox</h1>
-            <p>Visueel voorbeeld:</p>
-            <div class="horizontal-scroll">
-              <table>
-                <caption>Tabelvoorbeeld met selectievak:</caption>
-                <thead>
-                  <tr>
-                    <th scope="col"><input type="checkbox"></th>
-                    <th scope="col">Table header heading</th>
-                    <th scope="col">Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><input type="checkbox"></td>
-                    <td>Ipsum</td>
-                    <td><form><input type="submit" value="Lorem"></form></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <p>Html-voorbeeld:</p>
-            <pre>
+          <p>Html-voorbeeld:</p>
+          <pre>
               <code>
 &lt;div class="horizontal-scroll">
   &lt;table>
@@ -454,42 +487,44 @@
 &lt;/div>
               </code>
             </pre>
+        </div>
+      </article>
+
+      <article id="table-content-grouped">
+        <div>
+          <h1>Gegroepeerde data binnen een cel</h1>
+          <p>Sommige elementen zoals bijvoorbeeld actieknoppen bestaan visueel vaak enkel uit een icoon en kunnen om die
+            reden prima naast elkaar op een regel weergegeven worden. Groepeer de elementen binnen een
+            <code>&lt;div></code> ze op een regel te plaatsen</p>
+          <p>Visueel voorbeeld gegroepeerde elementen:</p>
+          <div class="horizontal-scroll">
+            <table>
+              <caption>Tabelvoorbeeld met gegroepeerde elementen:</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Lorem</th>
+                  <th scope="col">Table header heading</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Ipsum</td>
+                  <td>
+                    <div>
+                      <form><button type="submit" class="icon icon-heart">Love</button></form>
+                      <form><input type="submit" value="Lorem"></form>
+                      <form><input type="submit" value="Lorem"></form>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-        </article>
 
-        <article id="table-content-grouped">
-          <div>
-            <h1>Gegroepeerde data binnen een cel</h1>
-            <p>Sommige elementen zoals bijvoorbeeld actieknoppen bestaan visueel vaak enkel uit een icoon en kunnen om die reden prima naast elkaar op een regel weergegeven worden. Groepeer de elementen binnen een <code>&lt;div></code> ze op een regel te plaatsen</p>
-            <p>Visueel voorbeeld gegroepeerde elementen:</p>
-            <div class="horizontal-scroll">
-              <table>
-                <caption>Tabelvoorbeeld met gegroepeerde elementen:</caption>
-                <thead>
-                  <tr>
-                    <th scope="col">Lorem</th>
-                    <th scope="col">Table header heading</th>
-                    <th scope="col">Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Lorem</td>
-                    <td>Ipsum</td>
-                    <td>
-                      <div>
-                        <form><button type="submit" class="icon icon-heart">Love</button></form>
-                        <form><input type="submit" value="Lorem"></form>
-                        <form><input type="submit" value="Lorem"></form>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <p>Html-voorbeeld:</p>
-            <pre>
+          <p>Html-voorbeeld:</p>
+          <pre>
               <code>
 &lt;div class="horizontal-scroll">
   &lt;table>
@@ -518,67 +553,68 @@
 &lt;/div>
               </code>
             </pre>
+        </div>
+      </article>
+
+      <article id="table-messages">
+        <div>
+          <h1>Tabel - Meldingen</h1>
+          <p>Tabelelementen kunnen een meldig weergeven. Denk hierbij aan een foutmelding of een toelichting.</p>
+          <p>Voeg een van de melding-classes toe aan een volledige tabelrij <code>tr</code> of aan een losse cel
+            <code>th</code> / <code>td</code>. Beschikbare classes zijn:</p>
+          <ul>
+            <li><code>error</code></li>
+            <li><code>warning</code></li>
+            <li><code>confirmation</code></li>
+            <li><code>explanation</code></li>
+            <li><code>primary</code></li>
+          </ul>
+
+          <p>Zie <a href="notification.html">Notifications</a> voor meer informatie.</p>
+
+          <p>Visueel voorbeeld:</p>
+          <div class="horizontal-scroll">
+            <table>
+              <caption>Tabelvoorbeeld meldingen:</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Table header heading 1</th>
+                  <th scope="col">Table header heading 2</th>
+                  <th scope="col">Table header heading 3</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="error">Foutmelding op tabelrij</td>
+                  <td class="error">Foutmelding op tabelrij</td>
+                  <td class="error">Foutmelding op tabelrij</td>
+                </tr>
+                <tr>
+                  <td class="warning">Waarschuwing op tabelrij</td>
+                  <td class="warning">Waarschuwing op tabelrij</td>
+                  <td class="warning">Waarschuwing op tabelrij</td>
+                </tr>
+                <tr>
+                  <td class="confirmation">Bevestiging op tabelrij</td>
+                  <td class="confirmation">Bevestiging op tabelrij</td>
+                  <td class="confirmation">Bevestiging op tabelrij</td>
+                </tr>
+                <tr>
+                  <td class="explanation">Toelichting op tabelrij</td>
+                  <td class="explanation">Toelichting op tabelrij</td>
+                  <td class="explanation">Toelichting op tabelrij</td>
+                </tr>
+                <tr>
+                  <td class="primary">Primair op tabelrij</td>
+                  <td class="primary">Primair op tabelrij</td>
+                  <td class="primary">Primair op tabelrij</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-        </article>
 
-        <article id="table-messages">
-          <div>
-            <h1>Tabel - Meldingen</h1>
-            <p>Tabelelementen kunnen een meldig weergeven. Denk hierbij aan een foutmelding of een toelichting.</p>
-            <p>Voeg een van de melding-classes toe aan een volledige tabelrij <code>tr</code> of aan een losse cel <code>th</code> / <code>td</code>. Beschikbare classes zijn:</p>
-            <ul>
-              <li><code>error</code></li>
-              <li><code>warning</code></li>
-              <li><code>confirmation</code></li>
-              <li><code>explanation</code></li>
-              <li><code>primary</code></li>
-            </ul>
-
-            <p>Zie <a href="notification.html">Notifications</a>  voor meer informatie.</p>
-
-            <p>Visueel voorbeeld:</p>
-            <div class="horizontal-scroll">
-              <table>
-                <caption>Tabelvoorbeeld meldingen:</caption>
-                <thead>
-                  <tr>
-                    <th scope="col">Table header heading 1</th>
-                    <th scope="col">Table header heading 2</th>
-                    <th scope="col">Table header heading 3</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="error">Foutmelding op tabelrij</td>
-                    <td class="error">Foutmelding op tabelrij</td>
-                    <td class="error">Foutmelding op tabelrij</td>
-                  </tr>
-                  <tr>
-                    <td class="warning">Waarschuwing op tabelrij</td>
-                    <td class="warning">Waarschuwing op tabelrij</td>
-                    <td class="warning">Waarschuwing op tabelrij</td>
-                  </tr>
-                  <tr>
-                    <td class="confirmation">Bevestiging op tabelrij</td>
-                    <td class="confirmation">Bevestiging op tabelrij</td>
-                    <td class="confirmation">Bevestiging op tabelrij</td>
-                  </tr>
-                  <tr>
-                    <td class="explanation">Toelichting op tabelrij</td>
-                    <td class="explanation">Toelichting op tabelrij</td>
-                    <td class="explanation">Toelichting op tabelrij</td>
-                  </tr>
-                  <tr>
-                    <td class="primary">Primair op tabelrij</td>
-                    <td class="primary">Primair op tabelrij</td>
-                    <td class="primary">Primair op tabelrij</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <p>Html-voorbeeld:</p>
-            <pre>
+          <p>Html-voorbeeld:</p>
+          <pre>
               <code>
 &lt;div class="horizontal-scroll">
   &lt;table>
@@ -621,42 +657,47 @@
 &lt;/div>
                 </code>
               </pre>
-            </div>
-        </article>
+        </div>
+      </article>
 
-        <article id="table-caption">
-          <div>
-            <h1>Titel</h1>
-            <p>Om de gebruiker te informeren over de inhoud van de tabel, is het aan te raden om een titel toe te voegen met daarin de omschrijving van de tabel. Voeg direct binnen de <code>table</code> een <code>caption</code> toe om de titel toe te voegen.</p>
-            <ul>
-              <li>Het toevoegen van een <code>caption</code> vergroot de gebruiksvriendelijkheid van de site.
-                <ul>
-                  <li>Gebruik maken van een <code>caption</code> helpt gebruikers om snel te kunnen bepalen of de inhoud van de tabel interessant is voor hen.</li>
-                  <li>Gebruikers die gebruik maken van screenreaders om de content voor te lezen, bijvoorbeeld bij blindheid, slecht- of bijziendheid, kunnen de tabelomschrijving gebruiken om te bepalen of ze de inhoud van de tabel volledig willen horen of overslaan.</li>
-                </ul>
-              </li>
-              <li>De <code>caption</code> dient direct binnen de <code>table</code> geplaatst te worden</li>
-              <li>De <code>caption</code> dient de omschrijving te bevatten van de inhoud van de tabel</li>
-            </ul>
+      <article id="table-caption">
+        <div>
+          <h1>Titel</h1>
+          <p>Om de gebruiker te informeren over de inhoud van de tabel, is het aan te raden om een titel toe te voegen
+            met daarin de omschrijving van de tabel. Voeg direct binnen de <code>table</code> een <code>caption</code>
+            toe om de titel toe te voegen.</p>
+          <ul>
+            <li>Het toevoegen van een <code>caption</code> vergroot de gebruiksvriendelijkheid van de site.
+              <ul>
+                <li>Gebruik maken van een <code>caption</code> helpt gebruikers om snel te kunnen bepalen of de inhoud
+                  van de tabel interessant is voor hen.</li>
+                <li>Gebruikers die gebruik maken van screenreaders om de content voor te lezen, bijvoorbeeld bij
+                  blindheid, slecht- of bijziendheid, kunnen de tabelomschrijving gebruiken om te bepalen of ze de
+                  inhoud van de tabel volledig willen horen of overslaan.</li>
+              </ul>
+            </li>
+            <li>De <code>caption</code> dient direct binnen de <code>table</code> geplaatst te worden</li>
+            <li>De <code>caption</code> dient de omschrijving te bevatten van de inhoud van de tabel</li>
+          </ul>
 
-            <h3>Voorbeeld</h3>
-            <p>Visueel voorbeeld:</p>
-            <div class="horizontal-scroll">
-              <table>
-                <caption>Basisvoorbeeld tabel:</caption>
-                <thead>
-                  <tr>
-                    <th scope="col">Table header heading 1</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Lorem</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <pre>
+          <h3>Voorbeeld</h3>
+          <p>Visueel voorbeeld:</p>
+          <div class="horizontal-scroll">
+            <table>
+              <caption>Basisvoorbeeld tabel:</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Table header heading 1</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lorem</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <pre>
               <code>
 &lt;div class="horizontal-scroll">
   &lt;table>
@@ -666,55 +707,58 @@
 &lt;/div>
               </code>
             </pre>
+        </div>
+      </article>
+
+      <article id="table-content-number">
+        <div>
+          <h2>Numerieke data</h2>
+          <p>Getallen worden visueel onderscheidend weergegeven van overige celdata om de gebruiksvriendelijkheid te
+            vergroten.</p>
+          <ul>
+            <li>Getallen worden rechts uitgelijnd volgens conventie.</li>
+            <li>De titel van kolommen met numerieke data worden op dezelfde manier uitgelijnd voor consistentie.</li>
+            <li>Getallen worden <dfn>mono-spaced</dfn> weergegeven, wat inhoud dat ieder getal dezelfde breedte heeft
+              waardoor getallen onderling goed te vergelijken zijn.</li>
+            <li>Om gebruik te maken van de weergave voor numerieke data, voeg de class <code>number</code> toe aan de
+              cellen die numerieke data bevatten en de bijbehorende titelblokken</li>
+          </ul>
+
+          <p>Visueel voorbeeld:</p>
+          <div class="horizontal-scroll">
+            <table>
+              <caption>Tabelvoorbeeld met numerieke data:</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Table header heading</th>
+                  <th scope="col" class="number">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lorem ipsum</td>
+                  <td class="number">52,12</td>
+                </tr>
+                <tr>
+                  <td>Lorem ipsum</td>
+                  <td class="number">110,00</td>
+                </tr>
+                <tr>
+                  <td>Lorem ipsum</td>
+                  <td class="number">2,00</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>Totaal</td>
+                  <td class="number">164,12</td>
+                </tr>
+              </tfoot>
+            </table>
           </div>
-        </article>
 
-        <article id="table-content-number">
-          <div>
-            <h2 >Numerieke data</h2>
-            <p>Getallen worden visueel onderscheidend weergegeven van overige celdata om de gebruiksvriendelijkheid te vergroten.</p>
-            <ul>
-              <li>Getallen worden rechts uitgelijnd volgens conventie.</li>
-              <li>De titel van kolommen met numerieke data worden op dezelfde manier uitgelijnd voor consistentie.</li>
-              <li>Getallen worden <dfn>mono-spaced</dfn> weergegeven, wat inhoud dat ieder getal dezelfde breedte heeft waardoor getallen onderling goed te vergelijken zijn.</li>
-              <li>Om gebruik te maken van de weergave voor numerieke data, voeg de class <code>number</code> toe aan de cellen die numerieke data bevatten en de bijbehorende titelblokken</li>
-            </ul>
-
-            <p>Visueel voorbeeld:</p>
-            <div class="horizontal-scroll">
-              <table>
-                <caption>Tabelvoorbeeld met numerieke data:</caption>
-                <thead>
-                  <tr>
-                    <th scope="col">Table header heading</th>
-                    <th scope="col" class="number">Value</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Lorem ipsum</td>
-                    <td class="number">52,12</td>
-                  </tr>
-                  <tr>
-                    <td>Lorem ipsum</td>
-                    <td class="number">110,00</td>
-                  </tr>
-                  <tr>
-                    <td>Lorem ipsum</td>
-                    <td class="number">2,00</td>
-                  </tr>
-                </tbody>
-                <tfoot>
-                  <tr>
-                    <td>Totaal</td>
-                    <td class="number">164,12</td>
-                  </tr>
-                </tfoot>
-              </table>
-            </div>
-
-            <p>Html-voorbeeld:</p>
-            <pre>
+          <p>Html-voorbeeld:</p>
+          <pre>
               <code>
 &lt;div class="horizontal-scroll">
   &lt;table>
@@ -735,74 +779,81 @@
 &lt;/div>
               </code>
             </pre>
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article id="table-options">
-          <div>
-            <h1>Tabelopties</h1>
-            <p>Een overzicht van opties die gebruikt kunnen worden om tabellen en hun data weer te geven.</p>
-            <p>Beschikbare voorbeelden:</p>
-            <nav aria-label="Tabelopties subnavigatie">
-              <ul>
-                <li><a href="#colspan">Data over meerdere kolommen</a></li>
-                <li><a href="#rowspan">Data over meerdere rijen</a></li>
-                <li><a href="#table-condensed">Gecomprimeerde weergave</a></li>
-                <li><a href="#table-grouped-data">Gegroepeerde data</a></li>
-                <li><a href="#table-sort">Sorteerbare data</a></li>
-                <li><a href="#table-sticky">Sticky header</a></li>
-                <li><a href="#table-scope">Tabelrichting</a></li>
-              </ul>
-            </nav>
-          </div>
-        </article>
-
-        <article id="colspan">
-          <div>
-            <h1>Data over meerdere kolommen</h1>
-            <p>Data weergeven over meer dan een kolom kan gebruikt worden binnen tabellen. Dit kan handig zijn om data gebruiksvriendelijker weer te geven.</p>
+      <article id="table-options">
+        <div>
+          <h1>Tabelopties</h1>
+          <p>Een overzicht van opties die gebruikt kunnen worden om tabellen en hun data weer te geven.</p>
+          <p>Beschikbare voorbeelden:</p>
+          <nav aria-label="Tabelopties subnavigatie">
             <ul>
-              <li>Om een datacel en/of een kolomtitel over meerdere kolommen te plaatsen gebruik een <code>colspan="[number]"</code> Bijvoorbeeld: <code>colspan="2"</code> op de <code>td</code> of de <code>th</code>, of op zowel de <code>td</code> als de <code>th</code>.</li>
-              <li>Er kan ook gezozen worden om een enkele <code>td</code> bijvoorbeeld de volledig breedte van de tabel te geven door de <code>colspan</code> op de <code>td</code> overeen te laten komen met de hoeveelheid kolommen van de tabel. Zie bijgevoegd voorbeeld.</li>
-              <li><strong>Let op dat de colspan wel aangepast dient te worden als de hoeveelheid kolommen binnen de tabel aangepast worden. Het is daarom aan te raden deze methode spaarzaam en verstandig te gebruiken aangezien dit bij variabele data problemen op kan leveren.</strong></li>
+              <li><a href="#colspan">Data over meerdere kolommen</a></li>
+              <li><a href="#rowspan">Data over meerdere rijen</a></li>
+              <li><a href="#table-condensed">Gecomprimeerde weergave</a></li>
+              <li><a href="#table-grouped-data">Gegroepeerde data</a></li>
+              <li><a href="#table-sort">Sorteerbare data</a></li>
+              <li><a href="#table-sticky">Sticky header</a></li>
+              <li><a href="#table-scope">Tabelrichting</a></li>
             </ul>
+          </nav>
+        </div>
+      </article>
 
-            <p>Visueel voorbeeld:</p>
-            <div class="horizontal-scroll">
-              <table>
-                <caption>Tabelvoorbeeld met data over meerdere kolommen:</caption>
-                <thead>
-                  <tr>
-                    <th scope="col">Lorem ipsum</th>
-                    <th scope="col">Dolor set</th>
-                    <th scope="col">Amet</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Lorem ipsum dolor set amet</td>
-                    <td>Lorem</td>
-                    <td>10</td>
-                  </tr>
-                  <tr>
-                    <td>Lorem ipsum dolor set amet</td>
-                    <td>Lorem</td>
-                    <td>100</td>
-                  </tr>
-                  <tr>
-                    <td colspan="3">This cell takes up three columns</td>
-                  </tr>
-                  <tr>
-                    <td>Lorem ipsum dolor set amet</td>
-                    <td>Lorem</td>
-                    <td>40</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+      <article id="colspan">
+        <div>
+          <h1>Data over meerdere kolommen</h1>
+          <p>Data weergeven over meer dan een kolom kan gebruikt worden binnen tabellen. Dit kan handig zijn om data
+            gebruiksvriendelijker weer te geven.</p>
+          <ul>
+            <li>Om een datacel en/of een kolomtitel over meerdere kolommen te plaatsen gebruik een
+              <code>colspan="[number]"</code> Bijvoorbeeld: <code>colspan="2"</code> op de <code>td</code> of de
+              <code>th</code>, of op zowel de <code>td</code> als de <code>th</code>.</li>
+            <li>Er kan ook gezozen worden om een enkele <code>td</code> bijvoorbeeld de volledig breedte van de tabel te
+              geven door de <code>colspan</code> op de <code>td</code> overeen te laten komen met de hoeveelheid
+              kolommen van de tabel. Zie bijgevoegd voorbeeld.</li>
+            <li><strong>Let op dat de colspan wel aangepast dient te worden als de hoeveelheid kolommen binnen de tabel
+                aangepast worden. Het is daarom aan te raden deze methode spaarzaam en verstandig te gebruiken aangezien
+                dit bij variabele data problemen op kan leveren.</strong></li>
+          </ul>
 
-            <p>Html-voorbeeld:</p>
-            <pre>
+          <p>Visueel voorbeeld:</p>
+          <div class="horizontal-scroll">
+            <table>
+              <caption>Tabelvoorbeeld met data over meerdere kolommen:</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Lorem ipsum</th>
+                  <th scope="col">Dolor set</th>
+                  <th scope="col">Amet</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lorem ipsum dolor set amet</td>
+                  <td>Lorem</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Lorem ipsum dolor set amet</td>
+                  <td>Lorem</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td colspan="3">This cell takes up three columns</td>
+                </tr>
+                <tr>
+                  <td>Lorem ipsum dolor set amet</td>
+                  <td>Lorem</td>
+                  <td>40</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>Html-voorbeeld:</p>
+          <pre>
               <code>
 &lt;div class="horizontal-scroll">
   &lt;table>
@@ -838,49 +889,51 @@
 &lt;/div>
               </code>
             </pre>
+        </div>
+      </article>
+
+      <article id="rowspan">
+        <div>
+          <h1>Data over meerdere rijen</h1>
+          <p>Data weergeven over meer dan een rij kan gebruikt worden binnen tabellen. Dit kan handig zijn om data
+            gebruiksvriendelijker weer te geven.</p>
+          <ul>
+            <li>Om een datacel over meerdere rijen te plaatsen gebruik een <code>rowspan="[number]"</code> Bijvoorbeeld:
+              <code>rowspan="2"</code> op de <code>td</code>.</li>
+          </ul>
+
+          <p>Visueel voorbeeld:</p>
+          <div class="horizontal-scroll">
+            <table>
+              <caption>Tabelvoorbeeld met data over meerdere rijen:</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Lorem ipsum</th>
+                  <th scope="col">Dolor set</th>
+                  <th scope="col">Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lorem</td>
+                  <td>10</td>
+                  <td rowspan="2">110</td>
+                </tr>
+                <tr>
+                  <td>Ipsum</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>Lorem</td>
+                  <td>40</td>
+                  <td>40</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-        </article>
 
-        <article id="rowspan">
-          <div>
-            <h1>Data over meerdere rijen</h1>
-            <p>Data weergeven over meer dan een rij kan gebruikt worden binnen tabellen. Dit kan handig zijn om data gebruiksvriendelijker weer te geven.</p>
-            <ul>
-              <li>Om een datacel over meerdere rijen te plaatsen gebruik een <code>rowspan="[number]"</code> Bijvoorbeeld: <code>rowspan="2"</code> op de <code>td</code>.</li>
-            </ul>
-
-            <p>Visueel voorbeeld:</p>
-            <div class="horizontal-scroll">
-              <table>
-                <caption>Tabelvoorbeeld met data over meerdere rijen:</caption>
-                <thead>
-                  <tr>
-                    <th scope="col">Lorem ipsum</th>
-                    <th scope="col">Dolor set</th>
-                    <th scope="col">Total</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Lorem</td>
-                    <td>10</td>
-                    <td rowspan="2">110</td>
-                  </tr>
-                  <tr>
-                    <td>Ipsum</td>
-                    <td>100</td>
-                  </tr>
-                  <tr>
-                    <td>Lorem</td>
-                    <td>40</td>
-                    <td>40</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <p>Html-voorbeeld:</p>
-            <pre>
+          <p>Html-voorbeeld:</p>
+          <pre>
               <code>
 &lt;div class="horizontal-scroll">
   &lt;table>
@@ -912,46 +965,48 @@
 &lt;/div>
               </code>
             </pre>
+        </div>
+      </article>
+
+      <article id="table-condensed">
+        <div>
+          <h1>Tabel - Gecomprimeerde weergave</h1>
+          <p>Voor het tonen van grote datasets kan het voor de gebruiksvriendelijkheid fijner zijn om de data
+            gecomprimeerd weer te geven zodat het makkelijker is voor de gebruiker om overzicht te houden. Om gebruik te
+            maken van de gecomprimeerde weergave voeg de class <code>condensed</code> toe op de <code>Table</code></p>
+          <p>Visueel voorbeeld:</p>
+          <div class="horizontal-scroll">
+            <table class="condensed">
+              <caption>Tabelvoorbeeld met gecomprimeerde weergave.</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Table header heading 1</th>
+                  <th scope="col">Table header heading 2</th>
+                  <th scope="col">Table header heading 3</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Ipsum</td>
+                  <td>Dolor set</td>
+                </tr>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Ipsum</td>
+                  <td>Dolor set</td>
+                </tr>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Ipsum</td>
+                  <td>Dolor set</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-        </article>
 
-        <article id="table-condensed">
-          <div>
-            <h1>Tabel - Gecomprimeerde weergave</h1>
-            <p>Voor het tonen van grote datasets kan het voor de gebruiksvriendelijkheid fijner zijn om de data gecomprimeerd weer te geven zodat het makkelijker is voor de gebruiker om overzicht te houden. Om gebruik te maken van de gecomprimeerde weergave voeg de class <code>condensed</code> toe op de <code>Table</code></p>
-            <p>Visueel voorbeeld:</p>
-            <div class="horizontal-scroll">
-              <table class="condensed">
-                <caption>Tabelvoorbeeld met gecomprimeerde weergave.</caption>
-                <thead>
-                  <tr>
-                    <th scope="col">Table header heading 1</th>
-                    <th scope="col">Table header heading 2</th>
-                    <th scope="col">Table header heading 3</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Lorem</td>
-                    <td>Ipsum</td>
-                    <td>Dolor set</td>
-                  </tr>
-                  <tr>
-                    <td>Lorem</td>
-                    <td>Ipsum</td>
-                    <td>Dolor set</td>
-                  </tr>
-                  <tr>
-                    <td>Lorem</td>
-                    <td>Ipsum</td>
-                    <td>Dolor set</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <p>Html-voorbeeld:</p>
-            <pre>
+          <p>Html-voorbeeld:</p>
+          <pre>
               <code>
 &lt;div class="horizontal-scroll">
   &lt;table class="condensed">
@@ -984,56 +1039,57 @@
 &lt;/div>
               </code>
             </pre>
+        </div>
+      </article>
+
+      <article id="table-grouped-data">
+        <div>
+          <h2>Gegroepeerde data</h2>
+          <p>Data kan gegroepeerd weergegeven worden, dit kan gebruikt worden voor gebruiksvriendelijkheid.</p>
+          <ul>
+            <li>Om kolommen te groeperen, voeg binnen de <code>thead</code> een <code>colgroup</code> toe.</li>
+            <li>Plaats de <code>colgroup</code> direct onder de <code>caption</code> als deze aanwezig is.</li>
+            <li>Geef binnen de colgroup aan hoeveel kolommen de groep bevat. Door een <code>span="[number]"</code>
+              bijvoorbeeld: <code>span="2"</code> op te geven.</li>
+          </ul>
+
+          <p>Visueel voorbeeld gegroepeerde kolommen:</p>
+          <div class="horizontal-scroll">
+            <table>
+              <caption>Tabelvoorbeeld met gegroepeerde data:</caption>
+              <colgroup>
+                <col>
+                <col span="2" class="tint-1">
+                <col span="2" class="tint-2">
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Ipsum</td>
+                  <td>Dolor</td>
+                  <td>Consectetur</td>
+                  <td>Adepicing</td>
+                </tr>
+                <tr>
+                  <td>Ipsum</td>
+                  <td>Set</td>
+                  <td>Amet</td>
+                  <td>Ipsum</td>
+                  <td>Dolor</td>
+                </tr>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Consectetur</td>
+                  <td>Adepicing</td>
+                  <td>Lorem</td>
+                  <td>Ipsum</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-        </article>
 
-        <article id="table-grouped-data">
-          <div>
-            <h2>Gegroepeerde data</h2>
-            <p>Data kan gegroepeerd weergegeven worden, dit kan gebruikt worden voor gebruiksvriendelijkheid.</p>
-            <ul>
-              <li>Om kolommen te groeperen, voeg binnen de <code>thead</code> een <code>colgroup</code> toe.</li>
-              <li>Plaats de <code>colgroup</code> direct onder de <code>caption</code> als deze aanwezig is.</li>
-              <li>Geef binnen de colgroup aan hoeveel kolommen de groep bevat. Door een <code>span="[number]"</code> bijvoorbeeld: <code>span="2"</code> op te geven.</li>
-            </ul>
-
-            <p>Visueel voorbeeld gegroepeerde kolommen:</p>
-            <div class="horizontal-scroll">
-              <table>
-                <caption>Tabelvoorbeeld met gegroepeerde data:</caption>
-                <colgroup>
-                    <col>
-                    <col span="2" class="tint-1">
-                    <col span="2" class="tint-2">
-                </colgroup>
-                <tbody>
-                  <tr>
-                    <td>Lorem</td>
-                    <td>Ipsum</td>
-                    <td>Dolor</td>
-                    <td>Consectetur</td>
-                    <td>Adepicing</td>
-                  </tr>
-                  <tr>
-                    <td>Ipsum</td>
-                    <td>Set</td>
-                    <td>Amet</td>
-                    <td>Ipsum</td>
-                    <td>Dolor</td>
-                  </tr>
-                  <tr>
-                    <td>Lorem</td>
-                    <td>Consectetur</td>
-                    <td>Adepicing</td>
-                    <td>Lorem</td>
-                    <td>Ipsum</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <p>Html-voorbeeld:</p>
-            <pre>
+          <p>Html-voorbeeld:</p>
+          <pre>
               <code>
 &lt;div class="horizontal-scroll">
   &lt;table>
@@ -1070,43 +1126,51 @@
 &lt;/div>
               </code>
             </pre>
+        </div>
+      </article>
+
+      <article id="table-sort">
+        <div>
+          <h1>Sorteerbare data</h1>
+          <p>Om inzicht te krijgen in de data kan het behulpzaam zijn om de gebruiker de data te laten sorteren.
+            Bijvoorbeeld op basis van op of aflopende data.</p>
+          <ul>
+            <li>Om gebruik te maken van het sorteericoon voeg de class <code>sortable</code> toe aan de <code>th</code>
+            </li>
+            <li>Om gebruik te maken van het naar omhoog wijzende icoon voeg de class <code>ascending</code> toe aan de
+              <code>th</code>.</li>
+            <li>Om gebruik te maken van het naar beneden wijzende icoon voeg de class <code>descending</code> toe aan de
+              <code>th</code>.</li>
+            <li>Voeg een <code>button</code> toe binnen de <code>th</code> aangezien het sorteerelemeent klikbaar moet
+              zijn.</li>
+            <li>Voeg <code>abbr="descriptive title"</code> toe aan de <code>&lt;th></code> om de gebruikerservaring te
+              verbeteren voor gebruikers die gebruik maken van een screenreader. Screenreaders lezen vaak de inhoud van
+              de <code>&lt;th></code> voor iedere tabelcel voor. Dit betekend dat ook de actieknoppen voorgelezen
+              worden. Om dit te voorkomen kan een alternatieve titel opgegeven worden middels de <code>abbr</code></li>
+          </ul>
+
+          <p>Visueel voorbeeld:</p>
+          <div class="horizontal-scroll">
+            <table>
+              <caption>Tabelvoorbeeld met sorteerbare data:</caption>
+              <thead>
+                <tr>
+                  <th scope="col" class="sortable" abbr="Sortable data">Sortable
+                    <button title="Sort ascending">Ascending</button>
+                  </th>
+                  <th scope="col" class="ascending" abbr="Ascending data">Ascending
+                    <button title="Sort descending">Descending</button>
+                  </th>
+                  <th scope="col" class="descending" abbr="Descending data">Descending
+                    <button title="Sort ascending">Ascending</button>
+                  </th>
+                </tr>
+              </thead>
+            </table>
           </div>
-        </article>
 
-        <article id="table-sort">
-          <div>
-            <h1>Sorteerbare data</h1>
-            <p>Om inzicht te krijgen in de data kan het behulpzaam zijn om de gebruiker de data te laten sorteren. Bijvoorbeeld op basis van op of aflopende data.</p>
-            <ul>
-              <li>Om gebruik te maken van het sorteericoon voeg de class <code>sortable</code> toe aan de <code>th</code></li>
-              <li>Om gebruik te maken van het naar omhoog wijzende icoon voeg de class <code>ascending</code> toe aan de <code>th</code>.</li>
-              <li>Om gebruik te maken van het naar beneden wijzende icoon voeg de class <code>descending</code> toe aan de <code>th</code>.</li>
-              <li>Voeg een <code>button</code> toe binnen de <code>th</code> aangezien het sorteerelemeent klikbaar moet zijn.</li>
-              <li>Voeg <code>abbr="descriptive title"</code> toe aan de <code>&lt;th></code> om de gebruikerservaring te verbeteren voor gebruikers die gebruik maken van een screenreader. Screenreaders lezen vaak de inhoud van de <code>&lt;th></code> voor iedere tabelcel voor. Dit betekend dat ook de actieknoppen voorgelezen worden. Om dit te voorkomen kan een alternatieve titel opgegeven worden middels de <code>abbr</code></li>
-            </ul>
-
-            <p>Visueel voorbeeld:</p>
-            <div class="horizontal-scroll">
-              <table>
-                <caption>Tabelvoorbeeld met sorteerbare data:</caption>
-                <thead>
-                  <tr>
-                    <th scope="col" class="sortable" abbr="Sortable data">Sortable
-                      <button title="Sort ascending">Ascending</button>
-                    </th>
-                    <th scope="col" class="ascending" abbr="Ascending data">Ascending
-                      <button title="Sort descending">Descending</button>
-                    </th>
-                    <th scope="col" class="descending" abbr="Descending data">Descending
-                      <button title="Sort ascending">Ascending</button>
-                    </th>
-                  </tr>
-                </thead>
-              </table>
-            </div>
-
-            <p>Html-voorbeeld:</p>
-            <pre>
+          <p>Html-voorbeeld:</p>
+          <pre>
               <code>
 &lt;div class="horizontal-scroll">
   &lt;table>
@@ -1128,84 +1192,100 @@
 &lt;/div>
               </code>
             </pre>
+        </div>
+      </article>
+
+      <article id="table-expando-row">
+        <div>
+          <h1>Uitklapbare tabel</h1>
+          <p>Voor het tonen van complexe tabellen met bijbehorende details kan gekozen worden voor een tabel met
+            uitklapbare tabelrijen.</p>
+
+          <ul>
+            <li><strong>Let op: Deze tabelstructuur kan als complex ervaren worden. Zeker in combinatie met
+                hulptechnologiën. Maak enkel gebruik van deze opzet als het de gebruiker helpt om complexe de data te
+                begrijpen.</strong></li>
+            <li>Voeg een extra <code>&lt;tr></code> direct onder de bijbehorende zichtbare rij toe om een uitklapbare
+              rij toe te voegen. Geef de uitklapbare rij de class <code>expando-row</code>.</li>
+            <li>Voeg een extra kolom toe met <code>&lt;button></code>s voor het bedienen van de uitklapbare rijen.
+              <ul>
+                <li>Gebruik als kolomtitel bijvoorbeeld met de tekst "details".</li>
+                <li>Geef de <code>&lt;button></code>s de class <code>expando-button</code>.</li>
+                <li>Gebruik een button-tekst die toelicht dat de button de rij zal openklappen, zoals "Open details".
+                  Geef de <code>&lt;button></code> daarnaast een <code>data-close-label="Sluit details"</code> met de
+                  bijbehorende tekst voor het dichtklappen van de rij.</li>
+              </ul>
+            </li>
+            <li>Plaats <code>&lt;script defer src="pad/naar/expando-rows.min.js">&lt;/script></code> in de
+              <code>&lt;head></code> van het document.
+              <ul>
+                <li>Het <code>defer</code> attribuut zorgt ervoor dat het script in de achtergrond geladen wordt, zodat
+                  het tonen van de pagina niet geblokkeerd wordt.</li>
+                <li>Wanneer JavaScript niet beschikbaar is, worden alle uitklapbare tabelrijen "uitgeklapt" getoond en
+                  worden de expando-<code>&lt;button></code>s verborgen.</li>
+                <li>Om een tabelrij standaard uitgeklapt te maken, voeg je <code>aria-expanded="true"</code> toe aan de
+                  <code>&lt;button></code>, verander je de button-tekst naar bijvoorbeeld "Sluit details", en vervang je
+                  de <code>data-close-label</code> door een <code>data-open-label</code>.</li>
+              </ul>
+            </li>
+            <li>Voeg binnen de uitklapbare rij een tabelcel toe die de volledige breedte gebruikt. In dit voorbeeld
+              <code>&lt;td colspan="5">&lt;/td></code>. Vul als waarde van de <code>colspan</code> de hoeveelheid
+              kolommen van de tabel in.</li>
+            <li>Voeg direct binnen de tabelcel binnen de uitklapbare rij een <code>&lt;span></code> toe met een
+              omschrijvende tekst voor screenreader gebruikers. Bijvoorbeeld:
+              <code>&lt;span class="visually-hidden">Extra details over lorem ipsum&lt;/span>.</code> Voeg aan deze span
+              de class <code>visually-hidden</code> toe om de span te verbergen voor overige gebruikers.</li>
+            <li>Vul de uitklapbare tabel met de gewenste data.</li>
+          </ul>
+
+          <p>Visueel voorbeeld:</p>
+          <div class="horizontal-scroll">
+            <table class="condensed">
+              <caption>Voorbeeld uitklapbare tabelrijen:</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Risicolevel</th>
+                  <th scope="col">Bevindingstype</th>
+                  <th scope="col">Hoeveelheid</th>
+                  <th scope="col">Status</th>
+                  <th scope="col">Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="critical">Critical</span></td>
+                  <td>Lorem ipsum dolor set</td>
+                  <td class="number">4</td>
+                  <td>New</td>
+                  <td><button class="expando-button" data-close-label="Sluit details">Open details</button></td>
+                </tr>
+                <tr class="expando-row">
+                  <td colspan="5">
+                    <span class="visually-hidden">Lorem ipsum dolor set</span>
+                    <h1>Lorem ipsum details</h1>
+                    <p>De extra content.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="high">High</span></td>
+                  <td>Lorem ipsum dolor set</td>
+                  <td class="number">12</td>
+                  <td>New</td>
+                  <td><button class="expando-button" data-close-label="Sluit details">Open details</button></td>
+                </tr>
+                <tr class="expando-row">
+                  <td colspan="5">
+                    <span class="visually-hidden">Lorem ipsum dolor set</span>
+                    <h1>Lorem ipsum details</h1>
+                    <p>De extra content.</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-        </article>
 
-        <article id="table-expando-row">
-          <div>
-            <h1>Uitklapbare tabel</h1>
-            <p>Voor het tonen van complexe tabellen met bijbehorende details kan gekozen worden voor een tabel met uitklapbare tabelrijen.</p>
-
-            <ul>
-              <li><strong>Let op: Deze tabelstructuur kan als complex ervaren worden. Zeker in combinatie met hulptechnologiën. Maak enkel gebruik van deze opzet als het de gebruiker helpt om complexe de data te begrijpen.</strong></li>
-              <li>Voeg een extra <code>&lt;tr></code> direct onder de bijbehorende zichtbare rij toe om een uitklapbare rij toe te voegen. Geef de uitklapbare rij de class <code>expando-row</code>.</li>
-              <li>Voeg een extra kolom toe met <code>&lt;button></code>s voor het bedienen van de uitklapbare rijen.
-                <ul>
-                  <li>Gebruik als kolomtitel bijvoorbeeld met de tekst "details".</li>
-                  <li>Geef de <code>&lt;button></code>s de class <code>expando-button</code>.</li>
-                  <li>Gebruik een button-tekst die toelicht dat de button de rij zal openklappen, zoals "Open details". Geef de <code>&lt;button></code> daarnaast een <code>data-close-label="Sluit details"</code> met de bijbehorende tekst voor het dichtklappen van de rij.</li>
-                </ul>
-              </li>
-              <li>Plaats <code>&lt;script defer src="pad/naar/expando-rows.min.js">&lt;/script></code> in de <code>&lt;head></code> van het document.
-                <ul>
-                  <li>Het <code>defer</code> attribuut zorgt ervoor dat het script in de achtergrond geladen wordt, zodat het tonen van de pagina niet geblokkeerd wordt.</li>
-                  <li>Wanneer JavaScript niet beschikbaar is, worden alle uitklapbare tabelrijen "uitgeklapt" getoond en worden de expando-<code>&lt;button></code>s verborgen.</li>
-                  <li>Om een tabelrij standaard uitgeklapt te maken, voeg je <code>aria-expanded="true"</code> toe aan de <code>&lt;button></code>, verander je de button-tekst naar bijvoorbeeld "Sluit details", en vervang je de <code>data-close-label</code> door een <code>data-open-label</code>.</li>
-                </ul>
-              </li>
-              <li>Voeg binnen de uitklapbare rij een tabelcel toe die de volledige breedte gebruikt. In dit voorbeeld <code>&lt;td colspan="5">&lt;/td></code>. Vul als waarde van de <code>colspan</code> de hoeveelheid kolommen van de tabel in.</li>
-              <li>Voeg direct binnen de tabelcel binnen de uitklapbare rij een <code>&lt;span></code> toe met een omschrijvende tekst voor screenreader gebruikers. Bijvoorbeeld: <code>&lt;span class="visually-hidden">Extra details over lorem ipsum&lt;/span>.</code> Voeg aan deze span de class <code>visually-hidden</code> toe om de span te verbergen voor overige gebruikers.</li>
-              <li>Vul de uitklapbare tabel met de gewenste data.</li>
-            </ul>
-
-            <p>Visueel voorbeeld:</p>
-            <div class="horizontal-scroll">
-              <table class="condensed">
-                <caption>Voorbeeld uitklapbare tabelrijen:</caption>
-                <thead>
-                  <tr>
-                    <th scope="col">Risicolevel</th>
-                    <th scope="col">Bevindingstype</th>
-                    <th scope="col">Hoeveelheid</th>
-                    <th scope="col">Status</th>
-                    <th scope="col">Details</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><span class="critical">Critical</span></td>
-                    <td>Lorem ipsum dolor set</td>
-                    <td class="number">4</td>
-                    <td>New</td>
-                    <td><button class="expando-button" data-close-label="Sluit details">Open details</button></td>
-                  </tr>
-                  <tr class="expando-row">
-                    <td colspan="5">
-                        <span class="visually-hidden">Lorem ipsum dolor set</span>
-                        <h1>Lorem ipsum details</h1>
-                        <p>De extra content.</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><span class="high">High</span></td>
-                    <td>Lorem ipsum dolor set</td>
-                    <td class="number">12</td>
-                    <td>New</td>
-                    <td><button class="expando-button" data-close-label="Sluit details">Open details</button></td>
-                  </tr>
-                  <tr class="expando-row">
-                    <td colspan="5">
-                        <span class="visually-hidden">Lorem ipsum dolor set</span>
-                        <h1>Lorem ipsum details</h1>
-                        <p>De extra content.</p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <p>Html-voorbeeld:</p>
-            <pre>
+          <p>Html-voorbeeld:</p>
+          <pre>
               <code>
 &lt;div class="horizontal-scroll">
   &lt;table class="condensed">
@@ -1253,66 +1333,67 @@
 &lt;/div>
               </code>
             </pre>
+        </div>
+      </article>
+
+      <article id="table-summary">
+        <div>
+          <h1>Samenvatting</h1>
+          <p>Geschikt voor het tonen van korte overzichten en samenvattingen bij complexe tabellen en documenten.</p>
+
+          <ul>
+            <li>Voeg de class <code>summary</code> toe aan de <code>&lt;table></code> om gebruik te maken van deze
+              tabelweergave.</li>
+            <li>De tabel zal zo smal mogelijk weergegeven worden en met een rustigere grafische weergave.</li>
+          </ul>
+
+          <p>Visueel voorbeeld:</p>
+          <div class="horizontal-scroll">
+            <table class="summary">
+              <caption>Samenvatting overzicht lorem ipsum:</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Risicolevel</th>
+                  <th scope="col">Hoeveelheid</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="critical">Critical</span></td>
+                  <td class="number">1</td>
+                </tr>
+
+                <tr>
+                  <td><span class="high">Hoog</span></td>
+                  <td class="number">1</td>
+                </tr>
+
+                <tr>
+                  <td><span class="medium">Gemiddeld</span></td>
+                  <td class="number">3</td>
+                </tr>
+
+                <tr>
+                  <td><span class="low">Laag</span></td>
+                  <td class="number">6</td>
+                </tr>
+
+                <tr>
+                  <td><span class="recommendation">Aanbeveling</span></td>
+                  <td class="number">10</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>Totaal</td>
+                  <td class="number">21</td>
+                </tr>
+              </tfoot>
+            </table>
           </div>
-        </article>
 
-        <article id="table-summary">
-          <div>
-            <h1>Samenvatting</h1>
-            <p>Geschikt voor het tonen van korte overzichten en samenvattingen bij complexe tabellen en documenten.</p>
-
-            <ul>
-              <li>Voeg de class <code>summary</code> toe aan de <code>&lt;table></code> om gebruik te maken van deze tabelweergave.</li>
-              <li>De tabel zal zo smal mogelijk weergegeven worden en met een rustigere grafische weergave.</li>
-            </ul>
-
-            <p>Visueel voorbeeld:</p>
-            <div class="horizontal-scroll">
-              <table class="summary">
-                <caption>Samenvatting overzicht lorem ipsum:</caption>
-                <thead>
-                  <tr>
-                    <th scope="col">Risicolevel</th>
-                    <th scope="col">Hoeveelheid</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><span class="critical">Critical</span></td>
-                    <td class="number">1</td>
-                  </tr>
-
-                  <tr>
-                    <td><span class="high">Hoog</span></td>
-                    <td class="number">1</td>
-                  </tr>
-
-                  <tr>
-                    <td><span class="medium">Gemiddeld</span></td>
-                    <td class="number">3</td>
-                  </tr>
-
-                  <tr>
-                    <td><span class="low">Laag</span></td>
-                    <td class="number">6</td>
-                  </tr>
-
-                  <tr>
-                    <td><span class="recommendation">Aanbeveling</span></td>
-                    <td class="number">10</td>
-                  </tr>
-                </tbody>
-                <tfoot>
-                  <tr>
-                    <td>Totaal</td>
-                    <td class="number">21</td>
-                  </tr>
-                </tfoot>
-              </table>
-            </div>
-
-            <p>Html-voorbeeld:</p>
-            <pre>
+          <p>Html-voorbeeld:</p>
+          <pre>
               <code>
 &lt;div class="horizontal-scroll">
   &lt;table class="summary">
@@ -1359,128 +1440,132 @@
 &lt;/div>
               </code>
             </pre>
+        </div>
+      </article>
+
+      <article id="table-sticky">
+        <div>
+          <h1>Tabel - Sticky header</h1>
+          <p>Voor lange tabellen kan het gewenst zijn om de tabel-header in het zicht te houden. Zodat de gebruiker de
+            titels kan zien.</p>
+
+          <p>Aandachtspunten:</p>
+          <ul>
+            <li>Voeg de class <code>sticky-header</code> toe aan een <code>&lt;div></code> om de <code>&lt;table></code>
+              heen. Deze is <code>&lt;div></code> is nodig om de <code>&lt;table></code> scrollbaar te maken.</li>
+            <li>Een <code>sticky-header</code>-tabel heeft een maximale hoogte van de schermhoogte. Mocht er een andere
+              maximale hoogte gewenst zijn zodat de tabel bijvooreeld minder hoog blijft kan deze via css overschreven
+              worden.</li>
+          </ul>
+
+          <p>Visueel voorbeeld:</p>
+          <div class="horizontal-scroll sticky-header">
+            <table>
+              <caption>Tabelvoorbeeld met een sticky header.</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Heading 1</th>
+                  <th scope="col">Heading 2</th>
+                  <th scope="col">Heading 3</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Ipsum</td>
+                  <td>Dolor set</td>
+                </tr>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Ipsum</td>
+                  <td>Dolor set</td>
+                </tr>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Ipsum</td>
+                  <td>Dolor set</td>
+                </tr>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Ipsum</td>
+                  <td>Dolor set</td>
+                </tr>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Ipsum</td>
+                  <td>Dolor set</td>
+                </tr>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Ipsum</td>
+                  <td>Dolor set</td>
+                </tr>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Ipsum</td>
+                  <td>Dolor set</td>
+                </tr>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Ipsum</td>
+                  <td>Dolor set</td>
+                </tr>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Ipsum</td>
+                  <td>Dolor set</td>
+                </tr>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Ipsum</td>
+                  <td>Dolor set</td>
+                </tr>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Ipsum</td>
+                  <td>Dolor set</td>
+                </tr>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Ipsum</td>
+                  <td>Dolor set</td>
+                </tr>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Ipsum</td>
+                  <td>Dolor set</td>
+                </tr>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Ipsum</td>
+                  <td>Dolor set</td>
+                </tr>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Ipsum</td>
+                  <td>Dolor set</td>
+                </tr>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Ipsum</td>
+                  <td>Dolor set</td>
+                </tr>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Ipsum</td>
+                  <td>Dolor set</td>
+                </tr>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Ipsum</td>
+                  <td>Dolor set</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-        </article>
 
-        <article id="table-sticky">
-          <div>
-            <h1>Tabel - Sticky header</h1>
-            <p>Voor lange tabellen kan het gewenst zijn om de tabel-header in het zicht te houden. Zodat de gebruiker de titels kan zien.</p>
-
-            <p>Aandachtspunten:</p>
-            <ul>
-              <li>Voeg de class <code>sticky-header</code> toe aan een <code>&lt;div></code> om de <code>&lt;table></code> heen. Deze is <code>&lt;div></code> is nodig om de <code>&lt;table></code> scrollbaar te maken.</li>
-              <li>Een <code>sticky-header</code>-tabel heeft een maximale hoogte van de schermhoogte. Mocht er een andere maximale hoogte gewenst zijn zodat de tabel bijvooreeld minder hoog blijft kan deze via css overschreven worden.</li>
-            </ul>
-
-            <p>Visueel voorbeeld:</p>
-            <div class="horizontal-scroll sticky-header">
-              <table>
-                <caption>Tabelvoorbeeld met een sticky header.</caption>
-                <thead>
-                  <tr>
-                    <th scope="col">Heading 1</th>
-                    <th scope="col">Heading 2</th>
-                    <th scope="col">Heading 3</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Lorem</td>
-                    <td>Ipsum</td>
-                    <td>Dolor set</td>
-                  </tr>
-                  <tr>
-                    <td>Lorem</td>
-                    <td>Ipsum</td>
-                    <td>Dolor set</td>
-                  </tr>
-                  <tr>
-                    <td>Lorem</td>
-                    <td>Ipsum</td>
-                    <td>Dolor set</td>
-                  </tr>
-                  <tr>
-                    <td>Lorem</td>
-                    <td>Ipsum</td>
-                    <td>Dolor set</td>
-                  </tr>
-                  <tr>
-                    <td>Lorem</td>
-                    <td>Ipsum</td>
-                    <td>Dolor set</td>
-                  </tr>
-                  <tr>
-                    <td>Lorem</td>
-                    <td>Ipsum</td>
-                    <td>Dolor set</td>
-                  </tr>
-                  <tr>
-                    <td>Lorem</td>
-                    <td>Ipsum</td>
-                    <td>Dolor set</td>
-                  </tr>
-                  <tr>
-                    <td>Lorem</td>
-                    <td>Ipsum</td>
-                    <td>Dolor set</td>
-                  </tr>
-                  <tr>
-                    <td>Lorem</td>
-                    <td>Ipsum</td>
-                    <td>Dolor set</td>
-                  </tr>
-                  <tr>
-                    <td>Lorem</td>
-                    <td>Ipsum</td>
-                    <td>Dolor set</td>
-                  </tr>
-                  <tr>
-                    <td>Lorem</td>
-                    <td>Ipsum</td>
-                    <td>Dolor set</td>
-                  </tr>
-                  <tr>
-                    <td>Lorem</td>
-                    <td>Ipsum</td>
-                    <td>Dolor set</td>
-                  </tr>
-                  <tr>
-                    <td>Lorem</td>
-                    <td>Ipsum</td>
-                    <td>Dolor set</td>
-                  </tr>
-                  <tr>
-                    <td>Lorem</td>
-                    <td>Ipsum</td>
-                    <td>Dolor set</td>
-                  </tr>
-                  <tr>
-                    <td>Lorem</td>
-                    <td>Ipsum</td>
-                    <td>Dolor set</td>
-                  </tr>
-                  <tr>
-                    <td>Lorem</td>
-                    <td>Ipsum</td>
-                    <td>Dolor set</td>
-                  </tr>
-                  <tr>
-                    <td>Lorem</td>
-                    <td>Ipsum</td>
-                    <td>Dolor set</td>
-                  </tr>
-                  <tr>
-                    <td>Lorem</td>
-                    <td>Ipsum</td>
-                    <td>Dolor set</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <p>Html-voorbeeld:</p>
-            <pre>
+          <p>Html-voorbeeld:</p>
+          <pre>
               <code>
 &lt;div class="horizontal-scroll sticky-header">
   &lt;table>
@@ -1503,45 +1588,49 @@
 &lt;/div>
               </code>
             </pre>
+        </div>
+      </article>
+
+      <article id="table-scope">
+        <div>
+          <h1>Tabelrichting</h1>
+          <p>Data in tabellen kan als rij of als kolom weergegeven worden.</p>
+          <p>Het is hierbij belangrijk om rekening te houden met gebruikers die gebruik maken van hulptechnologiën zoals
+            screenreaders. Om ook voor hen inzichtelijk te houden bij welke data de titel hoort is het van belang dit
+            aan te geven. Dit kan gedaan worden door aan de <code>&lt;th></code> de tag <code>scope="col"</code> bij
+            kolommen of <code>scope="row"</code> bij rijen toe te voegen.</p>
+
+          <p>Visueel voorbeeld</p>
+          <p>In dit voorbeeld staat dat de <code>&lt;th></code> binnen de <code>&lt;thead></code> over de data in de
+            kolommen gaan. En de <code>&lt;th></code> binnen de <code>&lt;tbody></code> over de data per rij gaan.</p>
+          <div class="horizontal-scroll">
+            <table>
+              <caption>Tabelvoorbeeld met aangegeven scope:</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Naam</th>
+                  <th scope="col">Diersoort</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Manon</th>
+                  <td>Kat</td>
+                </tr>
+                <tr>
+                  <th scope="row">Max</th>
+                  <td>Hond</td>
+                </tr>
+                <tr>
+                  <th scope="row">Keiko</th>
+                  <td>Kat</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-        </article>
 
-        <article id="table-scope">
-          <div>
-            <h1>Tabelrichting</h1>
-            <p>Data in tabellen kan als rij of als kolom weergegeven worden.</p>
-            <p>Het is hierbij belangrijk om rekening te houden met gebruikers die gebruik maken van hulptechnologiën zoals screenreaders. Om ook voor hen inzichtelijk te houden bij welke data de titel hoort is het van belang dit aan te geven. Dit kan gedaan worden door aan de <code>&lt;th></code> de tag <code>scope="col"</code> bij kolommen of <code>scope="row"</code> bij rijen toe te voegen.</p>
-
-            <p>Visueel voorbeeld</p>
-            <p>In dit voorbeeld staat dat de <code>&lt;th></code> binnen de <code>&lt;thead></code> over de data in de kolommen gaan. En de <code>&lt;th></code> binnen de <code>&lt;tbody></code> over de data per rij gaan.</p>
-            <div class="horizontal-scroll">
-              <table>
-                <caption>Tabelvoorbeeld met aangegeven scope:</caption>
-                <thead>
-                  <tr>
-                    <th scope="col">Naam</th>
-                    <th scope="col">Diersoort</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">Manon</th>
-                    <td>Kat</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Max</th>
-                    <td>Hond</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Keiko</th>
-                    <td>Kat</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <p>Html-voorbeeld</p>
-            <pre>
+          <p>Html-voorbeeld</p>
+          <pre>
               <code>
 &lt;div class="horizontal-scroll">
   &lt;table>
@@ -1570,25 +1659,27 @@
 &lt;/div>
               </code>
             </pre>
-          </div>
-        </article>
-      </div>
-
-      <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het hoofdmenu</a>
-    </main>
-
-    <footer>
-      <div class="two-thirds-one-third">
-          <span class="slogan">Manon - Rijksoverheid css framework</span>
-          <nav aria-labelledby="footer-nav-1-heading">
-            <h1 id="footer-nav-1-heading">Service</h1>
-            <ul>
-              <li><a href="../index.html">Over</a></li>
-              <li><a href="../test/index.html">Styling tests</a></li>
-              <li><a href="index.html">Online componenten bibliotheek</a></li>
-            </ul>
-          </nav>
         </div>
-      </footer>
-  </body>
+      </article>
+    </div>
+
+    <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het
+      hoofdmenu</a>
+  </main>
+
+  <footer>
+    <div class="two-thirds-one-third">
+      <span class="slogan">Manon - Rijksoverheid css framework</span>
+      <nav aria-labelledby="footer-nav-1-heading">
+        <h1 id="footer-nav-1-heading">Service</h1>
+        <ul>
+          <li><a href="../index.html">Over</a></li>
+          <li><a href="../test/index.html">Styling tests</a></li>
+          <li><a href="index.html">Online componenten bibliotheek</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+
 </html>

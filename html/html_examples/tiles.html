@@ -1,97 +1,104 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <title>Tegelweergave - Rijksoverheid CSS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../dist/css/main.css" rel="stylesheet">
-    <link href="../dist/img/favicon.ico" rel="shortcut icon">
-    <script defer src="../dist/js/sidemenu.js"></script>
-  </head>
-  <body class="test-cases">
-    <header>
-      <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
-      <a href="" class="ro-logo">
-        <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
-        Rijksoverheid
-      </a>
 
-      <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
-        <div>
-          <ul>
-              <li><a href="../index.html">Rijksoverheid CSS</a></li>
-              <li><a href="index.html">Online Componenten Bibliotheek</a></li>
-              <li><a href="#" aria-current="page">Tegelweergave</a></li>
-          </ul>
-        </div>
-      </nav>
+<head>
+  <meta charset="UTF-8">
+  <title>Tegelweergave - Rijksoverheid CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../dist/css/main.css" rel="stylesheet">
+  <link href="../dist/img/favicon.ico" rel="shortcut icon">
+  <script defer src="../dist/js/sidemenu.js"></script>
+</head>
 
-    </header>
+<body class="test-cases">
+  <header>
+    <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
+    <a href="" class="ro-logo">
+      <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
+      Rijksoverheid
+    </a>
 
-    <main class="sidemenu" id="main-content" tabindex="-1">
-      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
-        <ul>
-          <li><a href="#tiles">Tegelweergave</a></li>
-          <li><a href="#base-tile">Basis tegelweergave</a></li>
-          <li><a href="#tile-columns">Breedte tegelweergave</a></li>
-          <li><a href="#tile-group">Groep met tegels</a></li>
-          <li><a href="#tile-img">Tegel met afbeelding</a></li>
-          <li><a href="#tiles-grouped-content">Tegel met gegroepeerde content</a>
-            <ul>
-              <li><a href="#tile-grouped-content">Gegroepeerde content</a></li>
-              <li><a href="#tile-button-container">Gegroepeerde knoppen</a></li>
-              <li><a href="#tile-grouped-horizontal">Gegroepeerde content horizontale weergave</a></li>
-              <li><a href="#tile-grouped-actions">Gegroepeerde content tegel-acties</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-
+    <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
       <div>
-          <article id="tiles">
-            <div>
-              <h1>Tegelweergave</h1>
-              <p>Tegelweergave kan gebruikt worden om content visueel te groeperen om gebruikers te laten zien welke content bij elkaar hoort. Veel gebruikte toepassingen voor tegelweergave zijn bijvoorbeeld nieuwsberichten.</p>
+        <ul>
+          <li><a href="../index.html"><span class="icon icon-home">Hoofdpagina icoon</span> Rijksoverheid CSS</a></li>
+          <li><a href="index.html">Online Componenten Bibliotheek</a></li>
+          <li><a href="#" aria-current="page">Tegelweergave</a></li>
+        </ul>
+      </div>
+    </nav>
 
-              <p>Beschikbare voorbeelden:</p>
-              <nav aria-label="Document-navigatie">
+  </header>
+
+  <main class="sidemenu" id="main-content" tabindex="-1">
+    <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+      <ul>
+        <li><a href="#tiles">Tegelweergave</a></li>
+        <li><a href="#base-tile">Basis tegelweergave</a></li>
+        <li><a href="#tile-columns">Breedte tegelweergave</a></li>
+        <li><a href="#tile-group">Groep met tegels</a></li>
+        <li><a href="#tile-img">Tegel met afbeelding</a></li>
+        <li><a href="#tiles-grouped-content">Tegel met gegroepeerde content</a>
+          <ul>
+            <li><a href="#tile-grouped-content">Gegroepeerde content</a></li>
+            <li><a href="#tile-button-container">Gegroepeerde knoppen</a></li>
+            <li><a href="#tile-grouped-horizontal">Gegroepeerde content horizontale weergave</a></li>
+            <li><a href="#tile-grouped-actions">Gegroepeerde content tegel-acties</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <div>
+      <article id="tiles">
+        <div>
+          <h1>Tegelweergave</h1>
+          <p>Tegelweergave kan gebruikt worden om content visueel te groeperen om gebruikers te laten zien welke content
+            bij elkaar hoort. Veel gebruikte toepassingen voor tegelweergave zijn bijvoorbeeld nieuwsberichten.</p>
+
+          <p>Beschikbare voorbeelden:</p>
+          <nav aria-label="Document-navigatie">
+            <ul>
+              <li><a href="#base-tile">Basis tegelweergave</a></li>
+              <li><a href="#tile-columns">Tegelweergave in kolommen</a></li>
+              <li><a href="#tiles">Groep met tegels</a></li>
+              <li><a href="#tile-img">Tegel met afbeelding</a></li>
+              <li><a href="#tiles-grouped-content">Tegel met gegroepeerde content</a>
                 <ul>
-                  <li><a href="#base-tile">Basis tegelweergave</a></li>
-                  <li><a href="#tile-columns">Tegelweergave in kolommen</a></li>
-                  <li><a href="#tiles">Groep met tegels</a></li>
-                  <li><a href="#tile-img">Tegel met afbeelding</a></li>
-                  <li><a href="#tiles-grouped-content">Tegel met gegroepeerde content</a>
-                    <ul>
-                      <li><a href="#tile-grouped-content">Gegroepeerde content</a></li>
-                      <li><a href="#tile-button-container">Gegroepeerde knoppen</a></li>
-                      <li><a href="#tile-grouped-horizontal">Gegroepeerde content horizontale weergave</a></li>
-                      <li><a href="#tile-grouped-actions">Gegroepeerde content tegel-acties</a></li>
-                    </ul>
-                  </li>
+                  <li><a href="#tile-grouped-content">Gegroepeerde content</a></li>
+                  <li><a href="#tile-button-container">Gegroepeerde knoppen</a></li>
+                  <li><a href="#tile-grouped-horizontal">Gegroepeerde content horizontale weergave</a></li>
+                  <li><a href="#tile-grouped-actions">Gegroepeerde content tegel-acties</a></li>
                 </ul>
-              </nav>
-            </div>
-          </article>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </article>
 
-          <article id="base-tile">
-            <div>
-              <h1>Tegelweergave op enkel element</h1>
-              <p>Geschikt voor het weergeven van een element dat visueel gegroepeerd dient te zijn of visueel meer aandacht mag krijgen om de gebruiker te attenderen.</p>
+      <article id="base-tile">
+        <div>
+          <h1>Tegelweergave op enkel element</h1>
+          <p>Geschikt voor het weergeven van een element dat visueel gegroepeerd dient te zijn of visueel meer aandacht
+            mag krijgen om de gebruiker te attenderen.</p>
 
-              <p>Aandachtspunten:</p>
-              <ul>
-                <li>Geef het element de tegelweergave mee door <code>class="tile"</code> mee te geven.</li>
-                <li>De tegel gebruikt de volledig beschikbare breedte. Indien een smallere weergave gewenst is kan de tegel gecombineerd worden met de weergave in kolommen. Zie voor meer informatie <a href="">Tegelweergave in kolommen</a>.</li>
-              </ul>
+          <p>Aandachtspunten:</p>
+          <ul>
+            <li>Geef het element de tegelweergave mee door <code>class="tile"</code> mee te geven.</li>
+            <li>De tegel gebruikt de volledig beschikbare breedte. Indien een smallere weergave gewenst is kan de tegel
+              gecombineerd worden met de weergave in kolommen. Zie voor meer informatie <a href="">Tegelweergave in
+                kolommen</a>.</li>
+          </ul>
 
-              <p>Visueel voorbeeld:</p>
-              <div class="tile" role="group">
-                <h1>Lorem ipsum dolor set</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-              </div>
+          <p>Visueel voorbeeld:</p>
+          <div class="tile" role="group">
+            <h1>Lorem ipsum dolor set</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+              Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+          </div>
 
-              <p>Html-voorbeeld:</p>
-              <pre>
+          <p>Html-voorbeeld:</p>
+          <pre>
                 <code>
 &lt;div class="tile" role="group">
   &lt;h1>Lorem ipsum dolor set&lt;/h1>
@@ -99,31 +106,36 @@
 &lt;/div>
                 </code>
               </pre>
+        </div>
+      </article>
+
+      <article id="tile-columns">
+        <div>
+          <h1>Tegelweergave in kolommen</h1>
+          <p>De tegel gebruikt de volledig beschikbare breedte. Indien een smallere weergave gewenst is kan de tegel
+            gecombineerd worden met de weergave in kolommen.</p>
+
+          <p>Aandachtspunten:</p>
+          <ul>
+            <li>Om de breedte van de tegel(s) aan te passen kan gebruik worden gemaakt van de kolommen. Voor meer
+              informatie en de beschikbare weergaven zie: <a href="layout.html">Contentweergave</a>.</li>
+            <li>Plaats het tegel-element binnen een <code>div</code> met de <code>class</code> van het gewenste
+              contentweergave. Bijvoorbeeld <code>&lt;div class="column-3"></code>.</li>
+            <li><strong>Tip</strong> Voor het plaatsen van meer tegels is het efficiënter om gebruik te maken van <a
+                href="#tiles">Groep met tegels</a>.</li>
+          </ul>
+
+          <p>Visueel voorbeeld:</p>
+          <div class="column-3">
+            <div class="tile" role="group">
+              <h1>Lorem ipsum dolor set</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
             </div>
-          </article>
+          </div>
 
-          <article id="tile-columns">
-            <div>
-              <h1>Tegelweergave in kolommen</h1>
-              <p>De tegel gebruikt de volledig beschikbare breedte. Indien een smallere weergave gewenst is kan de tegel gecombineerd worden met de weergave in kolommen.</p>
-
-              <p>Aandachtspunten:</p>
-              <ul>
-                <li>Om de breedte van de tegel(s) aan te passen kan gebruik worden gemaakt van de kolommen. Voor meer informatie en de beschikbare weergaven zie: <a href="layout.html">Contentweergave</a>.</li>
-                <li>Plaats het tegel-element binnen een <code>div</code> met de <code>class</code> van het gewenste contentweergave. Bijvoorbeeld <code>&lt;div class="column-3"></code>.</li>
-                <li><strong>Tip</strong> Voor het plaatsen van meer tegels is het efficiënter om gebruik te maken van <a href="#tiles">Groep met tegels</a>.</li>
-              </ul>
-
-              <p>Visueel voorbeeld:</p>
-              <div class="column-3">
-                <div class="tile" role="group">
-                  <h1>Lorem ipsum dolor set</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                </div>
-              </div>
-
-              <p>Html-voorbeeld:</p>
-              <pre>
+          <p>Html-voorbeeld:</p>
+          <pre>
                 <code>
 &lt;div class="column-3">
   &lt;div class="tile" role="group">
@@ -133,42 +145,49 @@
 &lt;/div>
                 </code>
               </pre>
+        </div>
+      </article>
+
+      <article id="tile-group">
+        <div>
+          <h1>Groep met tegels</h1>
+          <p>Voor het efficiënt weergeven van een groep elementen met een tegelweergave.</p>
+
+          <p>Aandachtspunten:</p>
+
+          <ul>
+            <li>Groepeer de elementen die met de tegelweergave weergegeven dienen te worden binnen een <code>div</code>
+              of <code>ul</code> en geef deze <code>div</code> of <code>ul</code> de benodigde <code>class</code> mee.
+              Bijvoorbeeld: <code>&lt;div class="tiles"></code></li>
+            <li><strong>Tip</strong> Om de breedte van de tegel(s) aan te passen kan gebruik worden gemaakt van de
+              kolommen. Voor meer informatie en de beschikbare weergaven zie: <a href="layout.html">Contentweergave</a>.
+              Het onderstaande voorbeeld maakt gebruik van de contentweergave <code>column-3</code></li>
+          </ul>
+
+          <p>Visueel voorbeeld:</p>
+
+          <div class="tiles column-3">
+            <div role="group">
+              <h1>Lorem ipsum</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
             </div>
-          </article>
 
-          <article id="tile-group">
-            <div>
-              <h1>Groep met tegels</h1>
-              <p>Voor het efficiënt weergeven van een groep elementen met een tegelweergave.</p>
+            <div role="group">
+              <h1>Lorem ipsum</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
 
-              <p>Aandachtspunten:</p>
+            <div role="group">
+              <h1>Lorem ipsum</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+          </div>
 
-              <ul>
-                <li>Groepeer de elementen die met de tegelweergave weergegeven dienen te worden binnen een <code>div</code> of <code>ul</code> en geef deze <code>div</code> of <code>ul</code> de benodigde <code>class</code> mee. Bijvoorbeeld: <code>&lt;div class="tiles"></code></li>
-                <li><strong>Tip</strong> Om de breedte van de tegel(s) aan te passen kan gebruik worden gemaakt van de kolommen. Voor meer informatie en de beschikbare weergaven zie: <a href="layout.html">Contentweergave</a>. Het onderstaande voorbeeld maakt gebruik van de contentweergave <code>column-3</code></li>
-              </ul>
-
-              <p>Visueel voorbeeld:</p>
-
-              <div class="tiles column-3">
-                <div role="group">
-                  <h1>Lorem ipsum</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                </div>
-
-                <div role="group">
-                  <h1>Lorem ipsum</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                </div>
-
-                <div role="group">
-                  <h1>Lorem ipsum</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                </div>
-              </div>
-
-              <p>Html-voorbeeld:</p>
-              <pre>
+          <p>Html-voorbeeld:</p>
+          <pre>
                 <code>
 &lt;div class="tiles column-3">
   &lt;div role="group">
@@ -189,33 +208,34 @@
                 </code>
               </pre>
 
+        </div>
+      </article>
+
+      <article id="tile-img">
+        <div>
+          <h1>Tegel met afbeelding</h1>
+          <p>Tegelweergave met een afbeelding</p>
+
+          <p>Aandachtspunten:</p>
+
+          <ul>
+            <li>De afbeelding kan zowel als content of als kop toegvoegd worden.</li>
+            <li>Als de afbeelding het eerste element is binnen de tegel wordt deze visueel als kop weergegeven.</li>
+          </ul>
+
+          <p>Visueel voorbeeld afbeelding als content:</p>
+
+          <div class="column-3 tiles">
+            <div role="group">
+              <h1>Lorem ipsum</h1>
+              <img src="../images/beach.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
             </div>
-          </article>
+          </div>
 
-          <article id="tile-img">
-            <div>
-              <h1>Tegel met afbeelding</h1>
-              <p>Tegelweergave met een afbeelding</p>
-
-              <p>Aandachtspunten:</p>
-
-              <ul>
-                <li>De afbeelding kan zowel als content of als kop toegvoegd worden.</li>
-                <li>Als de afbeelding het eerste element is binnen de tegel wordt deze visueel als kop weergegeven.</li>
-              </ul>
-
-              <p>Visueel voorbeeld afbeelding als content:</p>
-
-              <div class="column-3 tiles">
-                <div role="group">
-                  <h1>Lorem ipsum</h1>
-                  <img src="../images/beach.jpg" alt="">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                </div>
-              </div>
-
-              <p>Html-voorbeeld:</p>
-              <pre>
+          <p>Html-voorbeeld:</p>
+          <pre>
                 <code>
 &lt;div class="column-3 tiles">
   &lt;div role="group">
@@ -227,18 +247,19 @@
                 </code>
               </pre>
 
-              <p>Visueel voorbeeld afbeelding als kop:</p>
-              <div class="column-3 tiles">
-                <div role="group">
-                  <img src="../images/beach.jpg" alt="">
-                  <h1>Lorem ipsum</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                </div>
-              </div>
+          <p>Visueel voorbeeld afbeelding als kop:</p>
+          <div class="column-3 tiles">
+            <div role="group">
+              <img src="../images/beach.jpg" alt="">
+              <h1>Lorem ipsum</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+            </div>
+          </div>
 
-              <p>Html-voorbeeld:</p>
+          <p>Html-voorbeeld:</p>
 
-              <pre>
+          <pre>
                 <code>
 &lt;div class="column-3 tiles">
   &lt;div role="group">
@@ -249,47 +270,51 @@
 &lt;/div>
                 </code>
               </pre>
-            </div>
-          </article>
+        </div>
+      </article>
 
-          <article id="tiles-grouped-content">
-            <div>
-              <h1>Tegel met gegroepeerde content</h1>
-              <p>Content groeperen binnen een element met tegelweergave</p>
+      <article id="tiles-grouped-content">
+        <div>
+          <h1>Tegel met gegroepeerde content</h1>
+          <p>Content groeperen binnen een element met tegelweergave</p>
 
-              <p>Aandachtspunten:</p>
+          <p>Aandachtspunten:</p>
 
-              <ul>
-                <li>Groepeer de content binnen een <code>&lt;div></code> binnen het tegelelement.</li>
-                <li>Gegroepeerde knoppen kunnen toegevoegd worden binnen een tegelelement. Gebruik hiervoor <code>&lt;div class="button-container"></code>. Voor meer informatie zie <a href="buttons.html#button-container">Knoppen groeperen</a>.</li>
-                <li>Voor het horizontaal weergeven van de gegroepeerde content voeg <code>class="horizontal-view"</code> toe. Op de <code>&lt;div></code> van de gegroepeerde content.</li>
-              </ul>
+          <ul>
+            <li>Groepeer de content binnen een <code>&lt;div></code> binnen het tegelelement.</li>
+            <li>Gegroepeerde knoppen kunnen toegevoegd worden binnen een tegelelement. Gebruik hiervoor
+              <code>&lt;div class="button-container"></code>. Voor meer informatie zie <a
+                href="buttons.html#button-container">Knoppen groeperen</a>.</li>
+            <li>Voor het horizontaal weergeven van de gegroepeerde content voeg <code>class="horizontal-view"</code>
+              toe. Op de <code>&lt;div></code> van de gegroepeerde content.</li>
+          </ul>
 
-              <p>Beschikbare voorbeelden:</p>
-              <nav aria-label="Groepeer opties binnen tegelelementen">
-                <ul>
-                  <li><a href="#tile-grouped-content">Gegroepeerde content</a></li>
-                  <li><a href="#tile-button-container">Gegroepeerde knoppen</a></li>
-                  <li><a href="#tile-grouped-horizontal">Gegroepeerde content horizontale weergave</a></li>
-                </ul>
-              </nav>
+          <p>Beschikbare voorbeelden:</p>
+          <nav aria-label="Groepeer opties binnen tegelelementen">
+            <ul>
+              <li><a href="#tile-grouped-content">Gegroepeerde content</a></li>
+              <li><a href="#tile-button-container">Gegroepeerde knoppen</a></li>
+              <li><a href="#tile-grouped-horizontal">Gegroepeerde content horizontale weergave</a></li>
+            </ul>
+          </nav>
 
-              <h2 id="tile-grouped-content">Gegroepeerde content</h2>
-              <p>Visueel voorbeeld:</p>
+          <h2 id="tile-grouped-content">Gegroepeerde content</h2>
+          <p>Visueel voorbeeld:</p>
 
-              <div class="tiles column-3">
-                <div role="group">
-                  <h1>Lorem ipsum</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  <div>
-                    <h1>Gegroepeerde content</h1>
-                    <p>Lorem ipsum dolor set amet</p>
-                  </div>
-                </div>
+          <div class="tiles column-3">
+            <div role="group">
+              <h1>Lorem ipsum</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <div>
+                <h1>Gegroepeerde content</h1>
+                <p>Lorem ipsum dolor set amet</p>
               </div>
+            </div>
+          </div>
 
-              <p>Html-voorbeeld:</p>
-              <pre>
+          <p>Html-voorbeeld:</p>
+          <pre>
                 <code>
 &lt;div class="tiles column-3">
   &lt;div role="group">
@@ -304,22 +329,23 @@
                 </code>
               </pre>
 
-              <h2 id="tile-button-container">Gegroepeerde knoppen</h2>
-              <p>Visueel voorbeeld:</p>
+          <h2 id="tile-button-container">Gegroepeerde knoppen</h2>
+          <p>Visueel voorbeeld:</p>
 
-              <div class="tiles column-3">
-                <div role="group">
-                  <h1>Lorem ipsum</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  <div class="button-container">
-                      <button class="secondary">Lorem</button>
-                      <button>Ipsum</button>
-                  </div>
-                </div>
+          <div class="tiles column-3">
+            <div role="group">
+              <h1>Lorem ipsum</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <div class="button-container">
+                <button class="secondary">Lorem</button>
+                <button>Ipsum</button>
               </div>
+            </div>
+          </div>
 
-              <p>Html-voorbeeld:</p>
-              <pre>
+          <p>Html-voorbeeld:</p>
+          <pre>
                 <code>
 &lt;div class="tiles column-3">
   &lt;div role="group">
@@ -334,22 +360,23 @@
                 </code>
               </pre>
 
-              <h2 id="tile-grouped-horizontal">Gegroepeerde content horizontale weergave</h2>
-              <p>Visueel voorbeeld:</p>
+          <h2 id="tile-grouped-horizontal">Gegroepeerde content horizontale weergave</h2>
+          <p>Visueel voorbeeld:</p>
 
-              <div class="tiles column-3">
-                <div role="group">
-                  <h1>Lorem ipsum</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  <div class="horizontal-view">
-                    <a href="">Lorem ipsum</a>
-                    <a href="">Dolor set</a>
-                  </div>
-                </div>
+          <div class="tiles column-3">
+            <div role="group">
+              <h1>Lorem ipsum</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <div class="horizontal-view">
+                <a href="">Lorem ipsum</a>
+                <a href="">Dolor set</a>
               </div>
+            </div>
+          </div>
 
-              <p>Html-voorbeeld:</p>
-              <pre>
+          <p>Html-voorbeeld:</p>
+          <pre>
                 <code>
 &lt;div class="tiles column-3">
   &lt;div role="group">
@@ -364,50 +391,54 @@
                 </code>
               </pre>
 
-              <h2 id="tile-grouped-actions">Gegroepeerde content tegel-acties</h2>
+          <h2 id="tile-grouped-actions">Gegroepeerde content tegel-acties</h2>
 
-              <p>Aandachtspunten:</p>
-              <ul>
-                <li>Actieknoppen kunnen aan het eind van de tegel uitgelijnd worden. Zodat alle actieknoppen op dezelfde hoogte geplaatst worden. Voeg de class <code>tile-actions</code> toe aan de gegroepeerde content binnen de tegel.</li>
-              </ul>
+          <p>Aandachtspunten:</p>
+          <ul>
+            <li>Actieknoppen kunnen aan het eind van de tegel uitgelijnd worden. Zodat alle actieknoppen op dezelfde
+              hoogte geplaatst worden. Voeg de class <code>tile-actions</code> toe aan de gegroepeerde content binnen de
+              tegel.</li>
+          </ul>
 
-              <p>Visueel voorbeeld:</p>
+          <p>Visueel voorbeeld:</p>
 
-              <div class="tiles column-3">
-                <div role="group">
-                  <img src="../images/beach.jpg" alt="">
-                  <h1>Lorem ipsum</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  <div class="tile-actions horizontal-view">
-                    <a href="">Lorem</a>
-                    <button>Dolor set</button>
-                  </div>
-                </div>
-
-                <div role="group">
-                  <img src="../images/beach.jpg" alt="">
-                  <h1>Lorem ipsum</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  <div class="tile-actions horizontal-view">
-                    <a href="">Lorem</a>
-                    <button>Dolor set</button>
-                  </div>
-                </div>
-
-                <div role="group">
-                  <img src="../images/beach.jpg" alt="">
-                  <h1>Lorem ipsum</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-                  <p>Ut et dui sapien.</p>
-                  <div class="tile-actions horizontal-view">
-                    <a href="">Lorem</a>
-                    <button>Dolor set</button>
-                  </div>
-                </div>
+          <div class="tiles column-3">
+            <div role="group">
+              <img src="../images/beach.jpg" alt="">
+              <h1>Lorem ipsum</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <div class="tile-actions horizontal-view">
+                <a href="">Lorem</a>
+                <button>Dolor set</button>
               </div>
+            </div>
 
-              <p>Html-voorbeeld:</p>
-              <pre>
+            <div role="group">
+              <img src="../images/beach.jpg" alt="">
+              <h1>Lorem ipsum</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="tile-actions horizontal-view">
+                <a href="">Lorem</a>
+                <button>Dolor set</button>
+              </div>
+            </div>
+
+            <div role="group">
+              <img src="../images/beach.jpg" alt="">
+              <h1>Lorem ipsum</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
+                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <p>Ut et dui sapien.</p>
+              <div class="tile-actions horizontal-view">
+                <a href="">Lorem</a>
+                <button>Dolor set</button>
+              </div>
+            </div>
+          </div>
+
+          <p>Html-voorbeeld:</p>
+          <pre>
                 <code>
 &lt;div class="tiles column-3">
   &lt;div role="group">
@@ -444,26 +475,28 @@
                 </code>
               </pre>
 
-            </div>
-          </article>
-
         </div>
+      </article>
 
-        <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het hoofdmenu</a>
-    </main>
+    </div>
 
-    <footer>
-      <div class="two-thirds-one-third">
-          <span class="slogan">Manon - Rijksoverheid css framework</span>
-          <nav aria-labelledby="footer-nav-1-heading">
-            <h1 id="footer-nav-1-heading">Service</h1>
-            <ul>
-              <li><a href="../index.html">Over</a></li>
-              <li><a href="../test/index.html">Styling tests</a></li>
-              <li><a href="index.html">Online componenten bibliotheek</a></li>
-            </ul>
-          </nav>
-        </div>
-      </footer>
-  </body>
+    <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het
+      hoofdmenu</a>
+  </main>
+
+  <footer>
+    <div class="two-thirds-one-third">
+      <span class="slogan">Manon - Rijksoverheid css framework</span>
+      <nav aria-labelledby="footer-nav-1-heading">
+        <h1 id="footer-nav-1-heading">Service</h1>
+        <ul>
+          <li><a href="../index.html">Over</a></li>
+          <li><a href="../test/index.html">Styling tests</a></li>
+          <li><a href="index.html">Online componenten bibliotheek</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+
 </html>
