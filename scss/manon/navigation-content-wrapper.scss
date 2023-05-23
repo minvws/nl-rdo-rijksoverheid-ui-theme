@@ -8,5 +8,5 @@
   --navigation-content-wrapper-padding-right: 0;
   --navigation-content-wrapper-padding-bottom: 0;
   --navigation-content-wrapper-padding-left: 0;
-  --navigation-content-wrapper-max-width: 82rem;
+  --navigation-content-wrapper-max-width: var(--content-max-width);
 }
