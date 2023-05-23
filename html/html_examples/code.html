@@ -1,88 +1,99 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <title>Code - Rijksoverheid CSS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../dist/css/main.css" rel="stylesheet">
-    <link href="../dist/img/favicon.ico" rel="shortcut icon">
-    <script defer src="../dist/js/sidemenu.js"></script>
-  </head>
-  <body class="test-cases">
-    <header>
-      <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
-      <a href="" class="ro-logo">
-        <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
-        Rijksoverheid
-      </a>
 
-      <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
-        <div>
-          <ul>
-              <li><a href="../index.html">Rijksoverheid CSS</a></li>
-              <li><a href="index.html">Online Componenten Bibliotheek</a></li>
-              <li><a href="#" aria-current="page">Code</a></li>
-          </ul>
-        </div>
-      </nav>
+<head>
+  <meta charset="UTF-8">
+  <title>Code - Rijksoverheid CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../dist/css/main.css" rel="stylesheet">
+  <link href="../dist/img/favicon.ico" rel="shortcut icon">
+  <script defer src="../dist/js/sidemenu.js"></script>
+</head>
 
-    </header>
+<body class="test-cases">
+  <header>
+    <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
+    <a href="" class="ro-logo">
+      <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
+      Rijksoverheid
+    </a>
 
-    <main class="sidemenu" id="main-content" tabindex="-1">
-      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
-        <ul>
-          <li><a href="inline-code">Code binnen tekst</a></li>
-          <li><a href="block-code">Code-blok</a></li>
-        </ul>
-      </nav>
-
+    <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
       <div>
-          <article>
-            <div>
-              <h1>Code</h1>
-              <p>Bij het schrijven van toelichting over het gebruik van code is het veelvoorkomend dat een verwijzing naar een specifiek code voorbeeld nodig of behulpzaam is. Maak hierbij gebruik van het <code>&lt;code></code>-label zodat het voor zowel gebruikers als hulptechnologiën duidelijk is wat voor content getoont wordt.</p>
-              <nav aria-label="Document-navigatie">
-                <ul>
-                  <li><a href="inline-code">Code binnen tekst</a></li>
-                  <li><a href="block-code">Code-blok</a></li>
-                </ul>
-              </nav>
-            </div>
-          </article>
+        <ul>
+          <li><a href="../index.html"><span class="icon icon-home">Hoofdpagina icoon</span> Rijksoverheid CSS</a></li>
+          <li><a href="index.html">Online Componenten Bibliotheek</a></li>
+          <li><a href="#" aria-current="page">Code</a></li>
+        </ul>
+      </div>
+    </nav>
 
-          <article id="inline-code">
-            <div>
-              <h1>Code binnen tekst</h1>
-              <p>Voor het toevoegen van voorbeeldcode of toelichting over code binnen teksten.</p>
+  </header>
 
-              <ul>
-                <li>Om code toe te voegen binnen een tekst kan gebruik gemaakt worden van de <code>&lt;code></code> tag.</li>
-                <li>Vervang de <code>&lt;</code> met <code>&amp;lt;</code> om ervoor te zorgen dat de code weergegeven wordt als tekst en niet uitgevoerd wordt door de browser.</li>
-              </ul>
-              <p>Visueel voorbeeld:</p>
-              <code>&lt;div></code>
-              <p>Html-voorbeeld:</p>
-              <pre>
+  <main class="sidemenu" id="main-content" tabindex="-1">
+    <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+      <ul>
+        <li><a href="inline-code">Code binnen tekst</a></li>
+        <li><a href="block-code">Code-blok</a></li>
+      </ul>
+    </nav>
+
+    <div>
+      <article>
+        <div>
+          <h1>Code</h1>
+          <p>Bij het schrijven van toelichting over het gebruik van code is het veelvoorkomend dat een verwijzing naar
+            een specifiek code voorbeeld nodig of behulpzaam is. Maak hierbij gebruik van het
+            <code>&lt;code></code>-label zodat het voor zowel gebruikers als hulptechnologiën duidelijk is wat voor
+            content getoont wordt.</p>
+          <nav aria-label="Document-navigatie">
+            <ul>
+              <li><a href="inline-code">Code binnen tekst</a></li>
+              <li><a href="block-code">Code-blok</a></li>
+            </ul>
+          </nav>
+        </div>
+      </article>
+
+      <article id="inline-code">
+        <div>
+          <h1>Code binnen tekst</h1>
+          <p>Voor het toevoegen van voorbeeldcode of toelichting over code binnen teksten.</p>
+
+          <ul>
+            <li>Om code toe te voegen binnen een tekst kan gebruik gemaakt worden van de <code>&lt;code></code> tag.
+            </li>
+            <li>Vervang de <code>&lt;</code> met <code>&amp;lt;</code> om ervoor te zorgen dat de code weergegeven wordt
+              als tekst en niet uitgevoerd wordt door de browser.</li>
+          </ul>
+          <p>Visueel voorbeeld:</p>
+          <code>&lt;div></code>
+          <p>Html-voorbeeld:</p>
+          <pre>
                 <code>
 &lt;code>&amp;lt;div>&lt;/code>
                 </code>
               </pre>
-            </div>
-          </article>
+        </div>
+      </article>
 
-          <article id="block-code">
-            <div>
-              <h1>Code-blok</h1>
-              <p>Voor het toevoegen van voorbeeldcode.</p>
+      <article id="block-code">
+        <div>
+          <h1>Code-blok</h1>
+          <p>Voor het toevoegen van voorbeeldcode.</p>
 
-              <ul>
-                <li>Plaats de <code>&lt;code></code> binnen een <code>&lt;pre></code> of een <code>&lt;div></code> om de code weer te geven als blok.</li>
-                <li>Vervang alle <code>&lt;</code> met <code>&amp;lt;</code> om ervoor te zorgen dat de code weergegeven wordt als tekst en niet uitgevoerd wordt door de browser.</li>
-                <li>Het gebruik van de <code>&lt;pre></code> om de <code>&lt;code></code> zorgt ervoor dat de tekst exact zo getoont wordt als geschreven binnen het html-bestand. <strong>Let op, extra tabs, spaties en enters worden hierbij ook getoond.</strong></li>
-                <li>Gebruik van <code>&lt;pre></code> heeft de voorkeur aangezien dit de correcte html-tag is.</li>
-              </ul>
-              <p>Visueel voorbeeld met <code>&lt;pre></code>:</p>
-              <pre>
+          <ul>
+            <li>Plaats de <code>&lt;code></code> binnen een <code>&lt;pre></code> of een <code>&lt;div></code> om de
+              code weer te geven als blok.</li>
+            <li>Vervang alle <code>&lt;</code> met <code>&amp;lt;</code> om ervoor te zorgen dat de code weergegeven
+              wordt als tekst en niet uitgevoerd wordt door de browser.</li>
+            <li>Het gebruik van de <code>&lt;pre></code> om de <code>&lt;code></code> zorgt ervoor dat de tekst exact zo
+              getoont wordt als geschreven binnen het html-bestand. <strong>Let op, extra tabs, spaties en enters worden
+                hierbij ook getoond.</strong></li>
+            <li>Gebruik van <code>&lt;pre></code> heeft de voorkeur aangezien dit de correcte html-tag is.</li>
+          </ul>
+          <p>Visueel voorbeeld met <code>&lt;pre></code>:</p>
+          <pre>
                 <code>
 &lt;pre>
   &lt;code>
@@ -92,8 +103,8 @@
                 </code>
               </pre>
 
-              <p>Html-voorbeeld met <code>&lt;pre>:</code></p>
-              <pre>
+          <p>Html-voorbeeld met <code>&lt;pre>:</code></p>
+          <pre>
                 <code>
 &amp;lt;pre>
   &amp;lt;code>
@@ -104,19 +115,19 @@
               </pre>
 
 
-              <p>Visueel voorbeeld met <code>&lt;div class="code-block"></code>:</p>
-              <div class="code-block">
-                <code>
+          <p>Visueel voorbeeld met <code>&lt;div class="code-block"></code>:</p>
+          <div class="code-block">
+            <code>
 &lt;div class="code-block">
   &lt;code>
   &lt;!-- Lorem ipsum -->
   &lt;/code>
 &lt;/div>
                 </code>
-              </div>
+          </div>
 
-              <p>Html-voorbeeld met <code>&lt;div class="code-block"></code>:</p>
-              <pre>
+          <p>Html-voorbeeld met <code>&lt;div class="code-block"></code>:</p>
+          <pre>
                 <code>
 &amp;lt;div class="code-block">
   &amp;lt;code>
@@ -125,37 +136,41 @@
 &amp;lt;/div>
                 </code>
               </pre>
-            </div>
-          </article>
-          <article>
-            <div>
-              <h1>Voor meer informatie zie:</h1>
-              <p>Meer informatie over het gebruik van deze html-tags kan gevonden worden via de onderstaande bronnen.</p>
-              <nav aria-label="Overzicht bronnen">
-                <ul>
-                  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code" rel="external" title="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code">Code MDN</a></li>
-                  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre" rel="external" title="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre">Pre MDN</a></li>
-                </ul>
-              </nav>
-              </div>
-          </article>
         </div>
-
-        <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het hoofdmenu</a>
-    </main>
-
-    <footer>
-      <div class="two-thirds-one-third">
-          <span class="slogan">Manon - Rijksoverheid css framework</span>
-          <nav aria-labelledby="footer-nav-1-heading">
-            <h1 id="footer-nav-1-heading">Service</h1>
+      </article>
+      <article>
+        <div>
+          <h1>Voor meer informatie zie:</h1>
+          <p>Meer informatie over het gebruik van deze html-tags kan gevonden worden via de onderstaande bronnen.</p>
+          <nav aria-label="Overzicht bronnen">
             <ul>
-              <li><a href="../index.html">Over</a></li>
-              <li><a href="../test/index.html">Styling tests</a></li>
-              <li><a href="index.html">Online componenten bibliotheek</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code" rel="external"
+                  title="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code">Code MDN</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre" rel="external"
+                  title="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre">Pre MDN</a></li>
             </ul>
           </nav>
         </div>
-      </footer>
-  </body>
+      </article>
+    </div>
+
+    <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het
+      hoofdmenu</a>
+  </main>
+
+  <footer>
+    <div class="two-thirds-one-third">
+      <span class="slogan">Manon - Rijksoverheid css framework</span>
+      <nav aria-labelledby="footer-nav-1-heading">
+        <h1 id="footer-nav-1-heading">Service</h1>
+        <ul>
+          <li><a href="../index.html">Over</a></li>
+          <li><a href="../test/index.html">Styling tests</a></li>
+          <li><a href="index.html">Online componenten bibliotheek</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+
 </html>

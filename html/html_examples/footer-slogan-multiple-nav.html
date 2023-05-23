@@ -1,69 +1,78 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <title>Footer met slogan en meerdere navigatie-elementen - Rijksoverheid CSS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../dist/css/main.css" rel="stylesheet">
-    <link href="../dist/img/favicon.ico" rel="shortcut icon">
-    <script defer src="../dist/js/sidemenu.js"></script>
-  </head>
-  <body class="test-cases">
-    <header>
-      <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
-      <a href="" class="ro-logo">
-        <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
-        Rijksoverheid
-      </a>
 
-      <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
+<head>
+  <meta charset="UTF-8">
+  <title>Footer met slogan en meerdere navigatie-elementen - Rijksoverheid CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../dist/css/main.css" rel="stylesheet">
+  <link href="../dist/img/favicon.ico" rel="shortcut icon">
+  <script defer src="../dist/js/sidemenu.js"></script>
+</head>
+
+<body class="test-cases">
+  <header>
+    <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
+    <a href="" class="ro-logo">
+      <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
+      Rijksoverheid
+    </a>
+
+    <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
+      <div>
+        <ul>
+          <li><a href="../index.html"><span class="icon icon-home">Hoofdpagina icoon</span> Rijksoverheid CSS</a></li>
+          <li><a href="index.html">Online Componenten Bibliotheek</a></li>
+          <li><a href="footer.html">Footer</a></li>
+          <li><a href="#" aria-current="page">Footer met slogan en meerdere navigatie-elementen</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+
+  <main class="sidemenu" id="main-content" tabindex="-1">
+    <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+      <ul>
+        <li><a href="#footer-empty">Footer met slogan en meerdere navigatie-elementen</a></li>
+        <li><a href="#example">Voorbeeld</a></li>
+      </ul>
+    </nav>
+
+    <div>
+      <article>
         <div>
+          <h1 id="footer-empty">Footer met slogan en meerdere navigatie-elementen</h1>
+          <p>De footer vertelt de gebruiker dat het einde van de pagina bereikt is. Daarom is het belangrijk om op
+            iedere pagina een footer toe te voegen, zelfs als deze verder geen content bevat.</p>
+          <p>De footer kan gebruikt worden om de slogan over te brengen en de gebruiker extra navigatie-opties te
+            bieden.</p>
+          <p>De footer krijgt automatisch de gekozen applicatiekleur.</p>
+
           <ul>
-              <li><a href="../index.html">Rijksoverheid CSS</a></li>
-              <li><a href="index.html">Online Componenten Bibliotheek</a></li>
-              <li><a href="footer.html">Footer</a></li>
-              <li><a href="#" aria-current="page">Footer met slogan en meerdere navigatie-elementen</a></li>
+            <li>Plaats de navigatielinks binnen een <code>&lt;nav></code>.</li>
+            <li>Plaats een lijst aan navigatie-elementen binnen een <code>&lt;ul></code>. Zie onderstaand voorbeeld voor
+              meer informatie of bekijk <a href="list.html">Lijstweergave</a> voor meer informatie over het toevoegen
+              van lijsten.</li>
+            <li>Iedere lijst met navigatie-elementen dient een beschrijvende titel te bevatten voor
+              gebruiksvriendelijkheid.</li>
+            <li>Als er gebruik gemaakt wordt van meerdere navigatie-elementen binnen de footer dienen deze gegroeperd te
+              zijn zodat ze gezamelijk schalen op kleinere schermen. Voeg hiervoor een <code>&lt;div></code> toe rondom
+              de navigatie-elementen.</li>
           </ul>
         </div>
-      </nav>
+      </article>
 
-    </header>
+      <article id="example">
+        <div>
 
-    <main class="sidemenu" id="main-content" tabindex="-1">
-        <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
-            <ul>
-                <li><a href="#footer-empty">Footer met slogan en meerdere navigatie-elementen</a></li>
-                <li><a href="#example">Voorbeeld</a></li>
-            </ul>
-        </nav>
+          <h2>Voorbeeld</h2>
+          <p>Visueel voorbeeld onderaan deze pagina</p>
+        </div>
 
         <div>
-        <article>
-          <div>
-            <h1 id="footer-empty">Footer met slogan en meerdere navigatie-elementen</h1>
-            <p>De footer vertelt de gebruiker dat het einde van de pagina bereikt is. Daarom is het belangrijk om op iedere pagina een footer toe te voegen, zelfs als deze verder geen content bevat.</p>
-            <p>De footer kan gebruikt worden om de slogan over te brengen en de gebruiker extra navigatie-opties te bieden.</p>
-            <p>De footer krijgt automatisch de gekozen applicatiekleur.</p>
-
-            <ul>
-                <li>Plaats de navigatielinks binnen een <code>&lt;nav></code>.</li>
-                <li>Plaats een lijst aan navigatie-elementen binnen een <code>&lt;ul></code>. Zie onderstaand voorbeeld voor meer informatie of bekijk <a href="list.html">Lijstweergave</a> voor meer informatie over het toevoegen van lijsten.</li>
-                <li>Iedere lijst met navigatie-elementen dient een beschrijvende titel te bevatten voor gebruiksvriendelijkheid.</li>
-                <li>Als er gebruik gemaakt wordt van meerdere navigatie-elementen binnen de footer dienen deze gegroeperd te zijn zodat ze gezamelijk schalen op kleinere schermen. Voeg hiervoor een <code>&lt;div></code> toe rondom de navigatie-elementen.</li>
-              </ul>
-          </div>
-        </article>
-
-        <article id="example">
-          <div>
-
-            <h2>Voorbeeld</h2>
-            <p>Visueel voorbeeld onderaan deze pagina</p>
-          </div>
-
-          <div>
-            <p>Html voorbeeld:</p>
-            <pre>
+          <p>Html voorbeeld:</p>
+          <pre>
               <code>
 &lt;footer>
     &lt;div class="one-third-two-thirds">
@@ -108,53 +117,55 @@
 &lt;/footer>
               </code>
             </pre>
-          </div>
-        </article>
+        </div>
+      </article>
+    </div>
+
+    <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het
+      hoofdmenu</a>
+  </main>
+
+  <footer>
+    <div class="one-third-two-thirds">
+      <span class="slogan">De Rijksoverheid. Voor Nederland</span>
+
+      <div class="column-3">
+        <nav aria-labelledby="example-footer-2-nav-1-heading">
+          <h2 id="example-footer-2-nav-1-heading">Lorem ipsum</h2>
+          <ul>
+            <li><a href="">Lorem ipsum</a></li>
+            <li><a href="">Ipsum</a></li>
+            <li><a href="">Dolor set amet</a></li>
+            <li><a href="">set</a></li>
+            <li><a href="">Amet</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-labelledby="example-footer-2-nav-2-heading">
+          <h2 id="example-footer-2-nav-2-heading">Lorem ipsum</h2>
+          <ul>
+            <li><a href="">Lorem</a></li>
+            <li><a href="">Ipsum</a></li>
+            <li><a href="">Dolor</a></li>
+            <li><a href="">set</a></li>
+            <li><a href="">Amet</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-labelledby="example-footer-2-nav-3-heading">
+          <h2 id="example-footer-2-nav-3-heading">Lorem ipsum</h2>
+          <ul>
+            <li><a href="">Lorem</a></li>
+            <li><a href="">Ipsum</a></li>
+            <li><a href="">Dolor</a></li>
+            <li><a href="">set</a></li>
+            <li><a href="">Amet</a></li>
+          </ul>
+        </nav>
       </div>
 
-      <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het hoofdmenu</a>
-    </main>
+    </div>
+  </footer>
+</body>
 
-    <footer>
-        <div class="one-third-two-thirds">
-          <span class="slogan">De Rijksoverheid. Voor Nederland</span>
-
-          <div class="column-3">
-            <nav aria-labelledby="example-footer-2-nav-1-heading">
-              <h2 id="example-footer-2-nav-1-heading">Lorem ipsum</h2>
-              <ul>
-                <li><a href="">Lorem ipsum</a></li>
-                <li><a href="">Ipsum</a></li>
-                <li><a href="">Dolor set amet</a></li>
-                <li><a href="">set</a></li>
-                <li><a href="">Amet</a></li>
-              </ul>
-            </nav>
-
-            <nav aria-labelledby="example-footer-2-nav-2-heading">
-              <h2 id="example-footer-2-nav-2-heading">Lorem ipsum</h2>
-              <ul>
-                <li><a href="">Lorem</a></li>
-                <li><a href="">Ipsum</a></li>
-                <li><a href="">Dolor</a></li>
-                <li><a href="">set</a></li>
-                <li><a href="">Amet</a></li>
-              </ul>
-            </nav>
-
-            <nav aria-labelledby="example-footer-2-nav-3-heading">
-              <h2 id="example-footer-2-nav-3-heading">Lorem ipsum</h2>
-              <ul>
-                <li><a href="">Lorem</a></li>
-                <li><a href="">Ipsum</a></li>
-                <li><a href="">Dolor</a></li>
-                <li><a href="">set</a></li>
-                <li><a href="">Amet</a></li>
-              </ul>
-            </nav>
-          </div>
-
-        </div>
-    </footer>
-  </body>
 </html>

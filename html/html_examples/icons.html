@@ -1,114 +1,121 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <title>Iconen - Rijksoverheid CSS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../dist/css/main.css" rel="stylesheet">
-    <link href="../dist/img/favicon.ico" rel="shortcut icon">
-    <script defer src="../dist/js/sidemenu.js"></script>
-  </head>
-  <body class="test-cases">
-    <header>
-      <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
-      <a href="" class="ro-logo">
-        <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
-        Rijksoverheid
-      </a>
 
-      <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
-        <div>
-          <ul>
-              <li><a href="../index.html">Rijksoverheid CSS</a></li>
-              <li><a href="index.html">Online Componenten Bibliotheek</a></li>
-              <li><a href="#" aria-current="page">Iconen</a></li>
-          </ul>
-        </div>
-      </nav>
+<head>
+  <meta charset="UTF-8">
+  <title>Iconen - Rijksoverheid CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../dist/css/main.css" rel="stylesheet">
+  <link href="../dist/img/favicon.ico" rel="shortcut icon">
+  <script defer src="../dist/js/sidemenu.js"></script>
+</head>
 
-    </header>
-    <main class="sidemenu" id="main-content" tabindex="-1">
-      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
-        <ul>
-            <li><a href="#">Iconen</a></li>
-            <li><a href="#icon-implementation">Iconen gebruiken</a></li>
-            <li><a href="#icon-implementation-css">Iconen toevoegen via css</a></li>
-        </ul>
-      </nav>
+<body class="test-cases">
+  <header>
+    <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
+    <a href="" class="ro-logo">
+      <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
+      Rijksoverheid
+    </a>
 
+    <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
       <div>
-        <article>
-            <div>
-              <h1>Iconen</h1>
-              <p>Voor het toevoegen van de Rijksoverheid-iconen binnen de website kan gebruikt gemaakt worden van de unicode-codes.</p>
+        <ul>
+          <li><a href="../index.html"><span class="icon icon-home">Hoofdpagina icoon</span> Rijksoverheid CSS</a></li>
+          <li><a href="index.html">Online Componenten Bibliotheek</a></li>
+          <li><a href="#" aria-current="page">Iconen</a></li>
+        </ul>
+      </div>
+    </nav>
 
-              <p>Overzicht van de beschikbare iconen:</p>
+  </header>
+  <main class="sidemenu" id="main-content" tabindex="-1">
+    <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+      <ul>
+        <li><a href="#">Iconen</a></li>
+        <li><a href="#icon-implementation">Iconen gebruiken</a></li>
+        <li><a href="#icon-implementation-css">Iconen toevoegen via css</a></li>
+      </ul>
+    </nav>
 
-              <nav class="column-3" aria-label="Iconensets" id="icon-set">
-                <ul>
-                  <li><a href="iconset/basic-set.html">Basisset</a></li>
-                  <li><a href="iconset/health.html">Gezondheid en zorg</a></li>
-                  <li><a href="iconset/computer-and-internet.html">Computer en internet</a></li>
-                  <li><a href="iconset/buildings.html">Gebouwen</a></li>
-                </ul>
-              </nav>
+    <div>
+      <article>
+        <div>
+          <h1>Iconen</h1>
+          <p>Voor het toevoegen van de Rijksoverheid-iconen binnen de website kan gebruikt gemaakt worden van de
+            unicode-codes.</p>
 
-              <h2 id="icon-implementation">Iconen gebruiken</h2>
-              <p>Voeg de class <code>icon</code> om gebruik te maken van de standaard icon-styling, en de class van het benodigde icoon, bijvoorbeeld: <code>icon-home</code>.</p>
+          <p>Overzicht van de beschikbare iconen:</p>
 
-              <h3>Paragraaf met icoon</h3>
-              <p>Visueel voorbeeld:</p>
-              <p class="icon icon-home">Lorem ipsum</p>
+          <nav class="column-3" aria-label="Iconensets" id="icon-set">
+            <ul>
+              <li><a href="iconset/basic-set.html">Basisset</a></li>
+              <li><a href="iconset/health.html">Gezondheid en zorg</a></li>
+              <li><a href="iconset/computer-and-internet.html">Computer en internet</a></li>
+              <li><a href="iconset/buildings.html">Gebouwen</a></li>
+            </ul>
+          </nav>
 
-              <p>Html-voorbeeld:</p>
+          <h2 id="icon-implementation">Iconen gebruiken</h2>
+          <p>Voeg de class <code>icon</code> om gebruik te maken van de standaard icon-styling, en de class van het
+            benodigde icoon, bijvoorbeeld: <code>icon-home</code>.</p>
 
-              <pre>
+          <h3>Paragraaf met icoon</h3>
+          <p>Visueel voorbeeld:</p>
+          <p class="icon icon-home">Lorem ipsum</p>
+
+          <p>Html-voorbeeld:</p>
+
+          <pre>
                 <code>
 &lt;p class="icon icon-home">Lorem ipsum&lt;/p>
                 </code>
               </pre>
 
 
-              <h3>Knop met icoon en tekst</h3>
-              <p>Visueel voorbeeld:</p>
-              <a href="../index.html" class="button"><span class=" icon icon-home"></span>Hoofdpagina</a>
+          <h3>Knop met icoon en tekst</h3>
+          <p>Visueel voorbeeld:</p>
+          <a href="../index.html" class="button"><span class=" icon icon-home"></span>Hoofdpagina</a>
 
-              <p>Html-voorbeeld:</p>
+          <p>Html-voorbeeld:</p>
 
-              <pre>
+          <pre>
                 <code>
 &lt;a href="../index.html" class="button">&lt;span class=" icon icon-home">&lt;/span>Hoofdpagina&lt;/a>
                 </code>
               </pre>
 
-              <h3>Icoonknop</h3>
-              <ul>
-                <li>Voor meer informatie en aandachtspunten zie <a href="buttons.html#button-icon">Icoonknoppen</a>.</li>
-              </ul>
-              <p>Visueel voorbeeld:</p>
-              <a href="../index.html" class="button icon icon-home">Hoofdpagina</a>
-              <button class="icon icon-home">Hoofdpagina</button>
+          <h3>Icoonknop</h3>
+          <ul>
+            <li>Voor meer informatie en aandachtspunten zie <a href="buttons.html#button-icon">Icoonknoppen</a>.</li>
+          </ul>
+          <p>Visueel voorbeeld:</p>
+          <a href="../index.html" class="button icon icon-home">Hoofdpagina</a>
+          <button class="icon icon-home">Hoofdpagina</button>
 
-              <p>Html-voorbeeld:</p>
+          <p>Html-voorbeeld:</p>
 
-              <pre>
+          <pre>
                 <code>
 &lt;a href="../index.html" class="button icon icon-home">Hoofdpagina&lt;/a>
 &lt;button class="icon icon-home">Hoofdpagina&lt;/button>
                 </code>
               </pre>
 
-              <h2 id="icon-implementation-css">Icoon toevoegen via css</h2>
-              <p>Voor het toevoegen of overschrijven van iconen kunnen deze ook via een eigen <code>stylesheet</code> toegevoegd worden. Gebruik hiervoor de onderstaande css.</p>
+          <h2 id="icon-implementation-css">Icoon toevoegen via css</h2>
+          <p>Voor het toevoegen of overschrijven van iconen kunnen deze ook via een eigen <code>stylesheet</code>
+            toegevoegd worden. Gebruik hiervoor de onderstaande css.</p>
 
-              <p>Aandachtspunten:</p>
-              <ul>
-                <li>Plaats het icoon via een pseudo-element Bijvoorbeeld: <code>:before</code> of <code>:after</code> op het gewenste element.</li>
-                <li>Voeg de bijbehorende icoon-code toe binnen het <code>content</code> attribuut. Voor een overzicht van de beschikbare iconen zie: <a href="#icon-set">iconen</a></li>
-              </ul>
-              <p>CSS-voorbeeld <code>before</code>:</p>
+          <p>Aandachtspunten:</p>
+          <ul>
+            <li>Plaats het icoon via een pseudo-element Bijvoorbeeld: <code>:before</code> of <code>:after</code> op het
+              gewenste element.</li>
+            <li>Voeg de bijbehorende icoon-code toe binnen het <code>content</code> attribuut. Voor een overzicht van de
+              beschikbare iconen zie: <a href="#icon-set">iconen</a></li>
+          </ul>
+          <p>CSS-voorbeeld <code>before</code>:</p>
 
-              <pre>
+          <pre>
                 <code>
 .example-object:before {
   content: "\E805";
@@ -127,8 +134,8 @@
                 </code>
               </pre>
 
-              <p>CSS-voorbeeld <code>after</code>:</p>
-              <pre>
+          <p>CSS-voorbeeld <code>after</code>:</p>
+          <pre>
                 <code>
 .example-object:after {
   content: "\E805";
@@ -146,25 +153,27 @@
 }
                 </code>
               </pre>
-            </div>
-        </article>
-      </div>
-
-      <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het hoofdmenu</a>
-    </main>
-
-    <footer>
-      <div class="two-thirds-one-third">
-          <span class="slogan">Manon - Rijksoverheid css framework</span>
-          <nav aria-labelledby="footer-nav-1-heading">
-            <h1 id="footer-nav-1-heading">Service</h1>
-            <ul>
-              <li><a href="../index.html">Over</a></li>
-              <li><a href="../test/index.html">Styling tests</a></li>
-              <li><a href="index.html">Online componenten bibliotheek</a></li>
-            </ul>
-          </nav>
         </div>
-      </footer>
-  </body>
+      </article>
+    </div>
+
+    <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het
+      hoofdmenu</a>
+  </main>
+
+  <footer>
+    <div class="two-thirds-one-third">
+      <span class="slogan">Manon - Rijksoverheid css framework</span>
+      <nav aria-labelledby="footer-nav-1-heading">
+        <h1 id="footer-nav-1-heading">Service</h1>
+        <ul>
+          <li><a href="../index.html">Over</a></li>
+          <li><a href="../test/index.html">Styling tests</a></li>
+          <li><a href="index.html">Online componenten bibliotheek</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+
 </html>

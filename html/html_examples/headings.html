@@ -1,147 +1,153 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <title>Titels - Rijksoverheid CSS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../dist/css/main.css" rel="stylesheet">
-    <link href="../dist/img/favicon.ico" rel="shortcut icon">
-    <script defer src="../dist/js/sidemenu.js"></script>
-  </head>
-  <body class="test-cases">
-    <header>
-      <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
-      <a href="" class="ro-logo">
-        <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
-        Rijksoverheid
-      </a>
 
-      <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
+<head>
+  <meta charset="UTF-8">
+  <title>Titels - Rijksoverheid CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../dist/css/main.css" rel="stylesheet">
+  <link href="../dist/img/favicon.ico" rel="shortcut icon">
+  <script defer src="../dist/js/sidemenu.js"></script>
+</head>
+
+<body class="test-cases">
+  <header>
+    <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
+    <a href="" class="ro-logo">
+      <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
+      Rijksoverheid
+    </a>
+
+    <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
+      <div>
+        <ul>
+          <li><a href="../index.html"><span class="icon icon-home">Hoofdpagina icoon</span> Rijksoverheid CSS</a></li>
+          <li><a href="index.html">Online Componenten Bibliotheek</a></li>
+          <li><a href="#" aria-current="page">Titels</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+
+  <main class="sidemenu" id="main-content" tabindex="-1">
+    <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+      <ul>
+        <li><a href="#headings">headings</a></li>
+        <li><a href="#h1">h1</a></li>
+        <li><a href="#h2">h2</a></li>
+        <li><a href="#h3">h3</a></li>
+        <li><a href="#h4">h4</a></li>
+        <li><a href="#h5">h5</a></li>
+        <li><a href="#h6">h6</a></li>
+      </ul>
+    </nav>
+
+    <div>
+      <article>
         <div>
-          <ul>
-              <li><a href="../index.html">Rijksoverheid CSS</a></li>
-              <li><a href="index.html">Online Componenten Bibliotheek</a></li>
-              <li><a href="#" aria-current="page">Titels</a></li>
-          </ul>
-        </div>
-      </nav>
+          <h1>Titels</h1>
+          <p>Titels hebben een grote, kleur en lettertype afhankelijk van de context waar ze zich in bevinden.</p>
+          <p>Zo is de titel in een hero-sectie groter dan de titel binnen een navigatie-element. Op deze pagina staan de
+            voorbeelden van de basis-styles van de titels. Elementspecifieke styling wordt afgehandeld binnen de
+            elementen.</p>
 
-    </header>
-
-    <main class="sidemenu" id="main-content" tabindex="-1">
-        <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+          <p>Beschikbare voorbeelden:</p>
+          <nav aria-label="Document-navigatie">
             <ul>
-                <li><a href="#headings">headings</a></li>
-                <li><a href="#h1">h1</a></li>
-                <li><a href="#h2">h2</a></li>
-                <li><a href="#h3">h3</a></li>
-                <li><a href="#h4">h4</a></li>
-                <li><a href="#h5">h5</a></li>
-                <li><a href="#h6">h6</a></li>
+              <li><a href="#headings">headings</a></li>
+              <li><a href="#h1">h1</a></li>
+              <li><a href="#h2">h2</a></li>
+              <li><a href="#h3">h3</a></li>
+              <li><a href="#h4">h4</a></li>
+              <li><a href="#h5">h5</a></li>
+              <li><a href="#h6">h6</a></li>
             </ul>
-        </nav>
+          </nav>
 
-        <div>
-            <article>
-                <div>
-                    <h1>Titels</h1>
-                    <p>Titels hebben een grote, kleur en lettertype afhankelijk van de context waar ze zich in bevinden.</p>
-                    <p>Zo is de titel in een hero-sectie groter dan de titel binnen een navigatie-element. Op deze pagina staan de voorbeelden van de basis-styles van de titels. Elementspecifieke styling wordt afgehandeld binnen de elementen.</p>
+          <div id="headings">
+            <p>Visueel voorbeeld:</p>
+            <h1 id="h1">Lorem ipsum dolor set amet</h1>
 
-                    <p>Beschikbare voorbeelden:</p>
-                    <nav aria-label="Document-navigatie">
-                        <ul>
-                            <li><a href="#headings">headings</a></li>
-                            <li><a href="#h1">h1</a></li>
-                            <li><a href="#h2">h2</a></li>
-                            <li><a href="#h3">h3</a></li>
-                            <li><a href="#h4">h4</a></li>
-                            <li><a href="#h5">h5</a></li>
-                            <li><a href="#h6">h6</a></li>
-                        </ul>
-                    </nav>
+            <p>Html voorbeeld:</p>
 
-                    <div id="headings">
-                        <p>Visueel voorbeeld:</p>
-                        <h1 id="h1">Lorem ipsum dolor set amet</h1>
-
-                        <p>Html voorbeeld:</p>
-
-                        <pre>
+            <pre>
                             <code>
 &lt;h1>Lorem ipsum dolor set amet&lt;/h1>
                             </code>
                         </pre>
 
-                        <h2 id="h2">Lorem ipsum dolor set amet</h2>
+            <h2 id="h2">Lorem ipsum dolor set amet</h2>
 
-                        <p>Html voorbeeld:</p>
+            <p>Html voorbeeld:</p>
 
-                        <pre>
+            <pre>
                             <code>
 &lt;h2>Lorem ipsum dolor set amet&lt;/h2>
                             </code>
                         </pre>
 
-                        <h3 id="h3">Lorem ipsum dolor set amet</h3>
+            <h3 id="h3">Lorem ipsum dolor set amet</h3>
 
-                        <p>Html voorbeeld:</p>
+            <p>Html voorbeeld:</p>
 
-                        <pre>
+            <pre>
                             <code>
 &lt;h3>Lorem ipsum dolor set amet&lt;/h3>
                             </code>
                         </pre>
 
-                        <h4 id="h4">Lorem ipsum dolor set amet</h4>
+            <h4 id="h4">Lorem ipsum dolor set amet</h4>
 
-                        <p>Html voorbeeld:</p>
+            <p>Html voorbeeld:</p>
 
-                        <pre>
+            <pre>
                             <code>
 &lt;h4>Lorem ipsum dolor set amet&lt;/h4>
                             </code>
                         </pre>
 
-                        <h5 id="h5">Lorem ipsum dolor set amet</h5>
+            <h5 id="h5">Lorem ipsum dolor set amet</h5>
 
-                        <p>Html voorbeeld:</p>
+            <p>Html voorbeeld:</p>
 
-                        <pre>
+            <pre>
                             <code>
 &lt;h5>Lorem ipsum dolor set amet&lt;/h5>
                             </code>
                         </pre>
 
-                        <h6 id="h6">Lorem ipsum dolor set amet</h6>
+            <h6 id="h6">Lorem ipsum dolor set amet</h6>
 
-                        <p>Html voorbeeld:</p>
+            <p>Html voorbeeld:</p>
 
-                        <pre>
+            <pre>
                             <code>
 &lt;h6>Lorem ipsum dolor set amet&lt;/h6>
                             </code>
                         </pre>
-                    </div>
-                </div>
-            </article>
+          </div>
         </div>
+      </article>
+    </div>
 
-        <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het hoofdmenu</a>
-    </main>
+    <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het
+      hoofdmenu</a>
+  </main>
 
-    <footer>
-      <div class="two-thirds-one-third">
-        <span class="slogan">Manon - Rijksoverheid css framework</span>
-        <nav aria-labelledby="footer-nav-1-heading">
-          <h1 id="footer-nav-1-heading">Service</h1>
-          <ul>
-            <li><a href="../index.html">Over</a></li>
-            <li><a href="../test/index.html">Styling tests</a></li>
-            <li><a href="index.html">Online componenten bibliotheek</a></li>
-          </ul>
-        </nav>
-      </div>
-    </footer>
-  </body>
+  <footer>
+    <div class="two-thirds-one-third">
+      <span class="slogan">Manon - Rijksoverheid css framework</span>
+      <nav aria-labelledby="footer-nav-1-heading">
+        <h1 id="footer-nav-1-heading">Service</h1>
+        <ul>
+          <li><a href="../index.html">Over</a></li>
+          <li><a href="../test/index.html">Styling tests</a></li>
+          <li><a href="index.html">Online componenten bibliotheek</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+
 </html>

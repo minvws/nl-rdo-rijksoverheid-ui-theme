@@ -1,625 +1,630 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <title>Lijsten - Rijksoverheid CSS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../dist/css/main.css" rel="stylesheet">
-    <link href="../dist/img/favicon.ico" rel="shortcut icon">
-  </head>
-  <body id="elements" class="base">
-    <header>
-      <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
-      <a href="" class="ro-logo">
-        <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
-        Rijksoverheid
-      </a>
 
-      <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
-        <div>
-          <ul>
-              <li><a href="../index.html">Rijksoverheid CSS</a></li>
-              <li><a href="index.html">Styling tests</a></li>
-              <li><a href="#" aria-current="page">Lijsten</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <title>Lijsten - Rijksoverheid CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../dist/css/main.css" rel="stylesheet">
+  <link href="../dist/img/favicon.ico" rel="shortcut icon">
+</head>
 
-    <main id="main-content" tabindex="-1">
-      <article>
-        <div>
-          <h1>Lijsten</h1>
-          <p>Op deze pagina staan alle verschillende lijstvarianten.</p>
-          <nav>
-            <ul>
-              <li><a href="#ol">Genummerde lijst</a>
-                <ul>
-                  <li><a href="#list-type-capital-letters">Genummerde lijst met hoofdletters</a></li>
-                  <li><a href="#list-type-a">Genummerde lijst met kleine letters</a></li>
-                  <li><a href="#list-type-capital-roman-numbers">Genummerde lijst met Romeinse cijfers in hoofdletters</a></li>
-                  <li><a href="#list-type-i">Genummerde lijst met Romeinse cijfers in kleine letters</a></li>
-                </ul>
-              </li>
-              <li><a href="#ul">Ongenummerde lijst</a></li>
-              <li><a href="#nav-list">Lijst met navigatie-elementen</a></li>
-            </ul>
-          </nav>
+<body id="elements" class="base">
+  <header>
+    <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
+    <a href="" class="ro-logo">
+      <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
+      Rijksoverheid
+    </a>
 
-          <h2 id="ol">Genummerde lijst (Ordered list)</h2>
-          <ol>
-            <li>Ordered list item 1</li>
-            <li>Ordered list item 2
-              <ol>
-                <li>Ordered list item 1</li>
-                <li>Ordered list item 2
-                  <ol>
-                    <li>Ordered list item 1</li>
-                    <li>Ordered list item 2
-                      <ol>
-                        <li>Ordered list item 1</li>
-                      </ol>
-                    </li>
-                    <li>Ordered list item 3
-                      <ul>
-                        <li>Unordered list item 1</li>
-                      </ul>
-                    </li>
-                  </ol>
-                </li>
-                <li>Ordered list item 2
-                  <ul>
-                    <li>Unordered list item 1</li>
-                    <li>Unordered list item 2
-                      <ol>
-                        <li>Ordered list item 3</li>
-                      </ol>
-                    </li>
-                    <li>Unordered list item 3
-                      <ul>
-                        <li>Unordered list item 1</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ol>
-            </li>
-            <li>Ordered list item 3
-              <ul>
-                <li>Unordered list item 1</li>
-                <li>Unordered list item 2
-                  <ol>
-                    <li>Ordered list item 1</li>
-                    <li>Ordered list item 2
-                      <ol>
-                        <li>Ordered list item 3</li>
-                      </ol>
-                    </li>
-                    <li>Ordered list item 3
-                      <ul>
-                        <li>Unordered list item 3</li>
-                      </ul>
-                    </li>
-                  </ol>
-                </li>
-                <li>Unordered list item 3
-                  <ul>
-                    <li>Unordered list item 1</li>
-                    <li>Unordered list item 2
-                      <ol>
-                        <li>Ordered list item 1</li>
-                      </ol>
-                    </li>
-                    <li>Unordered list item 3
-                      <ul>
-                        <li>Unordered list item 1</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ol>
+    <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
+      <div>
+        <ul>
+          <li><a href="../index.html"><span class="icon icon-home">Hoofdpagina icoon</span> Rijksoverheid CSS</a></li>
+          <li><a href="index.html">Styling tests</a></li>
+          <li><a href="#" aria-current="page">Lijsten</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-          <h2 id="list-type-capital-letters">Genummerde lijst met hoofdletters</h2>
-          <ol type="A">
-            <li>Ordered list item 1</li>
-            <li>Ordered list item 2
-              <ol>
-                <li>Ordered list item 1</li>
-                <li>Ordered list item 2
-                  <ol>
-                    <li>Ordered list item 1</li>
-                    <li>Ordered list item 2
-                      <ol>
-                        <li>Ordered list item 1</li>
-                      </ol>
-                    </li>
-                    <li>Ordered list item 3
-                      <ul>
-                        <li>Unordered list item 1</li>
-                      </ul>
-                    </li>
-                  </ol>
-                </li>
-                <li>Ordered list item 2
-                  <ul>
-                    <li>Unordered list item 1</li>
-                    <li>Unordered list item 2
-                      <ol>
-                        <li>Ordered list item 3</li>
-                      </ol>
-                    </li>
-                    <li>Unordered list item 3
-                      <ul>
-                        <li>Unordered list item 1</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ol>
-            </li>
-            <li>Ordered list item 3
-              <ul>
-                <li>Unordered list item 1</li>
-                <li>Unordered list item 2
-                  <ol>
-                    <li>Ordered list item 1</li>
-                    <li>Ordered list item 2
-                      <ol>
-                        <li>Ordered list item 3</li>
-                      </ol>
-                    </li>
-                    <li>Ordered list item 3
-                      <ul>
-                        <li>Unordered list item 3</li>
-                      </ul>
-                    </li>
-                  </ol>
-                </li>
-                <li>Unordered list item 3
-                  <ul>
-                    <li>Unordered list item 1</li>
-                    <li>Unordered list item 2
-                      <ol>
-                        <li>Ordered list item 1</li>
-                      </ol>
-                    </li>
-                    <li>Unordered list item 3
-                      <ul>
-                        <li>Unordered list item 1</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ol>
-
-          <h2 id="list-type-a">Genummerde lijst met kleine letters</h2>
-          <ol type="a">
-            <li>Ordered list item 1</li>
-            <li>Ordered list item 2
-              <ol>
-                <li>Ordered list item 1</li>
-                <li>Ordered list item 2
-                  <ol>
-                    <li>Ordered list item 1</li>
-                    <li>Ordered list item 2
-                      <ol>
-                        <li>Ordered list item 1</li>
-                      </ol>
-                    </li>
-                    <li>Ordered list item 3
-                      <ul>
-                        <li>Unordered list item 1</li>
-                      </ul>
-                    </li>
-                  </ol>
-                </li>
-                <li>Ordered list item 2
-                  <ul>
-                    <li>Unordered list item 1</li>
-                    <li>Unordered list item 2
-                      <ol>
-                        <li>Ordered list item 3</li>
-                      </ol>
-                    </li>
-                    <li>Unordered list item 3
-                      <ul>
-                        <li>Unordered list item 1</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ol>
-            </li>
-            <li>Ordered list item 3
-              <ul>
-                <li>Unordered list item 1</li>
-                <li>Unordered list item 2
-                  <ol>
-                    <li>Ordered list item 1</li>
-                    <li>Ordered list item 2
-                      <ol>
-                        <li>Ordered list item 3</li>
-                      </ol>
-                    </li>
-                    <li>Ordered list item 3
-                      <ul>
-                        <li>Unordered list item 3</li>
-                      </ul>
-                    </li>
-                  </ol>
-                </li>
-                <li>Unordered list item 3
-                  <ul>
-                    <li>Unordered list item 1</li>
-                    <li>Unordered list item 2
-                      <ol>
-                        <li>Ordered list item 1</li>
-                      </ol>
-                    </li>
-                    <li>Unordered list item 3
-                      <ul>
-                        <li>Unordered list item 1</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ol>
-
-          <h2 id="list-type-capital-roman-numbers">Genummerde lijst met Romeinse cijfers in hoofdletters</h2>
-          <ol type="I">
-            <li>Ordered list item 1</li>
-            <li>Ordered list item 2
-              <ol>
-                <li>Ordered list item 1</li>
-                <li>Ordered list item 2
-                  <ol>
-                    <li>Ordered list item 1</li>
-                    <li>Ordered list item 2
-                      <ol>
-                        <li>Ordered list item 1</li>
-                      </ol>
-                    </li>
-                    <li>Ordered list item 3
-                      <ul>
-                        <li>Unordered list item 1</li>
-                      </ul>
-                    </li>
-                  </ol>
-                </li>
-                <li>Ordered list item 2
-                  <ul>
-                    <li>Unordered list item 1</li>
-                    <li>Unordered list item 2
-                      <ol>
-                        <li>Ordered list item 3</li>
-                      </ol>
-                    </li>
-                    <li>Unordered list item 3
-                      <ul>
-                        <li>Unordered list item 1</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ol>
-            </li>
-            <li>Ordered list item 3
-              <ul>
-                <li>Unordered list item 1</li>
-                <li>Unordered list item 2
-                  <ol>
-                    <li>Ordered list item 1</li>
-                    <li>Ordered list item 2
-                      <ol>
-                        <li>Ordered list item 3</li>
-                      </ol>
-                    </li>
-                    <li>Ordered list item 3
-                      <ul>
-                        <li>Unordered list item 3</li>
-                      </ul>
-                    </li>
-                  </ol>
-                </li>
-                <li>Unordered list item 3
-                  <ul>
-                    <li>Unordered list item 1</li>
-                    <li>Unordered list item 2
-                      <ol>
-                        <li>Ordered list item 1</li>
-                      </ol>
-                    </li>
-                    <li>Unordered list item 3
-                      <ul>
-                        <li>Unordered list item 1</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ol>
-
-          <h2 id="list-type-i">Genummerde lijst met Romeinse cijfers in kleine letters</h2>
-          <ol type="i">
-            <li>Ordered list item 1</li>
-            <li>Ordered list item 2
-              <ol>
-                <li>Ordered list item 1</li>
-                <li>Ordered list item 2
-                  <ol>
-                    <li>Ordered list item 1</li>
-                    <li>Ordered list item 2
-                      <ol>
-                        <li>Ordered list item 1</li>
-                      </ol>
-                    </li>
-                    <li>Ordered list item 3
-                      <ul>
-                        <li>Unordered list item 1</li>
-                      </ul>
-                    </li>
-                  </ol>
-                </li>
-                <li>Ordered list item 2
-                  <ul>
-                    <li>Unordered list item 1</li>
-                    <li>Unordered list item 2
-                      <ol>
-                        <li>Ordered list item 3</li>
-                      </ol>
-                    </li>
-                    <li>Unordered list item 3
-                      <ul>
-                        <li>Unordered list item 1</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ol>
-            </li>
-            <li>Ordered list item 3
-              <ul>
-                <li>Unordered list item 1</li>
-                <li>Unordered list item 2
-                  <ol>
-                    <li>Ordered list item 1</li>
-                    <li>Ordered list item 2
-                      <ol>
-                        <li>Ordered list item 3</li>
-                      </ol>
-                    </li>
-                    <li>Ordered list item 3
-                      <ul>
-                        <li>Unordered list item 3</li>
-                      </ul>
-                    </li>
-                  </ol>
-                </li>
-                <li>Unordered list item 3
-                  <ul>
-                    <li>Unordered list item 1</li>
-                    <li>Unordered list item 2
-                      <ol>
-                        <li>Ordered list item 1</li>
-                      </ol>
-                    </li>
-                    <li>Unordered list item 3
-                      <ul>
-                        <li>Unordered list item 1</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ol>
-
-          <h3>Genummerde lijst met navigatie-elementen</h3>
-          <h4>visueel voorbeeld:</h4>
-          <nav>
-              <ol>
-                  <li><a href="">Ordered list item 1</a></li>
-                  <li><a href="">Ordered list item 2</a></li>
-              </ol>
-          </nav>
-
-          <h3>Genummerde lijst met navigatie-elementen - externe link</h3>
-          <h4>visueel voorbeeld:</h4>
-          <nav>
-              <ol>
-                  <li><a href=""  rel="external">Outgoing link</a></li>
-              </ol>
-          </nav>
-
-
-
-          <h2 id="ul">Ongenummerde lijst (Unordered list)</h2>
-          <ul>
-            <li>Unordered list item 1</li>
-            <li>Unordered list item 2
-              <ol>
-                <li>Ordered list item 1</li>
-                <li>Ordered list item 2
-                  <ol>
-                    <li>Ordered list item 1</li>
-                    <li>Ordered list item 2
-                      <ol>
-                        <li>Ordered list item 3</li>
-                      </ol>
-                    </li>
-                    <li>Ordered list item 3
-                      <ul>
-                        <li>Unordered list item 3</li>
-                      </ul>
-                    </li>
-                  </ol>
-                </li>
-                <li>Ordered list item 2
-                  <ul>
-                    <li>Unordered list item 1</li>
-                    <li>Unordered list item 2
-                      <ol>
-                        <li>Ordered list item 3</li>
-                      </ol>
-                    </li>
-                    <li>Unordered list item 3
-                      <ul>
-                        <li>Unordered list item 3</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ol>
-            </li>
-            <li>Unordered list item 3
-              <ul>
-                <li>Unordered list item 1</li>
-                <li>Unordered list item 2
-                  <ol>
-                    <li>Ordered list item 1</li>
-                    <li>Ordered list item 2
-                      <ol>
-                        <li>Ordered list item 1</li>
-                      </ol>
-                    </li>
-                    <li>Ordered list item 3
-                      <ul>
-                        <li>Unordered list item 3</li>
-                      </ul>
-                    </li>
-                  </ol>
-                </li>
-                <li>Unordered list item 3
-                  <ul>
-                    <li>Unordered list item 1</li>
-                    <li>Unordered list item 2
-                      <ol>
-                        <li>Ordered list item 1</li>
-                      </ol>
-                    </li>
-                    <li>Unordered list item 3
-                      <ul>
-                        <li>Unordered list item 1</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-
-          <h3>Ongenummerde lijst met navigatie-elementen</h3>
-          <h4>visueel voorbeeld:</h4>
-          <nav>
-              <ul>
-                  <li><a href="">unordered list item 1</a></li>
-              </ul>
-          </nav>
-
-          <h3>Ongenummerde lijst met navigatie-elementen - externe link</h3>
-          <h4>visueel voorbeeld:</h4>
-          <nav>
-              <ul>
-                  <li><a href=""  rel="external">Outgoing link</a></li>
-              </ul>
-          </nav>
-
-          <h2 id="nav-list">Lijst met navigatie-elementen</h2>
-          <nav>
-            <ol>
-              <li><a href="">Lorem ipsum</a></li>
-              <li><a href="">Dolor set amet</a></li>
-              <li><a href="" rel="external">Dolor set amet</a></li>
-            </ol>
-          </nav>
-          <nav>
-            <ul>
-              <li><a href="">Lorem ipsum</a></li>
-              <li><a href="">Dolor set amet</a></li>
-              <li><a href="" rel="external">Dolor set amet</a></li>
-            </ul>
-          </nav>
-
-          <h2 id="mixed-list-style">Gecombineerde lijstweergave</h2>
-          <h3>Ongenummerde lijst met daarbinnen genummerde lijstelementen</h3>
-          <h4>visueel voorbeeld:</h4>
-          <ul>
-              <li>Unordered list item</li>
-              <li>Unordered list item
-                  <ol>
-                      <li>Ordered subitem</li>
-                      <li>Ordered subitem</li>
-                  </ol>
-              </li>
-          </ul>
-
-          <h3>genummerde lijst met daarbinnen ongenummerde lijstelementen</h3>
-          <h4>Visueel voorbeeld:</h4>
-          <ol>
-              <li>Unordered list item</li>
-              <li>Unordered list item
-                  <ul>
-                      <li>Ordered subitem</li>
-                      <li>Ordered subitem</li>
-                  </ul>
-              </li>
-          </ol>
-
-          <h3>Genummerde lijst met daarbinnen lijstelementen met links</h3>
-          <h4>Visueel-voorbeeld:</h4>
-          <ol>
-              <li>Unordered list item</li>
-              <li>Unordered list item
-                  <nav>
-                      <ul>
-                          <li><a href="">Internal link</a></li>
-                          <li><a href="" rel="external">Outgoing link</a></li>
-                      </ul>
-                  </nav>
-              </li>
-              <li>Unordered list item</li>
-          </ol>
-
-          <h3>Ongenummerde lijst met daarbinnen lijstelementen met links</h3>
-          <h4>Visueel voorbeeld:</h4>
-          <ul>
-              <li>Unordered list item</li>
-              <li>Unordered list item
-                  <nav>
-                      <ul>
-                          <li><a href="">Internal link</a></li>
-                          <li><a href="" rel="external">Outgoing link</a></li>
-                      </ul>
-                  </nav>
-              </li>
-              <li>Unordered list item</li>
-          </ul>
-
-        </div>
-      </article>
-
-      <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het hoofdmenu</a>
-    </main>
-
-    <footer>
-      <div class="two-thirds-one-third">
-        <span class="slogan">Manon - Rijksoverheid css framework</span>
+  <main id="main-content" tabindex="-1">
+    <article>
+      <div>
+        <h1>Lijsten</h1>
+        <p>Op deze pagina staan alle verschillende lijstvarianten.</p>
         <nav>
-          <h1>Service</h1>
           <ul>
-            <li><a href="../index.html">Over</a></li>
-            <li><a href="index.html">Styling tests</a></li>
-            <li><a href="../html_examples/index.html">Online componenten bibliotheek</a></li>
+            <li><a href="#ol">Genummerde lijst</a>
+              <ul>
+                <li><a href="#list-type-capital-letters">Genummerde lijst met hoofdletters</a></li>
+                <li><a href="#list-type-a">Genummerde lijst met kleine letters</a></li>
+                <li><a href="#list-type-capital-roman-numbers">Genummerde lijst met Romeinse cijfers in hoofdletters</a>
+                </li>
+                <li><a href="#list-type-i">Genummerde lijst met Romeinse cijfers in kleine letters</a></li>
+              </ul>
+            </li>
+            <li><a href="#ul">Ongenummerde lijst</a></li>
+            <li><a href="#nav-list">Lijst met navigatie-elementen</a></li>
           </ul>
         </nav>
+
+        <h2 id="ol">Genummerde lijst (Ordered list)</h2>
+        <ol>
+          <li>Ordered list item 1</li>
+          <li>Ordered list item 2
+            <ol>
+              <li>Ordered list item 1</li>
+              <li>Ordered list item 2
+                <ol>
+                  <li>Ordered list item 1</li>
+                  <li>Ordered list item 2
+                    <ol>
+                      <li>Ordered list item 1</li>
+                    </ol>
+                  </li>
+                  <li>Ordered list item 3
+                    <ul>
+                      <li>Unordered list item 1</li>
+                    </ul>
+                  </li>
+                </ol>
+              </li>
+              <li>Ordered list item 2
+                <ul>
+                  <li>Unordered list item 1</li>
+                  <li>Unordered list item 2
+                    <ol>
+                      <li>Ordered list item 3</li>
+                    </ol>
+                  </li>
+                  <li>Unordered list item 3
+                    <ul>
+                      <li>Unordered list item 1</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </li>
+          <li>Ordered list item 3
+            <ul>
+              <li>Unordered list item 1</li>
+              <li>Unordered list item 2
+                <ol>
+                  <li>Ordered list item 1</li>
+                  <li>Ordered list item 2
+                    <ol>
+                      <li>Ordered list item 3</li>
+                    </ol>
+                  </li>
+                  <li>Ordered list item 3
+                    <ul>
+                      <li>Unordered list item 3</li>
+                    </ul>
+                  </li>
+                </ol>
+              </li>
+              <li>Unordered list item 3
+                <ul>
+                  <li>Unordered list item 1</li>
+                  <li>Unordered list item 2
+                    <ol>
+                      <li>Ordered list item 1</li>
+                    </ol>
+                  </li>
+                  <li>Unordered list item 3
+                    <ul>
+                      <li>Unordered list item 1</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ol>
+
+        <h2 id="list-type-capital-letters">Genummerde lijst met hoofdletters</h2>
+        <ol type="A">
+          <li>Ordered list item 1</li>
+          <li>Ordered list item 2
+            <ol>
+              <li>Ordered list item 1</li>
+              <li>Ordered list item 2
+                <ol>
+                  <li>Ordered list item 1</li>
+                  <li>Ordered list item 2
+                    <ol>
+                      <li>Ordered list item 1</li>
+                    </ol>
+                  </li>
+                  <li>Ordered list item 3
+                    <ul>
+                      <li>Unordered list item 1</li>
+                    </ul>
+                  </li>
+                </ol>
+              </li>
+              <li>Ordered list item 2
+                <ul>
+                  <li>Unordered list item 1</li>
+                  <li>Unordered list item 2
+                    <ol>
+                      <li>Ordered list item 3</li>
+                    </ol>
+                  </li>
+                  <li>Unordered list item 3
+                    <ul>
+                      <li>Unordered list item 1</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </li>
+          <li>Ordered list item 3
+            <ul>
+              <li>Unordered list item 1</li>
+              <li>Unordered list item 2
+                <ol>
+                  <li>Ordered list item 1</li>
+                  <li>Ordered list item 2
+                    <ol>
+                      <li>Ordered list item 3</li>
+                    </ol>
+                  </li>
+                  <li>Ordered list item 3
+                    <ul>
+                      <li>Unordered list item 3</li>
+                    </ul>
+                  </li>
+                </ol>
+              </li>
+              <li>Unordered list item 3
+                <ul>
+                  <li>Unordered list item 1</li>
+                  <li>Unordered list item 2
+                    <ol>
+                      <li>Ordered list item 1</li>
+                    </ol>
+                  </li>
+                  <li>Unordered list item 3
+                    <ul>
+                      <li>Unordered list item 1</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ol>
+
+        <h2 id="list-type-a">Genummerde lijst met kleine letters</h2>
+        <ol type="a">
+          <li>Ordered list item 1</li>
+          <li>Ordered list item 2
+            <ol>
+              <li>Ordered list item 1</li>
+              <li>Ordered list item 2
+                <ol>
+                  <li>Ordered list item 1</li>
+                  <li>Ordered list item 2
+                    <ol>
+                      <li>Ordered list item 1</li>
+                    </ol>
+                  </li>
+                  <li>Ordered list item 3
+                    <ul>
+                      <li>Unordered list item 1</li>
+                    </ul>
+                  </li>
+                </ol>
+              </li>
+              <li>Ordered list item 2
+                <ul>
+                  <li>Unordered list item 1</li>
+                  <li>Unordered list item 2
+                    <ol>
+                      <li>Ordered list item 3</li>
+                    </ol>
+                  </li>
+                  <li>Unordered list item 3
+                    <ul>
+                      <li>Unordered list item 1</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </li>
+          <li>Ordered list item 3
+            <ul>
+              <li>Unordered list item 1</li>
+              <li>Unordered list item 2
+                <ol>
+                  <li>Ordered list item 1</li>
+                  <li>Ordered list item 2
+                    <ol>
+                      <li>Ordered list item 3</li>
+                    </ol>
+                  </li>
+                  <li>Ordered list item 3
+                    <ul>
+                      <li>Unordered list item 3</li>
+                    </ul>
+                  </li>
+                </ol>
+              </li>
+              <li>Unordered list item 3
+                <ul>
+                  <li>Unordered list item 1</li>
+                  <li>Unordered list item 2
+                    <ol>
+                      <li>Ordered list item 1</li>
+                    </ol>
+                  </li>
+                  <li>Unordered list item 3
+                    <ul>
+                      <li>Unordered list item 1</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ol>
+
+        <h2 id="list-type-capital-roman-numbers">Genummerde lijst met Romeinse cijfers in hoofdletters</h2>
+        <ol type="I">
+          <li>Ordered list item 1</li>
+          <li>Ordered list item 2
+            <ol>
+              <li>Ordered list item 1</li>
+              <li>Ordered list item 2
+                <ol>
+                  <li>Ordered list item 1</li>
+                  <li>Ordered list item 2
+                    <ol>
+                      <li>Ordered list item 1</li>
+                    </ol>
+                  </li>
+                  <li>Ordered list item 3
+                    <ul>
+                      <li>Unordered list item 1</li>
+                    </ul>
+                  </li>
+                </ol>
+              </li>
+              <li>Ordered list item 2
+                <ul>
+                  <li>Unordered list item 1</li>
+                  <li>Unordered list item 2
+                    <ol>
+                      <li>Ordered list item 3</li>
+                    </ol>
+                  </li>
+                  <li>Unordered list item 3
+                    <ul>
+                      <li>Unordered list item 1</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </li>
+          <li>Ordered list item 3
+            <ul>
+              <li>Unordered list item 1</li>
+              <li>Unordered list item 2
+                <ol>
+                  <li>Ordered list item 1</li>
+                  <li>Ordered list item 2
+                    <ol>
+                      <li>Ordered list item 3</li>
+                    </ol>
+                  </li>
+                  <li>Ordered list item 3
+                    <ul>
+                      <li>Unordered list item 3</li>
+                    </ul>
+                  </li>
+                </ol>
+              </li>
+              <li>Unordered list item 3
+                <ul>
+                  <li>Unordered list item 1</li>
+                  <li>Unordered list item 2
+                    <ol>
+                      <li>Ordered list item 1</li>
+                    </ol>
+                  </li>
+                  <li>Unordered list item 3
+                    <ul>
+                      <li>Unordered list item 1</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ol>
+
+        <h2 id="list-type-i">Genummerde lijst met Romeinse cijfers in kleine letters</h2>
+        <ol type="i">
+          <li>Ordered list item 1</li>
+          <li>Ordered list item 2
+            <ol>
+              <li>Ordered list item 1</li>
+              <li>Ordered list item 2
+                <ol>
+                  <li>Ordered list item 1</li>
+                  <li>Ordered list item 2
+                    <ol>
+                      <li>Ordered list item 1</li>
+                    </ol>
+                  </li>
+                  <li>Ordered list item 3
+                    <ul>
+                      <li>Unordered list item 1</li>
+                    </ul>
+                  </li>
+                </ol>
+              </li>
+              <li>Ordered list item 2
+                <ul>
+                  <li>Unordered list item 1</li>
+                  <li>Unordered list item 2
+                    <ol>
+                      <li>Ordered list item 3</li>
+                    </ol>
+                  </li>
+                  <li>Unordered list item 3
+                    <ul>
+                      <li>Unordered list item 1</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </li>
+          <li>Ordered list item 3
+            <ul>
+              <li>Unordered list item 1</li>
+              <li>Unordered list item 2
+                <ol>
+                  <li>Ordered list item 1</li>
+                  <li>Ordered list item 2
+                    <ol>
+                      <li>Ordered list item 3</li>
+                    </ol>
+                  </li>
+                  <li>Ordered list item 3
+                    <ul>
+                      <li>Unordered list item 3</li>
+                    </ul>
+                  </li>
+                </ol>
+              </li>
+              <li>Unordered list item 3
+                <ul>
+                  <li>Unordered list item 1</li>
+                  <li>Unordered list item 2
+                    <ol>
+                      <li>Ordered list item 1</li>
+                    </ol>
+                  </li>
+                  <li>Unordered list item 3
+                    <ul>
+                      <li>Unordered list item 1</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ol>
+
+        <h3>Genummerde lijst met navigatie-elementen</h3>
+        <h4>visueel voorbeeld:</h4>
+        <nav>
+          <ol>
+            <li><a href="">Ordered list item 1</a></li>
+            <li><a href="">Ordered list item 2</a></li>
+          </ol>
+        </nav>
+
+        <h3>Genummerde lijst met navigatie-elementen - externe link</h3>
+        <h4>visueel voorbeeld:</h4>
+        <nav>
+          <ol>
+            <li><a href="" rel="external">Outgoing link</a></li>
+          </ol>
+        </nav>
+
+
+
+        <h2 id="ul">Ongenummerde lijst (Unordered list)</h2>
+        <ul>
+          <li>Unordered list item 1</li>
+          <li>Unordered list item 2
+            <ol>
+              <li>Ordered list item 1</li>
+              <li>Ordered list item 2
+                <ol>
+                  <li>Ordered list item 1</li>
+                  <li>Ordered list item 2
+                    <ol>
+                      <li>Ordered list item 3</li>
+                    </ol>
+                  </li>
+                  <li>Ordered list item 3
+                    <ul>
+                      <li>Unordered list item 3</li>
+                    </ul>
+                  </li>
+                </ol>
+              </li>
+              <li>Ordered list item 2
+                <ul>
+                  <li>Unordered list item 1</li>
+                  <li>Unordered list item 2
+                    <ol>
+                      <li>Ordered list item 3</li>
+                    </ol>
+                  </li>
+                  <li>Unordered list item 3
+                    <ul>
+                      <li>Unordered list item 3</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </li>
+          <li>Unordered list item 3
+            <ul>
+              <li>Unordered list item 1</li>
+              <li>Unordered list item 2
+                <ol>
+                  <li>Ordered list item 1</li>
+                  <li>Ordered list item 2
+                    <ol>
+                      <li>Ordered list item 1</li>
+                    </ol>
+                  </li>
+                  <li>Ordered list item 3
+                    <ul>
+                      <li>Unordered list item 3</li>
+                    </ul>
+                  </li>
+                </ol>
+              </li>
+              <li>Unordered list item 3
+                <ul>
+                  <li>Unordered list item 1</li>
+                  <li>Unordered list item 2
+                    <ol>
+                      <li>Ordered list item 1</li>
+                    </ol>
+                  </li>
+                  <li>Unordered list item 3
+                    <ul>
+                      <li>Unordered list item 1</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <h3>Ongenummerde lijst met navigatie-elementen</h3>
+        <h4>visueel voorbeeld:</h4>
+        <nav>
+          <ul>
+            <li><a href="">unordered list item 1</a></li>
+          </ul>
+        </nav>
+
+        <h3>Ongenummerde lijst met navigatie-elementen - externe link</h3>
+        <h4>visueel voorbeeld:</h4>
+        <nav>
+          <ul>
+            <li><a href="" rel="external">Outgoing link</a></li>
+          </ul>
+        </nav>
+
+        <h2 id="nav-list">Lijst met navigatie-elementen</h2>
+        <nav>
+          <ol>
+            <li><a href="">Lorem ipsum</a></li>
+            <li><a href="">Dolor set amet</a></li>
+            <li><a href="" rel="external">Dolor set amet</a></li>
+          </ol>
+        </nav>
+        <nav>
+          <ul>
+            <li><a href="">Lorem ipsum</a></li>
+            <li><a href="">Dolor set amet</a></li>
+            <li><a href="" rel="external">Dolor set amet</a></li>
+          </ul>
+        </nav>
+
+        <h2 id="mixed-list-style">Gecombineerde lijstweergave</h2>
+        <h3>Ongenummerde lijst met daarbinnen genummerde lijstelementen</h3>
+        <h4>visueel voorbeeld:</h4>
+        <ul>
+          <li>Unordered list item</li>
+          <li>Unordered list item
+            <ol>
+              <li>Ordered subitem</li>
+              <li>Ordered subitem</li>
+            </ol>
+          </li>
+        </ul>
+
+        <h3>genummerde lijst met daarbinnen ongenummerde lijstelementen</h3>
+        <h4>Visueel voorbeeld:</h4>
+        <ol>
+          <li>Unordered list item</li>
+          <li>Unordered list item
+            <ul>
+              <li>Ordered subitem</li>
+              <li>Ordered subitem</li>
+            </ul>
+          </li>
+        </ol>
+
+        <h3>Genummerde lijst met daarbinnen lijstelementen met links</h3>
+        <h4>Visueel-voorbeeld:</h4>
+        <ol>
+          <li>Unordered list item</li>
+          <li>Unordered list item
+            <nav>
+              <ul>
+                <li><a href="">Internal link</a></li>
+                <li><a href="" rel="external">Outgoing link</a></li>
+              </ul>
+            </nav>
+          </li>
+          <li>Unordered list item</li>
+        </ol>
+
+        <h3>Ongenummerde lijst met daarbinnen lijstelementen met links</h3>
+        <h4>Visueel voorbeeld:</h4>
+        <ul>
+          <li>Unordered list item</li>
+          <li>Unordered list item
+            <nav>
+              <ul>
+                <li><a href="">Internal link</a></li>
+                <li><a href="" rel="external">Outgoing link</a></li>
+              </ul>
+            </nav>
+          </li>
+          <li>Unordered list item</li>
+        </ul>
+
       </div>
-    </footer>
-  </body>
+    </article>
+
+    <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het
+      hoofdmenu</a>
+  </main>
+
+  <footer>
+    <div class="two-thirds-one-third">
+      <span class="slogan">Manon - Rijksoverheid css framework</span>
+      <nav>
+        <h1>Service</h1>
+        <ul>
+          <li><a href="../index.html">Over</a></li>
+          <li><a href="index.html">Styling tests</a></li>
+          <li><a href="../html_examples/index.html">Online componenten bibliotheek</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+
 </html>
