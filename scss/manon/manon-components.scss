@@ -69,7 +69,8 @@
 @use "@minvws/manon/footer-navigation-link-visited";
 
 /* Text */
-@use "@minvws/manon/p"; /* Paragraph */
+@use "@minvws/manon/p";
+/* Paragraph */
 @use "@minvws/manon/headings";
 @use "@minvws/manon/emphasized";
 @use "@minvws/manon/de-emphasized";
@@ -100,7 +101,7 @@
 @use "@minvws/manon/footer-link-visited";
 
 /* Components */
-@use "@minvws/manon/sidemenu-base";
+@use "@minvws/manon/sidemenu";
 @use "@minvws/manon/code-base";
 @use "@minvws/manon/code-block";
 @use "@minvws/manon/list-base";
@@ -163,7 +164,8 @@
 @use "@minvws/manon/notification-form";
 
 /* Table */
-@use "@minvws/manon/table"; /* Needs to be first of the set */
+@use "@minvws/manon/table";
+/* Needs to be first of the set */
 @use "@minvws/manon/table-action-buttons";
 @use "@minvws/manon/table-caption";
 @use "@minvws/manon/table-checkbox";
