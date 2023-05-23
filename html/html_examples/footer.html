@@ -1,82 +1,88 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <title>Footer - Rijksoverheid CSS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../dist/css/main.css" rel="stylesheet">
-    <link href="../dist/img/favicon.ico" rel="shortcut icon">
-    <script defer src="../dist/js/sidemenu.js"></script>
-  </head>
-  <body class="test-cases">
-    <header>
-      <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
-      <a href="" class="ro-logo">
-        <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
-        Rijksoverheid
-      </a>
 
-      <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
+<head>
+  <meta charset="UTF-8">
+  <title>Footer - Rijksoverheid CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../dist/css/main.css" rel="stylesheet">
+  <link href="../dist/img/favicon.ico" rel="shortcut icon">
+  <script defer src="../dist/js/sidemenu.js"></script>
+</head>
+
+<body class="test-cases">
+  <header>
+    <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
+    <a href="" class="ro-logo">
+      <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
+      Rijksoverheid
+    </a>
+
+    <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
+      <div>
+        <ul>
+          <li><a href="../index.html"><span class="icon icon-home">Hoofdpagina icoon</span> Rijksoverheid CSS</a></li>
+          <li><a href="index.html">Online Componenten Bibliotheek</a></li>
+          <li><a href="#" aria-current="page">Footer</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+
+  <main class="sidemenu" id="main-content" tabindex="-1">
+    <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+      <ul>
+        <li><a href="#footer">Footer</a></li>
+      </ul>
+    </nav>
+
+    <div>
+      <article>
         <div>
+          <h1 id="footer">Footer</h1>
+          <p>De footer wordt vaak gebruikt als extra navigatiepunt en om aan te geven aan de gebruiker dat het einde van
+            de pagina bereikt is.</p>
           <ul>
-              <li><a href="../index.html">Rijksoverheid CSS</a></li>
-              <li><a href="index.html">Online Componenten Bibliotheek</a></li>
-              <li><a href="#" aria-current="page">Footer</a></li>
+            <li>De footer krijgt automatisch de gekozen applicatiekleur.</li>
+            <li>Iedere pagina dient een footer te bevatten. Ook als de footer zelf geen content bevat.</li>
+            <li>Voeg waar mogelijk de slogan van de instantie toe aan de footer.</li>
+            <li>De footer heeft ruimte voor een aantal navigatie-elementen.</li>
+            <li>Als er verschillende talen beschikbaar zijn, kunnen deze direct onder de footer toegevoegd worden. Zie
+              hiervoor <strong>[link toevoegen naar language selector]</strong></li>
           </ul>
-        </div>
-      </nav>
 
-    </header>
-
-    <main class="sidemenu" id="main-content" tabindex="-1">
-        <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
-          <ul>
-            <li><a href="#footer">Footer</a></li>
-          </ul>
-        </nav>
-
-        <div>
-        <article>
-          <div>
-            <h1 id="footer">Footer</h1>
-            <p>De footer wordt vaak gebruikt als extra navigatiepunt en om aan te geven aan de gebruiker dat het einde van de pagina bereikt is.</p>
+          <p>Voorbeelden, weergave op basis van content:</p>
+          <nav aria-label="Document-navigatie">
             <ul>
-              <li>De footer krijgt automatisch de gekozen applicatiekleur.</li>
-              <li>Iedere pagina dient een footer te bevatten. Ook als de footer zelf geen content bevat.</li>
-              <li>Voeg waar mogelijk de slogan van de instantie toe aan de footer.</li>
-              <li>De footer heeft ruimte voor een aantal navigatie-elementen.</li>
-              <li>Als er verschillende talen beschikbaar zijn, kunnen deze direct onder de footer toegevoegd worden. Zie hiervoor <strong>[link toevoegen naar language selector]</strong></li>
+              <li><a href="footer-empty.html">Lege footer</a></li>
+              <li><a href="footer-slogan.html">Footer met slogan</a></li>
+              <li><a href="footer-slogan-nav.html">Footer met slogan en navigatie</a></li>
+              <li><a href="footer-slogan-multiple-nav.html">Footer met slogan en meerdere navigatie-elementen</a></li>
+              <li><a href="footer-meta.html">Footer met metagegevens</a></li>
             </ul>
+          </nav>
+        </div>
+      </article>
+    </div>
 
-            <p>Voorbeelden, weergave op basis van content:</p>
-            <nav aria-label="Document-navigatie">
-              <ul>
-                <li><a href="footer-empty.html">Lege footer</a></li>
-                <li><a href="footer-slogan.html">Footer met slogan</a></li>
-                <li><a href="footer-slogan-nav.html">Footer met slogan en navigatie</a></li>
-                <li><a href="footer-slogan-multiple-nav.html">Footer met slogan en meerdere navigatie-elementen</a></li>
-                <li><a href="footer-meta.html">Footer met metagegevens</a></li>
-              </ul>
-            </nav>
-          </div>
-        </article>
-      </div>
+    <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het
+      hoofdmenu</a>
+  </main>
 
-      <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het hoofdmenu</a>
-    </main>
+  <footer>
+    <div class="two-thirds-one-third">
+      <span class="slogan">Manon - Rijksoverheid css framework</span>
+      <nav aria-labelledby="footer-nav-1-heading">
+        <h1 id="footer-nav-1-heading">Service</h1>
+        <ul>
+          <li><a href="../index.html">Over</a></li>
+          <li><a href="../test/index.html">Styling tests</a></li>
+          <li><a href="index.html">Online componenten bibliotheek</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
 
-    <footer>
-      <div class="two-thirds-one-third">
-        <span class="slogan">Manon - Rijksoverheid css framework</span>
-        <nav aria-labelledby="footer-nav-1-heading">
-          <h1 id="footer-nav-1-heading">Service</h1>
-          <ul>
-            <li><a href="../index.html">Over</a></li>
-            <li><a href="../test/index.html">Styling tests</a></li>
-            <li><a href="index.html">Online componenten bibliotheek</a></li>
-          </ul>
-        </nav>
-      </div>
-    </footer>
-  </body>
 </html>

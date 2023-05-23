@@ -1,70 +1,76 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <title>Aan/uit-schuifknop - Rijksoverheid CSS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../dist/css/main.css" rel="stylesheet">
-    <link href="../dist/img/favicon.ico" rel="shortcut icon">
-    <script defer src="../dist/js/sidemenu.js"></script>
-  </head>
-  <body class="test-cases">
-    <header>
-      <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
-      <a href="" class="ro-logo">
-        <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
-        Rijksoverheid
-      </a>
 
-      <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
-        <div>
-          <ul>
-              <li><a href="../index.html">Rijksoverheid CSS</a></li>
-              <li><a href="index.html">Online Componenten Bibliotheek</a></li>
-              <li><a href="#" aria-current="page">Aan/uit-schuifknop</a></li>
-          </ul>
-        </div>
-      </nav>
+<head>
+  <meta charset="UTF-8">
+  <title>Aan/uit-schuifknop - Rijksoverheid CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../dist/css/main.css" rel="stylesheet">
+  <link href="../dist/img/favicon.ico" rel="shortcut icon">
+  <script defer src="../dist/js/sidemenu.js"></script>
+</head>
 
-    </header>
+<body class="test-cases">
+  <header>
+    <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
+    <a href="" class="ro-logo">
+      <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
+      Rijksoverheid
+    </a>
 
-    <main class="sidemenu" id="main-content" tabindex="-1">
-      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
-        <ul>
-          <li><a href="inline-code">Aan/uit-schuifknop</a></li>
-        </ul>
-      </nav>
-
+    <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
       <div>
-          <article>
-            <div>
-              <h1>Aan/uit-schuifknop</h1>
-              <p>De schuifknop kan gebruikt worden voor het aan of uit zetten van elementen. Bijvoorbeeld voor het aan of uit zetten van meldingen.</p>
+        <ul>
+          <li><a href="../index.html"><span class="icon icon-home">Hoofdpagina icoon</span> Rijksoverheid CSS</a></li>
+          <li><a href="index.html">Online Componenten Bibliotheek</a></li>
+          <li><a href="#" aria-current="page">Aan/uit-schuifknop</a></li>
+        </ul>
+      </div>
+    </nav>
 
-              <p>Aandachtspunten:</p>
-              <ul>
-                <li>Gebruik de aan/uit-schuifknop in situaties waarbij gekozen kan worden tussen een aan en uit status. <strong>Let op: Voeg geen keuze-opties toe waarbij het niet duidelijk is wat "aan" of "uit" betekend. Niet alle hulptechnologiën lezen de inhoud van de schuifknop voor wat verwarring bij gebruikers kan zorgen.</strong></li>
-              </ul>
+  </header>
 
-              <h2>Schuifknop</h2>
-              <h3>Voorbeeld</h3>
-              <p>Visueel voorbeeld:</p>
-              <form method="post">
-                <fieldset class="toggle-switch">
-                  <legend>Voorbeeld aan/uit schuifknop</legend>
-                  <label>
-                    <span>Save my preferences</span>
-                    <span>
-                      <input type="checkbox" id="switch-1">
-                      <span class="false">Off</span>
-                      <span class="true">On</span>
-                    </span>
-                  </label>
-                </fieldset>
-              </form>
+  <main class="sidemenu" id="main-content" tabindex="-1">
+    <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+      <ul>
+        <li><a href="inline-code">Aan/uit-schuifknop</a></li>
+      </ul>
+    </nav>
 
-              <p>Html-voorbeeld:</p>
-              <pre>
+    <div>
+      <article>
+        <div>
+          <h1>Aan/uit-schuifknop</h1>
+          <p>De schuifknop kan gebruikt worden voor het aan of uit zetten van elementen. Bijvoorbeeld voor het aan of
+            uit zetten van meldingen.</p>
+
+          <p>Aandachtspunten:</p>
+          <ul>
+            <li>Gebruik de aan/uit-schuifknop in situaties waarbij gekozen kan worden tussen een aan en uit status.
+              <strong>Let op: Voeg geen keuze-opties toe waarbij het niet duidelijk is wat "aan" of "uit" betekend. Niet
+                alle hulptechnologiën lezen de inhoud van de schuifknop voor wat verwarring bij gebruikers kan
+                zorgen.</strong></li>
+          </ul>
+
+          <h2>Schuifknop</h2>
+          <h3>Voorbeeld</h3>
+          <p>Visueel voorbeeld:</p>
+          <form method="post">
+            <fieldset class="toggle-switch">
+              <legend>Voorbeeld aan/uit schuifknop</legend>
+              <label>
+                <span>Save my preferences</span>
+                <span>
+                  <input type="checkbox" id="switch-1">
+                  <span class="false">Off</span>
+                  <span class="true">On</span>
+                </span>
+              </label>
+            </fieldset>
+          </form>
+
+          <p>Html-voorbeeld:</p>
+          <pre>
                 <code>
 &lt;fieldset class="toggle-switch">
   &lt;legend>Voorbeeld aan/uit schuifknop&lt;/legend>
@@ -80,44 +86,44 @@
                 </code>
               </pre>
 
-              <h2>Gegroepeerde schuifknoppen</h2>
-              <h3>Voorbeeld</h3>
-              <p>Visueel voorbeeld:</p>
-              <form method="post">
-                <fieldset class="toggle-switch">
-                  <legend>Toggle switch</legend>
+          <h2>Gegroepeerde schuifknoppen</h2>
+          <h3>Voorbeeld</h3>
+          <p>Visueel voorbeeld:</p>
+          <form method="post">
+            <fieldset class="toggle-switch">
+              <legend>Toggle switch</legend>
 
-                  <label>
-                    <span>Toon filters</span>
-                    <span>
-                      <input type="checkbox" id="switch-2">
-                      <span class="false">Uit</span>
-                      <span class="true">Aan</span>
-                    </span>
-                  </label>
+              <label>
+                <span>Toon filters</span>
+                <span>
+                  <input type="checkbox" id="switch-2">
+                  <span class="false">Uit</span>
+                  <span class="true">Aan</span>
+                </span>
+              </label>
 
-                  <label>
-                    <span>Gevaccineerd</span>
-                    <span>
-                      <input type="checkbox" id="switch-3">
-                      <span class="false">Nee</span>
-                      <span class="true">Ja</span>
-                    </span>
-                  </label>
+              <label>
+                <span>Gevaccineerd</span>
+                <span>
+                  <input type="checkbox" id="switch-3">
+                  <span class="false">Nee</span>
+                  <span class="true">Ja</span>
+                </span>
+              </label>
 
-                  <label>
-                    <span>Vaccinatiestatus</span>
-                    <span>
-                      <input type="checkbox" id="switch-4">
-                      <span class="false">Ongevaccineerd</span>
-                      <span class="true">Gevaccineerd</span>
-                    </span>
-                  </label>
-                </fieldset>
-              </form>
+              <label>
+                <span>Vaccinatiestatus</span>
+                <span>
+                  <input type="checkbox" id="switch-4">
+                  <span class="false">Ongevaccineerd</span>
+                  <span class="true">Gevaccineerd</span>
+                </span>
+              </label>
+            </fieldset>
+          </form>
 
-              <p>Html-voorbeeld:</p>
-              <pre>
+          <p>Html-voorbeeld:</p>
+          <pre>
                 <code>
 &lt;form method="post">
   &lt;fieldset class="toggle-switch">
@@ -155,7 +161,7 @@
               </pre>
 
 
-              <!-- Version based on button. Requires JS to work. If we can use the version based on checkboxes this one can be deleted.
+          <!-- Version based on button. Requires JS to work. If we can use the version based on checkboxes this one can be deleted.
               <p>Visueel voorbeeld:</p>
               <label for="toggle-switch-1">Lorem ipsum</label>
               <button type="button" role="switch" aria-checked="true"
@@ -176,25 +182,27 @@
               </code>
             </pre> -->
 
-            </div>
-          </article>
         </div>
+      </article>
+    </div>
 
-        <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het hoofdmenu</a>
-    </main>
+    <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het
+      hoofdmenu</a>
+  </main>
 
-    <footer>
-      <div class="two-thirds-one-third">
-          <span class="slogan">Manon - Rijksoverheid css framework</span>
-          <nav aria-labelledby="footer-nav-1-heading">
-            <h1 id="footer-nav-1-heading">Service</h1>
-            <ul>
-              <li><a href="../index.html">Over</a></li>
-              <li><a href="../test/index.html">Styling tests</a></li>
-              <li><a href="index.html">Online componenten bibliotheek</a></li>
-            </ul>
-          </nav>
-        </div>
-      </footer>
-  </body>
+  <footer>
+    <div class="two-thirds-one-third">
+      <span class="slogan">Manon - Rijksoverheid css framework</span>
+      <nav aria-labelledby="footer-nav-1-heading">
+        <h1 id="footer-nav-1-heading">Service</h1>
+        <ul>
+          <li><a href="../index.html">Over</a></li>
+          <li><a href="../test/index.html">Styling tests</a></li>
+          <li><a href="index.html">Online componenten bibliotheek</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+
 </html>

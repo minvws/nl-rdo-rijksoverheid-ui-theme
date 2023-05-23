@@ -1,146 +1,161 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <title>Filters - Rijksoverheid CSS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../dist/css/main.css" rel="stylesheet">
-    <link href="../dist/img/favicon.ico" rel="shortcut icon">
-    <script defer src="../dist/js/sidemenu.js"></script>
-    <script defer src="../dist/js/formHelp.js"></script>
-    <script defer src="../dist/js/filters.js"></script>
-  </head>
-  <body class="test-cases">
-    <header>
-      <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
-      <a href="" class="ro-logo">
-        <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
-        Rijksoverheid
-      </a>
 
-      <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
-        <div>
-          <ul>
-              <li><a href="../index.html">Rijksoverheid CSS</a></li>
-              <li><a href="index.html">Online Componenten Bibliotheek</a></li>
-              <li><a href="#" aria-current="page">Filters</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <title>Filters - Rijksoverheid CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../dist/css/main.css" rel="stylesheet">
+  <link href="../dist/img/favicon.ico" rel="shortcut icon">
+  <script defer src="../dist/js/sidemenu.js"></script>
+  <script defer src="../dist/js/formHelp.js"></script>
+  <script defer src="../dist/js/filters.js"></script>
+</head>
 
-    <main class="sidemenu" id="main-content" tabindex="-1">
-      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
-        <ul>
-          <li><a href="#main-content">Filters</a>
-            <ul>
-              <li><a href="#filled-example-filter">Gevuld voorbeeld</a></li>
-              <li><a href="#empty-example-filter">Leeg voorbeeld</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
+<body class="test-cases">
+  <header>
+    <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
+    <a href="" class="ro-logo">
+      <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
+      Rijksoverheid
+    </a>
 
+    <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
       <div>
-          <article>
-            <div>
-              <h1>Filters</h1>
-              <p>Bij het tonen van grote of complexe datasets kan gebruik gemaakt worden van filters. Filters geven de gebruiker de mogelijkheid om enkel relevante data te zien.</p>
+        <ul>
+          <li><a href="../index.html"><span class="icon icon-home">Hoofdpagina icoon</span> Rijksoverheid CSS</a></li>
+          <li><a href="index.html">Online Componenten Bibliotheek</a></li>
+          <li><a href="#" aria-current="page">Filters</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-              <p>Denk bij het toevoegen van filters aan de verschillende gebruikers-behoeften en -vragen. Deze kunnen per gebruiker en per situatie verschillend zijn maar in veel gevallen kunnen de meest voorkomende vragen geidentificeerd worden. Filters kunnen ingezet worden om deze vragen sneller te beantwoorden.</p>
+  <main class="sidemenu" id="main-content" tabindex="-1">
+    <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+      <ul>
+        <li><a href="#main-content">Filters</a>
+          <ul>
+            <li><a href="#filled-example-filter">Gevuld voorbeeld</a></li>
+            <li><a href="#empty-example-filter">Leeg voorbeeld</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
 
-              <p>Beschikbare voorbeelden:</p>
-              <nav aria-label="Document-navigatie">
+    <div>
+      <article>
+        <div>
+          <h1>Filters</h1>
+          <p>Bij het tonen van grote of complexe datasets kan gebruik gemaakt worden van filters. Filters geven de
+            gebruiker de mogelijkheid om enkel relevante data te zien.</p>
+
+          <p>Denk bij het toevoegen van filters aan de verschillende gebruikers-behoeften en -vragen. Deze kunnen per
+            gebruiker en per situatie verschillend zijn maar in veel gevallen kunnen de meest voorkomende vragen
+            geidentificeerd worden. Filters kunnen ingezet worden om deze vragen sneller te beantwoorden.</p>
+
+          <p>Beschikbare voorbeelden:</p>
+          <nav aria-label="Document-navigatie">
+            <ul>
+              <li><a href="#main-content">Filters</a>
                 <ul>
-                  <li><a href="#main-content">Filters</a>
-                    <ul>
-                      <li><a href="#filled-example-filter">Gevuld voorbeeld</a></li>
-                      <li><a href="#empty-example-filter">Leeg voorbeeld</a></li>
-                    </ul>
-                  </li>
+                  <li><a href="#filled-example-filter">Gevuld voorbeeld</a></li>
+                  <li><a href="#empty-example-filter">Leeg voorbeeld</a></li>
                 </ul>
-              </nav>
+              </li>
+            </ul>
+          </nav>
 
-              <p>Aandachtspunten:</p>
+          <p>Aandachtspunten:</p>
+          <ul>
+            <li>Voeg een <code>&lt;section></code> of <code>&lt;div></code> toe met de class <code>filter</code> voor de
+              correcte weergave.</li>
+            <li>Optioneel: Voeg een <code>&lt;div></code> met extra informatie toe, bijvoorbeeld de hoeveelheid
+              beschikbare resultaten.</li>
+            <li>Optioneel: Voeg de optie tot het in- en uit-klappen van de filters toe.
               <ul>
-                <li>Voeg een <code>&lt;section></code> of <code>&lt;div></code> toe met de class <code>filter</code> voor de correcte weergave.</li>
-                <li>Optioneel: Voeg een <code>&lt;div></code> met extra informatie toe, bijvoorbeeld de hoeveelheid beschikbare resultaten.</li>
-                <li>Optioneel: Voeg de optie tot het in- en uit-klappen van de filters toe.
-                  <ul>
-                    <li>Voeg bij de extra information een <code>&lt;button></code> toe met als tekst "Verberg filters" (of vergelijkbaar). Geef het daarnaast een <code>data-show-filters-label</code>-attribuut met als waarde "Toon filters" (of vergelijkbaar).</li>
-                    <li>Plaats <code>&lt;script defer src="pad/naar/filters.min.js">&lt;/script></code> in de <code>&lt;head></code> van het document.</li>
-                    <li>Het <code>defer</code> attribuut zorgt ervoor dat het script in de achtergrond geladen wordt, zodat het tonen van de pagina niet geblokkeerd wordt.</li>
-                    <li>Wanneer JavaScript niet beschikbaar is, worden de filters altijd getoont en wordt de <code>&lt;button></code> verborgen.</li>
-                    <li>Om de filters standaard te verbergen, verander je de tekst van de button naar "Toon filters" (of vergelijkbaar), gebruik je een bijbehorend <code>data-hide-filters-label</code> (in plaats van <code>data-show-filters-label</code>) en voeg je <code>aria-expanded="false"</code> toe aan de <code>&lt;button></code>.
-                  </ul>
-                </li>
-                <li>Voeg binnen het element een formulier met de beschikbare filteropties toe. Voor meer informatie over zie: <a href="/forms.html">Formulieren</a>.</li>
-                <li>In sommige gevallen kunnen formuliervelden naast elkaar geplaatst worden om het gebruikersgemak te vergroten. Denk bijvoorbeeld aan een filter gebasseerd op een begin- en eind-datum. Voor meer informatie zie: <a href="/forms.html#combined-fields">Formulieren, horizontaal uitlijnen invoervelden.</a></li>
+                <li>Voeg bij de extra information een <code>&lt;button></code> toe met als tekst "Verberg filters" (of
+                  vergelijkbaar). Geef het daarnaast een <code>data-show-filters-label</code>-attribuut met als waarde
+                  "Toon filters" (of vergelijkbaar).</li>
+                <li>Plaats <code>&lt;script defer src="pad/naar/filters.min.js">&lt;/script></code> in de
+                  <code>&lt;head></code> van het document.</li>
+                <li>Het <code>defer</code> attribuut zorgt ervoor dat het script in de achtergrond geladen wordt, zodat
+                  het tonen van de pagina niet geblokkeerd wordt.</li>
+                <li>Wanneer JavaScript niet beschikbaar is, worden de filters altijd getoont en wordt de
+                  <code>&lt;button></code> verborgen.</li>
+                <li>Om de filters standaard te verbergen, verander je de tekst van de button naar "Toon filters" (of
+                  vergelijkbaar), gebruik je een bijbehorend <code>data-hide-filters-label</code> (in plaats van
+                  <code>data-show-filters-label</code>) en voeg je <code>aria-expanded="false"</code> toe aan de
+                  <code>&lt;button></code>.
               </ul>
+            </li>
+            <li>Voeg binnen het element een formulier met de beschikbare filteropties toe. Voor meer informatie over
+              zie: <a href="/forms.html">Formulieren</a>.</li>
+            <li>In sommige gevallen kunnen formuliervelden naast elkaar geplaatst worden om het gebruikersgemak te
+              vergroten. Denk bijvoorbeeld aan een filter gebasseerd op een begin- en eind-datum. Voor meer informatie
+              zie: <a href="/forms.html#combined-fields">Formulieren, horizontaal uitlijnen invoervelden.</a></li>
+          </ul>
 
-              <h2>Voorbeelden</h2>
-              <h3 id="filled-example-filter">Ingevuld voorbeeld</h3>
-              <p>Visueel voorbeeld:</p>
-              <section class="filter">
+          <h2>Voorbeelden</h2>
+          <h3 id="filled-example-filter">Ingevuld voorbeeld</h3>
+          <p>Visueel voorbeeld:</p>
+          <section class="filter">
+            <div>
+              <p><span>5.254</span> nieuwsberichten</p>
+              <button data-show-filters-label="Toon filters">
+                Verberg filters
+              </button>
+            </div>
+            <form action="" method="post" class="horizontal-view help">
+              <fieldset>
+                <legend>Filter op datum</legend>
                 <div>
-                  <p><span>5.254</span> nieuwsberichten</p>
-                  <button data-show-filters-label="Toon filters">
-                    Verberg filters
-                  </button>
+                  <label for="keyword">Trefwoord</label>
+                  <div>
+                    <input id="keyword" name="keyword" placeholder="Bijvoorbeeld: Volksgezondheid'" type="text">
+                    <p class="explanation" data-open-label="Toelichting bij het veld: Trefwoord"
+                      data-close-label="Sluit toelichting bij het veld: Trefwoord"><span>toelichting:</span>Vul hier een
+                      trefwoord in waarop u wilt filteren.</p>
+                  </div>
                 </div>
-                <form action="" method="post" class="horizontal-view help">
-                  <fieldset>
-                    <legend>Filter op datum</legend>
+
+                <fieldset class="column-2">
+                  <legend>Periode</legend>
+                  <div>
                     <div>
-                      <label for="keyword">Trefwoord</label>
-                      <div>
-                        <input id="keyword" name="keyword" placeholder="Bijvoorbeeld: Volksgezondheid'" type="text">
-                        <p
-                          class="explanation"
-                          data-open-label="Toelichting bij het veld: Trefwoord"
-                          data-close-label="Sluit toelichting bij het veld: Trefwoord"
-                        ><span>toelichting:</span>Vul hier een trefwoord in waarop u wilt filteren.</p>
-                      </div>
+                      <label for="date-range-start">van</label>
+                      <input id="date-range-start" name="date-range-start" value="DD-MM-JJJJ" type="date">
                     </div>
 
-                    <fieldset class="column-2">
-                      <legend>Periode</legend>
-                      <div>
-                        <div>
-                          <label for="date-range-start">van</label>
-                          <input id="date-range-start" name="date-range-start" value="DD-MM-JJJJ" type="date">
-                        </div>
-
-                        <div>
-                          <label for="date-range-end">tot</label>
-                          <input id="date-range-end" name="date-range-end" value="DD-MM-JJJJ" type="date">
-                        </div>
-                      </div>
-                      <p
-                        class="explanation"
-                        data-open-label="Toelichting bij het veld: Periode"
-                        data-close-label="Sluit toelichting bij het veld: Periode"
-                      ><span>toelichting:</span>Vul hier een start- en/of einddatum als volgt in: DD-MM-JJJJ.</p>
-                    </fieldset>
-
-                    <div class="required">
-                      <label for="select">Ministerie</label>
-                      <div>
-                        <span class="nota-bene">Dit veld is verplicht</span>
-                        <select id="select" name="select">
-                          <option value="Alle ministeries">Alle ministeries</option>
-                          <option value="Ministerie van Algemene zaken">Ministerie van Algemene zaken</option>
-                          <option value="Ministerie van Binnenlandse Zaken en Koninkrijksrelaties">Ministerie van Binnenlandse Zaken en Koninkrijksrelaties</option>
-                        </select>
-                      </div>
+                    <div>
+                      <label for="date-range-end">tot</label>
+                      <input id="date-range-end" name="date-range-end" value="DD-MM-JJJJ" type="date">
                     </div>
-                  </fieldset>
+                  </div>
+                  <p class="explanation" data-open-label="Toelichting bij het veld: Periode"
+                    data-close-label="Sluit toelichting bij het veld: Periode"><span>toelichting:</span>Vul hier een
+                    start- en/of einddatum als volgt in: DD-MM-JJJJ.</p>
+                </fieldset>
 
-                  <button type="submit">Filter</button>
-                </form>
-              </section>
-              <p>Html-voorbeeld:</p>
-              <pre>
+                <div class="required">
+                  <label for="select">Ministerie</label>
+                  <div>
+                    <span class="nota-bene">Dit veld is verplicht</span>
+                    <select id="select" name="select">
+                      <option value="Alle ministeries">Alle ministeries</option>
+                      <option value="Ministerie van Algemene zaken">Ministerie van Algemene zaken</option>
+                      <option value="Ministerie van Binnenlandse Zaken en Koninkrijksrelaties">Ministerie van
+                        Binnenlandse Zaken en Koninkrijksrelaties</option>
+                    </select>
+                  </div>
+                </div>
+              </fieldset>
+
+              <button type="submit">Filter</button>
+            </form>
+          </section>
+          <p>Html-voorbeeld:</p>
+          <pre>
                 <code>
 &lt;section class="filter">
   &lt;div>
@@ -203,23 +218,23 @@
                 </code>
               </pre>
 
-              <h3 id="empty-example-filter">Leeg voorbeeld</h3>
-              <p>Visueel voorbeeld:</p>
-              <section class="filter">
-                <div>
-                  <p><span>5.254</span> nieuwsberichten</p>
-                  <button aria-expanded="false" data-hide-filters-label="Verberg filters">
-                    Toon filters
-                  </button>
-                </div>
-                <form action="" method="post">
-                  <fieldset>
-                    <legend>Voeg hier de filteropties toe</legend>
-                  </fieldset>
-                </form>
-              </section>
-              <p>Html-voorbeeld:</p>
-              <pre>
+          <h3 id="empty-example-filter">Leeg voorbeeld</h3>
+          <p>Visueel voorbeeld:</p>
+          <section class="filter">
+            <div>
+              <p><span>5.254</span> nieuwsberichten</p>
+              <button aria-expanded="false" data-hide-filters-label="Verberg filters">
+                Toon filters
+              </button>
+            </div>
+            <form action="" method="post">
+              <fieldset>
+                <legend>Voeg hier de filteropties toe</legend>
+              </fieldset>
+            </form>
+          </section>
+          <p>Html-voorbeeld:</p>
+          <pre>
                 <code>
 &lt;section class="filter">
   &lt;div>
@@ -237,25 +252,27 @@
 &lt;/section>
                 </code>
               </pre>
-            </div>
-          </article>
         </div>
+      </article>
+    </div>
 
-        <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het hoofdmenu</a>
-    </main>
+    <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het
+      hoofdmenu</a>
+  </main>
 
-    <footer>
-      <div class="two-thirds-one-third">
-          <span class="slogan">Manon - Rijksoverheid css framework</span>
-          <nav aria-labelledby="footer-nav-1-heading">
-            <h1 id="footer-nav-1-heading">Service</h1>
-            <ul>
-              <li><a href="../index.html">Over</a></li>
-              <li><a href="../test/index.html">Styling tests</a></li>
-              <li><a href="index.html">Online componenten bibliotheek</a></li>
-            </ul>
-          </nav>
-        </div>
-      </footer>
-  </body>
+  <footer>
+    <div class="two-thirds-one-third">
+      <span class="slogan">Manon - Rijksoverheid css framework</span>
+      <nav aria-labelledby="footer-nav-1-heading">
+        <h1 id="footer-nav-1-heading">Service</h1>
+        <ul>
+          <li><a href="../index.html">Over</a></li>
+          <li><a href="../test/index.html">Styling tests</a></li>
+          <li><a href="index.html">Online componenten bibliotheek</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+
 </html>

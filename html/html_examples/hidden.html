@@ -1,71 +1,76 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <title>hidden - Rijksoverheid CSS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../dist/css/main.css" rel="stylesheet">
-    <link href="../dist/img/favicon.ico" rel="shortcut icon">
-    <script defer src="../dist/js/sidemenu.js"></script>
-  </head>
-  <body class="test-cases">
-    <header>
-      <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
-      <a href="" class="ro-logo">
-        <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
-        Rijksoverheid
-      </a>
 
-      <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
-        <div>
-          <ul>
-              <li><a href="../index.html">Rijksoverheid CSS</a></li>
-              <li><a href="index.html">Online Componenten Bibliotheek</a></li>
-              <li><a href="#" aria-current="page">hidden</a></li>
-          </ul>
-        </div>
-      </nav>
+<head>
+  <meta charset="UTF-8">
+  <title>hidden - Rijksoverheid CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../dist/css/main.css" rel="stylesheet">
+  <link href="../dist/img/favicon.ico" rel="shortcut icon">
+  <script defer src="../dist/js/sidemenu.js"></script>
+</head>
 
-    </header>
+<body class="test-cases">
+  <header>
+    <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
+    <a href="" class="ro-logo">
+      <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
+      Rijksoverheid
+    </a>
 
-    <main class="sidemenu" id="main-content" tabindex="-1">
-      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
-        <ul>
-          <li><a href="nowrap.html">Introductie</a></li>
-          <li><a href="#examples">Voorbeelden</a>
-              <ul>
-                <li><a href="#nowrap-p">Paragraaf</a></li>
-              </ul>
-          </li>
-        </ul>
-      </nav>
-
+    <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
       <div>
-          <article id="introduction">
-            <div>
-              <h1>Object verbergen - <dfn>hidden</dfn></h1>
-              <p>Object verbergen. Door middel van een <code>display:none</code> wordt het object verborgen.</p>
-              <p><strong>Let op:</strong> Screen readers verbergen over het algemeen ook objecten met een <code>display:none</code> voor hun gebruikers. Als dit niet de bedoeling is en de content wel beschikbaar dient te zijn voor screenreader gebruikers is de helper class <a href="">visually-hidden</a> waarschijnlijk de betere optie.</p>
+        <ul>
+          <li><a href="../index.html"><span class="icon icon-home">Hoofdpagina icoon</span> Rijksoverheid CSS</a></li>
+          <li><a href="index.html">Online Componenten Bibliotheek</a></li>
+          <li><a href="#" aria-current="page">hidden</a></li>
+        </ul>
+      </div>
+    </nav>
 
-              <h2>Benodigde stappen:</h2>
-              <ol>
-                <li>Voeg de class <code>hidden</code> toe aan het gewenste element.</li>
-              </ol>
-            </div>
-          </article>
+  </header>
 
-          <article id="examples">
-            <div>
-              <h1>Voorbeelden</h1>
-              <p>Onderstaand voorbeeld bevat twee paragrafen waarvan er een verborgen wordt.</p>
+  <main class="sidemenu" id="main-content" tabindex="-1">
+    <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+      <ul>
+        <li><a href="nowrap.html">Introductie</a></li>
+        <li><a href="#examples">Voorbeelden</a>
+          <ul>
+            <li><a href="#nowrap-p">Paragraaf</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
 
-              <div>
-                <p class="hidden">Voorbeeld paragraaf 1.</p>
-                <p>Voorbeeld paragraaf 2.</p>
-              </div>
+    <div>
+      <article id="introduction">
+        <div>
+          <h1>Object verbergen - <dfn>hidden</dfn></h1>
+          <p>Object verbergen. Door middel van een <code>display:none</code> wordt het object verborgen.</p>
+          <p><strong>Let op:</strong> Screen readers verbergen over het algemeen ook objecten met een
+            <code>display:none</code> voor hun gebruikers. Als dit niet de bedoeling is en de content wel beschikbaar
+            dient te zijn voor screenreader gebruikers is de helper class <a href="">visually-hidden</a> waarschijnlijk
+            de betere optie.</p>
 
-              <h2>Html-voorbeeld:</h2>
-              <pre>
+          <h2>Benodigde stappen:</h2>
+          <ol>
+            <li>Voeg de class <code>hidden</code> toe aan het gewenste element.</li>
+          </ol>
+        </div>
+      </article>
+
+      <article id="examples">
+        <div>
+          <h1>Voorbeelden</h1>
+          <p>Onderstaand voorbeeld bevat twee paragrafen waarvan er een verborgen wordt.</p>
+
+          <div>
+            <p class="hidden">Voorbeeld paragraaf 1.</p>
+            <p>Voorbeeld paragraaf 2.</p>
+          </div>
+
+          <h2>Html-voorbeeld:</h2>
+          <pre>
                 <code>
 &lt;div>
   &lt;p class="hidden">Voorbeeld paragraaf 1.&lt;/p>
@@ -73,23 +78,24 @@
 &lt;/div>
                 </code>
               </pre>
-            </div>
-          </article>
         </div>
-    </main>
+      </article>
+    </div>
+  </main>
 
-    <footer>
-      <div class="two-thirds-one-third">
-          <span class="slogan">Manon - Rijksoverheid css framework</span>
-          <nav aria-labelledby="footer-nav-1-heading">
-            <h1 id="footer-nav-1-heading">Service</h1>
-            <ul>
-              <li><a href="../index.html">Over</a></li>
-              <li><a href="../test/index.html">Styling tests</a></li>
-              <li><a href="index.html">Online componenten bibliotheek</a></li>
-            </ul>
-          </nav>
-        </div>
-      </footer>
-  </body>
+  <footer>
+    <div class="two-thirds-one-third">
+      <span class="slogan">Manon - Rijksoverheid css framework</span>
+      <nav aria-labelledby="footer-nav-1-heading">
+        <h1 id="footer-nav-1-heading">Service</h1>
+        <ul>
+          <li><a href="../index.html">Over</a></li>
+          <li><a href="../test/index.html">Styling tests</a></li>
+          <li><a href="index.html">Online componenten bibliotheek</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+
 </html>

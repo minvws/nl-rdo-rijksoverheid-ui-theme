@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <title>Voorbeeld login-pagina - Rijksoverheid CSS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../dist/css/main.css" rel="stylesheet">
-    <link href="../dist/img/favicon.ico" rel="shortcut icon">
-    <script defer src="../dist/js/sidemenu.js"></script>
-    <script defer src="../dist/js/formHelp.js"></script>
-  </head>
-  <body class="test-cases">
-    <header>
-      <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
-      <a href="" class="ro-logo">
-        <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
-        Rijksoverheid
-      </a>
 
-      <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
-        <div>
-          <ul>
-              <li><a href="../index.html">Rijksoverheid CSS</a></li>
-              <li><a href="index.html">Online Componenenten Bibliotheek</a></li>
-              <li><a href="#" aria-current="page">Voorbeeld login-pagina</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <title>Voorbeeld login-pagina - Rijksoverheid CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../dist/css/main.css" rel="stylesheet">
+  <link href="../dist/img/favicon.ico" rel="shortcut icon">
+  <script defer src="../dist/js/sidemenu.js"></script>
+  <script defer src="../dist/js/formHelp.js"></script>
+</head>
 
-    <main class="sidemenu" id="main-content" tabindex="-1">
-      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
-        <ul>
-            <li><a href="#">Voorbeeld login-pagina</a>
-              <ul>
-                <li><a href="#visual-example">Viseel voorbeeld</a></li>
-                <li><a href="#html-example">Html-voorbeeld</a></li>
-              </ul>
-            </li>
-        </ul>
-      </nav>
+<body class="test-cases">
+  <header>
+    <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
+    <a href="" class="ro-logo">
+      <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
+      Rijksoverheid
+    </a>
 
+    <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
       <div>
-        <article>
+        <ul>
+          <li><a href="../index.html"><span class="icon icon-home">Hoofdpagina icoon</span> Rijksoverheid CSS</a></li>
+          <li><a href="index.html">Online Componenenten Bibliotheek</a></li>
+          <li><a href="#" aria-current="page">Voorbeeld login-pagina</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="sidemenu" id="main-content" tabindex="-1">
+    <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+      <ul>
+        <li><a href="#">Voorbeeld login-pagina</a>
+          <ul>
+            <li><a href="#visual-example">Viseel voorbeeld</a></li>
+            <li><a href="#html-example">Html-voorbeeld</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <div>
+      <article>
         <div>
           <h1>Voorbeeld login-pagina</h1>
           <p>Voorbeeld van een mogelijke opzet voor een login-pagina.</p>
@@ -72,9 +74,9 @@
           <nav aria-label="Hoofdnavigatie">
             <div>
               <ul>
-                  <li ><a href="" aria-current="page">Hoofdpagina</a></li>
-                  <li><a href="">Ipsum</a></li>
-                  <li><a href="">Dolor</a></li>
+                <li><a href="" aria-current="page">Hoofdpagina</a></li>
+                <li><a href="">Ipsum</a></li>
+                <li><a href="">Dolor</a></li>
               </ul>
             </div>
           </nav>
@@ -88,28 +90,17 @@
                   <legend>Login-gegevens:</legend>
                   <label for="username">Gebruikersnaam</label>
                   <div>
-                    <input
-                      id="username"
-                      name="username"
-                      placeholder="Gebruikersnaam"
-                      type="text">
+                    <input id="username" name="username" placeholder="Gebruikersnaam" type="text">
                   </div>
 
                   <label for="password">Wachtwoord</label>
                   <div>
-                    <input
-                      id="password"
-                      name="achtwoord"
-                      pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
-                      placeholder="wachtwoord"
-                      type="text"
-                      aria-describedby="password-message">
-                    <p
-                      class="explanation"
-                      data-open-label="Toelichting bij het veld: Voorbeeld text input"
-                      data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
-                      id="password-message"
-                    ><span>Toelichting:</span> Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleineletter en 1 cijfer.</p>
+                    <input id="password" name="achtwoord" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+                      placeholder="wachtwoord" type="text" aria-describedby="password-message">
+                    <p class="explanation" data-open-label="Toelichting bij het veld: Voorbeeld text input"
+                      data-close-label="Sluit toelichting bij het veld: Voorbeeld text input" id="password-message">
+                      <span>Toelichting:</span> Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1
+                      hoofdletter, 1 kleineletter en 1 cijfer.</p>
                   </div>
                 </fieldset>
                 <button type="submit">Inloggen</button>
@@ -125,9 +116,9 @@
         </footer>
 
         <div>
-        <h3 id="html-example">html-voorbeeld:</h3>
+          <h3 id="html-example">html-voorbeeld:</h3>
 
-        <pre>
+          <pre>
           <code>
 &lt;!DOCTYPE html>
 &lt;html lang="nl">
@@ -206,23 +197,24 @@
             </code>
           </pre>
 
-          </div>
-        </article>
-      </div>
-    </main>
+        </div>
+      </article>
+    </div>
+  </main>
 
-    <footer>
-      <div class="two-thirds-one-third">
-        <span class="slogan">Manon - Rijksoverheid css framework</span>
-        <nav aria-labelledby="footer-nav-1-heading">
-          <h1 id="footer-nav-1-heading">Service</h1>
-          <ul>
-            <li><a href="../index.html">Over</a></li>
-            <li><a href="../test/index.html">Styling tests</a></li>
-            <li><a href="index.html">Online componenten bibliotheek</a></li>
-          </ul>
-        </nav>
-      </div>
-    </footer>
-  </body>
+  <footer>
+    <div class="two-thirds-one-third">
+      <span class="slogan">Manon - Rijksoverheid css framework</span>
+      <nav aria-labelledby="footer-nav-1-heading">
+        <h1 id="footer-nav-1-heading">Service</h1>
+        <ul>
+          <li><a href="../index.html">Over</a></li>
+          <li><a href="../test/index.html">Styling tests</a></li>
+          <li><a href="index.html">Online componenten bibliotheek</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+
 </html>

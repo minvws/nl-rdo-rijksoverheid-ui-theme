@@ -1,621 +1,627 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <title>Tabellen - Rijksoverheid CSS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../dist/css/main.css" rel="stylesheet">
-    <link href="../dist/img/favicon.ico" rel="shortcut icon">
-    <script defer src="../dist/js/expandoRows.js"></script>
-  </head>
-  <body id="table">
-    <header>
-      <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
-      <a href="" class="ro-logo">
-        <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
-        Rijksoverheid
-      </a>
 
-      <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
-        <div>
-          <ul>
-              <li><a href="../index.html">Rijksoverheid CSS</a></li>
-              <li><a href="index.html">Styling tests</a></li>
-              <li><a href="#" aria-current="page">Tabellen</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <title>Tabellen - Rijksoverheid CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../dist/css/main.css" rel="stylesheet">
+  <link href="../dist/img/favicon.ico" rel="shortcut icon">
+  <script defer src="../dist/js/expandoRows.js"></script>
+</head>
 
-    <main id="main-content" tabindex="-1">
-      <section>
-        <div>
-          <h1>Tabellen</h1>
-          <div class="horizontal-scroll">
-            <table>
-              <caption>Basisvoorbeeld tabel:</caption>
-              <thead>
-                <tr>
-                  <th scope="col">Table header heading 1</th>
-                  <th scope="col">Table header heading 2</th>
-                  <th scope="col">Table header heading 3</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Lorem</td>
-                  <td>Ipsum</td>
-                  <td>Dolor set</td>
-                </tr>
-                <tr>
-                  <td>Lorem</td>
-                  <td>Ipsum</td>
-                  <td>Dolor set</td>
-                </tr>
-                <tr>
-                  <td>Lorem</td>
-                  <td>Ipsum</td>
-                  <td>Dolor set</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+<body id="table">
+  <header>
+    <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
+    <a href="" class="ro-logo">
+      <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
+      Rijksoverheid
+    </a>
 
-          <div class="horizontal-scroll">
-            <table>
-              <caption>Table with titlebar and title example:</caption>
-              <thead>
-                <tr>
-                  <th scope="col">Table header heading 1</th>
-                  <th scope="col">Table header heading 2</th>
-                  <th scope="col">Table header heading 3</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Lorem</td>
-                  <td>Ipsum</td>
-                  <td>Dolor set</td>
-                </tr>
-                <tr>
-                  <td>Lorem</td>
-                  <td>Ipsum</td>
-                  <td>Dolor set</td>
-                </tr>
-                <tr>
-                  <td>Lorem</td>
-                  <td>Ipsum</td>
-                  <td>Dolor set</td>
-                </tr>
-              </tbody>
-              <tfoot>
-                <tr>
-                  <th>Table footer heading 1</th>
-                  <th>Table footer heading 2</th>
-                  <th>Table footer heading 3</th>
-                </tr>
-                <tr>
-                  <td>Table footer 1</td>
-                  <td>Table footer 2</td>
-                  <td>Table footer 3</td>
-                </tr>
-              </tfoot>
-            </table>
-          </div>
-
-          <div class="horizontal-scroll">
-            <table>
-              <caption>Tabelvoorbeeld met gegroepeerde elementen:</caption>
-              <thead>
-                <tr>
-                  <th scope="col">Lorem</th>
-                  <th scope="col">Table header heading</th>
-                  <th scope="col">Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Lorem</td>
-                  <td>Ipsum</td>
-                  <td>
-                    <div>
-                      <form><button type="submit" class="icon icon-heart">Love</button></form>
-                      <form><input type="submit" value="Lorem"></form>
-                      <form><input type="submit" value="Lorem"></form>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="horizontal-scroll">
-            <table>
-              <caption>Tabelvoorbeeld met selectievak:</caption>
-              <thead>
-                <tr>
-                  <th scope="col"><input type="checkbox"></th>
-                  <th scope="col">Table header heading</th>
-                  <th scope="col">Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><input type="checkbox"></td>
-                  <td>Ipsum</td>
-                  <td><form><input type="submit" value="Lorem"></form></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="horizontal-scroll">
-            <table>
-              <caption>Tabelvoorbeeld met gegroepeerde elementen:</caption>
-              <thead>
-                <tr>
-                  <th scope="col">Lorem</th>
-                  <th scope="col">Table header heading</th>
-                  <th scope="col">Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Lorem</td>
-                  <td>Ipsum</td>
-                  <td>
-                    <div>
-                      <form><button type="submit" class="icon icon-heart">Love</button></form>
-                      <form><input type="submit" value="Lorem"></form>
-                      <form><input type="submit" value="Lorem"></form>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="horizontal-scroll">
-            <table>
-              <caption>Tabelvoorbeeld meldingen:</caption>
-              <thead>
-                <tr>
-                  <th scope="col">Table header heading 1</th>
-                  <th scope="col">Table header heading 2</th>
-                  <th scope="col">Table header heading 3</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="error" role="group" aria-label="foutmelding"><span>Fout:</span> Lorem</td>
-                  <td class="error" role="group" aria-label="foutmelding"><span>Fout:</span> Lorem</td>
-                  <td class="error" role="group" aria-label="foutmelding"><span>Fout:</span> Lorem</td>
-                </tr>
-                <tr>
-                  <td class="warning" role="group" aria-label="waarschuwing"><span>Waarschuwing:</span>lorem</td>
-                  <td class="warning" role="group" aria-label="waarschuwing"><span>Waarschuwing:</span>lorem</td>
-                  <td class="warning" role="group" aria-label="waarschuwing"><span>Waarschuwing:</span>lorem</td>
-                </tr>
-                <tr>
-                  <td class="confirmation" role="group" aria-label="bevestiging"><span>Bevestiging:</span>  Lorem</td>
-                  <td class="confirmation" role="group" aria-label="bevestiging"><span>Bevestiging:</span>  Lorem</td>
-                  <td class="confirmation" role="group" aria-label="bevestiging"><span>Bevestiging:</span>  Lorem</td>
-                </tr>
-                <tr>
-                  <td class="explanation" role="group" aria-label="toelichting"><span>Toelichting:</span> Lorem</td>
-                  <td class="explanation" role="group" aria-label="toelichting"><span>Toelichting:</span> Lorem</td>
-                  <td class="explanation" role="group" aria-label="toelichting"><span>Toelichting:</span> Lorem</td>
-                </tr>
-                <tr>
-                  <td class="primary" role="group" aria-label="primair"><span>Primair:</span> Lorem</td>
-                  <td class="primary" role="group" aria-label="primair"><span>Primair:</span> Lorem</td>
-                  <td class="primary" role="group" aria-label="primair"><span>Primair:</span> Lorem</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="horizontal-scroll">
-            <table>
-              <caption>Tabelvoorbeeld met selectievak:</caption>
-              <thead>
-                <tr>
-                  <th scope="col"><input type="checkbox"></th>
-                  <th scope="col">Table header heading</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><input type="checkbox"></td>
-                  <td>Ipsum</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="horizontal-scroll">
-            <table>
-              <caption>Tabelvoorbeeld met data over meerdere kolommen:</caption>
-              <thead>
-                <tr>
-                  <th scope="col">Lorem ipsum</th>
-                  <th scope="col">Dolor set</th>
-                  <th scope="col">Amet</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Lorem ipsum dolor set amet</td>
-                  <td>Lorem</td>
-                  <td>10</td>
-                </tr>
-                <tr>
-                  <td>Lorem ipsum dolor set amet</td>
-                  <td>Lorem</td>
-                  <td>100</td>
-                </tr>
-                <tr>
-                  <td colspan="3">This cell takes up three columns</td>
-                </tr>
-                <tr>
-                  <td>Lorem ipsum dolor set amet</td>
-                  <td>Lorem</td>
-                  <td>40</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="horizontal-scroll">
-            <table>
-              <caption>Tabelvoorbeeld met data over meerdere rijen:</caption>
-              <thead>
-                <tr>
-                  <th scope="col">Lorem ipsum</th>
-                  <th scope="col">Dolor set</th>
-                  <th scope="col">Total</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Lorem</td>
-                  <td>10</td>
-                  <td rowspan="2">110</td>
-                </tr>
-                <tr>
-                  <td>Ipsum</td>
-                  <td>100</td>
-                </tr>
-                <tr>
-                  <td>Lorem</td>
-                  <td>40</td>
-                  <td>40</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="horizontal-scroll">
-            <table class="condensed">
-              <caption>Simple table example:</caption>
-              <thead>
-                <tr>
-                  <th scope="col">Table header heading 1</th>
-                  <th scope="col">Table header heading 2</th>
-                  <th scope="col">Table header heading 3</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Lorem</td>
-                  <td>Ipsum</td>
-                  <td>Dolor set</td>
-                </tr>
-                <tr>
-                  <td>Lorem</td>
-                  <td>Ipsum</td>
-                  <td>Dolor set</td>
-                </tr>
-                <tr>
-                  <td>Lorem</td>
-                  <td>Ipsum</td>
-                  <td>Dolor set</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="horizontal-scroll">
-            <table>
-              <caption>Tabelvoorbeeld met gegroepeerde data:</caption>
-              <colgroup>
-                  <col>
-                  <col span="2" class="tint-1">
-                  <col span="2" class="tint-2">
-              </colgroup>
-              <tbody>
-                <tr>
-                  <td>Lorem</td>
-                  <td>Ipsum</td>
-                  <td>Dolor</td>
-                  <td>Consectetur</td>
-                  <td>Adepicing</td>
-                </tr>
-                <tr>
-                  <td>Ipsum</td>
-                  <td>Set</td>
-                  <td>Amet</td>
-                  <td>Ipsum</td>
-                  <td>Dolor</td>
-                </tr>
-                <tr>
-                  <td>Lorem</td>
-                  <td>Consectetur</td>
-                  <td>Adepicing</td>
-                  <td>Lorem</td>
-                  <td>Ipsum</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="horizontal-scroll">
-            <table>
-              <caption>Tabelvoorbeeld met sorteerbare data:</caption>
-              <thead>
-                <tr>
-                  <th scope="col" class="sortable" abbr="Sortable data">Sortable
-                    <button title="Sort ascending">Ascending</button>
-                  </th>
-                  <th scope="col" class="ascending" abbr="Ascending data">Ascending
-                    <button title="Sort descending">Descending</button>
-                  </th>
-                  <th scope="col" class="descending" abbr="Descending data">Descending
-                    <button title="Sort ascending">Ascending</button>
-                  </th>
-                </tr>
-              </thead>
-            </table>
-          </div>
-
-          <div class="horizontal-scroll">
-              <table class="summary">
-                <caption>Samenvatting overzicht lorem ipsum:</caption>
-                <thead>
-                  <tr>
-                    <th scope="col">Risicolevel</th>
-                    <th scope="col">Hoeveelheid</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><span class="critical">Critical</span></td>
-                    <td class="number">1</td>
-                  </tr>
-
-                  <tr>
-                    <td><span class="high">Hoog</span></td>
-                    <td class="number">1</td>
-                  </tr>
-
-                  <tr>
-                    <td><span class="medium">Gemiddeld</span></td>
-                    <td class="number">3</td>
-                  </tr>
-
-                  <tr>
-                    <td><span class="low">Laag</span></td>
-                    <td class="number">6</td>
-                  </tr>
-
-                  <tr>
-                    <td><span class="recommendation">Aanbeveling</span></td>
-                    <td class="number">10</td>
-                  </tr>
-                </tbody>
-                <tfoot>
-                  <tr>
-                    <td>Totaal</td>
-                    <td class="number">21</td>
-                  </tr>
-                </tfoot>
-              </table>
-            </div>
-
-          <div class="horizontal-scroll">
-            <table class="condensed">
-              <caption>Voorbeeld uitklapbare tabelrijen:</caption>
-              <thead>
-                <tr>
-                  <th scope="col">Risicolevel</th>
-                  <th scope="col">Bevindingstype</th>
-                  <th scope="col">Hoeveelheid</th>
-                  <th scope="col">Status</th>
-                  <th scope="col">Details</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><span class="critical">Critical</span></td>
-                  <td>Lorem ipsum dolor set</td>
-                  <td class="number">4</td>
-                  <td>New</td>
-                  <td><button class="expando-button" data-close-label="Sluit details">Open details</button></td>
-                </tr>
-                <tr class="expando-row">
-                  <td colspan="5">
-                      <span class="visually-hidden">Lorem ipsum dolor set</span>
-                      <h1>Lorem ipsum details</h1>
-                      <p>De extra content.</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><span class="high">High</span></td>
-                  <td>Lorem ipsum dolor set</td>
-                  <td class="number">12</td>
-                  <td>New</td>
-                  <td><button class="expando-button" data-close-label="Sluit details">Open details</button></td>
-                </tr>
-                <tr class="expando-row">
-                  <td colspan="5">
-                      <span class="visually-hidden">Lorem ipsum dolor set</span>
-                      <h1>Lorem ipsum details</h1>
-                      <p>De extra content.</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="horizontal-scroll sticky-header">
-            <table>
-              <caption>Tabelvoorbeeld met een sticky header.</caption>
-              <thead>
-                <tr>
-                  <th scope="col">Heading 1</th>
-                  <th scope="col">Heading 2</th>
-                  <th scope="col">Heading 3</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Lorem</td>
-                  <td>Ipsum</td>
-                  <td>Dolor set</td>
-                </tr>
-                <tr>
-                  <td>Lorem</td>
-                  <td>Ipsum</td>
-                  <td>Dolor set</td>
-                </tr>
-                <tr>
-                  <td>Lorem</td>
-                  <td>Ipsum</td>
-                  <td>Dolor set</td>
-                </tr>
-                <tr>
-                  <td>Lorem</td>
-                  <td>Ipsum</td>
-                  <td>Dolor set</td>
-                </tr>
-                <tr>
-                  <td>Lorem</td>
-                  <td>Ipsum</td>
-                  <td>Dolor set</td>
-                </tr>
-                <tr>
-                  <td>Lorem</td>
-                  <td>Ipsum</td>
-                  <td>Dolor set</td>
-                </tr>
-                <tr>
-                  <td>Lorem</td>
-                  <td>Ipsum</td>
-                  <td>Dolor set</td>
-                </tr>
-                <tr>
-                  <td>Lorem</td>
-                  <td>Ipsum</td>
-                  <td>Dolor set</td>
-                </tr>
-                <tr>
-                  <td>Lorem</td>
-                  <td>Ipsum</td>
-                  <td>Dolor set</td>
-                </tr>
-                <tr>
-                  <td>Lorem</td>
-                  <td>Ipsum</td>
-                  <td>Dolor set</td>
-                </tr>
-                <tr>
-                  <td>Lorem</td>
-                  <td>Ipsum</td>
-                  <td>Dolor set</td>
-                </tr>
-                <tr>
-                  <td>Lorem</td>
-                  <td>Ipsum</td>
-                  <td>Dolor set</td>
-                </tr>
-                <tr>
-                  <td>Lorem</td>
-                  <td>Ipsum</td>
-                  <td>Dolor set</td>
-                </tr>
-                <tr>
-                  <td>Lorem</td>
-                  <td>Ipsum</td>
-                  <td>Dolor set</td>
-                </tr>
-                <tr>
-                  <td>Lorem</td>
-                  <td>Ipsum</td>
-                  <td>Dolor set</td>
-                </tr>
-                <tr>
-                  <td>Lorem</td>
-                  <td>Ipsum</td>
-                  <td>Dolor set</td>
-                </tr>
-                <tr>
-                  <td>Lorem</td>
-                  <td>Ipsum</td>
-                  <td>Dolor set</td>
-                </tr>
-                <tr>
-                  <td>Lorem</td>
-                  <td>Ipsum</td>
-                  <td>Dolor set</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="horizontal-scroll">
-            <table>
-              <caption>Tabelvoorbeeld met aangegeven scope:</caption>
-              <thead>
-                <tr>
-                  <th scope="col">Naam</th>
-                  <th scope="col">Diersoort</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Manon</th>
-                  <td>Kat</td>
-                </tr>
-                <tr>
-                  <th scope="row">Max</th>
-                  <td>Hond</td>
-                </tr>
-                <tr>
-                  <th scope="row">Keiko</th>
-                  <td>Kat</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-        </div>
-      </section>
-
-      <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het hoofdmenu</a>
-    </main>
-
-    <footer>
-      <div class="two-thirds-one-third">
-        <span class="slogan">Manon - Rijksoverheid css framework</span>
-        <nav aria-labelledby="footer-nav-1-heading">
-          <h1 id="footer-nav-1-heading">Service</h1>
-          <ul>
-            <li><a href="../index.html">Over</a></li>
-            <li><a href="index.html">Styling tests</a></li>
-            <li><a href="../html_examples/index.html">Online componenten bibliotheek</a></li>
-          </ul>
-        </nav>
+    <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
+      <div>
+        <ul>
+          <li><a href="../index.html"><span class="icon icon-home">Hoofdpagina icoon</span> Rijksoverheid CSS</a></li>
+          <li><a href="index.html">Styling tests</a></li>
+          <li><a href="#" aria-current="page">Tabellen</a></li>
+        </ul>
       </div>
-    </footer>
-  </body>
+    </nav>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <section>
+      <div>
+        <h1>Tabellen</h1>
+        <div class="horizontal-scroll">
+          <table>
+            <caption>Basisvoorbeeld tabel:</caption>
+            <thead>
+              <tr>
+                <th scope="col">Table header heading 1</th>
+                <th scope="col">Table header heading 2</th>
+                <th scope="col">Table header heading 3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lorem</td>
+                <td>Ipsum</td>
+                <td>Dolor set</td>
+              </tr>
+              <tr>
+                <td>Lorem</td>
+                <td>Ipsum</td>
+                <td>Dolor set</td>
+              </tr>
+              <tr>
+                <td>Lorem</td>
+                <td>Ipsum</td>
+                <td>Dolor set</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="horizontal-scroll">
+          <table>
+            <caption>Table with titlebar and title example:</caption>
+            <thead>
+              <tr>
+                <th scope="col">Table header heading 1</th>
+                <th scope="col">Table header heading 2</th>
+                <th scope="col">Table header heading 3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lorem</td>
+                <td>Ipsum</td>
+                <td>Dolor set</td>
+              </tr>
+              <tr>
+                <td>Lorem</td>
+                <td>Ipsum</td>
+                <td>Dolor set</td>
+              </tr>
+              <tr>
+                <td>Lorem</td>
+                <td>Ipsum</td>
+                <td>Dolor set</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th>Table footer heading 1</th>
+                <th>Table footer heading 2</th>
+                <th>Table footer heading 3</th>
+              </tr>
+              <tr>
+                <td>Table footer 1</td>
+                <td>Table footer 2</td>
+                <td>Table footer 3</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <div class="horizontal-scroll">
+          <table>
+            <caption>Tabelvoorbeeld met gegroepeerde elementen:</caption>
+            <thead>
+              <tr>
+                <th scope="col">Lorem</th>
+                <th scope="col">Table header heading</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lorem</td>
+                <td>Ipsum</td>
+                <td>
+                  <div>
+                    <form><button type="submit" class="icon icon-heart">Love</button></form>
+                    <form><input type="submit" value="Lorem"></form>
+                    <form><input type="submit" value="Lorem"></form>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="horizontal-scroll">
+          <table>
+            <caption>Tabelvoorbeeld met selectievak:</caption>
+            <thead>
+              <tr>
+                <th scope="col"><input type="checkbox"></th>
+                <th scope="col">Table header heading</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td>Ipsum</td>
+                <td>
+                  <form><input type="submit" value="Lorem"></form>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="horizontal-scroll">
+          <table>
+            <caption>Tabelvoorbeeld met gegroepeerde elementen:</caption>
+            <thead>
+              <tr>
+                <th scope="col">Lorem</th>
+                <th scope="col">Table header heading</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lorem</td>
+                <td>Ipsum</td>
+                <td>
+                  <div>
+                    <form><button type="submit" class="icon icon-heart">Love</button></form>
+                    <form><input type="submit" value="Lorem"></form>
+                    <form><input type="submit" value="Lorem"></form>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="horizontal-scroll">
+          <table>
+            <caption>Tabelvoorbeeld meldingen:</caption>
+            <thead>
+              <tr>
+                <th scope="col">Table header heading 1</th>
+                <th scope="col">Table header heading 2</th>
+                <th scope="col">Table header heading 3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="error" role="group" aria-label="foutmelding"><span>Fout:</span> Lorem</td>
+                <td class="error" role="group" aria-label="foutmelding"><span>Fout:</span> Lorem</td>
+                <td class="error" role="group" aria-label="foutmelding"><span>Fout:</span> Lorem</td>
+              </tr>
+              <tr>
+                <td class="warning" role="group" aria-label="waarschuwing"><span>Waarschuwing:</span>lorem</td>
+                <td class="warning" role="group" aria-label="waarschuwing"><span>Waarschuwing:</span>lorem</td>
+                <td class="warning" role="group" aria-label="waarschuwing"><span>Waarschuwing:</span>lorem</td>
+              </tr>
+              <tr>
+                <td class="confirmation" role="group" aria-label="bevestiging"><span>Bevestiging:</span> Lorem</td>
+                <td class="confirmation" role="group" aria-label="bevestiging"><span>Bevestiging:</span> Lorem</td>
+                <td class="confirmation" role="group" aria-label="bevestiging"><span>Bevestiging:</span> Lorem</td>
+              </tr>
+              <tr>
+                <td class="explanation" role="group" aria-label="toelichting"><span>Toelichting:</span> Lorem</td>
+                <td class="explanation" role="group" aria-label="toelichting"><span>Toelichting:</span> Lorem</td>
+                <td class="explanation" role="group" aria-label="toelichting"><span>Toelichting:</span> Lorem</td>
+              </tr>
+              <tr>
+                <td class="primary" role="group" aria-label="primair"><span>Primair:</span> Lorem</td>
+                <td class="primary" role="group" aria-label="primair"><span>Primair:</span> Lorem</td>
+                <td class="primary" role="group" aria-label="primair"><span>Primair:</span> Lorem</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="horizontal-scroll">
+          <table>
+            <caption>Tabelvoorbeeld met selectievak:</caption>
+            <thead>
+              <tr>
+                <th scope="col"><input type="checkbox"></th>
+                <th scope="col">Table header heading</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td>Ipsum</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="horizontal-scroll">
+          <table>
+            <caption>Tabelvoorbeeld met data over meerdere kolommen:</caption>
+            <thead>
+              <tr>
+                <th scope="col">Lorem ipsum</th>
+                <th scope="col">Dolor set</th>
+                <th scope="col">Amet</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lorem ipsum dolor set amet</td>
+                <td>Lorem</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Lorem ipsum dolor set amet</td>
+                <td>Lorem</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td colspan="3">This cell takes up three columns</td>
+              </tr>
+              <tr>
+                <td>Lorem ipsum dolor set amet</td>
+                <td>Lorem</td>
+                <td>40</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="horizontal-scroll">
+          <table>
+            <caption>Tabelvoorbeeld met data over meerdere rijen:</caption>
+            <thead>
+              <tr>
+                <th scope="col">Lorem ipsum</th>
+                <th scope="col">Dolor set</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lorem</td>
+                <td>10</td>
+                <td rowspan="2">110</td>
+              </tr>
+              <tr>
+                <td>Ipsum</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td>Lorem</td>
+                <td>40</td>
+                <td>40</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="horizontal-scroll">
+          <table class="condensed">
+            <caption>Simple table example:</caption>
+            <thead>
+              <tr>
+                <th scope="col">Table header heading 1</th>
+                <th scope="col">Table header heading 2</th>
+                <th scope="col">Table header heading 3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lorem</td>
+                <td>Ipsum</td>
+                <td>Dolor set</td>
+              </tr>
+              <tr>
+                <td>Lorem</td>
+                <td>Ipsum</td>
+                <td>Dolor set</td>
+              </tr>
+              <tr>
+                <td>Lorem</td>
+                <td>Ipsum</td>
+                <td>Dolor set</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="horizontal-scroll">
+          <table>
+            <caption>Tabelvoorbeeld met gegroepeerde data:</caption>
+            <colgroup>
+              <col>
+              <col span="2" class="tint-1">
+              <col span="2" class="tint-2">
+            </colgroup>
+            <tbody>
+              <tr>
+                <td>Lorem</td>
+                <td>Ipsum</td>
+                <td>Dolor</td>
+                <td>Consectetur</td>
+                <td>Adepicing</td>
+              </tr>
+              <tr>
+                <td>Ipsum</td>
+                <td>Set</td>
+                <td>Amet</td>
+                <td>Ipsum</td>
+                <td>Dolor</td>
+              </tr>
+              <tr>
+                <td>Lorem</td>
+                <td>Consectetur</td>
+                <td>Adepicing</td>
+                <td>Lorem</td>
+                <td>Ipsum</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="horizontal-scroll">
+          <table>
+            <caption>Tabelvoorbeeld met sorteerbare data:</caption>
+            <thead>
+              <tr>
+                <th scope="col" class="sortable" abbr="Sortable data">Sortable
+                  <button title="Sort ascending">Ascending</button>
+                </th>
+                <th scope="col" class="ascending" abbr="Ascending data">Ascending
+                  <button title="Sort descending">Descending</button>
+                </th>
+                <th scope="col" class="descending" abbr="Descending data">Descending
+                  <button title="Sort ascending">Ascending</button>
+                </th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+
+        <div class="horizontal-scroll">
+          <table class="summary">
+            <caption>Samenvatting overzicht lorem ipsum:</caption>
+            <thead>
+              <tr>
+                <th scope="col">Risicolevel</th>
+                <th scope="col">Hoeveelheid</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="critical">Critical</span></td>
+                <td class="number">1</td>
+              </tr>
+
+              <tr>
+                <td><span class="high">Hoog</span></td>
+                <td class="number">1</td>
+              </tr>
+
+              <tr>
+                <td><span class="medium">Gemiddeld</span></td>
+                <td class="number">3</td>
+              </tr>
+
+              <tr>
+                <td><span class="low">Laag</span></td>
+                <td class="number">6</td>
+              </tr>
+
+              <tr>
+                <td><span class="recommendation">Aanbeveling</span></td>
+                <td class="number">10</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>Totaal</td>
+                <td class="number">21</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <div class="horizontal-scroll">
+          <table class="condensed">
+            <caption>Voorbeeld uitklapbare tabelrijen:</caption>
+            <thead>
+              <tr>
+                <th scope="col">Risicolevel</th>
+                <th scope="col">Bevindingstype</th>
+                <th scope="col">Hoeveelheid</th>
+                <th scope="col">Status</th>
+                <th scope="col">Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="critical">Critical</span></td>
+                <td>Lorem ipsum dolor set</td>
+                <td class="number">4</td>
+                <td>New</td>
+                <td><button class="expando-button" data-close-label="Sluit details">Open details</button></td>
+              </tr>
+              <tr class="expando-row">
+                <td colspan="5">
+                  <span class="visually-hidden">Lorem ipsum dolor set</span>
+                  <h1>Lorem ipsum details</h1>
+                  <p>De extra content.</p>
+                </td>
+              </tr>
+              <tr>
+                <td><span class="high">High</span></td>
+                <td>Lorem ipsum dolor set</td>
+                <td class="number">12</td>
+                <td>New</td>
+                <td><button class="expando-button" data-close-label="Sluit details">Open details</button></td>
+              </tr>
+              <tr class="expando-row">
+                <td colspan="5">
+                  <span class="visually-hidden">Lorem ipsum dolor set</span>
+                  <h1>Lorem ipsum details</h1>
+                  <p>De extra content.</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="horizontal-scroll sticky-header">
+          <table>
+            <caption>Tabelvoorbeeld met een sticky header.</caption>
+            <thead>
+              <tr>
+                <th scope="col">Heading 1</th>
+                <th scope="col">Heading 2</th>
+                <th scope="col">Heading 3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lorem</td>
+                <td>Ipsum</td>
+                <td>Dolor set</td>
+              </tr>
+              <tr>
+                <td>Lorem</td>
+                <td>Ipsum</td>
+                <td>Dolor set</td>
+              </tr>
+              <tr>
+                <td>Lorem</td>
+                <td>Ipsum</td>
+                <td>Dolor set</td>
+              </tr>
+              <tr>
+                <td>Lorem</td>
+                <td>Ipsum</td>
+                <td>Dolor set</td>
+              </tr>
+              <tr>
+                <td>Lorem</td>
+                <td>Ipsum</td>
+                <td>Dolor set</td>
+              </tr>
+              <tr>
+                <td>Lorem</td>
+                <td>Ipsum</td>
+                <td>Dolor set</td>
+              </tr>
+              <tr>
+                <td>Lorem</td>
+                <td>Ipsum</td>
+                <td>Dolor set</td>
+              </tr>
+              <tr>
+                <td>Lorem</td>
+                <td>Ipsum</td>
+                <td>Dolor set</td>
+              </tr>
+              <tr>
+                <td>Lorem</td>
+                <td>Ipsum</td>
+                <td>Dolor set</td>
+              </tr>
+              <tr>
+                <td>Lorem</td>
+                <td>Ipsum</td>
+                <td>Dolor set</td>
+              </tr>
+              <tr>
+                <td>Lorem</td>
+                <td>Ipsum</td>
+                <td>Dolor set</td>
+              </tr>
+              <tr>
+                <td>Lorem</td>
+                <td>Ipsum</td>
+                <td>Dolor set</td>
+              </tr>
+              <tr>
+                <td>Lorem</td>
+                <td>Ipsum</td>
+                <td>Dolor set</td>
+              </tr>
+              <tr>
+                <td>Lorem</td>
+                <td>Ipsum</td>
+                <td>Dolor set</td>
+              </tr>
+              <tr>
+                <td>Lorem</td>
+                <td>Ipsum</td>
+                <td>Dolor set</td>
+              </tr>
+              <tr>
+                <td>Lorem</td>
+                <td>Ipsum</td>
+                <td>Dolor set</td>
+              </tr>
+              <tr>
+                <td>Lorem</td>
+                <td>Ipsum</td>
+                <td>Dolor set</td>
+              </tr>
+              <tr>
+                <td>Lorem</td>
+                <td>Ipsum</td>
+                <td>Dolor set</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="horizontal-scroll">
+          <table>
+            <caption>Tabelvoorbeeld met aangegeven scope:</caption>
+            <thead>
+              <tr>
+                <th scope="col">Naam</th>
+                <th scope="col">Diersoort</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Manon</th>
+                <td>Kat</td>
+              </tr>
+              <tr>
+                <th scope="row">Max</th>
+                <td>Hond</td>
+              </tr>
+              <tr>
+                <th scope="row">Keiko</th>
+                <td>Kat</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </section>
+
+    <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het
+      hoofdmenu</a>
+  </main>
+
+  <footer>
+    <div class="two-thirds-one-third">
+      <span class="slogan">Manon - Rijksoverheid css framework</span>
+      <nav aria-labelledby="footer-nav-1-heading">
+        <h1 id="footer-nav-1-heading">Service</h1>
+        <ul>
+          <li><a href="../index.html">Over</a></li>
+          <li><a href="index.html">Styling tests</a></li>
+          <li><a href="../html_examples/index.html">Online componenten bibliotheek</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+
 </html>
