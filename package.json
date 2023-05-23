@@ -33,7 +33,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@minvws/manon": "^11.1.0"
+    "@minvws/manon": "^12.0.0"
   },
   "devDependencies": {
     "conventional-changelog": "^3.1.24",
