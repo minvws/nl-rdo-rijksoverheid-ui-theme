@@ -21,8 +21,8 @@
   --header-navigation-content-wrapper-flex-direction: row;
   --header-navigation-content-wrapper-justify-content: space-between;
   --header-navigation-content-wrapper-align-items: stretch;
-  --header-navigation-content-wrapper-padding-left: 0;
-  --header-navigation-content-wrapper-padding-right: 0;
+  --header-navigation-content-wrapper-padding-left: var(--content-padding-left);
+  --header-navigation-content-wrapper-padding-right: var(--content-padding-right);
 
   /* Button */
   --header-navigation-button-min-width: 0;
@@ -38,6 +38,9 @@
   --header-navigation-link-padding-left: 0.5rem;
   --header-navigation-link-background-color: transparent;
   --header-navigation-link-text-color: (var(--ruby-red-tint-1-text-color));
+
+  /* Link Icon */
+  --header-navigation-link-icon-font-size: 1.25rem;
 
   /* Visited link */
   --header-navigation-link-visited-text-color: var(--header-navigation-text-color);
