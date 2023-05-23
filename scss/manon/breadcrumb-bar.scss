@@ -11,7 +11,7 @@
   --breadcrumb-bar-padding-left: var(--page-whitespace-left);
   --breadcrumb-bar-max-width: 100%;
   --breadcrumb-bar-background-color: var(--header-navigation-background-color);
-  --breadcrumb-bar-text-color: var(--application-base-text-color);
+  --breadcrumb-bar-text-color: #ffffff;
   --breadcrumb-bar-border-width: 0;
   --breadcrumb-bar-border-style: solid;
   --breadcrumb-bar-border-color: transparent;
@@ -19,7 +19,7 @@
   --breadcrumb-bar-min-height: var(--header-navigation-min-height);
 
   /* Hover */
-  --breadcrumb-bar-hover-text-color: var(--application-base-text-color);
+  --breadcrumb-bar-hover-text-color: #ffffff;
 
   /* List */
   --breadcrumb-bar-list-padding: 0;
@@ -30,7 +30,7 @@
   --breadcrumb-bar-list-item-gap: 1rem;
 
   /* Icon */
-  --breadcrumb-bar-icon: var(--icon-chevron-right);
+  --breadcrumb-bar-icon: var(--icon-chevron-light-right);
   --breadcrumb-bar-icon-margin-left: 0;
   --breadcrumb-bar-icon-margin-right: 0;
 
