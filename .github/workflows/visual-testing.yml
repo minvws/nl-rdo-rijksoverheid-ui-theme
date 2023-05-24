@@ -19,6 +19,7 @@ jobs:
       - run: npm ci --ignore-scripts
         env:
           NODE_AUTH_TOKEN: ${{ secrets.REPO_READ_ONLY_TOKEN }}
+          PUPPETEER_SKIP_DOWNLOAD: true
       - run: npm run build
       - name: Create screenshots
         run: node tests/capture-screenshots.js
