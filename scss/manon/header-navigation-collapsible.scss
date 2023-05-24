@@ -7,6 +7,6 @@
   --header-navigation-collapsible-icon-color: #ffffff;
 
   --header-navigation-collapsible-list-item-link-text-color: #ffffff;
-  --header-navigation-collapsible-list-item-link-hover-background-color: transparent;
+  --header-navigation-collapsible-list-item-link-hover-background-color: var(--header-navigation-link-hover-background-color);
   --header-navigation-collapsible-list-item-link-hover-text-decoration: underline;
 }
