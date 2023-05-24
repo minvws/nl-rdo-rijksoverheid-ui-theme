@@ -18,13 +18,13 @@ async function screenshotWebpage(browser, filePath, screenshotPath) {
 
   await page.goto(`file://${filePath}`);
   await new Promise(res => setTimeout(() => res(), 100));
-  await page.screenshot({path: screenshotPath, fullPage: true, type: 'jpeg', captureBeyondViewport: false});
+  await page.screenshot({path: screenshotPath, fullPage: true, captureBeyondViewport: false});
 
   await page.close();
 }
 
 function getScreenshotFileName(htmlFilePath) {
-  return htmlFilePath.replaceAll(path.sep, '-').replace(/\.html$/, '.jpeg');
+  return htmlFilePath.replaceAll(path.sep, '-').replace(/\.html$/, '.png');
 }
 async function main() {
   const screenshotDirectory = path.join(__dirname, 'screenshots');
