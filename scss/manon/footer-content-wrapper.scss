@@ -1,0 +1,12 @@
+/* Footer content wrapper */
+
+:root {
+  --footer-content-wrapper-justify-content: flex-start;
+  --footer-content-wrapper-align-content: flex-start;
+  --footer-content-wrapper-gap: 1rem;
+  --footer-content-wrapper-padding-top: 0;
+  --footer-content-wrapper-padding-right: var(--content-padding-right);
+  --footer-content-wrapper-padding-bottom: 0;
+  --footer-content-wrapper-padding-left: var(--content-padding-left);
+  --footer-content-wrapper-max-width: var(--content-max-width);
+}

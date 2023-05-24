@@ -91,10 +91,13 @@
 
 /* Breadcrumb bar */
 @use "@minvws/manon/breadcrumb-bar";
+@use "@minvws/manon/breadcrumb-bar-link";
+@use "@minvws/manon/breadcrumb-bar-link-states";
 @use "@minvws/manon/breadcrumb-bar-content-wrapper";
 
 /* Footer */
 @use "@minvws/manon/footer";
+@use "@minvws/manon/footer-content-wrapper";
 @use "@minvws/manon/footer-link";
 @use "@minvws/manon/footer-link-active";
 @use "@minvws/manon/footer-link-focus";

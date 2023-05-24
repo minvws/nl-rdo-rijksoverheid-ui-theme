@@ -28,6 +28,7 @@
 
 /* Footer */
 @import "manon/footer";
+@import "manon/footer-content-wrapper";
 @import "manon/footer-navigation";
 
 /* Main */
@@ -68,6 +69,7 @@
 @import "manon/pagination";
 @import "manon/filters";
 @import "manon/navigation";
+@import "manon/navigation-content-wrapper";
 @import "manon/notification-base";
 @import "manon/notification-block-element";
 @import "manon/notification-error";
@@ -81,6 +83,7 @@
 @import "manon/tabs";
 @import "manon/link";
 @import "manon/breadcrumb-bar";
+@import "manon/breadcrumb-bar-link";
 
 /* Components - Rijksoverheid specific components */
 @import "components/logo";
