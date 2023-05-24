@@ -34,8 +34,7 @@ async function main() {
   await mkdir(screenshotDirectory, { recursive: true })
 
   // Get all html files
-  const htmlFiles = await getHtmlFiles(htmlDirectory)
-  console.log(htmlFiles);
+  const htmlFiles = await getHtmlFiles(htmlDirectory);
 
   // Launch browser
   const browser = await puppeteer.launch({headless: true});
