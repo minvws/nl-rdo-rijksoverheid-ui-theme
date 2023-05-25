@@ -16,8 +16,7 @@ async function screenshotWebpage(browser, filePath, screenshotPath) {
   // Set screen size
   await page.setViewport({width: 1080, height: 1024});
 
-  await page.goto(`file://${filePath}`);
-  await new Promise(res => setTimeout(() => res(), 100));
+  await page.goto(`file://${filePath}`, {waitUntil: 'load'});
   await page.screenshot({path: screenshotPath, fullPage: true, captureBeyondViewport: false});
 
   await page.close();
