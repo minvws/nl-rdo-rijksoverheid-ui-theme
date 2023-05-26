@@ -26,7 +26,7 @@ function getScreenshotFileName(htmlFilePath) {
   return htmlFilePath.replaceAll(path.sep, '-').replace(/\.html$/, '.png');
 }
 async function main() {
-  const screenshotDirectory = path.join(__dirname, 'screenshots');
+  const screenshotDirectory = path.join(__dirname, 'screenshots/actual');
   const htmlDirectory = path.join(__dirname, '..', 'html');
 
   // Create screenshot directory

@@ -20,11 +20,16 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.REPO_READ_ONLY_TOKEN }}
       - run: npm rebuild puppeteer
-      - run: npm run build
+      - run: npm run build:docs:production
       - name: Create screenshots
         run: node tests/capture-screenshots.js
-      - name: Upload screenshots
+      - name: Run visual regression test tool
+        run: reg-cli tests/screenshots/actual tests/screenshots/expected tests/screenshots/diff -R tests/screenshots/report.html
+      - name: Upload visual testing report
+        if: always()
         uses: actions/upload-artifact@v3
         with:
-          name: screenshots
-          path: tests/screenshots
+          name: visual-testing-report
+          path: |
+            tests/screenshots
+          retention-days: 7
