@@ -50,7 +50,7 @@
     "sass-loader": "^13.3.1",
     "stylelint": "^15.6.0",
     "stylelint-config-standard-scss": "^9.0.0",
-    "webpack": "^5.83.1",
+    "webpack": "^5.84.1",
     "webpack-cli": "^5.0.2",
     "webpack-remove-empty-scripts": "^1.0.3",
     "zip-dir": "^2.0.0"
