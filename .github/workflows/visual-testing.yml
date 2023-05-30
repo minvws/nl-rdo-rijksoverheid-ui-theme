@@ -59,3 +59,8 @@ jobs:
           path: |
             screenshots
           retention-days: 7
+      - name: Delete screenshots artifact
+        if: always()
+        uses: geekyeggo/delete-artifact@v2
+        with:
+          name: screenshots
