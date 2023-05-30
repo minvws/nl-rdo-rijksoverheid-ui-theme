@@ -6,9 +6,9 @@ on:
     branches: [main]
 
 jobs:
-  visual-testing:
-    runs-on: ubuntu-20.04
-
+  capture-screenshots:
+    name: Capture screenshots
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -20,18 +20,44 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.REPO_READ_ONLY_TOKEN }}
       - run: npm rebuild puppeteer
-      - name: Install reg-cli
-        run: npm install -g reg-cli
       - run: npm run build:docs:production
       - name: Create screenshots
         run: node tests/capture-screenshots.js
+      - name: Upload screenshots
+        uses: actions/upload-artifact@v3
+        with:
+          name: screenshots
+          path: tests/screenshots/actual
+
+  visual-testing:
+    name: Compare screenshots
+    needs: capture-screenshots
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create folders
+        run: |
+          mkdir -p screenshots/actual
+          mkdir -p screenshots/expected
+          mkdir -p screenshots/diff
+      - name: Download screenshots
+        uses: actions/download-artifact@v3
+        with:
+          name: screenshots
+          path: screenshots/actual
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          registry-url: "https://npm.pkg.github.com"
+          cache: "npm"
+      - name: Install reg-cli
+        run: npm install -g reg-cli
       - name: Run visual regression test tool
-        run: reg-cli tests/screenshots/actual tests/screenshots/expected tests/screenshots/diff -R tests/screenshots/report.html
+        run: reg-cli screenshots/actual screenshots/expected screenshots/diff -R screenshots/report.html
       - name: Upload visual testing report
         if: always()
         uses: actions/upload-artifact@v3
         with:
           name: visual-testing-report
           path: |
-            tests/screenshots
+            screenshots
           retention-days: 7
