@@ -20,6 +20,8 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.REPO_READ_ONLY_TOKEN }}
       - run: npm rebuild puppeteer
+      - name: Install reg-cli
+        run: npm install -g reg-cli
       - run: npm run build:docs:production
       - name: Create screenshots
         run: node tests/capture-screenshots.js
