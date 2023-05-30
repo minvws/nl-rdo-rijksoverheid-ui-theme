@@ -47,8 +47,6 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 20
-          registry-url: "https://npm.pkg.github.com"
-          cache: "npm"
       - name: Install reg-cli
         run: npm install -g reg-cli
       - name: Run visual regression test tool
