@@ -11,15 +11,56 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  capture-screenshots:
+  capture-actual-screenshots:
     uses: ./.github/workflows/capture-screenshots.yml
+    with:
+      folder: actual
     secrets:
       REPO_READ_ONLY_TOKEN: ${{ secrets.REPO_READ_ONLY_TOKEN }}
+
+  expected-screenshots:
+    name: Set expected screenshots
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download expected screenshots
+        uses: dawidd6/action-download-artifact@v2.27.0
+        with:
+          branch: main
+          name: screenshots
+          path: screenshots/expected
+          if_no_artifact_found: ignore
+      - name: Check if expected screenshots folder is not empty
+        id: expected-screenshots-exist
+        run: |
+          if [ "$(ls -A screenshots/expected)" ]; then
+              echo "Expected screenshots folder is not empty"
+              echo "::set-output name=exist::true"
+          else
+              echo "Expected screenshots folder is empty"
+              echo "::set-output name=exist::false"
+          fi
+
+      - if: ${{ steps.expected-screenshots-exist.outputs.exist == 'false' }}
+        uses: actions/checkout@v3
+        with:
+          ref: main
+      - if: ${{ steps.expected-screenshots-exist.outputs.exist == 'false' }}
+        name: Capture screenshots from main
+        uses: ./.github/actions/capture-screenshots.yml
+        with:
+          folder: expected
+          npm-token: ${{ secrets.REPO_READ_ONLY_TOKEN }}
+
+      - name: Upload screenshots
+        uses: actions/upload-artifact@v3
+        with:
+          name: screenshots
+          path: screenshots
 
   visual-testing:
     if: ${{ github.event_name == 'pull_request'  }}
     name: Compare screenshots
-    needs: capture-screenshots
+    needs: [capture-screenshots, expected-screenshots]
     runs-on: ubuntu-latest
     steps:
       - name: Create folders
@@ -31,13 +72,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: screenshots
-          path: screenshots/actual
-      - name: Download expected screenshots
-        uses: dawidd6/action-download-artifact@v2.27.0
-        with:
-          branch: main
-          name: screenshots
-          path: screenshots/expected
+          path: screenshots
       - uses: actions/setup-node@v3
         with:
           node-version: 20
