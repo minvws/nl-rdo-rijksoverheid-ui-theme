@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Capture screenshots
-        uses: ./.github/actions/capture-screenshots.yml
+        uses: ./.github/actions/capture-screenshots
         with:
           folder: ${{ inputs.folder }}
           npm-token: ${{ secrets.REPO_READ_ONLY_TOKEN }}

@@ -42,7 +42,7 @@ jobs:
           fi
       - if: ${{ steps.expected-screenshots-exist.outputs.exist == 'false' }}
         name: Capture screenshots from main
-        uses: ./.github/actions/capture-screenshots.yml
+        uses: ./.github/actions/capture-screenshots
         with:
           ref: main
           folder: expected
