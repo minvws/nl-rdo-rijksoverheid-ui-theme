@@ -25,10 +25,7 @@ async function screenshotWebpage(browser, filePath, screenshotPath) {
 function getScreenshotFileName(htmlFilePath) {
   return htmlFilePath.replaceAll(path.sep, '-').replace(/\.html$/, '.png');
 }
-async function main(screenshotsDirectory) {
-  const screenshotDirectory = path.join(__dirname, screenshotsDirectory);
-  const htmlDirectory = path.join(__dirname, '..', 'html');
-
+async function main(screenshotDirectory, htmlDirectory) {
   // Create screenshot directory
   await mkdir(screenshotDirectory, { recursive: true })
 
@@ -58,5 +55,6 @@ if (majorVersion < 20 || (majorVersion === 20 && minorVersion < 1)) {
   throw new Error("NodeJS v20.1.0 is required at minimum. To use the fs.readdir recursive function!");
 }
 
-const screenshotsDirectory = process.argv[2] || 'screenshots/actual';
-main(screenshotsDirectory);
+const screenshotDirectory = path.resolve(process.argv[2]) || path.join(__dirname, 'screenshots/actual');
+const htmlDirectory = path.resolve(process.argv[3]) || path.join(__dirname, '..', 'html');
+main(screenshotDirectory, htmlDirectory);

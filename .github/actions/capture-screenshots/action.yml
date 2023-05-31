@@ -12,11 +12,21 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - if: ${{ inputs.ref }}
-      name: Checkout ${{ inputs.ref }}
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 20
+        registry-url: "https://npm.pkg.github.com"
+        cache: "npm"
+    - run: npm ci --ignore-scripts
+      env:
+        NODE_AUTH_TOKEN: ${{ inputs.npm-token }}
+    - run: npm rebuild puppeteer
+      shell: bash
+    - name: Checkout ${{ inputs.ref || github.ref }}
       uses: actions/checkout@v2
       with:
-        ref: ${{ inputs.ref }}
+        ref: ${{ inputs.ref || github.ref }}
+        path: ./.checkout/
     - uses: actions/setup-node@v3
       with:
         node-version: 20
@@ -26,12 +36,12 @@ runs:
       env:
         NODE_AUTH_TOKEN: ${{ inputs.npm-token }}
       shell: bash
-    - run: npm rebuild puppeteer
-      shell: bash
+      working-directory: ./.checkout/
     - run: npm run build:docs:production
       shell: bash
+      working-directory: ./.checkout/
     - name: Create screenshots
-      run: node tests/capture-screenshots.js screenshots/${{ inputs.folder }}
+      run: node tests/capture-screenshots.js screenshots/${{ inputs.folder }} ./.checkout/html
       shell: bash
     - name: Upload screenshots
       uses: actions/upload-artifact@v3
