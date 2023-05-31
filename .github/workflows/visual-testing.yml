@@ -1,4 +1,4 @@
-name: Npm
+name: Visual Testing
 
 on:
   pull_request:

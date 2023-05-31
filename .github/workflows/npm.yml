@@ -1,4 +1,4 @@
-name: Npm
+name: npm
 
 on:
   pull_request:
