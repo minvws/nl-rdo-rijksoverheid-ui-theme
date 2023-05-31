@@ -25,10 +25,14 @@ runs:
     - run: npm ci --ignore-scripts
       env:
         NODE_AUTH_TOKEN: ${{ inputs.npm-token }}
+      shell: bash
     - run: npm rebuild puppeteer
+      shell: bash
     - run: npm run build:docs:production
+      shell: bash
     - name: Create screenshots
       run: node tests/capture-screenshots.js screenshots/${{ inputs.folder }}
+      shell: bash
     - name: Upload screenshots
       uses: actions/upload-artifact@v3
       with:
