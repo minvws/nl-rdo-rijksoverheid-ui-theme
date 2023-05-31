@@ -1,0 +1,17 @@
+name: Expected Screenshots
+
+on:
+  push:
+    branches: [main]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  capture-screenshots:
+    uses: ./.github/workflows/capture-screenshots.yml
+    with:
+      folder: expected
+    secrets:
+      REPO_READ_ONLY_TOKEN: ${{ secrets.REPO_READ_ONLY_TOKEN }}

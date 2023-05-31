@@ -23,12 +23,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: Create folders
+        run: |
+          mkdir -p screenshots/expected
       - name: Download expected screenshots
         uses: dawidd6/action-download-artifact@v2.27.0
         with:
+          workflow: expected-screenshots.yml
           branch: main
           name: screenshots
-          path: screenshots/expected
+          path: screenshots
           if_no_artifact_found: ignore
       - name: Check if expected screenshots folder is not empty
         id: expected-screenshots-exist
