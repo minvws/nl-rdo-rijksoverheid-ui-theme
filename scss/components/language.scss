@@ -1,0 +1,12 @@
+/* Language */
+
+.language {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    a {
+        white-space: nowrap;
+    }
+}
