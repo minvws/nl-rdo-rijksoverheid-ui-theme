@@ -60,7 +60,7 @@ jobs:
   visual-testing:
     if: ${{ github.event_name == 'pull_request'  }}
     name: Compare screenshots
-    needs: [capture-screenshots, expected-screenshots]
+    needs: [capture-actual-screenshots, expected-screenshots]
     runs-on: ubuntu-latest
     steps:
       - name: Create folders
