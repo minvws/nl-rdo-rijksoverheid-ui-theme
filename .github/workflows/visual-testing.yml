@@ -37,10 +37,10 @@ jobs:
         run: |
           if [ "$(ls -A screenshots/expected)" ]; then
               echo "Expected screenshots folder is not empty"
-              echo "::set-output name=exist::true"
+              echo "exist=true" >> $GITHUB_OUTPUT
           else
               echo "Expected screenshots folder is empty"
-              echo "::set-output name=exist::false"
+              echo "exist=false" >> $GITHUB_OUTPUT
           fi
       - if: ${{ steps.expected-screenshots-exist.outputs.exist == 'false' }}
         name: Capture screenshots from main
