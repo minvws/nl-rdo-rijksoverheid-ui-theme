@@ -1,0 +1,24 @@
+/* Meta */
+
+.page-meta {
+  background-color: var(--grey-1);
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.25rem 1rem;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  min-height: 1.5rem;
+
+  >div {
+    width: auto;
+    padding: 0;
+
+    >p,
+    >span {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}
