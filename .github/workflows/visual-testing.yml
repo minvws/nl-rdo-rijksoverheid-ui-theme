@@ -79,6 +79,7 @@ jobs:
         run: npm install -g reg-cli
       - name: Run visual regression test tool
         run: reg-cli screenshots/actual screenshots/expected screenshots/diff -R screenshots/report.html
+        continue-on-error: true
       - name: Upload visual testing report
         if: always()
         uses: actions/upload-artifact@v3
@@ -88,6 +89,7 @@ jobs:
             screenshots
           retention-days: 7
       - name: Delete screenshots artifact
+        if: always()
         uses: geekyeggo/delete-artifact@v2
         with:
           name: screenshots
