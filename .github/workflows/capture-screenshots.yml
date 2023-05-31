@@ -1,0 +1,31 @@
+name: Capture Screenshots
+
+on:
+  workflow_call:
+    secrets:
+      REPO_READ_ONLY_TOKEN:
+        required: true
+
+jobs:
+  capture-screenshots:
+    name: Capture screenshots
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          registry-url: "https://npm.pkg.github.com"
+          cache: "npm"
+      - run: npm ci --ignore-scripts
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.REPO_READ_ONLY_TOKEN }}
+      - run: npm rebuild puppeteer
+      - run: npm run build:docs:production
+      - name: Create screenshots
+        run: node tests/capture-screenshots.js
+      - name: Upload screenshots
+        uses: actions/upload-artifact@v3
+        with:
+          name: screenshots
+          path: tests/screenshots/actual

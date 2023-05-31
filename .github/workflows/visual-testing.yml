@@ -12,30 +12,12 @@ concurrency:
 
 jobs:
   capture-screenshots:
-    name: Capture screenshots
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 20
-          registry-url: "https://npm.pkg.github.com"
-          cache: "npm"
-      - run: npm ci --ignore-scripts
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.REPO_READ_ONLY_TOKEN }}
-      - run: npm rebuild puppeteer
-      - run: npm run build:docs:production
-      - name: Create screenshots
-        run: node tests/capture-screenshots.js
-      - name: Upload screenshots
-        uses: actions/upload-artifact@v3
-        with:
-          name: screenshots
-          path: tests/screenshots/actual
+    uses: ./.github/workflows/capture-screenshots.yml
+    secrets:
+      REPO_READ_ONLY_TOKEN: ${{ secrets.REPO_READ_ONLY_TOKEN }}
 
   visual-testing:
-    if: ${{ github.ref != 'refs/heads/main' }}
+    if: ${{ github.event_name == 'pull_request'  }}
     name: Compare screenshots
     needs: capture-screenshots
     runs-on: ubuntu-latest
@@ -51,9 +33,10 @@ jobs:
           name: screenshots
           path: screenshots/actual
       - name: Download expected screenshots
-        uses: actions/checkout@v3
+        uses: dawidd6/action-download-artifact@v2.27.0
         with:
-          ref: expected-screenshots
+          branch: main
+          name: screenshots
           path: screenshots/expected
       - uses: actions/setup-node@v3
         with:
@@ -70,32 +53,7 @@ jobs:
           path: |
             screenshots
           retention-days: 7
-
-  push-new-screenshots:
-    if: ${{ github.ref == 'refs/heads/main' }}
-    name: Push to expected-screenshot branch
-    needs: capture-screenshots
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          ref: expected-screenshots
-      - name: Remove existing screenshots
-        run: |
-          rm -rf *
-      - name: Download screenshots
-        uses: actions/download-artifact@v3
-        with:
-          name: screenshots
-      - name: Commit screenshots
-        run: |
-          git config user.name "$($env:GITHUB_ACTOR)"
-          git config user.email "$($env:GITHUB_ACTOR)@users.noreply.github.com"
-          git add .
-          git commit -m "GitHub Action - Automated screenshots update"
-          git push --force
       - name: Delete screenshots artifact
-        if: always()
         uses: geekyeggo/delete-artifact@v2
         with:
           name: screenshots
