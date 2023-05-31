@@ -22,6 +22,7 @@ jobs:
     name: Set expected screenshots
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - name: Download expected screenshots
         uses: dawidd6/action-download-artifact@v2.27.0
         with:
@@ -39,15 +40,11 @@ jobs:
               echo "Expected screenshots folder is empty"
               echo "::set-output name=exist::false"
           fi
-
-      - if: ${{ steps.expected-screenshots-exist.outputs.exist == 'false' }}
-        uses: actions/checkout@v3
-        with:
-          ref: main
       - if: ${{ steps.expected-screenshots-exist.outputs.exist == 'false' }}
         name: Capture screenshots from main
         uses: ./.github/actions/capture-screenshots.yml
         with:
+          ref: main
           folder: expected
           npm-token: ${{ secrets.REPO_READ_ONLY_TOKEN }}
 

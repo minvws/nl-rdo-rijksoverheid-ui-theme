@@ -1,5 +1,7 @@
 name: Capture Screenshots
 inputs:
+  ref:
+    description: 'Branch or tag to checkout'
   folder:
     description: 'Folder to store screenshots'
     required: true
@@ -10,6 +12,11 @@ inputs:
 runs:
   using: "composite"
   steps:
+    - if: ${{ inputs.ref }}
+      name: Checkout ${{ inputs.ref }}
+      uses: actions/checkout@v2
+      with:
+        ref: ${{ inputs.ref }}
     - uses: actions/setup-node@v3
       with:
         node-version: 20
