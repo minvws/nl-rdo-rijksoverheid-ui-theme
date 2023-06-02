@@ -9,4 +9,10 @@
   /* content on the button when the menu is expanded */
   --sidemenu-expanded-button-icon: var(--icon-close);
   --sidemenu-button-icon-font-size: 0.7rem;
+
+  /* content container padding - same as content wrapper */
+  --sidemenu-content-container-padding-top: 0;
+  --sidemenu-content-container-padding-right: var(--content-padding-right);
+  --sidemenu-content-container-padding-bottom: 0;
+  --sidemenu-content-container-padding-left: var(--content-padding-left);
 }
