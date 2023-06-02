@@ -46,7 +46,7 @@
                 <li><a href="#button-styles">Visuele weergave</a>
                     <ul>
                         <li><a href="#button-primary">Primair</a></li>
-                        <li><a href="#button-secondary">Secundair</a></li>
+                        <li><a href="#button-ghost">Secundair</a></li>
                         <li><a href="#button-cta">CTA-knop (oproep tot actie)</a></li>
                         <li><a href="#button-icon">Icoonknoppen</a></li>
                         <li><a href="#button-action">Actieknoppen</a></li>
@@ -86,7 +86,7 @@
                             <li><a href="#button-styles">Visuele weergave</a>
                                 <ul>
                                     <li><a href="#button-primary">Primair</a></li>
-                                    <li><a href="#button-secondary">Secundair</a></li>
+                                    <li><a href="#button-ghost">Secundair</a></li>
                                     <li><a href="#button-cta">CTA-knop (oproep tot actie)</a></li>
                                     <li><a href="#button-icon">Icoonknoppen</a></li>
                                     <li><a href="#button-action">Actieknoppen</a></li>
@@ -365,14 +365,14 @@
                             veel gebruikers de benodigde actie zijn, terwijl sommige gebruikers nog even terug willen om
                             wijzigingen aan te brengen. In dat geval is het verstandig om de knop "Opslaan" als
                             primaire-knop weer te geven en de knop "Wijzigen" visueel ondergeschikt maken. Zie voor meer
-                            informatie <a href="#button-secondary">Secundaire button</a>.</li>
+                            informatie <a href="#button-ghost">Secundaire button</a>.</li>
                     </ul>
 
                     <p>Beschikbare visuele weergaven:</p>
                     <nav aria-label="Navigatie weergave knoppen">
                         <ul>
                             <li><a href="#button-primary">Primair</a></li>
-                            <li><a href="#button-secondary">Secundair</a></li>
+                            <li><a href="#button-ghost">Secundair</a></li>
                             <li><a href="#button-icon">Icoonknoppen</a></li>
                             <li><a href="#button-action">Actieknoppen</a></li>
                         </ul>
@@ -416,7 +416,7 @@
                 </div>
             </article>
 
-            <article id="button-secondary">
+            <article id="button-ghost">
                 <div>
                     <h1>Secundaire button</h1>
                     <p>Soms is het qua gebruikerservaring prettiger om een minder opvallende knop gebruiken.
@@ -428,20 +428,20 @@
                     <p>Aandachtspunten:</p>
                     <ul>
                         <li>Om gebruik te maken van de secondaire styling voor knoppen, voeg de class
-                            <code>secondary</code> toe.</li>
+                            <code>ghost</code> toe.</li>
                     </ul>
 
                     <p>Visueel voorbeeld:</p>
                     <div class="button-container">
-                        <button class="secondary">Button</button>
-                        <input type="button" value="Input type button" class="secondary">
-                        <a href="#" class="button secondary">Link</a>
+                        <button class="ghost">Button</button>
+                        <input type="button" value="Input type button" class="ghost">
+                        <a href="#" class="button ghost">Link</a>
                     </div>
 
                     <p>Visueel voorbeeld van uitgeschakelde primaire knoppen:</p>
                     <div class="button-container">
-                        <button class="secondary" disabled>Button</button>
-                        <input type="button" value="Input type button" class="secondary" disabled>
+                        <button class="ghost" disabled>Button</button>
+                        <input type="button" value="Input type button" class="ghost" disabled>
                     </div>
 
                     <p>Html-voorbeeld:</p>
@@ -449,14 +449,14 @@
                         <code>
 &lt;!-- Voorbeeldknoppen verschillende types -->
 
-&lt;button class="secondary">Button&lt;/button>
-&lt;input type="button" value="Input type button" class="secondary">
-&lt;a href="/" class="button secondary">Link&lt;/a>
+&lt;button class="ghost">Button&lt;/button>
+&lt;input type="button" value="Input type button" class="ghost">
+&lt;a href="/" class="button ghost">Link&lt;/a>
 
 &lt;!-- Voorbeeldknoppen uitgeschakelde weergave -->
 
-&lt;button class="secondary" disabled>Button&lt;/button>
-&lt;input type="button" value="Input type button" class="secondary" disabled>
+&lt;button class="ghost" disabled>Button&lt;/button>
+&lt;input type="button" value="Input type button" class="ghost" disabled>
                         </code>
                     </pre>
 
@@ -538,12 +538,12 @@
                     </pre>
 
                     <p>Visueel voorbeeld secundaire knop:</p>
-                    <button class="icon icon-questionmark secondary">Help</button>
+                    <button class="icon icon-questionmark ghost">Help</button>
 
                     <p>Html-voorbeeld:</p>
                     <pre>
                         <code>
-&lt;button class="icon icon-questionmark secondary">Help&lt;/button>
+&lt;button class="icon icon-questionmark ghost">Help&lt;/button>
                         </code>
                     </pre>
 
@@ -581,13 +581,13 @@
                     </pre>
 
                     <p>Visueel voorbeeld secundaire knop:</p>
-                    <button class="secondary"><span aria-hidden="true"
+                    <button class="ghost"><span aria-hidden="true"
                             class="icon icon-questionmark"></span>Help</button>
 
                     <p>Html-voorbeeld:</p>
                     <pre>
                         <code>
-&lt;button class="secondary">&lt;span aria-hidden="true" class="icon icon-questionmark">&lt;/span>Help&lt;/button>
+&lt;button class="ghost">&lt;span aria-hidden="true" class="icon icon-questionmark">&lt;/span>Help&lt;/button>
                         </code>
                     </pre>
                 </div>
