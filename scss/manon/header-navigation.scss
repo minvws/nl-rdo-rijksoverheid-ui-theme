@@ -61,6 +61,8 @@
   --header-navigation-link-active-text-color: var(--ruby-red-tint-1-text-color);
 
   /* Button */
+  --header-navigation-button-min-height: 100%;
+  --header-navigation-button-border-width: 0;
   --header-navigation-button-border-color: var(--ruby-red-tint-1-background-color);
   --header-navigation-link-active-hover-text-color: var(--ruby-red-tint-1-text-color);
 }
