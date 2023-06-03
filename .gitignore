@@ -4,3 +4,4 @@ manon-*.md
 manon-*.zip
 .idea
 .DS_Store
+megalinter-reports/
