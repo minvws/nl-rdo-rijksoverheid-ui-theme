@@ -1,5 +1,10 @@
 /* form-input-variables.scss */
 :root {
+  --form-input-font-family: var(--application-base-font-family);
+  --form-input-font-size: var(--application-base-font-size);
+  --form-input-font-weight: var(--application-base-font-weight);
+  --form-input-line-height: var(--application-base-line-height);
+  --form-input-text-color: #000000;
   --form-input-border-width: 1px;
   --form-input-border-style: solid;
   --form-input-border-color: var(--ro-blue);
