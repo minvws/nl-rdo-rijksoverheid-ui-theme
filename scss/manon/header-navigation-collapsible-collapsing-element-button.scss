@@ -1,0 +1,30 @@
+/*--------------------------------------------------------------------------*/
+/*-------- header-navigation-collapsible-collapsing-element-button ---------*/
+/*--------------------------------------------------------------------------*/
+@use "@minvws/manon/mixins/link";
+
+$header-navigation-button-states: '', 'active', 'focus', 'hover';
+
+@mixin button-styling($prefix, $parent) {
+  @each $state in $header-navigation-button-states {
+    @if $state != '' {
+      $state: $state + '-';
+    }
+
+    @include link.styling-variables("#{$prefix}#{$state}", "#{$parent}#{$state}");
+
+    --#{$prefix}#{$state}width: 100%;
+    --#{$prefix}#{$state}text-align: left;
+    --#{$prefix}#{$state}text-decoration: none;
+    --#{$prefix}#{$state}padding-top: var(--#{$parent}#{$state}padding-top);
+    --#{$prefix}#{$state}padding-right: var(--#{$parent}#{$state}padding-right);
+    --#{$prefix}#{$state}padding-bottom: var(--#{$parent}#{$state}padding-bottom);
+    --#{$prefix}#{$state}padding-left: var(--#{$parent}#{$state}padding-left);
+    --#{$prefix}#{$state}min-height: var(--collapsing-element-list-item-min-height);
+  }
+}
+
+:root {
+  @include button-styling('header-navigation-collapsible-collapsing-element-button-', 'header-navigation-collapsible-list-item-link-');
+  @include button-styling('header-navigation-collapsible-collapsing-element-list-item-button-', 'header-navigation-collapsible-list-item-link-');
+}
