@@ -1,7 +1,7 @@
 /* Breadcrumb bar link */
 
 :root {
-  --breadcrumb-bar-link-text-color: #ffffff;
+  --breadcrumb-bar-link-text-color: #000000;
   --breadcrumb-bar-link-active-text-decoration: none;
 
   --breadcrumb-bar-link-icon: var(--breadcrumb-bar-link-icon);
@@ -24,4 +24,7 @@
   --breadcrumb-bar-link-focus-icon-font-size: var(--breadcrumb-bar-link-icon-font-size);
   --breadcrumb-bar-link-hover-icon-font-size: var(--breadcrumb-bar-link-icon-font-size);
   --breadcrumb-bar-link-visited-icon-font-size: var(--breadcrumb-bar-link-icon-font-size);
+
+  /* Icon */
+  --breadcrumb-bar-icon-text-color: var(--breadcrumb-bar-link-text-color);
 }

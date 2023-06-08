@@ -37,7 +37,9 @@
   --header-navigation-link-padding-right: 0.5rem;
   --header-navigation-link-padding-left: 0.5rem;
   --header-navigation-link-background-color: transparent;
-  --header-navigation-link-text-color: (var(--ruby-red-tint-1-text-color));
+  --header-navigation-link-text-color: var(--ruby-red-text-color);
+  --header-navigation-link-min-height: 3rem;
+
 
   /* Link Icon */
   --header-navigation-link-icon-font-size: 1.25rem;

@@ -10,8 +10,8 @@
   --breadcrumb-bar-padding-bottom: 0;
   --breadcrumb-bar-padding-left: var(--page-whitespace-left);
   --breadcrumb-bar-max-width: 100%;
-  --breadcrumb-bar-background-color: var(--header-navigation-background-color);
-  --breadcrumb-bar-text-color: #ffffff;
+  --breadcrumb-bar-background-color: var(--grey-1);
+  --breadcrumb-bar-text-color: black;
   --breadcrumb-bar-border-width: 0;
   --breadcrumb-bar-border-style: solid;
   --breadcrumb-bar-border-color: transparent;
@@ -19,7 +19,7 @@
   --breadcrumb-bar-min-height: var(--header-navigation-min-height);
 
   /* Hover */
-  --breadcrumb-bar-hover-text-color: #ffffff;
+  --breadcrumb-bar-hover-text-color: black;
 
   /* List */
   --breadcrumb-bar-list-padding: 0;
