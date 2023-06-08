@@ -21,9 +21,10 @@
   --button-base-active-border-color: var(--ruby-red-active-background-color);
 
   /* Focus */
-  --button-base-focus-outline-style: dashed;
-  --button-base-focus-outline-color: #cccccc;
-  --button-base-focus-outline-width: 1px;
+  --button-base-focus-outline-style: dotted;
+  --button-base-focus-outline-color: #000000;
+  --button-base-focus-outline-width: 2px;
+  --button-base-focus-outline-offset: 0;
   --button-base-focus-background-color: var(--ruby-red-focus-background-color);
   --button-base-focus-text-color: var(--ruby-red-focus-text-color);
   --button-base-focus-border-width: var(--button-base-border-width);

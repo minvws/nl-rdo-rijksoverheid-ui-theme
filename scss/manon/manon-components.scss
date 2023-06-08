@@ -22,6 +22,7 @@
 @use "@minvws/manon/layout-authentication";
 @use "@minvws/manon/layout-one-third-two-thirds";
 @use "@minvws/manon/layout-two-thirds-one-third";
+@use "@minvws/manon/layout-form";
 @use "@minvws/manon/layout-fifty-fifty";
 @use "@minvws/manon/layout-column-2";
 @use "@minvws/manon/layout-column-3";
@@ -54,6 +55,8 @@
 
 /* Header navigation */
 @use "@minvws/manon/header-navigation";
+@use "@minvws/manon/header-navigation-button";
+@use "@minvws/manon/header-navigation-button-states";
 @use "@minvws/manon/header-navigation-content-wrapper";
 @use "@minvws/manon/header-navigation-link";
 @use "@minvws/manon/header-navigation-link-visited";
@@ -61,6 +64,8 @@
 @use "@minvws/manon/header-navigation-link-active";
 @use "@minvws/manon/header-navigation-link-focus";
 @use "@minvws/manon/header-navigation-collapsible";
+@use "@minvws/manon/header-navigation-collapsible-collapsing-element-button";
+@use "@minvws/manon/header-navigation-collapsible-collapsing-element-button-states";
 
 /* Footer navigation */
 @use "@minvws/manon/footer-navigation-link";
