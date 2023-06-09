@@ -1,0 +1,8 @@
+/* header-navigation-link.scss */
+
+/* Add these fixes to manon */
+
+body > header nav ul li a:focus {
+  outline: var(--header-navigation-link-focus-outline, var(--navigation-link-focus-outline));
+  outline-offset: var(--header-navigation-link-focus-outline-offset, var(--navigation-link-focus-outline-offset));
+}
