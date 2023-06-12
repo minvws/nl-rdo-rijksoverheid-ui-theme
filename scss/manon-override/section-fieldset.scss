@@ -2,3 +2,24 @@ main section div form > fieldset > *,
 form > fieldset > fieldset {
   margin-top: var(--form-fieldset-fields-margin-top);
 }
+
+/* Can be removed when manon has been updated to v.15.0.1 */
+form fieldset {
+  margin-bottom: 2.5rem;
+}
+
+form.horizontal-view > fieldset > div.notification {
+  padding: 0;
+
+  div {
+    width: 100%;
+
+    label {
+      max-width: var(--lable-column);
+    }
+
+    input {
+      max-width: var(--input-column);
+    }
+  }
+}
