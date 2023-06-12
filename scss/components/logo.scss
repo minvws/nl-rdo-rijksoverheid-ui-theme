@@ -4,6 +4,9 @@
 https://www.rijkshuisstijl.nl/basiselementen/basiselementen-online/logo */
 
 .ro-logo {
+  $screen-width-medium: 35rem;
+  $screen-width-large: 48rem;
+
   display: flex;
   align-items: center;
   font-size: 0;
@@ -26,12 +29,13 @@ https://www.rijkshuisstijl.nl/basiselementen/basiselementen-online/logo */
     color: #000000;
   }
 
-  @media (width >= 30rem) {
+  @media (width >= $screen-width-medium) {
     margin-bottom: 1.44rem;
     font-size: inherit;
+    max-width: 35rem;
   }
 
-  @media (width >= 48rem) {
+  @media (width >= $screen-width-large) {
     margin-bottom: 1.56rem;
   }
 
@@ -43,15 +47,16 @@ https://www.rijkshuisstijl.nl/basiselementen/basiselementen-online/logo */
     object-fit: cover;
     object-position: bottom;
     margin-left: calc(50% - 1.25rem); /* Half the screen minus half the size of the logo */
+    margin-bottom: auto;
 
-    @media (width >= 30rem) {
+    @media (width >= $screen-width-medium) {
       min-width: 2.8125rem;
       height: 5.625rem;
       margin-right: 1rem;
       margin-left: calc(50% - 1.40625rem); /* Half the screen minus half the size of the logo */
     }
 
-    @media (width >= 48rem) {
+    @media (width >= $screen-width-large) {
       min-width: 3.125rem;
       height: 6.25rem;
       margin-left: calc(50% - 1.5625rem); /* Half the screen minus half the size of the logo */
