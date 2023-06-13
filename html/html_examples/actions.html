@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Actions - Rijksoverheid CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../dist/css/main.css" rel="stylesheet">
+  <link href="../dist/img/favicon.ico" rel="shortcut icon">
+  <script defer src="../dist/js/filters.js"></script>
+</head>
+
+<body class="test-cases">
+  <header>
+    <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
+    <a href="" class="ro-logo">
+      <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
+      Rijksoverheid
+    </a>
+
+    <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
+      <div>
+        <ul>
+          <li><a href="../index.html"><span class="icon icon-home">Hoofdpagina icoon</span> Rijksoverheid CSS</a></li>
+          <li><a href="index.html">Online Componenten Bibliotheek</a></li>
+          <li><a href="#" aria-current="page">Actions</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+
+  <main id="main-content" tabindex="-1">
+
+    <article>
+      <div>
+        <h1>Actions</h1>
+        <p>Soms wil je buttons groeperen en rechts uitlijnen. Hiervoor kun gebruik maken van de <code>actions</code> class.</p>
+        <h2>Html-voorbeeld:</h2>
+        <pre>
+          <code>
+&lt;div class="actions">
+  &lt;a class="button" href="#">Nieuwe gebruiker aanmaken&lt;/a>
+  &lt;a class="button ghost" href="#">Importeer CSV&lt;/a>
+  &lt;a class="button ghost" href="#">Batch download&lt;/a>
+&lt;/div>
+          </code>
+        </pre>
+      </div>
+    </article>
+
+    <article>
+      <div>
+        <h2>Visueel voorbeeld:</h2>
+        <h3>Gebruikers</h3>
+        <div class="actions">
+          <a class="button" href="#">Nieuwe gebruiker aanmaken</a>
+          <a class="button ghost" href="#">Importeer CSV</a>
+          <a class="button ghost" href="#">Batch download</a>
+        </div>
+
+        <section class="filter">
+          <div>
+            <button aria-expanded="false" data-show-filters-label="Toon filters" data-hide-filters-label="Verberg filters">Toon filters</button>
+          </div>
+          <form action="" method="GET" hidden="">
+            <label for="filter">Trefwoord <br><small>U kunt filteren op naam, e-mail</small></label>
+            <input id="filter" name="filter" placeholder="Bijv. zoeken op naam" type="text" value="">
+            <button type="submit">Filter</button>
+          </form>
+        </section>
+
+        <div class="horizontal-scroll nowrap">
+          <table>
+            <caption>Gebruikers overzicht:</caption>
+            <thead>
+            <tr>
+              <th scope="col" nowrap="">Naam <i class="ro-icon ro-icon"></i></th>
+              <th scope="col" nowrap="">E-mail <i class="ro-icon ro-icon"></i></th>
+              <th scope="col">Organisatie</th>
+              <th scope="col">Actie</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>
+                Bob de Bouwer
+              </td>
+              <td>b.debouwer@example.nl</td>
+              <td>Mijn test organisatie</td>
+              <td nowrap="">
+                <a href="#"><span class="icon icon-user"></span> Wijzigen</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Test
+
+
+              </td>
+              <td>test@example.nl</td>
+              <td></td>
+              <td nowrap="">
+                <a href="#"><span class="icon icon-user"></span> Wijzigen</a>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </article>
+    <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het hoofdmenu</a>
+  </main>
+
+  <footer>
+    <div class="two-thirds-one-third">
+      <span class="slogan">Manon - Rijksoverheid css framework</span>
+      <nav aria-labelledby="footer-nav-1-heading">
+        <h1 id="footer-nav-1-heading">Service</h1>
+        <ul>
+          <li><a href="../index.html">Over</a></li>
+          <li><a href="../test/index.html">Styling tests</a></li>
+          <li><a href="index.html">Online componenten bibliotheek</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+
+</html>
