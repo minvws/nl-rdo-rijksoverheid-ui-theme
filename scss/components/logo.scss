@@ -21,6 +21,7 @@ https://www.rijkshuisstijl.nl/basiselementen/basiselementen-online/logo */
   &:hover,
   &:focus {
     text-decoration: none;
+    font-size: 0;
   }
 
   &:visited,
@@ -33,6 +34,13 @@ https://www.rijkshuisstijl.nl/basiselementen/basiselementen-online/logo */
     margin-bottom: 1.44rem;
     font-size: inherit;
     max-width: 35rem;
+
+    &:active,
+    &:visited,
+    &:hover,
+    &:focus {
+      font-size: inherit;
+    }
   }
 
   @media (width >= $screen-width-large) {
