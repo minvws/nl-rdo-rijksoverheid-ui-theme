@@ -1,0 +1,78 @@
+/*---------------------------------------------------------------*/
+/*-------------- components/toggle-switch.scss ------------------*/
+/*---------------------------------------------------------------*/
+.toggle-switch label {
+  padding-right: 0;
+  line-height: 1.5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+
+  > span {
+    width: 33.33%;
+    display: block;
+    float: left;
+    margin: 0;
+  }
+
+  > span:last-child {
+    width: auto;
+    float: left;
+    position: relative;
+
+    input {
+      vertical-align: middle;
+      float: left;
+      border-radius: 50%;
+      border: 0;
+      margin: 0;
+      margin-right: 0.5rem;
+      z-index: 1;
+      position: relative;
+      position: absolute;
+      left: 0.125rem;
+      top: 0.125rem;
+
+      &:checked {
+        float: right;
+        right: 0.125rem;
+        left: auto;
+        background: #fff;
+        margin-right: 0;
+
+        + .false {
+          display: none;
+        }
+
+        + span + .true {
+          display: inline-block;
+        }
+      }
+    }
+
+    span {
+      border-radius: 2rem;
+      padding: 0 1rem;
+      min-height: 1.375rem;
+      display: inline-block;
+      margin: 0;
+
+      &.false {
+        padding-left: 2rem;
+        background-color: var(--grey-3);
+      }
+
+      &.true {
+        background-color: var(--application-base-accent-color);
+        color: var(--application-base-accent-color-text-color);
+        padding-right: 2rem;
+        display: none;
+      }
+    }
+  }
+}
+
+fieldset.toggle-switch {
+  legend {
+    margin-bottom: 1rem;
+  }
+}
