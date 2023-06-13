@@ -658,9 +658,11 @@
                     <p>Visueel voorbeeld:</p>
                     <form action="" method="post">
                         <div aria-describedby="checkbox-error-message">
-                            <input type="checkbox" id="checkbox-error" name="standaard-checkbox" class="error"
-                                aria-invalid="true">
-                            <label for="checkbox-error">Lorem ipsum dolor set amet</label>
+                            <div class="checkbox">
+                              <input type="checkbox" id="checkbox-error" name="standaard-checkbox" class="error"
+                                  aria-invalid="true">
+                              <label for="checkbox-error">Lorem ipsum dolor set amet</label>
+                            </div>
                             <p class="error" id="checkbox-error-message">
                                 <span>foutmelding:</span> Lorem ipsum dolor set amet
                             </p>
@@ -671,11 +673,13 @@
                         <code>
 &lt;form action="" method="post">
     &lt;div aria-describedby="checkbox-error-message">
-        &lt;input type="checkbox" id="checkbox-error" name="standaard-checkbox" class="error" aria-invalid="true">
-        &lt;label for="checkbox-error">Lorem ipsum dolor set amet&lt;/label>
-        &lt;p class="error" id="checkbox-error-message">
-            &lt;span>foutmelding:&lt;/span> Lorem ipsum dolor set amet
-        &lt;/p>
+        &lt;div class="checkbox">
+          &lt;input type="checkbox" id="checkbox-error" name="standaard-checkbox" class="error" aria-invalid="true">
+          &lt;label for="checkbox-error">Lorem ipsum dolor set amet&lt;/label>
+          &lt;p class="error" id="checkbox-error-message">
+              &lt;span>foutmelding:&lt;/span> Lorem ipsum dolor set amet
+          &lt;/p>
+        &lt;/div>
     &lt;/div>
 &lt;/form>
                         </code>
@@ -685,10 +689,12 @@
                     <h4>Voorbeeld</h4>
                     <p>Visueel voorbeeld:</p>
                     <form action="" method="post">
-                        <div class="radio">
-                            <input type="radio" id="radio-example-error" name="standaard-radiobutton" value="value"
-                                class="error" aria-invalid="true">
-                            <label for="radio-example-error">Lorem ipsum dolor set amet</label>
+                        <div>
+                            <div class="radio">
+                                <input type="radio" id="radio-example-error" name="standaard-radiobutton" value="value"
+                                    class="error" aria-invalid="true">
+                                <label for="radio-example-error">Lorem ipsum dolor set amet</label>
+                            </div>
                             <p class="error" id="radio-example-error-message">
                                 <span>foutmelding:</span> Lorem ipsum dolor set amet
                             </p>
@@ -698,9 +704,11 @@
                     <pre>
                         <code>
 &lt;form action="" method="post">
-    &lt;div class="radio">
-        &lt;input type="radio" id="radio-example-error" name="standaard-radiobutton" value="value" class="error" aria-invalid="true">
-        &lt;label for="radio-example-error">Lorem ipsum dolor set amet&lt;/label>
+    &lt;div>
+        &lt;div class="radio">
+            &lt;input type="radio" id="radio-example-error" name="standaard-radiobutton" value="value" class="error" aria-invalid="true">
+            &lt;label for="radio-example-error">Lorem ipsum dolor set amet&lt;/label>
+        &lt;/div>
         &lt;p class="error" id="radio-example-error-message">
             &lt;span>foutmelding:&lt;/span> Lorem ipsum dolor set amet
         &lt;/p>
@@ -1110,9 +1118,11 @@
                             <p class="warning" id="checkbox-warning-message">
                                 <span>waarschuwing:</span> Lorem ipsum dolor sit.
                             </p>
-                            <input type="checkbox" id="checkbox-warning" name="standaard-checkbox" class="warning"
-                                aria-describedby="checkbox-warning-message">
-                            <label for="checkbox-warning">Lorem ipsum dolor set amet</label>
+                            <div class="checkbox">
+                              <input type="checkbox" id="checkbox-warning" name="standaard-checkbox" class="warning"
+                                  aria-describedby="checkbox-warning-message">
+                              <label for="checkbox-warning">Lorem ipsum dolor set amet</label>
+                            </div>
                         </div>
                     </form>
                     <p>Html-voorbeeld:</p>
@@ -1123,8 +1133,10 @@
         &lt;p class="warning" id="checkbox-warning-message">
             &lt;span>waarschuwing:&lt;/span> Lorem ipsum dolor sit.
         &lt;/p>
-        &lt;input type="checkbox" id="checkbox-warning" name="standaard-checkbox" class="warning" aria-describedby="checkbox-warning-message">
-        &lt;label for="checkbox-warning">Lorem ipsum dolor set amet&lt;/label>
+        &lt;div class="checkbox">
+          &lt;input type="checkbox" id="checkbox-warning" name="standaard-checkbox" class="warning" aria-describedby="checkbox-warning-message">
+          &lt;label for="checkbox-warning">Lorem ipsum dolor set amet&lt;/label>
+        &lt;/div>
     &lt;/div>
 &lt;/form>
                         </code>
@@ -1134,25 +1146,29 @@
                     <h4>Voorbeeld</h4>
                     <p>Visueel voorbeeld:</p>
                     <form action="" method="post">
-                        <div class="radio">
+                        <div>
                             <p class="warning" id="radio-example-warning-message">
                                 <span>waarschuwing:</span> Lorem ipsum dolor sit.
                             </p>
-                            <input type="radio" id="radio-example-warning" name="standaard-radiobutton" value="value"
-                                class="warning" aria-describedby="radio-example-warning-message">
-                            <label for="radio-example-warning">Lorem ipsum dolor set amet</label>
+                            <div class="radio">
+                                <input type="radio" id="radio-example-warning" name="standaard-radiobutton" value="value"
+                                    class="warning" aria-describedby="radio-example-warning-message">
+                                <label for="radio-example-warning">Lorem ipsum dolor set amet</label>
+                            </div>
                         </div>
                     </form>
                     <p>Html-voorbeeld:</p>
                     <pre>
                         <code>
 &lt;form action="" method="post">
-    &lt;div class="radio">
+    &lt;div>
         &lt;p class="warning" id="radio-example-warning-message">
             &lt;span>waarschuwing:&lt;/span> Lorem ipsum dolor sit.
         &lt;/p>
-        &lt;input type="radio" id="radio-example-warning" name="standaard-radiobutton" value="value" class="warning" aria-describedby="radio-example-warning-message">
-        &lt;label for="radio-example-warning">Lorem ipsum dolor set amet&lt;/label>
+        &lt;div class="radio">
+            &lt;input type="radio" id="radio-example-warning" name="standaard-radiobutton" value="value" class="warning" aria-describedby="radio-example-warning-message">
+            &lt;label for="radio-example-warning">Lorem ipsum dolor set amet&lt;/label>
+        &lt;/div>
     &lt;/div>
 &lt;/form>
                         </code>
@@ -1558,9 +1574,11 @@
                     <p>Visueel voorbeeld:</p>
                     <form action="" method="post">
                         <div>
-                            <input type="checkbox" id="checkbox-confirmation" name="standaard-checkbox"
-                                class="confirmation">
-                            <label for="checkbox-confirmation">Lorem ipsum dolor set amet</label>
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox-confirmation" name="standaard-checkbox"
+                                    class="confirmation">
+                                <label for="checkbox-confirmation">Lorem ipsum dolor set amet</label>
+                            </div>
                             <p class="confirmation" id="checkbox-confirmation-message">
                                 <span>bevestiging:</span> Lorem ipsum dolor set amet
                             </p>
@@ -1571,8 +1589,10 @@
                         <code>
 &lt;form action="" method="post">
     &lt;div>
-        &lt;input type="checkbox" id="checkbox-confirmation" name="standaard-checkbox" class="confirmation">
-        &lt;label for="checkbox-confirmation">Lorem ipsum dolor set amet&lt;/label>
+        &lt;div class="checkbox">
+            &lt;input type="checkbox" id="checkbox-confirmation" name="standaard-checkbox" class="confirmation">
+            &lt;label for="checkbox-confirmation">Lorem ipsum dolor set amet&lt;/label>
+        &lt;/div>
         &lt;p class="confirmation" id="checkbox-confirmation-message">
             &lt;span>bevestiging:&lt;/span> Lorem ipsum dolor set amet
         &lt;/p>
@@ -1585,10 +1605,12 @@
                     <h4>Voorbeeld</h4>
                     <p>Visueel voorbeeld:</p>
                     <form action="" method="post">
-                        <div class="radio">
-                            <input type="radio" id="radio-example-confirmation" name="standaard-radiobutton"
-                                value="value" class="confirmation">
-                            <label for="radio-example-confirmation">Lorem ipsum dolor set amet</label>
+                        <div>
+                            <div class="radio">
+                                <input type="radio" id="radio-example-confirmation" name="standaard-radiobutton"
+                                    value="value" class="confirmation">
+                                <label for="radio-example-confirmation">Lorem ipsum dolor set amet</label>
+                            </div>
                             <p class="confirmation" id="radio-example-confirmation-message">
                                 <span>bevestiging:</span> Lorem ipsum dolor set amet
                             </p>
@@ -1598,9 +1620,11 @@
                     <pre>
                         <code>
 &lt;form action="" method="post">
-    &lt;div class="radio">
-        &lt;input type="radio" id="radio-example-confirmation" name="standaard-radiobutton" value="value" class="confirmation">
-        &lt;label for="radio-example-confirmation">Lorem ipsum dolor set amet&lt;/label>
+    &lt;div>
+        &lt;div class="radio">
+            &lt;input type="radio" id="radio-example-confirmation" name="standaard-radiobutton" value="value" class="confirmation">
+            &lt;label for="radio-example-confirmation">Lorem ipsum dolor set amet&lt;/label>
+        &lt;/div>
         &lt;p class="confirmation" id="radio-example-confirmation-message">
             &lt;span>bevestiging:&lt;/span> Lorem ipsum dolor set amet
         &lt;/p>
@@ -2010,9 +2034,11 @@
                             <p class="explanation" id="checkbox-explanation-message">
                                 <span>toelichting:</span> Lorem ipsum dolor set amet
                             </p>
-                            <input type="checkbox" id="checkbox-explanation" name="standaard-checkbox"
-                                class="explanation" aria-describedby="checkbox-explanation-message">
-                            <label for="checkbox-explanation">Lorem ipsum dolor set amet</label>
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox-explanation" name="standaard-checkbox"
+                                    class="explanation" aria-describedby="checkbox-explanation-message">
+                                <label for="checkbox-explanation">Lorem ipsum dolor set amet</label>
+                            </div>
                         </div>
                     </form>
                     <p>Html-voorbeeld:</p>
@@ -2023,8 +2049,10 @@
         &lt;p class="explanation" id="checkbox-explanation-message">
             &lt;span>toelichting:&lt;/span> Lorem ipsum dolor set amet
         &lt;/p>
-        &lt;input type="checkbox" id="checkbox-explanation" name="standaard-checkbox" class="explanation" aria-describedby="checkbox-explanation-message">
-        &lt;label for="checkbox-explanation">Lorem ipsum dolor set amet&lt;/label>
+        &lt;div class="checkbox">
+            &lt;input type="checkbox" id="checkbox-explanation" name="standaard-checkbox" class="explanation" aria-describedby="checkbox-explanation-message">
+            &lt;label for="checkbox-explanation">Lorem ipsum dolor set amet&lt;/label>
+        &lt;/div>
     &lt;/div>
 &lt;/form>
                         </code>
@@ -2034,25 +2062,29 @@
                     <h4>Voorbeeld</h4>
                     <p>Visueel voorbeeld:</p>
                     <form action="" method="post">
-                        <div class="radio">
+                        <div>
                             <p class="explanation" id="radio-example-explanation-message">
                                 <span>toelichting:</span> Lorem ipsum dolor set amet
                             </p>
-                            <input type="radio" id="radio-example-explanation" name="standaard-radiobutton"
-                                value="value" class="explanation" aria-describedby="radio-example-explanation-message">
-                            <label for="radio-example-explanation">Lorem ipsum dolor set amet</label>
+                            <div class="radio">
+                                <input type="radio" id="radio-example-explanation" name="standaard-radiobutton"
+                                    value="value" class="explanation" aria-describedby="radio-example-explanation-message">
+                                <label for="radio-example-explanation">Lorem ipsum dolor set amet</label>
+                            </div>
                         </div>
                     </form>
                     <p>Html-voorbeeld:</p>
                     <pre>
                         <code>
 &lt;form action="" method="post">
-    &lt;div class="radio">
+    &lt;div>
         &lt;p class="explanation" id="radio-example-explanation-message">
             &lt;span>toelichting:&lt;/span> Lorem ipsum dolor set amet
         &lt;/p>
-        &lt;input type="radio" id="radio-example-explanation" name="standaard-radiobutton" value="value" class="explanation" aria-describedby="radio-example-explanation-message">
-        &lt;label for="radio-example-explanation">Lorem ipsum dolor set amet&lt;/label>
+        &lt;div class="radio">
+            &lt;input type="radio" id="radio-example-explanation" name="standaard-radiobutton" value="value" class="explanation" aria-describedby="radio-example-explanation-message">
+            &lt;label for="radio-example-explanation">Lorem ipsum dolor set amet&lt;/label>
+        &lt;/div>
     &lt;/div>
 &lt;/form>
                         </code>
@@ -2454,9 +2486,11 @@
                             <p class="primary" id="checkbox-primary-message">
                                 <span>primair:</span> Lorem ipsum dolor set amet
                             </p>
-                            <input type="checkbox" id="checkbox-primary" name="standaard-checkbox" class="primary"
-                                aria-describedby="checkbox-primary-message">
-                            <label for="checkbox-primary">Lorem ipsum dolor set amet</label>
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox-primary" name="standaard-checkbox" class="primary"
+                                    aria-describedby="checkbox-primary-message">
+                                <label for="checkbox-primary">Lorem ipsum dolor set amet</label>
+                            </div>
                         </div>
                     </form>
                     <p>Html-voorbeeld:</p>
@@ -2467,8 +2501,10 @@
         &lt;p class="primary" id="checkbox-primary-message">
             &lt;span>primair:&lt;/span> Lorem ipsum dolor set amet
         &lt;/p>
-        &lt;input type="checkbox" id="checkbox-primary" name="standaard-checkbox" class="primary" aria-describedby="checkbox-primary-message">
-        &lt;label for="checkbox-primary">Lorem ipsum dolor set amet&lt;/label>
+        &lt;div class="checkbox">
+            &lt;input type="checkbox" id="checkbox-primary" name="standaard-checkbox" class="primary" aria-describedby="checkbox-primary-message">
+            &lt;label for="checkbox-primary">Lorem ipsum dolor set amet&lt;/label>
+        &lt;/div>
     &lt;/div>
 &lt;/form>
                         </code>
@@ -2478,25 +2514,29 @@
                     <h4>Voorbeeld</h4>
                     <p>Visueel voorbeeld:</p>
                     <form action="" method="post">
-                        <div class="radio">
+                        <div>
                             <p class="primary" id="radio-example-primary-message">
                                 <span>primair:</span> Lorem ipsum dolor set amet
                             </p>
-                            <input type="radio" id="radio-example-primary" name="standaard-radiobutton" value="value"
-                                class="primary" aria-describedby="radio-example-primary-message">
-                            <label for="radio-example-primary">Lorem ipsum dolor set amet</label>
+                            <div class="radio">
+                                <input type="radio" id="radio-example-primary" name="standaard-radiobutton" value="value"
+                                    class="primary" aria-describedby="radio-example-primary-message">
+                                <label for="radio-example-primary">Lorem ipsum dolor set amet</label>
+                            </div>
                         </div>
                     </form>
                     <p>Html-voorbeeld:</p>
                     <pre>
                         <code>
 &lt;form action="" method="post">
-    &lt;div class="radio">
+    &lt;div>
         &lt;p class="primary" id="radio-example-primary-message">
             &lt;span>primair:&lt;/span> Lorem ipsum dolor set amet
         &lt;/p>
-        &lt;input type="radio" id="radio-example-primary" name="standaard-radiobutton" value="value" class="primary" aria-describedby="radio-example-primary-message">
-        &lt;label for="radio-example-primary">Lorem ipsum dolor set amet&lt;/label>
+        &lt;div class="radio">
+            &lt;input type="radio" id="radio-example-primary" name="standaard-radiobutton" value="value" class="primary" aria-describedby="radio-example-primary-message">
+            &lt;label for="radio-example-primary">Lorem ipsum dolor set amet&lt;/label>
+        &lt;/div>
     &lt;/div>
 &lt;/form>
                         </code>
