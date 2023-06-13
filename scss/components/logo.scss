@@ -24,22 +24,18 @@ https://www.rijkshuisstijl.nl/basiselementen/basiselementen-online/logo */
     font-size: 0;
   }
 
-  &:visited,
-  &:hover,
-  &:visited:hover {
-    color: #000000;
-  }
-
   @media (width >= $screen-width-medium) {
     margin-bottom: 1.44rem;
     font-size: inherit;
     max-width: 35rem;
+    color: #000000;
 
     &:active,
     &:visited,
     &:hover,
     &:focus {
       font-size: inherit;
+      color: #000000;
     }
   }
 
