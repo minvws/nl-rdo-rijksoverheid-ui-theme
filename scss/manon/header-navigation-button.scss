@@ -1,0 +1,14 @@
+/* header-navigation-button.scss */
+
+:root {
+  /* Button */
+  --header-navigation-button-min-width: 0;
+  --header-navigation-button-min-height: 100%;
+  --header-navigation-button-border-width: 0;
+  --header-navigation-button-border-color: var(--ruby-red-tint-1-background-color);
+
+  /* Icon */
+  --header-navigation-button-icon-font-family: var(--icon-font-family);
+  --header-navigation-button-icon-font-size: var(--header-navigation-link-visited-icon-font-size);
+  --header-navigation-button-icon-padding-right: var(--header-navigation-link-icon-padding-right);
+}

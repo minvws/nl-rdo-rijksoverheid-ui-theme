@@ -47,6 +47,7 @@
 /* @import "manon/navigation";
 @import "manon/navigation-content-wrapper"; */
 @import "manon/header-navigation";
+@import "manon/header-navigation-button";
 @import "manon/header-navigation-button-states";
 @import "manon/header-navigation-collapsible";
 @import "manon/header-navigation-collapsible-collapsing-element-button-states";
@@ -99,7 +100,6 @@
 @import "components/stepper";
 @import "components/language";
 @import "components/images";
-
 
 /* Temporary manon overrides (Until they have been added to manon) */
 // @import "manon-override/actions";

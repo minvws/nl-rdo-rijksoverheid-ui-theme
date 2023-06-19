@@ -24,9 +24,6 @@
   --header-navigation-content-wrapper-padding-left: var(--content-padding-left);
   --header-navigation-content-wrapper-padding-right: var(--content-padding-right);
 
-  /* Button */
-  --header-navigation-button-min-width: 0;
-
   /* List */
   --header-navigation-list-width: auto;
 
@@ -52,8 +49,12 @@
   --header-navigation-link-hover-text-color: var(--ruby-red-tint-1-text-color);
 
   /* Link focus */
-  --header-navigation-link-focus-text-decoration: var(--header-navigation-link-hover-text-decoration);
-  --header-navigation-link-focus-background-color: var(--header-navigation-link-hover-background-color);
+  --header-navigation-link-focus-text-decoration: var(
+    --header-navigation-link-hover-text-decoration
+  );
+  --header-navigation-link-focus-background-color: var(
+    --header-navigation-link-hover-background-color
+  );
   --header-navigation-link-focus-text-color: var(--header-navigation-link-hover-text-color);
 
   /* Link active */
@@ -61,9 +62,6 @@
   --header-navigation-link-active-background-color: var(--ruby-red-tint-1-background-color);
   --header-navigation-link-active-text-color: var(--ruby-red-tint-1-text-color);
 
-  /* Button */
-  --header-navigation-button-min-height: 100%;
-  --header-navigation-button-border-width: 0;
-  --header-navigation-button-border-color: var(--ruby-red-tint-1-background-color);
+  /* Link active hover */
   --header-navigation-link-active-hover-text-color: var(--ruby-red-tint-1-text-color);
 }
