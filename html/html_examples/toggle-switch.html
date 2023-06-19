@@ -56,32 +56,36 @@
           <h3>Voorbeeld</h3>
           <p>Visueel voorbeeld:</p>
           <form method="post">
-            <fieldset class="toggle-switch">
+            <fieldset>
               <legend>Voorbeeld aan/uit schuifknop</legend>
-              <label>
-                <span>Save my preferences</span>
-                <span>
-                  <input type="checkbox" id="switch-1">
-                  <span class="false">Off</span>
-                  <span class="true">On</span>
-                </span>
-              </label>
+              <div class="toggle-switch">
+                <label>
+                  <span>Save my preferences</span>
+                  <span class="checkbox">
+                    <input type="checkbox" id="switch-1">
+                    <span class="false">Off</span>
+                    <span class="true">On</span>
+                  </span>
+                </label>
+              </div>
             </fieldset>
           </form>
 
           <p>Html-voorbeeld:</p>
           <pre>
                 <code>
-&lt;fieldset class="toggle-switch">
+&lt;fieldset>
   &lt;legend>Voorbeeld aan/uit schuifknop&lt;/legend>
-  &lt;label>
-    &lt;span>Save my preferences&lt;/span>
-    &lt;span>
-      &lt;input type="checkbox" id="switch-1">
-      &lt;span class="false">Off&lt;/span>
-      &lt;span class="true">On&lt;/span>
-    &lt;/span>
-  &lt;/label>
+  &lt;div class="toggle-switch">
+    &lt;label>
+      &lt;span>Save my preferences&lt;/span>
+      &lt;span class="checkbox">
+        &lt;input type="checkbox" id="switch-1">
+        &lt;span class="false">Off&lt;/span>
+        &lt;span class="true">On&lt;/span>
+      &lt;/span>
+    &lt;/label>
+  &lt;/div>
 &lt;/fieldset>
                 </code>
               </pre>
@@ -90,35 +94,41 @@
           <h3>Voorbeeld</h3>
           <p>Visueel voorbeeld:</p>
           <form method="post">
-            <fieldset class="toggle-switch">
+            <fieldset>
               <legend>Toggle switch</legend>
 
-              <label>
-                <span>Toon filters</span>
-                <span>
-                  <input type="checkbox" id="switch-2">
-                  <span class="false">Uit</span>
-                  <span class="true">Aan</span>
-                </span>
-              </label>
+              <div class="toggle-switch">
+                <label>
+                  <span>Toon filters</span>
+                  <span class="checkbox">
+                    <input type="checkbox" id="switch-2">
+                    <span class="false">Uit</span>
+                    <span class="true">Aan</span>
+                  </span>
+                </label>
+              </div>
 
-              <label>
-                <span>Gevaccineerd</span>
-                <span>
-                  <input type="checkbox" id="switch-3">
-                  <span class="false">Nee</span>
-                  <span class="true">Ja</span>
-                </span>
-              </label>
+              <div class="toggle-switch">
+                <label>
+                  <span>Gevaccineerd</span>
+                  <span class="checkbox">
+                    <input type="checkbox" id="switch-3">
+                    <span class="false">Nee</span>
+                    <span class="true">Ja</span>
+                  </span>
+                </label>
+              </div>
 
-              <label>
-                <span>Vaccinatiestatus</span>
-                <span>
-                  <input type="checkbox" id="switch-4">
-                  <span class="false">Ongevaccineerd</span>
-                  <span class="true">Gevaccineerd</span>
-                </span>
-              </label>
+              <div class="toggle-switch">
+                <label>
+                  <span>Vaccinatiestatus</span>
+                  <span class="checkbox">
+                    <input type="checkbox" id="switch-4">
+                    <span class="false">Ongevaccineerd</span>
+                    <span class="true">Gevaccineerd</span>
+                  </span>
+                </label>
+              </div>
             </fieldset>
           </form>
 
@@ -126,62 +136,45 @@
           <pre>
                 <code>
 &lt;form method="post">
-  &lt;fieldset class="toggle-switch">
+  &lt;fieldset>
     &lt;legend>Toggle switch&lt;/legend>
 
-    &lt;label>
-      &lt;span>Toon filters&lt;/span>
-      &lt;span>
-        &lt;input type="checkbox" id="switch-2">
-        &lt;span class="false">Uit&lt;/span>
-        &lt;span class="true">Aan&lt;/span>
-      &lt;/span>
-    &lt;/label>
+    &lt;div class="toggle-switch">
+      &lt;label>
+        &lt;span>Toon filters&lt;/span>
+        &lt;span class="checkbox">
+          &lt;input type="checkbox" id="switch-2">
+          &lt;span class="false">Uit&lt;/span>
+          &lt;span class="true">Aan&lt;/span>
+        &lt;/span>
+      &lt;/label>
+    &lt;/div>
 
-    &lt;label>
-      &lt;span>Gevaccineerd&lt;/span>
-      &lt;span>
-        &lt;input type="checkbox" id="switch-3">
-        &lt;span class="false">Nee&lt;/span>
-        &lt;span class="true">Ja&lt;/span>
-      &lt;/span>
-    &lt;/label>
+    &lt;div class="toggle-switch">
+      &lt;label>
+        &lt;span>Gevaccineerd&lt;/span>
+        &lt;span class="checkbox">
+          &lt;input type="checkbox" id="switch-3">
+          &lt;span class="false">Nee&lt;/span>
+          &lt;span class="true">Ja&lt;/span>
+        &lt;/span>
+      &lt;/label>
+    &lt;/div>
 
-    &lt;label>
-      &lt;span>Vaccinatiestatus&lt;/span>
-      &lt;span>
-        &lt;input type="checkbox" id="switch-4">
-        &lt;span class="false">Ongevaccineerd&lt;/span>
-        &lt;span class="true">Gevaccineerd&lt;/span>
-      &lt;/span>
-    &lt;/label>
+    &lt;div class="toggle-switch">
+      &lt;label>
+        &lt;span>Vaccinatiestatus&lt;/span>
+        &lt;span class="checkbox">
+          &lt;input type="checkbox" id="switch-4">
+          &lt;span class="false">Ongevaccineerd&lt;/span>
+          &lt;span class="true">Gevaccineerd&lt;/span>
+        &lt;/span>
+      &lt;/label>
+    &lt;/div>
   &lt;/fieldset>
 &lt;/form>
                 </code>
               </pre>
-
-
-          <!-- Version based on button. Requires JS to work. If we can use the version based on checkboxes this one can be deleted.
-              <p>Visueel voorbeeld:</p>
-              <label for="toggle-switch-1">Lorem ipsum</label>
-              <button type="button" role="switch" aria-checked="true"
-                  id="toggle-switch-1">
-                  <span>Uit</span>
-                  <span>Aan</span>
-              </button>
-
-              <p>Html-voorbeeld:</p>
-              <pre>
-                <code>
-&lt;label for="toggle-switch-1" class="switch">Lorem ipsum&lt;/label>
-&lt;button type="button" role="switch" aria-checked="true"
-    id="toggle-switch-1">
-    &lt;span>Uit&lt;/span>
-    &lt;span>Aan&lt;/span>
-&lt;/button>
-              </code>
-            </pre> -->
-
         </div>
       </article>
     </div>
