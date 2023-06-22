@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Paginering - Rijksoverheid CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../dist/css/main.css" rel="stylesheet">
+  <link href="../dist/img/favicon.ico" rel="shortcut icon">
+  <script defer src="../dist/js/sidemenu.js"></script>
+  <script defer src="../dist/js/accordion.js"></script>
+</head>
+
+<body class="test-cases">
+  <header>
+    <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
+    <a href="" class="ro-logo">
+      <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
+      Rijksoverheid
+    </a>
+
+    <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
+      <div>
+        <ul>
+          <li><a href="../index.html"><span class="icon icon-home">Hoofdpagina icoon</span> Rijksoverheid CSS</a></li>
+          <li><a href="index.html">Online Componenten Bibliotheek</a></li>
+          <li><a href="#" aria-current="page">Paginering</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="sidemenu" id="main-content" tabindex="-1">
+    <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+      <ul>
+        <li><a href="#intro">Paginering</a>
+          <ul>
+            <li><a href="#ul">Openklapbare lijsten</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <div>
+      <article id="intro">
+        <div>
+          <h1>Paginering</h1>
+          <p>Component om aan te geven dat de beschikbare data opgedeeld is in pagina's. Geschikte weergave bij grote hoeveelheden data. 
+            Het paginerings-element verteld de gebruiker dat er meerdere pagina's beschikbaar zijn en op welke pagina de gebruiker zich momenteel bevind.</p>
+
+          <p>Aandachtspunten:</p>
+          <ul>
+            <li>Voeg op het huidige element het aria-label <code>aria-current</code> toe.</li>
+          </ul>
+
+          <h2 id="examples">Voorbeelden</h2>
+          <h3 id="pagination-class">Paginering</h3>
+          <p>Visueel voorbeeld:</p>
+          <div class="pagination">
+            <ul>
+                <li><a href="#" aria-current>1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+            </ul>
+          </div>
+
+          <p>Html-voorbeeld:</p>
+          <pre>
+              <code>
+
+              </code>
+            </pre>
+        </div>
+      </article>
+    </div>
+
+    <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het
+      hoofdmenu</a>
+  </main>
+
+  <footer>
+    <div class="two-thirds-one-third">
+      <span class="slogan">Manon - Rijksoverheid css framework</span>
+      <nav aria-labelledby="footer-nav-1-heading">
+        <h1 id="footer-nav-1-heading">Service</h1>
+        <ul>
+          <li><a href="../index.html">Over</a></li>
+          <li><a href="../test/index.html">Styling tests</a></li>
+          <li><a href="index.html">Online componenten bibliotheek</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+
+</html>
