@@ -44,3 +44,7 @@
   --navigation-link-icon: var(--icon-chevron-right);
   --navigation-link-icon-font-size: 0.7rem;
 }
+
+nav a {
+  display: flex;
+}
