@@ -43,8 +43,27 @@
   /* Link Icon */
   --navigation-link-icon: var(--icon-chevron-right);
   --navigation-link-icon-font-size: 0.7rem;
+  --navigation-link-icon-padding-right: 0;
+
+  /* Icon visited */
+  --navigation-link-visited-icon-line-height: 1;
 }
 
+/* Override, as the alignment was slightly off */
 nav a {
-  display: inline-flex;
+  position: relative;
+  padding-left: 1.25rem;
+
+  &:before,
+  &:hover:before {
+    text-decoration-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-self: center;
+    height: 100%;
+    line-height: 1;
+  }
 }
