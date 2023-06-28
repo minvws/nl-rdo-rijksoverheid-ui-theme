@@ -8,28 +8,63 @@
   --pagination-item-text-color: var(--ro-blue);
 
   /* Item */
-  --pagination-item-height: 3rem;
-  --pagination-item-width: 3rem;
+  --pagination-item-height: 2.75rem;
+  --pagination-item-width: 2.75rem;
+
+  /* Link */
+  --pagination-link-border-radius: 0;
 
   /* Selected - active item */
-  --pagination-item-active-background-color: var(--ro-blue);
-  --pagination-item-active-text-color: white;
+  --pagination-link-active-background-color: var(--ro-blue);
+  --pagination-item-active-text-color: #fff;
+
+  /* Hover */
+  --pagination-link-hover-background-color: var(--ro-blue);
+  --pagination-link-hover-text-color: #fff;
+
+  /* Adjacent selecotor - Previous and Next */
+  --pagination-adjacent-text-color: var(--link-text-color);
+  --pagination-adjacent-hover-background-color: transparent;
+
+  /* Icon */
+  --pagination-adjacent-icon-font-size: 0.8rem;
+  --pagination-previous-icon: var(--icon-chevron-left);
+  --pagination-next-icon: var(--icon-chevron-right);
 }
 
-.pagination {
-  width: 100%;
+nav.pagination {
+  a,
+  a:visited {
+    padding-left: 0;
 
-  ul {
-    display: flex;
-    width: 100%;
-    overflow: auto;
+    &.next:before {
+      content: none;
+    }
+  }
 
-    li {
-      min-width: var(--pagination-item-width);
+  .adjacent {
+    font-size: 0;
 
-      a {
-        outline: 0;
-      }
+    @media screen and (min-width: 42rem) {
+      font-size: var(--application-base-font-size);
     }
   }
 }
+
+// .pagination {
+//   width: 100%;
+
+//   ul {
+//     display: flex;
+//     width: 100%;
+//     overflow: auto;
+
+//     li {
+//       min-width: var(--pagination-item-width);
+
+//       a {
+//         outline: 0;
+//       }
+//     }
+//   }
+// }
