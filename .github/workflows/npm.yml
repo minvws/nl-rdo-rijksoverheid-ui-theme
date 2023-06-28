@@ -11,9 +11,19 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  audit:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          registry-url: "https://npm.pkg.github.com"
+          cache: "npm"
+      - run: npm audit
+
   build:
     runs-on: ubuntu-20.04
-
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -24,7 +34,6 @@ jobs:
       - run: npm ci --ignore-scripts
         env:
           NODE_AUTH_TOKEN: ${{ secrets.REPO_READ_ONLY_TOKEN }}
-      - run: npm audit
       - run: npm run lint:css
         continue-on-error: true
       - run: npm run build
