@@ -50,20 +50,23 @@
 }
 
 /* Override, as the alignment was slightly off */
-nav a {
-  position: relative;
-  padding-left: 1.25rem;
+body > footer nav,
+nav {
+  a {
+    position: relative;
+    padding-left: 1.25rem;
 
-  &:before,
-  &:hover:before {
-    text-decoration-color: transparent;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: inline-flex;
-    align-items: center;
-    justify-self: center;
-    height: 100%;
-    line-height: 1;
+    &:before,
+    &:hover:before {
+      text-decoration-color: transparent;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: inline-flex;
+      align-items: center;
+      justify-self: center;
+      height: 100%;
+      line-height: 1;
+    }
   }
 }
