@@ -46,21 +46,23 @@
 @use "@minvws/manon/navigation-link-visited";
 @use "@minvws/manon/navigation-link-hover";
 @use "@minvws/manon/navigation-link-active";
-@use "@minvws/manon/navigation-link-focus";
 @use "@minvws/manon/navigation-content-wrapper";
 
 /* Header navigation */
 @use "@minvws/manon/header-navigation";
 @use "@minvws/manon/header-navigation-button";
+
+$header-navigation-button-states: "active", "hover";
 @use "@minvws/manon/header-navigation-button-states";
 @use "@minvws/manon/header-navigation-content-wrapper";
 @use "@minvws/manon/header-navigation-link";
 @use "@minvws/manon/header-navigation-link-visited";
 @use "@minvws/manon/header-navigation-link-hover";
 @use "@minvws/manon/header-navigation-link-active";
-@use "@minvws/manon/header-navigation-link-focus";
 @use "@minvws/manon/header-navigation-collapsible";
 @use "@minvws/manon/header-navigation-collapsible-collapsing-element-button";
+
+$header-navigation-button-states: "active", "hover";
 @use "@minvws/manon/header-navigation-collapsible-collapsing-element-button-states";
 
 /* Footer navigation */
@@ -68,7 +70,6 @@
 @use "@minvws/manon/footer-navigation-link-visited";
 @use "@minvws/manon/footer-navigation-link-hover";
 @use "@minvws/manon/footer-navigation-link-active";
-@use "@minvws/manon/footer-navigation-link-focus";
 
 /* Text */
 @use "@minvws/manon/p";
@@ -82,7 +83,6 @@
 @use "@minvws/manon/link-visited";
 @use "@minvws/manon/link-hover";
 @use "@minvws/manon/link-active";
-@use "@minvws/manon/link-focus";
 @use "@minvws/manon/nota-bene";
 
 /* Accessibility */
@@ -94,6 +94,8 @@
 /* Breadcrumb bar */
 @use "@minvws/manon/breadcrumb-bar";
 @use "@minvws/manon/breadcrumb-bar-link";
+
+$breadcrumb-bar-states: "visited", "hover", "active";
 @use "@minvws/manon/breadcrumb-bar-link-states";
 @use "@minvws/manon/breadcrumb-bar-content-wrapper";
 
@@ -104,7 +106,6 @@
 @use "@minvws/manon/footer-link-visited";
 @use "@minvws/manon/footer-link-hover";
 @use "@minvws/manon/footer-link-active";
-@use "@minvws/manon/footer-link-focus";
 
 /* Components */
 @use "@minvws/manon/sidemenu";
