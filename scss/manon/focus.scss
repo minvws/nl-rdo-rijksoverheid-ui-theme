@@ -1,7 +1,11 @@
 /* Focus */
 
 :root {
-  --focus-outline: 2px dotted #000000;
-  --focus-outline-offset: 0.25rem;
+  /**
+   * Commented out to prevent overriding the default focus styles on
+   * focusable elements such as sections.
+   */
+  //--focus-outline: 2px dotted #000000;
+  //--focus-outline-offset: 0.25rem;
   --focus-z-index: 1;
 }
