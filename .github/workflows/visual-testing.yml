@@ -19,7 +19,7 @@ jobs:
     name: Set expected screenshots
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Create folders
         run: |
           mkdir -p screenshots/expected
