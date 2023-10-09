@@ -3,7 +3,6 @@
 :root {
   --breadcrumb-bar-link-text-color: #ffffff;
   --breadcrumb-bar-link-active-text-decoration: none;
-
   --breadcrumb-bar-link-icon: var(--breadcrumb-bar-link-icon);
   --breadcrumb-bar-link-icon-font-size: var(--link-icon-font-size);
 
@@ -13,14 +12,12 @@
   /* Link Focus */
   --breadcrumb-bar-link-focus-text-color: var(--breadcrumb-bar-link-text-color);
 
-
   /* Link Active */
   --breadcrumb-bar-link-active-text-color: var(--breadcrumb-bar-link-text-color);
   --breadcrumb-bar-link-active-font-weight: bold;
 
   /* Link Visited */
   --breadcrumb-bar-link-visited-text-color: var(--breadcrumb-bar-link-text-color);
-
   --breadcrumb-bar-link-focus-icon-font-size: var(--breadcrumb-bar-link-icon-font-size);
   --breadcrumb-bar-link-hover-icon-font-size: var(--breadcrumb-bar-link-icon-font-size);
   --breadcrumb-bar-link-visited-icon-font-size: var(--breadcrumb-bar-link-icon-font-size);

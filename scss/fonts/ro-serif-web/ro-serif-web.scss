@@ -8,7 +8,8 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: url("#{$ro-font-path}/ro-serif-web/RO-SerifWeb-Regular.woff2") format("woff2"),
+  src:
+    url("#{$ro-font-path}/ro-serif-web/RO-SerifWeb-Regular.woff2") format("woff2"),
     url("#{$ro-font-path}/ro-serif-web/RO-SerifWeb-Regular.woff") format("woff");
 }
 
@@ -17,7 +18,8 @@
   font-weight: normal;
   font-style: italic;
   font-display: swap;
-  src: url("#{$ro-font-path}/ro-serif-web/RO-SerifWeb-Italic.woff2") format("woff2"),
+  src:
+    url("#{$ro-font-path}/ro-serif-web/RO-SerifWeb-Italic.woff2") format("woff2"),
     url("#{$ro-font-path}/ro-serif-web/RO-SerifWeb-Italic.woff") format("woff");
 }
 
@@ -27,6 +29,7 @@
   font-weight: bold;
   font-style: normal;
   font-display: swap;
-  src: url("#{$ro-font-path}/ro-serif-web/RO-SerifWeb-Bold.woff2") format("woff2"),
+  src:
+    url("#{$ro-font-path}/ro-serif-web/RO-SerifWeb-Bold.woff2") format("woff2"),
     url("#{$ro-font-path}/ro-serif-web/RO-SerifWeb-Bold.woff") format("woff");
 }

@@ -56,8 +56,8 @@ nav {
     position: relative;
     padding-left: 1.25rem;
 
-    &:before,
-    &:hover:before {
+    &::before,
+    &:hover::before {
       text-decoration-color: transparent;
       position: absolute;
       top: 0;
