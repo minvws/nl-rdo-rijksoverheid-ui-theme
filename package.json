@@ -36,7 +36,7 @@
     "@minvws/manon": "^16.0.1"
   },
   "devDependencies": {
-    "conventional-changelog": "^4.0.0",
+    "conventional-changelog": "^5.1.0",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.8.1",
     "husky": "^8.0.3",
