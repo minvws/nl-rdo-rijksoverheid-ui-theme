@@ -5,7 +5,8 @@
   font-family: "RO Icons";
   font-weight: normal;
   font-style: normal;
-  src: url("#{$ro-font-path}/ro-icons/ro-icons-3.6.woff2") format("woff2"),
+  src:
+    url("#{$ro-font-path}/ro-icons/ro-icons-3.6.woff2") format("woff2"),
     url("#{$ro-font-path}/ro-icons/ro-icons-3.6.woff") format("woff"),
     url("#{$ro-font-path}/ro-icons/ro-icons-3.6.ttf") format("truetype");
 }
