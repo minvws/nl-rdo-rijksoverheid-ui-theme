@@ -16,11 +16,11 @@
 
   /* Selected - active item */
   --pagination-link-active-background-color: var(--ro-blue);
-  --pagination-item-active-text-color: #fff;
+  --pagination-item-active-text-color: #ffffff;
 
   /* Hover */
   --pagination-link-hover-background-color: var(--ro-blue);
-  --pagination-link-hover-text-color: #fff;
+  --pagination-link-hover-text-color: #ffffff;
 
   /* Adjacent selecotor - Previous and Next */
   --pagination-adjacent-text-color: var(--link-text-color);
@@ -37,7 +37,7 @@ nav.pagination {
   a:visited {
     padding-left: 0;
 
-    &.next:before {
+    &.next::before {
       content: none;
     }
   }
@@ -45,7 +45,7 @@ nav.pagination {
   .adjacent {
     font-size: 0;
 
-    @media screen and (min-width: 42rem) {
+    @media screen and (width >= 42rem) {
       font-size: var(--application-base-font-size);
     }
   }

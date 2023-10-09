@@ -1,6 +1,4 @@
-/*---------------------------------------------------------------*/
-/*-------------- components/toggle-switch.scss ------------------*/
-/*---------------------------------------------------------------*/
+/* components/toggle-switch.scss */
 .toggle-switch label {
   padding-right: 0;
   line-height: 1.5rem;
@@ -36,7 +34,7 @@
         float: right;
         right: 0.125rem;
         left: auto;
-        background: #fff;
+        background: #ffffff;
         margin-right: 0;
 
         + .false {

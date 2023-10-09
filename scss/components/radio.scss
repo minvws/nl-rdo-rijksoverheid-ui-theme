@@ -10,14 +10,16 @@ form {
 
     input[type="radio"] {
       border-radius: 100%;
+
       /* Specified to prevent radio buttons to become ovals on long labels */
       min-width: var(--radio-input-width);
       width: var(--radio-input-width);
-      /* 23px by rem size 16px*/
+
+      /* 23px by rem size 16px */
       height: var(--radio-input-height);
 
       &:checked {
-        background: $icon-url-circle, linear-gradient(#fff, #fff);
+        background: $icon-url-circle, linear-gradient(#ffffff, #ffffff);
       }
     }
   }

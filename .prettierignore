@@ -1,4 +1,5 @@
 package-lock.json
+.github/
 node_modules/
 *.html
 /html/dist
