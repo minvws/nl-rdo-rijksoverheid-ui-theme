@@ -40,7 +40,7 @@ async function main(screenshotDirectory, htmlDirectory) {
   const htmlFiles = await getHtmlFiles(htmlDirectory);
 
   // Launch browser
-  const browser = await puppeteer.launch({ headless: true });
+  const browser = await puppeteer.launch({ headless: 'new' });
 
   // Loop through html files and capture screenshot
   for (const htmlFile of htmlFiles) {
