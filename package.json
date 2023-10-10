@@ -30,7 +30,8 @@
     "lint-staged": "lint-staged",
     "lint:css": "stylelint \"scss/**/*.scss\"",
     "lint:css:fix": "npm run lint:css -- --fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test:screenshots": "node tests/capture-screenshots.js ./tests/screenshots/actual ./html"
   },
   "dependencies": {
     "@minvws/manon": "^16.1.1"

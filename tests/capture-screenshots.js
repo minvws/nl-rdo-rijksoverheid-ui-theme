@@ -20,15 +20,17 @@ async function screenshotWebpage(browser, filePath, screenshotPath) {
   await page.screenshot({
     path: screenshotPath,
     fullPage: true,
-    captureBeyondViewport: false,
+    captureBeyondViewport: true,
     optimizeForSpeed: true,
+    quality: 75,
+    type: 'jpeg'
   });
 
   await page.close();
 }
 
 function getScreenshotFileName(htmlFilePath) {
-  return htmlFilePath.replaceAll(path.sep, "-").replace(/\.html$/, ".png");
+  return htmlFilePath.replaceAll(path.sep, "-").replace(/\.html$/, ".jpg");
 }
 async function main(screenshotDirectory, htmlDirectory) {
   // Create screenshot directory
@@ -38,7 +40,7 @@ async function main(screenshotDirectory, htmlDirectory) {
   const htmlFiles = await getHtmlFiles(htmlDirectory);
 
   // Launch browser
-  const browser = await puppeteer.launch({ headless: true });
+  const browser = await puppeteer.launch({ headless: 'new' });
 
   // Loop through html files and capture screenshot
   for (const htmlFile of htmlFiles) {
