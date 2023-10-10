@@ -17,12 +17,27 @@ async function screenshotWebpage(browser, filePath, screenshotPath) {
   await page.setViewport({ width: 1080, height: 1024 });
 
   await page.goto(`file://${filePath}`, { waitUntil: "load" });
-  await page.screenshot({
-    path: screenshotPath,
-    fullPage: true,
-    captureBeyondViewport: false,
-    optimizeForSpeed: true,
-  });
+
+  // Apparently capturing big screenshots as png works
+  let height = await page.evaluate(() => document.documentElement.offsetHeight);
+  if (height >= 100000) {
+    await page.screenshot({
+      path: screenshotPath,
+      fullPage: true,
+      captureBeyondViewport: true,
+      optimizeForSpeed: true,
+      type: 'png'
+    });
+  } else {
+    await page.screenshot({
+      path: screenshotPath,
+      fullPage: true,
+      captureBeyondViewport: true,
+      optimizeForSpeed: true,
+      quality: 75,
+      type: 'jpeg'
+    });
+  }
 
   await page.close();
 }
