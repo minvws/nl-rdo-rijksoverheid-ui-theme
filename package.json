@@ -34,7 +34,7 @@
     "test:screenshots": "node tests/capture-screenshots.js ./tests/screenshots/actual ./html"
   },
   "dependencies": {
-    "@minvws/manon": "^16.1.2"
+    "@minvws/manon": "^16.2.0"
   },
   "devDependencies": {
     "conventional-changelog": "^5.1.0",
