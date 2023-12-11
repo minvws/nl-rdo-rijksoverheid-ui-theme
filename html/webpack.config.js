@@ -13,7 +13,7 @@ module.exports = {
     formHelp: "@minvws/manon/form-help.js",
     collapsible: "@minvws/manon/collapsible.js",
     sidemenu: "@minvws/manon/sidemenu.js",
-    main: "../scss/main.scss",
+    main: "./main.scss",
   },
   output: {
     path: __dirname + "/dist",
