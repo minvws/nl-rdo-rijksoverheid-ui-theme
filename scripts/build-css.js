@@ -14,8 +14,8 @@ const outFile = "main.css";
 const promises = [];
 
 const data = `
-  $ro-font-path: "../fonts";
-  $ro-img-path: "../img";
+  $manon-font-path: "../fonts";
+  $manon-img-path: "../img";
 
   @import "main";
 `;

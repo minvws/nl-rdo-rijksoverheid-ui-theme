@@ -1,2 +1,9 @@
+/** @deprecated **/
 $ro-font-path: "@minvws/nl-rdo-rijksoverheid-ui-theme/fonts" !default;
+
+/** @deprecated */
 $ro-img-path: "@minvws/nl-rdo-rijksoverheid-ui-theme/img" !default;
+
+// New variables
+$manon-font-path: $ro-font-path !default;
+$manon-img-path: $ro-img-path !default;
