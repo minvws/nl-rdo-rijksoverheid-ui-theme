@@ -1,6 +1,6 @@
 # Rijksoverheid Theme
 
-Theme package for Rijksoverheid styled websites and web applications based on the [Manon framework](https://github.com/minvws/nl-rdo-manon).
+Theme package for Rijksoverheid styled websites and web applications using [Manon](https://github.com/minvws/nl-rdo-manon).
 
 ## Legal
 
@@ -8,7 +8,7 @@ To use the theme, logo and fonts you need permissions from the Government Inform
 
 ## Documentation
 
-The documentation and the styling examples for this package can be found on: https://minvws.github.io/nl-rdo-rijksoverheid-ui-theme/
+The documentation and the styling examples for this package can be found at https://minvws.github.io/nl-rdo-rijksoverheid-ui-theme/
 
 ## Dependencies
 
@@ -51,23 +51,55 @@ Add the following line to the file, replacing TOKEN with your personal access to
 
 ### Install package
 
-Install the latest version of the package with the following command:
+Install the latest versions of Manon and this theme with the following command:
 
 ```shell
-npm install @minvws/nl-rdo-rijksoverheid-ui-theme
+npm install @minvws/manon @minvws/nl-rdo-rijksoverheid-ui-theme
 ```
 
 ## Usage
 
-You can import the components you need or you can import the main file which includes all the components.
-For importing the main file you can use the following stylesheet.
+There are three ways to use this theme:
+1. Import everything all at once.
+2. Pick Manon components and then apply the theme.
+2. Pick Manon components and parts of the theme (not recommended).
+
+### Import everything all at once
+
+For importing everything, including Manon itself, you can `@import` the `main.scss` file in your
+SCSS:
 
 ```scss
 @import "@minvws/nl-rdo-rijksoverheid-ui-theme/scss/main";
 ```
 
-Sometimes you need to set the font and image paths. You can do this by setting the `$ro-font-path` and `$ro-img-path` variables before importing the package.
-When you copy the fonts and img folder to your project you need to set the paths to the correct location. When using a file loader with webpack, mix or vite you can use the `~` to tell the file loader to look in the node_modules folder.
+### Pick Manon components and then apply the theme
+
+Follow the instructions in the Manon docs or have a look at [scss/manon/](scss/manon/) to see how to
+import components from Manon.
+
+After importing your chosen components from Manon, apply the theme by `@import`ing this package:
+
+```scss
+@import "@minvws/nl-rdo-rijksoverheid-ui-theme";
+```
+
+## Font and image paths
+
+By default, fonts and images are loaded from `url()`s starting with
+`@minvws/nl-rdo-rijksoverheid-ui-theme`. That means that, if you are using Vite or another bundler
+like Vite that understands how to load files from `node_modules`, this should work out-of-the-box.
+
+If you are using the `sass` CLI directly, you can use the [`--load-path`](https://sass-lang.com/documentation/cli/dart-sass/#load-path) option to tell it to look in `node_modules` as well:
+
+```shell
+sass  --load-path=node_modules  scss/app.scss  css/app.css
+```
+
+In some cases you may need to change the font and image paths. For example, webpack supports loading
+from `node_modules` if the package name is prefixed with `~`. Or perhaps your project copies the
+files to a known location or a CDN. You can do this by setting the SCSS variables `$manon-font-path`
+and `$manon-img-path` before importing the package. For example, for webpack:
 
 ```scss
 $ro-font-path: "~@minvws/nl-rdo-rijksoverheid-ui-theme/fonts";
