@@ -75,8 +75,9 @@ SCSS:
 
 ### Pick Manon components and then apply the theme
 
-Follow the instructions in the Manon docs or have a look at [scss/manon/](scss/manon/) to see how to
-import components from Manon.
+Follow the instructions in the Manon docs or have a look at
+[scss/manon/manon-components.scss](scss/manon/manon-components.scss) for an example of how to import
+components from Manon.
 
 After importing your chosen components from Manon, apply the theme by `@import`ing this package:
 
