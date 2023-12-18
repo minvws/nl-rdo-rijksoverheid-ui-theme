@@ -169,7 +169,6 @@ $icon-gemeentehuissvg: "\E9cb";
   --icon-stacaravan: "#{$icon-stacaravan}";
   --icon-supermarktketens: "#{$icon-supermarktketens}";
   --icon-megastallen: "#{$icon-megastallen}";
-  --icon-smartphone: "#{$icon-smartphone}";
   --icon-dreiging-van-buitenaf: "#{$icon-dreiging-van-buitenaf}";
   --icon-drie-personen-in-huis: "#{$icon-drie-personen-in-huis}";
   --icon-gebouw-met-busje: "#{$icon-gebouw-met-busje}";
@@ -504,10 +503,6 @@ $icon-gemeentehuissvg: "\E9cb";
 
   &.icon-megastallen::before {
     content: $icon-megastallen;
-  }
-
-  &.icon-smartphone::before {
-    content: $icon-smartphone;
   }
 
   &.icon-dreiging-van-buitenaf::before {
