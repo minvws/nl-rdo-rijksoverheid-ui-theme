@@ -51,7 +51,7 @@ jobs:
           npm-token: ${{ secrets.REPO_READ_ONLY_TOKEN }}
 
       - name: Upload screenshots
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: screenshots
           path: screenshots
@@ -82,7 +82,7 @@ jobs:
         continue-on-error: true
       - name: Upload visual testing report
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: visual-testing-report
           path: |

@@ -24,7 +24,7 @@ jobs:
           folder: ${{ inputs.folder }}
           npm-token: ${{ secrets.REPO_READ_ONLY_TOKEN }}
       - name: Upload screenshots
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: screenshots
           path: screenshots
