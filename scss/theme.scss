@@ -1,100 +1,100 @@
-/* Path Variables */
-@import "_sass-variables/path-variables";
+/* Theme variables */
+@forward "variables";
 
 /* Fonts */
-@import "fonts/fonts";
+@use "fonts/fonts";
 
 /* Color sets */
-@import "colors/color-set-grey";
-@import "colors/ruby-red";
-@import "colors/colors";
+@use "colors/color-set-grey";
+@use "colors/ruby-red";
+@use "colors/colors";
 
 /* Rijksoverheid base set */
-@import "colors/notifications";
+@use "colors/notifications";
 
 /* Styling for Manon components */
 
 /* Sets */
-@import "manon/body-text-set";
-@import "manon/layout-set";
-@import "manon/heading-base-set";
+@use "manon/body-text-set";
+@use "manon/layout-set";
+@use "manon/heading-base-set";
 
 /* Application style settings */
-@import "manon/application-base";
+@use "manon/application-base";
 
 /* Footer */
-@import "manon/footer";
-@import "manon/footer-content-wrapper";
-@import "manon/footer-navigation";
+@use "manon/footer";
+@use "manon/footer-content-wrapper";
+@use "manon/footer-navigation";
 
 /* Main */
-@import "manon/main";
+@use "manon/main";
 
 /* Section */
-@import "manon/section";
-@import "manon/section-content-wrapper";
+@use "manon/section";
+@use "manon/section-content-wrapper";
 
 /* Article */
-@import "manon/article";
-@import "manon/article-content-wrapper";
+@use "manon/article";
+@use "manon/article-content-wrapper";
 
 /* Navigation */
 
-/* @import "manon/navigation";
-@import "manon/navigation-content-wrapper"; */
-@import "manon/header-navigation";
-@import "manon/header-navigation-button-states";
-@import "manon/header-navigation-collapsible";
-@import "manon/header-navigation-collapsible-collapsing-element-button-states";
+/* @use "manon/navigation";
+@use "manon/navigation-content-wrapper"; */
+@use "manon/header-navigation";
+@use "manon/header-navigation-button-states";
+@use "manon/header-navigation-collapsible";
+@use "manon/header-navigation-collapsible-collapsing-element-button-states";
 
 /* Headings */
-@import "manon/headings";
+@use "manon/headings";
 
 /* Components */
-@import "manon/button";
-@import "manon/button-ghost";
-@import "manon/collapsing-element";
-@import "manon/checkbox";
-@import "manon/button-to-top";
-@import "manon/form";
-@import "manon/form-input";
-@import "manon/form-textarea";
-@import "manon/focus";
-@import "manon/form-help";
-@import "manon/message-counter";
-@import "manon/list";
-@import "manon/layout-authentication";
-@import "manon/pagination";
-@import "manon/filters";
-@import "manon/navigation";
-@import "manon/navigation-content-wrapper";
-@import "manon/notification-base";
-@import "manon/notification-block-element";
-@import "manon/notification-error";
-@import "manon/notification-warning";
-@import "manon/notification-confirmation";
-@import "manon/notification-explanation";
-@import "manon/notification-system";
-@import "manon/icon";
-@import "manon/radio";
-@import "manon/sidemenu";
-@import "manon/tabs";
-@import "manon/link";
-@import "manon/breadcrumb-bar";
-@import "manon/breadcrumb-bar-link";
-@import "manon/card";
+@use "manon/button";
+@use "manon/button-ghost";
+@use "manon/collapsing-element";
+@use "manon/checkbox";
+@use "manon/button-to-top";
+@use "manon/form";
+@use "manon/form-input";
+@use "manon/form-textarea";
+@use "manon/focus";
+@use "manon/form-help";
+@use "manon/message-counter";
+@use "manon/list";
+@use "manon/layout-authentication";
+@use "manon/pagination";
+@use "manon/filters";
+@use "manon/navigation";
+@use "manon/navigation-content-wrapper";
+@use "manon/notification-base";
+@use "manon/notification-block-element";
+@use "manon/notification-error";
+@use "manon/notification-warning";
+@use "manon/notification-confirmation";
+@use "manon/notification-explanation";
+@use "manon/notification-system";
+@use "manon/icon";
+@use "manon/radio";
+@use "manon/sidemenu";
+@use "manon/tabs";
+@use "manon/link";
+@use "manon/breadcrumb-bar";
+@use "manon/breadcrumb-bar-link";
+@use "manon/card";
 
 /* Components - Rijksoverheid specific components */
-@import "components/logo";
-@import "components/ro-icons";
-@import "components/notification-icon";
-@import "components/slogan";
-@import "components/radio";
-@import "components/checkbox";
-@import "components/input";
-@import "components/page-meta";
-@import "components/language";
-@import "components/images";
-@import "components/footer-meta";
-@import "components/actions";
-@import "components/toggle-switch";
+@use "components/logo";
+@use "components/ro-icons";
+@forward "components/notification-icon";
+@use "components/slogan";
+@use "components/radio" as radio-component;
+@use "components/checkbox" as checkbox-component;
+@use "components/input" as input-component;
+@use "components/page-meta";
+@use "components/language";
+@use "components/images";
+@use "components/footer-meta";
+@use "components/actions";
+@use "components/toggle-switch";

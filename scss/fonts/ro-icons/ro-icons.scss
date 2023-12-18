@@ -1,3 +1,5 @@
+@use "../../variables";
+
 /* Font: Ro icons - Rijksoverheid font */
 
 /* RO icons */
@@ -6,7 +8,7 @@
   font-weight: normal;
   font-style: normal;
   src:
-    url("#{$manon-font-path}/ro-icons/ro-icons-3.6.woff2") format("woff2"),
-    url("#{$manon-font-path}/ro-icons/ro-icons-3.6.woff") format("woff"),
-    url("#{$manon-font-path}/ro-icons/ro-icons-3.6.ttf") format("truetype");
+    url("#{variables.$font-path}/ro-icons/ro-icons-3.6.woff2") format("woff2"),
+    url("#{variables.$font-path}/ro-icons/ro-icons-3.6.woff") format("woff"),
+    url("#{variables.$font-path}/ro-icons/ro-icons-3.6.ttf") format("truetype");
 }

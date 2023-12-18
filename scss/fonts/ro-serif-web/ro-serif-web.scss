@@ -1,3 +1,5 @@
+@use "../../variables";
+
 /* Font: Ro Serif Web - Rijksoverheid font */
 
 /* RO Serif Web */
@@ -9,9 +11,9 @@
   font-style: normal;
   font-display: swap;
   src:
-    url("#{$manon-font-path}/ro-serif-web/RO-SerifWeb-Regular.woff2") format("woff2"),
-    url("#{$manon-font-path}/ro-serif-web/RO-SerifWeb-Regular.woff") format("woff"),
-    url("#{$manon-font-path}/ro-serif-web/RO-SerifWeb-Regular.ttf") format("truetype");
+    url("#{variables.$font-path}/ro-serif-web/RO-SerifWeb-Regular.woff2") format("woff2"),
+    url("#{variables.$font-path}/ro-serif-web/RO-SerifWeb-Regular.woff") format("woff"),
+    url("#{variables.$font-path}/ro-serif-web/RO-SerifWeb-Regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -20,9 +22,9 @@
   font-style: italic;
   font-display: swap;
   src:
-    url("#{$manon-font-path}/ro-serif-web/RO-SerifWeb-Italic.woff2") format("woff2"),
-    url("#{$manon-font-path}/ro-serif-web/RO-SerifWeb-Italic.woff") format("woff"),
-    url("#{$manon-font-path}/ro-serif-web/RO-SerifWeb-Italic.ttf") format("truetype");
+    url("#{variables.$font-path}/ro-serif-web/RO-SerifWeb-Italic.woff2") format("woff2"),
+    url("#{variables.$font-path}/ro-serif-web/RO-SerifWeb-Italic.woff") format("woff"),
+    url("#{variables.$font-path}/ro-serif-web/RO-SerifWeb-Italic.ttf") format("truetype");
 }
 
 /* Bold */
@@ -32,7 +34,7 @@
   font-style: normal;
   font-display: swap;
   src:
-    url("#{$manon-font-path}/ro-serif-web/RO-SerifWeb-Bold.woff2") format("woff2"),
-    url("#{$manon-font-path}/ro-serif-web/RO-SerifWeb-Bold.woff") format("woff"),
-    url("#{$manon-font-path}/ro-serif-web/RO-SerifWeb-Bold.ttf") format("truetype");
+    url("#{variables.$font-path}/ro-serif-web/RO-SerifWeb-Bold.woff2") format("woff2"),
+    url("#{variables.$font-path}/ro-serif-web/RO-SerifWeb-Bold.woff") format("woff"),
+    url("#{variables.$font-path}/ro-serif-web/RO-SerifWeb-Bold.ttf") format("truetype");
 }
