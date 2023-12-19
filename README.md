@@ -1,25 +1,31 @@
 # Rijksoverheid Theme
 
-Theme package for Rijksoverheid styled websites and web applications using [Manon](https://github.com/minvws/nl-rdo-manon).
+Theme package for Rijksoverheid styled websites and web applications using
+[Manon](https://github.com/minvws/nl-rdo-manon).
 
 ## Legal
 
-To use the theme, logo and fonts you need permissions from the Government Information Service(RVD). See also https://www.rijkshuisstijl.nl/over-de-rijkshuisstijl/auteursrecht-rijkshuisstijl.
+To use the theme, logo and fonts you need permissions from the Government Information Service(RVD).
+See also https://www.rijkshuisstijl.nl/over-de-rijkshuisstijl/auteursrecht-rijkshuisstijl.
 
 ## Documentation
 
-The documentation and the styling examples for this package can be found at https://minvws.github.io/nl-rdo-rijksoverheid-ui-theme/
+The documentation and the styling examples for this package can be found at
+https://minvws.github.io/nl-rdo-rijksoverheid-ui-theme/
 
 ## Dependencies
 
-To use this package you need to use something like [Sass](https://sass-lang.com/), [webpack](https://webpack.js.org/), [Laravel Mix](https://laravel-mix.com/) or [Vite](https://vitejs.dev/).
+To use this package you need to use something like [Sass](https://sass-lang.com/),
+[webpack](https://webpack.js.org/), [Laravel Mix](https://laravel-mix.com/) or
+[Vite](https://vitejs.dev/).
 
-You can find an example webpack configuration file in the html folder of this package.
+You can find an example webpack configuration file in the [`html/` folder](html/) of this package.
 
 ## Installation
 
-Simple steps for using this package in your project.
-You can read detailed instructions on how to use GitHub npm packages on https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry.
+This project is published as an npm package on the GitHub Packages registry. See [working with the
+npm
+registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry).
 
 ### Create .npmrc file in project
 
@@ -37,13 +43,14 @@ echo "@minvws:registry=https://npm.pkg.github.com" >> .npmrc
 
 ### Add GitHub token to user .npmrc file
 
-To authenticate for GitHub packages you need to add a personal access token (classic) to your user `.npmrc` file.
-The personal access token needs to have the scope `read:packages`.
+To authenticate for GitHub packages you need to add a personal access token (classic) to your user
+`.npmrc` file with the `read:packages` scope. You can [generate a new access token
+(`read:packages`)](https://github.com/settings/tokens/new?scopes=read:packages&description=GitHub+Packages+token)
+or read more about [managing your personal access
+tokens](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token).
 
-You can find more information on how to create a personal access token on https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token.
-
-Create a new ~/.npmrc file if one doesn't exist.
-Add the following line to the file, replacing TOKEN with your personal access token.
+Create a new `~/.npmrc` file if one doesn't exist. Add the following line to the file, replacing
+`TOKEN` with your personal access token.
 
 ```
 //npm.pkg.github.com/:_authToken=TOKEN

@@ -36,7 +36,9 @@
         <p>Stappenplan voor het implementeren van Manon.</p>
         <ol>
           <li>
-            <p>Bereid je project voor om <code>@minvws</code> npm packages te <a href="https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry#installing-a-package" hreflang="en">installeren uit de GitHub Packages registry</a>.</p>
+            <p>Bereid je project voor om <code>@minvws</code> npm packages te <a
+              href="https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry#installing-a-package"
+              hreflang="en" rel="external">installeren uit de GitHub Packages registry</a>.</p>
             <ul>
               <li>
                 <p>Voeg een <code>.npmrc</code>-bestand toe aan je project, als die niet al bestaat. Voeg deze
@@ -45,14 +47,21 @@
                 <p></p>
               </li>
               <li>
-                <p>Genereer in de GitHub-instellingen een nieuw <span lang="en">"personal access token (classic)"</span> met de <code>read:packages</code> scope. Dit kan via deze link: <a href="https://github.com/settings/tokens/new?scopes=repo,read:packages&description=GitHub+Packages+token" hreflang="en">Genereer access token (read:packages)</a>. Bewaar de token voor de volgende stap.</p>
+                <p>Om je te authenticeren voor GitHub Packages heb je een <span lang="en">"personal
+                    access token (classic)"</span> met de <code>read:packages</code> scope node. Je
+                  kan <a
+                    href="https://github.com/settings/tokens/new?scopes=read:packages&description=GitHub+Packages+token"
+                    hreflang="en" rel="external">een nieuwe access token (<code>read:packages</code>) genereren</a> of meer
+                lezen over <a href="" hreflang="en" rel="external">het beheren van je <span
+                    lang="en">personal access tokens</span></a>. Bewaar de token voor de volgende
+                stap.</p>
               </li>
               <li>
                 <p>Voeg een <code>.npmrc</code>-bestand toe aan je home directory
                   (<code>~/.npmrc</code>), als die niet
                   al bestaat. Voeg deze regel toe aan het bestand:</p>
                 <pre><code>//npm.pkg.github.com/:_authToken=TOKEN</code></pre>
-                </p>Vervang hierbij <code>TOKEN</code> door het token uit de vorige stap.</p>
+                <p>Vervang hierbij <code>TOKEN</code> door het token uit de vorige stap.</p>
               </li>
             </ul>
           </li>
