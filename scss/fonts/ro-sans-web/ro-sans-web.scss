@@ -9,7 +9,7 @@
   font-family: "RO Sans Web";
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: var(--text-body-font-display, fallback);
   src:
     url("#{variables.$font-path}/ro-sans-web/RO-SansWebText-Regular.woff2") format("woff2"),
     url("#{variables.$font-path}/ro-sans-web/RO-SansWebText-Regular.woff") format("woff"),
@@ -20,7 +20,7 @@
   font-family: "RO Sans Web";
   font-weight: normal;
   font-style: italic;
-  font-display: swap;
+  font-display: var(--text-body-font-display, fallback);
   src:
     url("#{variables.$font-path}/ro-sans-web/RO-SansWebText-Italic.woff2") format("woff2"),
     url("#{variables.$font-path}/ro-sans-web/RO-SansWebText-Italic.woff") format("woff"),
@@ -32,7 +32,7 @@
   font-family: "RO Sans Web";
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
+  font-display: var(--text-body-font-display, fallback);
   src:
     url("#{variables.$font-path}/ro-sans-web/RO-SansWebText-Bold.woff2") format("woff2"),
     url("#{variables.$font-path}/ro-sans-web/RO-SansWebText-Bold.woff") format("woff"),

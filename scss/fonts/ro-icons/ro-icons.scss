@@ -7,6 +7,7 @@
   font-family: "RO Icons";
   font-weight: normal;
   font-style: normal;
+  font-display: var(--text-icon-font-display, block);
   src:
     url("#{variables.$font-path}/ro-icons/ro-icons-3.6.woff2") format("woff2"),
     url("#{variables.$font-path}/ro-icons/ro-icons-3.6.woff") format("woff"),

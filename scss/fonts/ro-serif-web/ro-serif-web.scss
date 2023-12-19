@@ -9,7 +9,7 @@
   font-family: "RO Serif Web";
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: var(--text-magazine-font-display, swap);
   src:
     url("#{variables.$font-path}/ro-serif-web/RO-SerifWeb-Regular.woff2") format("woff2"),
     url("#{variables.$font-path}/ro-serif-web/RO-SerifWeb-Regular.woff") format("woff"),
@@ -20,7 +20,7 @@
   font-family: "RO Serif Web";
   font-weight: normal;
   font-style: italic;
-  font-display: swap;
+  font-display: var(--text-magazine-font-display, swap);
   src:
     url("#{variables.$font-path}/ro-serif-web/RO-SerifWeb-Italic.woff2") format("woff2"),
     url("#{variables.$font-path}/ro-serif-web/RO-SerifWeb-Italic.woff") format("woff"),
@@ -32,7 +32,7 @@
   font-family: "RO Serif Web";
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
+  font-display: var(--text-magazine-font-display, swap);
   src:
     url("#{variables.$font-path}/ro-serif-web/RO-SerifWeb-Bold.woff2") format("woff2"),
     url("#{variables.$font-path}/ro-serif-web/RO-SerifWeb-Bold.woff") format("woff"),
