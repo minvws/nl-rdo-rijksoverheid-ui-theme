@@ -50,7 +50,8 @@ jobs:
           folder: expected
           npm-token: ${{ secrets.REPO_READ_ONLY_TOKEN }}
 
-      - name: Upload screenshots
+      - if: ${{ steps.expected-screenshots-exist.outputs.exist == 'true' }}
+        name: Upload screenshots
         uses: actions/upload-artifact@v4
         with:
           name: screenshots-expected
@@ -98,5 +99,4 @@ jobs:
         uses: geekyeggo/delete-artifact@v2
         with:
           name: |
-            screenshots-expected
             screenshots-actual
