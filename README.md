@@ -54,7 +54,7 @@ Add the following line to the file, replacing TOKEN with your personal access to
 Install the latest versions of Manon and this theme with the following command:
 
 ```shell
-npm install --save @minvws/manon @minvws/nl-rdo-rijksoverheid-ui-theme
+npm install @minvws/manon @minvws/nl-rdo-rijksoverheid-ui-theme
 ```
 
 ## Usage
