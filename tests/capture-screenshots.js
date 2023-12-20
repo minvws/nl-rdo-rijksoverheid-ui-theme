@@ -11,22 +11,29 @@ async function getHtmlFiles(dir) {
 }
 
 async function screenshotWebpage(browser, filePath, screenshotPath) {
-  let page = await browser.newPage();
+  try {
+    let page = await browser.newPage();
 
-  // Set screen size
-  await page.setViewport({ width: 1080, height: 1024 });
+    // Set screen size
+    await page.setViewport({width: 1080, height: 1024});
 
-  await page.goto(`file://${filePath}`, { waitUntil: "load" });
-  await page.screenshot({
-    path: screenshotPath,
-    fullPage: true,
-    captureBeyondViewport: true,
-    optimizeForSpeed: true,
-    quality: 75,
-    type: 'jpeg'
-  });
+    await page.goto(`file://${filePath}`, {waitUntil: "load"});
+    await page.screenshot({
+      path: screenshotPath,
+      fullPage: true,
+      captureBeyondViewport: true,
+      optimizeForSpeed: true,
+      quality: 75,
+      type: 'jpeg'
+    });
 
-  await page.close();
+    await page.close();
+  } catch (error) {
+    console.error('Something went wrong with screenshotting the page', filePath, error);
+    return false;
+  }
+
+  return true;
 }
 
 function getScreenshotFileName(htmlFilePath) {
@@ -42,17 +49,27 @@ async function main(screenshotDirectory, htmlDirectory) {
   // Launch browser
   const browser = await puppeteer.launch({ headless: 'new' });
 
+  // Counters
+  let totalCount = htmlFiles.length;
+  let successCount = 0;
+
   // Loop through html files and capture screenshot
   for (const htmlFile of htmlFiles) {
     const filePath = path.join(htmlDirectory, htmlFile);
     const screenshotPath = path.join(screenshotDirectory, getScreenshotFileName(htmlFile));
 
     // Capture screenshot
-    await screenshotWebpage(browser, filePath, screenshotPath);
+    const result = await screenshotWebpage(browser, filePath, screenshotPath);
+    if (result) {
+      successCount++;
+    }
   }
 
   // Close browser
   await browser.close();
+
+  // Output results
+  console.log(`Total: ${totalCount}, Success: ${successCount}, Failure: ${totalCount - successCount}`);
 }
 
 const nodeJsVersion = process.version.match(/(\d+)\.(\d+)\.(\d+)/);
