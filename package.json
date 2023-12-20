@@ -7,9 +7,6 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
-  "engines": {
-    "node": ">=16"
-  },
   "files": [
     "css",
     "fonts",
