@@ -1,4 +1,5 @@
 name: Capture Screenshots
+
 inputs:
   ref:
     description: 'Branch or tag to checkout'
@@ -9,6 +10,7 @@ inputs:
   npm-token:
     description: 'npm token to install private packages'
     required: true
+
 runs:
   using: "composite"
   steps:
@@ -45,7 +47,7 @@ runs:
       run: node tests/capture-screenshots.js screenshots/${{ inputs.folder }} ./.checkout/html
       shell: bash
     - name: Upload screenshots
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
-        name: screenshots
-        path: screenshots
+        name: screenshots-${{ inputs.folder }}
+        path: screenshots/${{ inputs.folder }}

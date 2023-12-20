@@ -28,8 +28,8 @@ jobs:
         with:
           workflow: expected-screenshots.yml
           branch: main
-          name: screenshots
-          path: screenshots
+          name: screenshots-expected
+          path: screenshots/expected
           if_no_artifact_found: ignore
         continue-on-error: true
       - name: Check if expected screenshots folder is not empty
@@ -50,11 +50,12 @@ jobs:
           folder: expected
           npm-token: ${{ secrets.REPO_READ_ONLY_TOKEN }}
 
-      - name: Upload screenshots
-        uses: actions/upload-artifact@v3
+      - if: ${{ steps.expected-screenshots-exist.outputs.exist == 'true' }}
+        name: Upload screenshots
+        uses: actions/upload-artifact@v4
         with:
-          name: screenshots
-          path: screenshots
+          name: screenshots-expected
+          path: screenshots/expected
 
   visual-testing:
     if: ${{ github.event_name == 'pull_request'  }}
@@ -67,11 +68,16 @@ jobs:
           mkdir -p screenshots/actual
           mkdir -p screenshots/expected
           mkdir -p screenshots/diff
-      - name: Download actual screenshots
-        uses: actions/download-artifact@v3
+      - name: Download expected screenshots
+        uses: actions/download-artifact@v4
         with:
-          name: screenshots
-          path: screenshots
+          name: screenshots-expected
+          path: screenshots/expected
+      - name: Download actual screenshots
+        uses: actions/download-artifact@v4
+        with:
+          name: screenshots-actual
+          path: screenshots/actual
       - uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -82,7 +88,7 @@ jobs:
         continue-on-error: true
       - name: Upload visual testing report
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: visual-testing-report
           path: |
@@ -92,4 +98,5 @@ jobs:
         if: always()
         uses: geekyeggo/delete-artifact@v2
         with:
-          name: screenshots
+          name: |
+            screenshots-actual
