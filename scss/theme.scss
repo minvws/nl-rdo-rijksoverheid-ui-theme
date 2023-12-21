@@ -83,18 +83,3 @@
 @use "manon/breadcrumb-bar";
 @use "manon/breadcrumb-bar-link";
 @use "manon/card";
-
-/* Components - Rijksoverheid specific components */
-@use "components/logo";
-@use "components/ro-icons";
-@forward "components/notification-icon";
-@use "components/slogan";
-@use "components/radio" as radio-component;
-@use "components/checkbox" as checkbox-component;
-@use "components/input" as input-component;
-@use "components/page-meta";
-@use "components/language";
-@use "components/images";
-@use "components/footer-meta";
-@use "components/actions";
-@use "components/toggle-switch";

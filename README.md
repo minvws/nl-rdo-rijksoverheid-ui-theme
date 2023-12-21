@@ -74,16 +74,32 @@ There are three ways to use this theme:
 ### As a Manon theme (recommended)
 
 Follow the instructions in the Manon docs or have a look at
-[scss/manon/manon-components.scss](scss/manon/manon-components.scss) for an example of how to import
-components from Manon.
+[`scss/manon/_index.scss`](scss/manon/_index.scss) for an example of how to import components from
+Manon.
 
 After importing your chosen components from Manon, apply the theme by `@use`ing this package:
 
 ```scss
 @use "@minvws/nl-rdo-rijksoverheid-ui-theme";
+@use "@minvws/nl-rdo-rijksoverheid-ui-theme/components";
 ```
 
-It's also possible to use `@import`, but it's recommended to use `@use` instead.
+The second line imports all of the theme-specific components. These bring their own CSS. If one or
+more of these components interfere with other CSS in the application, it's possible to import only
+specific components, like so:
+
+```scss
+@use "@minvws/nl-rdo-rijksoverheid-ui-theme";
+@use "@minvws/nl-rdo-rijksoverheid-ui-theme/scss/components/logo";
+@use "@minvws/nl-rdo-rijksoverheid-ui-theme/scss/components/ro-icons";
+@use "@minvws/nl-rdo-rijksoverheid-ui-theme/scss/components/radio";
+@use "@minvws/nl-rdo-rijksoverheid-ui-theme/scss/components/checkbox";
+@use "@minvws/nl-rdo-rijksoverheid-ui-theme/scss/components/input";
+```
+
+See [`scss/components/_index.scss`](scss/components/_index.scss) for a full list of the components.
+
+Note: it's also possible to use `@import`, but it's recommended to use `@use` instead.
 
 ### As Manon theme modules (not recommended)
 
@@ -168,10 +184,10 @@ Next, update the way you import the theme. In this example we'll assume your mai
 ```
 
 Finally, import the components you need from `@minvws/manon`. A good place to start is to copy
-`manon/manon-components.scss` from the theme:
+[`scss/manon/_index.scss`](scss/manon/_index.scss) from the theme:
 
 ```sh
-cp node_modules/@minvws/nl-rdo-rijksoverheid-ui-theme/manon/manon-components scss/_manon-components.scss
+cp node_modules/@minvws/nl-rdo-rijksoverheid-ui-theme/scss/manon/_index.scss scss/_manon.scss
 ```
 
 ...and import it in your `main.scss`:
@@ -179,7 +195,7 @@ cp node_modules/@minvws/nl-rdo-rijksoverheid-ui-theme/manon/manon-components scs
 ```diff
 /* scss/main.scss */
 
-+@use "manon-components";
++@use "manon";
 
 @use "@minvws/nl-rdo-rijksoverheid-ui-theme" with (
   $font-path: "~@minvws/nl-rdo-rijksoverheid-ui-theme/fonts",

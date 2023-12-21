@@ -68,8 +68,8 @@
           <li>
             <p>Bereid je project voor om Sass-bestanden te ondersteunen, als het dat niet al doet.</p>
             <pre><code>npm install sass</code></pre>
-            <p>Configureer de build tools van je project om Sass te ondersteunen. Raadpleeg
-              hiervoor de documentatie van je build tools. Gebruikt het project (nog) geen build
+            <p>Configureer de build tool van je project om Sass te ondersteunen. Raadpleeg
+              hiervoor de documentatie van je build tool. Gebruikt het project (nog) geen build
               tools, kies er dan een of gebruik <a href="https://sass-lang.com/documentation/cli/dart-sass/" hreflang="en">de sass cli</a>.
             <p>Let op: voor Manon is minimaal <a href="https://github.com/sass/dart-sass" hreflang="en">dart-sass</a> versie <code>1.23</code> nodig. Manon werkt niet met node-sass.
           </li>
@@ -78,23 +78,62 @@
             <pre><code>npm install @minvws/manon @minvws/nl-rdo-rijksoverheid-ui-theme</code></pre>
           </li>
           <li>
-            <p>Importeer in je <code>main.scss</code> de gewenste componenten van Manon, en importeer
-              daarna dit thema:</p>
-            <pre><code>@use "manon-components"; // local file with manon component imports
-@use "@minvws/nl-rdo-rijksoverheid-ui-theme";</code></pre>
-            <p>Afhankelijk van welke build tools je project gebruikt, kan het nodig zijn om het
-              basepath van de <code>url()</code>s van de lettertypes en afbeeldingen aan te
-              passen. Voor webpack 4 is het bijvoorbeeld nodig om de paden te prefixen met een
-              <code>~</code>. Dit kan door de <code>$font-path</code> en <code>$img-path</code>
-              variabelen mee te geven:
-              <pre><code>@use "@minvws/nl-rdo-rijksoverheid-ui-theme" with (
+            <p>Kies welke Manon-componenten je nodig hebt, en importeer die in je project.</p>
+            <ul>
+              <li>
+                <p>Het kan handig zijn deze imports in een apart bestand te verzamelen, bijvoorbeeld
+                  <code>_manon.scss</code>, zodat je ze in één keer kan importeren:</p>
+            <pre><code>/* scss/main.scss */
+@use "manon";</code></pre>
+              </li>
+              <li>
+                <p>Als je niet zeker weet welke componenten je nodig hebt, kan het helpen om het
+                  bestand <code>scss/manon/_index.scss</code> uit het thema als basis te nemen. Dit
+                  bestand importeert alle Manon-componenten die door het thema ondersteund worden,
+                en kan als volgt uit de <code>node_modules</code> gekopiëerd worden:</p>
+            <pre><code>cp node_modules/@minvws/nl-rdo-rijksoverheid-ui-theme/scss/manon/_index.scss scss/_manon.scss</code></pre>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>Importeer het thema en de thema-specifieke componenten in je project:</p>
+            <pre><code>/* scss/main.scss */
+@use "manon";
+@use "@minvws/nl-rdo-rijksoverheid-ui-theme";
+@use "@minvws/nl-rdo-rijksoverheid-ui-theme/components";</code></pre>
+            <ul>
+              <li>
+                <p>De thema-specifieke componenten hebben hun eigen CSS. Als de CSS van één of meer
+                van deze componenten conflicteert met andere CSS in het project, is het ook mogelijk
+                om individuele componenten te importeren uit de map <code>scss/components/</code>.
+                Bijvoorbeeld:</p>
+                <pre><code>/* scss/main.scss */
+@use "manon";
+@use "@minvws/nl-rdo-rijksoverheid-ui-theme";
+@use "@minvws/nl-rdo-rijksoverheid-ui-theme/scss/components/logo";
+@use "@minvws/nl-rdo-rijksoverheid-ui-theme/scss/components/ro-icons";
+@use "@minvws/nl-rdo-rijksoverheid-ui-theme/scss/components/radio";
+@use "@minvws/nl-rdo-rijksoverheid-ui-theme/scss/components/checkbox";
+@use "@minvws/nl-rdo-rijksoverheid-ui-theme/scss/components/input";</code></pre>
+                <p>Zie <code>scss/components/_index.scss</code> voor een volledige lijst van alle
+                  componenten.</p>
+              </li>
+              <li>
+                <p>Afhankelijk van welke build tool je project gebruikt, kan het nodig zijn om het
+                  basispad van de <code>url()</code>s van de lettertypes en afbeeldingen aan te
+                  passen. Voor webpack 4 is het bijvoorbeeld nodig om de paden te prefixen met een
+                  <code>~</code>. Dit kan door de <code>$font-path</code> en <code>$img-path</code>
+                  variabelen mee te geven:</p>
+                  <pre><code>@use "@minvws/nl-rdo-rijksoverheid-ui-theme" with (
   $font-path: "~@minvws/nl-rdo-rijksoverheid-ui-theme/fonts",
   $img-path: "~@minvws/nl-rdo-rijksoverheid-ui-theme/img"
 );</code></pre>
+              </li>
+            </ul>
           </li>
           <li>Voeg de HTML toe.
             <ul>
-              <li>Gebruik een van de voorbeeldpagina's voor het opzetten van de html.
+              <li>Gebruik een van de voorbeeldpagina's voor het opzetten van de HTML.
                 <ul>
                   <li><a href="html_examples/page-template.html">Lege voorbeeldpagina (pagina-sjabloon)</a></li>
                   <li><a href="html_examples/index.html#document-nav-heading-1">Overzicht overige

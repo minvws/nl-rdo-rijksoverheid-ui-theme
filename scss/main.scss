@@ -1,11 +1,14 @@
 $ro-font-path: "../../../fonts" !default;
 $ro-img-path: "../../img" !default;
 
-/* Manon Components */
-@use "manon/manon-components";
+/* Manon components */
+@use "manon";
 
 /* Theme: Rijksoverheid. */
 @use "theme" with (
   $font-path: $ro-font-path,
   $img-path: $ro-img-path,
 );
+
+/* Rijksoverheid-specific components */
+@use "components";
