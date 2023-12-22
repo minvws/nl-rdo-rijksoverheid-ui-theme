@@ -1,8 +1,9 @@
 /* Theme variables */
 @forward "variables";
 
-/* Fonts */
-@use "fonts/fonts";
+/* Fonts & icons */
+@use "fonts";
+@use "icons";
 
 /* Color sets */
 @use "colors/color-set-grey";
