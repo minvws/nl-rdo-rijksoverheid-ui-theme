@@ -96,7 +96,7 @@ jobs:
           retention-days: 7
       - name: Delete screenshots artifact
         if: always()
-        uses: geekyeggo/delete-artifact@v2
+        uses: geekyeggo/delete-artifact@v4
         with:
           name: |
             screenshots-actual
