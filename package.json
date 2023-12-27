@@ -7,9 +7,6 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
-  "engines": {
-    "node": ">=16"
-  },
   "files": [
     "css",
     "fonts",
@@ -33,10 +30,11 @@
     "prepare": "husky install",
     "test:screenshots": "node tests/capture-screenshots.js ./tests/screenshots/actual ./html"
   },
-  "dependencies": {
+  "peerDepencency": {
     "@minvws/manon": "^16.2.0"
   },
   "devDependencies": {
+    "@minvws/manon": "^16.2.0",
     "conventional-changelog": "^5.1.0",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.8.1",
