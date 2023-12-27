@@ -11,7 +11,8 @@
     "css",
     "fonts",
     "img",
-    "scss"
+    "scss",
+    "*.scss"
   ],
   "scripts": {
     "dev": "npm-run-all clean build:docs",
