@@ -95,7 +95,7 @@ jobs:
             screenshots
           retention-days: 7
       - name: Delete screenshots artifact
-        if: always()
+        if: (always() && github.actor != 'dependabot[bot]')
         uses: geekyeggo/delete-artifact@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
