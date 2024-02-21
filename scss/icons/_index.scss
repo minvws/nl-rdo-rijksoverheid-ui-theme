@@ -1,6 +1,31 @@
 /* Icons */
 
-@use "base";
-@use "gezondheid-en-zorg";
-@use "computer-en-internet";
-@use "gebouwen";
+@use "@minvws/manon/mixins/icon";
+
+$glyphs: (
+  "ascending": "\E801",
+  "descending": "\E802",
+  "sort": "\E803",
+  "check": "\E804",
+  "chevron-left": "\E811",
+  "hamburger": "\E812",
+  "chevron-right": "\E813",
+  "questionmark": "\E814",
+  "outgoing": "\E81B",
+  "trash": "\E81D",
+  "user": "\E81E",
+  "chevron-up": "\E81F",
+  "chevron-down": "\E820",
+  "download": "\E823",
+  "heart": "\E824",
+  "reset": "\E826",
+  "search": "\E828",
+  "close": "\E82B",
+  "lock-closed": "\E901",
+  "on-off": "\E902",
+  "to-top": "\E903",
+  "smartphone": "\E95e",
+  "home": "\E98C",
+);
+
+@include icon.define-icons($glyphs, "before");

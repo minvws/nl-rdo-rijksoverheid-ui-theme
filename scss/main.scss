@@ -12,3 +12,6 @@ $ro-img-path: "../../img" !default;
 
 /* Rijksoverheid-specific components */
 @use "components";
+
+/* Extended icon set */
+@use "icons-extended";
