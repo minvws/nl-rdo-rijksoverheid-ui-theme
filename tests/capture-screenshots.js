@@ -47,7 +47,7 @@ async function main(screenshotDirectory, htmlDirectory) {
   const htmlFiles = await getHtmlFiles(htmlDirectory);
 
   // Launch browser
-  const browser = await puppeteer.launch({ headless: 'new' });
+  const browser = await puppeteer.launch({ headless: true });
 
   // Counters
   let totalCount = htmlFiles.length;
