@@ -98,6 +98,5 @@ jobs:
         if: (always() && github.actor != 'dependabot[bot]')
         uses: geekyeggo/delete-artifact@v5
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
           name: |
             screenshots-*
