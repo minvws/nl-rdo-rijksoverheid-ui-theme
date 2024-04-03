@@ -4,16 +4,4 @@
 :root {
   --icon-font-family: ro-icons-light;
   --icon-font-size: var(--application-base-font-size);
-
-  /* Accordion */
-  --accordion-button-icon-after-open-content: #{map.get(icons.$glyphs, descending)};
-  --accordion-button-icon-after-close-content: #{map.get(icons.$glyphs, ascending)};
-
-  /* Filter */
-  --filter-button-icon-before-open-content: #{map.get(icons.$glyphs, descending)};
-  --filter-button-icon-before-close-content: #{map.get(icons.$glyphs, ascending)};
-
-  /* Sidemenu */
-  --sidemenu-collapsed-button-icon: #{map.get(icons.$glyphs, descending)};
-  --sidemenu-expanded-button-icon: #{map.get(icons.$glyphs, ascending)};
 }
