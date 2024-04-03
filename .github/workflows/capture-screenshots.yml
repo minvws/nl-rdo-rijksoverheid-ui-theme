@@ -16,6 +16,7 @@ jobs:
   capture-screenshots:
     name: Capture ${{ inputs.folder }} screenshots
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
       - name: Capture screenshots
