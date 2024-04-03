@@ -1,12 +1,15 @@
 /* sidemenu.scss */
 
+@use "sass:map";
+@use "../icons";
+
 :root {
   --sidemenu-list-item-list-style: none;
 
   /* content on the button when the menu is collapsed */
-  --sidemenu-collapsed-button-icon: var(--icon-hamburger);
+  --sidemenu-collapsed-button-icon: #{map.get(icons.$glyphs, hamburger)};
 
   /* content on the button when the menu is expanded */
-  --sidemenu-expanded-button-icon: var(--icon-close);
+  --sidemenu-expanded-button-icon: #{map.get(icons.$glyphs, close)};
   --sidemenu-button-icon-font-size: 0.7rem;
 }

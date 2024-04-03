@@ -1,0 +1,10 @@
+/* accordion.scss */
+
+@use "sass:map";
+@use "../icons";
+
+:root {
+  --accordion-canary: red;
+  --accordion-button-icon-after-open-content: #{map.get(icons.$glyphs, descending)};
+  --accordion-button-icon-after-close-content: #{map.get(icons.$glyphs, ascending)};
+}
