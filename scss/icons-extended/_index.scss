@@ -1,12 +1,16 @@
 /* Icons extended */
 
+@use "sass:map";
 @use "@minvws/manon/mixins/icon";
 @use "../fonts/ro-icons-extended";
 @use "base";
 @use "gezondheid-en-zorg";
 @use "computer-en-internet";
 @use "gebouwen";
-@include icon.define-icons(base.$glyphs, "before", "ro-icons-extended");
-@include icon.define-icons(gezondheid-en-zorg.$glyphs, "before", "ro-icons-extended");
-@include icon.define-icons(computer-en-internet.$glyphs, "before", "ro-icons-extended");
-@include icon.define-icons(gebouwen.$glyphs, "before", "ro-icons-extended");
+
+$glyphs: map.merge(
+  base.$glyphs,
+  map.merge(gezondheid-en-zorg.$glyphs, map.merge(computer-en-internet.$glyphs, gebouwen.$glyphs))
+);
+
+@include icon.define-icons($glyphs, "before", "ro-icons-extended");
