@@ -13,4 +13,8 @@ $glyphs: map.merge(
   map.merge(gezondheid-en-zorg.$glyphs, map.merge(computer-en-internet.$glyphs, gebouwen.$glyphs))
 );
 
-@include icon.define-icons($glyphs, "before", "ro-icons-extended");
+:root {
+  --icon-font-family: ro-icons-extended;
+}
+
+@include icon.define-icons($glyphs, "before");
