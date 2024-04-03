@@ -7,8 +7,8 @@
   --filter-button-icon-font-family: ro-icons-light;
 
   /* content on the button when the menu is collapsed */
-  --filter-button-icon-before-open-content: #{map.get(icons.$glyphs, chevron-down)};
+  --filter-button-icon-before-open-content: "#{map.get(icons.$glyphs, chevron-down)}";
 
   /* content on the button when the menu is expanded */
-  --filter-button-icon-before-close-content: #{map.get(icons.$glyphs, chevron-up)};
+  --filter-button-icon-before-close-content: "#{map.get(icons.$glyphs, chevron-up)}";
 }
