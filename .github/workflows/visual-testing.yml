@@ -18,6 +18,7 @@ jobs:
   expected-screenshots:
     name: Set expected screenshots
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
       - name: Create folders
@@ -62,6 +63,7 @@ jobs:
     name: Compare screenshots
     needs: [capture-actual-screenshots, expected-screenshots]
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
       - name: Create folders
         run: |
@@ -84,7 +86,7 @@ jobs:
       - name: Install reg-cli
         run: npm install -g reg-cli
       - name: Run visual regression test tool
-        run: reg-cli screenshots/actual screenshots/expected screenshots/diff -R screenshots/report.html
+        run: reg-cli screenshots/actual screenshots/expected screenshots/diff --report screenshots/report.html  --concurrency 10
         continue-on-error: true
       - name: Upload visual testing report
         if: always()
