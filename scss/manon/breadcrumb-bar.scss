@@ -1,5 +1,8 @@
 /* Breadcrumb bar */
 
+@use "sass:map";
+@use "../icons";
+
 :root {
   --breadcrumb-bar-flex-direction: row;
   --breadcrumb-bar-justify-content: stretch;
@@ -30,7 +33,7 @@
   --breadcrumb-bar-list-item-gap: 1rem;
 
   /* Icon */
-  --breadcrumb-bar-icon: var(--icon-chevron-light-right);
+  --breadcrumb-bar-icon: "#{map.get(icons.$glyphs, chevron-light-right)}";
   --breadcrumb-bar-icon-margin-left: 0;
   --breadcrumb-bar-icon-margin-right: 0;
 

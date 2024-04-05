@@ -1,5 +1,8 @@
 /* Footer */
 
+@use "sass:map";
+@use "../icons";
+
 :root {
   --footer-padding-top: 3rem;
   --footer-padding-right: 0;
@@ -15,7 +18,7 @@
   --footer-link-text-decoration: none;
 
   /* Link Icon */
-  --footer-link-icon: var(--icon-chevron-right);
+  --footer-link-icon: "#{map.get(icons.$glyphs, chevron-right)}";
   --footer-link-icon-font-size: 0.7rem;
 
   /* Hover */
