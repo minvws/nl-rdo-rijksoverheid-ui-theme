@@ -32,10 +32,10 @@
     "test:screenshots": "node tests/capture-screenshots.js ./tests/screenshots/actual ./html"
   },
   "peerDepencency": {
-    "@minvws/manon": "^16.3.0-beta.5"
+    "@minvws/manon": "^16.3.0-beta.6"
   },
   "devDependencies": {
-    "@minvws/manon": "^16.3.0-beta.5",
+    "@minvws/manon": "^16.3.0-beta.6",
     "conventional-changelog": "^5.1.0",
     "copy-webpack-plugin": "^12.0.2",
     "css-loader": "^6.10.0",
