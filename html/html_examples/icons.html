@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="../dist/css/main.css" rel="stylesheet">
   <link href="../dist/img/favicon.ico" rel="shortcut icon">
+  <script defer src="../dist/js/accordion.js"></script>
   <script defer src="../dist/js/sidemenu.js"></script>
 </head>
 
@@ -32,29 +33,35 @@
   <main class="sidemenu" id="main-content" tabindex="-1">
     <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
       <ul>
-        <li><a href="#">Iconen</a></li>
+        <li><a href="#introduction">Iconen</a></li>
         <li><a href="#icon-implementation">Iconen gebruiken</a></li>
-        <li><a href="#icon-implementation-css">Iconen toevoegen via CSS</a></li>
+        <li><a href="#available-icons">Beschikbare iconen</a></li>
+        <li><a href="#extended-icon-set">Uitgebreide icoon-set</a></li>
       </ul>
     </nav>
 
     <div>
       <article>
         <div>
-          <h1>Iconen</h1>
-          <p>Voor het toevoegen van de Rijksoverheid-iconen binnen de website kan gebruikt gemaakt worden van de
-            unicode-codes.</p>
-
-          <p>Overzicht van de beschikbare iconen:</p>
-
-          <nav class="column-3" aria-label="Iconensets" id="icon-set">
-            <ul>
-              <li><a href="iconset/basic-set.html">Basisset</a></li>
-              <li><a href="iconset/health.html">Gezondheid en zorg</a></li>
-              <li><a href="iconset/computer-and-internet.html">Computer en internet</a></li>
-              <li><a href="iconset/buildings.html">Gebouwen</a></li>
-            </ul>
-          </nav>
+          <h1 id="introduction">Iconen</h1>
+          <p>
+            Voor het toevoegen van de Rijksoverheid-iconen binnen de website kan gebruikt gemaakt
+            worden van een icoon-lettertype via de classes <code>icon</code> en
+            <code>icon-{"{naam}"}</code>.
+          </p>
+          <p>
+            Standaard maken deze classes gebruik van het meegeleverde icoon-lettertype
+            <code>ro-icons-light</code>. Dit lettertype bevat de iconen uit de Manon basis-set. Zie
+            <a href="#available-icons">beschikbare iconen</a> voor meer informatie over deze
+            standaard iconen.
+          </p>
+          <p>
+            Daarnaast is het op twee manieren mogelijk om de iconen-set uit te breiden. Ten eerste
+            kan je ervoor kiezen de <a href="#extended-icon-set">uitgebreide icoon-set</a> van dit
+            thema te gebruiken. Ten tweede is het mogelijk om applicatie-specifieke iconen toe te
+            voegen. Zie hiervoor de Manon-documentatie: <a href="#add-other-icons"
+            rel="external">andere iconen toevoegen</a>
+          </p>
 
           <h2 id="icon-implementation">Iconen gebruiken</h2>
           <p>Voeg de class <code>icon</code> om gebruik te maken van de standaard icon-styling, en de class van het
@@ -64,7 +71,7 @@
           <p>Visueel voorbeeld:</p>
           <p class="icon icon-home">Lorem ipsum</p>
 
-          <p>Html-voorbeeld:</p>
+          <p>HTML-voorbeeld:</p>
 
           <pre>
                 <code>
@@ -77,7 +84,7 @@
           <p>Visueel voorbeeld:</p>
           <a href="../index.html" class="button"><span class=" icon icon-home"></span>Hoofdpagina</a>
 
-          <p>Html-voorbeeld:</p>
+          <p>HTML-voorbeeld:</p>
 
           <pre>
                 <code>
@@ -93,7 +100,7 @@
           <a href="../index.html" class="button icon icon-home">Hoofdpagina</a>
           <button class="icon icon-home">Hoofdpagina</button>
 
-          <p>Html-voorbeeld:</p>
+          <p>HTML-voorbeeld:</p>
 
           <pre>
                 <code>
@@ -102,57 +109,1062 @@
                 </code>
               </pre>
 
-          <h2 id="icon-implementation-css">Icoon toevoegen via CSS</h2>
-          <p>Voor het toevoegen of overschrijven van iconen kunnen deze ook via een eigen <code>stylesheet</code>
-            toegevoegd worden. Gebruik hiervoor de onderstaande CSS.</p>
-
-          <p>Aandachtspunten:</p>
-          <ul>
-            <li>Plaats het icoon via een pseudo-element Bijvoorbeeld: <code>:before</code> of <code>:after</code> op het
-              gewenste element.</li>
-            <li>Voeg de bijbehorende icoon-code toe binnen het <code>content</code> attribuut. Voor een overzicht van de
-              beschikbare iconen zie: <a href="#icon-set">iconen</a></li>
+          <h2 id="available-icons">Beschikbare iconen</h2>
+          <p>Het thema wordt geleverd met het icoon-lettertype <code>ro-icons-light</code>. Deze
+            bevat de iconen uit de Manon standaard-set. Deze iconen zijn dus ook beschikbaar in de
+            open-source Manon thema's.</p>
+          <ul class="background-color-offset grid-iconset">
+            <li>
+              <span class="icon icon-home" aria-hidden="true"></span>
+              <code lang="en">home</code>
+            </li>
+            <li>
+              <span class="icon icon-search" aria-hidden="true"></span>
+              <code lang="en">search</code>
+            </li>
+            <li>
+              <span class="icon icon-hamburger" aria-hidden="true"></span>
+              <code lang="en">hamburger</code>
+            </li>
+            <li>
+              <span class="icon icon-close" aria-hidden="true"></span>
+              <code lang="en">close</code>
+            </li>
+            <li>
+              <span class="icon icon-questionmark" aria-hidden="true"></span>
+              <code lang="en">questionmark</code>
+            </li>
+            <li>
+              <span class="icon icon-sort" aria-hidden="true"></span>
+              <code lang="en">sort</code>
+            </li>
+            <li>
+              <span class="icon icon-ascending" aria-hidden="true"></span>
+              <code lang="en">ascending</code>
+            </li>
+            <li>
+              <span class="icon icon-descending" aria-hidden="true"></span>
+              <code lang="en">descending</code>
+            </li>
+            <li>
+              <span class="icon icon-chevron-up" aria-hidden="true"></span>
+              <code lang="en">chevron-up</code>
+            </li>
+            <li>
+              <span class="icon icon-chevron-down" aria-hidden="true"></span>
+              <code lang="en">chevron-down</code>
+            </li>
+            <li>
+              <span class="icon icon-chevron-left" aria-hidden="true"></span>
+              <code lang="en">chevron-left</code>
+            </li>
+            <li>
+              <span class="icon icon-chevron-right" aria-hidden="true"></span>
+              <code lang="en">chevron-right</code>
+            </li>
+            <li>
+              <span class="icon icon-chevron-light-up" aria-hidden="true"></span>
+              <code lang="en">chevron-light-up</code>
+            </li>
+            <li>
+              <span class="icon icon-chevron-light-down" aria-hidden="true"></span>
+              <code lang="en">chevron-light-down</code>
+            </li>
+            <li>
+              <span class="icon icon-chevron-light-left" aria-hidden="true"></span>
+              <code lang="en">chevron-light-left</code>
+            </li>
+            <li>
+              <span class="icon icon-chevron-light-right" aria-hidden="true"></span>
+              <code lang="en">chevron-light-right</code>
+            </li>
+            <li>
+              <span class="icon icon-check" aria-hidden="true"></span>
+              <code lang="en">check</code>
+            </li>
+            <li>
+              <span class="icon icon-download" aria-hidden="true"></span>
+              <code lang="en">download</code>
+            </li>
+            <li>
+              <span class="icon icon-heart" aria-hidden="true"></span>
+              <code lang="en">heart</code>
+            </li>
+            <li>
+              <span class="icon icon-lock-closed" aria-hidden="true"></span>
+              <code lang="en">lock-closed</code>
+            </li>
+            <li>
+              <span class="icon icon-on-off" aria-hidden="true"></span>
+              <code lang="en">on-off</code>
+            </li>
+            <li>
+              <span class="icon icon-outgoing" aria-hidden="true"></span>
+              <code lang="en">outgoing</code>
+            </li>
+            <li>
+              <span class="icon icon-reset" aria-hidden="true"></span>
+              <code lang="en">reset</code>
+            </li>
+            <li>
+              <span class="icon icon-smartphone" aria-hidden="true"></span>
+              <code lang="en">smartphone</code>
+            </li>
+            <li>
+              <span class="icon icon-to-top" aria-hidden="true"></span>
+              <code lang="en">to-top</code>
+            </li>
+            <li>
+              <span class="icon icon-trash" aria-hidden="true"></span>
+              <code lang="en">trash</code>
+            </li>
+            <li>
+              <span class="icon icon-user" aria-hidden="true"></span>
+              <code lang="en">user</code>
+            </li>
           </ul>
-          <p>CSS-voorbeeld <code>before</code>:</p>
 
-          <pre>
-                <code>
-.example-object:before {
-  content: "\E805";
-  font-family: "RO Icons";
-  font-size: 1.125rem;
-  color: inherit;
-  position: static;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 0.5rem;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; /* Firefox */
-  font-smoothing: antialiased;
-}
-                </code>
-              </pre>
-
-          <p>CSS-voorbeeld <code>after</code>:</p>
-          <pre>
-                <code>
-.example-object:after {
-  content: "\E805";
-  font-family: "RO Icons";
-  font-size: 1.125rem;
-  color: inherit;
-  position: static;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 0.5rem;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; /* Firefox */
-  font-smoothing: antialiased;
-}
-                </code>
-              </pre>
+          <h2 id="extended-icon-set">Uitgebreide icoon-set</h2>
+          <p>Als de applicatie een icoon nodig heeft, dat niet in de standaard-set zit, dan is het
+            mogelijk om de uitgebreide icoon-set te gebruiken. Deze bevat een grotere sub-set van de
+            rijkshuisstijl-iconen.</p>
+          <p>Importeer hiervoor na het thema ook de uitgebreide icoon-set:</p>
+          <pre><code>/* scss/main.scss */
+@use "manon";
+@use "@minvws/nl-rdo-rijksoverheid-ui-theme";
+@use "@minvws/nl-rdo-rijksoverheid-ui-theme/components";
+// voeg deze regel toe:
+@use "@minvws/nl-rdo-rijksoverheid-ui-theme/icons-extended";</code></pre>
+          <ul class="accordion">
+            <li>
+              <button id="extended-icon-set-base" aria-expanded="false">Basisset</button>
+              <div aria-labelledby="extended-icon-set-base">
+                <ul class="background-color-offset grid-iconset">
+                  <li>
+                    <span class="icon icon-ascending"></span>
+                    <code lang="en">ascending</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-descending"></span>
+                    <code lang="en">descending</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-sort"></span>
+                    <code lang="en">sort</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-check"></span>
+                    <code lang="en">check</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-pinterest"></span>
+                    <code lang="en">pinterest</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-twitter-inverse"></span>
+                    <code lang="en">twitter-inverse</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-twitter"></span>
+                    <code lang="en">twitter</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-flickr"></span>
+                    <code lang="en">flickr</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-youtube"></span>
+                    <code lang="en">youtube</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-instagram"></span>
+                    <code lang="en">instagram</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-facebook"></span>
+                    <code lang="en">facebook</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-chevron-light-right"></span>
+                    <code lang="en">chevron-light-right</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-chevron-light-left"></span>
+                    <code lang="en">chevron-light-left</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-chevron-light-up"></span>
+                    <code lang="en">chevron-light-up</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-chevron-light-down"></span>
+                    <code lang="en">chevron-light-down</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-chevron-left"></span>
+                    <code lang="en">chevron-left</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-hamburger"></span>
+                    <code lang="en">hamburger</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-chevron-right"></span>
+                    <code lang="en">chevron-right</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-questionmark"></span>
+                    <code lang="en">questionmark</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-speech"></span>
+                    <code lang="en">speech</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-arrow-down"></span>
+                    <code lang="en">arrow-down</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-arrow-up"></span>
+                    <code lang="en">arrow-up</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-arrow-right"></span>
+                    <code lang="en">arrow-right</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-arrow-left"></span>
+                    <code lang="en">arrow-left</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-map"></span>
+                    <code lang="en">map</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-outgoing"></span>
+                    <code lang="en">outgoing</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-pause"></span>
+                    <code lang="en">pause</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-trash"></span>
+                    <code lang="en">trash</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-user"></span>
+                    <code lang="en">user</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-chevron-up"></span>
+                    <code lang="en">chevron-up</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-chevron-down"></span>
+                    <code lang="en">chevron-down</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-plus"></span>
+                    <code lang="en">plus</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-calendar"></span>
+                    <code lang="en">calendar</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-download"></span>
+                    <code lang="en">download</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-heart"></span>
+                    <code lang="en">heart</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-letter"></span>
+                    <code lang="en">letter</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-reset"></span>
+                    <code lang="en">reset</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-play"></span>
+                    <code lang="en">play</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-search"></span>
+                    <code lang="en">search</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-clock"></span>
+                    <code lang="en">clock</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-close"></span>
+                    <code lang="en">close</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-line"></span>
+                    <code lang="en">line</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-lock-closed"></span>
+                    <code lang="en">lock-closed</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-on-off"></span>
+                    <code lang="en">on-off</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-to-top"></span>
+                    <code lang="en">to-top</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-grid"></span>
+                    <code lang="en">grid</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-list"></span>
+                    <code lang="en">list</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-csv-file"></span>
+                    <code lang="en">csv-file</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-html-file"></span>
+                    <code lang="en">html-file</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-pdf-file"></span>
+                    <code lang="en">pdf-file</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-document"></span>
+                    <code lang="en">document</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-bar-graph"></span>
+                    <code lang="en">bar-graph</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-tree-graph"></span>
+                    <code lang="en">tree-graph</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-grid-view"></span>
+                    <code lang="en">grid-view</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-list-view"></span>
+                    <code lang="en">list-view</code>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <button id="extended-icon-set-health">Gezondheid en zorg</button>
+              <div aria-labelledby="extended-icon-set-health">
+                <ul class="background-color-offset grid-iconset">
+                  <li>
+                    <span class="icon icon-voor-elkaar-zorgen"></span>
+                    <code>voor-elkaar-zorgen</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-hart-met-oudere"></span>
+                    <code>hart-met-oudere</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-hart-tussen-2-uitgestoken-handen"></span>
+                    <code>hart-tussen-2-uitgestoken-handen</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-hoofd-silhouet-hoesten"></span>
+                    <code>hoofd-silhouet-hoesten</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-hoofd-silhouet-met-wattenstaafje-bij-mond"></span>
+                    <code>hoofd-silhouet-met-wattenstaafje-bij-mond</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-jeugdzorg"></span>
+                    <code>jeugdzorg</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-gezinszorg-met-oudere"></span>
+                    <code>gezinszorg-met-oudere</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-gezinszorg"></span>
+                    <code>gezinszorg</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-man-met-hart"></span>
+                    <code>man-met-hart</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-man-met-pleister1"></span>
+                    <code>man-met-pleister1</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-man-met-pot-met-deksel"></span>
+                    <code>man-met-pot-met-deksel</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-medisch-beroepsgeheim"></span>
+                    <code>medisch-beroepsgeheim</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-verzorgingstehuis"></span>
+                    <code>verzorgingstehuis</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-langdurige-zorg"></span>
+                    <code>langdurige-zorg</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-persoon-in-rolstoel-en-munten"></span>
+                    <code>persoon-in-rolstoel-en-munten</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-persoon-met-rugpijn"></span>
+                    <code>persoon-met-rugpijn</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-persoon-staand-met-hart"></span>
+                    <code>persoon-staand-met-hart</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-rollator-bij-trap"></span>
+                    <code>rollator-bij-trap</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-kinderbescherming"></span>
+                    <code>kinderbescherming</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-verboden-te-roken"></span>
+                    <code>verboden-te-roken</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-vrouw-en-persoon-in-rolstoel"></span>
+                    <code>vrouw-en-persoon-in-rolstoel</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-arrow-left"></span>
+                    <code>arrow-left</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-mantelzorg"></span>
+                    <code>mantelzorg</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-ouderenzorg"></span>
+                    <code>ouderenzorg</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-welzijnswerk-ouderen"></span>
+                    <code>welzijnswerk-ouderen</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-noodopvang"></span>
+                    <code>noodopvang</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-opvang-en-nazorg"></span>
+                    <code>opvang-en-nazorg</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-hoofd-silhouet-met-wattenstaafje-bij-neus"></span>
+                    <code>hoofd-silhouet-met-wattenstaafje-bij-neus</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-rokende-filtersigaret"></span>
+                    <code>rokende-filtersigaret</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-koorts"></span>
+                    <code>koorts</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-benauwdheid"></span>
+                    <code>benauwdheid</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-geen-spatscherm"></span>
+                    <code>geen-spatscherm</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-schone-handen"></span>
+                    <code>schone-handen</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-mondkapje"></span>
+                    <code>mondkapje</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-psychologische-hulp"></span>
+                    <code>psychologische-hulp</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-vrouw-met-pot-met-deksel"></span>
+                    <code>vrouw-met-pot-met-deksel</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-coronavaccinsvg"></span>
+                    <code>coronavaccinsvg</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-ehbo-aed"></span>
+                    <code>ehbo-aed</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-ehbo-ruimte"></span>
+                    <code>ehbo-ruimte</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-kolfruimte"></span>
+                    <code>kolfruimte</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-esculaap"></span>
+                    <code>esculaap</code>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <button id="extended-icon-set-computer-and-internet">Computer en internet</button>
+              <div aria-labelledby="extended-icon-set-computer-and-internet">
+                <ul class="background-color-offset grid-iconset">
+                  <li>
+                    <span class="icon icon-chip"></span>
+                    <code lang="en">chip</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-computer"></span>
+                    <code>computer</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-oude-computer"></span>
+                    <code>oude-computer</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-dataverkeer"></span>
+                    <code>dataverkeer</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-digitaal-onderzoek"></span>
+                    <code>digitaal-onderzoek</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-digitale-uitwisseling"></span>
+                    <code>digitale-uitwisseling</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-nieuwe-computer"></span>
+                    <code>nieuwe-computer</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-gamecontroller"></span>
+                    <code>gamecontroller</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-grafieken-op-beeldscherm"></span>
+                    <code>grafieken-op-beeldscherm</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-beeldscherm-met-hartpng"></span>
+                    <code>beeldscherm-met-hartpng</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-hybride-laptop"></span>
+                    <code>hybride-laptop</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-informatie-op-internet"></span>
+                    <code>informatie-op-internet</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-internet"></span>
+                    <code>internet</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-ga-naar-www"></span>
+                    <code>ga-naar-www</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-internet-archief"></span>
+                    <code>internet-archief</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-laptop"></span>
+                    <code>laptop</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-laptop-met-huis"></span>
+                    <code>laptop-met-huis</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-cybersecurity"></span>
+                    <code>cybersecurity</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-printer"></span>
+                    <code>printer</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-server"></span>
+                    <code>server</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-smartphone"></span>
+                    <code>smartphone</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-smartphone-bedienen-met-vinger"></span>
+                    <code>smartphone-bedienen-met-vinger</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-usb-lader"></span>
+                    <code>usb-lader</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-tablet"></span>
+                    <code>tablet</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-televisie"></span>
+                    <code>televisie</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-website"></span>
+                    <code>website</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-webwinkel"></span>
+                    <code>webwinkel</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-ict"></span>
+                    <code>ict</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-computercode"></span>
+                    <code>computercode</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-digitalisering"></span>
+                    <code>digitalisering</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-ux-design"></span>
+                    <code>ux-design</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-database"></span>
+                    <code>database</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-application"></span>
+                    <code>application</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-basisregistratie"></span>
+                    <code>basisregistratie</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-gegevensuitwisseling"></span>
+                    <code>gegevensuitwisseling</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-smartphone-met-streep-erdoor"></span>
+                    <code>smartphone-met-streep-erdoor</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-beeldscherm-met-streep-erdoor"></span>
+                    <code>beeldscherm-met-streep-erdoor</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-inloggen"></span>
+                    <code>inloggen</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-online-leren"></span>
+                    <code>online-leren</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-online-groepstraining"></span>
+                    <code>online-groepstraining</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-wifi"></span>
+                    <code>wifi</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-beeldbellen"></span>
+                    <code>beeldbellen</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-zendmast"></span>
+                    <code>zendmast</code>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <button id="extended-icon-set-buildings">Gebouwen</button>
+              <div aria-labelledby="extended-icon-set-buildings">
+                <ul class="background-color-offset grid-iconset">
+                  <li>
+                    <span class="icon icon-2-hoge-gebouwen-met-pijl-naar-rechts"></span>
+                    <code>2-hoge-gebouwen-met-pijl-naar-rechts</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-huurwoning"></span>
+                    <code>huurwoning</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-bakkerijketens"></span>
+                    <code>bakkerijketens</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-koopwoning"></span>
+                    <code>koopwoning</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-cateringbedrijven"></span>
+                    <code>cateringbedrijven</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-circulaire-bouw"></span>
+                    <code>circulaire-bouw</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-dorp"></span>
+                    <code>dorp</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-gemeente---en-provinciefonds"></span>
+                    <code>gemeente---en-provinciefonds</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-leefbaarheid"></span>
+                    <code>leefbaarheid</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-evenemententent"></span>
+                    <code>evenemententent</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-festival-ehbo"></span>
+                    <code>festival-ehbo</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-schone-industrie"></span>
+                    <code>schone-industrie</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-fabriek-aan-water"></span>
+                    <code>fabriek-aan-water</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-fabriek-met-stapel-munten"></span>
+                    <code>fabriek-met-stapel-munten</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-uw-cak"></span>
+                    <code>uw-cak</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-gebouw-cjib"></span>
+                    <code>gebouw-cjib</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-gebouw-cvz"></span>
+                    <code>gebouw-cvz</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-gebouw-igz"></span>
+                    <code>gebouw-igz</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-villa"></span>
+                    <code>villa</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-ambassade---consulaat"></span>
+                    <code>ambassade---consulaat</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-school"></span>
+                    <code>school</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-sector-speciaal-onderwijs"></span>
+                    <code>sector-speciaal-onderwijs</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-rechtbank"></span>
+                    <code>rechtbank</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-home"></span>
+                    <code>home</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-overstroming-dreiging-1"></span>
+                    <code>overstroming-dreiging-1</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-overstroming-dreiging-2"></span>
+                    <code>overstroming-dreiging-2</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-overstroming-dreiging-3"></span>
+                    <code>overstroming-dreiging-3</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-leegstand"></span>
+                    <code>leegstand</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-kleinschalig-wonen"></span>
+                    <code>kleinschalig-wonen</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-instortingsgevaar"></span>
+                    <code>instortingsgevaar</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-woninginbraak"></span>
+                    <code>woninginbraak</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-huis-visueel-gehandicapten"></span>
+                    <code>huis-visueel-gehandicapten</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-huis-auditief-gehandicapten"></span>
+                    <code>huis-auditief-gehandicapten</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-lokaal-welzijnswerk"></span>
+                    <code>lokaal-welzijnswerk</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-huis-psychiatrische-patienten"></span>
+                    <code>huis-psychiatrische-patienten</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-verpleeghuis"></span>
+                    <code>verpleeghuis</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-huis-verstandelijk-gehandicapten"></span>
+                    <code>huis-verstandelijk-gehandicapten</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-huis-lichamelijk-gehandicapten"></span>
+                    <code>huis-lichamelijk-gehandicapten</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-woning-gelijkvloers-wel-rollator"></span>
+                    <code>woning-gelijkvloers-wel-rollator</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-rolstoel-toegankelijke-woning"></span>
+                    <code>rolstoel-toegankelijke-woning</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-huurtoeslag"></span>
+                    <code>huurtoeslag</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-adl-woning"></span>
+                    <code>adl-woning</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-huisvesting"></span>
+                    <code>huisvesting</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-woning-met-verdieping"></span>
+                    <code>woning-met-verdieping</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-woning-met-traplift"></span>
+                    <code>woning-met-traplift</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-coffeeshop"></span>
+                    <code>coffeeshop</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-coffeeshop-in-wijk"></span>
+                    <code>coffeeshop-in-wijk</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-huiselijk-geweld"></span>
+                    <code>huiselijk-geweld</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-beschermde-woonomgeving"></span>
+                    <code>beschermde-woonomgeving</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-laag-huis"></span>
+                    <code>laag-huis</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-grootstedelijk"></span>
+                    <code>grootstedelijk</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-excellente-scholen"></span>
+                    <code>excellente-scholen</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-gebouw-nvwa"></span>
+                    <code>gebouw-nvwa</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-gebouw-vws"></span>
+                    <code>gebouw-vws</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-gebouw-zini"></span>
+                    <code>gebouw-zini</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-uitvoering"></span>
+                    <code>uitvoering</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-hoog-huis"></span>
+                    <code>hoog-huis</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-basis-kantoorgebouw"></span>
+                    <code>basis-kantoorgebouw</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-schade"></span>
+                    <code>schade</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-flat"></span>
+                    <code>flat</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-leegstand-en-tijdelijk-gebruik"></span>
+                    <code>leegstand-en-tijdelijk-gebruik</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-ziekenhuis"></span>
+                    <code>ziekenhuis</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-gebouwenbeheer"></span>
+                    <code>gebouwenbeheer</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-hoogbouw-met-pijl-naar-2-hoge-gebouwen"></span>
+                    <code>hoogbouw-met-pijl-naar-2-hoge-gebouwen</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-man-torso-voor-hoogbouw"></span>
+                    <code>man-torso-voor-hoogbouw</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-gebouw-ggz"></span>
+                    <code>gebouw-ggz</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-zorgkantoor"></span>
+                    <code>zorgkantoor</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-grote-brand"></span>
+                    <code>grote-brand</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-actieve-gevel"></span>
+                    <code>actieve-gevel</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-kantoor-vol-energie"></span>
+                    <code>kantoor-vol-energie</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-ondernemingen"></span>
+                    <code>ondernemingen</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-horecaketens"></span>
+                    <code>horecaketens</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-toren"></span>
+                    <code>toren</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-moskee"></span>
+                    <code>moskee</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-ontwerp"></span>
+                    <code>ontwerp</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-rijtjeshuis"></span>
+                    <code>rijtjeshuis</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-industrie"></span>
+                    <code>industrie</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-industrie-met-druppel-water"></span>
+                    <code>industrie-met-druppel-water</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-schuur-met-silo-erachter"></span>
+                    <code>schuur-met-silo-erachter</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-stacaravan"></span>
+                    <code>stacaravan</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-supermarktketens"></span>
+                    <code>supermarktketens</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-megastallen"></span>
+                    <code>megastallen</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-dreiging-van-buitenaf"></span>
+                    <code>dreiging-van-buitenaf</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-drie-personen-in-huis"></span>
+                    <code>drie-personen-in-huis</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-gebouw-met-busje"></span>
+                    <code>gebouw-met-busje</code>
+                  </li>
+                  <li>
+                    <span class="icon icon-gemeentehuissvg"></span>
+                    <code>gemeentehuissvg</code>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
         </div>
       </article>
     </div>

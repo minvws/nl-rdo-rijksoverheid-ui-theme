@@ -1,5 +1,8 @@
 /* pagination.scss */
 
+@use "sass:map";
+@use "../icons";
+
 :root {
   --pagination-border-width: 4px 0 0 0;
   --pagination-border-color: var(--ro-blue);
@@ -28,8 +31,8 @@
 
   /* Icon */
   --pagination-adjacent-icon-font-size: 0.8rem;
-  --pagination-previous-icon: var(--icon-chevron-left);
-  --pagination-next-icon: var(--icon-chevron-right);
+  --pagination-previous-icon: "#{map.get(icons.$glyphs, chevron-left)}";
+  --pagination-next-icon: "#{map.get(icons.$glyphs, chevron-right)}";
 }
 
 nav.pagination {

@@ -1,5 +1,8 @@
 /* navigation.scss */
 
+@use "sass:map";
+@use "../icons";
+
 :root {
   /* Title */
   --navigation-title-text-color: var(--ro-blue);
@@ -41,7 +44,7 @@
   --navigation-link-visited-z-index: var(--navigation-link-focus-z-index);
 
   /* Link Icon */
-  --navigation-link-icon: var(--icon-chevron-right);
+  --navigation-link-icon: "#{map.get(icons.$glyphs, chevron-right)}";
   --navigation-link-icon-font-size: 0.7rem;
   --navigation-link-icon-padding-right: 0;
 

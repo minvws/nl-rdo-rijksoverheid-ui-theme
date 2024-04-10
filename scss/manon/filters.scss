@@ -1,11 +1,14 @@
 /* Filters */
 
+@use "sass:map";
+@use "../icons";
+
 :root {
-  --filter-button-icon-font-family: "RO Icons";
+  --filter-button-icon-font-family: ro-icons-light;
 
   /* content on the button when the menu is collapsed */
-  --filter-button-icon-before-open-content: var(--icon-chevron-down);
+  --filter-button-icon-before-open-content: "#{map.get(icons.$glyphs, chevron-down)}";
 
   /* content on the button when the menu is expanded */
-  --filter-button-icon-before-close-content: var(--icon-chevron-up);
+  --filter-button-icon-before-close-content: "#{map.get(icons.$glyphs, chevron-up)}";
 }

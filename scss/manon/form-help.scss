@@ -1,5 +1,8 @@
 /* Form help */
 
+@use "sass:map";
+@use "../icons";
+
 :root {
   /* Form */
   --form-help-padding-right: 4rem;
@@ -17,7 +20,7 @@
   --form-help-button-height: 2.75rem;
 
   /* Icon */
-  --form-help-button-icon-font-family: "RO Icons";
-  --form-help-button-icon: var(--icon-questionmark);
-  --form-help-button-icon-expanded: var(--icon-close);
+  --form-help-button-icon-font-family: ro-icons-light;
+  --form-help-button-icon: "#{map.get(icons.$glyphs, questionmark)}";
+  --form-help-button-icon-expanded: "#{map.get(icons.$glyphs, close)}";
 }
