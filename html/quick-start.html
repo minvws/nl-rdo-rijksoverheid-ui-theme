@@ -70,8 +70,12 @@
             <pre><code>npm install sass</code></pre>
             <p>Configureer de build tool van je project om Sass te ondersteunen. Raadpleeg
               hiervoor de documentatie van je build tool. Gebruikt het project (nog) geen build
-              tools, kies er dan een of gebruik <a href="https://sass-lang.com/documentation/cli/dart-sass/" hreflang="en">de sass cli</a>.
-            <p>Let op: voor Manon is minimaal <a href="https://github.com/sass/dart-sass" hreflang="en">dart-sass</a> versie <code>1.23</code> nodig. Manon werkt niet met node-sass.
+              tools, kies er dan een of gebruik <a
+              href="https://sass-lang.com/documentation/cli/dart-sass/" hreflang="en" rel="external"
+              >de sass cli</a>.
+            <p>Let op: voor Manon is minimaal <a href="https://github.com/sass/dart-sass"
+              hreflang="en" rel="external">dart-sass</a> versie <code>1.23</code> nodig. Manon werkt
+              niet met node-sass.
           </li>
           <li>
             Installeer de laatste versies van Manon en dit thema:
@@ -117,6 +121,17 @@
 @use "@minvws/nl-rdo-rijksoverheid-ui-theme/scss/components/input";</code></pre>
                 <p>Zie <code>scss/components/_index.scss</code> voor een volledige lijst van alle
                   componenten.</p>
+              </li>
+              <li>
+                <p>Kies eventueel een andere communicatiekleur. De rijkshuisstijl heeft 17
+                  communicatiekleuren. Om historische redenen is de standaard-kleur van dit thema
+                  robijnrood in plaats van het gebruikelijke blauw. Zie <a
+                  href="html_examples/colors.html">Communicatiekleuren</a> voor een overzicht van de
+                  beschikbare kleuren. Gebruik de <code>$brand-color</code>-variabele om een andere
+                  kleur te kiezen:</p>
+                <pre><code>@use "@minvws/nl-rdo-rijksoverheid-ui-theme" with (
+  $brand-color: "mint-green"
+);</code></pre>
               </li>
               <li>
                 <p>Afhankelijk van welke build tool je project gebruikt, kan het nodig zijn om het

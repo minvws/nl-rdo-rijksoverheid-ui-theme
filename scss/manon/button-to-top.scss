@@ -4,11 +4,11 @@
   --button-to-top-border-radius: 50%;
   --button-to-top-border-style: solid;
   --button-to-top-border-width: 2px;
-  --button-to-top-border-color: var(--white);
-  --button-to-top-text-color: var(--white);
+  --button-to-top-border-color: var(--brand-text-color);
+  --button-to-top-text-color: var(--brand-text-color);
 
   /* Hover state */
-  --button-to-top-hover-text-color: var(--white);
-  --button-to-top-hover-background-color: var(--ruby-red-hover-background-color);
-  --button-to-top-hover-border-color: var(--white);
+  --button-to-top-hover-background-color: var(--brand-highlight-background-color);
+  --button-to-top-hover-border-color: var(--brand-highlight-text-color);
+  --button-to-top-hover-text-color: var(--brand-highlight-text-color);
 }

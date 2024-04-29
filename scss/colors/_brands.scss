@@ -1,0 +1,356 @@
+/* Rijksoverheid brand colors */
+
+@use "sass:map";
+@use "palette";
+
+$brands: (
+  "logo-blue": (
+    // 100% / 10.2
+    "background": palette.$logo-blue-800,
+    "text": palette.$white,
+    // unofficial / 13.96
+    "highlight-background": palette.$logo-blue-900,
+    "highlight-text": palette.$white,
+    // 30% / 8.39
+    "dimmed-background": palette.$logo-blue-200,
+    "dimmed-text": palette.$grey-900,
+    // 100% / 10.2
+    "ghost-background": palette.$white,
+    "ghost-text": palette.$logo-blue-800,
+  ),
+  "purple": (
+    // unofficial / 10.95
+    "background": palette.$purple-800,
+    "text": palette.$white,
+    // 100% / 14.03
+    "highlight-text": palette.$white,
+    "highlight-background": palette.$purple-900,
+    // 30% / 7.75
+    "dimmed-background": palette.$purple-300,
+    "dimmed-text": palette.$grey-900,
+    // unofficial / 10.95
+    "ghost-background": palette.$white,
+    "ghost-text": palette.$purple-800,
+  ),
+  "violet": (
+    // 100% / 7.34
+    "background": palette.$violet-700,
+    "text": palette.$white,
+    // unofficial / 10.42
+    "highlight-background": palette.$violet-900,
+    "highlight-text": palette.$white,
+    // 30% / 8.06
+    "dimmed-background": palette.$violet-200,
+    "dimmed-text": palette.$grey-900,
+    // 100% / 7.34
+    "ghost-background": palette.$white,
+    "ghost-text": palette.$violet-700,
+  ),
+  "ruby-red": (
+    // 100% / 5.72 ⚠️
+    "background": palette.$ruby-red-600,
+    "text": palette.$white,
+    // unofficial / 8.35
+    "highlight-background": palette.$ruby-red-700,
+    "highlight-text": palette.$white,
+    // 30% / 8.29
+    "dimmed-background": palette.$ruby-red-200,
+    "dimmed-text": palette.$grey-900,
+    // 100% / 5.72 ⚠️
+    "ghost-background": palette.$white,
+    "ghost-text": palette.$ruby-red-600,
+  ),
+  "pink": (
+    // 100% / 9.7
+    "background": palette.$pink-300,
+    "text": palette.$black,
+    // unofficial / 7.27
+    "highlight-background": palette.$pink-400,
+    "highlight-text": palette.$black,
+    // 30% / 8.7
+    "dimmed-background": palette.$pink-100,
+    "dimmed-text": palette.$grey-800,
+    // unofficial / 5.6 ⚠️
+    "ghost-background": palette.$white,
+    "ghost-text": palette.$pink-600,
+  ),
+  "red": (
+    // 100% / 5.01 ⚠️
+    "background": palette.$red-500,
+    "text": palette.$white,
+    // unofficial / 6.92
+    "highlight-background": palette.$red-600,
+    "highlight-text": palette.$white,
+    // 30% / 9
+    "dimmed-background": palette.$red-200,
+    "dimmed-text": palette.$grey-900,
+    // 100% / 5.01 ⚠️
+    "ghost-background": palette.$white,
+    "ghost-text": palette.$red-500,
+  ),
+  "orange": (
+    // 100% / 6.52 ⚠️
+    "background": palette.$orange-400,
+    "text": palette.$black,
+    // 75% / 8.74
+    "highlight-background": palette.$orange-300,
+    "highlight-text": palette.$black,
+    // 30% / 7.75
+    "dimmed-background": palette.$orange-150,
+    "dimmed-text": palette.$grey-800,
+    // unofficial / 5.45 ⚠️
+    "ghost-background": palette.$white,
+    "ghost-text": palette.$orange-600,
+  ),
+  "dark-yellow": (
+    // 100% / 11.95
+    "background": palette.$dark-yellow-250,
+    "text": palette.$black,
+    // unofficial / 10.24
+    "highlight-background": palette.$dark-yellow-300,
+    "highlight-text": palette.$black,
+    // 30% / 9.08
+    "dimmed-background": palette.$dark-yellow-75,
+    "dimmed-text": palette.$grey-800,
+    // unofficial / 5.54 ⚠️
+    "ghost-background": palette.$white,
+    "ghost-text": palette.$dark-yellow-600,
+  ),
+  "yellow": (
+    // 100% / 15.82
+    "background": palette.$yellow-150,
+    "text": palette.$black,
+    // unofficial / 13.85
+    "highlight-background": palette.$yellow-200,
+    "highlight-text": palette.$black,
+    // 30% / 9.87
+    "dimmed-background": palette.$yellow-50,
+    "dimmed-text": palette.$grey-800,
+    // unofficial / 5.28 ⚠️
+    "ghost-background": palette.$white,
+    "ghost-text": palette.$yellow-600,
+  ),
+  "dark-brown": (
+    // 100% / 10.1
+    "background": palette.$dark-brown-800,
+    "text": palette.$white,
+    // unofficial / 13.1
+    "highlight-background": palette.$dark-brown-900,
+    "highlight-text": palette.$white,
+    // 30% / 8.39
+    "dimmed-background": palette.$dark-brown-250,
+    "dimmed-text": palette.$grey-900,
+    // 100% / 10.1
+    "ghost-background": palette.$white,
+    "ghost-text": palette.$dark-brown-800,
+  ),
+  "brown": (
+    // 100% / 4.54 ⚠️
+    "background": palette.$brown-550,
+    "text": palette.$white,
+    // unofficial / 5.33 ⚠️
+    "highlight-background": palette.$brown-600,
+    "highlight-text": palette.$white,
+    // 45% / 8
+    "dimmed-background": palette.$brown-200,
+    "dimmed-text": palette.$grey-900,
+    // 100% / 4.54 ⚠️
+    "ghost-background": palette.$white,
+    "ghost-text": palette.$brown-550,
+  ),
+  "dark-green": (
+    // 100% / 8.17
+    "background": palette.$dark-green-700,
+    "text": palette.$white,
+    // unofficial / 10.89
+    "highlight-background": palette.$dark-green-800,
+    "highlight-text": palette.$white,
+    // 30% / 8.81
+    "dimmed-background": palette.$dark-green-200,
+    "dimmed-text": palette.$grey-900,
+    // 100% / 8.17
+    "ghost-background": palette.$white,
+    "ghost-text": palette.$dark-green-700,
+  ),
+  "green": (
+    // 100% / 4.52 ⚠️
+    "background": palette.$green-600,
+    "text": palette.$white,
+    // unofficial / 7.03
+    "highlight-background": palette.$green-700,
+    "highlight-text": palette.$white,
+    // 30% / 7.3
+    "dimmed-background": palette.$green-200,
+    "dimmed-text": palette.$grey-800,
+    // 100% / 4.52 ⚠️
+    "ghost-background": palette.$white,
+    "ghost-text": palette.$green-600,
+  ),
+  "moss-green": (
+    // 100% / 4.55 ⚠️
+    "background": palette.$moss-green-550,
+    "text": palette.$white,
+    // unofficial / 5.17 ⚠️
+    "highlight-background": palette.$moss-green-600,
+    "highlight-text": palette.$white,
+    // 30% / 7.36
+    "dimmed-background": palette.$moss-green-200,
+    "dimmed-text": palette.$grey-800,
+    // 100% / 4.55 ⚠️
+    "ghost-background": palette.$white,
+    "ghost-text": palette.$moss-green-550,
+  ),
+  "mint-green": (
+    // 100% / 11.66
+    "background": palette.$mint-green-300,
+    "text": palette.$black,
+    // unofficial / 8.39
+    "highlight-background": palette.$mint-green-400,
+    "highlight-text": palette.$black,
+    // 30% / 9.1
+    "dimmed-background": palette.$mint-green-100,
+    "dimmed-text": palette.$grey-800,
+    // unofficial / 5 ⚠️
+    "ghost-background": palette.$white,
+    "ghost-text": palette.$mint-green-600,
+  ),
+  "dark-blue": (
+    // 100% / 6.08 ⚠️
+    "background": palette.$dark-blue-600,
+    "text": palette.$white,
+    // unofficial / 8.18
+    "highlight-background": palette.$dark-blue-700,
+    "highlight-text": palette.$white,
+    // 30% / 9.1
+    "dimmed-background": palette.$dark-blue-200,
+    "dimmed-text": palette.$grey-900,
+    // 100% /  6.08 ⚠️
+    "ghost-background": palette.$white,
+    "ghost-text": palette.$dark-blue-600,
+  ),
+  "sky-blue": (
+    // 100% / 4.51 ⚠️
+    "background": palette.$sky-blue-550,
+    "text": palette.$white,
+    // unofficial / 5.26 ⚠️
+    "highlight-background": palette.$sky-blue-600,
+    "highlight-text": palette.$white,
+    // 30% / 7.16
+    "dimmed-background": palette.$sky-blue-200,
+    "dimmed-text": palette.$grey-800,
+    // 100% / 4.51 ⚠️
+    "ghost-background": palette.$white,
+    "ghost-text": palette.$sky-blue-550,
+  ),
+  "light-blue": (
+    // 100% / 11.77
+    "background": palette.$light-blue-250,
+    "text": palette.$black,
+    // unofficial / 10.09
+    "highlight-background": palette.$light-blue-300,
+    "highlight-text": palette.$black,
+    // 30% / 9.2
+    "dimmed-background": palette.$light-blue-100,
+    "dimmed-text": palette.$grey-800,
+    // unofficial / 5.18 ⚠️
+    "ghost-background": palette.$white,
+    "ghost-text": palette.$light-blue-600,
+  ),
+);
+$brands-aaa: map.deep-merge(
+  $brands,
+  (
+    "logo-blue": (),
+    "purple": (),
+    "violet": (),
+    "ruby-red": (
+      // unofficial / 8.35
+      "background": palette.$ruby-red-700,
+      // unofficial / 11.91
+      "highlight-background": palette.$ruby-red-800,
+      // unofficial / 8.35
+      "ghost-text": palette.$ruby-red-700,
+    ),
+    "pink": (
+      // unofficial / 7.9
+      "ghost-text": palette.$pink-700,
+    ),
+    "red": (
+      // unofficial / 9.67
+      "background": palette.$red-700,
+      // unofficial / 13.16
+      "highlight-background": palette.$red-800,
+      // unofficial / 9.67
+      "ghost-text": palette.$red-700,
+    ),
+    "orange": (
+      // 75% / 8.74
+      "background": palette.$orange-300,
+      // 60% / 10.47
+      "highlight-background": palette.$orange-250,
+      // unofficial / 7.39
+      "ghost-text": palette.$orange-700,
+    ),
+    "dark-yellow": (
+      // unofficial / 7.85
+      "ghost-text": palette.$dark-yellow-700,
+    ),
+    "yellow": (
+      // unofficial / 7.48
+      "ghost-text": palette.$yellow-700,
+    ),
+    "dark-brown": (),
+    "brown": (
+      // unofficial / 7.54
+      "background": palette.$brown-700,
+      // unofficial / 10.17
+      "highlight-background": palette.$brown-800,
+      // unofficial / 7.54
+      "ghost-text": palette.$brown-700,
+    ),
+    "dark-green": (),
+    "green": (
+      // unofficial / 7.03
+      "background": palette.$green-700,
+      // unofficial / 9.41
+      "highlight-background": palette.$green-800,
+      // unofficial / 9.41
+      "ghost-text": palette.$green-800,
+    ),
+    "moss-green": (
+      // 75% / 7.18
+      "background": palette.$moss-green-300,
+      "text": palette.$black,
+      // 60% / 9.1
+      "highlight-background": palette.$moss-green-250,
+      "highlight-text": palette.$black,
+      // unofficial / 7.3
+      "ghost-background": palette.$white,
+      "ghost-text": palette.$moss-green-700,
+    ),
+    "mint-green": (
+      // unofficial / 7.03
+      "ghost-text": palette.$mint-green-700,
+    ),
+    "dark-blue": (
+      // unofficial / 8.18
+      "background": palette.$dark-blue-700,
+      // unofficial / 11.22
+      "highlight-background": palette.$dark-blue-800,
+      // unofficial / 8.18
+      "ghost-text": palette.$dark-blue-700,
+    ),
+    "sky-blue": (
+      // unofficial / 7.03
+      "background": palette.$sky-blue-700,
+      // unofficial / 10.06
+      "highlight-background": palette.$sky-blue-800,
+      // unofficial / 7.03
+      "ghost-text": palette.$sky-blue-700,
+    ),
+    "light-blue": (
+      // unofficial / 7.29
+      "ghost-text": palette.$light-blue-700,
+    ),
+  )
+);

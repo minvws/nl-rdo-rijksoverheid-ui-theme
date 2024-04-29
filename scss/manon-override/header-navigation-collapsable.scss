@@ -19,8 +19,8 @@
     position: absolute;
     top: var(--header-navigation-min-height);
     left: 0;
-    background-color: var(--ruby-red-background-color);
-    color: var(--ruby-red-text-color);
+    background-color: var(--brand-background-color);
+    color: var(--brand-text-color);
     margin: 0;
     z-index: 2;
     padding: 0 3%;
@@ -29,7 +29,7 @@
     li {
       max-width: 100%;
       align-items: flex-start;
-      border-bottom: 1px solid var(--ruby-red-text-color);
+      border-bottom: 1px solid var(--brand-text-color);
 
       &:last-child {
         border: 0;
@@ -158,7 +158,7 @@ body > header,
             color: var(--header-navigation-link-visited-text-color);
 
             &:hover {
-              color: var(--ruby-red-tint-1-text-color);
+              color: var(--brand-dimmed-text-color);
             }
           }
         }

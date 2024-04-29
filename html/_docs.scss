@@ -1,3 +1,30 @@
+@use "sass:meta";
+@use "../scss/colors/brands";
+@use "../scss/mixins/brand";
+@use "../scss/manon/button";
+@use "../scss/manon/button-ghost";
+@use "../scss/colors/palette";
+
+@each $brand-color, $brand-map in brands.$brands {
+  .brand-#{$brand-color} {
+    @include brand.color-vars($brand-color);
+  }
+  .brand-#{$brand-color}-aaa {
+    @include brand.color-vars($brand-color, true);
+  }
+  .brand-#{$brand-color},
+  .brand-#{$brand-color}-aaa {
+    --application-base-accent-color: var(--brand-background-color);
+    --application-base-accent-color-text-color: var(--brand-text-color);
+    --table-head-background-color: var(--application-base-accent-color);
+    --table-head-text-color: var(--application-base-accent-color-text-color);
+    --footer-navigation-link-text-color: var(--brand-text-color);
+
+    @include button.button-vars;
+    @include button-ghost.button-ghost-vars;
+  }
+}
+
 .grid-iconset {
   padding: 1rem;
   width: 100%;
@@ -14,5 +41,51 @@
     grid-template-columns: 1rem auto;
     gap: 1rem;
     font-size: 1rem;
+  }
+}
+
+article .button-container.background-color-offset {
+  padding: calc(0.5 * var(--article-content-wrapper-gap));
+  margin: calc(-0.5 * var(--article-content-wrapper-gap));
+}
+
+table.color-matrix {
+  --table-row-background-color-striping: #ffffff;
+
+  th.tint,
+  td {
+    text-align: center;
+  }
+
+  td {
+    white-space: nowrap;
+    vertical-align: top;
+  }
+
+  .swatch {
+    display: block;
+    height: 2rem;
+    width: 100%;
+    min-width: 3rem;
+    border-radius: 1rem;
+  }
+
+  .swatch.derived {
+    position: relative;
+    box-sizing: border-box;
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0.75rem;
+      border-radius: 0.25rem;
+      background-color: #ffffffcc;
+    }
+  }
+
+  @each $name, $color in meta.module-variables("palette") {
+    .swatch-#{$name} {
+      background-color: $color;
+    }
   }
 }

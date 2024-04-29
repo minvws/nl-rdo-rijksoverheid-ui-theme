@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Communicatiekleuren - Manon - Rijksoverheid CSS framework</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../dist/css/main.css" rel="stylesheet">
+  <link href="../dist/img/favicon.ico" rel="shortcut icon">
+  <script defer src="../dist/js/sidemenu.js"></script>
+</head>
+
+<body class="test-cases">
+  <header>
+    <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
+    <a href="" class="ro-logo">
+      <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
+      Rijksoverheid
+    </a>
+
+    <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
+      <div>
+        <ul>
+          <li><a href="../index.html"><span class="icon icon-home">Hoofdpagina icoon</span> Rijksoverheid CSS</a></li>
+          <li><a href="index.html">Online Componenten Bibliotheek</a></li>
+          <li><a href="colors.html" aria-current="page">Communicatiekleuren</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="sidemenu" id="main-content" tabindex="-1">
+    <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+      <ul>
+        <li><a href="#introduction">Introductie</a></li>
+        <li><a href="#colors">Beschikbare kleuren</a></li>
+        <li><a href="#derived-tints">Over afgeleide tinten</a></li>
+        <li><a href="#related">Gerelateerde pagina's</a></li>
+      </ul>
+    </nav>
+
+    <div>
+      <section>
+        <div>
+          <h1>Communicatiekleuren</h1>
+          <p>Dit thema is beschikbaar in alle 17 <a
+            href="https://www.rijkshuisstijl.nl/publiek/modules/product/DigitalStyleGuide/default/index.aspx?ItemId=6744"
+            rel="external">communincatiekleuren</a> van de rijkshuisstijl.
+          <p>Alle kleurensets voldoen ten minste aan WCAG <a
+            href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum"
+            rel="external">succes-criterium 1.4.3</a> (niveau AA). Waar nodig wordt afgeweken van de
+            officiële tinten van de rijkshuisstijl om voldoende tekstcontrast te waarborgen. Zie <a
+            href="#derived-tints">Over afgeleide tinten</a> voor toelichting.</p>
+        </div>
+      </section>
+
+      <section id="introduction">
+        <div>
+          <h2>Benodigde stappen</h2>
+          <ol>
+            <li>Kies een van de <a href="#colors">beschikbare kleuren</a>.</li>
+            <li>
+              <p>Gebruik de <code>$brand-color</code>-variabele bij het importeren van het thema om
+                de kleurkeuze vast te leggen. Bijvoorbeeld:</p>
+              <pre><code>@use "@minvws/nl-rdo-rijksoverheid-ui-theme" with (
+  $brand-color: "mint-green"
+);</code></pre>
+            </li>
+            <li>
+              <p>Optioneel: gebruik in indien nodig de optie voor <b>verhoogd contrast</b> om te
+                voldoen aan WCAG <a
+                href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-enhanced" rel="external"
+                >succes-criterium 1.4.6</a> (niveau AAA). Gebruik hiervoor de
+                <code>$enhance-contrast</code>-variabele:</p>
+              <pre><code>@use "@minvws/nl-rdo-rijksoverheid-ui-theme" with (
+  $brand-color: "mint-green",
+  $enhance-contrast: true
+);</code></pre>
+            </li>
+        </div>
+      </section>
+
+      <section id="colors">
+        <div>
+          <h2>Beschikbare kleuren</h2>
+          <table>
+            <caption>Overzicht van de beschikbare communicatiekleuren</caption>
+            <tr>
+              <th scope="col">Communi&shy;catie&shy;kleur</th>
+              <th scope="col"><code>$brand-color</code></th>
+              <th scope="col"><code>$enhance-contrast</code></th>
+              <th scope="col" width="40%">Voorbeeld</th>
+            </tr>
+            <tr>
+              <th scope="row" rowspan="2">Grijs</th>
+              <td rowspan="2"><code>&quot;grey&quot;</code></td>
+              <td><code>false</code></td>
+              <td class="brand-grey">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><code>true</code></td>
+              <td class="brand-grey-aaa">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" rowspan="2">Logoblauw</th>
+              <td rowspan="2"><code>&quot;logo-blue&quot;</code></td>
+              <td><code>false</code></td>
+              <td class="brand-logo-blue">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><code>true</code></td>
+              <td class="brand-logo-blue-aaa">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" rowspan="2">Paars</th>
+              <td rowspan="2"><code>&quot;purple&quot;</code></td>
+              <td><code>false</code></td>
+              <td class="brand-purple">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><code>true</code></td>
+              <td class="brand-purple-aaa">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" rowspan="2">Violet</th>
+              <td rowspan="2"><code>&quot;violet&quot;</code></td>
+              <td><code>false</code></td>
+              <td class="brand-violet">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><code>true</code></td>
+              <td class="brand-violet-aaa">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" rowspan="2">Robijnrood</th>
+              <td rowspan="2"><code>&quot;ruby-red&quot;</code></td>
+              <td><code>false</code></td>
+              <td class="brand-ruby-red">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><code>true</code></td>
+              <td class="brand-ruby-red-aaa">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" rowspan="2">Roze</th>
+              <td rowspan="2"><code>&quot;pink&quot;</code></td>
+              <td><code>false</code></td>
+              <td class="brand-pink">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><code>true</code></td>
+              <td class="brand-pink-aaa">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" rowspan="2">Rood</th>
+              <td rowspan="2"><code>&quot;red&quot;</code></td>
+              <td><code>false</code></td>
+              <td class="brand-red">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><code>true</code></td>
+              <td class="brand-red-aaa">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" rowspan="2">Oranje</th>
+              <td rowspan="2"><code>&quot;orange&quot;</code></td>
+              <td><code>false</code></td>
+              <td class="brand-orange">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><code>true</code></td>
+              <td class="brand-orange-aaa">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" rowspan="2">Donkergeel</th>
+              <td rowspan="2"><code>&quot;dark-yellow&quot;</code></td>
+              <td><code>false</code></td>
+              <td class="brand-dark-yellow">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><code>true</code></td>
+              <td class="brand-dark-yellow-aaa">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" rowspan="2">Geel</th>
+              <td rowspan="2"><code>&quot;yellow&quot;</code></td>
+              <td><code>false</code></td>
+              <td class="brand-yellow">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><code>true</code></td>
+              <td class="brand-yellow-aaa">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" rowspan="2">Donkerbruin</th>
+              <td rowspan="2"><code>&quot;dark-brown&quot;</code></td>
+              <td><code>false</code></td>
+              <td class="brand-dark-brown">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><code>true</code></td>
+              <td class="brand-dark-brown-aaa">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" rowspan="2">Bruin</th>
+              <td rowspan="2"><code>&quot;brown&quot;</code></td>
+              <td><code>false</code></td>
+              <td class="brand-brown">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><code>true</code></td>
+              <td class="brand-brown-aaa">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" rowspan="2">Donkergroen</th>
+              <td rowspan="2"><code>&quot;dark-green&quot;</code></td>
+              <td><code>false</code></td>
+              <td class="brand-dark-green">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><code>true</code></td>
+              <td class="brand-dark-green-aaa">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" rowspan="2">Groen</th>
+              <td rowspan="2"><code>&quot;green&quot;</code></td>
+              <td><code>false</code></td>
+              <td class="brand-green">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><code>true</code></td>
+              <td class="brand-green-aaa">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" rowspan="2">Mosgroen</th>
+              <td rowspan="2"><code>&quot;moss-green&quot;</code></td>
+              <td><code>false</code></td>
+              <td class="brand-moss-green">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><code>true</code></td>
+              <td class="brand-moss-green-aaa">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" rowspan="2">Mintgroen</th>
+              <td rowspan="2"><code>&quot;mint-green&quot;</code></td>
+              <td><code>false</code></td>
+              <td class="brand-mint-green">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><code>true</code></td>
+              <td class="brand-mint-green-aaa">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" rowspan="2">Donkerblauw</th>
+              <td rowspan="2"><code>&quot;dark-blue&quot;</code></td>
+              <td><code>false</code></td>
+              <td class="brand-dark-blue">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><code>true</code></td>
+              <td class="brand-dark-blue-aaa">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" rowspan="2">Hemelblauw</th>
+              <td rowspan="2"><code>&quot;sky-blue&quot;</code></td>
+              <td><code>false</code></td>
+              <td class="brand-sky-blue">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><code>true</code></td>
+              <td class="brand-sky-blue-aaa">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" rowspan="2">Lichtblauw</th>
+              <td rowspan="2"><code>&quot;light-blue&quot;</code></td>
+              <td><code>false</code></td>
+              <td class="brand-light-blue">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><code>true</code></td>
+              <td class="brand-light-blue-aaa">
+                <div class="button-container">
+                  <button>Voorbeeld</button>
+                  <button class="ghost">
+                    Voorbeeld
+                  </button>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <section id="derived-tints">
+        <div>
+          <h2>Over afgeleide tinten</h2>
+          <p>Waar mogelijk wordt de "volle kleur" (de 100% tint) van de rijkshuisstijl gebruikt.
+            Hier wordt alleen van afgeweken indien het tekstcontrast anders ontoereikend is.</p>
+          <p>In dat geval wordt bij voorkeur een andere combinatie van officiële tinten gebruikt.
+            Alleen als ook dat niet voldoende contrast heeft, wordt een niet-officiële tint
+            gebruikt. De afwijkende tint wordt daarbij gebaseerd op de <a
+            href="https://drafts.csswg.org/css-color/#ok-lab" rel="external">oklch</a>
+            <b>chroma</b>-waarde van de officiële 100% tint om te zorgen dat deze zo goed mogelijk
+            aansluit op de officiële tinten.</p>
+        </div>
+      </section>
+
+      <section id="related">
+        <div>
+          <h2>Gerelateerde pagina's</h2>
+          <nav aria-label="Gerelateerde pagina's">
+            <ul>
+              <li><a href="../test/color-contrast">Kleurcontrast testpagina</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+
+      <a
+        href="#main-nav"
+        class="button to-top icon icon-to-top"
+        title="Terug naar het hoofdmenu"
+      >Terug naar het hoofdmenu</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="two-thirds-one-third">
+      <span class="slogan">Manon - Rijksoverheid CSS framework</span>
+      <nav aria-labelledby="footer-nav-1-heading">
+        <h1 id="footer-nav-1-heading">Service</h1>
+        <ul>
+          <li><a href="../index.html">Over</a></li>
+          <li><a href="../test/index.html">Styling tests</a></li>
+          <li><a href="index.html">Online componenten bibliotheek</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -7,8 +7,8 @@
   --grey-3: #cccccc;
   --grey-4: #b4b4b4;
   --grey-5: #999999;
-  --grey-6: #696969; /* Default size text with grey-6 or higher passed to WCAG compliance contrast requirements AA on a white background. */
-  --grey-7: #535353; /* Default size text with grey-7 or higher passed to WCAG compliance contrast requirements AAA a white background. */
+  --grey-6: #696969; /* Contrast 5.48:1 on white, passes WCAG SC 1.4.3 (level AA) */
+  --grey-7: #535353; /* Contrast 7.69:1 on white, passes WCAG SC 1.4.6 (level AAA) */
   --grey-8: #404040;
   --grey-9: #1d1d1d;
   --grey-10: #000000;
