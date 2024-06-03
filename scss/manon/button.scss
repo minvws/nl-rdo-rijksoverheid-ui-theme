@@ -4,8 +4,7 @@
   /* Base */
   --button-base-background-color: var(--brand-background-color);
   --button-base-text-color: var(--brand-text-color);
-  --button-base-border-width: 2px;
-  --button-base-border-style: solid;
+  --button-base-border-style: none;
   --button-base-border-color: var(--brand-background-color);
   --button-base-min-width: 0;
 
@@ -17,6 +16,7 @@
   /* Active */
   --button-base-active-background-color: var(--brand-highlight-background-color);
   --button-base-active-text-color: var(--brand-highlight-text-color);
+  --button-base-active-border-style: none;
   --button-base-active-border-color: var(--brand-highlight-background-color);
 
   /* Focus */
@@ -26,16 +26,19 @@
   --button-base-focus-outline-offset: 0;
   --button-base-focus-background-color: var(--brand-background-color);
   --button-base-focus-text-color: var(--brand-text-color);
+  --button-base-focus-border-style: none;
   --button-base-focus-border-color: var(--brand-background-color);
 
   /* Selected */
   --button-base-selected-background-color: var(--brand-highlight-background-color);
   --button-base-selected-text-color: var(--brand-highlight-text-color);
+  --button-base-selected-border-style: none;
   --button-base-selected-border-color: var(--brand-highlight-background-color);
 
   /* Disabled */
   --button-base-disabled-background-color: var(--brand-dimmed-background-color);
   --button-base-disabled-text-color: var(--brand-dimmed-text-color);
+  --button-base-disabled-border-style: none;
   --button-base-disabled-border-color: var(--brand-dimmed-background-color);
 }
 
