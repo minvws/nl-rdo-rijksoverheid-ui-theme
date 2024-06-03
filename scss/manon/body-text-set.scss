@@ -1,5 +1,7 @@
 /* Body text set */
 
+@use "../colors/palette";
+
 :root {
   /* Available variables to use within all text types */
   --text-set-font-family: "RO Sans Web", calibri, sans-serif;
@@ -12,7 +14,7 @@
   --body-text-small-font-size: 0.88889rem;
   --body-text-small-font-weight: 400;
   --body-text-small-line-height: 1.5;
-  --body-text-small-color: var(--grey-6);
+  --body-text-small-color: palette.$grey-600;
 
   /* Body text medium */
   --body-text-medium-font-size: 1.125rem;
