@@ -1,18 +1,32 @@
 @use "palette" as colors;
 
-/* Rijksoverheid notification color set */
+/* Rijksoverheid notification color set
+ *
+ * Note: the colors prescribed at
+ * https://www.rijkshuisstijl.nl/publiek/modules/product/DigitalStyleGuide/default/index.aspx?ItemId=9906
+ * are from the Rijkshuisstijl's old color palette (see e.g.
+ * https://web.archive.org/web/20210515005116/https://www.rijkshuisstijl.nl/basiselementen/basiselementen-online/online-kleuren).
+ *
+ * For consistency, we have chosen to use the equivalent color from the new color palette instead.
+ * As such, some of the colors deviate slightly.
+ *
+ * - Rood 15% is identical to rood tint2.
+ * - Donkergeel 15% (#FEF4DB) deviates from donkergeel tint2 (#fff4dc).
+ * - Groen 15% (#E1EDDA) deviates from groen tint2 (#e1eddb).
+ * - Hemelblauw 15% is identical to hemelblauw tint2.
+ */
 
 :root {
   /* Notification colors */
   --notification-error-color: #{colors.$red-100};
-  --notification-warning-color: #{colors.$dark-yellow-75}; // or 100?
+  --notification-warning-color: #{colors.$dark-yellow-50};
   --notification-confirmation-color: #{colors.$green-100};
   --notification-explanation-color: #{colors.$light-blue-100};
   --notification-system-color: #{colors.$grey-100}; // or 100?
 
   /* Notification colors - darker tint */
   --notification-error-color-darker: #{colors.$red-200};
-  --notification-warning-color-darker: #{colors.$dark-yellow-200}; // or 200?
+  --notification-warning-color-darker: #{colors.$dark-yellow-200};
   --notification-confirmation-color-darker: #{colors.$green-200};
   --notification-explanation-color-darker: #{colors.$light-blue-200};
   --notification-system-color-darker: #{colors.$grey-200}; // or 200?
