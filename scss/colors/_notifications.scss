@@ -22,12 +22,12 @@
   --notification-warning-color: #{colors.$dark-yellow-50};
   --notification-confirmation-color: #{colors.$green-100};
   --notification-explanation-color: #{colors.$light-blue-100};
-  --notification-system-color: #{colors.$grey-100}; // or 100?
+  --notification-system-color: #{colors.$grey-100};
 
   /* Notification colors - darker tint */
   --notification-error-color-darker: #{colors.$red-200};
   --notification-warning-color-darker: #{colors.$dark-yellow-200};
   --notification-confirmation-color-darker: #{colors.$green-200};
   --notification-explanation-color-darker: #{colors.$light-blue-200};
-  --notification-system-color-darker: #{colors.$grey-200}; // or 200?
+  --notification-system-color-darker: #{colors.$grey-200};
 }
