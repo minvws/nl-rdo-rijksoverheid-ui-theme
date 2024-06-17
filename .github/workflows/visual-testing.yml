@@ -25,7 +25,7 @@ jobs:
         run: |
           mkdir -p screenshots/expected
       - name: Download expected screenshots
-        uses: dawidd6/action-download-artifact@v5
+        uses: dawidd6/action-download-artifact@v6
         with:
           workflow: expected-screenshots.yml
           branch: main
