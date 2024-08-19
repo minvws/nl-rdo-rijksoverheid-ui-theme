@@ -79,4 +79,4 @@ jobs:
         uses: test-summary/action@v2
         with:
           paths: visual-test/ci_report/xunit.xml
-        if: always()
+        if: ${{ always() && hashFiles('visual-test/ci_report/xunit.xml') }}
