@@ -1,10 +1,9 @@
-# Simple workflow for deploying documentation to GitHub Pages
-name: Deploy docs to Pages
+name: Deploy docs
 
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
+    branches: [main]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -17,39 +16,32 @@ permissions:
 
 # Allow one concurrent deployment
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: true
 
 jobs:
   build:
+    name: Build docs
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - uses: actions/setup-node@v4
+      - name: Setup dependencies
+        uses: ./.github/actions/setup
         with:
-          node-version: 20
-          registry-url: "https://npm.pkg.github.com"
-          cache: "npm"
-      - run: npm ci --ignore-scripts
-        env:
           NODE_AUTH_TOKEN: ${{ secrets.REPO_READ_ONLY_TOKEN }}
-
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
       - name: Build docs
-        run: npm run build:docs:production
-
-      - name: Upload artifact
+        run: npm run build
+      - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "html/"
+          path: 'html/'
 
-  # Deployment job
   deploy:
+    name: Deploy to GitHub Pages
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

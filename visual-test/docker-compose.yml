@@ -1,0 +1,33 @@
+name: rijksoverheid-ui-theme-visual
+
+services:
+  test:
+    profiles: [one-off]
+    extends: backstop_command
+    command: sh -c 'npm run build && node visual-test/test.js'
+
+  approve:
+    profiles: [one-off]
+    extends: backstop_command
+    command: node visual-test/approve.js
+
+  reference:
+    profiles: [one-off]
+    extends: backstop_command
+    command: sh -c 'npm run build && node visual-test/reference.js'
+
+  backstop_command:
+    build:
+      context: .
+      shm_size: 512m
+      args:
+        NODE_VERSION: ${NODE_VERSION:-20.16.0}
+        UID: ${UID:-1000}
+        GID: ${GID:-1000}
+    user: ${UID:-1000}:${GID:-1000}
+    environment:
+      VISUAL_TEST_BASE_PATH: html
+      VISUAL_TEST_FILE_PATTERN: 'test/**/*.html'
+    profiles: [never]
+    volumes: [..:/src]
+    working_dir: /src

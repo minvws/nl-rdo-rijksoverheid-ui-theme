@@ -23,17 +23,26 @@
     "webpack:watch": "webpack --config html/webpack.config.js --watch",
     "webpack:build": "webpack --config html/webpack.config.js --mode=production",
     "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "lint": "stylelint \"scss/**/*.scss\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "visual:ci": "node visual-test/test.js",
+    "visual:report": "xdg-open visual-test/html_report/index.html || open visual-test/html_report/index.html ",
+    "visual:test": "docker compose -f visual-test/docker-compose.yml run --rm test",
+    "visual:approve": "docker compose -f visual-test/docker-compose.yml run --rm approve",
+    "visual:reference": "docker compose -f visual-test/docker-compose.yml run --rm reference",
+    "visual:rebuild": "docker compose -f visual-test/docker-compose.yml --profile one-off build"
   },
   "peerDepencency": {
     "@minvws/manon": "^16.3.0-beta.6"
   },
   "devDependencies": {
     "@minvws/manon": "^16.3.0-beta.6",
+    "backstopjs": "^6.3.23",
     "conventional-changelog": "^6.0.0",
     "copy-webpack-plugin": "^12.0.2",
     "css-loader": "^7.1.2",
+    "fast-glob": "^3.3.2",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.7",
     "mini-css-extract-plugin": "^2.9.0",
@@ -45,6 +54,7 @@
     "sass": "^1.77.6",
     "sass-loader": "^14.2.1",
     "serve": "^14.2.3",
+    "serve-static": "^1.15.0",
     "stylelint": "^15.11.0",
     "stylelint-config-standard-scss": "^11.1.0",
     "webpack": "^5.93.0",
