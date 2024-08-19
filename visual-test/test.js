@@ -11,6 +11,7 @@ runTestServer(async ({ port, files }) => {
     console.log(bold, "\n✅ No visual regressions found.");
     console.log("Run 'npm run visual:report' for details.");
   } catch (_) {
+    process.exitCode = 1;
     console.log(bold, "\n❌ Visual regression test failed.");
     console.log("Run 'npm run visual:report' for details.");
     console.log("Run 'npm run visual:approve' to mark visual changes as expected.");

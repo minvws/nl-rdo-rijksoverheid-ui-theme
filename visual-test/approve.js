@@ -11,6 +11,7 @@ runTestServer(async ({ port, files }) => {
     console.log(bold, "\n✅ Reference files updated successfully.");
     console.log("Run 'npm run visual:test' if you want a fresh report.");
   } catch (_) {
+    process.exitCode = 1;
     console.log(bold, "\n❌ Failed to update reference files.");
   }
 });

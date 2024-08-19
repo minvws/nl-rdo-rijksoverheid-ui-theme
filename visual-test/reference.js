@@ -10,6 +10,7 @@ runTestServer(async ({ port, files }) => {
     await backstop("reference", { config });
     console.log(bold, "\n✅ Reference files successfully reset.");
   } catch (_) {
+    process.exitCode = 1;
     console.log(bold, "\n❌ Failed to reset reference files.");
   }
 });
