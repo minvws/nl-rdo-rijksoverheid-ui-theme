@@ -1,5 +1,5 @@
 name: Setup
-description: 'Setup node.js and install dependencies'
+description: "Setup node.js and install dependencies"
 
 inputs:
   NODE_AUTH_TOKEN:
@@ -7,14 +7,14 @@ inputs:
     required: true
 
 runs:
-  using: 'composite'
+  using: "composite"
   steps:
     - name: Setup node.js
       uses: actions/setup-node@v4
       with:
-        cache: 'npm'
-        node-version-file: '.nvmrc'
-        registry-url: 'https://npm.pkg.github.com'
+        cache: "npm"
+        node-version-file: ".nvmrc"
+        registry-url: "https://npm.pkg.github.com"
     - name: Audit dependencies
       shell: sh
       run: npm audit

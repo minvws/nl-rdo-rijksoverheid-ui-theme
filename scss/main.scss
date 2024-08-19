@@ -7,7 +7,7 @@ $ro-img-path: "../../img" !default;
 /* Theme: Rijksoverheid. */
 @use "theme" with (
   $font-path: $ro-font-path,
-  $img-path: $ro-img-path,
+  $img-path: $ro-img-path
 );
 
 /* Rijksoverheid-specific components */

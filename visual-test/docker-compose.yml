@@ -27,7 +27,7 @@ services:
     user: ${UID:-1000}:${GID:-1000}
     environment:
       VISUAL_TEST_BASE_PATH: html
-      VISUAL_TEST_FILE_PATTERN: 'test/**/*.html'
+      VISUAL_TEST_FILE_PATTERN: "test/**/*.html"
     profiles: [never]
     volumes: [..:/src]
     working_dir: /src
