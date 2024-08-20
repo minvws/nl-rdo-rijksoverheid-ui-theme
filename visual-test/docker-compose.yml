@@ -4,17 +4,17 @@ services:
   test:
     profiles: [one-off]
     extends: backstop_command
-    command: sh -c 'npm run build && node visual-test/test.js'
+    command: sh -c 'npm i --ignore-scripts && npm run build && node visual-test/test.js'
 
   approve:
     profiles: [one-off]
     extends: backstop_command
-    command: node visual-test/approve.js
+    command: sh -c 'npm i --ignore-scripts && node visual-test/approve.js'
 
   reference:
     profiles: [one-off]
     extends: backstop_command
-    command: sh -c 'npm run build && node visual-test/reference.js'
+    command: sh -c 'npm i --ignore-scripts && npm run build && node visual-test/reference.js'
 
   backstop_command:
     build:
