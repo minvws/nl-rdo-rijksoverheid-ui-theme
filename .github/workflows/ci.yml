@@ -80,3 +80,11 @@ jobs:
         with:
           paths: visual-test/ci_report/xunit.xml
         if: ${{ always() && hashFiles('visual-test/ci_report/xunit.xml') }}
+      - name: Upload visual test report
+        uses: actions/upload-artifact@v4
+        with:
+          name: visual-test-report
+          path: |
+            visual-test/html_report/
+            visual-test/bitmaps_*/
+        if: ${{ always() && hashFiles('visual-test/html_report/index.html') }}
