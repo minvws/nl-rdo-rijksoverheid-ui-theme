@@ -1,11 +1,10 @@
-const CopyPlugin = require("copy-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const RemoveEmptyScriptsPlugin = require("webpack-remove-empty-scripts");
-const path = require("path");
+import CopyPlugin from "copy-webpack-plugin";
+import MiniCssExtractPlugin from "mini-css-extract-plugin";
+import RemoveEmptyScriptsPlugin from "webpack-remove-empty-scripts";
 
-module.exports = {
+export default {
   mode: "development",
-  context: __dirname,
+  context: import.meta.dirname,
   entry: {
     accordion: "@minvws/manon/accordion.js",
     expandoRows: "@minvws/manon/expando-rows.js",
@@ -16,7 +15,7 @@ module.exports = {
     main: "./main.scss",
   },
   output: {
-    path: __dirname + "/dist",
+    path: import.meta.dirname + "/dist",
     filename: "js/[name].js",
   },
   optimization: {
