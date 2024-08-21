@@ -1,6 +1,6 @@
 package-lock.json
-.github/
 node_modules/
+visual-test/
 *.html
 /html/dist
 /css
