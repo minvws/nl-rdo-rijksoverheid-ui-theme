@@ -34,10 +34,10 @@
     "visual:rebuild": "docker compose -f visual-test/docker-compose.yml --profile one-off build"
   },
   "peerDepencency": {
-    "@minvws/manon": "^16.3.0-beta.6"
+    "@minvws/manon": "^16.3.0-beta.11"
   },
   "devDependencies": {
-    "@minvws/manon": "^16.3.0-beta.6",
+    "@minvws/manon": "^16.3.0-beta.11",
     "backstopjs": "^6.3.23",
     "conventional-changelog": "^6.0.0",
     "copy-webpack-plugin": "^12.0.2",
