@@ -1,0 +1,39 @@
+@use "sass:map";
+@use "../colors/brands";
+
+$props: (
+  "background": "background",
+  "text": "text",
+  "highlight-background": "hover-background",
+  "highlight-text": "hover-text",
+  "dimmed-background": "disabled-background",
+  "dimmed-text": "disabled-text",
+  "ghost-background": "ghost-background",
+  "ghost-text": "ghost-text",
+);
+
+@mixin color-vars-from-map($brand-map) {
+  /* The --ruby-red-* vars are @deprecrated and used only for backwards compatibility. */
+  @each $prop, $compat in $props {
+    --brand-#{$prop}-color: var(--ruby-red-#{$compat}-color, #{map.get($brand-map, $prop)});
+  }
+
+  --branding-color-1-background-color: var(--brand-background-color);
+  --branding-color-1-text-color: var(--brand-text-color);
+}
+
+@mixin color-vars($brand-color, $enhance-contrast: false) {
+  @if not map.has-key(brands.$brands, $brand-color) {
+    @warn "Unknown $brand-color \"#{$brand-color}\", falling back to \"ruby-red\"";
+
+    $brand-color: "ruby-red";
+  }
+
+  $brand-map: if(
+    $enhance-contrast,
+    map.get(brands.$brands-aaa, $brand-color),
+    map.get(brands.$brands, $brand-color)
+  );
+
+  @include color-vars-from-map($brand-map);
+}

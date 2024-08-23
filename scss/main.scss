@@ -1,5 +1,7 @@
 $ro-font-path: "../../../fonts" !default;
 $ro-img-path: "../../img" !default;
+$ro-brand-color: "ruby-red" !default;
+$ro-enhance-contrast: false !default;
 
 /* Manon components */
 @use "manon";
@@ -7,7 +9,9 @@ $ro-img-path: "../../img" !default;
 /* Theme: Rijksoverheid. */
 @use "theme" with (
   $font-path: $ro-font-path,
-  $img-path: $ro-img-path
+  $img-path: $ro-img-path,
+  $brand-color: $ro-brand-color,
+  $enhance-contrast: $ro-enhance-contrast
 );
 
 /* Rijksoverheid-specific components */

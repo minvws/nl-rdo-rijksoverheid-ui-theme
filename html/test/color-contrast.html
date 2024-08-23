@@ -34,13 +34,10 @@
         <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie">
             <ul>
                 <li><a href="#introduction">Kleurcontrast testpagina</a></li>
-                <li><a href="#color-set">Rijkshuisstijl kleurenset</a></li>
-                <li><a href="#color-set-alternative-bg">Kleurcontrast op alternatieve achtergrondkleur</a></li>
-                <li><a href="#color-set-text">Rijkshuisstijl kleurenset met tekst</a></li>
-                <li><a href="#color-set-colored-text">Rijkshuisstijl kleurenset met gekleurde tekst</a></li>
-                <li><a href="#color-set-messages">Berichten</a></li>
-                <li><a href="#color-set-input">Invoervelden</a></li>
-                <li><a href="#color-set-button">Knoppen</a></li>
+                <li><a href="#communication-colors">Communicatiekleuren</a></li>
+                <li><a href="#notifications">Notificaties</a></li>
+                <li><a href="#inputs">Invoervelden</a></li>
+                <li><a href="#colors">Volledige kleurenset</a></li>
             </ul>
         </nav>
 
@@ -49,711 +46,659 @@
                 <div>
                     <h1>Kleurcontrast testpagina</h1>
                     <p>Op deze pagina staan alle verschillende kleurcombinaties om contrast te kunnen controleren.</p>
-
                     <ul>
-                        <li>"WCAG AA"-standaard vraagt om een kleurcontrast van 4.5:1 op normale tekst en 3:1 op grote
-                            op grote tekst. Voor meer informatie zie: <a
-                                href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html"
-                                rel="external">WCAG AA eisen</a></li>
-
-                        <li>"WCAG AA"-standaard vraagt om een kleurcontrast van 7:1 op normale tekst en 4.5:1 op grote
-                            op grote tekst. Voor meer informatie zie: <a
-                                href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast7.html"
-                                rel="external">"WCAG AAA"-eisen</a></li>
-                        <li>De standaard aangeboden kleurenset binnen dit framework voldoent aan de "WCAG AA"-eisen. Een
-                            "WCAG AAA" kleurenset kan optioneel aangezet worden in het ro-branding.scss binnen de
-                            ontwikkelaarversie.</li>
+                        <li>WCAG 2.2 <a
+                          href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum"
+                          rel="external">succes-criterium 1.4.3</a> (niveau AA) vraagt om een
+                        contrast van 4.5:1 op normale tekst en 3:1 op grote tekst.</li>
+                        <li>WCAG 2.2 <a
+                          href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-enhanced"
+                          rel="external">succes-criterium 1.4.6</a> (niveau AAA) vraagt om een
+                        contrast van 7:1 op normale tekst en 4.5:1 op grote tekst.</li>
+                        <li>WCAG 2.2 <a
+                          href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast"
+                          rel="external">succes-criterium 1.4.11</a> (niveau AA) vraag om een
+                        contrast van 3:1 van niet-tekstuele content (componenten van de
+                        gebruikersinterface en functionele grafische elementen).</li>
                     </ul>
                 </div>
             </article>
 
-            <article id="color-set">
+
+            <article id="communication-colors">
                 <div>
-                    <h1>Rijkshuisstijl kleurenset</h1>
-                    <div>
-                        <ul class="color-overview color-block">
-                            <li>
-                                <div>
-                                    <div class="purple"></div>
-                                    <p>Paars</p>
-                                </div>
-                                <div>
-                                    <div class="purple-tint-1"></div>
-                                    <p>Paars tint 1</p>
-                                </div>
-                                <div>
-                                    <div class="purple-tint-2"></div>
-                                    <p>Paars tint 2</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <div class="violet"></div>
-                                    <p>Violet</p>
-                                </div>
-                                <div>
-                                    <div class="violet-tint-1"></div>
-                                    <p>Violet tint 1</p>
-                                </div>
-                                <div>
-                                    <div class="violet-tint-2"></div>
-                                    <p>Violet tint 2</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <div class="ruby-red"></div>
-                                    <p>Robijnrood</p>
-                                </div>
-                                <div>
-                                    <div class="ruby-red-tint-1"></div>
-                                    <p>Robijnrood tint 1</p>
-                                </div>
-                                <div>
-                                    <div class="ruby-red-tint-2"></div>
-                                    <p>Robijnrood tint 2</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <div class="pink"></div>
-                                    <p>Roze</p>
-                                </div>
-                                <div>
-                                    <div class="pink-tint-1"></div>
-                                    <p>Roze tint 1</p>
-                                </div>
-                                <div>
-                                    <div class="pink-tint-2"></div>
-                                    <p>Roze tint 2</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <div class="red"></div>
-                                    <p>Rood</p>
-                                </div>
-                                <div>
-                                    <div class="red-tint-1"></div>
-                                    <p>Rood tint 1</p>
-                                </div>
-                                <div>
-                                    <div class="red-tint-2"></div>
-                                    <p>Rood tint 2</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <div class="orange"></div>
-                                    <p>Oranje</p>
-                                </div>
-                                <div>
-                                    <div class="orange-tint-1"></div>
-                                    <p>Oranje tint 1</p>
-                                </div>
-                                <div>
-                                    <div class="orange-tint-2"></div>
-                                    <p>Oranje tint 2</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <div class="dark-yellow"></div>
-                                    <p>Donkergeel</p>
-                                </div>
-                                <div>
-                                    <div class="dark-yellow-tint-1"></div>
-                                    <p>Donkergeel tint 1</p>
-                                </div>
-                                <div>
-                                    <div class="dark-yellow-tint-2"></div>
-                                    <p>Donkergeel tint 2</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <div class="yellow"></div>
-                                    <p>Geel</p>
-                                </div>
-                                <div>
-                                    <div class="yellow-tint-1"></div>
-                                    <p>Geel tint 1</p>
-                                </div>
-                                <div>
-                                    <div class="yellow-tint-2"></div>
-                                    <p>Geel tint 2</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <div class="dark-brown"></div>
-                                    <p>Donkerbruin</p>
-                                </div>
-                                <div>
-                                    <div class="dark-brown-tint-1"></div>
-                                    <p>Donkerbruin tint 1</p>
-                                </div>
-                                <div>
-                                    <div class="dark-brown-tint-2"></div>
-                                    <p>Donkerbruin tint 2</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <div class="brown"></div>
-                                    <p>Bruin</p>
-                                </div>
-                                <div>
-                                    <div class="brown-tint-1"></div>
-                                    <p>Bruin tint 1</p>
-                                </div>
-                                <div>
-                                    <div class="brown-tint-2"></div>
-                                    <p>Bruin tint 2</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <div class="dark-green"></div>
-                                    <p>Donkergroen</p>
-                                </div>
-                                <div>
-                                    <div class="dark-green-tint-1"></div>
-                                    <p>Donkergroen tint 1</p>
-                                </div>
-                                <div>
-                                    <div class="dark-green-tint-2"></div>
-                                    <p>Donkergroen tint 2</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <div class="green"></div>
-                                    <p>Groen</p>
-                                </div>
-                                <div>
-                                    <div class="green-tint-1"></div>
-                                    <p>Groen tint 1</p>
-                                </div>
-                                <div>
-                                    <div class="green-tint-2"></div>
-                                    <p>Groen tint 2</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <div class="moss-green"></div>
-                                    <p>Mosgroen</p>
-                                </div>
-                                <div>
-                                    <div class="moss-green-tint-1"></div>
-                                    <p>Mosgroen tint 1</p>
-                                </div>
-                                <div>
-                                    <div class="moss-green-tint-2"></div>
-                                    <p>Mosgroen tint 2</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <div class="mint-green"></div>
-                                    <p>Mintgroen</p>
-                                </div>
-                                <div>
-                                    <div class="mint-green-tint-1"></div>
-                                    <p>Mintgroen tint 1</p>
-                                </div>
-                                <div>
-                                    <div class="mint-green-tint-2"></div>
-                                    <p>Mintgroen tint 2</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <div class="dark-blue"></div>
-                                    <p>Donkerblauw</p>
-                                </div>
-                                <div>
-                                    <div class="dark-blue-tint-1"></div>
-                                    <p>Donkerblauw tint 1</p>
-                                </div>
-                                <div>
-                                    <div class="dark-blue-tint-2"></div>
-                                    <p>Donkerblauw tint 2</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <div class="sky-blue"></div>
-                                    <p>Hemelblauw</p>
-                                </div>
-                                <div>
-                                    <div class="sky-blue-tint-1"></div>
-                                    <p>Hemelblauw tint 1</p>
-                                </div>
-                                <div>
-                                    <div class="sky-blue-tint-2"></div>
-                                    <p>Hemelblauw tint 2</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <div class="light-blue"></div>
-                                    <p>Lichtblauw</p>
-                                </div>
-                                <div>
-                                    <div class="light-blue-tint-1"></div>
-                                    <p>Lichtblauw tint 1</p>
-                                </div>
-                                <div>
-                                    <div class="light-blue-tint-2"></div>
-                                    <p>Lichtblauw tint 2</p>
-                                </div>
-                            </li>
-                        </ul>
+                    <h2>Communicatiekleuren</h2>
+                    <p>De communicatiekleuren-sets gebruiken de <a href="#colors">kleurenset</a>,
+                        gebaseerd op de officiële <a
+                        href="https://www.rijkshuisstijl.nl/publiek/modules/product/DigitalStyleGuide/default/index.aspx?ItemId=6744"
+                        rel="external">communicatiekleuren van de Rijkshuisstijl</a>.</p>
+                    <p>Waar mogelijk wordt de volle kleur (de officiële 100% tint) gebruikt. Hier wordt
+                        alleen van afgeweken indien het tekstcontrast anders ontoereikend is. In dat geval wordt bij voorkeur een andere
+                        combinatie van officiële tinten gebruikt. Alleen als ook dat niet voldoende contrast
+                        heeft, wordt een niet-officiële kleur gebruikt die is afgeleid van de
+                        officiële 100% tint (op basis van <a href="https://drafts.csswg.org/css-color/#ok-lab"
+                        rel="external">oklch</a> chroma).</p>
+                    <p>Elke communicatiekleur is beschikbaar in een basis-variant die voldoet aan
+                        WCAG succes-criterium 1.4.3 en een "AAA"-variant die voldoet aan
+                        succes-criterum 1.4.6.</p>
+                    <h3>Logoblauw</h3>
+                    <div class="brand-logo-blue button-container">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <div class="brand-logo-blue button-container background-color-offset">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <h3>Logoblauw (AAA)</h3>
+                    <div class="brand-logo-blue-aaa button-container">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <div class="brand-logo-blue-aaa button-container background-color-offset">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <h3>Paars</h3>
+                    <div class="brand-purple button-container">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <div class="brand-purple button-container background-color-offset">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <h3>Paars (AAA)</h3>
+                    <div class="brand-purple-aaa button-container">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <div class="brand-purple-aaa button-container background-color-offset">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <h3>Violet</h3>
+                    <div class="brand-violet button-container">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <div class="brand-violet button-container background-color-offset">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <h3>Violet (AAA)</h3>
+                    <div class="brand-violet-aaa button-container">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <div class="brand-violet-aaa button-container background-color-offset">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <h3>Robijnrood</h3>
+                    <div class="brand-ruby-red button-container">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <div class="brand-ruby-red button-container background-color-offset">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <h3>Robijnrood (AAA)</h3>
+                    <div class="brand-ruby-red-aaa button-container">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <div class="brand-ruby-red-aaa button-container background-color-offset">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <h3>Roze</h3>
+                    <div class="brand-pink button-container">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <div class="brand-pink button-container background-color-offset">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <h3>Roze (AAA)</h3>
+                    <div class="brand-pink-aaa button-container">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <div class="brand-pink-aaa button-container background-color-offset">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <h3>Rood</h3>
+                    <div class="brand-red button-container">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <div class="brand-red button-container background-color-offset">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <h3>Rood (AAA)</h3>
+                    <div class="brand-red-aaa button-container">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <div class="brand-red-aaa button-container background-color-offset">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <h3>Oranje</h3>
+                    <div class="brand-orange button-container">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <div class="brand-orange button-container background-color-offset">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <h3>Oranje (AAA)</h3>
+                    <div class="brand-orange-aaa button-container">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <div class="brand-orange-aaa button-container background-color-offset">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <h3>Donkergeel</h3>
+                    <div class="brand-dark-yellow button-container">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <div class="brand-dark-yellow button-container background-color-offset">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <h3>Donkergeel (AAA)</h3>
+                    <div class="brand-dark-yellow-aaa button-container">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <div class="brand-dark-yellow-aaa button-container background-color-offset">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <h3>Geel</h3>
+                    <div class="brand-yellow button-container">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <div class="brand-yellow button-container background-color-offset">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <h3>Geel (AAA)</h3>
+                    <div class="brand-yellow-aaa button-container">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <div class="brand-yellow-aaa button-container background-color-offset">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <h3>Donkerbruin</h3>
+                    <div class="brand-dark-brown button-container">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <div class="brand-dark-brown button-container background-color-offset">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <h3>Donkerbruin (AAA)</h3>
+                    <div class="brand-dark-brown-aaa button-container">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <div class="brand-dark-brown-aaa button-container background-color-offset">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <h3>Bruin</h3>
+                    <div class="brand-brown button-container">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <div class="brand-brown button-container background-color-offset">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <h3>Bruin (AAA)</h3>
+                    <div class="brand-brown-aaa button-container">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <div class="brand-brown-aaa button-container background-color-offset">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <h3>Donkergroen</h3>
+                    <div class="brand-dark-green button-container">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <div class="brand-dark-green button-container background-color-offset">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <h3>Donkergroen (AAA)</h3>
+                    <div class="brand-dark-green-aaa button-container">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <div class="brand-dark-green-aaa button-container background-color-offset">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <h3>Groen</h3>
+                    <div class="brand-green button-container">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <div class="brand-green button-container background-color-offset">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <h3>Groen (AAA)</h3>
+                    <div class="brand-green-aaa button-container">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <div class="brand-green-aaa button-container background-color-offset">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <h3>Mosgroen</h3>
+                    <div class="brand-moss-green button-container">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <div class="brand-moss-green button-container background-color-offset">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <h3>Mosgroen (AAA)</h3>
+                    <div class="brand-moss-green-aaa button-container">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <div class="brand-moss-green-aaa button-container background-color-offset">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <h3>Mintgroen</h3>
+                    <div class="brand-mint-green button-container">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <div class="brand-mint-green button-container background-color-offset">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <h3>Mintgroen (AAA)</h3>
+                    <div class="brand-mint-green-aaa button-container">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <div class="brand-mint-green-aaa button-container background-color-offset">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <h3>Donkerblauw</h3>
+                    <div class="brand-dark-blue button-container">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <div class="brand-dark-blue button-container background-color-offset">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <h3>Donkerblauw (AAA)</h3>
+                    <div class="brand-dark-blue-aaa button-container">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <div class="brand-dark-blue-aaa button-container background-color-offset">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <h3>Hemelblauw</h3>
+                    <div class="brand-sky-blue button-container">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <div class="brand-sky-blue button-container background-color-offset">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <h3>Hemelblauw (AAA)</h3>
+                    <div class="brand-sky-blue-aaa button-container">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <div class="brand-sky-blue-aaa button-container background-color-offset">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <h3>Lichtblauw</h3>
+                    <div class="brand-light-blue button-container">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <div class="brand-light-blue button-container background-color-offset">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <h3>Lichtblauw (AAA)</h3>
+                    <div class="brand-light-blue-aaa button-container">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
+                    </div>
+                    <div class="brand-light-blue-aaa button-container background-color-offset">
+                      <button>Knop</button>
+                      <button class="ghost">Ghost</button>
+                      <button class="hover">Hover</button>
+                      <button class="active">Actief</button>
+                      <button class="focus">Focus</button>
+                      <button disabled>Disabled</button>
                     </div>
                 </div>
             </article>
 
-            <article class="background-color-offset" id="color-set-alternative-bg">
+            <article id="notifications">
                 <div>
-                    <h1>Kleurcontrast op alternatieve achtergrondkleur</h1>
-                    <ul class="color-overview color-block">
-                        <li>
-                            <div>
-                                <div class="purple"></div>
-                                <p>Paars</p>
-                            </div>
-                            <div>
-                                <div class="purple-tint-1"></div>
-                                <p>Paars tint 1</p>
-                            </div>
-                            <div>
-                                <div class="purple-tint-2"></div>
-                                <p>Paars tint 2</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <div class="violet"></div>
-                                <p>Violet</p>
-                            </div>
-                            <div>
-                                <div class="violet-tint-1"></div>
-                                <p>Violet tint 1</p>
-                            </div>
-                            <div>
-                                <div class="violet-tint-2"></div>
-                                <p>Violet tint 2</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <div class="ruby-red"></div>
-                                <p>Robijnrood</p>
-                            </div>
-                            <div>
-                                <div class="ruby-red-tint-1"></div>
-                                <p>Robijnrood tint 1</p>
-                            </div>
-                            <div>
-                                <div class="ruby-red-tint-2"></div>
-                                <p>Robijnrood tint 2</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <div class="pink"></div>
-                                <p>Roze</p>
-                            </div>
-                            <div>
-                                <div class="pink-tint-1"></div>
-                                <p>Roze tint 1</p>
-                            </div>
-                            <div>
-                                <div class="pink-tint-2"></div>
-                                <p>Roze tint 2</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <div class="red"></div>
-                                <p>Rood</p>
-                            </div>
-                            <div>
-                                <div class="red-tint-1"></div>
-                                <p>Rood tint 1</p>
-                            </div>
-                            <div>
-                                <div class="red-tint-2"></div>
-                                <p>Rood tint 2</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <div class="orange"></div>
-                                <p>Oranje</p>
-                            </div>
-                            <div>
-                                <div class="orange-tint-1"></div>
-                                <p>Oranje tint 1</p>
-                            </div>
-                            <div>
-                                <div class="orange-tint-2"></div>
-                                <p>Oranje tint 2</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <div class="dark-yellow"></div>
-                                <p>Donkergeel</p>
-                            </div>
-                            <div>
-                                <div class="dark-yellow-tint-1"></div>
-                                <p>Donkergeel tint 1</p>
-                            </div>
-                            <div>
-                                <div class="dark-yellow-tint-2"></div>
-                                <p>Donkergeel tint 2</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <div class="yellow"></div>
-                                <p>Geel</p>
-                            </div>
-                            <div>
-                                <div class="yellow-tint-1"></div>
-                                <p>Geel tint 1</p>
-                            </div>
-                            <div>
-                                <div class="yellow-tint-2"></div>
-                                <p>Geel tint 2</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <div class="dark-brown"></div>
-                                <p>Donkerbruin</p>
-                            </div>
-                            <div>
-                                <div class="dark-brown-tint-1"></div>
-                                <p>Donkerbruin tint 1</p>
-                            </div>
-                            <div>
-                                <div class="dark-brown-tint-2"></div>
-                                <p>Donkerbruin tint 2</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <div class="brown"></div>
-                                <p>Bruin</p>
-                            </div>
-                            <div>
-                                <div class="brown-tint-1"></div>
-                                <p>Bruin tint 1</p>
-                            </div>
-                            <div>
-                                <div class="brown-tint-2"></div>
-                                <p>Bruin tint 2</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <div class="dark-green"></div>
-                                <p>Donkergroen</p>
-                            </div>
-                            <div>
-                                <div class="dark-green-tint-1"></div>
-                                <p>Donkergroen tint 1</p>
-                            </div>
-                            <div>
-                                <div class="dark-green-tint-2"></div>
-                                <p>Donkergroen tint 2</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <div class="green"></div>
-                                <p>Groen</p>
-                            </div>
-                            <div>
-                                <div class="green-tint-1"></div>
-                                <p>Groen tint 1</p>
-                            </div>
-                            <div>
-                                <div class="green-tint-2"></div>
-                                <p>Groen tint 2</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <div class="moss-green"></div>
-                                <p>Mosgroen</p>
-                            </div>
-                            <div>
-                                <div class="moss-green-tint-1"></div>
-                                <p>Mosgroen tint 1</p>
-                            </div>
-                            <div>
-                                <div class="moss-green-tint-2"></div>
-                                <p>Mosgroen tint 2</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <div class="mint-green"></div>
-                                <p>Mintgroen</p>
-                            </div>
-                            <div>
-                                <div class="mint-green-tint-1"></div>
-                                <p>Mintgroen tint 1</p>
-                            </div>
-                            <div>
-                                <div class="mint-green-tint-2"></div>
-                                <p>Mintgroen tint 2</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <div class="dark-blue"></div>
-                                <p>Donkerblauw</p>
-                            </div>
-                            <div>
-                                <div class="dark-blue-tint-1"></div>
-                                <p>Donkerblauw tint 1</p>
-                            </div>
-                            <div>
-                                <div class="dark-blue-tint-2"></div>
-                                <p>Donkerblauw tint 2</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <div class="sky-blue"></div>
-                                <p>Hemelblauw</p>
-                            </div>
-                            <div>
-                                <div class="sky-blue-tint-1"></div>
-                                <p>Hemelblauw tint 1</p>
-                            </div>
-                            <div>
-                                <div class="sky-blue-tint-2"></div>
-                                <p>Hemelblauw tint 2</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <div class="light-blue"></div>
-                                <p>Lichtblauw</p>
-                            </div>
-                            <div>
-                                <div class="light-blue-tint-1"></div>
-                                <p>Lichtblauw tint 1</p>
-                            </div>
-                            <div>
-                                <div class="light-blue-tint-2"></div>
-                                <p>Lichtblauw tint 2</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </article>
-
-            <article id="color-set-text">
-                <div>
-                    <h1>Rijkshuisstijl kleurenset met tekst</h1>
-                    <div>
-                        <ul class="color-overview">
-                            <li>
-                                <div class="purple">Paars</div>
-                                <div class="purple-tint-1">Paars tint 1</div>
-                                <div class="purple-tint-2">Paars tint 2</div>
-                            </li>
-                            <li>
-                                <div class="violet">Violet</div>
-                                <div class="violet-tint-1">Violet tint 1</div>
-                                <div class="violet-tint-2">Violet tint 2</div>
-                            </li>
-                            <li>
-                                <div class="ruby-red">Robijnrood</div>
-                                <div class="ruby-red-tint-1">Robijnrood tint 1</div>
-                                <div class="ruby-red-tint-2">Robijnrood tint 2</div>
-                            </li>
-                            <li>
-                                <div class="pink">Roze</div>
-                                <div class="pink-tint-1">Roze tint 1</div>
-                                <div class="pink-tint-2">Roze tint 2</div>
-                            </li>
-                            <li>
-                                <div class="red">Rood</div>
-                                <div class="red-tint-1">Rood tint 1</div>
-                                <div class="red-tint-2">Rood tint 2</div>
-                            </li>
-                            <li>
-                                <div class="orange">Oranje</div>
-                                <div class="orange-tint-1">Oranje tint 1</div>
-                                <div class="orange-tint-2">Oranje tint 2</div>
-                            </li>
-                            <li>
-                                <div class="dark-yellow">Donkergeel</div>
-                                <div class="dark-yellow-tint-1">Donkergeel tint 1</div>
-                                <div class="dark-yellow-tint-2">Donkergeel tint 2</div>
-                            </li>
-                            <li>
-                                <div class="yellow">Geel</div>
-                                <div class="yellow-tint-1">Geel tint 1</div>
-                                <div class="yellow-tint-2">Geel tint 2</div>
-                            </li>
-                            <li>
-                                <div class="dark-brown">Donkerbruin</div>
-                                <div class="dark-brown-tint-1">Donkerbruin tint 1</div>
-                                <div class="dark-brown-tint-2">Donkerbruin tint 2</div>
-                            </li>
-                            <li>
-                                <div class="brown">Bruin</div>
-                                <div class="brown-tint-1">Bruin tint 1</div>
-                                <div class="brown-tint-2">Bruin tint 2</div>
-                            </li>
-                            <li>
-                                <div class="dark-green">Donkergroen</div>
-                                <div class="dark-green-tint-1">Donkergroen tint 1</div>
-                                <div class="dark-green-tint-2">Donkergroen tint 2</div>
-                            </li>
-                            <li>
-                                <div class="green">Groen</div>
-                                <div class="green-tint-1">Groen tint 1</div>
-                                <div class="green-tint-2">Groen tint 2</div>
-                            </li>
-                            <li>
-                                <div class="moss-green">Mosgroen</div>
-                                <div class="moss-green-tint-1">Mosgroen tint 1</div>
-                                <div class="moss-green-tint-2">Mosgroen tint 2</div>
-                            </li>
-                            <li>
-                                <div class="mint-green">Mintgroen</div>
-                                <div class="mint-green-tint-1">Mintgroen tint 1</div>
-                                <div class="mint-green-tint-2">Mintgroen tint 2</div>
-                            </li>
-                            <li>
-                                <div class="dark-blue">Donkerblauw</div>
-                                <div class="dark-blue-tint-1">Donkerblauw tint 1</div>
-                                <div class="dark-blue-tint-2">Donkerblauw tint 2</div>
-                            </li>
-                            <li>
-                                <div class="sky-blue">Hemelblauw</div>
-                                <div class="sky-blue-tint-1">Hemelblauw tint 1</div>
-                                <div class="sky-blue-tint-2">Hemelblauw tint 2</div>
-                            </li>
-                            <li>
-                                <div class="light-blue">Lichtblauw</div>
-                                <div class="light-blue-tint-1">Lichtblauw tint 1</div>
-                                <div class="light-blue-tint-2">Lichtblauw tint 2</div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </article>
-
-            <article id="color-set-colored-text">
-                <div>
-                    <h1>Rijkshuisstijl kleurenset met gekleurde tekst</h1>
-                    <div>
-                        <ul class="color-overview colored-text">
-                            <li>
-                                <div class="purple">Paars</div>
-                                <div class="purple-tint-1 purple-tint-colored-text">Paars tint 1</div>
-                                <div class="purple-tint-2 purple-tint-colored-text">Paars tint 2</div>
-                            </li>
-                            <li>
-                                <div class="violet">Violet</div>
-                                <div class="violet-tint-1 violet-tint-colored-text">Violet tint 1</div>
-                                <div class="violet-tint-2 violet-tint-colored-text">Violet tint 2</div>
-                            </li>
-                            <li>
-                                <div class="ruby-red">Robijnrood</div>
-                                <div class="ruby-red-tint-1 ruby-red-tint-colored-text">Robijnrood tint 1</div>
-                                <div class="ruby-red-tint-2 ruby-red-tint-colored-text">Robijnrood tint 2</div>
-                            </li>
-                            <li>
-                                <div class="pink">Roze</div>
-                                <div class="pink-tint-1 pink-tint-colored-text">Roze tint 1</div>
-                                <div class="pink-tint-2 pink-tint-colored-text">Roze tint 2</div>
-                            </li>
-                            <li>
-                                <div class="red">Rood</div>
-                                <div class="red-tint-1 red-tint-colored-text">Rood tint 1</div>
-                                <div class="red-tint-2 red-tint-colored-text">Rood tint 2</div>
-                            </li>
-                            <li>
-                                <div class="orange">Oranje</div>
-                                <div class="orange-tint-1 orange-tint-colored-text">Oranje tint 1</div>
-                                <div class="orange-tint-2 orange-tint-colored-text">Oranje tint 2</div>
-                            </li>
-                            <li>
-                                <div class="dark-yellow">Donkergeel</div>
-                                <div class="dark-yellow-tint-1 dark-yellow-tint-colored-text">Donkergeel tint 1</div>
-                                <div class="dark-yellow-tint-2 dark-yellow-tint-colored-text">Donkergeel tint 2</div>
-                            </li>
-                            <li>
-                                <div class="yellow">Geel</div>
-                                <div class="yellow-tint-1 yellow-tint-colored-text">Geel tint 1</div>
-                                <div class="yellow-tint-2 yellow-tint-colored-text">Geel tint 2</div>
-                            </li>
-                            <li>
-                                <div class="dark-brown">Donkerbruin</div>
-                                <div class="dark-brown-tint-1 dark-brown-tint-colored-text">Donkerbruin tint 1</div>
-                                <div class="dark-brown-tint-2 dark-brown-tint-colored-text">Donkerbruin tint 2</div>
-                            </li>
-                            <li>
-                                <div class="brown">Bruin</div>
-                                <div class="brown-tint-1 brown-tint-colored-text">Bruin tint 1</div>
-                                <div class="brown-tint-2 brown-tint-colored-text">Bruin tint 2</div>
-                            </li>
-                            <li>
-                                <div class="dark-green">Donkergroen</div>
-                                <div class="dark-green-tint-1 dark-green-tint-colored-text">Donkergroen tint 1</div>
-                                <div class="dark-green-tint-2 dark-green-tint-colored-text">Donkergroen tint 2</div>
-                            </li>
-                            <li>
-                                <div class="green">Groen</div>
-                                <div class="green-tint-1 green-tint-colored-text">Groen tint 1</div>
-                                <div class="green-tint-2 green-tint-colored-text">Groen tint 2</div>
-                            </li>
-                            <li>
-                                <div class="moss-green">Mosgroen</div>
-                                <div class="moss-green-tint-1 moss-green-tint-colored-text">Mosgroen tint 1</div>
-                                <div class="moss-green-tint-2 moss-green-tint-colored-text">Mosgroen tint 2</div>
-                            </li>
-                            <li>
-                                <div class="mint-green">Mintgroen</div>
-                                <div class="mint-green-tint-1 mint-green-tint-colored-text">Mintgroen tint 1</div>
-                                <div class="mint-green-tint-2 mint-green-tint-colored-text">Mintgroen tint 2</div>
-                            </li>
-                            <li>
-                                <div class="dark-blue">Donkerblauw</div>
-                                <div class="dark-blue-tint-1 dark-blue-tint-colored-text">Donkerblauw tint 1</div>
-                                <div class="dark-blue-tint-2 dark-blue-tint-colored-text">Donkerblauw tint 2</div>
-                            </li>
-                            <li>
-                                <div class="sky-blue">Hemelblauw</div>
-                                <div class="sky-blue-tint-1 sky-blue-tint-colored-text">Hemelblauw tint 1</div>
-                                <div class="sky-blue-tint-2 sky-blue-tint-colored-text">Hemelblauw tint 2</div>
-                            </li>
-                            <li>
-                                <div class="light-blue">Lichtblauw</div>
-                                <div class="light-blue-tint-1 light-blue-tint-colored-text">Lichtblauw tint 1</div>
-                                <div class="light-blue-tint-2 light-blue-tint-colored-text">Lichtblauw tint 2</div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </article>
-
-            <article id="color-set-messages">
-                <div>
-                    <h1>Berichten</h1>
+                    <h2>Notificaties</h2>
                     <p>Berichten hebben een achtergrondkleur op basis van het type bericht.</p>
                     <p class="error">Lorem ipsum dolor sit <a href="">amet</a>.</p>
                     <p class="warning">Lorem ipsum dolor sit <a href="">amet</a>.</p>
@@ -763,9 +708,9 @@
                 </div>
             </article>
 
-            <article id="color-set-input">
+            <article id="inputs">
                 <div>
-                    <h1>Invoervelden</h1>
+                    <h2>Invoervelden</h2>
                     <form method="post">
                         <div>
                             <label for="input-error">Error:</label>
@@ -810,17 +755,1780 @@
                 </div>
             </article>
 
-            <article id="color-set-button">
+            <article id="colors">
                 <div>
-                    <h1>Knoppen</h1>
-                    <button type="button" class="error">Lorem ipsum</button>
-                    <button type="button" class="warning">Lorem ipsum</button>
-                    <button type="button" class="confirmation">Lorem ipsum</button>
-                    <button type="button" class="explanation">Lorem ipsum</button>
-                    <button type="button" class="primary">Lorem ipsum</button>
+                    <h2>Volledige kleurenset</h2>
+                    <p>Voor intern gebruik binnen dit project is een volledige kleurenset opgesteld op basis van de officiële <a
+                        href="https://www.rijkshuisstijl.nl/publiek/modules/product/DigitalStyleGuide/default/index.aspx?ItemId=6744"
+                        rel="external">communicatiekleuren van de Rijkshuisstijl</a>. De kleuren
+                        kunnen geïmporteerd worden uit de module <code>"./scss/colors/palette"</code>
+                        maar zijn op dit moment <strong>niet</strong> onderdeel van de publieke API
+                        van het thema. Zie de pagina <a
+                        href="../html_examples/colors.html">Communicatiekleuren</a> voor instructies
+                        hoe je een communicatiekleur kan toepassing in je project.</p>
+                    <p>Deze kleurenset omvat alle officiële tinten van de Rijkshuisstijl, en vult deze
+                        aan met tinten die zijn afgeleid van de volle kleur. Afgeleide tinten hebben
+                        dezelfde <a href="https://drafts.csswg.org/css-color/#ok-lab"
+                        rel="external">oklch</a> chroma-waarde als de officiële 100% tint.<p>
+                </div>
+
+                <div class="horizontal-scroll">
+                    <table class="color-matrix">
+                        <caption>
+                            Overzicht van de kleurenset gebaseerd op de Rijkshuisstijl
+                            communicatiekleuren. Cellen met een kleurvoorbeeld zonder tekst bevatten
+                            een afgeleide tint.
+                        </caption>
+                        <tr>
+                            <th></th>
+                            <th scope="col" class="tint">
+                                <span>50</span>
+                            </th>
+                            <th scope="col" class="tint">
+                                <span>100</span>
+                            </th>
+                            <th scope="col" class="tint">
+                                <span>150</span>
+                            </th>
+                            <th scope="col" class="tint">
+                                <span>200</span>
+                            </th>
+                            <th scope="col" class="tint">
+                                <span>250</span>
+                            </th>
+                            <th scope="col" class="tint">
+                                <span>300</span>
+                            </th>
+                            <th scope="col" class="tint">
+                                <span>350</span>
+                            </th>
+                            <th scope="col" class="tint">
+                                <span>400</span>
+                            </th>
+                            <th scope="col" class="tint">
+                                <span>450</span>
+                            </th>
+                            <th scope="col" class="tint">
+                                <span>500</span>
+                            </th>
+                            <th scope="col" class="tint">
+                                <span>550</span>
+                            </th>
+                            <th scope="col" class="tint">
+                                <span>600</span>
+                            </th>
+                            <th scope="col" class="tint">
+                                <span>650</span>
+                            </th>
+                            <th scope="col" class="tint">
+                                <span>700</span>
+                            </th>
+                            <th scope="col" class="tint">
+                                <span>750</span>
+                            </th>
+                            <th scope="col" class="tint">
+                                <span>800</span>
+                            </th>
+                            <th scope="col" class="tint">
+                                <span>850</span>
+                            </th>
+                            <th scope="col" class="tint">
+                                <span>900</span>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th scope="row">Grijs</th>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-grey-50"
+                                ></span>
+                                1
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-grey-100"
+                                ></span>
+                                2
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-grey-200"
+                                ></span>
+                                3
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-grey-300"
+                                ></span>
+                                4
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-grey-400"
+                                ></span>
+                                5
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-grey-500 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-grey-600"
+                                ></span>
+                                6
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-grey-700"
+                                ></span>
+                                7
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-grey-800 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-grey-900 derived"
+                                ></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Logo&shy;blauw</th>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-logo-blue-100"
+                                ></span>
+                                15%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-logo-blue-200"
+                                ></span>
+                                30%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-logo-blue-300"
+                                ></span>
+                                45%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-logo-blue-400 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-logo-blue-500"
+                                ></span>
+                                60%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-logo-blue-600"
+                                ></span>
+                                75%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-logo-blue-700 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-logo-blue-800"
+                                ></span>
+                                100%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-logo-blue-900 derived"
+                                ></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Paars</th>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-purple-100"
+                                ></span>
+                                15%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-purple-200 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-purple-300"
+                                ></span>
+                                30%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-purple-400"
+                                ></span>
+                                45%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-purple-500"
+                                ></span>
+                                60%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-purple-600"
+                                ></span>
+                                75%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-purple-700 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-purple-800 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-purple-900"
+                                ></span>
+                                100%
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Violet</th>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-violet-100"
+                                ></span>
+                                15%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-violet-200"
+                                ></span>
+                                30%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-violet-300"
+                                ></span>
+                                45%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-violet-400"
+                                ></span>
+                                60%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-violet-500"
+                                ></span>
+                                75%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-violet-600 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-violet-700"
+                                ></span>
+                                100%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-violet-800 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-violet-900 derived"
+                                ></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Robijn&shy;rood</th>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-ruby-red-100"
+                                ></span>
+                                15%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-ruby-red-200"
+                                ></span>
+                                30%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-ruby-red-300"
+                                ></span>
+                                45%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-ruby-red-400"
+                                ></span>
+                                60%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-ruby-red-500"
+                                ></span>
+                                75%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-ruby-red-600"
+                                ></span>
+                                100%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-ruby-red-700 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-ruby-red-800 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-ruby-red-900 derived"
+                                ></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Roze</th>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-pink-50"
+                                ></span>
+                                15%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-pink-100"
+                                ></span>
+                                30%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-pink-150"
+                                ></span>
+                                45%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-pink-200"
+                                ></span>
+                                60%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-pink-250"
+                                ></span>
+                                75%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-pink-300"
+                                ></span>
+                                100%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-pink-400 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-pink-500 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-pink-600 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-pink-700 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-pink-800 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-pink-900 derived"
+                                ></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Rood</th>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-red-100"
+                                ></span>
+                                15%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-red-200"
+                                ></span>
+                                30%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-red-300"
+                                ></span>
+                                45%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-red-350"
+                                ></span>
+                                60%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-red-400"
+                                ></span>
+                                75%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-red-500"
+                                ></span>
+                                100%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-red-600 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-red-700 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-red-800 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-red-900 derived"
+                                ></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Oranje</th>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-orange-100"
+                                ></span>
+                                15%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-orange-150"
+                                ></span>
+                                30%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-orange-200"
+                                ></span>
+                                45%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-orange-250"
+                                ></span>
+                                60%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-orange-300"
+                                ></span>
+                                75%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-orange-400"
+                                ></span>
+                                100%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-orange-500 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-orange-600 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-orange-700 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-orange-800 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-orange-900 derived"
+                                ></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Donker&shy;geel</th>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-yellow-50"
+                                ></span>
+                                15%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-yellow-100"
+                                ></span>
+                                45%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-yellow-150"
+                                ></span>
+                                60%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-yellow-200"
+                                ></span>
+                                75%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-yellow-250"
+                                ></span>
+                                100%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-yellow-300 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-yellow-400 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-yellow-500 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-yellow-600 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-yellow-700 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-yellow-800 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-yellow-900 derived"
+                                ></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Geel</th>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-yellow-50"
+                                ></span>
+                                30%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-yellow-100"
+                                ></span>
+                                60%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-yellow-150"
+                                ></span>
+                                100%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-yellow-200 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-yellow-300 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-yellow-400 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-yellow-500 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-yellow-600 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-yellow-700 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-yellow-800 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-yellow-900 derived"
+                                ></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Donker&shy;bruin</th>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-brown-100"
+                                ></span>
+                                15%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-brown-200 derived"
+                                ></span>
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-brown-250"
+                                ></span>
+                                30%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-brown-300"
+                                ></span>
+                                45%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-brown-400 derived"
+                                ></span>
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-brown-450"
+                                ></span>
+                                60%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-brown-500 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-brown-600"
+                                ></span>
+                                75%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-brown-700 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-brown-800"
+                                ></span>
+                                100%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-brown-900 derived"
+                                ></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Bruin</th>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-brown-100"
+                                ></span>
+                                15%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-brown-150"
+                                ></span>
+                                30%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-brown-200"
+                                ></span>
+                                45%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-brown-300"
+                                ></span>
+                                60%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-brown-400"
+                                ></span>
+                                75%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-brown-500 derived"
+                                ></span>
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-brown-550"
+                                ></span>
+                                100%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-brown-600 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-brown-700 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-brown-800 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-brown-900 derived"
+                                ></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Donker&shy;groen</th>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-green-100"
+                                ></span>
+                                15%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-green-200"
+                                ></span>
+                                30%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-green-300"
+                                ></span>
+                                45%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-green-400"
+                                ></span>
+                                60%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-green-500"
+                                ></span>
+                                75%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-green-600 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-green-700"
+                                ></span>
+                                100%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-green-800 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-green-900 derived"
+                                ></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Groen</th>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-green-100"
+                                ></span>
+                                15%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-green-200"
+                                ></span>
+                                30%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-green-250"
+                                ></span>
+                                45%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-green-300"
+                                ></span>
+                                60%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-green-400"
+                                ></span>
+                                75%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-green-500 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-green-600"
+                                ></span>
+                                100%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-green-700 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-green-800 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-green-900 derived"
+                                ></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Mos&shy;groen</th>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-moss-green-100"
+                                ></span>
+                                15%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-moss-green-200"
+                                ></span>
+                                30%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-moss-green-250"
+                                ></span>
+                                45%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-moss-green-300"
+                                ></span>
+                                60%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-moss-green-400"
+                                ></span>
+                                75%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-moss-green-500 derived"
+                                ></span>
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-moss-green-550"
+                                ></span>
+                                100%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-moss-green-600 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-moss-green-700 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-moss-green-800 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-moss-green-900 derived"
+                                ></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Mint&shy;groen</th>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-mint-green-50"
+                                ></span>
+                                15%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-mint-green-100"
+                                ></span>
+                                30%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-mint-green-150"
+                                ></span>
+                                60%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-mint-green-200"
+                                ></span>
+                                75%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-mint-green-300"
+                                ></span>
+                                100%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-mint-green-400 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-mint-green-500 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-mint-green-600 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-mint-green-700 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-mint-green-800 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-mint-green-900 derived"
+                                ></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Donker&shy;blauw</th>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-blue-100"
+                                ></span>
+                                15%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-blue-200"
+                                ></span>
+                                30%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-blue-300"
+                                ></span>
+                                45%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-blue-400"
+                                ></span>
+                                60%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-blue-500"
+                                ></span>
+                                75%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-blue-600"
+                                ></span>
+                                100%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-blue-700 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-blue-800 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-dark-blue-900 derived"
+                                ></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Hemel&shy;blauw</th>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-sky-blue-100"
+                                ></span>
+                                15%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-sky-blue-200"
+                                ></span>
+                                30%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-sky-blue-300"
+                                ></span>
+                                45%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-sky-blue-350"
+                                ></span>
+                                60%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-sky-blue-400"
+                                ></span>
+                                75%
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-sky-blue-500 derived"
+                                ></span>
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-sky-blue-550"
+                                ></span>
+                                100%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-sky-blue-600 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-sky-blue-700 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-sky-blue-800 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-sky-blue-900 derived"
+                                ></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Licht&shy;blauw</th>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-light-blue-50"
+                                ></span>
+                                15%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-light-blue-100"
+                                ></span>
+                                30%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-light-blue-150"
+                                ></span>
+                                60%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-light-blue-200"
+                                ></span>
+                                75%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-light-blue-250"
+                                ></span>
+                                100%
+                            </td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-light-blue-300 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-light-blue-400 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-light-blue-500 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-light-blue-600 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-light-blue-700 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-light-blue-800 derived"
+                                ></span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span
+                                    role="img"
+                                    aria-label="kleurvoorbeeld"
+                                    class="swatch swatch-light-blue-900 derived"
+                                ></span>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </article>
-
         </div>
 
         <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het

@@ -5,12 +5,9 @@
 @use "fonts";
 @use "icons";
 
-/* Color sets */
-@use "colors/color-set-grey";
-@use "colors/ruby-red";
-@use "colors/colors";
-
-/* Rijksoverheid base set */
+/* Colors */
+@use "colors/base";
+@use "colors/brand";
 @use "colors/notifications";
 
 /* Styling for Manon components */
