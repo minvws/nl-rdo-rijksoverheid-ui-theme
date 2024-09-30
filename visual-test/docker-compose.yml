@@ -17,10 +17,7 @@ services:
     command: node visual-test/reference.js
 
   backstop_command:
-    ### TODO: replace with `image:` once it is published
-    build:
-      context: .
-    # image: ghcr.io/minvws/nl-rdo-rijksoverheid-ui-theme-visual-test:latest
+    image: ghcr.io/minvws/nl-rdo-rijksoverheid-ui-theme-visual-test:latest
     shm_size: 512m
     environment:
       VISUAL_TEST_BASE_PATH: html

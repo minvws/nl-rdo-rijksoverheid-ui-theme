@@ -36,5 +36,8 @@ jobs:
         with:
           context: visual-test
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
+          ### TODO: switch back after image is bootstrapped
+          # tags: ${{ steps.meta.outputs.tags }}
+          tags: |
+            type=raw,value=latest
           labels: ${{ steps.meta.outputs.labels }}
