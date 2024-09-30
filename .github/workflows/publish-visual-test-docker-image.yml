@@ -31,12 +31,12 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          ### TODO: remove after image is bootstrapped
+          tags: type=raw,value=latest
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
           context: visual-test
           push: true
-          ### TODO: switch back after image is bootstrapped
-          # tags: ${{ steps.meta.outputs.tags }}
-          tags: ${{ env.IMAGE_NAME }}:latest
+          tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
