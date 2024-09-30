@@ -224,7 +224,6 @@ Once you are authenticated, you can run the visual regression tests:
 
 ```sh
 npm install
-npm run build
 npm run visual:test
 ```
 
