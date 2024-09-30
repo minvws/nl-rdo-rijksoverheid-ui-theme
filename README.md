@@ -211,15 +211,29 @@ To work on the theme itself, clone the git repo and run `npm install`.
 To run a development server, run `npm run dev`. This will perform a development build of the docs
 site, watch for changes, and run a local http server to serve the files.
 
-To run the visual regression tests, run `npm run visual:test`. This will screenshot all test pages
-and report any visual differences from the preview reference screenshots. Run `npm run
-visual:report` to view the report, and if the differences are expected, run `npm run visual:approve`
-to update the reference screenshots. Ideally, commit the updated screenshots along with the changes
-that cause the visual differences.
+### Visual regression tests
+
+To run the visual regression tests, you will need docker and docker compose and you will need to
+[authenticate with the GitHub Container Registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry#authenticating-with-a-personal-access-token-classic):
+
+1. [Create a GitHub personal access token (classic) with scope `read:packages`](https://github.com/settings/tokens/new?scopes=read:packages&description=GitHub%20Container%20Registry%20Token).
+2. Run `docker login ghcr.io --username <username>`, substituting your GitHub username.
+3. In the password prompt, enter the personal access token you obtained form step 1.
+
+Once you are authenticated, you can run the visual regression tests:
+
+```sh
+npm install
+npm run visual:test
+```
+
+This will screenshot all test pages and report any visual differences from the preview reference
+screenshots. Run `npm run visual:report` to view the report, and if the differences are expected,
+run `npm run visual:approve` to update the reference screenshots. Ideally, commit the updated
+screenshots along with the changes that cause the visual differences.
 
 If there are any issues with the visual regression tests, you can try using `npm run
-visual:reference` to generate fresh reference images from scratch, or `npm run visual:rebuild` to
-force a rebuild of your local docker images used to run the visual regression tests.
+visual:reference` to generate fresh reference images from scratch.
 
 ## Publishing
 
