@@ -9,7 +9,7 @@ RUN useradd -m -u ${UID} -g ${GID} -o -s /bin/bash user
 
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
 ENV PUPPETEER_PRODUCT=firefox
-ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/firefox
+ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/firefox-esr
 
 RUN echo "Installing firefox..." \
   && export DEBIAN_FRONTEND=noninteractive DEBCONF_NOWARNINGS=yes \
@@ -17,8 +17,8 @@ RUN echo "Installing firefox..." \
   && apt-get -qq install software-properties-common >/dev/null \
   && add-apt-repository -y ppa:mozillateam/ppa >/dev/null \
   && apt-get -qq update >/dev/null \
-  && apt-get -qq install --target-release 'o=LP-PPA-mozillateam' firefox >/dev/null \
-  && firefox --version \
+  && apt-get -qq install --target-release 'o=LP-PPA-mozillateam' firefox-esr >/dev/null \
+  && $PUPPETEER_EXECUTABLE_PATH --version \
   && echo "Installing dependencies needed to install node.js..." \
   && apt-get -qq install curl gnupg xz-utils >/dev/null \
   && echo "Cleaning up apt cache..." \
