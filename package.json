@@ -28,9 +28,9 @@
     "prepare": "husky",
     "visual:ci": "node visual-test/test.js",
     "visual:report": "xdg-open visual-test/html_report/index.html || open visual-test/html_report/index.html ",
-    "visual:test": "docker compose -f visual-test/docker-compose.yml run --rm test",
+    "visual:test": "npm run build && docker compose -f visual-test/docker-compose.yml run --rm test",
     "visual:approve": "docker compose -f visual-test/docker-compose.yml run --rm approve",
-    "visual:reference": "docker compose -f visual-test/docker-compose.yml run --rm reference",
+    "visual:reference": "npm run build && docker compose -f visual-test/docker-compose.yml run --rm reference",
     "visual:rebuild": "docker compose -f visual-test/docker-compose.yml --profile one-off build"
   },
   "peerDepencency": {
