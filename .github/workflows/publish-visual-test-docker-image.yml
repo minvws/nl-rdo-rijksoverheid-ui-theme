@@ -4,8 +4,6 @@ on:
   push:
     tags:
       - v*
-    ### TODO: remove after first publish
-    branches: ["fix/visual-test-firefox-version"]
 
 env:
   REGISTRY: ghcr.io
@@ -31,8 +29,6 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
-          ### TODO: remove after image is bootstrapped
-          tags: type=raw,value=latest
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
