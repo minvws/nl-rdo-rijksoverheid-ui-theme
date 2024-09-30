@@ -38,6 +38,5 @@ jobs:
           push: true
           ### TODO: switch back after image is bootstrapped
           # tags: ${{ steps.meta.outputs.tags }}
-          tags: |
-            type=raw,value=latest
+          tags: ${{ env.IMAGE_NAME }}:latest
           labels: ${{ steps.meta.outputs.labels }}
