@@ -12,4 +12,7 @@
   /* content on the button when the menu is expanded */
   --sidemenu-expanded-button-icon: "#{map.get(icons.$glyphs, close)}";
   --sidemenu-button-icon-font-size: 0.7rem;
+
+  /* Alignment between sidemenu and other content */
+  --sidemenu-main-gap: 1rem;
 }
