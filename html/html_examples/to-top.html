@@ -33,7 +33,13 @@
   <main class="sidemenu">
     <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
       <ul>
-        <li><a href="#to-top">"Terug naar hoofdmenu"-knop</a></li>
+        <li>
+          <a href="#to-top">"Terug naar hoofdmenu"-knop</a>
+          <ul>
+            <li><a href="#visual-example">Visueel voorbeeld</a></li>
+            <li><a href="#html-example">HTML-voorbeeld</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
 
@@ -47,39 +53,40 @@
           <p>Dit zorgt voor een extra mogelijkheid tot navigeren binnen de pagina. Hierdoor is het voor alle gebruikers
             mogelijk om snel terug te springen naar het hoofdmenu.</p>
 
+          <h2>Aandachtspunten</h2>
           <ol>
-            <li>Voeg de knop aan het einde van de <code>&lt;main></code> toe.</li>
-            <li>Voeg de link naar de hoofdnavigatie toe.
+            <li>Zorg dat de hoofdnavigatie een <code>id</code> heeft. Bijvoorbeeld:
+              <code>id="main-nav"</code></li>
+            <li>Voeg aan het einde van de <code>&lt;main></code> een link toe.
               <ol>
-                <li>Voeg aan de hoofdnavigatie een <code>id</code> toe. Bijvoorbeeld: "main-nav".</li>
-                <li>Voeg binnen de link de corresponderende verwijzing toe. Zie het Html-voorbeeld voor meer informatie.
-                </li>
+                <li>Verwijs de link naar het <code>id</code> van de hoofdnavigatie. Bijvoorbeeld:
+                  <code>href="#main-nav"</code>.</li>
+                <li>Geef de link de classes <code>button</code> en <code>to-top</code>.</li>
+                <li>Geef de link een duidelijke tekst, zoals "Terug naar het hoofdmenu", en voeg het
+                    <code>to-top</code>-<a href="./icons.html">icoon</a> toe.</li>
               </ol>
             </li>
           </ol>
 
+          <p class="explanation"><span>Let op:</span> voeg het icoon bij voorkeur aan de link toe als losse
+            <code>&lt;span></code> met <code>aria-hidden="true"</code>.</p>
+
+          <p>Zie <a href="#example">het HTML-voorbeeld</a> voor details.</p>
+
+
+          <h2 id="visual-example">Visueel voorbeeld</h2>
           <p>Zie de knop rechtsonder in beeld voor het visuele voorbeeld.</p>
 
-          <p>Html-voorbeeld knop:</p>
+          <h2 id="html-example">HTML-voorbeeld</h2>
           <pre>
-                <code>
-&lt;a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het hoofdmenu&lt;/a>
-                </code>
-              </pre>
+                <code>&lt;a href="#main-nav" class="button to-top">
+  &lt;span class="icon icon-to-top" aria-hidden="true">&lt;/span>
+  Terug naar het hoofdmenu
+&lt;/a></code></pre>
 
-          <p>Html-voorbeeld id:</p>
+          <h3>HTML-voorbeeld plaatsing:</h3>
           <pre>
-                <code>
-&lt;nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
-  &lt;!-- Nav content -->
-&lt;/nav>
-                </code>
-              </pre>
-
-          <p>Html-voorbeeld plaatsing:</p>
-          <pre>
-                <code>
-&lt;!DOCTYPE html>
+                <code>&lt;!DOCTYPE html>
 &lt;html lang="nl">
   &lt;head>
   &lt;!-- head content -->
@@ -103,17 +110,13 @@
         &lt;!-- Footer content -->
       &lt;/footer>
   &lt;/body>
-&lt;/html>
-
-                </code>
-              </pre>
+&lt;/html></code></pre>
 
         </div>
       </article>
     </div>
 
-    <a href="#main-nav" class="button to-top" title="Terug naar het hoofdmenu">
-      <span class="icon icon-to-top" aria-hidden="true"></span>
+    <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">
       Terug naar het hoofdmenu
     </a>
   </main>
