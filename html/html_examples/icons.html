@@ -67,47 +67,56 @@
           <p>Voeg de class <code>icon</code> om gebruik te maken van de standaard icon-styling, en de class van het
             benodigde icoon, bijvoorbeeld: <code>icon-home</code>.</p>
 
-          <h3>Paragraaf met icoon</h3>
-          <p>Visueel voorbeeld:</p>
-          <p class="icon icon-home">Lorem ipsum</p>
-
-          <p>HTML-voorbeeld:</p>
-
-          <pre>
-                <code>
-&lt;p class="icon icon-home">Lorem ipsum&lt;/p>
-                </code>
-              </pre>
-
-
           <h3>Knop met icoon en tekst</h3>
           <p>Visueel voorbeeld:</p>
-          <a href="../index.html" class="button"><span class=" icon icon-home"></span>Hoofdpagina</a>
+          <button>
+            <span class="icon icon-home" aria-hidden="true"></span>Hoofdpagina
+          </button>
 
           <p>HTML-voorbeeld:</p>
 
           <pre>
-                <code>
-&lt;a href="../index.html" class="button">&lt;span class=" icon icon-home">&lt;/span>Hoofdpagina&lt;/a>
-                </code>
-              </pre>
+            <code>
+&lt;button>
+  &lt;span class="icon icon-home" aria-hidden="true">&lt;/span>Hoofdpagina
+&lt;/button>
+            </code>
+          </pre>
+
+          <h3>Link als knop met tekst</h3>
+          <h4>Visueel voorbeeld:</h4>
+          <a href="#" class="button">
+            <span class="icon icon-search" aria-hidden="true"></span>Zoeken
+          </a>
+
+          <p>HTML-voorbeeld:</p>
+
+          <pre>
+            <code>
+&lt;a href="#" class="button">
+  &lt;span class="icon icon-search" aria-hidden="true">&lt;/span>Zoeken
+&lt;/a>
+            </code>
+          </pre>
 
           <h3>Icoonknop</h3>
           <ul>
             <li>Voor meer informatie en aandachtspunten zie <a href="buttons.html#button-icon">Icoonknoppen</a>.</li>
           </ul>
           <p>Visueel voorbeeld:</p>
-          <a href="../index.html" class="button icon icon-home">Hoofdpagina</a>
-          <button class="icon icon-home">Hoofdpagina</button>
+          <button class="icon-only">
+            <span class="icon icon-home" aria-hidden="true"></span>Hoofdpagina
+          </button>
 
           <p>HTML-voorbeeld:</p>
 
           <pre>
-                <code>
-&lt;a href="../index.html" class="button icon icon-home">Hoofdpagina&lt;/a>
-&lt;button class="icon icon-home">Hoofdpagina&lt;/button>
-                </code>
-              </pre>
+            <code>
+&lt;button class="icon-only">
+  &lt;span class="icon icon-home" aria-hidden="true">&lt;/span>Hoofdpagina
+&lt;/button>
+            </code>
+          </pre>
 
           <h2 id="available-icons">Beschikbare iconen</h2>
           <p>Het thema wordt geleverd met het icoon-lettertype <code>ro-icons-light</code>. Deze
@@ -1169,8 +1178,10 @@
       </article>
     </div>
 
-    <a href="#main-nav" class="button to-top icon icon-to-top" title="Terug naar het hoofdmenu">Terug naar het
-      hoofdmenu</a>
+    <a href="#main-nav" class="button to-top" title="Terug naar het hoofdmenu">
+      <span class="icon icon-to-top" aria-hidden="true"></span>
+      Terug naar het hoofdmenu
+    </a>
   </main>
 
   <footer>
