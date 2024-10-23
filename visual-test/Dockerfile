@@ -7,4 +7,6 @@ ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/firefox
 RUN apk add --update-cache firefox font-dejavu \
   && rm -rf /var/cache/apk/*
 
+RUN echo 'user_pref("layout.css.visited_links_enabled", false);' >> /usr/lib/firefox/defaults/pref/prefs.js
+
 WORKDIR /src

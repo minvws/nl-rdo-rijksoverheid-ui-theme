@@ -52,9 +52,10 @@
 @use "manon/accordion";
 @use "manon/button";
 @use "manon/button-ghost";
-@use "manon/collapsing-element";
-@use "manon/checkbox";
 @use "manon/button-to-top";
+@use "manon/checkbox";
+@use "manon/collapsing-element";
+@use "manon/code-block";
 @use "manon/form";
 @use "manon/form-input";
 @use "manon/form-textarea";
@@ -76,6 +77,7 @@
 @use "manon/notification-explanation";
 @use "manon/notification-system";
 @use "manon/icon";
+@use "manon/icon-only";
 @use "manon/radio";
 @use "manon/sidemenu";
 @use "manon/tabs";

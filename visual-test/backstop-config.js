@@ -32,8 +32,6 @@ export const createBackstopConfig = ({ port, files }) => ({
     args: ["--no-sandbox"],
     protocol: "webDriverBiDi",
   },
-  // avoid race conditions:
-  asyncCaptureLimit: 1,
   // reduce this if memory usage is too high
   asyncCompareLimit: 50,
 });
