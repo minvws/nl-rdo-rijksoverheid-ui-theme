@@ -1,0 +1,36 @@
+@use "sass:map";
+@use "../variables";
+@use "../colors/brands";
+
+$brand-map: brands.get-brand("green", variables.$enhance-contrast);
+
+:root {
+  --button-cta-background-color: #{map.get($brand-map, "background")};
+  --button-cta-text-color: #{map.get($brand-map, "text")};
+  --button-cta-border-color: #{map.get($brand-map, "background")};
+
+  /* Hover */
+  --button-cta-hover-background-color: #{map.get($brand-map, "highlight-background")};
+  --button-cta-hover-text-color: #{map.get($brand-map, "highlight-text")};
+  --button-cta-hover-border-color: #{map.get($brand-map, "highlight-background")};
+
+  /* Active */
+  --button-cta-active-background-color: #{map.get($brand-map, "highlight-background")};
+  --button-cta-active-text-color: #{map.get($brand-map, "highlight-text")};
+  --button-cta-active-border-color: #{map.get($brand-map, "highlight-background")};
+
+  /* Focus */
+  --button-cta-focus-background-color: #{map.get($brand-map, "background")};
+  --button-cta-focus-text-color: #{map.get($brand-map, "text")};
+  --button-cta-focus-border-color: #{map.get($brand-map, "background")};
+
+  /* Selected */
+  --button-cta-selected-background-color: #{map.get($brand-map, "highlight-background")};
+  --button-cta-selected-text-color: #{map.get($brand-map, "highlight-text")};
+  --button-cta-selected-border-color: #{map.get($brand-map, "highlight-background")};
+
+  /* Disabled */
+  --button-cta-disabled-background-color: #{map.get($brand-map, "dimmed-background")};
+  --button-cta-disabled-text-color: #{map.get($brand-map, "dimmed-text")};
+  --button-cta-disabled-border-color: #{map.get($brand-map, "dimmed-background")};
+}

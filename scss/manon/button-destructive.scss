@@ -1,0 +1,36 @@
+@use "sass:map";
+@use "../variables";
+@use "../colors/brands";
+
+$brand-map: brands.get-brand("red", variables.$enhance-contrast);
+
+:root {
+  --button-destructive-background-color: #{map.get($brand-map, "background")};
+  --button-destructive-text-color: #{map.get($brand-map, "text")};
+  --button-destructive-border-color: #{map.get($brand-map, "background")};
+
+  /* Hover */
+  --button-destructive-hover-background-color: #{map.get($brand-map, "highlight-background")};
+  --button-destructive-hover-text-color: #{map.get($brand-map, "highlight-text")};
+  --button-destructive-hover-border-color: #{map.get($brand-map, "highlight-background")};
+
+  /* Active */
+  --button-destructive-active-background-color: #{map.get($brand-map, "highlight-background")};
+  --button-destructive-active-text-color: #{map.get($brand-map, "highlight-text")};
+  --button-destructive-active-border-color: #{map.get($brand-map, "highlight-background")};
+
+  /* Focus */
+  --button-destructive-focus-background-color: #{map.get($brand-map, "background")};
+  --button-destructive-focus-text-color: #{map.get($brand-map, "text")};
+  --button-destructive-focus-border-color: #{map.get($brand-map, "background")};
+
+  /* Selected */
+  --button-destructive-selected-background-color: #{map.get($brand-map, "highlight-background")};
+  --button-destructive-selected-text-color: #{map.get($brand-map, "highlight-text")};
+  --button-destructive-selected-border-color: #{map.get($brand-map, "highlight-background")};
+
+  /* Disabled */
+  --button-destructive-disabled-background-color: #{map.get($brand-map, "dimmed-background")};
+  --button-destructive-disabled-text-color: #{map.get($brand-map, "dimmed-text")};
+  --button-destructive-disabled-border-color: #{map.get($brand-map, "dimmed-background")};
+}
