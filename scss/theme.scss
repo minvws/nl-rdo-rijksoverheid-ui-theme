@@ -5,12 +5,9 @@
 @use "fonts";
 @use "icons";
 
-/* Color sets */
-@use "colors/color-set-grey";
-@use "colors/ruby-red";
-@use "colors/colors";
-
-/* Rijksoverheid base set */
+/* Colors */
+@use "colors/base";
+@use "colors/brand";
 @use "colors/notifications";
 
 /* Styling for Manon components */
@@ -55,9 +52,10 @@
 @use "manon/accordion";
 @use "manon/button";
 @use "manon/button-ghost";
-@use "manon/collapsing-element";
-@use "manon/checkbox";
 @use "manon/button-to-top";
+@use "manon/checkbox";
+@use "manon/collapsing-element";
+@use "manon/code-block";
 @use "manon/form";
 @use "manon/form-input";
 @use "manon/form-textarea";
@@ -78,6 +76,7 @@
 @use "manon/notification-explanation";
 @use "manon/notification-system";
 @use "manon/icon";
+@use "manon/icon-only";
 @use "manon/radio";
 @use "manon/sidemenu";
 @use "manon/tabs";

@@ -122,13 +122,14 @@
 
 /* Button */
 @use "@minvws/manon/button-base";
-@use "@minvws/manon/button-container";
 @use "@minvws/manon/button-ghost";
 @use "@minvws/manon/button-destructive";
 @use "@minvws/manon/button-cta";
 @use "@minvws/manon/button-icon";
+@use "@minvws/manon/button-icon-only";
 @use "@minvws/manon/button-to-top";
 @use "@minvws/manon/button-round";
+@use "@minvws/manon/button-container";
 
 /* Form */
 @use "@minvws/manon/form-base";

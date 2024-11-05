@@ -1,0 +1,83 @@
+name: CI
+
+on:
+  pull_request:
+
+  push:
+    branches: [main]
+
+env:
+  REGISTRY: ghcr.io
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    name: Audit
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Audit dependencies
+        uses: ./.github/actions/setup
+        with:
+          NODE_AUTH_TOKEN: ${{ secrets.REPO_READ_ONLY_TOKEN }}
+          audit-level: moderate
+
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup dependencies
+        uses: ./.github/actions/setup
+        with:
+          NODE_AUTH_TOKEN: ${{ secrets.REPO_READ_ONLY_TOKEN }}
+      - name: Run linter
+        run: npm run lint
+        continue-on-error: true
+      - name: Check formatting
+        run: npm run format:check
+
+  visual-test:
+    name: Visual regression test
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      packages: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup dependencies
+        uses: ./.github/actions/setup
+        with:
+          NODE_AUTH_TOKEN: ${{ secrets.REPO_READ_ONLY_TOKEN }}
+      - name: Build docs
+        run: npm run build
+      - name: Log in to the Container registry
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Run visual regression test
+        run: npm run visual:test
+      - name: Generate job summary
+        uses: test-summary/action@v2
+        with:
+          paths: visual-test/ci_report/xunit.xml
+        if: ${{ always() && hashFiles('visual-test/ci_report/xunit.xml') }}
+      - name: Upload visual test report
+        uses: actions/upload-artifact@v4
+        with:
+          name: visual-test-report
+          path: |
+            visual-test/html_report/
+            visual-test/bitmaps_*/
+        if: ${{ always() && hashFiles('visual-test/html_report/index.html') }}

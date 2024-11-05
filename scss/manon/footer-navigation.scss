@@ -1,7 +1,7 @@
 /* Footer */
 
 :root {
-  --footer-navigation-link-text-color: #ffffff;
+  --footer-navigation-link-text-color: var(--brand-text-color);
   --footer-navigation-link-icon: var(--footer-link-icon);
   --footer-navigation-link-icon-font-size: var(--footer-link-icon-font-size);
 

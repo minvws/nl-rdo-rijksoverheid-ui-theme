@@ -1,7 +1,9 @@
 /* Meta */
 
+@use "../colors/palette";
+
 .page-meta {
-  background-color: var(--grey-1);
+  background-color: palette.$grey-50;
   width: 100%;
   display: flex;
   justify-content: flex-end;

@@ -67,6 +67,7 @@ npm install @minvws/manon @minvws/nl-rdo-rijksoverheid-ui-theme
 ## Usage
 
 There are three ways to use this theme:
+
 1. As a Manon theme (recommended)
 2. As Manon theme modules (not recommended)
 3. Standalone
@@ -203,11 +204,67 @@ cp node_modules/@minvws/nl-rdo-rijksoverheid-ui-theme/scss/manon/_index.scss scs
 );
 ```
 
+## Development
+
+To work on the theme itself, clone the git repo and run `npm install`.
+
+To run a development server, run `npm run dev`. This will perform a development build of the docs
+site, watch for changes, and run a local http server to serve the files.
+
+### Visual regression tests
+
+To run the visual regression tests, you will need docker and docker compose and you will need to
+[authenticate with the GitHub Container Registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry#authenticating-with-a-personal-access-token-classic):
+
+1. [Create a GitHub personal access token (classic) with scope `read:packages`](https://github.com/settings/tokens/new?scopes=read:packages&description=GitHub%20Container%20Registry%20Token).
+2. Run `docker login ghcr.io --username <username>`, substituting your GitHub username.
+3. In the password prompt, enter the personal access token you obtained form step 1.
+
+Once you are authenticated, you can run the visual regression tests:
+
+```sh
+npm install
+npm run visual:test
+```
+
+This will screenshot all test pages and report any visual differences from the preview reference
+screenshots. Run `npm run visual:report` to view the report, and if the differences are expected,
+run `npm run visual:approve` to update the reference screenshots. Ideally, commit the updated
+screenshots along with the changes that cause the visual differences.
+
+If there are any issues with the visual regression tests, you can try using `npm run
+visual:reference` to generate fresh reference images from scratch.
+
+## Publishing
+
+### Docs site production build
+
+The "github-pages" CI workflow publishes a production build of the docs to github pages from the
+`main` branch.
+
+To locally build the docs for production (e.g. to debug production issues), run `npm run build`.
+
+To run a local http server to preview the build, run `npm run preview`. This will serve the files in
+`html/`. NB: both the development and production builds output to `html/`, so you can only use one
+at a time.
+
+### Package for release
+
+To publish a release, tag a commit with a version number, ideally by drafting a new release via the
+[releases page](https://github.com/minvws/nl-rdo-rijksoverheid-ui-theme/releases) to add release
+notes. The "github-publish" CI workflow will take care of publishing the package.
+
+If you need to manually create a package, just running `npm pack` is enough, no build step is
+necessary.
+
 ## Contributing
+
 If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request on the GitHub repository of this package.
 
 ## License
+
 This package is open-source and released under the European Union Public License version 1.2. You are free to use, modify, and distribute the package in accordance with the terms of the license.
 
 ## Part of iCore
+
 This package is part of the iCore project.

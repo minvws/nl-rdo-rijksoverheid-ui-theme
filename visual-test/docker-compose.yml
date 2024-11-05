@@ -1,0 +1,27 @@
+name: rijksoverheid-ui-theme-visual
+
+services:
+  test:
+    profiles: [one-off]
+    extends: backstop_command
+    command: node visual-test/test.js
+
+  approve:
+    profiles: [one-off]
+    extends: backstop_command
+    command: node visual-test/approve.js
+
+  reference:
+    profiles: [one-off]
+    extends: backstop_command
+    command: node visual-test/reference.js
+
+  backstop_command:
+    image: ghcr.io/minvws/nl-rdo-rijksoverheid-ui-theme-visual-test:latest
+    shm_size: 512m
+    environment:
+      VISUAL_TEST_BASE_PATH: html
+      VISUAL_TEST_FILE_PATTERN: "test/**/*.html"
+    profiles: [never]
+    volumes: [..:/src]
+    working_dir: /src

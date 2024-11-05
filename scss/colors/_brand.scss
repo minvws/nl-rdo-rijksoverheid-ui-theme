@@ -1,0 +1,6 @@
+@use "../variables";
+@use "../mixins/brand" as mixin;
+
+:root {
+  @include mixin.color-vars(variables.$brand-color, variables.$enhance-contrast);
+}

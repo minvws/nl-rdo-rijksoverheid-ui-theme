@@ -1,4 +1,7 @@
 /* radio.scss */
+
+@use "../../colors/palette";
+
 @mixin radio-checkbox-styling($type) {
   input[type="#{$type}"] {
     vertical-align: top;
@@ -21,7 +24,7 @@
       border: 0.125rem solid black;
 
       &:disabled {
-        background-color: var(--grey-3);
+        background-color: palette.$grey-200;
         cursor: not-allowed;
       }
     }

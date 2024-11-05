@@ -1,47 +1,51 @@
 /* Button */
 
-:root {
+@mixin button-vars {
   /* Base */
-  --button-base-background-color: var(--ruby-red-background-color);
-  --button-base-text-color: var(--ruby-red-text-color);
+  --button-base-background-color: var(--brand-background-color);
+  --button-base-text-color: var(--brand-text-color);
   --button-base-border-width: 2px;
   --button-base-border-style: solid;
-  --button-base-border-color: var(--ruby-red-background-color);
+  --button-base-border-color: var(--brand-background-color);
   --button-base-min-width: 0;
 
   /* Hover */
-  --button-base-hover-background-color: var(--ruby-red-hover-background-color);
-  --button-base-hover-text-color: var(--ruby-red-hover-text-color);
+  --button-base-hover-background-color: var(--brand-highlight-background-color);
+  --button-base-hover-text-color: var(--brand-highlight-text-color);
+  --button-base-hover-border-color: var(--brand-highlight-background-color);
 
   /* Active */
-  --button-base-active-background-color: var(--ruby-red-active-background-color);
-  --button-base-active-text-color: var(--ruby-red-active-text-color);
-  --button-base-active-border-width: var(--button-base-border-width);
-  --button-base-active-border-style: var(--button-base-border-style);
-  --button-base-active-border-color: var(--ruby-red-active-background-color);
+  --button-base-active-background-color: var(--brand-highlight-background-color);
+  --button-base-active-text-color: var(--brand-highlight-text-color);
+  --button-base-active-border-width: 2px;
+  --button-base-active-border-style: solid;
+  --button-base-active-border-color: var(--brand-highlight-background-color);
 
   /* Focus */
   --button-base-focus-outline-style: dotted;
   --button-base-focus-outline-color: #000000;
   --button-base-focus-outline-width: 2px;
   --button-base-focus-outline-offset: 0;
-  --button-base-focus-background-color: var(--ruby-red-focus-background-color);
-  --button-base-focus-text-color: var(--ruby-red-focus-text-color);
-  --button-base-focus-border-width: var(--button-base-border-width);
-  --button-base-focus-border-style: var(--button-base-border-style);
-  --button-base-focus-border-color: var(--ruby-red-focus-background-color);
+  --button-base-focus-background-color: var(--brand-background-color);
+  --button-base-focus-text-color: var(--brand-text-color);
+  --button-base-focus-border-width: 2px;
+  --button-base-focus-border-style: solid;
+  --button-base-focus-border-color: var(--brand-background-color);
 
   /* Selected */
-  --button-base-selected-background-color: var(--ruby-red-selected-background-color);
-  --button-base-selected-text-color: var(--ruby-red-selected-text-color);
-  --button-base-selective-border-width: var(--button-base-border-width);
-  --button-base-selective-border-style: var(--button-base-border-style);
-  --button-base-selective-border-color: var(--ruby-red-selective-background-color);
+  --button-base-selected-background-color: var(--brand-highlight-background-color);
+  --button-base-selected-text-color: var(--brand-highlight-text-color);
+  --button-base-selected-border-width: 2px;
+  --button-base-selected-border-style: solid;
+  --button-base-selected-border-color: var(--brand-highlight-background-color);
 
   /* Disabled */
-  --button-base-disabled-background-color: var(--ruby-red-disabled-background-color);
-  --button-base-disabled-text-color: var(--ruby-red-disabled-text-color);
-  --button-base-disabled-border-width: var(--button-base-border-width);
-  --button-base-disabled-border-style: var(--button-base-border-style);
-  --button-base-disabled-border-color: var(--ruby-red-disabled-background-color);
+  --button-base-disabled-background-color: var(--brand-dimmed-background-color);
+  --button-base-disabled-text-color: var(--brand-dimmed-text-color);
+  --button-base-disabled-border-style: none;
+  --button-base-disabled-border-color: var(--brand-dimmed-background-color);
+}
+
+:root {
+  @include button-vars;
 }
