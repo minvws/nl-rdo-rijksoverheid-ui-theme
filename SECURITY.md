@@ -9,7 +9,7 @@ We would like to ask you to help us protect our users and our systems.
 
 Submit your findings via the Dutch Government GOV-CERT:
 
- <https://www.ncsc.nl/contact/kwetsbaarheid-melden>
+<https://www.ncsc.nl/contact/kwetsbaarheid-melden>
 
 And reference the "MinVWS/CIO-office, Rijksoverheid UI Theme (minvws/nl-rdo-rijksoverheid-ui-theme)" in your report.
 
