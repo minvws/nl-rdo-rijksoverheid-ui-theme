@@ -1,6 +1,6 @@
 {
   "name": "@minvws/nl-rdo-rijksoverheid-ui-theme",
-  "version": "unreleased",
+  "version": "0.0.0",
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
@@ -10,14 +10,12 @@
     "registry": "https://npm.pkg.github.com"
   },
   "files": [
-    "css",
+    "**/*.scss",
     "fonts",
     "img",
-    "scss",
-    "*.scss",
     "LICENSES",
-    "REUSE.toml",
-    "*.license"
+    "**/*.license",
+    "REUSE.toml"
   ],
   "type": "module",
   "scripts": {
