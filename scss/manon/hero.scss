@@ -1,5 +1,24 @@
 /* Hero */
 
 :root {
+  --hero-min-height: 30rem;
+  --hero-height: unset;
+  --hero-background-color: #01689b;
   --hero-title-text-color: #ffffff;
+
+  /* Content */
+  --hero-content-container-padding-top: 2rem;
+  --hero-content-container-padding-right: 2rem;
+  --hero-content-container-padding-bottom: 2rem;
+  --hero-content-container-padding-left: 2rem;
+  --hero-content-container-flex-direction: row;
+  --hero-content-container-justify-content: flex-start;
+  --hero-content-container-align-items: flex-start;
+  --hero-content-container-text-color: #fff;
+
+  /* List */
+  --hero-list-item-text-color: var(--hero-content-container-text-color);
+
+  /* Tile */
+  --hero-tile-list-item-text-color: var(--list-base-item-text-color);
 }
