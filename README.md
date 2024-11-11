@@ -256,3 +256,19 @@ notes. The "github-publish" CI workflow will take care of publishing the package
 
 If you need to manually create a package, just running `npm pack` is enough, no build step is
 necessary.
+
+## Contributing
+
+If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request on the GitHub repository of this package.
+
+## License
+
+This repository follows the
+[REUSE Specfication v3.2](https://reuse.software/spec-3.2/). The code is
+available under the EUPL-1.2 license, but the fonts and images are not. Please
+see [LICENSES/](./LICENSES), [REUSE.toml](./REUSE.toml) and the individual
+`*.license` files (if any) for copyright and license information.
+
+## Part of iCore
+
+This package is part of the iCore project.
