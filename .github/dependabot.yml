@@ -2,12 +2,6 @@
 
 version: 2
 
-registries:
-  npm-github:
-    type: npm-registry
-    url: "https://npm.pkg.github.com"
-    token: ${{ secrets.REPO_READ_ONLY_TOKEN }}
-
 updates:
   - package-ecosystem: "github-actions"
     directory: "/"
@@ -18,8 +12,6 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-    registries:
-      - npm-github
     groups:
       build:
         - copy-webpack-plugin
