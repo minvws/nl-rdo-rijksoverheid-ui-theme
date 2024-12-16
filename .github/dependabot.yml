@@ -14,24 +14,27 @@ updates:
       interval: "weekly"
     groups:
       build:
-        - copy-webpack-plugin
-        - css-loader
-        - mini-css-extract-plugin
-        - npm-run-all
-        - resolve-url-loader
-        - rimraf
-        - sass
-        - sass-loader
-        - "webpack-*"
-        - webpack
+        patterns:
+          - copy-webpack-plugin
+          - css-loader
+          - mini-css-extract-plugin
+          - npm-run-all
+          - resolve-url-loader
+          - rimraf
+          - sass
+          - sass-loader
+          - "webpack-*"
+          - webpack
       test:
-        - backstopjs
-        - fast-glob
-        - http-server
-        - serve-static
+        patterns:
+          - backstopjs
+          - fast-glob
+          - http-server
+          - serve-static
       lint:
-        - husky
-        - lint-staged
-        - prettier
-        - "stylelint-*"
-        - stylelint
+        patterns:
+          - husky
+          - lint-staged
+          - prettier
+          - "stylelint-*"
+          - stylelint
