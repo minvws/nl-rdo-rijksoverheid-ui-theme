@@ -3,7 +3,7 @@ description: "Setup node.js and install dependencies"
 
 inputs:
   NODE_AUTH_TOKEN:
-    description: Read-only token git GitHub Package Registry
+    description: Read-only token for GitHub Package Registry
     required: true
   audit-level:
     description: npm audit-level <info|low|moderate|high|ciritical|none>
@@ -18,9 +18,11 @@ runs:
         cache: "npm"
         node-version-file: ".nvmrc"
         registry-url: "https://npm.pkg.github.com"
+
     - name: Audit dependencies
       shell: sh
       run: npm audit --audit-level=${{ inputs.audit-level }}
+
     - name: Install dependencies
       shell: sh
       run: npm ci --ignore-scripts
