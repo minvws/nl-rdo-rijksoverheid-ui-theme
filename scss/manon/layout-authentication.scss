@@ -2,4 +2,8 @@
 
 :root {
   --layout-authentication-max-width: 50rem;
+  --layout-authentication-padding-top: var(--content-padding-top);
+  --layout-authentication-padding-right: var(--content-padding-right);
+  --layout-authentication-padding-bottom: var(--content-padding-bottom);
+  --layout-authentication-padding-left: var(--content-padding-left);
 }
