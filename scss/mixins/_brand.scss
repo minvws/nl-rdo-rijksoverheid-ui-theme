@@ -23,17 +23,7 @@ $props: (
 }
 
 @mixin color-vars($brand-color, $enhance-contrast: false) {
-  @if not map.has-key(brands.$brands, $brand-color) {
-    @warn "Unknown $brand-color \"#{$brand-color}\", falling back to \"ruby-red\"";
-
-    $brand-color: "ruby-red";
-  }
-
-  $brand-map: if(
-    $enhance-contrast,
-    map.get(brands.$brands-aaa, $brand-color),
-    map.get(brands.$brands, $brand-color)
-  );
+  $brand-map: brands.get-brand($brand-color, $enhance-contrast);
 
   @include color-vars-from-map($brand-map);
 }
