@@ -1,2 +1,5 @@
+# NB: the LAST match takes precedence.
+# See https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners#codeowners-syntax
+
 * @minvws/rdo-manon-codeowners
 .github/CODEOWNERS @minvws/irealisatie-operations
