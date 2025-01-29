@@ -1,2 +1,4 @@
-.github/CODEOWNERS @minvws/irealisatie-operations
+# The LAST matching line takes precedence.
+
 * @minvws/rdo-manon-codeowners
+.github/CODEOWNERS @minvws/irealisatie-operations
