@@ -52,6 +52,9 @@
   --header-navigation-link-hover-background-color: var(--brand-dimmed-background-color);
   --header-navigation-link-hover-text-color: var(--brand-dimmed-text-color);
 
+  /* Visited link hover */
+  --header-navigation-link-visited-hover-text-color: var(--brand-dimmed-text-color);
+
   /* Link focus */
   --header-navigation-link-focus-text-decoration: var(
     --header-navigation-link-hover-text-decoration
