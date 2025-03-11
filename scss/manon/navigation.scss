@@ -64,10 +64,10 @@ nav {
     &:hover::before {
       text-decoration-color: transparent;
       position: absolute;
-      top: 0;
+      top: 0.25rem;
       left: 0;
       display: inline-flex;
-      align-items: center;
+      align-items: flex-start;
       justify-self: center;
       height: 100%;
       line-height: 1;
