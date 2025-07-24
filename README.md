@@ -211,16 +211,16 @@ To work on the theme itself, clone the git repo and run `npm install`.
 To run a development server, run `npm run dev`. This will perform a development build of the docs
 site, watch for changes, and run a local http server to serve the files.
 
-### Visual regression tests
+### Visual tests
 
-To run the visual regression tests, you will need docker and docker compose and you will need to
+To run the visual tests, you will need docker and docker compose and you will need to
 [authenticate with the GitHub Container Registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry#authenticating-with-a-personal-access-token-classic):
 
 1. [Create a GitHub personal access token (classic) with scope `read:packages`](https://github.com/settings/tokens/new?scopes=read:packages&description=GitHub%20Container%20Registry%20Token).
 2. Run `docker login ghcr.io --username <username>`, substituting your GitHub username.
 3. In the password prompt, enter the personal access token you obtained form step 1.
 
-Once you are authenticated, you can run the visual regression tests:
+Once you are authenticated, you can run the visual tests:
 
 ```sh
 npm install
@@ -232,7 +232,7 @@ screenshots. Run `npm run visual:report` to view the report, and if the differen
 run `npm run visual:approve` to update the reference screenshots. Ideally, commit the updated
 screenshots along with the changes that cause the visual differences.
 
-If there are any issues with the visual regression tests, you can try using `npm run
+If there are any issues with the visual tests, you can try using `npm run
 visual:reference` to generate fresh reference images from scratch.
 
 ## Publishing

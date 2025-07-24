@@ -8,12 +8,12 @@ runTestServer(async ({ port, files }) => {
   const config = createBackstopConfig({ port, files });
   try {
     await backstop("test", { config });
-    console.log(bold, "\n✅ No visual regressions found.");
+    console.log(bold, "\n✅ No visual differences found.");
     console.log("Run 'npm run visual:report' for details.");
   } catch (_) {
     process.exitCode = 1;
-    console.log(bold, "\n❌ Visual regression test failed.");
+    console.log(bold, "\n❌ Visual differences found.");
     console.log("Run 'npm run visual:report' for details.");
-    console.log("Run 'npm run visual:approve' to mark visual changes as expected.");
+    console.log("Run 'npm run visual:approve' to mark visual differences as expected.");
   }
 });
