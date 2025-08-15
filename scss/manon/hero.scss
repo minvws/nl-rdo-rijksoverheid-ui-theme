@@ -5,6 +5,7 @@
   --hero-height: unset;
   --hero-background-color: #01689b;
   --hero-title-text-color: #ffffff;
+  --hero-margin-top: calc(var(--content-padding-top) * -1);
 
   /* Content */
   --hero-content-container-padding-top: 2rem;

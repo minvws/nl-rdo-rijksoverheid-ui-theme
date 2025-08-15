@@ -2,7 +2,7 @@
 
 :root {
   /* Page */
-  --page-whitespace-top: 0;
+  --page-whitespace-top: 3rem;
   --page-whitespace-right: 0;
   --page-whitespace-bottom: 0;
   --page-whitespace-left: 0;
@@ -12,9 +12,9 @@
   --content-justify-content: flex-start;
   --content-align-items: flex-start;
   --content-gap: 1.25rem;
-  --content-padding-top: 6rem;
+  --content-padding-top: 1.25rem;
   --content-padding-right: 3%;
-  --content-padding-bottom: 6rem;
+  --content-padding-bottom: 1.25rem;
   --content-padding-left: 3%;
   --content-max-width: 80rem;
 }
