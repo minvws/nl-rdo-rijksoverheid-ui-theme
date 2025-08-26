@@ -218,7 +218,7 @@ To run the visual regression tests, you will need docker and docker compose and 
 
 1. [Create a GitHub personal access token (classic) with scope `read:packages`](https://github.com/settings/tokens/new?scopes=read:packages&description=GitHub%20Container%20Registry%20Token).
 2. Run `docker login ghcr.io --username <username>`, substituting your GitHub username.
-3. In the password prompt, enter the personal access token you obtained form step 1.
+3. In the password prompt, enter the personal access token you obtained from step 1.
 
 Once you are authenticated, you can run the visual regression tests:
 
