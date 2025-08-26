@@ -5,7 +5,7 @@
   --hero-height: unset;
   --hero-background-color: #01689b;
   --hero-title-text-color: #ffffff;
-  --hero-margin-top: calc(var(--content-padding-top) * -1);
+  --hero-margin-top: calc(var(--page-whitespace-top) * -1);
 
   /* Content */
   --hero-content-container-padding-top: 2rem;
@@ -22,4 +22,8 @@
 
   /* Tile */
   --hero-tile-list-item-text-color: var(--list-base-item-text-color);
+  --hero-tile-background-color: transparent;
+  --hero-tile-border-width: 0;
+  --hero-tile-text-color: #fff;
+  --tile-title-font-size-text: 40px;
 }
