@@ -1,0 +1,15 @@
+/* Background color offset */
+
+:root {
+  --background-color-offset-padding-top: calc(var(--section-padding-top) + var(--main-gap));
+  --background-color-offset-padding-bottom: calc(var(--section-padding-bottom) + var(--main-gap));
+}
+
+// Layout overrides for background-color offset elements
+.hero + .background-color-offset {
+  margin: calc(var(--main-gap) * -1) 0 0 0;
+}
+
+main *:first-child.background-color-offset {
+  margin: calc(var(--main-padding-top) * -1) 0 0 0;
+}
