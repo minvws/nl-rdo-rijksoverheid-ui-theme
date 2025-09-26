@@ -12,12 +12,12 @@
 <body>
   <header>
     <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
-    <a href="" class="ro-logo">
+    <a href="" class="logo">
       <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
       Rijksoverheid
     </a>
 
-    <nav aria-label="Kruimelpad" class="breadcrumb-bar">
+    <nav aria-label="Hoofdnavigatie" id="main-nav">
       <div>
         <ul>
           <li><a href="../index.html"><span class="icon icon-home">Hoofdpagina icoon</span> Rijksoverheid CSS</a></li>
@@ -29,7 +29,7 @@
 
   <main id="main-content" tabindex="-1">
     <section>
-      <div>
+      <div class="content-wrapper">
         <h1>Online componenten bibliotheek</h1>
 
         <p>De online-componenten-bibliotheek bevat html-voorbeelden die gebruikt kunnen worden om webites te bouwen
@@ -41,7 +41,7 @@
     </section>
 
     <section class="background-color-offset">
-      <div>
+      <div class="content-wrapper">
         <h2>Beschikbare elementen</h2>
         <div class="column-3">
 
@@ -134,7 +134,7 @@
   </main>
 
   <footer>
-    <div class="two-thirds-one-third">
+    <div class="two-thirds-one-third content-wrapper">
       <span class="slogan">Manon - Rijksoverheid CSS framework</span>
       <nav aria-labelledby="service-heading">
         <h2 id="service-heading">Service</h2>

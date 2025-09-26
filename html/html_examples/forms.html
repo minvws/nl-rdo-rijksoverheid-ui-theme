@@ -14,12 +14,12 @@
 <body>
   <header>
     <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
-    <a href="" class="ro-logo">
+    <a href="" class="logo">
       <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
       Rijksoverheid
     </a>
 
-    <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
+    <nav aria-label="Hoofdnavigatie" id="main-nav">
       <div>
         <ul>
           <li><a href="../index.html"><span class="icon icon-home">Hoofdpagina icoon</span> Rijksoverheid CSS</a></li>
@@ -85,11 +85,11 @@
 
     <div>
       <article>
-        <div>
+        <div class="content-wrapper">
           <h1>Forms</h1>
           <p>Formulieren worden gebruikt om informatie op te vragen en te ontvangen van
             gebruikers.</p>
-          <div class="explanation">
+          <div class="explanation block-notification">
             <span>Toelichting:</span>
             <h1>Snelstart</h1>
             <p>In deze documentatie staan alle verschillende ondersteunde formulierelementen
@@ -148,17 +148,20 @@
 
         </div>
       </article>
+
       <article id="basic-form">
-        <div>
+        <div class="content-wrapper">
           <h1>Basisvoorbeeld formulier</h1>
           <p>Het basisvoorbeeld met een invoerveld en een verzendknop.</p>
 
           <h3>Voorbeeld</h3>
           <p>Visueel voorbeeld:</p>
           <form action="" method="post">
-            <label for="voorbeeld-text-input-1">Voorbeeld text input</label>
-            <input id="voorbeeld-text-input-1" name="voorbeeld-text-input-1" placeholder="voorbeeld text input"
+            <div>
+              <label for="voorbeeld-text-input-1">Voorbeeld text input</label>
+              <input id="voorbeeld-text-input-1" name="voorbeeld-text-input-1" placeholder="voorbeeld text input"
               type="text">
+            </div>
 
             <button type="submit">Verzend</button>
           </form>
@@ -167,10 +170,13 @@
           <pre>
 							<code>
 &lt;form action="" method="post">
-	&lt;label for="voorbeeld-text-input-1">Voorbeeld text input&lt;/label>
-	&lt;input id="voorbeeld-text-input-1" name="voorbeeld-text-input-1" placeholder="voorbeeld text input" type="text">
+  &lt;div>
+    &lt;label for="voorbeeld-text-input-1">Voorbeeld text input&lt;/label>
+    &lt;input id="voorbeeld-text-input-1" name="voorbeeld-text-input-1" placeholder="voorbeeld text input"
+    type="text">
+  &lt;/div>
 
-	&lt;button type="submit">Verzend&lt;/button>
+  &lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
 							</code>
 						</pre>
@@ -215,13 +221,13 @@
       </article>
 
       <article id="basic-form-column">
-        <div>
+        <div class="content-wrapper">
           <h1>Basisvoorbeeld formulier met kolommen</h1>
           <p>Het basisvoorbeeld met kolommen.</p>
 
           <p>Aandachtspunten:</p>
           <ul>
-            <li>Voeg de class <code>horizontal-view</code> toe aan de <code>&lt;form></code> om het
+            <li>Voeg de class <code>horizontal</code> toe aan de <code>&lt;form></code> om het
               formulier in twee kolommen weer te geven. Waar mogelijk zullen het label en het
               invoerveld naast elkaar worden geplaatst. Op smalle schermen worden de velden onder
               elkaar getoond.
@@ -233,7 +239,7 @@
 
           <h3>Voorbeeld</h3>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <div>
               <label for="voorbeeld-text-input-2">Voorbeeld text input</label>
               <input id="voorbeeld-text-input-2" name="voorbeeld-text-input-2" placeholder="voorbeeld text input"
@@ -246,7 +252,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
 	&lt;div>
 		&lt;label for="voorbeeld-text-input-2">Voorbeeld text input&lt;/label>
 		&lt;input id="voorbeeld-text-input-2" name="voorbeeld-text-input-2" placeholder="voorbeeld text input" type="text">
@@ -260,7 +266,7 @@
       </article>
 
       <article id="inline">
-        <div>
+        <div class="content-wrapper">
           <h1>Formulier zonder achtergrond</h1>
           <p>In sommige gevallen is er om technische redenen een formulier nodig rondom een knop maar
             is het niet nodig om deze visueel binnen een formulier te plaatsen. Voor die situaties is
@@ -291,7 +297,7 @@
       </article>
 
       <article id="fieldset">
-        <div>
+        <div class="content-wrapper">
           <h1>Invoervelden groeperen</h1>
           <p>Het groeperen van invoervelden binnen formulieren biedt de gebruiker structuur, context
             en overzicht. Ook geeft het gebruikers die gebruik maken van hulptechnologiën de
@@ -350,7 +356,7 @@
 
           <h3>Voorbeeld weergave in kolommen</h3>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <fieldset>
               <legend>Lorem ipsum</legend>
               <div>
@@ -371,7 +377,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
 	&lt;fieldset>
 		&lt;legend>Lorem ipsum&lt;/legend>
 			&lt;div>
@@ -392,7 +398,7 @@
       </article>
 
       <article id="form-required">
-        <div>
+        <div class="content-wrapper">
           <h1>Verplicht invoerveld</h1>
           <p>Voor velden die ingevuld dienen te zijn voordat het formulier verstuurd mag worden.</p>
           <p>Aandachtspunten:</p>
@@ -412,10 +418,12 @@
           <h3>Voorbeeld</h3>
           <p>Visueel voorbeeld:</p>
           <form action="" method="post">
-            <label for="text-form-username-1">Gebruikersnaam</label>
-            <span class="nota-bene">Dit veld is verplicht</span>
-            <input id="text-form-username-1" name="text-form-username-1" placeholder="gebruikersnaam"
-              title="Gebruikersnaam" type="text" required>
+            <div>
+              <label for="text-form-username-1">Gebruikersnaam</label>
+              <span class="nota-bene">Dit veld is verplicht</span>
+              <input id="text-form-username-1" name="text-form-username-1" placeholder="gebruikersnaam"
+                title="Gebruikersnaam" type="text" required>
+            </div>
 
             <button type="submit">Verzend</button>
           </form>
@@ -423,19 +431,22 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post">
-	&lt;label for="text-form-username-1">Gebruikersnaam&lt;/label>
-	&lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
-	&lt;input id="text-form-username-1" name="text-form-username-1" placeholder="gebruikersnaam" title="Gebruikersnaam" type="text" required>
+ &lt;form action="" method="post">
+  &lt;div>
+    &lt;label for="text-form-username-1">Gebruikersnaam&lt;/label>
+    &lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
+    &lt;input id="text-form-username-1" name="text-form-username-1" placeholder="gebruikersnaam"
+      title="Gebruikersnaam" type="text" required>
+  &lt;/div>
 
-	&lt;button type="submit">Verzend&lt;/button>
+  &lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
 							</code>
 						</pre>
 
           <h3>Voorbeeld weergave in kolommen</h3>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <div>
               <label for="text-form-username-2">Gebruikersnaam</label>
               <div class="required">
@@ -451,7 +462,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
 	&lt;div>
 		&lt;label for="text-form-username-2">Gebruikersnaam&lt;/label>
 		&lt;div class="required">
@@ -468,7 +479,7 @@
       </article>
 
       <article id="form-elements">
-        <div>
+        <div class="content-wrapper">
           <h1>Formulier-elementen</h1>
           <p>Formulieren worden opgebouwd uit verschillende invoervelden.</p>
 
@@ -491,7 +502,7 @@
       </article>
 
       <article id="form-input-field">
-        <div>
+        <div class="content-wrapper">
           <h1>Invoerveld</h1>
           <p>Invoervelden worden gebruikt voor het vragen van korte informatie.</p>
 
@@ -518,7 +529,7 @@
 
           <h3>Voorbeeld weergave in kolommen</h3>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <div>
               <label for="voorbeeld-invoerveld-2">Voorbeeld invoerveld</label>
               <input id="voorbeeld-invoerveld-2" name="voorbeeld-invoerveld-2" placeholder="voorbeeld invoerveld"
@@ -530,7 +541,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
 	&lt;div>
 		&lt;label for="voorbeeld-invoerveld-2">Voorbeeld invoerveld&lt;/label>
 		&lt;input id="voorbeeld-invoerveld-2" name="voorbeeld-invoerveld-2" placeholder="voorbeeld invoerveld" type="text">
@@ -544,7 +555,7 @@
       </article>
 
       <article id="form-input-field-required">
-        <div>
+        <div class="content-wrapper">
           <h1>Verplicht invoerveld</h1>
           <p>Voor invoervelden die ingevuld dienen te zijn voordat het formulier verstuurd kan
             worden.</p>
@@ -585,7 +596,7 @@
           </ul>
 
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <div class="required">
               <label for="voorbeeld-verplicht-invoerveld-2">Voorbeeld invoerveld</label>
               <div>
@@ -600,7 +611,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
 	&lt;div class="required">
 		&lt;label for="voorbeeld-verplicht-invoerveld-2">Voorbeeld invoerveld&lt;/label>
 		&lt;div>
@@ -617,7 +628,7 @@
       </article>
 
       <article id="form-date">
-        <div>
+        <div class="content-wrapper">
           <h1>Datum</h1>
           <p>Het invoerveld specifiek voor het vragen van data.</p>
 
@@ -662,7 +673,7 @@
 
           <h3>Datumveld weergave in kolommen</h3>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <div>
               <label for="voorbeeld-date-3">Datum</label>
               <input id="voorbeeld-date-3" name="voorbeeld-date-3" type="date">
@@ -673,7 +684,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
 	&lt;div>
 		&lt;label for="date-1">Datum&lt;/label>
 		&lt;input id="date-1" name="date-1" type="date">
@@ -686,7 +697,7 @@
 
           <h3>Verplicht datumveld weergave in kolommen</h3>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <div>
               <label for="voorbeeld-date-4">Datum</label>
               <div class="required">
@@ -700,7 +711,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
 	&lt;div>
 		&lt;label for="date-1">Datum&lt;/label>
 		&lt;div class="required">
@@ -814,7 +825,7 @@
 
           <h3>Datumvelden gecombineerde horizontale weergave in kolommen</h3>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view help">
+          <form action="" method="post" class="horizontal help">
             <fieldset>
               <legend>Periode</legend>
 
@@ -835,7 +846,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view help">
+&lt;form action="" method="post" class="horizontal help">
 	&lt;fieldset class="column-2">
 		&lt;legend>Periode&lt;/legend>
 
@@ -858,7 +869,7 @@
 
           <h3>Verplichte datumvelden gecombineerde horizontale weergave in kolommen</h3>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view help">
+          <form action="" method="post" class="horizontal help">
             <fieldset class="required">
               <legend>Periode</legend>
               <span class="nota-bene">Dit veld is verplicht</span>
@@ -882,7 +893,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view help">
+&lt;form action="" method="post" class="horizontal help">
   &lt;fieldset class="required">
     &lt;legend>Periode&lt;/legend>
     &lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
@@ -908,7 +919,7 @@
       </article>
 
       <article id="form-email">
-        <div>
+        <div class="content-wrapper">
           <h1>E-mail</h1>
           <p>Het invoerveld specifiek voor het vragen van e-mailadressen</p>
           <p>Aandachtspunten:</p>
@@ -942,7 +953,7 @@
 
           <h3>Voorbeeld weergave in kolommen</h3>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <div>
               <label for="voorbeeld-e-mailadres-2">Voorbeeld e-mailadres</label>
               <input id="voorbeeld-e-mailadres-2" name="voorbeeld-e-mailadres-2" placeholder="mail@example.com"
@@ -954,7 +965,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
 	&lt;div>
 		&lt;label for="voorbeeld-e-mailadres-2">Voorbeeld e-mailadres&lt;/label>
 		&lt;input id="voorbeeld-e-mailadres-2" name="voorbeeld-e-mailadres-2" placeholder="mail@example.com" type="email">
@@ -968,7 +979,7 @@
       </article>
 
       <article id="form-phone-number">
-        <div>
+        <div class="content-wrapper">
           <h1>Telefoonnummer</h1>
           <p>Het invoerveld specifiek voor het vragen van telefoonnummers</p>
           <p>Aandachtspunten:</p>
@@ -1015,7 +1026,7 @@
 
           <h3>Voorbeeld weergave in kolommen</h3>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <div>
               <label for="voorbeeld-phonenumber-2">Telefoonnummer</label>
               <input id="voorbeeld-phonenumber-2" pattern="[0-9]{10}" name="voorbeeld-phonenumber-2"
@@ -1028,7 +1039,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
 	&lt;div>
 		&lt;label for="voorbeeld-phonenumber-2">Telefoonnummer&lt;/label>
 		&lt;input id="voorbeeld-phonenumber-2" pattern="[0-9]{10}" name="voorbeeld-phonenumber-2" placeholder="e.g 0612345678" type="tel">
@@ -1041,9 +1052,8 @@
         </div>
       </article>
 
-
       <article id="form-text-area">
-        <div>
+        <div class="content-wrapper">
           <h1>Tekstveld</h1>
           <p>Tekstvelden kunnen toegevoegd worden zodat gebruikers berichten kunnen achterlaten.</p>
           <p>Aandachtspunten:</p>
@@ -1090,8 +1100,8 @@
 
           <h3>Voorbeeld weergave in kolommen</h3>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view">
-            <div>
+          <form action="" method="post" class="horizontal">
+            <div class="form-group">
               <label for="voorbeeld-tekstveld-2">Bericht</label>
               <textarea id="voorbeeld-tekstveld-2" name="voorbeeld-tekstveld-2" placeholder="Jouw vraag of opmerking"
                 rows="5"></textarea>
@@ -1103,8 +1113,8 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
-	&lt;div>
+&lt;form action="" method="post" class="horizontal">
+	&lt;div class="form-group">
 		&lt;label for="voorbeeld-tekstveld-2">Bericht&lt;/label>
 		&lt;textarea id="voorbeeld-tekstveld-2" name="voorbeeld-tekstveld-2" placeholder="Jouw vraag of opmerking">&lt;/textarea>
 	&lt;/div>
@@ -1117,7 +1127,7 @@
       </article>
 
       <article id="form-checkbox">
-        <div>
+        <div class="content-wrapper">
           <h1>Selectievak</h1>
           <p>Selectievakken geven de gebruiker de mogelijkheid om voorkeuren en/of goedkeuring aan te
             geven.</p>
@@ -1177,16 +1187,16 @@
           <h3>Voorbeeld weergave in kolommen</h3>
           <p>Visueel voorbeeld:</p>
           <ul>
-            <li>Voeg de class <code>horizontal-view</code> toe aan de <code>&lt;form></code> voor de
+            <li>Voeg de class <code>horizontal</code> toe aan de <code>&lt;form></code> voor de
               weergave in kolommen. Selectievakken worden hiermee uitgelijnd met de overige
               invoervelden.
             </li>
           </ul>
 
-          <form action="" method="post" class="horizontal-view">
-            <div class="checkbox">
-              <input type="checkbox" id="checkbox-example-base-horizontal-view" name="standaard-checkbox">
-              <label for="checkbox-example-base-horizontal-view">Lorem ipsum dolor set amet</label>
+          <form action="" method="post" class="horizontal">
+            <div class="checkbox" >
+              <input type="checkbox" id="checkbox-example-base-horizontal" name="standaard-checkbox">
+              <label for="checkbox-example-base-horizontal">Lorem ipsum dolor set amet</label>
             </div>
 
             <button type="submit">Verzend</button>
@@ -1195,10 +1205,10 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
 	&lt;div class="checkbox">
-		&lt;input type="checkbox" id="checkbox-example-base-horizontal-view" name="standaard-checkbox">
-		&lt;label for="checkbox-example-base-horizontal-view">Lorem ipsum dolor set amet&lt;/label>
+		&lt;input type="checkbox" id="checkbox-example-base-horizontal" name="standaard-checkbox">
+		&lt;label for="checkbox-example-base-horizontal">Lorem ipsum dolor set amet&lt;/label>
 	&lt;/div>
 
 	&lt;button type="submit">Verzend&lt;/button>
@@ -1235,10 +1245,10 @@
 
           <h3>Voorbeeld weergave in kolommen</h3>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <div class="checkbox">
-              <input type="checkbox" id="checkbox-example-checked-horizontal-view" name="checked-checkbox" checked>
-              <label for="checkbox-example-checked-horizontal-view">Lorem ipsum dolor set amet</label>
+              <input type="checkbox" id="checkbox-example-checked-horizontal" name="checked-checkbox" checked>
+              <label for="checkbox-example-checked-horizontal">Lorem ipsum dolor set amet</label>
             </div>
 
             <button type="submit">Verzend</button>
@@ -1247,10 +1257,10 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">>
+&lt;form action="" method="post" class="horizontal">>
 	&lt;div class="checkbox">
-		&lt;input type="checkbox" id="checkbox-example-checked-horizontal-view" name="checked-checkbox" checked>
-		&lt;label for="checkbox-example-checked-horizontal-view">Lorem ipsum dolor set amet&lt;/label>
+		&lt;input type="checkbox" id="checkbox-example-checked-horizontal" name="checked-checkbox" checked>
+		&lt;label for="checkbox-example-checked-horizontal">Lorem ipsum dolor set amet&lt;/label>
 	&lt;/div>
 
 	&lt;button type="submit">Verzend&lt;/button>
@@ -1292,12 +1302,12 @@
           <h3>Voorbeeld weergave in kolommen</h3>
           <p>Visueel voorbeeld:</p>
 
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <div class="option-group required">
               <span class="nota-bene">Dit veld is verplicht</span>
               <div class="checkbox ">
-                <input type="checkbox" id="checkbox-example-required-horizontal-view" name="verplicht" required>
-                <label for="checkbox-example-required-horizontal-view">verplicht selectievak</label>
+                <input type="checkbox" id="checkbox-example-required-horizontal" name="verplicht" required>
+                <label for="checkbox-example-required-horizontal">verplicht selectievak</label>
               </div>
             </div>
             <button type="submit">Verzend</button>
@@ -1306,12 +1316,12 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
   &lt;div class="option-group required">
     &lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
     &lt;div class="checkbox ">
-      &lt;input type="checkbox" id="checkbox-example-required-horizontal-view" name="verplicht" required>
-      &lt;label for="checkbox-example-required-horizontal-view">verplicht selectievak&lt;/label>
+      &lt;input type="checkbox" id="checkbox-example-required-horizontal" name="verplicht" required>
+      &lt;label for="checkbox-example-required-horizontal">verplicht selectievak&lt;/label>
     &lt;/div>
   &lt;/div>
   &lt;button type="submit">Verzend&lt;/button>
@@ -1345,10 +1355,10 @@
 
           <h3>Voorbeeld weergave in kolommen</h3>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <div class="checkbox">
-              <input type="checkbox" id="checkbox-example-disabled-horizontal-view" name="disabled-checkbox" disabled>
-              <label for="checkbox-example-disabled-horizontal-view">Lorem ipsum dolor set
+              <input type="checkbox" id="checkbox-example-disabled-horizontal" name="disabled-checkbox" disabled>
+              <label for="checkbox-example-disabled-horizontal">Lorem ipsum dolor set
                 amet</label>
             </div>
             <button type="submit">Verzend</button>
@@ -1357,10 +1367,10 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
 	&lt;div class="checkbox">
-		&lt;input type="checkbox" id="checkbox-example-disabled-horizontal-view" name="disabled-checkbox" disabled>
-		&lt;label for="checkbox-example-disabled-horizontal-view">Lorem ipsum dolor set amet&lt;/label>
+		&lt;input type="checkbox" id="checkbox-example-disabled-horizontal" name="disabled-checkbox" disabled>
+		&lt;label for="checkbox-example-disabled-horizontal">Lorem ipsum dolor set amet&lt;/label>
 	&lt;/div>
 	&lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
@@ -1444,30 +1454,30 @@
 
           <h3>Voorbeeld weergave in kolommen</h3>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <fieldset>
               <legend>Examples</legend>
               <div class="checkbox">
-                <input type="checkbox" id="checkbox-example-list-horizontal-view-1" name="standaard-checkbox">
-                <label for="checkbox-example-list-horizontal-view-1">Lorem ipsum dolor set
+                <input type="checkbox" id="checkbox-example-list-horizontal-1" name="standaard-checkbox">
+                <label for="checkbox-example-list-horizontal-1">Lorem ipsum dolor set
                   amet</label>
               </div>
 
               <div class="checkbox">
-                <input type="checkbox" id="checkbox-example-list-horizontal-view-2" name="standaard-checkbox">
-                <label for="checkbox-example-list-horizontal-view-2">Lorem ipsum dolor set
+                <input type="checkbox" id="checkbox-example-list-horizontal-2" name="standaard-checkbox">
+                <label for="checkbox-example-list-horizontal-2">Lorem ipsum dolor set
                   amet</label>
               </div>
 
               <div class="checkbox">
-                <input type="checkbox" id="checkbox-example-list-horizontal-view-3" name="standaard-checkbox">
-                <label for="checkbox-example-list-horizontal-view-3">Lorem ipsum dolor set
+                <input type="checkbox" id="checkbox-example-list-horizontal-3" name="standaard-checkbox">
+                <label for="checkbox-example-list-horizontal-3">Lorem ipsum dolor set
                   amet</label>
               </div>
 
               <div class="checkbox">
-                <input type="checkbox" id="checkbox-example-list-horizontal-view-4" name="standaard-checkbox">
-                <label for="checkbox-example-list-horizontal-view-4">Lorem ipsum dolor set
+                <input type="checkbox" id="checkbox-example-list-horizontal-4" name="standaard-checkbox">
+                <label for="checkbox-example-list-horizontal-4">Lorem ipsum dolor set
                   amet</label>
               </div>
             </fieldset>
@@ -1478,27 +1488,27 @@
 
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
 	&lt;fieldset>
 		&lt;legend>Examples&lt;/legend>
 		&lt;div class="checkbox">
-			&lt;input type="checkbox" id="checkbox-example-list-horizontal-view-1" name="standaard-checkbox">
-			&lt;label for="checkbox-example-list-horizontal-view-1">Lorem ipsum dolor set amet&lt;/label>
+			&lt;input type="checkbox" id="checkbox-example-list-horizontal-1" name="standaard-checkbox">
+			&lt;label for="checkbox-example-list-horizontal-1">Lorem ipsum dolor set amet&lt;/label>
 		&lt;/div>
 
 		&lt;div class="checkbox">
-			&lt;input type="checkbox" id="checkbox-example-list-horizontal-view-2" name="standaard-checkbox">
-			&lt;label for="checkbox-example-list-horizontal-view-2">Lorem ipsum dolor set amet&lt;/label>
+			&lt;input type="checkbox" id="checkbox-example-list-horizontal-2" name="standaard-checkbox">
+			&lt;label for="checkbox-example-list-horizontal-2">Lorem ipsum dolor set amet&lt;/label>
 		&lt;/div>
 
 		&lt;div class="checkbox">
-			&lt;input type="checkbox" id="checkbox-example-list-horizontal-view-3" name="standaard-checkbox">
-			&lt;label for="checkbox-example-list-horizontal-view-3">Lorem ipsum dolor set amet&lt;/label>
+			&lt;input type="checkbox" id="checkbox-example-list-horizontal-3" name="standaard-checkbox">
+			&lt;label for="checkbox-example-list-horizontal-3">Lorem ipsum dolor set amet&lt;/label>
 		&lt;/div>
 
 		&lt;div class="checkbox">
-			&lt;input type="checkbox" id="checkbox-example-list-horizontal-view-4" name="standaard-checkbox">
-			&lt;label for="checkbox-example-list-horizontal-view-4">Lorem ipsum dolor set amet&lt;/label>
+			&lt;input type="checkbox" id="checkbox-example-list-horizontal-4" name="standaard-checkbox">
+			&lt;label for="checkbox-example-list-horizontal-4">Lorem ipsum dolor set amet&lt;/label>
 		&lt;/div>
 	&lt;/fieldset>
 	&lt;button type="submit">Verzend&lt;/button>
@@ -1509,7 +1519,7 @@
           <h3>Voorbeeld in twee kolommen</h3>
           <p>Visueel voorbeeld:</p>
 
-          <form action="" method="post" class="horizontal-view ">
+          <form action="" method="post" class="horizontal">
             <fieldset>
               <legend>Examples</legend>
               <div class="column-2">
@@ -1541,7 +1551,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 			         		<code>
-&lt;form action="" method="post" class="horizontal-view ">
+&lt;form action="" method="post" class="horizontal">
   &lt;fieldset>
     &lt;legend>Examples&lt;/legend>
     &lt;div class="column-2">
@@ -1573,7 +1583,7 @@
 
           <h3>Voorbeeld in drie kolommen</h3>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view ">
+          <form action="" method="post" class="horizontal">
             <fieldset>
               <legend>Examples</legend>
               <div class="column-3">
@@ -1599,7 +1609,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view ">
+&lt;form action="" method="post" class="horizontal">
   &lt;fieldset>
     &lt;legend>Examples&lt;/legend>
     &lt;div class="column-3">
@@ -1627,7 +1637,7 @@
       </article>
 
       <article id="form-color">
-        <div>
+        <div class="content-wrapper">
           <h1>Kleurselector</h1>
           <p>Het kleur-invoerveld geeft de mogelijkheid de gebruiker een kleur te laten
             selecteren.</p>
@@ -1670,7 +1680,7 @@
 
           <h3>Voorbeeld weergave in kolommen</h3>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <div>
               <label for="color-input-2">Selecteer de gewenste kleur</label>
               <input id="color-input-2" name="color-input-2" type="color" value="#ffffff">
@@ -1682,7 +1692,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
 	&lt;div>
 		&lt;label for="color-input">Selecteer de gewenste kleur&lt;/label>
 		&lt;input id="color-input" name="color-input" type="color" value="#ffffff">
@@ -1696,7 +1706,7 @@
       </article>
 
       <article id="combined-form-fields">
-        <div>
+        <div class="content-wrapper">
           <h1>Gecombineerde formuliervelden</h1>
           <p>Het kan in sommige gevallen gebruiksvriendelijker zijn als bij elkaar horende
             formuliervelden opdezelfde regel staan. Er kan daarom gebruik gemaakt worden van de
@@ -1759,7 +1769,7 @@
 						</pre>
 
           <p>Visueel voorbeeld binnen horizontaal uitgelijnd formulier:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <fieldset>
               <legend>Voorbeelden</legend>
 
@@ -1783,7 +1793,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
   &lt;fieldset>
     &lt;legend>Voorbeelden&lt;/legend>
 
@@ -1863,7 +1873,7 @@
 
 
           <p>Visueel voorbeeld binnen horizontaal uitgelijnd formulier:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <fieldset>
               <legend>Voorbeelden</legend>
 
@@ -1893,7 +1903,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
   &lt;fieldset>
     &lt;legend>Voorbeelden&lt;/legend>
 
@@ -1925,7 +1935,7 @@
       </article>
 
       <article id="form-with-validation">
-        <div>
+        <div class="content-wrapper">
           <h1>Formulier met validatie</h1>
           <p>Bij sommige invoervelden is het belangrijk om de inhoud te valideren aan de hand van een
             vooraf bepaald patroon.</p>
@@ -2009,7 +2019,7 @@
 
           <h3>Voorbeeld weergave in kolommen</h3>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <div>
               <label for="text-form-username-4">Gebruikersnaam</label>
               <div>
@@ -2030,7 +2040,7 @@
           <p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
 	&lt;div>
 		&lt;label for="text-form-username-4">Gebruikersnaam&lt;/label>
 		&lt;div>
@@ -2104,7 +2114,7 @@
 
           <h3>Voorbeeld weergave in kolommen</h3>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <div>
               <label for="text-form-password-2">Wachtwoord</label>
               <div>
@@ -2125,7 +2135,7 @@
           <p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
 	&lt;div>
 		&lt;label for="text-form-password-2">Wachtwoord&lt;/label>
 		&lt;div>
@@ -2149,7 +2159,7 @@
       </article>
 
       <article id="form-messages">
-        <div>
+        <div class="content-wrapper">
           <h1>Berichten en meldingen</h1>
           <p>Om de gebruiker van de nodige feedback en uitleg te voorzien kan gebruik gemaakt worden
             van meldingen binnen het formulier.</p>
@@ -2208,7 +2218,7 @@
 
           <h3>Voorbeeld weergave in kolommen</h3>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view" aria-describedby="form-2-message">
+          <form action="" method="post" class="horizontal" aria-describedby="form-2-message">
             <p class="explanation" id="form-2-message"><span>Toelichting:</span> Lorem ipsum dolor set
               amet</p>
           </form>
@@ -2216,7 +2226,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view" aria-describedby="form-2-message">
+&lt;form action="" method="post" class="horizontal" aria-describedby="form-2-message">
 	&lt;p class="explanation" id="form-2-message">&lt;span>Toelichting:&lt;/span> Lorem ipsum dolor set amet&lt;/p>
 &lt;/form>
 							</code>
@@ -2309,7 +2319,7 @@
 
           <h3>Voorbeeld weergave in kolommen</h3>
           <p>Visuele voorbeelden:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <div>
               <label for="voorbeeld-text-input-error-2">Voorbeeld invoerveld foutmelding</label>
               <div>
@@ -2352,7 +2362,7 @@
           <p>Html-voorbeelden:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
 	&lt;div>
 		&lt;label for="voorbeeld-text-input-error-2">Voorbeeld invoerveld foutmelding&lt;/label>
 		&lt;div>
@@ -2521,7 +2531,7 @@
 
           <h3>Voorbeeld weergave in kolommen</h3>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <div>
               <label for="voorbeeld-text-input-error-4">Voorbeeld invoerveld foutmelding</label>
               <div>
@@ -2563,7 +2573,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
 	&lt;div>
 		&lt;label for="voorbeeld-text-input-error-4">Voorbeeld invoerveld foutmelding&lt;/label>
 		&lt;div>
@@ -2661,7 +2671,7 @@
 
           <h3>Voorbeeld weergave in kolommen</h3>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <div>
               <label for="voorbeeld-text-input-warning-6">Voorbeeld invoerveld waarschuwing</label>
               <div>
@@ -2680,7 +2690,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
 	&lt;div>
 		&lt;label for="voorbeeld-text-input-warning-6">Voorbeeld invoerveld waarschuwing&lt;/label>
 		&lt;div>
@@ -2748,7 +2758,7 @@
 
           <h3>Voorbeeld weergave in kolommen</h3>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <div>
               <label for="voorbeeld-text-input-error-6">Voorbeeld invoerveld foutmelding</label>
               <div>
@@ -2767,7 +2777,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
 	&lt;div>
 		&lt;label for="voorbeeld-text-input-error-6">Voorbeeld invoerveld foutmelding&lt;/label>
 		&lt;div>
@@ -2832,7 +2842,7 @@
 
           <h3>Voorbeeld weergave in kolommen</h3>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <div>
               <label for="voorbeeld-text-input-explanation-6">Voorbeeld invoerveld toelichting</label>
               <div>
@@ -2851,7 +2861,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
 	&lt;div>
 		&lt;label for="voorbeeld-text-input-explanation-6">Voorbeeld invoerveld toelichting&lt;/label>
 		&lt;div>
@@ -2916,7 +2926,7 @@
 
           <h4>Voorbeeld weergave in kolommen</h4>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <div class="option-group">
               <div class="checkbox">
                 <input type="checkbox" id="checkbox-example-default-4" name="standaard-checkbox"
@@ -2932,7 +2942,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
   &lt;div class="option-group">
     &lt;div class="checkbox">
       &lt;input type="checkbox" id="checkbox-example-default-4" name="standaard-checkbox"
@@ -2985,7 +2995,7 @@
 						</pre>
 
           <h4>Voorbeeld weergave in kolommen</h4>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <div class="option-group required">
               <span class="nota-bene">Dit veld is verplicht</span>
               <div class="checkbox">
@@ -3002,7 +3012,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
   &lt;div class="option-group required">
     &lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
     &lt;div class="checkbox">
@@ -3075,7 +3085,7 @@
 
           <h4>Voorbeeld weergave in kolommen</h4>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <fieldset class="grouped-choice-list" aria-invalid="true">
               <legend>Lorem ipsum</legend>
               <div aria-describedby="checkbox-error-message-10">
@@ -3104,7 +3114,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
   &lt;fieldset class="grouped-choice-list" aria-invalid="true">
     &lt;legend>Lorem ipsum&lt;/legend>
     &lt;div aria-describedby="checkbox-error-message-10">
@@ -3200,7 +3210,7 @@
 
           <h4>Voorbeeld weergave in kolommen</h4>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <fieldset class="grouped-choice-list">
               <legend>Lorem ipsum</legend>
               <div class="checkbox">
@@ -3238,7 +3248,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
   &lt;fieldset class="grouped-choice-list">
     &lt;legend>Lorem ipsum&lt;/legend>
     &lt;div class="checkbox">
@@ -3313,7 +3323,7 @@
 
           <h4>Voorbeeld weergave in kolommen</h4>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <div class="option-group">
               <div class="radio">
                 <input type="radio" id="radio-example-default-2" name="standaard-radiobutton" value="value"
@@ -3330,7 +3340,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
   &lt;div class="option-group">
     &lt;div class="radio">
       &lt;input type="radio" id="radio-example-default-2" name="standaard-radiobutton" value="value"
@@ -3393,7 +3403,7 @@
 						</pre>
 
           <h4>Voorbeeld weergave in kolommen</h4>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <div class="option-group required">
               <span class="nota-bene">Dit veld is verplicht</span>
               <div class="radio">
@@ -3411,7 +3421,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
   &lt;div class="option-group required">
     &lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
     &lt;div class="radio">
@@ -3489,7 +3499,7 @@
 
           <h4>Voorbeeld weergave in kolommen</h4>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <fieldset class="grouped-choice-list" aria-describedby="radio-1-list-message" aria-invalid="true">
               <legend>Lorem ipsum</legend>
               <div>
@@ -3516,7 +3526,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
 	&lt;fieldset
 		class="grouped-choice-list"
 		aria-describedby="radio-1-list-message"
@@ -3637,7 +3647,7 @@
 
           <h4>Voorbeeld weergave in kolommen</h4>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <fieldset class="grouped-choice-list">
               <legend>Lorem ipsum</legend>
               <div>
@@ -3675,7 +3685,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
 	&lt;fieldset class="grouped-choice-list">
 		&lt;legend>Lorem ipsum&lt;/legend>
 		&lt;div>
@@ -3796,7 +3806,7 @@
           <h4>Voorbeeld weergave in kolommen</h4>
           <p>Visueel voorbeeld:</p>
 
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <div>
               <label for="single-select-3">Single select</label>
               <div>
@@ -3834,7 +3844,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
 	&lt;!-- Message above -->
 
 	&lt;div>
@@ -3880,7 +3890,7 @@
       </article>
 
       <article id="form-message-help">
-        <div>
+        <div class="content-wrapper">
           <h1>Ingeklapte hulpteksten</h1>
           <p>Voor het geven van extra toelichting op een invoerveld die niet voor iedere gebruiker
             nodig zal zijn, kan het beste gekozen worden voor de ingeklapte variant. Bij deze weergave
@@ -3977,7 +3987,7 @@
           <h4>Voorbeeld weergave in kolommen</h4>
           <p>Visueel voorbeeld:</p>
 
-          <form action="" method="post" class="horizontal-view help">
+          <form action="" method="post" class="horizontal help">
             <div>
               <label for="voorbeeld-text-input-met-hulptekst-kolommen-1">Voorbeeld text input</label>
               <div>
@@ -3997,7 +4007,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view help">
+&lt;form action="" method="post" class="horizontal help">
 	&lt;div>
 		&lt;label for="voorbeeld-text-input-met-hulptekst-kolommen-1">Voorbeeld text input&lt;/label>
 		&lt;div>
@@ -4069,7 +4079,7 @@
           <h4>Voorbeeld verplicht veld met ingeklapte hulptekst weergave in kolommen</h4>
           <p>Visueel voorbeeld:</p>
 
-          <form action="" method="post" class="horizontal-view help">
+          <form action="" method="post" class="horizontal help">
             <div class="required">
               <label for="voorbeeld-text-input-met-hulptekst-kolommen-2">Voorbeeld text input</label>
               <div>
@@ -4092,7 +4102,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view help">
+&lt;form action="" method="post" class="horizontal help">
   &lt;div class="required">
     &lt;label for="voorbeeld-text-input-met-hulptekst-kolommen-2">Voorbeeld text input&lt;/label>
     &lt;div>
@@ -4116,7 +4126,7 @@
       </article>
 
       <article id="form-radio-select">
-        <div>
+        <div class="content-wrapper">
           <h1>Radio-selecteerknop</h1>
           <p>Radio-selecteerknoppen geven de gebruiker de mogelijkheid om een enkele voorkeur uit een
             lijst te kiezen.</p>
@@ -4177,7 +4187,7 @@
 
           <h3>Voorbeeld weergave in kolommen:</h3>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <div class="radio">
               <input type="radio" id="radio-example-default-6" name="standaard-radiobutton" value="value">
               <label for="radio-example-default-6">Lorem ipsum dolor set amet</label>
@@ -4188,7 +4198,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
 	&lt;div class="radio">
 		&lt;input
 			type="radio"
@@ -4233,7 +4243,7 @@
 
           <h3>Voorbeeld weergave in kolommen</h3>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <div class="radio">
               <input type="radio" id="radio-example-default-7" name="standaard-radiobutton" value="value" checked>
               <label for="radio-example-default-7">Lorem ipsum dolor set amet</label>
@@ -4244,7 +4254,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
 	&lt;div class="radio">
 		&lt;input
 			type="radio"
@@ -4300,7 +4310,7 @@
           <h3>Voorbeeld weergave in kolommen</h3>
           <p>Visueel voorbeeld:</p>
 
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <div class="radio required">
               <span class="nota-bene">Dit veld is verplicht</span>
               <div>
@@ -4314,7 +4324,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
 	&lt;div class="radio required">
 		&lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
 		&lt;div
@@ -4362,7 +4372,7 @@
 
           <h3>Voorbeeld weergave in kolommen</h3>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <div class="radio">
               <input type="radio" id="radio-example-disabled-2" name="disabled-radiobutton"
                 value="disabled checkbox input" disabled>
@@ -4375,7 +4385,7 @@
 
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
 	&lt;div class="radio">
 		&lt;input
 			type="radio"
@@ -4462,7 +4472,7 @@
 
           <h3>Voorbeeld weergave in kolommen</h3>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <fieldset class="grouped-choice-list">
               <legend>Lorem ipsum</legend>
               <div>
@@ -4486,7 +4496,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
 	&lt;fieldset class="grouped-choice-list">
 		&lt;legend>Lorem ipsum&lt;/legend>
 		&lt;div>
@@ -4524,7 +4534,7 @@
       </article>
 
       <article id="form-dropdown">
-        <div>
+        <div class="content-wrapper">
           <h1>Selectielijst</h1>
           <p>Invoerveld met een lijst aan keuzes voor de gebruiker.</p>
 
@@ -4598,7 +4608,7 @@
           <h3>Voorbeeld weergave in kolommen</h3>
           <p>Visueel voorbeeld:</p>
 
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <div>
               <label for="select-2">Selectielijst</label>
               <select id="select-2" name="select-2">
@@ -4615,7 +4625,7 @@
 
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
 	&lt;div>
 		&lt;label for="select">Selectielijst&lt;/label>
 		&lt;select id="select" name="select">
@@ -4667,7 +4677,7 @@
 
           <h3>Voorbeeld weergave in kolommen</h3>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <div class="required">
               <label for="select-required-2">Verplichte selectielijst</label>
               <div class="required">
@@ -4688,7 +4698,7 @@
 
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
 	&lt;div class="required">
 		&lt;label for="select-required">Verplichte selectielijst&lt;/label>
 		&lt;div class="required">
@@ -4742,7 +4752,7 @@
 
           <h3>Voorbeeld weergave in kolommen</h3>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <div>
               <label for="select-disabled-2">Uitgeschakelde selectielijst</label>
               <select disabled id="select-disabled-2" name="select-disabled-2">
@@ -4759,7 +4769,7 @@
 
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
 	&lt;div>
 		&lt;label for="select-disabled">Uitgeschakelde selectielijst&lt;/label>
 		&lt;select disabled id="select-disabled" name="select-disabled">
@@ -4813,7 +4823,7 @@
 
           <h3>Voorbeeld weergave in kolommen</h3>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <div>
               <label for="select-selected-2">Selectielijst met voorgeselecteerde optie</label>
               <select id="select-selected-2" name="select-selected-2">
@@ -4829,7 +4839,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
 	&lt;div>
 		&lt;label for="select-selected">Selectielijst met voorgeselecteerde optie&lt;/label>
 		&lt;select id="select-selected" name="select-selected">
@@ -4934,7 +4944,7 @@
 
           <h3>Voorbeeld weergave in kolommen</h3>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <div>
               <label for="select-multiple-2">Meerdere opties selecteren</label>
               <div>
@@ -4966,7 +4976,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
 	&lt;div>
 		&lt;label for="select-multiple">Meerdere opties selecteren&lt;/label>
 		&lt;div>
@@ -5068,7 +5078,7 @@
 
           <h3>Voorbeeld weergave in kolommen</h3>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <div>
               <label for="select-multiple-size-2">Meerdere opties selecteren</label>
               <div>
@@ -5104,7 +5114,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
 	&lt;div>
 		&lt;label for="select-mulitple-size">Meerdere opties selecteren&lt;/label>
 		&lt;div>
@@ -5192,7 +5202,7 @@
 
           <h3>Voorbeeld weergave in kolommen</h3>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <div>
               <label for="select-optgroup-2">Gegroepeerde opties</label>
               <select id="select-optgroup-2" name="select-optgroup-2">
@@ -5216,7 +5226,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
 	&lt;div>
 		&lt;label for="select-optgroup">Gegroepeerde opties&lt;/label>
 		&lt;select id="select-optgroup" name="select-optgroup">
@@ -5451,7 +5461,7 @@
 
           <h3>Voorbeeld weergave in kolommen</h3>
           <p>Visueel voorbeeld:</p>
-          <form action="" method="post" class="horizontal-view">
+          <form action="" method="post" class="horizontal">
             <div>
               <label for="ro-select">Selectielijst</label>
               <div class="ro-select">
@@ -5557,7 +5567,7 @@
           <p>Html-voorbeeld:</p>
           <pre>
 							<code>
-&lt;form action="" method="post" class="horizontal-view">
+&lt;form action="" method="post" class="horizontal">
 	&lt;div>
 		&lt;label for="ro-select">Selectielijst&lt;/label>
 		&lt;div class="ro-select">
@@ -5672,7 +5682,7 @@
   </main>
 
   <footer>
-    <div class="two-thirds-one-third">
+    <div class="two-thirds-one-third content-wrapper">
       <span class="slogan">Manon - Rijksoverheid CSS framework</span>
       <nav aria-labelledby="footer-nav-1-heading">
         <h1 id="footer-nav-1-heading">Service</h1>

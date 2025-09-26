@@ -1,0 +1,307 @@
+/* Theme configuration */
+@forward "config";
+
+/* Fonts (@font-faces) */
+@use "fonts";
+
+/* Semantic variables */
+/* These are variables that have a semantic value. Like branding color */
+@use "semantic" as semantic;
+@use "core/color-scheme/" as color-scheme;
+@use "core/spacing/" as spacing;
+@use "core/typography/body-text/" as body-text;
+
+/* Component variables */
+@use "@minvws/manon/variables" with (
+  $theme-name: "rijkshuisstlijl-2008",
+
+  // Accordion
+  $accordion-button-padding: spacing.$spacing-075 spacing.$spacing-100,
+  $accordion-button-text-color: color-scheme.$sky-blue-550,
+  $accordion-button-background-color: color-scheme.$white,
+  $accordion-button-border-width: 1px 0,
+  $accordion-button-border-style: solid,
+  $accordion-button-border-color: color-scheme.$sky-blue-500,
+  $accordion-content-border-width: 0 0 0 0.5rem,
+  $accordion-content-border-style: solid,
+  $accordion-content-border-color: color-scheme.$sky-blue-500,
+  $accordion-content-padding: spacing.$spacing-100,
+  $accordion-content-gap: spacing.$spacing-050,
+  $accordion-button-hover-text-color: color-scheme.$sky-blue-800,
+  $accordion-button-hover-background-color: #f1f5f9,
+  $accordion-button-expanded-border-width: 1px 0 0 0.5rem,
+  $accordion-button-first-border-width: 1px 0 0 0,
+
+  // Article
+  $article-content-wrapper-padding-top: 3.5rem,
+  $article-content-wrapper-padding-right: 3rem,
+  $article-content-wrapper-padding-bottom: 3.5rem,
+  $article-content-wrapper-padding-left: 3rem,
+  $article-content-wrapper-gap: spacing.$spacing-100,
+  $article-content-wrapper-max-width: 82rem,
+
+  // Section
+  $section-content-wrapper-padding-top: 3.5rem,
+  $section-content-wrapper-padding-right: 3rem,
+  $section-content-wrapper-padding-bottom: 3.5rem,
+  $section-content-wrapper-padding-left: 3rem,
+  $section-content-wrapper-gap: spacing.$spacing-100,
+  $section-content-wrapper-max-width: 82rem,
+
+  // Base
+  $base-font-size: 1.125rem,
+  $base-font-family: (
+    "RO Sans Web",
+    sans-serif,
+  ),
+
+  // Button
+  $button-text-align: center,
+  $button-background-color: semantic.$color-brand-primary-default,
+  $button-text-color: color-scheme.$white,
+  $button-border-width: 0,
+  $button-border-color: semantic.$color-brand-primary-default,
+  $button-border-radius: 0,
+  $button-padding-top: spacing.$spacing-075,
+  $button-padding-right: spacing.$spacing-100,
+  $button-padding-bottom: spacing.$spacing-075,
+  $button-padding-left: spacing.$spacing-100,
+
+  // Button container
+  $button-container-align-items: flex-start,
+  $button-container-gap: spacing.$spacing-100,
+  $button-container-flex-direction: row,
+
+  // Code
+  $code-background-color: color-scheme.$grey-50,
+  $code-padding: 0 spacing.$spacing-050,
+
+  // Code block
+  $code-block-border-width: 1px,
+  $code-block-border-style: solid,
+  $code-block-border-color: color-scheme.$grey-100,
+
+  // Checkbox
+  $checkbox-width: 1rem,
+
+  // Footer
+  $footer-background-color: semantic.$color-brand-primary-default,
+  $footer-text-color: color-scheme.$white,
+  $footer-min-height: 4rem,
+  $footer-padding-top: spacing.$spacing-075,
+  $footer-padding-right: spacing.$spacing-075,
+  $footer-padding-bottom: spacing.$spacing-075,
+  $footer-padding-left: spacing.$spacing-075,
+  $footer-content-wrapper-padding-top: 3rem,
+  $footer-content-wrapper-padding-right: 3%,
+  $footer-content-wrapper-padding-bottom: 3rem,
+  $footer-content-wrapper-padding-left: 3%,
+  $footer-content-wrapper-flex-direction: row,
+  $footer-list-flex-direction: column,
+  $footer-link-text-color: inherit,
+  $footer-link-hover-text-color: inherit,
+  $footer-link-visited-text-color: inherit,
+  $footer-link-visited-hover-text-color: inherit,
+
+  // Form
+  $form-padding-top: spacing.$spacing-200,
+  $form-padding-right: spacing.$spacing-200,
+  $form-padding-bottom: spacing.$spacing-200,
+  $form-padding-left: spacing.$spacing-200,
+  $form-background-color: color-scheme.$grey-50,
+  $form-gap: spacing.$spacing-150,
+  $form-align-items: flex-start,
+  $form-max-width: 50rem,
+
+  // Form group
+  $form-group-gap: spacing.$spacing-050,
+
+  // Form input
+  $form-input-padding-top: 0,
+  $form-input-padding-right: spacing.$spacing-075,
+  $form-input-padding-bottom: 0,
+  $form-input-padding-left: spacing.$spacing-075,
+  $form-input-min-height: 2.75rem,
+  $form-input-border-width: 1px,
+  $form-input-border-style: solid,
+  $form-input-border-color: color-scheme.$ro-blue,
+  $form-input-font-size: inherit,
+
+  // Form horizontal
+  $form-horizontal-label-max-width: 15rem,
+  $form-horizontal-group-gap: 0.5rem,
+  $form-label-column: 15.5rem,
+  $form-horizontal-group-align-items: flex-start,
+
+  // Form inline
+  $form-inline-button-margin: 0,
+
+  // Form fieldset
+  $form-fieldset-border-width: 0,
+
+  // Form button
+  $form-button-margin: 0 0 calc(spacing.$spacing-200 * -1) 0,
+
+  // Form textarea
+  $form-textarea-width: 100%,
+  $form-textarea-font-size: inherit,
+  $form-textarea-padding: 1rem,
+
+  // Header
+  $header-navigation-background-color: semantic.$color-brand-primary-default,
+  $header-text-color: #fff,
+  $header-font-size: body-text.$body-text-m,
+  $header-flex-direction: column,
+  $header-navigation-align-items: center,
+  $header-navigation-padding-top: 0,
+  $header-navigation-padding-right: 3%,
+  $header-navigation-padding-bottom: 0,
+  $header-navigation-padding-left: 3%,
+  $header-navigation-min-height: 4.375rem,
+  $header-link-text-decoration: none,
+  $header-list-gap: spacing.$spacing-100,
+
+  // Headings
+  $h1-margin: spacing.$spacing-100 0,
+  $h2-margin: spacing.$spacing-100 0,
+  $h3-margin: spacing.$spacing-050 0,
+  $h4-margin: spacing.$spacing-050 0,
+  $h5-margin: spacing.$spacing-050 0,
+  $h6-margin: spacing.$spacing-050 0,
+
+  // List
+  $list-padding: spacing.$spacing-100,
+  $list-item-padding: spacing.$spacing-050,
+
+  // Link
+  $link-text-color: color-scheme.$link-text-color,
+
+  // Link hover
+  $link-hover-text-color: color-scheme.$link-text-color-hover,
+
+  // Link visited
+  $link-visited-text-color: color-scheme.$link-text-color-visited,
+  $link-visited-hover-text-color: color-scheme.$link-text-color-visited-hover,
+
+  // Navigation
+  $navigation-link-text-decoration: none,
+
+  // Notification
+  $notification-padding-top: spacing.$spacing-100,
+  $notification-padding-right: spacing.$spacing-100,
+  $notification-padding-bottom: spacing.$spacing-100,
+  $notification-padding-left: spacing.$spacing-100,
+  $notification-gap: spacing.$spacing-100,
+
+  // notification type
+  $notification-span-font-weight: bold,
+
+  // notification error
+  $notification-error-background-color: color-scheme.$color-notification-error-subtle,
+  $notification-error-text-color: semantic.$color-text-default,
+  $notification-table-error-background-color: color-scheme.$color-notification-error-subtle,
+  $notification-table-error-text-color: semantic.$color-text-default,
+
+  // notification warning
+  $notification-warning-background-color: color-scheme.$color-notification-warning-subtle,
+  $notification-warning-text-color: semantic.$color-text-default,
+  $notification-table-warning-background-color: color-scheme.$color-notification-warning-subtle,
+  $notification-table-warning-text-color: semantic.$color-text-default,
+
+  // notification explanation
+  $notification-explanation-background-color: color-scheme.$color-notification-explanation-subtle,
+  $notification-explanation-text-color: semantic.$color-text-default,
+  $notification-table-explanation-background-color:
+    color-scheme.$color-notification-explanation-subtle,
+  $notification-table-explanation-text-color: semantic.$color-text-default,
+
+  // notification confirmation
+  $notification-confirmation-background-color: color-scheme.$color-notification-confirmation-subtle,
+  $notification-confirmation-text-color: semantic.$color-text-default,
+  $notification-table-confirmation-background-color:
+    color-scheme.$color-notification-confirmation-subtle,
+  $notification-table-confirmation-text-color: semantic.$color-text-default,
+
+  // notification system
+  $notification-system-background-color: color-scheme.$color-notification-system-subtle,
+  $notification-system-text-color: semantic.$color-text-default,
+  $notification-table-system-background-color: color-scheme.$color-notification-system-subtle,
+  $notification-table-system-text-color: semantic.$color-text-default,
+
+  // Nota bene
+  $nota-bene-font-size: body-text.$body-text-s,
+
+  // Logo
+  $logo-align-items: center,
+  $logo-gap: spacing.$spacing-100,
+  $logo-height: 6.25rem,
+  $logo-text-color: semantic.$color-text-default,
+  $logo-margin: 0 0 1.5rem 0,
+  $logo-text-decoration: none,
+  $logo-img-width: 3.125rem,
+  $logo-img-height: 6.25rem,
+  $logo-font-family: (
+    "RO Serif Web",
+    serif,
+  ),
+  $logo-img-object-position: top,
+  $logo-img-margin: 0 0 0 calc(50% - 1.25rem),
+  $logo-img-object-fit: contain,
+
+  // Slogan
+  $slogan-font-size: 1.80203rem,
+  $slogan-font-family: (
+    "RO Serif Web",
+    serif,
+  ),
+  $slogan-font-style: italic,
+
+  // Table
+  $table-gap: spacing.$spacing-050,
+  $table-head-text-color: color-scheme.$ro-blue,
+  $table-head-font-weight: bold,
+  $table-head-border-width: 0,
+  $table-head-border-color: color-scheme.$grey-100,
+  $table-head-padding: spacing.$spacing-075 spacing.$spacing-100,
+  $table-head-text-align: left,
+  $table-cell-padding: spacing.$spacing-075 spacing.$spacing-100,
+  $table-cell-gap: spacing.$spacing-025,
+  $table-row-border-width: 0 0 1px 0,
+  $table-row-border-style: solid,
+  $table-row-border-color: color-scheme.$grey-100,
+  $table-margin: spacing.$spacing-200 0,
+  $table-foot-header-padding: spacing.$spacing-075 spacing.$spacing-100,
+
+  // Table caption
+  $table-caption-text-align: left,
+  $table-caption-padding: spacing.$spacing-100 0,
+  $table-caption-font-size: body-text.$body-text-s,
+
+  // To-top button
+  $button-to-top-width: 2.75rem,
+  $button-to-top-height: 2.75rem,
+  $button-to-top-border-width: 2px,
+  $button-to-top-border-style: solid,
+  $button-to-top-border-color: color-scheme.$white,
+  $button-to-top-border-radius: 50%,
+  $button-to-top-position: fixed,
+  $button-to-top-bottom: spacing.$spacing-100,
+  $button-to-top-right: spacing.$spacing-100,
+  $button-to-top-justify-content: center,
+  $button-to-top-align-items: center,
+  $button-to-top-font-size: 0,
+
+  // Introduction
+  $introduction-font-size: body-text.$body-text-l,
+
+  // Sidemenu
+  $sidemenu-nav-padding-top: spacing.$spacing-200,
+  $sidemenu-nav-padding-right: spacing.$spacing-200,
+  $sidemenu-nav-padding-bottom: spacing.$spacing-200,
+  $sidemenu-nav-padding-left: spacing.$spacing-200,
+  $sidemenu-main-gap: spacing.$spacing-100,
+  $sidemenu-nav-border-width: 0 1px 0 0,
+  $sidemenu-nav-border-style: solid,
+  $sidemenu-nav-border-color: color-scheme.$grey-100,
+  $sidemenu-text-decoration: none
+);
