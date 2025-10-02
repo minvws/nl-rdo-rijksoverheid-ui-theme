@@ -4,11 +4,11 @@
 export const createBackstopConfig = ({ port, files }) => {
   // Run these tests first
   const priorityFiles = [
-    "test/links.html",
-    "test/skip-to-content.html",
-    "test/footer.html",
     "test/hero.html",
+    "test/skip-to-content.html",
     "test/header-main-nav.html",
+    "test/links.html",
+    "test/footer.html",
     "test/list.html"
   ];
 
