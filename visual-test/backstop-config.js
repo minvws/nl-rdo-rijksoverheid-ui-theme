@@ -4,12 +4,14 @@
 export const createBackstopConfig = ({ port, files }) => {
   // Run these tests first
   const priorityFiles = [
+    "test/buttons.html",
+    "test/headings.html",
+    "test/list.html",
     "test/hero.html",
+    "test/tiles.html",
     "test/skip-to-content.html",
-    "test/header-main-nav.html",
     "test/links.html",
-    "test/footer.html",
-    "test/list.html"
+    "test/footer.html"
   ];
 
   const regularFiles = files.filter(file => !priorityFiles.includes(file));
@@ -32,6 +34,8 @@ export const createBackstopConfig = ({ port, files }) => {
     scenarios: orderedFiles.map((file) => ({
       label: file,
       url: `http://localhost:${port}/${file}`,
+      misMatchThreshold: 0.1,
+      requireSameDimensions: true,
     })),
     paths: {
       bitmaps_reference: "visual-test/bitmaps_reference",
