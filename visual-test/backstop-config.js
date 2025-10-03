@@ -31,6 +31,7 @@ export const createBackstopConfig = ({ port, files }) => {
         height: 768,
       },
     ],
+    onReadyScript: "puppet/onReady.cjs",
     scenarios: orderedFiles.map((file) => ({
       label: file,
       url: `http://localhost:${port}/${file}`,
