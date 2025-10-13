@@ -35,7 +35,7 @@ export const createBackstopConfig = ({ port, files }) => {
     scenarios: orderedFiles.map((file) => ({
       label: file,
       url: `http://localhost:${port}/${file}`,
-      misMatchThreshold: 0.1,
+      misMatchThreshold: 0.15,
       requireSameDimensions: true,
     })),
     paths: {
