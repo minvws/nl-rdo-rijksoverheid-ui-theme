@@ -4,14 +4,7 @@
 export const createBackstopConfig = ({ port, files }) => {
   // Run these tests first
   const priorityFiles = [
-    "test/buttons.html",
-    "test/headings.html",
-    "test/list.html",
-    "test/hero.html",
-    "test/tiles.html",
-    "test/skip-to-content.html",
-    "test/links.html",
-    "test/footer.html"
+    "test/links.html"
   ];
 
   const regularFiles = files.filter(file => !priorityFiles.includes(file));
