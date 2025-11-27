@@ -4,6 +4,9 @@
 /* Fonts (@font-faces) */
 @use "fonts";
 
+/* Icon mask data URIs */
+@use "icons";
+
 /* Semantic variables */
 /* These are variables that have a semantic value. Like branding color */
 @use "semantic" as semantic;
@@ -16,21 +19,43 @@
   $theme-name: "rijkshuisstlijl-2008",
 
   // Accordion
+  // Accordion button
   $accordion-button-padding: spacing.$spacing-075 spacing.$spacing-100,
   $accordion-button-text-color: color-scheme.$sky-blue-550,
   $accordion-button-background-color: color-scheme.$white,
-  $accordion-button-border-width: 1px 0,
   $accordion-button-border-style: solid,
-  $accordion-button-border-color: color-scheme.$sky-blue-500,
+  $accordion-button-border-color: color-scheme.$sky-blue-500 transparent,
+  $accordion-button-border-width: 1px 0 1px 0.5rem,
+  $accordion-button-first-border-width: 1px 0 0 0.5rem,
+
+  // Accordion button hover
+  $accordion-button-hover-text-color: color-scheme.$sky-blue-800,
+  $accordion-button-hover-background-color: #f1f5f9,
+
+  // Accordion button expanded
+  $accordion-button-expanded-border-width: 1px 0 0 0.5rem,
+  $accordion-button-expanded-border-color: color-scheme.$sky-blue-500,
+
+  // Accordion button icon (expanded)
+  $accordion-button-icon-before-mask: icons.$chevron-down,
+  $accordion-button-icon-before-width: 1.5rem,
+  $accordion-button-icon-before-height: 1.5rem,
+  $accordion-button-icon-before-color: color-scheme.$ro-blue,
+  $accordion-button-icon-before-margin-right: 1rem,
+
+  // Accordion button icon (closed)
+  $accordion-button-icon-before-closed-mask: icons.$chevron-up,
+  $accordion-button-icon-before-closed-width: 1.5rem,
+  $accordion-button-icon-before-closed-height: 1.5rem,
+  $accordion-button-icon-before-closed-color: color-scheme.$ro-blue,
+  $accordion-button-icon-before-closed-margin-right: 1rem,
+
+  // Accordion content
   $accordion-content-border-width: 0 0 0 0.5rem,
   $accordion-content-border-style: solid,
   $accordion-content-border-color: color-scheme.$sky-blue-500,
   $accordion-content-padding: spacing.$spacing-100,
   $accordion-content-gap: spacing.$spacing-050,
-  $accordion-button-hover-text-color: color-scheme.$sky-blue-800,
-  $accordion-button-hover-background-color: #f1f5f9,
-  $accordion-button-expanded-border-width: 1px 0 0 0.5rem,
-  $accordion-button-first-border-width: 1px 0 0 0,
 
   // Article
   $article-content-wrapper-padding-top: 3.5rem,
@@ -80,6 +105,10 @@
   $code-block-border-width: 1px,
   $code-block-border-style: solid,
   $code-block-border-color: color-scheme.$grey-100,
+  $code-block-code-padding: 0 spacing.$spacing-150,
+
+  // Column
+  $columns-gap: spacing.$spacing-300,
 
   // Checkbox
   $checkbox-width: 1rem,
@@ -169,6 +198,14 @@
   $h5-margin: spacing.$spacing-050 0,
   $h6-margin: spacing.$spacing-050 0,
 
+  // Heading base set
+  $heading-xs-font-size: 1rem,
+  $heading-small-font-size: 1.25rem,
+  $heading-normal-font-size: 1.5rem,
+  $heading-large-font-size: 2rem,
+  $heading-xl-font-size: 2.5rem,
+  $heading-xxl-font-size: 3rem,
+
   // List
   $list-padding: spacing.$spacing-100,
   $list-item-padding: spacing.$spacing-050,
@@ -184,7 +221,14 @@
   $link-visited-hover-text-color: color-scheme.$link-text-color-visited-hover,
 
   // Navigation
+  $navigation-list-padding: 0,
+  $navigation-list-item-padding: spacing.$spacing-050 0,
   $navigation-link-text-decoration: none,
+  $navigation-list-item-icon-mask: icons.$chevron-right,
+  $navigation-list-item-icon-width: 1.5rem,
+  $navigation-list-item-icon-height: 1.5rem,
+  $navigation-list-item-icon-color: color-scheme.$ro-blue,
+  $navigation-list-item-icon-padding: 0 spacing.$spacing-050 0 0,
 
   // Notification
   $notification-padding-top: spacing.$spacing-100,
@@ -194,7 +238,7 @@
   $notification-gap: spacing.$spacing-100,
 
   // notification type
-  $notification-span-font-weight: bold,
+  $notification-type-font-weight: bold,
 
   // notification error
   $notification-error-background-color: color-scheme.$color-notification-error-subtle,
@@ -291,6 +335,12 @@
   $button-to-top-align-items: center,
   $button-to-top-font-size: 0,
 
+  // button to top icon
+  $button-to-top-icon-mask: icons.$to-top,
+  $button-to-top-icon-color: color-scheme.$white,
+  $button-to-top-icon-width: 1.5rem,
+  $button-to-top-icon-height: 1.5rem,
+
   // Introduction
   $introduction-font-size: body-text.$body-text-l,
 
@@ -299,9 +349,44 @@
   $sidemenu-nav-padding-right: spacing.$spacing-200,
   $sidemenu-nav-padding-bottom: spacing.$spacing-200,
   $sidemenu-nav-padding-left: spacing.$spacing-200,
-  $sidemenu-main-gap: spacing.$spacing-100,
   $sidemenu-nav-border-width: 0 1px 0 0,
   $sidemenu-nav-border-style: solid,
   $sidemenu-nav-border-color: color-scheme.$grey-100,
-  $sidemenu-text-decoration: none
+  $sidemenu-text-decoration: none,
+
+  // sidemenu button
+  $sidemenu-button-background-color: semantic.$color-brand-primary-default,
+  $sidemenu-button-padding: spacing.$spacing-050,
+  $sidemenu-button-color: color-scheme.$white,
+  $sidemenu-button-font-size: 0,
+  $sidemenu-button-margin-left: 20rem,
+
+  // sidemenu expanded
+  $sidemenu-expanded-icon-mask: icons.$close,
+  $sidemenu-expanded-icon-color: color-scheme.$white,
+  $sidemenu-expanded-icon-width: 1.5rem,
+  $sidemenu-expanded-icon-height: 1.5rem,
+
+  // sidemenu collapsed
+  $sidemenu-collapsed-button-margin-left: 0,
+  $sidemenu-collapsed-icon-mask: icons.$hamburger,
+
+  // tile
+  $tile-background-color: color-scheme.$white,
+  $tile-padding-top: spacing.$spacing-100,
+  $tile-padding-right: spacing.$spacing-100,
+  $tile-padding-bottom: spacing.$spacing-100,
+  $tile-padding-left: spacing.$spacing-100,
+  $tile-border-width: 1px,
+  $tile-border-style: solid,
+  $tile-border-color: color-scheme.$grey-100,
+  $tile-text-color: semantic.$color-text-default,
+  $tile-gap: spacing.$spacing-050,
+
+  // tile groups (group of tiles)
+  $tile-groups-gap: spacing.$spacing-100,
+  $tile-group-border-width: 1px,
+  $tile-group-border-style: solid,
+  $tile-group-border-color: color-scheme.$grey-200,
+  $tile-group-padding: spacing.$spacing-100 0 0 0
 );
