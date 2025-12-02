@@ -237,40 +237,32 @@
   $notification-padding-left: spacing.$spacing-100,
   $notification-gap: spacing.$spacing-100,
 
-  // notification type
+  // Notification type
   $notification-type-font-weight: bold,
 
-  // notification error
+  // Notification error
   $notification-error-background-color: color-scheme.$color-notification-error-subtle,
   $notification-error-text-color: semantic.$color-text-default,
-  $notification-table-error-background-color: color-scheme.$color-notification-error-subtle,
-  $notification-table-error-text-color: semantic.$color-text-default,
 
-  // notification warning
+  // Notification warning
   $notification-warning-background-color: color-scheme.$color-notification-warning-subtle,
   $notification-warning-text-color: semantic.$color-text-default,
-  $notification-table-warning-background-color: color-scheme.$color-notification-warning-subtle,
-  $notification-table-warning-text-color: semantic.$color-text-default,
 
-  // notification explanation
+  // Notification explanation
   $notification-explanation-background-color: color-scheme.$color-notification-explanation-subtle,
   $notification-explanation-text-color: semantic.$color-text-default,
-  $notification-table-explanation-background-color:
-    color-scheme.$color-notification-explanation-subtle,
-  $notification-table-explanation-text-color: semantic.$color-text-default,
 
-  // notification confirmation
+  // Notification confirmation
   $notification-confirmation-background-color: color-scheme.$color-notification-confirmation-subtle,
   $notification-confirmation-text-color: semantic.$color-text-default,
-  $notification-table-confirmation-background-color:
-    color-scheme.$color-notification-confirmation-subtle,
-  $notification-table-confirmation-text-color: semantic.$color-text-default,
 
-  // notification system
+  // Notification system
   $notification-system-background-color: color-scheme.$color-notification-system-subtle,
   $notification-system-text-color: semantic.$color-text-default,
-  $notification-table-system-background-color: color-scheme.$color-notification-system-subtle,
-  $notification-table-system-text-color: semantic.$color-text-default,
+
+  // Notification table
+  $notification-table-gap: spacing.$spacing-025,
+  $notification-type-table-font-size: 0,
 
   // Nota bene
   $nota-bene-font-size: body-text.$body-text-s,

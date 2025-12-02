@@ -28,3 +28,22 @@ pre > code {
   // Add to theme file instead after upgrading
   // $notification-type-font-size: 0;
 }
+
+.grid-iconset {
+  padding: 1rem;
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+
+  li {
+    padding: 1rem;
+    list-style-type: none;
+    background: #ffffff;
+    hyphens: none;
+    display: grid;
+    grid-template-columns: 1rem auto;
+    gap: 1rem;
+    font-size: 1rem;
+  }
+}
