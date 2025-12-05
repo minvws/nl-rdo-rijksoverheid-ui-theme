@@ -13,6 +13,7 @@
 @use "core/color-scheme/" as color-scheme;
 @use "core/spacing/" as spacing;
 @use "core/typography/body-text/" as body-text;
+@use "core/typography/heading/" as heading;
 
 /* Component variables */
 @use "@minvws/manon/variables" with (
@@ -65,6 +66,11 @@
   $article-content-wrapper-gap: spacing.$spacing-175,
   $article-content-wrapper-max-width: 82rem,
 
+  // Avatar
+  $avatar-background-color: semantic.$color-brand-primary-default,
+  $avatar-text-color: semantic.$color-brand-primary-text-default,
+  $avatar-border-radius: 100%,
+
   // Section
   $section-content-wrapper-padding-top: spacing.$spacing-175,
   $section-content-wrapper-padding-right: spacing.$spacing-300,
@@ -92,10 +98,63 @@
   $button-padding-bottom: spacing.$spacing-075,
   $button-padding-left: spacing.$spacing-100,
 
+  // Button secondary
+  $button-secondary-background-color: color-scheme.$white,
+  $button-secondary-border-width: 2px,
+  $button-secondary-border-style: solid,
+  $button-secondary-border-color: semantic.$color-brand-primary-default,
+  $button-secondary-text-color: semantic.$color-brand-primary-default,
+
+  // Button secondary hover
+  $button-secondary-hover-background-color: semantic.$color-brand-primary-default,
+  $button-secondary-hover-border-color: semantic.$color-brand-primary-default,
+  $button-secondary-hover-text-color: color-scheme.$white,
+
+  // Button cta
+  $button-cta-background-color: color-scheme.$green-600,
+  $button-cta-border-width: 2px,
+  $button-cta-border-style: solid,
+  $button-cta-border-color: color-scheme.$green-600,
+  $button-cta-text-color: color-scheme.$white,
+
+  // Button cta hover
+  $button-cta-hover-background-color: color-scheme.$green-700,
+  $button-cta-hover-border-color: color-scheme.$green-700,
+  $button-cta-hover-text-color: color-scheme.$white,
+
+  // Button destructive
+  $button-destructive-background-color: color-scheme.$color-notification-error-intense,
+  $button-destructive-border-color: color-scheme.$color-notification-error-intense,
+  $button-destructive-text-color: color-scheme.$white,
+
+  // Button destructive hover
+  $button-destructive-hover-background-color: color-scheme.$red-700,
+  $button-destructive-hover-border-color: color-scheme.$red-700,
+  $button-destructive-hover-text-color: color-scheme.$white,
+
   // Button container
   $button-container-align-items: flex-start,
   $button-container-gap: spacing.$spacing-100,
   $button-container-flex-direction: row,
+
+  // Breadcrumb-bar
+  $breadcrumb-bar-background-color: color-scheme.$grey-50,
+  $breadcrumb-bar-padding-right: spacing.$spacing-100,
+  $breadcrumb-bar-padding-left: spacing.$spacing-100,
+  $breadcrumb-bar-text-color: semantic.$color-text-default,
+  $breadcrumb-bar-gap: spacing.$spacing-050,
+  $breadcrumb-bar-list-item-last-child-font-weight: bold,
+  $breadcrumb-bar-list-item-gap: spacing.$spacing-050,
+
+  // // breadcrumb bar link
+  $breadcrumb-bar-link-text-decoration: none,
+
+  // Card
+  $card-padding-top: spacing.$spacing-100,
+  $card-padding-right: spacing.$spacing-100,
+  $card-padding-bottom: spacing.$spacing-100,
+  $card-padding-left: spacing.$spacing-100,
+  $card-gap: spacing.$spacing-050,
 
   // Code
   $code-background-color: color-scheme.$grey-50,
@@ -105,13 +164,44 @@
   $code-block-border-width: 1px,
   $code-block-border-style: solid,
   $code-block-border-color: color-scheme.$grey-100,
-  $code-block-code-padding: 0 spacing.$spacing-150,
+  $code-block-code-padding: spacing.$spacing-200 spacing.$spacing-150,
+  $code-block-copy-button-top: spacing.$spacing-100,
+  $code-block-copy-button-right: spacing.$spacing-100,
+  $code-block-copy-button-padding: spacing.$spacing-050,
+  $code-block-copy-button-background-color: transparent,
+  $code-block-copy-button-text-color: color-scheme.$grey-700,
+  $code-block-copy-button-hover-background-color: semantic.$color-brand-primary-default,
+  $code-block-copy-button-hover-text-color: semantic.$color-brand-primary-text-default,
 
   // Column
   $columns-gap: spacing.$spacing-300,
 
   // Checkbox
   $checkbox-width: 1rem,
+
+  // collapsing element
+  $collapsing-element-list-item-border-color: color-scheme.$grey-100,
+
+  // Collapsing element list item link hover
+  $collapsing-element-list-item-link-hover-background-color: color-scheme.$ro-blue,
+  $collapsing-element-list-item-link-hover-text-color: color-scheme.$white,
+
+  // De-emphasized
+  $de-emphasized-font-size: body-text.$body-text-s,
+  $de-emphasized-text-color: color-scheme.$grey-700,
+
+  // Description list
+  $description-list-width: 100%,
+  $description-list-item-data-font-weight: bold,
+  $description-list-border-width: 0 0 1px 0,
+  $description-list-border-style: solid,
+  $description-list-border-color: color-scheme.$grey-100,
+  $description-list-item-padding: spacing.$spacing-075 0,
+  $description-list-item-title-width: 15rem,
+  $description-list-item-gap: spacing.$spacing-100,
+  $description-list-item-data-width: calc(80% - 16rem),
+  // Emphasized
+  $emphasized-font-size: body-text.$body-text-l,
 
   // Footer
   $footer-background-color: semantic.$color-brand-primary-default,
@@ -176,6 +266,32 @@
   $form-textarea-font-size: inherit,
   $form-textarea-padding: 1rem,
 
+  // Form fieldset
+  $form-fieldset-label-margin: spacing.$spacing-150 0,
+  $form-fieldset-legend-margin: spacing.$spacing-150 0,
+  $form-fieldset-fields-margin: spacing.$spacing-150 0,
+
+  // form select field
+  $form-select-font-size: inherit,
+  $form-select-color: color-scheme.$grey-900,
+  $form-select-min-width: 15rem,
+  $form-select-max-width: 100%,
+  $form-select-min-height: 2.75rem,
+  $form-select-border: 1px solid color-scheme.$ro-blue,
+  $form-select-padding: 0 spacing.$spacing-075,
+
+  // filter
+  $filter-icon-color: color-scheme.$ro-blue,
+  $filter-icon-mask: icons.$chevron-down,
+  $filter-icon-width: 1.25rem,
+  $filter-icon-height: 1.25rem,
+  $filter-intro-justify-content: space-between,
+  $filter-button-font-size: 0,
+  $filter-close-icon-mask: icons.$chevron-up,
+  $filter-button-background-color: transparent,
+  $filter-button-padding: 0,
+  $filter-button-gap: 0,
+
   // Header
   $header-navigation-background-color: semantic.$color-brand-primary-default,
   $header-text-color: #fff,
@@ -187,24 +303,70 @@
   $header-navigation-padding-bottom: 0,
   $header-navigation-padding-left: 3%,
   $header-navigation-min-height: 4.375rem,
+  $header-navigation-width: 100%,
   $header-link-text-decoration: none,
+  $header-link-current-text-color: #fff,
   $header-list-gap: spacing.$spacing-100,
+  $navigation-content-wrapper-justify-content: space-between,
 
   // Headings
+  // h1
   $h1-margin: spacing.$spacing-100 0,
+  $h1-font-size: heading.$heading-l,
+  $h1-font-weight: bold,
+
+  // h2
   $h2-margin: spacing.$spacing-100 0,
+  $h2-font-size: heading.$heading-m,
+  $h2-font-weight: bold,
+
+  // h3
   $h3-margin: spacing.$spacing-050 0,
+  $h3-font-size: heading.$heading-s,
+  $h3-font-weight: normal,
+  $h3-text-color: color-scheme.$ro-blue,
+
+  // h4
   $h4-margin: spacing.$spacing-050 0,
+  $h4-font-size: heading.$heading-xs,
+  $h4-font-weight: bold,
+
+  // h5
   $h5-margin: spacing.$spacing-050 0,
+  $h5-font-size: heading.$heading-xs,
+  $h5-font-weight: bold,
+  // $h5-font-style: italic,
+  // h6
   $h6-margin: spacing.$spacing-050 0,
+  $h6-font-size: initial,
 
   // Heading base set
-  $heading-xs-font-size: 1rem,
-  $heading-small-font-size: 1.25rem,
-  $heading-normal-font-size: 1.5rem,
-  $heading-large-font-size: 2rem,
-  $heading-xl-font-size: 2.5rem,
-  $heading-xxl-font-size: 3rem,
+  // heading xs
+  $heading-xs-margin: spacing.$spacing-050 0,
+  $heading-xs-font-size: heading.$heading-xs,
+  $heading-xs-font-weight: bold,
+
+  // heading small
+  $heading-small-margin: spacing.$spacing-050 0,
+  $heading-small-font-size: heading.$heading-s,
+  $heading-small-font-weight: normal,
+  $heading-small-text-color: color-scheme.$ro-blue,
+
+  // heading normal
+  $heading-normal-margin: spacing.$spacing-100 0,
+  $heading-normal-font-size: heading.$heading-m,
+  $heading-normal-font-weight: bold,
+
+  // heading large
+  $heading-large-margin: spacing.$spacing-100 0,
+  $heading-large-font-size: heading.$heading-l,
+  $heading-large-font-weight: bold,
+
+  // heading xl
+  $heading-xl-font-size: heading.$heading-xl,
+
+  // heading xxl
+  $heading-xxl-font-size: heading.$heading-xxl,
 
   // List
   $list-padding: spacing.$spacing-100,
@@ -266,6 +428,14 @@
 
   // Nota bene
   $nota-bene-font-size: body-text.$body-text-s,
+  $nota-bene-text-color: color-scheme.$grey-700,
+
+  // Paragraph
+  $p-line-height: 1.5,
+
+  // Pagetitle
+  $page-title-font-size: heading.$heading-l,
+  $page-title-max-width: 90rem,
 
   // Logo
   $logo-align-items: center,
@@ -284,6 +454,17 @@
   $logo-img-margin: 0 0 0 calc(50% - 1.25rem),
   $logo-img-object-fit: contain,
 
+  // Login meta
+  // $login-meta-flex-direction: null !default;
+  // $login-meta-justify-content: null !default;
+  // $login-meta-align-items: center !default;
+  // $login-meta-padding-top: null !default;
+  // $login-meta-padding-right: null !default;
+  // $login-meta-padding-bottom: null !default;
+  // $login-meta-padding-left: null !default;
+  // $login-meta-gap: null !default;
+  // $login-meta-background-color: null !default;
+  // $login-meta-text-color: null !default;
   // Slogan
   $slogan-font-size: 1.80203rem,
   $slogan-font-family: (
@@ -367,6 +548,10 @@
   // sidemenu collapsed
   $sidemenu-collapsed-button-margin-left: 0,
   $sidemenu-collapsed-icon-mask: icons.$hamburger,
+
+  // sidemenu main
+  $sidemenu-page-padding-top: spacing.$spacing-400,
+  $sidemenu-page-padding-bottom: spacing.$spacing-400,
 
   // tile
   $tile-background-color: color-scheme.$white,
