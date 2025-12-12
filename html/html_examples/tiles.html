@@ -13,12 +13,12 @@
 <body class="test-cases">
   <header>
     <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
-    <a href="" class="ro-logo">
+    <a href="" class="logo">
       <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
       Rijksoverheid
     </a>
 
-    <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
+    <nav aria-label="Hoofdnavigatie" id="main-nav">
       <div>
         <ul>
           <li><a href="../index.html"><span class="icon icon-home">Hoofdpagina icoon</span> Rijksoverheid CSS</a></li>
@@ -51,7 +51,7 @@
 
     <div>
       <article id="tiles">
-        <div>
+        <div class="content-wrapper">
           <h1>Tegelweergave</h1>
           <p>Tegelweergave kan gebruikt worden om content visueel te groeperen om gebruikers te laten zien welke content
             bij elkaar hoort. Veel gebruikte toepassingen voor tegelweergave zijn bijvoorbeeld nieuwsberichten.</p>
@@ -77,7 +77,7 @@
       </article>
 
       <article id="base-tile">
-        <div>
+        <div class="content-wrapper">
           <h1>Tegelweergave op enkel element</h1>
           <p>Geschikt voor het weergeven van een element dat visueel gegroepeerd dient te zijn of visueel meer aandacht
             mag krijgen om de gebruiker te attenderen.</p>
@@ -92,7 +92,7 @@
 
           <p>Visueel voorbeeld:</p>
           <div class="tile" role="group">
-            <h1>Lorem ipsum dolor set</h1>
+            <h2 class="heading-small">Lorem ipsum dolor set</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
               Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
           </div>
@@ -101,7 +101,7 @@
           <pre>
                 <code>
 &lt;div class="tile" role="group">
-  &lt;h1>Lorem ipsum dolor set&lt;/h1>
+  &lt;h2 class="heading-small">Lorem ipsum dolor set&lt;/h2>
   &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.&lt;/p>
 &lt;/div>
                 </code>
@@ -110,8 +110,8 @@
       </article>
 
       <article id="tile-columns">
-        <div>
-          <h1>Tegelweergave in kolommen</h1>
+        <div class="content-wrapper">
+          <h2>Tegelweergave in kolommen</h2>
           <p>De tegel gebruikt de volledig beschikbare breedte. Indien een smallere weergave gewenst is kan de tegel
             gecombineerd worden met de weergave in kolommen.</p>
 
@@ -128,7 +128,7 @@
           <p>Visueel voorbeeld:</p>
           <div class="column-3">
             <div class="tile" role="group">
-              <h1>Lorem ipsum dolor set</h1>
+              <h2 class="heading-small">Lorem ipsum dolor set</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
                 Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
             </div>
@@ -139,7 +139,7 @@
                 <code>
 &lt;div class="column-3">
   &lt;div class="tile" role="group">
-    &lt;h1>Lorem ipsum dolor set&lt;/h1>
+    &lt;h2 class="heading-small">Lorem ipsum dolor set&lt;/h2>
     &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.&lt;/p>
   &lt;/div>
 &lt;/div>
@@ -149,8 +149,8 @@
       </article>
 
       <article id="tile-group">
-        <div>
-          <h1>Groep met tegels</h1>
+        <div class="content-wrapper">
+          <h2>Groep met tegels</h2>
           <p>Voor het efficiënt weergeven van een groep elementen met een tegelweergave.</p>
 
           <p>Aandachtspunten:</p>
@@ -168,19 +168,19 @@
 
           <div class="tiles column-3">
             <div role="group">
-              <h1>Lorem ipsum</h1>
+              <h2 class="heading-small">Lorem ipsum</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
                 Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
             </div>
 
             <div role="group">
-              <h1>Lorem ipsum</h1>
+              <h2 class="heading-small">Lorem ipsum</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
                 Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
             </div>
 
             <div role="group">
-              <h1>Lorem ipsum</h1>
+              <h2 class="heading-small">Lorem ipsum</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
                 Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
             </div>
@@ -191,17 +191,17 @@
                 <code>
 &lt;div class="tiles column-3">
   &lt;div role="group">
-    &lt;h1>Lorem ipsum&lt;/h1>
+    &lt;h2 class="heading-small">Lorem ipsum&lt;/h2>
     &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.&lt;/p>
   &lt;/div>
 
   &lt;div role="group">
-    &lt;h1>Lorem ipsum&lt;/h1>
+    &lt;h2 class="heading-small">Lorem ipsum&lt;/h2>
     &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.&lt;/p>
   &lt;/div>
 
   &lt;div role="group">
-    &lt;h1>Lorem ipsum&lt;/h1>
+    &lt;h2 class="heading-small">Lorem ipsum&lt;/h2>
     &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.&lt;/p>
   &lt;/div>
 &lt;/div>
@@ -212,8 +212,8 @@
       </article>
 
       <article id="tile-img">
-        <div>
-          <h1>Tegel met afbeelding</h1>
+        <div class="content-wrapper">
+          <h2>Tegel met afbeelding</h2>
           <p>Tegelweergave met een afbeelding</p>
 
           <p>Aandachtspunten:</p>
@@ -227,7 +227,7 @@
 
           <div class="column-3 tiles">
             <div role="group">
-              <h1>Lorem ipsum</h1>
+              <h2 class="heading-small">Lorem ipsum</h2>
               <img src="../images/beach.jpg" alt="">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
                 Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
@@ -239,21 +239,23 @@
                 <code>
 &lt;div class="column-3 tiles">
   &lt;div role="group">
-    &lt;h1>Lorem ipsum&lt;/h1>
+    &lt;h2 class="heading-small">Lorem ipsum&lt;/h2>
     &lt;img src="images/beach.jpg" alt="">
     &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.&lt;/p>
   &lt;/div>
 &lt;/div>
-                </code>
-              </pre>
+            </code>
+          </pre>
 
-          <p>Visueel voorbeeld afbeelding als kop:</p>
+          <p>Visueel voorbeeld afbeelding als coverafbeelding:</p>
           <div class="column-3 tiles">
-            <div role="group">
+            <div role="group" class="tile image-cover">
               <img src="../images/beach.jpg" alt="">
-              <h1>Lorem ipsum</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
-                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <h2>Lorem ipsum</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet
+                convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
+              </p>
             </div>
           </div>
 
@@ -264,7 +266,7 @@
 &lt;div class="column-3 tiles">
   &lt;div role="group">
     &lt;img src="images/beach.jpg" alt="">
-    &lt;h1>Lorem ipsum&lt;/h1>
+    &lt;h2 class="heading-small">Lorem ipsum&lt;/h2>
     &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.&lt;/p>
   &lt;/div>
 &lt;/div>
@@ -274,8 +276,8 @@
       </article>
 
       <article id="tiles-grouped-content">
-        <div>
-          <h1>Tegel met gegroepeerde content</h1>
+        <div class="content-wrapper">
+          <h2>Tegel met gegroepeerde content</h2>
           <p>Content groeperen binnen een element met tegelweergave</p>
 
           <p>Aandachtspunten:</p>
@@ -285,7 +287,7 @@
             <li>Gegroepeerde knoppen kunnen toegevoegd worden binnen een tegelelement. Gebruik hiervoor
               <code>&lt;div class="button-container"></code>. Voor meer informatie zie <a
                 href="buttons.html#button-container">Knoppen groeperen</a>.</li>
-            <li>Voor het horizontaal weergeven van de gegroepeerde content voeg <code>class="horizontal-view"</code>
+            <li>Voor het horizontaal weergeven van de gegroepeerde content voeg <code>class="horizontal"</code>
               toe. Op de <code>&lt;div></code> van de gegroepeerde content.</li>
           </ul>
 
@@ -301,14 +303,16 @@
           <h2 id="tile-grouped-content">Gegroepeerde content</h2>
           <p>Visueel voorbeeld:</p>
 
-          <div class="tiles column-3">
+          <div class="tiles column-4">
             <div role="group">
-              <h1>Lorem ipsum</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
-                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-              <div>
-                <h1>Gegroepeerde content</h1>
-                <p>Lorem ipsum dolor set amet</p>
+             <h2 class="heading-small">Lorem ipsum dolor sit</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
+                amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
+              </p>
+              <div class="tile-group">
+                <button>Sla op</button>
+                <a href="#">Zie meer</a>
               </div>
             </div>
           </div>
@@ -318,10 +322,10 @@
                 <code>
 &lt;div class="tiles column-3">
   &lt;div role="group">
-    &lt;h1>Lorem ipsum&lt;/h1>
+    &lt;h2 class="heading-small">Lorem ipsum&lt;/h2>
     &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.&lt;/p>
     &lt;div>
-      &lt;h1>Gegroepeerde content&lt;/h1>
+      &lt;h2>Gegroepeerde content&lt;/h2>
       &lt;p>Lorem ipsum dolor set amet&lt;/p>
     &lt;/div>
   &lt;/div>
@@ -332,29 +336,30 @@
           <h2 id="tile-button-container">Gegroepeerde knoppen</h2>
           <p>Visueel voorbeeld:</p>
 
-          <div class="tiles column-3">
-            <div role="group">
-              <h1>Lorem ipsum</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
-                Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-              <div class="button-container">
-                <button class="ghost">Lorem</button>
-                <button>Ipsum</button>
-              </div>
+          <div class="tile" role="group">
+            <h2 class="heading-small">Lorem ipsum dolor sit</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
+              amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
+            </p>
+            <div class="button-container">
+              <button>Save</button>
+              <button class="secondary">Exit</button>
             </div>
           </div>
 
           <p>Html-voorbeeld:</p>
           <pre>
                 <code>
-&lt;div class="tiles column-3">
-  &lt;div role="group">
-    &lt;h1>Lorem ipsum&lt;/h1>
-    &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.&lt;/p>
-    &lt;div class="button-container">
-        &lt;button class="ghost">Lorem&lt;/button>
-        &lt;button>Ipsum&lt;/button>
-    &lt;/div>
+&lt;div class="tile" role="group">
+  &lt;h2 class="heading-small">Lorem ipsum dolor sit&lt;/h2>
+  &lt;p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
+    amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
+  &lt;/p>
+  &lt;div class="button-container">
+    &lt;button>Save&lt;/button>
+    &lt;button class="secondary">Exit&lt;/button>
   &lt;/div>
 &lt;/div>
                 </code>
@@ -365,10 +370,10 @@
 
           <div class="tiles column-3">
             <div role="group">
-              <h1>Lorem ipsum</h1>
+              <h2 class="heading-small">Lorem ipsum</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
                 Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-              <div class="horizontal-view">
+              <div class="horizontal">
                 <a href="">Lorem ipsum</a>
                 <a href="">Dolor set</a>
               </div>
@@ -380,9 +385,9 @@
                 <code>
 &lt;div class="tiles column-3">
   &lt;div role="group">
-    &lt;h1>Lorem ipsum&lt;/h1>
+    &lt;h2 class="heading-small">Lorem ipsum&lt;/h2>
     &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.&lt;/p>
-    &lt;div class="horizontal-view">
+    &lt;div class="horizontal">
       &lt;a href="">Lorem ipsum&lt;/a>
       &lt;a href="">Dolor set&lt;/a>
     &lt;/div>
@@ -405,10 +410,10 @@
           <div class="tiles column-3">
             <div role="group">
               <img src="../images/beach.jpg" alt="">
-              <h1>Lorem ipsum</h1>
+              <h2 class="heading-small">Lorem ipsum</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
                 Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
-              <div class="tile-actions horizontal-view">
+              <div class="tile-actions horizontal">
                 <a href="">Lorem</a>
                 <button>Dolor set</button>
               </div>
@@ -416,9 +421,9 @@
 
             <div role="group">
               <img src="../images/beach.jpg" alt="">
-              <h1>Lorem ipsum</h1>
+              <h2 class="heading-small">Lorem ipsum</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <div class="tile-actions horizontal-view">
+              <div class="tile-actions horizontal">
                 <a href="">Lorem</a>
                 <button>Dolor set</button>
               </div>
@@ -426,11 +431,11 @@
 
             <div role="group">
               <img src="../images/beach.jpg" alt="">
-              <h1>Lorem ipsum</h1>
+              <h2 class="heading-small">Lorem ipsum</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis.
                 Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
               <p>Ut et dui sapien.</p>
-              <div class="tile-actions horizontal-view">
+              <div class="tile-actions horizontal">
                 <a href="">Lorem</a>
                 <button>Dolor set</button>
               </div>
@@ -443,9 +448,9 @@
 &lt;div class="tiles column-3">
   &lt;div role="group">
     &lt;img src="images/beach.jpg" alt="">
-    &lt;h1>Lorem ipsum&lt;/h1>
+    &lt;h2 class="heading-small">Lorem ipsum&lt;/h2>
     &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.&lt;/p>
-    &lt;div class="tile-actions horizontal-view">
+    &lt;div class="tile-actions horizontal">
       &lt;a href="">Lorem&lt;/a>
       &lt;button>Dolor set&lt;/button>
     &lt;/div>
@@ -453,9 +458,9 @@
 
   &lt;div role="group">
     &lt;img src="images/beach.jpg" alt="">
-    &lt;h1>Lorem ipsum&lt;/h1>
+    &lt;h2 class="heading-small">Lorem ipsum&lt;/h2>
     &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p>
-    &lt;div class="tile-actions horizontal-view">
+    &lt;div class="tile-actions horizontal">
       &lt;a href="">Lorem&lt;/a>
       &lt;button>Dolor set&lt;/button>
     &lt;/div>
@@ -463,10 +468,10 @@
 
   &lt;div role="group">
     &lt;img src="images/beach.jpg" alt="">
-    &lt;h1>Lorem ipsum&lt;/h1>
+    &lt;h2 class="heading-small">Lorem ipsum&lt;/h2>
     &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.&lt;/p>
     &lt;p>Ut et dui sapien.&lt;/p>
-    &lt;div class="tile-actions horizontal-view">
+    &lt;div class="tile-actions horizontal">
       &lt;a href="">Lorem&lt;/a>
       &lt;button>Dolor set&lt;/button>
     &lt;/div>
@@ -487,10 +492,10 @@
   </main>
 
   <footer>
-    <div class="two-thirds-one-third">
+    <div class="two-thirds-one-third content-wrapper">
       <span class="slogan">Manon - Rijksoverheid CSS framework</span>
       <nav aria-labelledby="footer-nav-1-heading">
-        <h1 id="footer-nav-1-heading">Service</h1>
+        <span id="footer-nav-1-heading">Service</span>
         <ul>
           <li><a href="../index.html">Over</a></li>
           <li><a href="../test/index.html">Styling tests</a></li>

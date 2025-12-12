@@ -14,12 +14,12 @@
 <body class="test-cases">
   <header>
     <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
-    <a href="" class="ro-logo">
+    <a href="" class="logo">
       <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
       Rijksoverheid
     </a>
 
-    <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
+    <nav aria-label="Hoofdnavigatie" id="main-nav">
       <div>
         <ul>
           <li><a href="../index.html"><span class="icon icon-home">Hoofdpagina icoon</span> Rijksoverheid CSS</a></li>
@@ -65,7 +65,7 @@
 
     <div>
       <article>
-        <div>
+        <div class="content-wrapper">
           <h1>Tabellen</h1>
           <p>Om data efficient en gebruiksvriendelijk weer te geven kan gebruik gemaakt worden van tabellen.</p>
 
@@ -156,7 +156,7 @@
       </article>
 
       <article id="table">
-        <div>
+        <div class="content-wrapper">
           <h1>Basisvoorbeeld tabel</h1>
           <p>Het basisvoorbeeld bevat de basiselementen voor een nette, gebruiksvriendelijke en toegankelijke tabel.</p>
           <h3>Voorbeeld</h3>
@@ -229,7 +229,7 @@
       </article>
 
       <article id="table-footer">
-        <div>
+        <div class="content-wrapper">
           <h1>Tabel met footer</h1>
           <p>Om de gebruiker te informeren over de inhoud van de tabel, is het aan te raden om een titel toe te voegen
             met daarin de omschrijving van de tabel. Voeg direct binnen de <code>table</code> een <code>caption</code>
@@ -327,7 +327,7 @@
       </article>
 
       <article id="table-content">
-        <div>
+        <div class="content-wrapper">
           <h1>Tabelcontent</h1>
           <p>Een overzicht met elementen die gebruikt kunnen worden binnen tabellen.</p>
           <p>Beschikbare voorbeelden:</p>
@@ -345,7 +345,7 @@
       </article>
 
       <article id="table-content-action-buttons">
-        <div>
+        <div class="content-wrapper">
           <h1>Actieknoppen</h1>
           <p>Herhalende content zoals actieknoppen kunnen visueel als iconen weergegeven worden.</p>
           <p>Aandachtspunten:</p>
@@ -438,7 +438,7 @@
       </article>
 
       <article id="table-content-checkbox">
-        <div>
+        <div class="content-wrapper">
           <h1>Checkbox</h1>
           <p>Visueel voorbeeld:</p>
           <div class="horizontal-scroll">
@@ -446,17 +446,17 @@
               <caption>Tabelvoorbeeld met selectievak:</caption>
               <thead>
                 <tr>
-                  <th scope="col"><input type="checkbox"></th>
+                  <th scope="col"><div class="checkbox"><input type="checkbox"></div></th>
                   <th scope="col">Table header heading</th>
                   <th scope="col">Action</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td><input type="checkbox"></td>
+                  <td><div class="checkbox"><input type="checkbox"></div></td>
                   <td>Ipsum</td>
                   <td>
-                    <form><input type="submit" value="Lorem"></form>
+                    <form class="inline"><input type="submit" value="Lorem"></form>
                   </td>
                 </tr>
               </tbody>
@@ -471,14 +471,14 @@
     &lt;caption>Tabelvoorbeeld met selectievak:&lt;/caption>
     &lt;thead>
       &lt;tr>
-        &lt;th scope="col">&lt;input type="checkbox">&lt;/th>
+        &lt;th scope="col">&lt;div class="checkbox">&lt;input type="checkbox">&lt;/div>&lt;/th>
         &lt;th scope="col">Table header heading&lt;/th>
         &lt;th scope="col">Action&lt;/th>
       &lt;/tr>
     &lt;/thead>
     &lt;tbody>
       &lt;tr>
-        &lt;td>&lt;input type="checkbox">&lt;/td>
+        &lt;td>&lt;div class="checkbox">&lt;input type="checkbox">&lt;/div>&lt;/td>
         &lt;td>Ipsum&lt;/td>
         &lt;td>&lt;form>&lt;input type="submit" value="Lorem">&lt;/form>&lt;/td>
       &lt;/tr>
@@ -491,7 +491,7 @@
       </article>
 
       <article id="table-content-grouped">
-        <div>
+        <div class="content-wrapper">
           <h1>Gegroepeerde data binnen een cel</h1>
           <p>Sommige elementen zoals bijvoorbeeld actieknoppen bestaan visueel vaak enkel uit een icoon en kunnen om die
             reden prima naast elkaar op een regel weergegeven worden. Groepeer de elementen binnen een
@@ -557,7 +557,7 @@
       </article>
 
       <article id="table-messages">
-        <div>
+        <div class="content-wrapper">
           <h1>Tabel - Meldingen</h1>
           <p>Tabelelementen kunnen een meldig weergeven. Denk hierbij aan een foutmelding of een toelichting.</p>
           <p>Voeg een van de melding-classes toe aan een volledige tabelrij <code>tr</code> of aan een losse cel
@@ -661,7 +661,7 @@
       </article>
 
       <article id="table-caption">
-        <div>
+        <div class="content-wrapper">
           <h1>Titel</h1>
           <p>Om de gebruiker te informeren over de inhoud van de tabel, is het aan te raden om een titel toe te voegen
             met daarin de omschrijving van de tabel. Voeg direct binnen de <code>table</code> een <code>caption</code>
@@ -711,7 +711,7 @@
       </article>
 
       <article id="table-content-number">
-        <div>
+        <div class="content-wrapper">
           <h2>Numerieke data</h2>
           <p>Getallen worden visueel onderscheidend weergegeven van overige celdata om de gebruiksvriendelijkheid te
             vergroten.</p>
@@ -783,7 +783,7 @@
       </article>
 
       <article id="table-options">
-        <div>
+        <div class="content-wrapper">
           <h1>Tabelopties</h1>
           <p>Een overzicht van opties die gebruikt kunnen worden om tabellen en hun data weer te geven.</p>
           <p>Beschikbare voorbeelden:</p>
@@ -802,7 +802,7 @@
       </article>
 
       <article id="colspan">
-        <div>
+        <div class="content-wrapper">
           <h1>Data over meerdere kolommen</h1>
           <p>Data weergeven over meer dan een kolom kan gebruikt worden binnen tabellen. Dit kan handig zijn om data
             gebruiksvriendelijker weer te geven.</p>
@@ -893,7 +893,7 @@
       </article>
 
       <article id="rowspan">
-        <div>
+        <div class="content-wrapper">
           <h1>Data over meerdere rijen</h1>
           <p>Data weergeven over meer dan een rij kan gebruikt worden binnen tabellen. Dit kan handig zijn om data
             gebruiksvriendelijker weer te geven.</p>
@@ -969,7 +969,7 @@
       </article>
 
       <article id="table-condensed">
-        <div>
+        <div class="content-wrapper">
           <h1>Tabel - Gecomprimeerde weergave</h1>
           <p>Voor het tonen van grote datasets kan het voor de gebruiksvriendelijkheid fijner zijn om de data
             gecomprimeerd weer te geven zodat het makkelijker is voor de gebruiker om overzicht te houden. Om gebruik te
@@ -1043,7 +1043,7 @@
       </article>
 
       <article id="table-grouped-data">
-        <div>
+        <div class="content-wrapper">
           <h2>Gegroepeerde data</h2>
           <p>Data kan gegroepeerd weergegeven worden, dit kan gebruikt worden voor gebruiksvriendelijkheid.</p>
           <ul>
@@ -1130,7 +1130,7 @@
       </article>
 
       <article id="table-sort">
-        <div>
+        <div class="content-wrapper">
           <h1>Sorteerbare data</h1>
           <p>Om inzicht te krijgen in de data kan het behulpzaam zijn om de gebruiker de data te laten sorteren.
             Bijvoorbeeld op basis van op of aflopende data.</p>
@@ -1196,7 +1196,7 @@
       </article>
 
       <article id="table-expando-row">
-        <div>
+        <div class="content-wrapper">
           <h1>Uitklapbare tabel</h1>
           <p>Voor het tonen van complexe tabellen met bijbehorende details kan gekozen worden voor een tabel met
             uitklapbare tabelrijen.</p>
@@ -1337,7 +1337,7 @@
       </article>
 
       <article id="table-summary">
-        <div>
+        <div class="content-wrapper">
           <h1>Samenvatting</h1>
           <p>Geschikt voor het tonen van korte overzichten en samenvattingen bij complexe tabellen en documenten.</p>
 
@@ -1444,7 +1444,7 @@
       </article>
 
       <article id="table-sticky">
-        <div>
+        <div class="content-wrapper">
           <h1>Tabel - Sticky header</h1>
           <p>Voor lange tabellen kan het gewenst zijn om de tabel-header in het zicht te houden. Zodat de gebruiker de
             titels kan zien.</p>
@@ -1592,7 +1592,7 @@
       </article>
 
       <article id="table-scope">
-        <div>
+        <div class="content-wrapper">
           <h1>Tabelrichting</h1>
           <p>Data in tabellen kan als rij of als kolom weergegeven worden.</p>
           <p>Het is hierbij belangrijk om rekening te houden met gebruikers die gebruik maken van hulptechnologiën zoals
@@ -1670,7 +1670,7 @@
   </main>
 
   <footer>
-    <div class="two-thirds-one-third">
+    <div class="two-thirds-one-third content-wrapper">
       <span class="slogan">Manon - Rijksoverheid CSS framework</span>
       <nav aria-labelledby="footer-nav-1-heading">
         <h1 id="footer-nav-1-heading">Service</h1>

@@ -1,21 +1,49 @@
-$ro-font-path: "../../../fonts" !default;
-$ro-img-path: "../../img" !default;
-$ro-brand-color: "ruby-red" !default;
-$ro-enhance-contrast: false !default;
+// Theme
+@use "rijkshuisstlijl-2008";
 
-/* Manon components */
-@use "manon";
+// Manon components
+@use "@minvws/manon/components/bundles/all";
 
-/* Theme: Rijksoverheid. */
-@use "theme" with (
-  $font-path: $ro-font-path,
-  $img-path: $ro-img-path,
-  $brand-color: $ro-brand-color,
-  $enhance-contrast: $ro-enhance-contrast
-);
+// Rijksoverheid components
+@use "components/notification-icon.scss";
 
-/* Rijksoverheid-specific components */
-@use "components";
+// Manon overrides (can be removed after upgrading beyond alpha-3
+pre > code {
+  width: 100%;
+}
 
-/* Extended icon set */
-@use "icons-extended";
+.background-color-offset,
+.background-color-offset-1 {
+  padding: 1.75rem 0;
+  margin: 1.75rem 0;
+
+  // Add to theme file instead after upgrading
+  // $background-color-offset-padding: spacing.$spacing-175 spacing.$spacing-300,
+  // $background-color-offset-margin: spacing.$spacing-175 spacing.$spacing-300,
+}
+
+.notification-type {
+  font-size: 0;
+
+  // Add to theme file instead after upgrading
+  // $notification-type-font-size: 0;
+}
+
+.grid-iconset {
+  padding: 1rem;
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+
+  li {
+    padding: 1rem;
+    list-style-type: none;
+    background: #ffffff;
+    hyphens: none;
+    display: grid;
+    grid-template-columns: 1rem auto;
+    gap: 1rem;
+    font-size: 1rem;
+  }
+}

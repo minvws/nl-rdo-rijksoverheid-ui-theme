@@ -6,12 +6,12 @@ export default {
   mode: "development",
   context: import.meta.dirname,
   entry: {
-    accordion: "@minvws/manon/accordion.js",
-    expandoRows: "@minvws/manon/expando-rows.js",
-    filters: "@minvws/manon/filters.js",
-    formHelp: "@minvws/manon/form-help.js",
-    collapsible: "@minvws/manon/collapsible.js",
-    sidemenu: "@minvws/manon/sidemenu.js",
+    accordion: "@minvws/manon/js/accordion.js",
+    expandoRows: "@minvws/manon/js/expando-rows.js",
+    filters: "@minvws/manon/js/filters.js",
+    formHelp: "@minvws/manon/js/form-help.js",
+    collapsible: "@minvws/manon/js/collapsible.js",
+    sidemenu: "@minvws/manon/js/sidemenu.js",
     main: "./main.scss",
   },
   output: {

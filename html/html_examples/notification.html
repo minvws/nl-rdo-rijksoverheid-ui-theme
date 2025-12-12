@@ -13,12 +13,12 @@
 <body class="test-cases">
     <header>
         <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
-        <a href="" class="ro-logo">
+        <a href="" class="logo">
             <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
             Rijksoverheid
         </a>
 
-        <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
+        <nav aria-label="Hoofdnavigatie" id="main-nav">
             <div>
                 <ul>
                     <li><a href="../index.html"><span class="icon icon-home">Hoofdpagina icoon</span> Rijksoverheid
@@ -40,7 +40,6 @@
                     <ul>
                         <li><a href="#error-div">Blokelement</a></li>
                         <li><a href="#error-p">Paragraaf</a></li>
-                        <li><a href="#error-button">Knop</a></li>
                         <li><a href="#error-table">Tabel-elementen</a></li>
                         <li><a href="#error-form">Formulier-elementen</a></li>
                     </ul>
@@ -49,7 +48,6 @@
                     <ul>
                         <li><a href="#warning-div">Blokelement</a></li>
                         <li><a href="#warning-p">Paragraaf</a></li>
-                        <li><a href="#warning-button">Knop</a></li>
                         <li><a href="#warning-table">Tabel-elementen</a></li>
                         <li><a href="#warning-form">Formulier-elementen</a></li>
                     </ul>
@@ -58,7 +56,6 @@
                     <ul>
                         <li><a href="#confirmation-div">Blokelement</a></li>
                         <li><a href="#confirmation-p">Paragraaf</a></li>
-                        <li><a href="#confirmation-button">Knop</a></li>
                         <li><a href="#confirmation-table">Tabel-elementen</a></li>
                         <li><a href="#confirmation-form">Formulier-elementen</a></li>
                     </ul>
@@ -67,7 +64,6 @@
                     <ul>
                         <li><a href="#explanation-div">Blokelement</a></li>
                         <li><a href="#explanation-p">Paragraaf</a></li>
-                        <li><a href="#explanation-button">Knop</a></li>
                         <li><a href="#explanation-table">Tabel-elementen</a></li>
                         <li><a href="#explanation-form">Formulier-elementen</a></li>
                     </ul>
@@ -76,7 +72,6 @@
                     <ul>
                         <li><a href="#primary-div">Blokelement</a></li>
                         <li><a href="#primary-p">Paragraaf</a></li>
-                        <li><a href="#primary-button">Knop</a></li>
                         <li><a href="#primary-table">Tabel-elementen</a></li>
                         <li><a href="#primary-form">Formulier-elementen</a></li>
                     </ul>
@@ -101,7 +96,7 @@
 
         <div>
             <article>
-                <div>
+                <div class="content-wrapper">
                     <h1>Notificaties</h1>
                     <p>Waarschuwingen, extra informatie en foutmeldingen.</p>
                     <p>Aandachtspunten:</p>
@@ -132,7 +127,7 @@
             </article>
 
             <article id="page-notifications">
-                <div>
+                <div class="content-wrapper">
                     <h1>Notificatievoorbeeld op pagina-niveau</h1>
                     <p>Voor het plaatsen van algemene meldingen bovenaan de pagina.</p>
                     <p>Aandachtspunten:</p>
@@ -145,7 +140,7 @@
                     <h2>Visueel voorbeeld section:</h2>
                 </div>
                 <header>
-                    <a href="" class="ro-logo">
+                    <a href="" class="logo">
                         <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
                         Rijksoverheid
                     </a>
@@ -163,7 +158,7 @@
                 <main>
                     <section class="confirmation" role="group" aria-label="bevestiging">
                         <div>
-                            <span>Bevestiging:</span>
+                            <span class="notification-type">Bevestiging:</span>
                             <p>Uw account is succesvol aangemaakt.</p>
                         </div>
                     </section>
@@ -175,7 +170,7 @@
 &lt;main>
     &lt;section class="confirmation" role="group" aria-label="bevestiging">
         &lt;div>
-            &lt;span>Bevestiging:&lt;/span>
+            &lt;span class="notification-type">Bevestiging:&lt;/span>
             &lt;p>Uw account is succesvol aangemaakt.&lt;/p>
         &lt;/div>
     &lt;/section>
@@ -186,7 +181,7 @@
                 </div>
 
                 <header>
-                    <a href="" class="ro-logo">
+                    <a href="" class="logo">
                         <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
                         Rijksoverheid
                     </a>
@@ -203,7 +198,7 @@
                 </header>
                 <main>
                     <p class="confirmation" role="group" aria-label="bevestiging">
-                        <span>Bevestiging:</span>
+                        <span class="notification-type">Bevestiging:</span>
                         Uw account is succesvol aangemaakt.
                     </p>
                 </main>
@@ -225,7 +220,7 @@
                 </div>
 
                 <header>
-                    <a href="" class="ro-logo">
+                    <a href="" class="logo">
                         <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
                         Rijksoverheid
                     </a>
@@ -242,7 +237,7 @@
                 </header>
                 <main>
                     <span class="confirmation" role="group" aria-label="bevestiging">
-                        <span>Bevestiging:</span>
+                        <span class="notification-type">Bevestiging:</span>
                         Uw account is succesvol aangemaakt.
                     </span>
                 </main>
@@ -253,7 +248,7 @@
                         <code>
 &lt;main>
     &lt;span class="confirmation" role="group" aria-label="bevestiging">
-       &lt;span>Bevestiging:&lt;/span>
+       &lt;span class="notification-type">Bevestiging:&lt;/span>
        Uw account is succesvol aangemaakt.
     &lt;/span>
 &lt;/main>
@@ -263,7 +258,7 @@
             </article>
 
             <article>
-                <div>
+                <div class="content-wrapper">
                     <h1 id="error">Foutmelding</h1>
                     <p>Te gebruiken om de gebruiker te attenderen op een fout. Bijvoorbeeld bij het incorrect invoeren
                         van data of een systeemfout.</p>
@@ -273,7 +268,6 @@
                         <ul>
                             <li><a href="#error-div">Blokelement</a></li>
                             <li><a href="#error-p">Paragraaf</a></li>
-                            <li><a href="#error-button">Knop</a></li>
                             <li><a href="#error-table">Tabel-elementen</a></li>
                             <li><a href="#error-form">Formulier-elementen</a></li>
                         </ul>
@@ -284,7 +278,7 @@
                     <p>Visueel voorbeeld:</p>
 
                     <div class="error" role="group" aria-label="foutmelding">
-                        <span>Foutmelding:</span>
+                        <span class="notification-type">Foutmelding:</span>
                         <h1>Lorem ipsum dolor set</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
                             facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque.
@@ -306,7 +300,7 @@
                     <pre>
                         <code>
 &lt;div class="error" role="group" aria-label="foutmelding">
-    &lt;span>Foutmelding:&lt;/span>
+    &lt;span class="notification-type">Foutmelding:&lt;/span>
     &lt;!-- Voeg hier de content toe. -->
 &lt;/div>
                         </code>
@@ -315,83 +309,23 @@
                     <h2 id="error-p">Foutmelding op paragraaf:</h2>
                     <h3>Voorbeeld</h3>
                     <p>Visueel voorbeeld:</p>
-                    <p class="error" role="group" aria-label="foutmelding"><span>Foutmelding:</span> Lorem ipsum dolor
+                    <p class="error" role="group" aria-label="foutmelding"><span class="notification-type">Foutmelding:</span> Lorem ipsum dolor
                         sit.</p>
 
                     <p>Html-voorbeeld:</p>
                     <pre>
                         <code>
-&lt;p class="error" role="group" aria-label="foutmelding">&lt;span>Foutmelding:&lt;/span> Lorem ipsum dolor sit amet &lt;/p>
-                        </code>
-                    </pre>
-
-                    <h2 id="error-button">Foutmelding op <code>button</code></h2>
-                    <h3>Voorbeeld</h3>
-
-                    <p>Visueel voorbeeld:</p>
-                    <button type="button" class="error">
-                        <span>Foutmelding:</span> Lorem ipsum
-                    </button>
-
-                    <p>Html-voorbeeld:</p>
-                    <pre>
-                        <code>
-&lt;button type="button" class="error">
-    &lt;span>Foutmelding:&lt;/span> Lorem ipsum
-&lt;/button>
+&lt;p class="error" role="group" aria-label="foutmelding">&lt;span class="notification-type">Foutmelding:&lt;/span> Lorem ipsum dolor sit amet &lt;/p>
                         </code>
                     </pre>
 
                     <h2 id="error-table">Foutmelding op tabel-elementen</h2>
                     <nav aria-label="Foutmelding tabelelementen subnavigatie">
                         <ul>
-                            <li><a href="#error-th">Tabeltitel</a></li>
                             <li><a href="#error-td">Tabelcel</a></li>
                             <li><a href="#error-tr">Tabelrij</a></li>
                         </ul>
                     </nav>
-
-                    <h2 id="error-th">Foutmelding op tabeltitel</h2>
-
-                    <h4>Voorbeeld</h4>
-                    <p>Visueel voorbeeld:</p>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th class="error" aria-label="foutmelding"><span>Foutmelding:</span> Lorem</th>
-                                <th class="error" aria-label="foutmelding"><span>Foutmelding:</span> Ipsum</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>12</td>
-                                <td>42</td>
-                            </tr>
-
-                            <tr>
-                                <td>15</td>
-                                <td>168</td>
-                            </tr>
-
-                            <tr>
-                                <td>123</td>
-                                <td>2</td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <td>Lorem ipsum</td>
-                                <td>Dolor set amet</td>
-                            </tr>
-                        </tfoot>
-                    </table>
-
-                    <p>Html-voorbeeld:</p>
-                    <pre>
-                        <code>
-&lt;th class="error" aria-label="foutmelding">&lt;span>Foutmelding:&lt;/span> Lorem&lt;/th>
-                        </code>
-                    </pre>
 
                     <h2 id="error-td">Foutmelding op Tabelcel</h2>
                     <h4>Voorbeeld</h4>
@@ -410,18 +344,18 @@
                             </tr>
 
                             <tr>
-                                <td class="error" aria-label="foutmelding"><span>Foutmelding:</span> 15</td>
-                                <td class="error" aria-label="foutmelding"><span>Foutmelding:</span> 168</td>
+                                <td class="error" aria-label="foutmelding"><span class="notification-type">Foutmelding:</span> 15</td>
+                                <td class="error" aria-label="foutmelding"><span class="notification-type">Foutmelding:</span> 168</td>
                             </tr>
 
                             <tr>
-                                <td class="error" aria-label="foutmelding"><span>Foutmelding:</span> 15</td>
-                                <td class="error" aria-label="foutmelding"><span>Foutmelding:</span> 168</td>
+                                <td class="error" aria-label="foutmelding"><span class="notification-type">Foutmelding:</span> 15</td>
+                                <td class="error" aria-label="foutmelding"><span class="notification-type">Foutmelding:</span> 168</td>
                             </tr>
 
                             <tr>
-                                <td class="error" aria-label="foutmelding"><span>Foutmelding:</span> 15</td>
-                                <td class="error" aria-label="foutmelding"><span>Foutmelding:</span> 168</td>
+                                <td class="error" aria-label="foutmelding"><span class="notification-type">Foutmelding:</span> 15</td>
+                                <td class="error" aria-label="foutmelding"><span class="notification-type">Foutmelding:</span> 168</td>
                             </tr>
 
                             <tr>
@@ -440,7 +374,7 @@
                     <p>Html-voorbeeld:</p>
                     <pre>
                         <code>
-&lt;td class="error" aria-label="foutmelding">&lt;span>Foutmelding:&lt;/span> 15&lt;/td>
+&lt;td class="error" aria-label="foutmelding">&lt;span class="notification-type">Foutmelding:&lt;/span> 15&lt;/td>
                         </code>
                     </pre>
 
@@ -455,15 +389,15 @@
                     <p>Visueel voorbeeld:</p>
                     <table>
                         <thead>
-                            <tr class="error">
-                                <th aria-label="foutmelding"><span>Foutmelding:</span> Lorem</th>
-                                <th aria-label="foutmelding"><span>Foutmelding:</span> Ipsum</th>
+                            <tr>
+                                <th>Lorem</th>
+                                <th>Ipsum</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr class="error">
-                                <td aria-label="foutmelding"><span>Foutmelding:</span> 12</td>
-                                <td aria-label="foutmelding"><span>Foutmelding:</span> 42</td>
+                                <td aria-label="foutmelding"><span class="notification-type">Foutmelding:</span> 12</td>
+                                <td aria-label="foutmelding"><span class="notification-type">Foutmelding:</span> 42</td>
                             </tr>
 
                             <tr>
@@ -489,15 +423,15 @@
                         <code>
 &lt;table>
     &lt;thead>
-        &lt;tr class="error">
-            &lt;th aria-label="foutmelding">&lt;span>Foutmelding:&lt;/span> Lorem&lt;/th>
-            &lt;th aria-label="foutmelding">&lt;span>Foutmelding:&lt;/span> Ipsum&lt;/th>
+        &lt;tr>
+            &lt;th>Lorem&lt;/th>
+            &lt;th>Ipsum&lt;/th>
         &lt;/tr>
     &lt;/thead>
     &lt;tbody>
         &lt;tr class="error">
-            &lt;td aria-label="foutmelding">&lt;span>Foutmelding:&lt;/span> 12&lt;/td>
-            &lt;td aria-label="foutmelding">&lt;span>Foutmelding:&lt;/span> 42&lt;/td>
+            &lt;td aria-label="foutmelding">&lt;span class="notification-type">Foutmelding:&lt;/span> 12&lt;/td>
+            &lt;td aria-label="foutmelding">&lt;span class="notification-type">Foutmelding:&lt;/span> 42&lt;/td>
         &lt;/tr>
     &lt;/tbody>
 &lt;/table>
@@ -525,7 +459,7 @@
                             <input id="input-error" class="error" value="Lorem ipsum"
                                 aria-describedby="input-error-message" aria-invalid="true">
                             <p class="error" id="input-error-message">
-                                <span>foutmelding:</span> Lorem ipsum dolor set amet
+                                <span class="notification-type">foutmelding:</span> Lorem ipsum dolor set amet
                             </p>
                         </div>
                     </form>
@@ -537,7 +471,7 @@
     &lt;div>
         &lt;input id="input-error" class="error" value="Lorem ipsum" aria-describedby="input-error-message" aria-invalid="true">
         &lt;p class="error" id="input-error-message">
-            &lt;span>foutmelding:&lt;/span> Lorem ipsum dolor set amet
+            &lt;span class="notification-type">foutmelding:&lt;/span> Lorem ipsum dolor set amet
         &lt;/p>
     &lt;/div>
 &lt;/form>
@@ -554,7 +488,7 @@
                                 placeholder="Jouw vraag of opmerking" class="error"
                                 aria-describedby="voorbeeld-tekstveld-error-message" aria-invalid="true"></textarea>
                             <p class="error" id="voorbeeld-tekstveld-error-message">
-                                <span>foutmelding:</span> Lorem ipsum dolor set amet
+                                <span class="notification-type">foutmelding:</span> Lorem ipsum dolor set amet
                             </p>
                         </div>
 
@@ -568,7 +502,7 @@
     &lt;div>
         &lt;textarea id="voorbeeld-tekstveld-error" name="voorbeeld-tekstveld-error" placeholder="Jouw vraag of opmerking" class="error" aria-describedby="voorbeeld-tekstveld-error-message" aria-invalid="true">&lt;/textarea>
         &lt;p class="error" id="voorbeeld-tekstveld-error-message">
-            &lt;span>foutmelding:&lt;/span> Lorem ipsum dolor set amet
+            &lt;span class="notification-type">foutmelding:&lt;/span> Lorem ipsum dolor set amet
         &lt;/p>
     &lt;/div>
     &lt;button type="submit">Verzend&lt;/button>
@@ -589,7 +523,7 @@
                                 <option value="3">Optie 3</option>
                             </select>
                             <p class="error" id="select-error-message">
-                                <span>foutmelding:</span> Lorem ipsum dolor set amet
+                                <span class="notification-type">foutmelding:</span> Lorem ipsum dolor set amet
                             </p>
                         </div>
                     </form>
@@ -605,7 +539,7 @@
             &lt;option value="3">Optie 3&lt;/option>
         &lt;/select>
         &lt;p class="error" id="select-error-message">
-            &lt;span>foutmelding:&lt;/span> Lorem ipsum dolor set amet
+            &lt;span class="notification-type">foutmelding:&lt;/span> Lorem ipsum dolor set amet
         &lt;/p>
     &lt;/div>
 &lt;/form>
@@ -622,7 +556,7 @@
                                 placeholder="Begin met typen of klik om een optie uit te kiezen"
                                 list="example-list-error" aria-describedby="datalist-error-message" aria-invalid="true">
                             <p class="error" id="datalist-error-message">
-                                <span>foutmelding:</span> Lorem ipsum dolor set amet
+                                <span class="notification-type">foutmelding:</span> Lorem ipsum dolor set amet
                             </p>
                         </div>
 
@@ -640,7 +574,7 @@
     &lt;div>
         &lt;input id="datalist-error" class="error" placeholder="Begin met typen of klik om een optie uit te kiezen" list="example-list-error" aria-describedby="datalist-error-message" aria-invalid="true">
         &lt;p class="error" id="datalist-error-message">
-            &lt;span>foutmelding:&lt;/span> Lorem ipsum dolor set amet
+            &lt;span class="notification-type">foutmelding:&lt;/span> Lorem ipsum dolor set amet
         &lt;/p>
     &lt;/div>
 
@@ -664,7 +598,7 @@
                               <label for="checkbox-error">Lorem ipsum dolor set amet</label>
                             </div>
                             <p class="error" id="checkbox-error-message">
-                                <span>foutmelding:</span> Lorem ipsum dolor set amet
+                                <span class="notification-type">foutmelding:</span> Lorem ipsum dolor set amet
                             </p>
                         </div>
                     </form>
@@ -677,7 +611,7 @@
           &lt;input type="checkbox" id="checkbox-error" name="standaard-checkbox" class="error" aria-invalid="true">
           &lt;label for="checkbox-error">Lorem ipsum dolor set amet&lt;/label>
           &lt;p class="error" id="checkbox-error-message">
-              &lt;span>foutmelding:&lt;/span> Lorem ipsum dolor set amet
+              &lt;span class="notification-type">foutmelding:&lt;/span> Lorem ipsum dolor set amet
           &lt;/p>
         &lt;/div>
     &lt;/div>
@@ -696,7 +630,7 @@
                                 <label for="radio-example-error">Lorem ipsum dolor set amet</label>
                             </div>
                             <p class="error" id="radio-example-error-message">
-                                <span>foutmelding:</span> Lorem ipsum dolor set amet
+                                <span class="notification-type">foutmelding:</span> Lorem ipsum dolor set amet
                             </p>
                         </div>
                     </form>
@@ -710,7 +644,7 @@
             &lt;label for="radio-example-error">Lorem ipsum dolor set amet&lt;/label>
         &lt;/div>
         &lt;p class="error" id="radio-example-error-message">
-            &lt;span>foutmelding:&lt;/span> Lorem ipsum dolor set amet
+            &lt;span class="notification-type">foutmelding:&lt;/span> Lorem ipsum dolor set amet
         &lt;/p>
     &lt;/div>
 &lt;/form>
@@ -720,7 +654,7 @@
             </article>
 
             <article>
-                <div>
+                <div class="content-wrapper">
                     <h1 id="warning">Waarschuwing</h1>
                     <p>Te gebruiken om de gebruiker te waarschuwen.</p>
 
@@ -729,7 +663,6 @@
                         <ul>
                             <li><a href="#warning-div">Blokelement</a></li>
                             <li><a href="#warning-p">Paragraaf</a></li>
-                            <li><a href="#warning-button">Knop</a></li>
                             <li><a href="#warning-table">Tabel-elementen</a></li>
                             <li><a href="#warning-form">Formulier-elementen</a></li>
                         </ul>
@@ -740,7 +673,7 @@
                     <p>Visueel voorbeeld:</p>
 
                     <div class="warning" role="group" aria-label="waarschuwing">
-                        <span>Waarschuwing:</span>
+                        <span class="notification-type">Waarschuwing:</span>
                         <h1>Lorem ipsum dolor set</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
                             facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque.
@@ -762,7 +695,7 @@
                     <pre>
                         <code>
 &lt;div class="warning" role="group" aria-label="waarschuwing">
-    &lt;span>Waarschuwing:&lt;/span>
+    &lt;span class="notification-type">Waarschuwing:&lt;/span>
     &lt;!-- Voeg hier de content toe. -->
 &lt;/div>
                         </code>
@@ -772,83 +705,23 @@
                     <h3>Voorbeeld</h3>
                     <p>Visueel voorbeeld:</p>
                     <p class="warning" role="group" aria-label="waarschuwing">
-                        <span>Waarschuwing:</span> Lorem ipsum dolor sit.
+                        <span class="notification-type">Waarschuwing:</span> Lorem ipsum dolor sit.
                     </p>
 
                     <p>Html-voorbeeld:</p>
                     <pre>
                         <code>
-&lt;p class="warning" role="group" aria-label="waarschuwing">&lt;span>Waarschuwing:&lt;/span> Lorem ipsum dolor sit&lt;/p>
-                        </code>
-                    </pre>
-
-                    <h2 id="warning-button">Waarschuwing op <code>button</code></h2>
-                    <h3>Voorbeeld</h3>
-
-                    <p>Visueel voorbeeld:</p>
-                    <button type="button" class="warning">
-                        <span>Waarschuwing:</span> Lorem ipsum
-                    </button>
-
-                    <p>Html-voorbeeld:</p>
-                    <pre>
-                        <code>
-&lt;button type="button" class="warning">
-    &lt;span>Waarschuwing:&lt;/span> Lorem ipsum
-&lt;/button>
+&lt;p class="warning" role="group" aria-label="waarschuwing">&lt;span class="notification-type">Waarschuwing:&lt;/span> Lorem ipsum dolor sit&lt;/p>
                         </code>
                     </pre>
 
                     <h2 id="warning-table">Waarschuwing op tabel-elementen</h2>
                     <nav aria-label="Waarschuwing tabelelementen subnavigatie">
                         <ul>
-                            <li><a href="#warning-th">Tabeltitel</a></li>
                             <li><a href="#warning-td">Tabelcel</a></li>
                             <li><a href="#warning-tr">Tabelrij</a></li>
                         </ul>
                     </nav>
-
-                    <h2 id="warning-th">Waarschuwing op tabeltitel</h2>
-
-                    <h4>Voorbeeld</h4>
-                    <p>Visueel voorbeeld:</p>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th class="warning" aria-label="waarschuwing"><span>Waarschuwing:</span> Lorem</th>
-                                <th class="warning" aria-label="waarschuwing"><span>Waarschuwing:</span> Ipsum</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>12</td>
-                                <td>42</td>
-                            </tr>
-
-                            <tr>
-                                <td>15</td>
-                                <td>168</td>
-                            </tr>
-
-                            <tr>
-                                <td>123</td>
-                                <td>2</td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <td>Lorem ipsum</td>
-                                <td>Dolor set amet</td>
-                            </tr>
-                        </tfoot>
-                    </table>
-
-                    <p>Html-voorbeeld:</p>
-                    <pre>
-                        <code>
-&lt;th class="warning" aria-label="waarschuwing">&lt;span>Waarschuwing:&lt;/span> Lorem&lt;/th>
-                        </code>
-                    </pre>
 
                     <h2 id="warning-td">Waarschuwing op Tabelcel</h2>
                     <h4>Voorbeeld</h4>
@@ -867,18 +740,18 @@
                             </tr>
 
                             <tr>
-                                <td class="warning" aria-label="waarschuwing"><span>Waarschuwing:</span> 15</td>
-                                <td class="warning" aria-label="waarschuwing"><span>Waarschuwing:</span> 168</td>
+                                <td class="warning" aria-label="waarschuwing"><span class="notification-type">Waarschuwing:</span> 15</td>
+                                <td class="warning" aria-label="waarschuwing"><span class="notification-type">Waarschuwing:</span> 168</td>
                             </tr>
 
                             <tr>
-                                <td class="warning" aria-label="waarschuwing"><span>Waarschuwing:</span> 15</td>
-                                <td class="warning" aria-label="waarschuwing"><span>Waarschuwing:</span> 168</td>
+                                <td class="warning" aria-label="waarschuwing"><span class="notification-type">Waarschuwing:</span> 15</td>
+                                <td class="warning" aria-label="waarschuwing"><span class="notification-type">Waarschuwing:</span> 168</td>
                             </tr>
 
                             <tr>
-                                <td class="warning" aria-label="waarschuwing"><span>Waarschuwing:</span> 15</td>
-                                <td class="warning" aria-label="waarschuwing"><span>Waarschuwing:</span> 168</td>
+                                <td class="warning" aria-label="waarschuwing"><span class="notification-type">Waarschuwing:</span> 15</td>
+                                <td class="warning" aria-label="waarschuwing"><span class="notification-type">Waarschuwing:</span> 168</td>
                             </tr>
 
                             <tr>
@@ -897,7 +770,7 @@
                     <p>Html-voorbeeld:</p>
                     <pre>
                         <code>
-&lt;td class="warning" aria-label="waarschuwing">&lt;span>Waarschuwing:&lt;/span> 15&lt;/td>
+&lt;td class="warning" aria-label="waarschuwing">&lt;span class="notification-type">Waarschuwing:&lt;/span> 15&lt;/td>
                        </code>
                     </pre>
 
@@ -912,15 +785,15 @@
                     <p>Visueel voorbeeld:</p>
                     <table>
                         <thead>
-                            <tr class="warning">
-                                <th aria-label="waarschuwing"><span>Waarschuwing:</span> Lorem</th>
-                                <th aria-label="waarschuwing"><span>Waarschuwing:</span> Ipsum</th>
+                            <tr>
+                                <th>Lorem</th>
+                                <th>Ipsum</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr class="warning">
-                                <td aria-label="waarschuwing"><span>Waarschuwing:</span> 12</td>
-                                <td aria-label="waarschuwing"><span>Waarschuwing:</span> 42</td>
+                                <td aria-label="waarschuwing"><span class="notification-type">Waarschuwing:</span> 12</td>
+                                <td aria-label="waarschuwing"><span class="notification-type">Waarschuwing:</span> 42</td>
                             </tr>
 
                             <tr>
@@ -946,15 +819,15 @@
                         <code>
 &lt;table>
     &lt;thead>
-        &lt;tr class="warning">
-            &lt;th aria-label="waarschuwing">&lt;span>Waarschuwing:&lt;/span> Lorem&lt;/th>
-            &lt;th aria-label="waarschuwing">&lt;span>Waarschuwing:&lt;/span> Ipsum&lt;/th>
+        &lt;tr>
+            &lt;th>Lorem&lt;/th>
+            &lt;th>Ipsum&lt;/th>
         &lt;/tr>
     &lt;/thead>
     &lt;tbody>
         &lt;tr class="warning">
-            &lt;td aria-label="waarschuwing">&lt;span>Waarschuwing:&lt;/span> 12&lt;/td>
-            &lt;td aria-label="waarschuwing">&lt;span>Waarschuwing:&lt;/span> 42&lt;/td>
+            &lt;td aria-label="waarschuwing">&lt;span class="notification-type">Waarschuwing:&lt;/span> 12&lt;/td>
+            &lt;td aria-label="waarschuwing">&lt;span class="notification-type">Waarschuwing:&lt;/span> 42&lt;/td>
         &lt;/tr>
     &lt;/tbody>
 &lt;/table>
@@ -980,7 +853,7 @@
                         <label for="input-warning">Input</label>
                         <div>
                             <p class="warning" id="input-warning-message">
-                                <span>waarschuwing:</span> Lorem ipsum dolor sit.
+                                <span class="notification-type">waarschuwing:</span> Lorem ipsum dolor sit.
                             </p>
                             <input id="input-warning" class="warning" value="Lorem ipsum"
                                 aria-describedby="input-warning-message">
@@ -993,7 +866,7 @@
     &lt;label for="input-warning">Input&lt;/label>
     &lt;div>
         &lt;p class="warning" id="input-warning-message">
-            &lt;span>waarschuwing:&lt;/span> Lorem ipsum dolor sit.
+            &lt;span class="notification-type">waarschuwing:&lt;/span> Lorem ipsum dolor sit.
         &lt;/p>
         &lt;input id="input-warning" class="warning" value="Lorem ipsum" aria-describedby="input-warning-message">
     &lt;/div>
@@ -1008,7 +881,7 @@
                         <label for="voorbeeld-tekstveld-warning">Voorbeeld tekstveld</label>
                         <div>
                             <p class="warning" id="voorbeeld-tekstveld-warning-message">
-                                <span>waarschuwing:</span> Lorem ipsum dolor sit.
+                                <span class="notification-type">waarschuwing:</span> Lorem ipsum dolor sit.
                             </p>
                             <textarea id="voorbeeld-tekstveld-warning" name="voorbeeld-tekstveld-warning"
                                 placeholder="Jouw vraag of opmerking" class="warning"
@@ -1024,7 +897,7 @@
     &lt;label for="voorbeeld-tekstveld-warning">Voorbeeld tekstveld&lt;/label>
     &lt;div>
         &lt;p class="warning" id="voorbeeld-tekstveld-warning-message">
-            &lt;span>waarschuwing:&lt;/span> Lorem ipsum dolor sit.
+            &lt;span class="notification-type">waarschuwing:&lt;/span> Lorem ipsum dolor sit.
         &lt;/p>
         &lt;textarea id="voorbeeld-tekstveld-warning" name="voorbeeld-tekstveld-warning" placeholder="Jouw vraag of opmerking" class="warning" aria-describedby="voorbeeld-tekstveld-warning-message">&lt;/textarea>
     &lt;/div>
@@ -1040,7 +913,7 @@
                         <label for="select-warning">Selectielijst</label>
                         <div>
                             <p class="warning" id="select-warning-message">
-                                <span>waarschuwing:</span> Lorem ipsum dolor sit.
+                                <span class="notification-type">waarschuwing:</span> Lorem ipsum dolor sit.
                             </p>
                             <select id="select-warning" name="select" class="warning"
                                 aria-describedby="select-warning-message">
@@ -1057,7 +930,7 @@
     &lt;label for="select-warning">Selectielijst&lt;/label>
     &lt;div>
         &lt;p class="warning" id="select-warning-message">
-            &lt;span>waarschuwing:&lt;/span> Lorem ipsum dolor sit.
+            &lt;span class="notification-type">waarschuwing:&lt;/span> Lorem ipsum dolor sit.
         &lt;/p>
         &lt;select id="select-warning" name="select" class="warning" aria-describedby="select-warning-message">
             &lt;option value="1">Optie 1&lt;/option>
@@ -1076,7 +949,7 @@
                         <label for="datalist-warning">Input</label>
                         <div>
                             <p class="warning" id="datalist-warning-message">
-                                <span>waarschuwing:</span> Lorem ipsum dolor sit.
+                                <span class="notification-type">waarschuwing:</span> Lorem ipsum dolor sit.
                             </p>
                             <input id="datalist-warning" class="warning"
                                 placeholder="Begin met typen of klik om een optie uit te kiezen"
@@ -1096,7 +969,7 @@
     &lt;label for="datalist-warning">Input&lt;/label>
     &lt;div>
         &lt;p class="warning" id="datalist-warning-message">
-            &lt;span>waarschuwing:&lt;/span> Lorem ipsum dolor sit.
+            &lt;span class="notification-type">waarschuwing:&lt;/span> Lorem ipsum dolor sit.
         &lt;/p>
         &lt;input id="datalist-warning" class="warning" placeholder="Begin met typen of klik om een optie uit te kiezen" list="example-list-warning" aria-describedby="datalist-warning-message">
     &lt;/div>
@@ -1116,7 +989,7 @@
                     <form action="" method="post">
                         <div>
                             <p class="warning" id="checkbox-warning-message">
-                                <span>waarschuwing:</span> Lorem ipsum dolor sit.
+                                <span class="notification-type">waarschuwing:</span> Lorem ipsum dolor sit.
                             </p>
                             <div class="checkbox">
                               <input type="checkbox" id="checkbox-warning" name="standaard-checkbox" class="warning"
@@ -1131,7 +1004,7 @@
 &lt;form action="" method="post">
     &lt;div>
         &lt;p class="warning" id="checkbox-warning-message">
-            &lt;span>waarschuwing:&lt;/span> Lorem ipsum dolor sit.
+            &lt;span class="notification-type">waarschuwing:&lt;/span> Lorem ipsum dolor sit.
         &lt;/p>
         &lt;div class="checkbox">
           &lt;input type="checkbox" id="checkbox-warning" name="standaard-checkbox" class="warning" aria-describedby="checkbox-warning-message">
@@ -1148,7 +1021,7 @@
                     <form action="" method="post">
                         <div>
                             <p class="warning" id="radio-example-warning-message">
-                                <span>waarschuwing:</span> Lorem ipsum dolor sit.
+                                <span class="notification-type">waarschuwing:</span> Lorem ipsum dolor sit.
                             </p>
                             <div class="radio">
                                 <input type="radio" id="radio-example-warning" name="standaard-radiobutton" value="value"
@@ -1163,7 +1036,7 @@
 &lt;form action="" method="post">
     &lt;div>
         &lt;p class="warning" id="radio-example-warning-message">
-            &lt;span>waarschuwing:&lt;/span> Lorem ipsum dolor sit.
+            &lt;span class="notification-type">waarschuwing:&lt;/span> Lorem ipsum dolor sit.
         &lt;/p>
         &lt;div class="radio">
             &lt;input type="radio" id="radio-example-warning" name="standaard-radiobutton" value="value" class="warning" aria-describedby="radio-example-warning-message">
@@ -1177,7 +1050,7 @@
             </article>
 
             <article>
-                <div>
+                <div class="content-wrapper">
                     <h1 id="confirmation">Bevestiging</h1>
                     <p>Te gebruiken om de gebruiker een bevestiging te sturen. Denk bijvoorbeeld aan succesberichten bij
                         het sturen van een formulier.</p>
@@ -1187,7 +1060,6 @@
                         <ul>
                             <li><a href="#confirmation-div">Blokelement</a></li>
                             <li><a href="#confirmation-p">Paragraaf</a></li>
-                            <li><a href="#confirmation-button">Knop</a></li>
                             <li><a href="#confirmation-table">Tabel-elementen</a></li>
                             <li><a href="#confirmation-form">Formulier-elementen</a></li>
                         </ul>
@@ -1198,7 +1070,7 @@
                     <p>Visueel voorbeeld:</p>
 
                     <div class="confirmation" role="group" aria-label="bevestiging">
-                        <span>Bevestiging:</span>
+                        <span class="notification-type">Bevestiging:</span>
                         <h1>Lorem ipsum dolor set</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
                             facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque.
@@ -1220,7 +1092,7 @@
                     <pre>
                         <code>
 &lt;div class="confirmation" role="group" aria-label="bevestiging">
-    &lt;span>Bevestiging:&lt;/span>
+    &lt;span class="notification-type">Bevestiging:&lt;/span>
     &lt;!-- Voeg hier de content toe. -->
 &lt;/div>
                         </code>
@@ -1230,7 +1102,7 @@
                     <h3>Voorbeeld</h3>
                     <p>Visueel voorbeeld:</p>
                     <p class="confirmation" role="group" aria-label="bevestiging">
-                        <span>Bevestiging:</span> Lorem ipsum dolor sit.
+                        <span class="notification-type">Bevestiging:</span> Lorem ipsum dolor sit.
                     </p>
 
                     <p>Html-voorbeeld:</p>
@@ -1238,80 +1110,19 @@
                     <pre>
                         <code>
 &lt;p class="confirmation" role="group" aria-label="bevestiging">
-    &lt;span>Bevestiging:&lt;/span>
+    &lt;span class="notification-type">Bevestiging:&lt;/span>
     Lorem ipsum dolor sit.
 &lt;/p>
-                        </code>
-                    </pre>
-
-                    <h2 id="confirmation-button">Bevestiging op <code>button</code></h2>
-                    <h3>Voorbeeld</h3>
-
-                    <p>Visueel voorbeeld:</p>
-                    <button type="button" class="confirmation">
-                        <span>Bevestiging:</span> Lorem ipsum
-                    </button>
-
-                    <p>Html-voorbeeld:</p>
-                    <pre>
-                        <code>
-&lt;button type="button" class="confirmation">
-    &lt;span>Bevestiging:&lt;/span> Lorem ipsum
-&lt;/button>
                         </code>
                     </pre>
 
                     <h2 id="confirmation-table">Bevestiging op tabel-elementen</h2>
                     <nav aria-label="Bevestiging tabelelementen subnavigatie">
                         <ul>
-                            <li><a href="#confirmation-th">Tabeltitel</a></li>
                             <li><a href="#confirmation-td">Tabelcel</a></li>
                             <li><a href="#confirmation-tr">Tabelrij</a></li>
                         </ul>
                     </nav>
-
-                    <h2 id="confirmation-th">Bevestiging op tabeltitel</h2>
-                    <h4>Voorbeeld</h4>
-                    <p>Visueel voorbeeld:</p>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th class="confirmation" aria-label="bevestiging"><span>Bevestiging:</span> Lorem</th>
-                                <th class="confirmation" aria-label="bevestiging"><span>Bevestiging:</span>Ipsum</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>12</td>
-                                <td>42</td>
-                            </tr>
-
-                            <tr>
-                                <td>15</td>
-                                <td>168</td>
-                            </tr>
-
-                            <tr>
-                                <td>123</td>
-                                <td>2</td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <td>Lorem ipsum</td>
-                                <td>Dolor set amet</td>
-                            </tr>
-                        </tfoot>
-                    </table>
-
-                    <p>Html-voorbeeld:</p>
-                    <pre>
-                        <code>
-&lt;th class="confirmation" aria-label="bevestiging">
-    &lt;span>Bevestiging:&lt;/span> Lorem
-&lt;/th>
-                        </code>
-                    </pre>
 
                     <h2 id="confirmation-td">Bevestiging op Tabelcel</h2>
                     <h4>Voorbeeld</h4>
@@ -1330,7 +1141,7 @@
                             </tr>
 
                             <tr>
-                                <td class="confirmation" aria-label="bevestiging"><span>Bevestiging:</span> 15</td>
+                                <td class="confirmation" aria-label="bevestiging"><span class="notification-type">Bevestiging:</span> 15</td>
                                 <td>
                                     168
                                 </td>
@@ -1353,7 +1164,7 @@
                     <pre>
                         <code>
 &lt;td class="confirmation" aria-label="bevestiging">
-    &lt;span>Bevestiging:&lt;/span> 15
+    &lt;span class="notification-type">Bevestiging:&lt;/span> 15
 &lt;/td>
                         </code>
                     </pre>
@@ -1369,9 +1180,9 @@
                     <p>Visueel voorbeeld:</p>
                     <table>
                         <thead>
-                            <tr class="confirmation">
-                                <th aria-label="bevestiging"><span>Bevestiging:</span> Lorem</th>
-                                <th aria-label="bevestiging"><span>Bevestiging:</span> Ipsum</th>
+                            <tr>
+                                <th>Lorem</th>
+                                <th>Ipsum</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -1381,8 +1192,8 @@
                             </tr>
 
                             <tr class="confirmation">
-                                <td aria-label="bevestiging"><span>Bevestiging:</span> 15</td>
-                                <td aria-label="bevestiging"><span>Bevestiging:</span> 168</td>
+                                <td aria-label="bevestiging"><span class="notification-type">Bevestiging:</span> 15</td>
+                                <td aria-label="bevestiging"><span class="notification-type">Bevestiging:</span> 168</td>
                             </tr>
 
                             <tr>
@@ -1403,16 +1214,16 @@
                         <code>
 &lt;table>
     &lt;thead>
-        &lt;tr class="confirmation">
-            &lt;th aria-label="bevestiging">&lt;span>Bevestiging:&lt;/span>Lorem&lt;/th>
-            &lt;th aria-label="bevestiging">&lt;span>Bevestiging:&lt;/span>Ipsum&lt;/th>
+        &lt;tr>
+            &lt;th>Lorem&lt;/th>
+            &lt;th>Ipsum&lt;/th>
         &lt;/tr>
     &lt;/thead>
     &lt;tbody>
 
         &lt;tr class="confirmation">
-            &lt;td aria-label="bevestiging">&lt;span>Bevestiging:&lt;/span>15&lt;/td>
-            &lt;td aria-label="bevestiging">&lt;span>Bevestiging:&lt;/span>168&lt;/td>
+            &lt;td aria-label="bevestiging">&lt;span class="notification-type">Bevestiging:&lt;/span>15&lt;/td>
+            &lt;td aria-label="bevestiging">&lt;span class="notification-type">Bevestiging:&lt;/span>168&lt;/td>
         &lt;/tr>
     &lt;/tbody>
 &lt;/table>
@@ -1440,7 +1251,7 @@
                             <input id="input-confirmation" class="confirmation" value="Lorem ipsum"
                                 aria-describedby="input-confirmation-message">
                             <p class="confirmation" id="input-confirmation-message">
-                                <span>bevestiging:</span> Lorem ipsum dolor set amet
+                                <span class="notification-type">bevestiging:</span> Lorem ipsum dolor set amet
                             </p>
                         </div>
                     </form>
@@ -1452,7 +1263,7 @@
     &lt;div>
         &lt;input id="input-confirmation" class="confirmation" value="Lorem ipsum" aria-describedby="input-confirmation-message">
         &lt;p class="confirmation" id="input-confirmation-message">
-            &lt;span>bevestiging:&lt;/span> Lorem ipsum dolor set amet
+            &lt;span class="notification-type">bevestiging:&lt;/span> Lorem ipsum dolor set amet
         &lt;/p>
     &lt;/div>
 &lt;/form>
@@ -1469,7 +1280,7 @@
                                 placeholder="Jouw vraag of opmerking" class="confirmation"
                                 aria-describedby="voorbeeld-tekstveld-confirmation-message"></textarea>
                             <p class="confirmation" id="voorbeeld-tekstveld-confirmation-message">
-                                <span>bevestiging:</span> Lorem ipsum dolor set amet
+                                <span class="notification-type">bevestiging:</span> Lorem ipsum dolor set amet
                             </p>
                         </div>
 
@@ -1483,7 +1294,7 @@
     &lt;div>
         &lt;textarea id="voorbeeld-tekstveld-confirmation" name="voorbeeld-tekstveld-confirmation" placeholder="Jouw vraag of opmerking" class="confirmation" aria-describedby="voorbeeld-tekstveld-confirmation-message">&lt;/textarea>
         &lt;p class="confirmation" id="voorbeeld-tekstveld-confirmation-message">
-            &lt;span>bevestiging:&lt;/span> Lorem ipsum dolor set amet
+            &lt;span class="notification-type">bevestiging:&lt;/span> Lorem ipsum dolor set amet
         &lt;/p>
     &lt;/div>
 
@@ -1505,7 +1316,7 @@
                                 <option value="3">Optie 3</option>
                             </select>
                             <p class="confirmation" id="select-confirmation-message">
-                                <span>bevestiging:</span> Lorem ipsum dolor set amet
+                                <span class="notification-type">bevestiging:</span> Lorem ipsum dolor set amet
                             </p>
                         </div>
                     </form>
@@ -1521,7 +1332,7 @@
             &lt;option value="3">Optie 3&lt;/option>
         &lt;/select>
         &lt;p class="confirmation" id="select-confirmation-message">
-            &lt;span>bevestiging:&lt;/span> Lorem ipsum dolor set amet
+            &lt;span class="notification-type">bevestiging:&lt;/span> Lorem ipsum dolor set amet
         &lt;/p>
     &lt;/div>
 &lt;/form>
@@ -1538,7 +1349,7 @@
                                 placeholder="Begin met typen of klik om een optie uit te kiezen"
                                 list="example-list-confirmation" aria-describedby="datalist-confirmation-message">
                             <p class="confirmation" id="datalist-confirmation-message">
-                                <span>bevestiging:</span> Lorem ipsum dolor set amet
+                                <span class="notification-type">bevestiging:</span> Lorem ipsum dolor set amet
                             </p>
                         </div>
 
@@ -1556,7 +1367,7 @@
     &lt;div>
         &lt;input id="datalist-confirmation" class="confirmation" placeholder="Begin met typen of klik om een optie uit te kiezen" list="example-list-confirmation" aria-describedby="datalist-confirmation-message">
         &lt;p class="confirmation" id="datalist-confirmation-message">
-            &lt;span>bevestiging:&lt;/span> Lorem ipsum dolor set amet
+            &lt;span class="notification-type">bevestiging:&lt;/span> Lorem ipsum dolor set amet
         &lt;/p>
     &lt;/div>
 
@@ -1580,7 +1391,7 @@
                                 <label for="checkbox-confirmation">Lorem ipsum dolor set amet</label>
                             </div>
                             <p class="confirmation" id="checkbox-confirmation-message">
-                                <span>bevestiging:</span> Lorem ipsum dolor set amet
+                                <span class="notification-type">bevestiging:</span> Lorem ipsum dolor set amet
                             </p>
                         </div>
                     </form>
@@ -1594,7 +1405,7 @@
             &lt;label for="checkbox-confirmation">Lorem ipsum dolor set amet&lt;/label>
         &lt;/div>
         &lt;p class="confirmation" id="checkbox-confirmation-message">
-            &lt;span>bevestiging:&lt;/span> Lorem ipsum dolor set amet
+            &lt;span class="notification-type">bevestiging:&lt;/span> Lorem ipsum dolor set amet
         &lt;/p>
     &lt;/div>
 &lt;/form>
@@ -1612,7 +1423,7 @@
                                 <label for="radio-example-confirmation">Lorem ipsum dolor set amet</label>
                             </div>
                             <p class="confirmation" id="radio-example-confirmation-message">
-                                <span>bevestiging:</span> Lorem ipsum dolor set amet
+                                <span class="notification-type">bevestiging:</span> Lorem ipsum dolor set amet
                             </p>
                         </div>
                     </form>
@@ -1626,7 +1437,7 @@
             &lt;label for="radio-example-confirmation">Lorem ipsum dolor set amet&lt;/label>
         &lt;/div>
         &lt;p class="confirmation" id="radio-example-confirmation-message">
-            &lt;span>bevestiging:&lt;/span> Lorem ipsum dolor set amet
+            &lt;span class="notification-type">bevestiging:&lt;/span> Lorem ipsum dolor set amet
         &lt;/p>
     &lt;/div>
 &lt;/form>
@@ -1636,7 +1447,7 @@
             </article>
 
             <article>
-                <div>
+                <div class="content-wrapper">
                     <h1 id="explanation">Toelichting</h1>
                     <p>Te gebruiken om de gebruiker van extra toelichting te voorzien.</p>
 
@@ -1645,7 +1456,6 @@
                         <ul>
                             <li><a href="#explanation-div">Blokelement</a></li>
                             <li><a href="#explanation-p">Paragraaf</a></li>
-                            <li><a href="#explanation-button">Knop</a></li>
                             <li><a href="#explanation-table">Tabel-elementen</a></li>
                             <li><a href="#explanation-form">Formulier-elementen</a></li>
                         </ul>
@@ -1656,7 +1466,7 @@
                     <p>Visueel voorbeeld:</p>
 
                     <div class="explanation" role="group" aria-label="toelichting">
-                        <span>Toelichting:</span>
+                        <span class="notification-type">Toelichting:</span>
                         <h1>Lorem ipsum dolor set</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
                             facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque.
@@ -1678,7 +1488,7 @@
                     <pre>
                         <code>
 &lt;div class="explanation" role="group" aria-label="toelichting">
-    &lt;span>Toelichting:&lt;/span>
+    &lt;span class="notification-type">Toelichting:&lt;/span>
     &lt;!-- Voeg hier de content toe. -->
 &lt;/div>
                         </code>
@@ -1688,7 +1498,7 @@
                     <h3>Voorbeeld</h3>
                     <p>Visueel voorbeeld:</p>
                     <p class="explanation" role="group" aria-label="toelichting">
-                        <span>Toelichting:</span>
+                        <span class="notification-type">Toelichting:</span>
                         Lorem ipsum dolor sit.
                     </p>
 
@@ -1696,80 +1506,19 @@
                     <pre>
                         <code>
 &lt;p class="explanation" role="group" aria-label="toelichting">
-    &lt;span>Toelichting:&lt;/span>
+    &lt;span class="notification-type">Toelichting:&lt;/span>
     Lorem ipsum dolor sit.
 &lt;/p>
-                        </code>
-                    </pre>
-
-                    <h2 id="explanation-button">Toelichting op <code>button</code></h2>
-                    <h3>Voorbeeld</h3>
-
-                    <p>Visueel voorbeeld:</p>
-                    <button type="button" class="explanation">
-                        <span>Toelichting:</span> Lorem ipsum
-                    </button>
-
-                    <p>Html-voorbeeld:</p>
-                    <pre>
-                        <code>
-&lt;button type="button" class="explanation">
-    &lt;span>Toelichting:&lt;/span> Lorem ipsum
-&lt;/button>
                         </code>
                     </pre>
 
                     <h2 id="explanation-table">Toelichting op tabel-elementen</h2>
                     <nav aria-label="Toelichting tabelelementen subnavigatie">
                         <ul>
-                            <li><a href="#explanation-th">Tabeltitel</a></li>
                             <li><a href="#explanation-td">Tabelcel</a></li>
                             <li><a href="#explanation-tr">Tabelrij</a></li>
                         </ul>
                     </nav>
-
-                    <h2 id="explanation-th">Toelichting op tabeltitel</h2>
-                    <h4>Voorbeeld</h4>
-                    <p>Visueel voorbeeld:</p>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th class="explanation" aria-label="toelichting"><span>Toelichting:</span> Lorem</th>
-                                <th class="explanation" aria-label="toelichting"><span>Toelichting:</span> Ipsum</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>12</td>
-                                <td>42</td>
-                            </tr>
-
-                            <tr>
-                                <td>15</td>
-                                <td>168</td>
-                            </tr>
-
-                            <tr>
-                                <td>123</td>
-                                <td>2</td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <td>Lorem ipsum</td>
-                                <td>Dolor set amet</td>
-                            </tr>
-                        </tfoot>
-                    </table>
-
-                    <p>Html-voorbeeld:</p>
-                    <pre>
-                        <code>
-&lt;th class="explanation" aria-label="toelichting">
-    &lt;span>Toelichting:&lt;/span> Lorem
-&lt;/th>
-                        </code>
-                    </pre>
 
                     <h2 id="explanation-td">Toelichting op Tabelcel</h2>
                     <h4>Voorbeeld</h4>
@@ -1796,7 +1545,7 @@
                                 <td>
                                     15
                                 </td>
-                                <td class="explanation" aria-label="toelichting"><span>Toelichting:</span> 168</td>
+                                <td class="explanation" aria-label="toelichting"><span class="notification-type">Toelichting:</span> 168</td>
                             </tr>
                         </tbody>
                         <tfoot>
@@ -1811,7 +1560,7 @@
                     <pre>
                         <code>
 &lt;td class="explanation" aria-label="toelichting">
-    &lt;span>Toelichting:&lt;/span> 15
+    &lt;span class="notification-type">Toelichting:&lt;/span> 15
 &lt;/td>
                         </code>
                     </pre>
@@ -1827,15 +1576,15 @@
                     <p>Visueel voorbeeld:</p>
                     <table>
                         <thead>
-                            <tr class="explanation">
-                                <th aria-label="toelichting"><span>Toelichting:</span> Lorem</th>
-                                <th aria-label="toelichting"><span>Toelichting:</span> Ipsum</th>
+                            <tr>
+                                <th>Lorem</th>
+                                <th>Ipsum</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr class="explanation">
-                                <td aria-label="toelichting"><span>Toelichting:</span> 12</td>
-                                <td aria-label="toelichting"><span>Toelichting:</span> 42</td>
+                                <td aria-label="toelichting"><span class="notification-type">Toelichting:</span> 12</td>
+                                <td aria-label="toelichting"><span class="notification-type">Toelichting:</span> 42</td>
                             </tr>
 
                             <tr>
@@ -1861,15 +1610,15 @@
                         <code>
 &lt;table>
     &lt;thead>
-        &lt;tr class="explanation">
-            &lt;th aria-label="toelichting">&lt;span>Toelichting:&lt;/span> Lorem&lt;/th>
-            &lt;th aria-label="toelichting">&lt;span>Toelichting:&lt;/span> Ipsum&lt;/th>
+        &lt;tr>
+            &lt;th>Lorem&lt;/th>
+            &lt;th>Ipsum&lt;/th>
         &lt;/tr>
     &lt;/thead>
     &lt;tbody>
         &lt;tr class="explanation">
-            &lt;td aria-label="toelichting">&lt;span>Toelichting:&lt;/span> 12&lt;/td>
-            &lt;td aria-label="toelichting">&lt;span>Toelichting:&lt;/span> 42&lt;/td>
+            &lt;td aria-label="toelichting">&lt;span class="notification-type">Toelichting:&lt;/span> 12&lt;/td>
+            &lt;td aria-label="toelichting">&lt;span class="notification-type">Toelichting:&lt;/span> 42&lt;/td>
         &lt;/tr>
     &lt;/tbody>
 &lt;/table>
@@ -1895,7 +1644,7 @@
                         <label for="input-explanation">Input</label>
                         <div>
                             <p class="explanation" id="input-explanation-message">
-                                <span>toelichting:</span> Lorem ipsum dolor set amet
+                                <span class="notification-type">toelichting:</span> Lorem ipsum dolor set amet
                             </p>
                             <input id="input-explanation" class="explanation" value="Lorem ipsum"
                                 aria-describedby="input-explanation-message">
@@ -1908,7 +1657,7 @@
     &lt;label for="input-explanation">Input&lt;/label>
     &lt;div>
         &lt;p class="explanation" id="input-explanation-message">
-            &lt;span>toelichting:&lt;/span> Lorem ipsum dolor set amet
+            &lt;span class="notification-type">toelichting:&lt;/span> Lorem ipsum dolor set amet
         &lt;/p>
         &lt;input id="input-explanation" class="explanation" value="Lorem ipsum" aria-describedby="input-explanation-message">
     &lt;/div>
@@ -1923,7 +1672,7 @@
                         <label for="voorbeeld-tekstveld-explanation">Voorbeeld tekstveld</label>
                         <div>
                             <p class="explanation" id="voorbeeld-tekstveld-explanation-message">
-                                <span>toelichting:</span> Lorem ipsum dolor set amet
+                                <span class="notification-type">toelichting:</span> Lorem ipsum dolor set amet
                             </p>
                             <textarea id="voorbeeld-tekstveld-explanation" name="voorbeeld-tekstveld-explanation"
                                 placeholder="Jouw vraag of opmerking" class="explanation"
@@ -1939,7 +1688,7 @@
     &lt;label for="voorbeeld-tekstveld-explanation">Voorbeeld tekstveld&lt;/label>
     &lt;div>
         &lt;p class="explanation" id="voorbeeld-tekstveld-explanation-message">
-            &lt;span>toelichting:&lt;/span> Lorem ipsum dolor set amet
+            &lt;span class="notification-type">toelichting:&lt;/span> Lorem ipsum dolor set amet
         &lt;/p>
         &lt;textarea id="voorbeeld-tekstveld-explanation" name="voorbeeld-tekstveld-explanation" placeholder="Jouw vraag of opmerking" class="explanation" aria-describedby="voorbeeld-tekstveld-explanation-message">&lt;/textarea>
     &lt;/div>
@@ -1956,7 +1705,7 @@
                         <label for="select-explanation">Selectielijst</label>
                         <div>
                             <p class="explanation" id="select-explanation-message">
-                                <span>toelichting:</span> Lorem ipsum dolor set amet
+                                <span class="notification-type">toelichting:</span> Lorem ipsum dolor set amet
                             </p>
                             <select id="select-explanation" name="select" class="explanation"
                                 aria-describedby="select-explanation-message">
@@ -1973,7 +1722,7 @@
     &lt;label for="select-explanation">Selectielijst&lt;/label>
     &lt;div>
         &lt;p class="explanation" id="select-explanation-message">
-            &lt;span>toelichting:&lt;/span> Lorem ipsum dolor set amet
+            &lt;span class="notification-type">toelichting:&lt;/span> Lorem ipsum dolor set amet
         &lt;/p>
         &lt;select id="select-explanation" name="select" class="explanation" aria-describedby="select-explanation-message">
             &lt;option value="1">Optie 1&lt;/option>
@@ -1992,7 +1741,7 @@
                         <label for="datalist-explanation">Input</label>
                         <div>
                             <p class="explanation" id="datalist-explanation-message">
-                                <span>toelichting:</span> Lorem ipsum dolor set amet
+                                <span class="notification-type">toelichting:</span> Lorem ipsum dolor set amet
                             </p>
                             <input id="datalist-explanation" class="explanation"
                                 placeholder="Begin met typen of klik om een optie uit te kiezen"
@@ -2012,7 +1761,7 @@
     &lt;label for="datalist-explanation">Input&lt;/label>
      &lt;div>
         &lt;p class="explanation" id="datalist-explanation-message">
-            &lt;span>toelichting:&lt;/span> Lorem ipsum dolor set amet
+            &lt;span class="notification-type">toelichting:&lt;/span> Lorem ipsum dolor set amet
         &lt;/p>
         &lt;input id="datalist-explanation" class="explanation" placeholder="Begin met typen of klik om een optie uit te kiezen" list="example-list-explanation" aria-describedby="datalist-explanation-message">
     &lt;/div>
@@ -2032,7 +1781,7 @@
                     <form action="" method="post">
                         <div>
                             <p class="explanation" id="checkbox-explanation-message">
-                                <span>toelichting:</span> Lorem ipsum dolor set amet
+                                <span class="notification-type">toelichting:</span> Lorem ipsum dolor set amet
                             </p>
                             <div class="checkbox">
                                 <input type="checkbox" id="checkbox-explanation" name="standaard-checkbox"
@@ -2047,7 +1796,7 @@
 &lt;form action="" method="post">
     &lt;div>
         &lt;p class="explanation" id="checkbox-explanation-message">
-            &lt;span>toelichting:&lt;/span> Lorem ipsum dolor set amet
+            &lt;span class="notification-type">toelichting:&lt;/span> Lorem ipsum dolor set amet
         &lt;/p>
         &lt;div class="checkbox">
             &lt;input type="checkbox" id="checkbox-explanation" name="standaard-checkbox" class="explanation" aria-describedby="checkbox-explanation-message">
@@ -2064,7 +1813,7 @@
                     <form action="" method="post">
                         <div>
                             <p class="explanation" id="radio-example-explanation-message">
-                                <span>toelichting:</span> Lorem ipsum dolor set amet
+                                <span class="notification-type">toelichting:</span> Lorem ipsum dolor set amet
                             </p>
                             <div class="radio">
                                 <input type="radio" id="radio-example-explanation" name="standaard-radiobutton"
@@ -2079,7 +1828,7 @@
 &lt;form action="" method="post">
     &lt;div>
         &lt;p class="explanation" id="radio-example-explanation-message">
-            &lt;span>toelichting:&lt;/span> Lorem ipsum dolor set amet
+            &lt;span class="notification-type">toelichting:&lt;/span> Lorem ipsum dolor set amet
         &lt;/p>
         &lt;div class="radio">
             &lt;input type="radio" id="radio-example-explanation" name="standaard-radiobutton" value="value" class="explanation" aria-describedby="radio-example-explanation-message">
@@ -2093,7 +1842,7 @@
             </article>
 
             <article>
-                <div>
+                <div class="content-wrapper">
                     <h1 id="primary">Primair</h1>
                     <p>Te gebruiken om de gebruiker te attenderen op een element.</p>
 
@@ -2102,7 +1851,6 @@
                         <ul>
                             <li><a href="#primary-div">Blokelement</a></li>
                             <li><a href="#primary-p">Paragraaf</a></li>
-                            <li><a href="#primary-button">Knop</a></li>
                             <li><a href="#primary-table">Tabel-elementen</a></li>
                             <li><a href="#primary-form">Formulier-elementen</a></li>
                         </ul>
@@ -2113,7 +1861,7 @@
                     <p>Visueel voorbeeld:</p>
 
                     <div class="primary" role="group" aria-label="primair">
-                        <span>Toelichting:</span>
+                        <span class="notification-type">Toelichting:</span>
                         <h1>Lorem ipsum dolor set</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
                             facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque.
@@ -2135,7 +1883,7 @@
                     <pre>
                         <code>
 &lt;div class="primary" role="group" aria-label="primair">
-    &lt;span>Toelichting:&lt;/span>
+    &lt;span class="notification-type">Toelichting:&lt;/span>
     &lt;!-- Voeg hier de content toe. -->
 &lt;/div>
                         </code>
@@ -2145,7 +1893,7 @@
                     <h3>Voorbeeld</h3>
                     <p>Visueel voorbeeld:</p>
                     <p class="primary" role="group" aria-label="primair">
-                        <span>Toelichting:</span>
+                        <span class="notification-type">Toelichting:</span>
                         Lorem ipsum dolor sit.
                     </p>
 
@@ -2153,81 +1901,22 @@
                     <pre>
                         <code>
 &lt;p class="primary" role="group" aria-label="primair">
-    &lt;span>Toelichting:&lt;/span>
+    &lt;span class="notification-type">Toelichting:&lt;/span>
     Lorem ipsum dolor sit.
 &lt;/p>
-                        </code>
-                    </pre>
-
-                    <h2 id="primary-button">Primair op <code>button</code></h2>
-                    <h3>Voorbeeld</h3>
-
-                    <p>Visueel voorbeeld:</p>
-                    <button type="button" class="primary">
-                        <span>Toelichting:</span>
-                        Lorem ipsum
-                    </button>
-
-                    <p>Html-voorbeeld:</p>
-                    <pre>
-                        <code>
-&lt;button type="button" class="primary">
-    &lt;span>Toelichting:&lt;/span> Lorem ipsum
-&lt;/button>
                         </code>
                     </pre>
 
                     <h2 id="primary-table">Primair op tabel-elementen</h2>
                     <nav aria-label="Primair tabelelementen subnavigatie">
                         <ul>
-                            <li><a href="#primary-th">Tabeltitel</a></li>
                             <li><a href="#primary-td">Tabelcel</a></li>
                             <li><a href="#primary-tr">Tabelrij</a></li>
                         </ul>
                     </nav>
 
-                    <h2 id="primary-th">Primair op tabeltitel</h2>
-                    <h4>Voorbeeld</h4>
-                    <p>Visueel voorbeeld:</p>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th class="primary" aria-label="primary"><span>Toelichting:</span> Lorem</th>
-                                <th class="primary" aria-label="primary"><span>Toelichting:</span> Ipsum</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>12</td>
-                                <td>42</td>
-                            </tr>
 
-                            <tr>
-                                <td>15</td>
-                                <td>168</td>
-                            </tr>
-
-                            <tr>
-                                <td>123</td>
-                                <td>2</td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <td>Lorem ipsum</td>
-                                <td>Dolor set amet</td>
-                            </tr>
-                        </tfoot>
-                    </table>
-
-                    <p>Html-voorbeeld:</p>
-                    <pre>
-                        <code>
-&lt;th class="primary" aria-label="primary">&lt;span>Toelichting:&lt;/span> Lorem&lt;/th>
-                        </code>
-                    </pre>
-
-                    <h2 id="primary-td">Primair op tabeltitel</h2>
+                    <h2 id="primary-td">Primair op tabelcel</h2>
                     <h4>Voorbeeld</h4>
                     <p>Visueel voorbeeld:</p>
                     <table>
@@ -2244,8 +1933,8 @@
                             </tr>
 
                             <tr>
-                                <td class="primary" aria-label="primary"><span>Toelichting:</span> 15</td>
-                                <td class="primary" aria-label="primary"><span>Toelichting:</span> 168</td>
+                                <td class="primary" aria-label="primary"><span class="notification-type">Toelichting:</span> 15</td>
+                                <td class="primary" aria-label="primary"><span class="notification-type">Toelichting:</span> 168</td>
                             </tr>
 
                             <tr>
@@ -2264,7 +1953,7 @@
                     <p>Html-voorbeeld:</p>
                     <pre>
                         <code>
-&lt;td class="primary" aria-label="primary">&lt;span>Toelichting:&lt;/span> 15&lt;/td>
+&lt;td class="primary" aria-label="primary">&lt;span class="notification-type">Toelichting:&lt;/span> 15&lt;/td>
                         </code>
                     </pre>
 
@@ -2279,15 +1968,15 @@
                     <p>Visueel voorbeeld:</p>
                     <table>
                         <thead>
-                            <tr class="primary">
-                                <th aria-label="primair"><span>Toelichting:</span> Lorem</th>
-                                <th aria-label="primair"><span>Toelichting:</span> Ipsum</th>
+                            <tr>
+                                <th>Lorem</th>
+                                <th>Ipsum</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr class="primary">
-                                <td aria-label="primair"><span>Toelichting:</span> 12</td>
-                                <td aria-label="primair"><span>Toelichting:</span> 42</td>
+                                <td aria-label="primair"><span class="notification-type">Toelichting:</span> 12</td>
+                                <td aria-label="primair"><span class="notification-type">Toelichting:</span> 42</td>
                             </tr>
 
                             <tr>
@@ -2313,15 +2002,15 @@
                         <code>
 &lt;table>
     &lt;thead>
-        &lt;tr class="primary">
-            &lt;th aria-label="primair">&lt;span>Toelichting:&lt;/span> Lorem&lt;/th>
-            &lt;th aria-label="primair">&lt;span>Toelichting:&lt;/span> Ipsum&lt;/th>
+        &lt;tr>
+            &lt;th>Lorem&lt;/th>
+            &lt;th>Ipsum&lt;/th>
         &lt;/tr>
     &lt;/thead>
     &lt;tbody>
         &lt;tr class="primary">
-            &lt;td aria-label="primair">&lt;span>Toelichting:&lt;/span> 12&lt;/td>
-            &lt;td aria-label="primair">&lt;span>Toelichting:&lt;/span> 42&lt;/td>
+            &lt;td aria-label="primair">&lt;span class="notification-type">Toelichting:&lt;/span> 12&lt;/td>
+            &lt;td aria-label="primair">&lt;span class="notification-type">Toelichting:&lt;/span> 42&lt;/td>
         &lt;/tr>
     &lt;/tbody>
 &lt;/table>
@@ -2545,7 +2234,7 @@
             </article>
 
             <article>
-                <div>
+                <div class="content-wrapper">
                     <h1 id="system-notification">Systeemberichten</h1>
                     <p>Te gebruiken om de gebruiker extra systeeminformatie te geven. Bijvoorbeeld bij het tonen van een
                         leeg element.</p>
@@ -2584,7 +2273,7 @@
                     <pre>
                         <code>
 &lt;div class="system-notification" role="group" aria-label="systeembericht">
-    &lt;span>Systeembericht:&lt;/span>
+    &lt;span class="notification-type">Systeembericht:&lt;/span>
     &lt;!-- Voeg hier de content toe. -->
 &lt;/div>
                         </code>
@@ -2606,7 +2295,7 @@
             </article>
 
             <article>
-                <div>
+                <div class="content-wrapper">
                     <h1 id="attention">Attentie</h1>
                     <p>Te gebruiken extra aandacht te vestigen op bepaalde teksten.</p>
 
@@ -2684,59 +2373,10 @@
                     <h2 id="attention-table">"Attentie" op tabel-elementen:</h2>
                     <nav aria-label="attentie tabelelementen subnavigatie">
                         <ul>
-                            <li><a href="#attention-th">Tabeltitel</a></li>
                             <li><a href="#attention-td">Tabelcel</a></li>
                             <li><a href="#attention-tr">Tabelrij</a></li>
                         </ul>
                     </nav>
-
-                    <h2 id="attention-th">Attentie op tabeltitel</h2>
-
-                    <h4>Voorbeeld</h4>
-                    <p>Visueel voorbeeld:</p>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th class="attention" aria-label="attentie">
-                                    Lorem
-                                </th>
-                                <th class="attention" aria-label="attentie">
-                                    Ipsum
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>12</td>
-                                <td>42</td>
-                            </tr>
-
-                            <tr>
-                                <td>15</td>
-                                <td>168</td>
-                            </tr>
-
-                            <tr>
-                                <td>123</td>
-                                <td>2</td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <td>Lorem ipsum</td>
-                                <td>Dolor set amet</td>
-                            </tr>
-                        </tfoot>
-                    </table>
-
-                    <p>Html-voorbeeld:</p>
-                    <pre>
-                        <code>
-&lt;th class="attention" aria-label="attentie">
-    Lorem
-&lt;/th>
-                        </code>
-                    </pre>
 
                     <h2 id="attention-td">Attentie op tabelcel</h2>
                     <h4>Voorbeeld</h4>
@@ -2808,7 +2448,7 @@
                     <p>Visueel voorbeeld:</p>
                     <table>
                         <thead>
-                            <tr class="attention" aria-label="attentie">
+                            <tr>
                                 <th>Lorem</th>
                                 <th>Ipsum</th>
                             </tr>
@@ -2840,12 +2480,6 @@
                     <p>Html-voorbeeld:</p>
                     <pre>
                         <code>
-&lt;!-- Attentie op een tabelrij binnen een tabeltitel -->
-&lt;tr class="attention" aria-label="attentie">
-    &lt;th>Lorem&lt;/th>
-    &lt;th>Ipsum&lt;/th>
-&lt;/tr>
-
 &lt;!-- Attentie op een tabelrij binnen een tabel body of footer -->
 &lt;tr class="attention" aria-label="attentie">
     &lt;td>15&lt;/td>
