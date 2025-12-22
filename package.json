@@ -55,7 +55,7 @@
     "rimraf": "^6.1.2",
     "sass": "^1.97.1",
     "sass-loader": "^16.0.6",
-    "serve-static": "^2.2.0",
+    "serve-static": "^2.2.1",
     "stylelint": "^16.26.1",
     "stylelint-config-standard-scss": "^16.0.0",
     "webpack": "^5.104.1",
