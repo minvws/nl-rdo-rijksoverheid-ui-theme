@@ -37,10 +37,10 @@
     "visual:pull": "docker compose -f visual-test/docker-compose.yml --profile one-off pull"
   },
   "peerDependencies": {
-    "@minvws/manon": "^17.0.0"
+    "@minvws/manon": "^17.1.0"
   },
   "devDependencies": {
-    "@minvws/manon": "^17.0.0",
+    "@minvws/manon": "^17.1.0",
     "backstopjs": "^6.3.25",
     "copy-webpack-plugin": "^13.0.1",
     "css-loader": "^7.1.2",
