@@ -3,7 +3,7 @@
 Theme package for Rijksoverheid styled websites and web applications using
 [Manon](https://github.com/minvws/nl-rdo-manon).
 
-> This package works with Manon v17. Please note that with the release of Manon v18, this package has become depricated.
+> This package works with Manon v17. Please note that with the release of Manon v18, this package has become deprecated.
 > From Manon v18 (and up), the rijkshuisstijl is now available as a manon-theme directly from the manon repository.
 > [Manon-themes] (https://github.com/minvws/nl-rdo-manon/tree/main/themes)
 
