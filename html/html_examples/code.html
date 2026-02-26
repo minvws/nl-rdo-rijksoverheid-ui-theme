@@ -13,12 +13,12 @@
 <body class="test-cases">
   <header>
     <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
-    <a href="" class="ro-logo">
+    <a href="" class="logo">
       <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
       Rijksoverheid
     </a>
 
-    <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
+    <nav aria-label="Hoofdnavigatie" id="main-nav">
       <div>
         <ul>
           <li><a href="../index.html"><span class="icon icon-home">Hoofdpagina icoon</span> Rijksoverheid CSS</a></li>
@@ -40,7 +40,7 @@
 
     <div>
       <article>
-        <div>
+        <div class="content-wrapper">
           <h1>Code</h1>
           <p>Bij het schrijven van toelichting over het gebruik van code is het veelvoorkomend dat een verwijzing naar
             een specifiek code voorbeeld nodig of behulpzaam is. Maak hierbij gebruik van het
@@ -56,7 +56,7 @@
       </article>
 
       <article id="inline-code">
-        <div>
+        <div class="content-wrapper">
           <h1>Code binnen tekst</h1>
           <p>Voor het toevoegen van voorbeeldcode of toelichting over code binnen teksten.</p>
 
@@ -78,7 +78,7 @@
       </article>
 
       <article id="block-code">
-        <div>
+        <div class="content-wrapper">
           <h1>Code-blok</h1>
           <p>Voor het toevoegen van voorbeeldcode.</p>
 
@@ -94,52 +94,29 @@
           </ul>
           <p>Visueel voorbeeld met <code>&lt;pre></code>:</p>
           <pre>
-                <code>
+            <code>
 &lt;pre>
   &lt;code>
     &lt;!-- Lorem ipsum -->
   &lt;/code>
 &lt;/pre>
-                </code>
-              </pre>
+          </code>
+        </pre>
 
-          <p>Html-voorbeeld met <code>&lt;pre>:</code></p>
-          <pre>
-                <code>
+        <p>Html-voorbeeld met <code>&lt;pre>:</code></p>
+        <pre>
+          <code>
 &amp;lt;pre>
   &amp;lt;code>
     &amp;lt;!-- Lorem ipsum -->
   &amp;lt;/code>
 &amp;lt;/pre>
-                </code>
-              </pre>
-
-
-          <p>Visueel voorbeeld met <code>&lt;div class="code-block"></code>:</p>
-          <div class="code-block">
-            <code>
-&lt;div class="code-block">
-  &lt;code>
-  &lt;!-- Lorem ipsum -->
-  &lt;/code>
-&lt;/div>
-                </code>
-          </div>
-
-          <p>Html-voorbeeld met <code>&lt;div class="code-block"></code>:</p>
-          <pre>
-                <code>
-&amp;lt;div class="code-block">
-  &amp;lt;code>
-  &amp;lt;!-- Lorem ipsum -->
-  &amp;lt;/code>
-&amp;lt;/div>
-                </code>
-              </pre>
-        </div>
+          </code>
+        </pre>
       </article>
+
       <article>
-        <div>
+        <div class="content-wrapper">
           <h1>Voor meer informatie zie:</h1>
           <p>Meer informatie over het gebruik van deze html-tags kan gevonden worden via de onderstaande bronnen.</p>
           <nav aria-label="Overzicht bronnen">
@@ -161,7 +138,7 @@
   </main>
 
   <footer>
-    <div class="two-thirds-one-third">
+    <div class="two-thirds-one-third content-wrapper">
       <span class="slogan">Manon - Rijksoverheid CSS framework</span>
       <nav aria-labelledby="footer-nav-1-heading">
         <h1 id="footer-nav-1-heading">Service</h1>

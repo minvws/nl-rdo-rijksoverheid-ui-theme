@@ -13,13 +13,13 @@
 <body class="test-cases">
     <header>
         <a href="#main-content" class="button skip-to-content">Ga direct naar inhoud</a>
-        <a href="" class="ro-logo">
+        <a href="" class="logo">
             <img src="../dist/img/ro-logo.svg" alt="Logo Rijksoverheid">
             Rijksoverheid
         </a>
 
-        <nav aria-label="Kruimelpad" class="breadcrumb-bar" id="main-nav">
-            <div>
+        <nav aria-label="Hoofdnavigatie" id="main-nav">
+            <div class="content-wrapper">
                 <ul>
                     <li><a href="../index.html"><span class="icon icon-home">Hoofdpagina icoon</span> Rijksoverheid
                             CSS</a></li>
@@ -46,7 +46,7 @@
                 <li><a href="#button-styles">Visuele weergave</a>
                     <ul>
                         <li><a href="#button-primary">Primair</a></li>
-                        <li><a href="#button-ghost">Secundair</a></li>
+                        <li><a href="#button-secondary">Secundair</a></li>
                         <li><a href="#button-cta">CTA-knop (oproep tot actie)</a></li>
                         <li><a href="#button-icon">Icoonknoppen</a></li>
                         <li><a href="#button-action">Actieknoppen</a></li>
@@ -57,9 +57,9 @@
         </nav>
         <div>
             <article>
-                <div>
+                <div class="content-wrapper">
                     <h1>Knoppen</h1>
-                    <p>Buttons zijn er in verschijningsvormen en kunnen verschillende functies hebben. Op deze pagina
+                    <p class="introduction">Buttons zijn er in verschijningsvormen en kunnen verschillende functies hebben. Op deze pagina
                         staat het overzicht van alle verschillende button-varianten.</p>
 
                     <div class="explanation">
@@ -86,7 +86,7 @@
                             <li><a href="#button-styles">Visuele weergave</a>
                                 <ul>
                                     <li><a href="#button-primary">Primair</a></li>
-                                    <li><a href="#button-ghost">Secundair</a></li>
+                                    <li><a href="#button-secondary">Secundair</a></li>
                                     <li><a href="#button-cta">CTA-knop (oproep tot actie)</a></li>
                                     <li><a href="#button-icon">Icoonknoppen</a></li>
                                     <li><a href="#button-action">Actieknoppen</a></li>
@@ -99,7 +99,7 @@
             </article>
 
             <article id="button-types">
-                <div>
+                <div class="content-wrapper">
                     <h1>Beschikbare types</h1>
                     <p>Knoppen kunnen op verschillende manieren opgebouwd worden. Iets wat er visueel als een knop uit
                         ziet kan in de html prima een link zijn. Welk html-element geschikt is hangt af van de situatie.
@@ -114,47 +114,122 @@
                     </ul>
 
                     <div class="horizontal-scroll">
-                        <table>
-                            <caption>Overzicht van type buttons met situatieschetsen</caption>
+                        <table class="nowrap">
+                            <caption> Overzicht van type buttons met situatieschetsen </caption>
                             <thead>
-                                <tr>
-                                    <td>Situatie</td>
-                                    <td>&lt;button></td>
-                                    <td>&lt;input></td>
-                                    <td>&lt;a></td>
-                                </tr>
+                            <tr>
+                                <th>Situatie</th>
+                                <th>&lt;button&gt;</th>
+                                <th>&lt;input&gt;</th>
+                                <th>&lt;a&gt;</th>
+                            </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>Submitknop binnen een formulier</td>
-                                    <td class="confirmation">Correct</td>
-                                    <td class="warning">Correct</td>
-                                    <td class="error">Incorrect</td>
-                                </tr>
-                                <tr>
-                                    <td>Resetknop binnen een formulier</td>
-                                    <td class="confirmation">Correct</td>
-                                    <td class="warning">Correct</td>
-                                    <td class="error">Incorrect</td>
-                                </tr>
-                                <tr>
-                                    <td>Login-knop naar login-pagina</td>
-                                    <td class="error">Incorrect</td>
-                                    <td class="error">Incorrect</td>
-                                    <td class="confirmation">Correct</td>
-                                </tr>
-                                <tr>
-                                    <td>Actieknop, bijvoorbeeld een actie binnen een tabel</td>
-                                    <td class="confirmation">Correct</td>
-                                    <td class="warning">Incorrect</td>
-                                    <td class="error">Incorrect</td>
-                                </tr>
-                                <tr>
-                                    <td>Actieknop met een link naar een ander deel van de site</td>
-                                    <td class="error">Incorrect</td>
-                                    <td class="error">Incorrect</td>
-                                    <td class="confirmation">Correct</td>
-                                </tr>
+                            <tr>
+                                <td>Submitknop binnen een formulier</td>
+                                <td class="confirmation">
+                                <div>
+                                    <span class="icon icon-check" aria-hidden="true"></span>
+                                    Correct
+                                </div>
+                                </td>
+                                <td class="warning">
+                                <div>
+                                    <span class="icon icon-warning" aria-hidden="true"></span>
+                                    Correct
+                                </div>
+                                </td>
+                                <td class="error">
+                                <div>
+                                    <span class="icon icon-error" aria-hidden="true"></span>
+                                    Incorrect
+                                </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Resetknop binnen een formulier</td>
+                                <td class="confirmation">
+                                <div>
+                                    <span class="icon icon-check" aria-hidden="true"></span>
+                                    Correct
+                                </div>
+                                </td>
+                                <td class="confirmation">
+                                <div>
+                                    <span class="icon icon-check" aria-hidden="true"></span>
+                                    Correct
+                                </div>
+                                </td>
+                                <td class="error">
+                                <div>
+                                    <span class="icon icon-error" aria-hidden="true"></span>
+                                    Incorrect
+                                </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Login-knop naar login-pagina</td>
+                                <td class="error">
+                                <div>
+                                    <span class="icon icon-error" aria-hidden="true"></span>
+                                    Incorrect
+                                </div>
+                                </td>
+                                <td class="error">
+                                <div>
+                                    <span class="icon icon-error" aria-hidden="true"></span>
+                                    Incorrect
+                                </div>
+                                </td>
+                                <td class="confirmation">
+                                <div>
+                                    <span class="icon icon-check" aria-hidden="true"></span>
+                                    Correct
+                                </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Actieknop met een link naar een ander deel van de site</td>
+                                <td class="error">
+                                <div>
+                                    <span class="icon icon-error" aria-hidden="true"></span>
+                                    Incorrect
+                                </div>
+                                </td>
+                                <td class="error">
+                                <div>
+                                    <span class="icon icon-error" aria-hidden="true"></span>
+                                    Incorrect
+                                </div>
+                                </td>
+                                <td class="confirmation">
+                                <div>
+                                    <span class="icon icon-check" aria-hidden="true"></span>
+                                    Correct
+                                </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Actieknop, bijvoorbeeld een actie binnen een tabel</td>
+                                <td class="confirmation">
+                                <div>
+                                    <span class="icon icon-check" aria-hidden="true"></span>
+                                    Correct
+                                </div>
+                                </td>
+                                <td class="warning">
+                                <div>
+                                    <span class="icon icon-warning" aria-hidden="true"></span>
+                                    Correct
+                                </div>
+                                </td>
+                                <td class="error">
+                                <div>
+                                    <span class="icon icon-error" aria-hidden="true"></span>
+                                    Incorrect
+                                </div>
+                                </td>
+                            </tr>
                             </tbody>
                         </table>
                     </div>
@@ -163,13 +238,26 @@
                         <table>
                             <caption>Legenda</caption>
                             <tbody>
-                                <tr>
-                                    <td class="confirmation">Semantisch correct en het gewenste html-element voor
-                                        hulptechnologiën.</td>
-                                    <td class="warning">Semantisch correct maar geeft problemen voor bepaalde
-                                        gebruikersgroepen.</td>
-                                    <td class="error">Semantisch incorrect.</td>
-                                </tr>
+                            <tr>
+                                <td class="confirmation">
+                                <div>
+                                    <span class="icon icon-check" aria-hidden="true"></span>
+                                    Semantisch correct en het gewenste html-element voor hulptechnologiën.
+                                <div>
+                                </td>
+                                <td class="warning">
+                                <div>
+                                    <span class="icon icon-warning" aria-hidden="true"></span>
+                                    Semantisch correct maar geeft problemen voor bepaalde gebruikersgroepen.
+                                </div>
+                                </td>
+                                <td class="error">
+                                <div>
+                                    <span class="icon icon-error" aria-hidden="true"></span>
+                                    Semantisch incorrect.
+                                </div>
+                                </td>
+                            </tr>
                             </tbody>
                         </table>
                     </div>
@@ -183,7 +271,7 @@
             </article>
 
             <article id="button">
-                <div>
+                <div class="content-wrapper">
                     <h1>Button</h1>
                     <p>Knoppen die een actie uitlokken en niet naar een ander deel van de website verwijzen horen binnen
                         de html als <code>&lt;button></code> toegevoegd te worden.</p>
@@ -256,7 +344,7 @@
             </article>
 
             <article id="input">
-                <div>
+                <div class="content-wrapper">
                     <h1>Input</h1>
                     <p>Een input kan van het type button zijn en als knop gebruikt worden.</p>
                     <p>Aandachtspunten:</p>
@@ -321,7 +409,7 @@
             </article>
 
             <article id="link">
-                <div>
+                <div class="content-wrapper">
                     <h1>Link als knop</h1>
                     <p>In sommige gevallen kan het nodig zijn om een link er visueel als een knop uit te laten zien. Als
                         de "knop" de gebruiker naar een ander deel van de website begeleid blijft het semantisch gezien
@@ -350,7 +438,7 @@
             </article>
 
             <article id="button-styles">
-                <div>
+                <div class="content-wrapper">
                     <h1>Visuele weergave</h1>
                     <p>Knoppen kunnen op basis van context en ten behoeve van gebruikersgemak qua vormgeving anders
                         weergegeven worden.</p>
@@ -365,14 +453,14 @@
                             veel gebruikers de benodigde actie zijn, terwijl sommige gebruikers nog even terug willen om
                             wijzigingen aan te brengen. In dat geval is het verstandig om de knop "Opslaan" als
                             primaire-knop weer te geven en de knop "Wijzigen" visueel ondergeschikt maken. Zie voor meer
-                            informatie <a href="#button-ghost">Secundaire button</a>.</li>
+                            informatie <a href="#button-secondary">Secundaire button</a>.</li>
                     </ul>
 
                     <p>Beschikbare visuele weergaven:</p>
                     <nav aria-label="Navigatie weergave knoppen">
                         <ul>
                             <li><a href="#button-primary">Primair</a></li>
-                            <li><a href="#button-ghost">Secundair</a></li>
+                            <li><a href="#button-secondary">Secundair</a></li>
                             <li><a href="#button-icon">Icoonknoppen</a></li>
                             <li><a href="#button-action">Actieknoppen</a></li>
                         </ul>
@@ -381,7 +469,7 @@
             </article>
 
             <article id="button-primary">
-                <div>
+                <div class="content-wrapper">
                     <h1>Primaire button</h1>
                     <p>Dit is een button met een kleurvlak. Hierdoor valt de button goed op. Dit is de button die
                         standaard gebruikt wordt.</p>
@@ -416,8 +504,8 @@
                 </div>
             </article>
 
-            <article id="button-ghost">
-                <div>
+            <article id="button-secondary">
+                <div class="content-wrapper">
                     <h1>Secundaire button</h1>
                     <p>Soms is het qua gebruikerservaring prettiger om een minder opvallende knop gebruiken.
                         Bijvoorbeeld: als er een keuze gegeven wordt met twee of meer knoppen waarbij een knop de
@@ -464,7 +552,7 @@
             </article>
 
             <article id="button-cta">
-                <div>
+                <div class="content-wrapper">
                     <h1>CTA-knop (oproep tot actie)</h1>
                     <p>Knoppen die oproepen tot actie kunnen in een alternatieve kleur getoond kunnen worden. De
                         afwijkende kleur zorgt ervoor dat de knop meer opvalt en daardoor meer aandacht van gebruikers
@@ -510,7 +598,7 @@
             </article>
 
             <article id="button-icon">
-                <div>
+                <div class="content-wrapper">
                     <h1>Icoonknoppen</h1>
                     <p>Voor ondersteunende knoppen. Denk bijvoorbeeld aan een informatie- of help-knop.</p>
                     <p>Aandachtspunten:</p>
@@ -594,7 +682,7 @@
             </article>
 
             <article id="button-action">
-                <div>
+                <div class="content-wrapper">
                     <h1>Actieknoppen</h1>
                     <p>Gebruik actieknoppen op plekken waar de knop vaak herhaalt wordt en getoont kan worden met een
                         herkenbaar icoon. Denk bijvoorbeeld aan acties binnen een formulier.</p>
@@ -798,7 +886,7 @@
             </article>
 
             <article id="button-container">
-                <div>
+                <div class="content-wrapper">
                     <h1>Knoppen groeperen</h1>
                     <p>Knoppen kunnen gegroepeerd worden, waar mogelijk worden de knoppen in dat geval naast elkaar
                         gepositioneerd.</p>
@@ -834,10 +922,10 @@
         </a>
     </main>
     <footer>
-        <div class="two-thirds-one-third">
+        <div class="two-thirds-one-third content-wrapper">
             <span class="slogan">Manon - Rijksoverheid CSS framework</span>
             <nav aria-labelledby="footer-nav-1-heading">
-                <h1 id="footer-nav-1-heading">Service</h1>
+                <h2 id="footer-nav-1-heading">Service</h2>
                 <ul>
                     <li><a href="../index.html">Over</a></li>
                     <li><a href="../test/index.html">Styling tests</a></li>
