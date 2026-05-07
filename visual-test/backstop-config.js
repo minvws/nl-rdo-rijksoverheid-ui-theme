@@ -7,8 +7,12 @@ export const createBackstopConfig = ({ port, files }) => {
     "test/links.html"
   ];
 
-  const regularFiles = files.filter(file => !priorityFiles.includes(file));
-  const orderedFiles = [...priorityFiles.filter(file => files.includes(file)), ...regularFiles];
+  const excludeFiles = [
+    "test/layout.html"
+  ];
+
+  const regularFiles = files.filter(file => !priorityFiles.includes(file) && !excludeFiles.includes(file));
+  const orderedFiles = [...priorityFiles.filter(file => files.includes(file) && !excludeFiles.includes(file)), ...regularFiles];
 
   return {
     id: "rijksoverheid-ui-theme",
