@@ -78,6 +78,7 @@
 @use "manon/notification-confirmation";
 @use "manon/notification-explanation";
 @use "manon/notification-system";
+@use "manon/header-navigation-link";
 @use "manon/icon";
 @use "manon/icon-only";
 @use "manon/radio";
@@ -88,3 +89,4 @@
 @use "manon/breadcrumb-bar";
 @use "manon/breadcrumb-bar-link";
 @use "manon/card";
+@use "manon/background-color-offset";

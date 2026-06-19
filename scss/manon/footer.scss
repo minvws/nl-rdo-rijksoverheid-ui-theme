@@ -43,3 +43,7 @@
   /* Nav */
   --footer-navigation-list-item-list-style: none;
 }
+
+footer nav a:visited:hover {
+  color: var(--footer-text-color);
+}
